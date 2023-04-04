@@ -1,0 +1,360 @@
+
+
+#card-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    width: 300px;
+    height: 600px;
+    font-size: 0.5vw;
+    border-radius: 15px;
+    border: 1px solid #cc9900;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    background: no-repeat url(https://i.pinimg.com/474x/0c/e5/6d/0ce56ddec3eb469a516d68adc4354b63.jpg) 0 0;
+    background-repeat: repeat;
+}
+
+
+.card-header .title {
+    font-size: 0.8vw;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.crystals-label-right {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-bottom: 5px;
+}
+
+.crystals-label-left {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-bottom: 5px;
+}
+.left-crystals {
+    width:100px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.left-crystals .crystal {
+    margin-right: 5px;
+}
+.right-crystals {
+    width:100px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 35px solid #fff;
+    z-index: 1;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 38px solid #cc9900;
+    z-index: 0;
+}
+
+.card-header {
+    padding: 10px;
+    border-bottom: 1px solid #8a8743;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: no-repeat url(https://media.istockphoto.com/id/478061308/photo/detail-of-brass-door-at-royal-palace-in-fez-morocco.jpg?s=612x612&w=0&k=20&c=WPmC7gGCnc4X3aUb8iXTwhcC4CfLBt32WaCddw_ee7A=) 0 0;
+    background-repeat: repeat;
+    backdrop-filter: blur(8px); // This be the blur
+}
+
+.item-header {
+    background: no-repeat url(https://dotesports.com/wp-content/uploads/2021/06/29111856/MTG-Treasure.jpg) 0 0;
+    background-size: 300px;
+    background-position: center;
+}
+
+.character-header {
+    background: no-repeat url(https://www.belloflostsouls.net/wp-content/uploads/2017/09/Nyazaru-dinos-tomb-of-annihilation-e1504816464153.jpg) 0 0;
+    background-size: 300px;
+    background-position: center;
+}
+
+
+.crystals-container {
+    display: flex;
+    align-items: center;
+}
+
+.crystals-container {
+    display: flex;
+    align-items: center;
+}
+
+.crystal {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.crystal{
+    display:none;
+    font-size:20px;
+}
+
+.invisible{
+    opacity:0;
+}
+
+.crystal.rogue {
+    color: #000000;
+    display:inline;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff,
+            0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #000000,
+            0 0 30px #000000,
+            0 0 30px #000000;
+}
+
+.crystal.wizard {
+    color: #08d6ff;
+    display:inline;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #08d6ff,
+            0 0 30px #08d6ff, 0 0 30px #08d6ff, 0 0 30px #08d6ff, 0 0 30px #08d6ff,
+            0 0 30px #08d6ff,
+            0 0 30px #08d6ff,
+            0 0 30px #08d6ff,
+            0 0 30px #08d6ff,
+            0 0 30px #08d6ff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #08d6ff,
+            0 0 30px #08d6ff;
+}
+
+.crystal.bard {
+    color: #a600ff;
+    display:inline;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff,0 0 10px #a600ff,0 0 10px #a600ff,0 0 10px #a600ff,0 0 10px #a600ff,0 0 10px #a600ff,
+            0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff;
+}
+
+.crystal.ranger {
+    color: #0dff00;
+    display:inline;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff,  0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00,
+            0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00;
+}
+
+.crystal.priest {
+    color: #ffffff;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #08d6ff,
+            0 0 30px #08d6ff, 0 0 30px #08d6ff, 0 0 30px #fff, 0 0 30px #fff,
+            0 0 30px #08d6ff,
+            0 0 30px #08d6ff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff;
+}
+
+.crystal.paladin {
+    color: #000dff;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #08d6ff,
+            0 0 30px #000dff, 0 0 30px #000dff, 0 0 30px #000dff, 0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff,
+            0 0 30px #000dff;
+}
+
+.crystal.barbarian {
+    color: #ff5900;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #ff5900, 0 0 10px #ff5900, 0 0 10px #ff5900, 0 0 10px #eb001f,
+            0 0 30px #ff5900, 0 0 30px #ff5900, 0 0 30px #ff5900, 0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900,
+            0 0 30px #ff5900;
+}
+
+.crystal.soldier {
+    color: #ff0084;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #eb001f, 0 0 10px #eb001f, 0 0 10px #eb001f, 0 0 10px #eb001f,
+            0 0 30px #ff0084, 0 0 30px #ff0084, 0 0 30px #ff0084, 0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084,
+            0 0 30px #ff0084;
+}
+
+.crystal.druid {
+    color: #004d13;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff,  0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff,
+            0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00;
+}
+
+
+.card-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-body {
+    padding: 3px;
+    text-align: left;
+}
+
+
+.card-footer {
+    padding: 3px;
+    border-top: 1px solid #cc9900;
+    position: relative;
+    z-index: 1;
+    background-repeat: repeat;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.card-stat-label {
+    font-size: 9px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.card-stat-value {
+    font-size: 9px;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    font-weight: bold;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+@keyframes pulsate {
+    100% {
+        /* Larger blur radius */
+        text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #0fa,
+                0 0 80px #0fa,
+                0 0 90px #0fa,
+                0 0 100px #0fa,
+                0 0 150px #0fa;
+    }
+    0% {
+        /* Smaller blur radius */
+        text-shadow:
+                0 0 2px #fff,
+                0 0 4px #fff,
+                0 0 6px #fff,
+                0 0 10px #0fa,
+                0 0 45px #0fa,
+                0 0 55px #0fa,
+                0 0 70px #0fa,
+                0 0 80px #0fa;
+    }
+}

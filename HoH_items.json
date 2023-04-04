@@ -1,0 +1,12 @@
+[{
+  "name": "Longsword",
+  "crystals": {
+  "requires" :["soldier"
+  ],
+  "provides": []
+  },
+  "type": "item",
+  "weight": "2 kg",
+  "price": "30 coins",
+  "description": "<p><h3>Swordsman:</h3> <p>When you attack with a longsword, roll +Dex. On a 7-9, you deal your HA damage. On a 10+, you deal your HA damage and choose one additional effect from the list below. On a 12+, you can choose two effects.</p> <ul><li>Your attack inflicts a grievous wound, causing your target to take -1 ongoing to all rolls until they receive healing or medical attention</li><li>Your attack creates an opening, giving you or an ally +1 forward to their next attack against the target</li><li>Your attack stuns or knocks down your target, giving you or an ally an opportunity to quicklyact before they can react</li></ul><h3>Defensive Parry:</h3><p>When you use a longsword to defend yourself, roll+Dex instead of +Con. On a 10+, you deflect theattack and take no damage. On a 7-9, you deflect the attack but suffer a -1 penalty to your nextattack roll.</p></p>"
+  }]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Arcane Training",
+    "crystals": {
+      "left": [],
+      "right": [
+        "wizard"
+      ]
+    },
+    "type": "feature",
+    "cost": "6 months",
+    "price": 1000,
+    "description": "You have extensive training in the arcane arts, and can draw upon your knowledge to gain insight into magical phenomena. When you encounter a magical effect or creature, you may roll+Int. On a 10+, you understand the nature and origin of the magic, and gain +1 forward to discern realities or spout lore related to it. On a 7-9, you have some knowledge of the magic, but it is incomplete or outdated, and you only gain +1 forward if you act on the information immediately. On a miss, the magic overwhelms you, and you suffer -1 ongoing to all rolls related to magic until you receive a moment of rest or a counteracting spell."
+  },
+  {
+    "name": "Pyromancy",
+    "crystals": {
+      "left": [
+        "wizard"
+      ],
+      "right": []
+    },
+    "type": "feature",
+    "cost": "6 months",
+    "price": 1000,
+    "description": "<p><p>When you call upon the power of fire to achieve your goals, roll+Cha. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>You create an explosion, dealing damage to all creatures in the area</li><li>You shape flames to your will, directing them to move or change shape as you desire</li><li>You ignite a nearby object or surface, causing it to burst into flames</li><li>You intimidate or frighten others with displays of fiery power</li><li>You protect yourself from fire and heat</li></ul><p>On a miss, the fire you call upon burns out of control, causing harm to yourself or your allies.</p></p> "
+  },
+  {
+    "name": "Mountain Dwarf",
+    "crystals": {
+      "left": [],
+      "right": [
+        "soldier"
+      ]
+    },
+    "type": "feature",
+    "cost": "Being born one",
+    "price": "",
+    "description": "<p><p><h3>Mountain-Born.</h3><p>You are acclimated to high altitudes and cold climates. You take no penalties for elevation and are able to keep warm in cold environments without extra gear.</p><h3>Unyielding.</h3><p>When you take damage and would be knocked prone, you may instead remain standing and take +1 forward to your next attack.</p><h3>Stonework.</h3><p>When you discern realities or spout lore about stonework, take +1 to your roll. When you defy danger in a stonework environment, you may take +1 forward to your roll.</p></p>"
+  }
+]
+
