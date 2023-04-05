@@ -2,15 +2,23 @@
 
 #card-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
+.card-body h3 {
+    font-size:16px;
+}
+
+.card-body  {
+    font-size:10px;
+}
 
 .card {
+    font-family: 'Lora', serif;
     width: 300px;
     height: 600px;
-    font-size: 0.5vw;
+    font-size: 13px;
     border-radius: 15px;
     border: 1px solid #cc9900;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -22,10 +30,13 @@
 
 
 .card-header .title {
-    font-size: 0.8vw;
+    font-family: 'Lora', serif;
+    font-size: 20px;
     text-align: center;
+    padding:15px;
     color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow:1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,
+            0 0 80px #000;
 }
 
 .crystals-label-right {
@@ -94,6 +105,7 @@
 }
 
 .card-header {
+    height: 100px;
     padding: 10px;
     border-bottom: 1px solid #8a8743;
     display: flex;
@@ -111,7 +123,7 @@
 }
 
 .character-header {
-    background: no-repeat url(https://www.belloflostsouls.net/wp-content/uploads/2017/09/Nyazaru-dinos-tomb-of-annihilation-e1504816464153.jpg) 0 0;
+    background: no-repeat url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/12/Dungeons-Dragons-5-Best-Rogue-Features-5-Worst-features-image.jpg) 0 0;
     background-size: 300px;
     background-position: center;
 }
@@ -138,6 +150,8 @@
     display:none;
     font-size:20px;
 }
+
+
 
 .invisible{
     opacity:0;
@@ -289,17 +303,16 @@
 }
 
 .card-body {
-    padding: 3px;
+    margin-top:-30px;
+    padding-left: 3px;
+    padding-right: 3px;
     text-align: left;
 }
 
-
 .card-footer {
-    padding: 3px;
-    border-top: 1px solid #cc9900;
+    border-top: 5px solid #cc9900;
     position: relative;
     z-index: 1;
-    background-repeat: repeat;
 }
 
 .card-stats {
@@ -316,7 +329,7 @@
 }
 
 .card-stat-label {
-    font-size: 9px;
+    font-size: 12px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -325,36 +338,12 @@
 }
 
 .card-stat-value {
-    font-size: 9px;
+    font-size: 13px;
     color: #fff;
-    text-shadow: 2px 2px #333;
     font-weight: bold;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-@keyframes pulsate {
-    100% {
-        /* Larger blur radius */
-        text-shadow:
-                0 0 4px #fff,
-                0 0 11px #fff,
-                0 0 19px #fff,
-                0 0 40px #0fa,
-                0 0 80px #0fa,
-                0 0 90px #0fa,
-                0 0 100px #0fa,
-                0 0 150px #0fa;
-    }
-    0% {
-        /* Smaller blur radius */
-        text-shadow:
-                0 0 2px #fff,
-                0 0 4px #fff,
-                0 0 6px #fff,
-                0 0 10px #0fa,
-                0 0 45px #0fa,
-                0 0 55px #0fa,
-                0 0 70px #0fa,
-                0 0 80px #0fa;
-    }
+.type {
+    font-size:8px;
 }

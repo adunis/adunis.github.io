@@ -1,0 +1,315 @@
+[
+  {
+    "name": "Goblin",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "soldier",
+        "barbarian",
+        "rogue"
+      ]
+    },
+    "stats": {
+      "hp": 8,
+      "mp": 2,
+      "sp": 5,
+      "hd": "1d6",
+      "md": "1d4",
+      "sd": "1d4"
+    },
+    "type": ["creature", "goblinoid"],
+    "description": "<p><h3>Goblin Tactics:</h3> <p>When you encounter a goblin, roll +Wis. On a 10+, you spot their ambush or trap before it’s too late. On a 7-9, you spot it but not before it’s sprung. On a miss, you walk right into it and suffer the consequences.</p><h3>Goblin Frenzy:</h3><p>When you fight a goblin, roll +Str. On a 10+, you deal your damage and the goblin flees or surrenders. On a 7-9, you deal your damage but the goblin fights back with ferocity, dealing its damage to you. On a miss, the goblin calls for reinforcements or tries to stab you in the back.</p></p>"
+  },
+  {
+    "name": "Goblin Shaman",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "wizard",
+        "wizard",
+        "rogue"
+      ]
+    },
+    "stats": {
+      "hp": 6,
+      "mp": 10,
+      "sp": 5,
+      "hd": "1d4",
+      "md": "1d6",
+      "sd": "1d4"
+    },
+    "type": ["creature", "goblinoid"],
+    "description": "<p><h3>Goblin Magic:</h3> <p>When you encounter a goblin shaman, roll +Int. On a 10+, you recognize their spells and can counter them with your own magic. On a 7-9, you recognize their spells but they have a trick up their sleeve. On a miss, you are caught off guard by their magic and suffer the effects.</p><h3>Goblin Curse:</h3><p>When you fight a goblin shaman, roll +Con. On a 10+, you resist their curse and deal your damage. On a 7-9, you resist their curse but it leaves a mark on you. The GM will tell you what it is. On a miss, you are cursed and take -1 ongoing to all your rolls until you remove it.</p></p>"
+  },
+  {
+    "name": "Goblin Chieftain",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "soldier",
+        "barbarian",
+        "leader"
+      ]
+    },
+    "stats": {
+      "hp": 12,
+      "mp": 5,
+      "sp": 10,
+      "hd": "1d8",
+      "md": "1d6",
+      "sd": "1d6"
+    },
+    "type": ["creature", "goblinoid"],
+    "description": "<p><h3>Goblin Leadership:</h3> <p>When you encounter a goblin chieftain, roll +Cha. On a 10+, you can intimidate or persuade them to do what you want. On a 7-9, you can negotiate with them but they want something in return. On a miss, they laugh at you and order their minions to attack.</p><h3>Goblin Challenge:</h3><p>When you fight a goblin chieftain, roll +Str. On a 10+, you deal your damage and the chieftain respects your strength. They may offer you a truce or a reward. On a 7-9, you deal your damage but the chieftain fights back with cunning, dealing their damage to you. On a miss, the chieftain mocks you and calls for reinforcements.</p></p>"
+  },
+  {
+    "name": "Goblin Berserker",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "barbarian",
+        "rogue"
+      ]
+    },
+    "stats": {
+      "hp": 10,
+      "mp": 0,
+      "sp": 15,
+      "hd": "1d6",
+      "md": "0",
+      "sd": "1d8"
+    },
+    "type": ["creature", "goblinoid"],
+    "description": "<p><h3>Goblin Rage:</h3> <p>When you encounter a goblin berserker, roll +Wis. On a 10+, you calm them down or avoid their attention. On a 7-9, you anger them or attract their attention. On a miss, you enrage them and they charge at you.</p><h3>Goblin Fury:</h3><p>When you fight a goblin berserker, roll +Dex. On a 10+, you deal your damage and dodge their attack. On a 7-9, you deal your damage but the berserker hits you hard, dealing their damage to you. On a miss, the berserker goes into a frenzy and deals +1d4 damage to you and anyone nearby.</p></p>"
+  },
+  {
+    "name": "Sahuagin",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "soldier",
+        "barbarian",
+        "aquatic"
+      ]
+    },
+    "stats": {
+      "hp": 10,
+      "mp": 0,
+      "sp": 10,
+      "hd": "1d6",
+      "md": "0",
+      "sd": "1d6"
+    },
+    "type": ["creature", "aquatic"],
+    "description": "<p><h3>Sahuagin Ambush:</h3> <p>When you enter a sahuagin’s territory, roll +Wis. On a 10+, you notice their signs and avoid their ambush. On a 7-9, you notice their signs but they have already prepared their ambush. On a miss, you are caught unaware by their ambush and suffer the consequences.</p><h3>Sahuagin Bite:</h3><p>When you fight a sahuagin in melee, roll +Str. On a 10+, you deal your damage and the sahuagin backs off. On a 7-9, you deal your damage but the sahuagin bites you with its sharp teeth, dealing its damage to you. On a miss, the sahuagin bites you and tries to drag you underwater.</p></p>"
+  },
+  {
+    "name": "Sahuagin Shaman",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "mage",
+        "aquatic"
+      ]
+    },
+    "stats": {
+      "hp": 8,
+      "mp": 10,
+      "sp": 5,
+      "hd": "1d4",
+      "md": "1d6",
+      "sd": "1d4"
+    },
+    "type": ["creature", "aquatic"],
+    "description": "<p><h3>Sahuagin Ritual:</h3> <p>When you encounter a sahuagin shaman, roll +Int. On a 10+, you disrupt their ritual and gain an advantage over them. On a 7-9, you disrupt their ritual but they have already invoked some of its effects. On a miss, you are too late to stop their ritual and suffer the effects.</p><h3>Sahuagin Hex:</h3><p>When you fight a sahuagin shaman, roll +Con. On a 10+, you resist their hex and deal your damage. On a 7-9, you resist their hex but it weakens you. The GM will tell you how. On a miss, you are hexed and take -1 ongoing to all your rolls until you remove it.</p></p>"
+  },
+  {
+    "name": "Sahuagin Knight",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "soldier",
+        "barbarian",
+        "aquatic"
+      ]
+    },
+    "stats": {
+      "hp": 12,
+      "mp": 0,
+      "sp": 10,
+      "hd": "1d8",
+      "md": "0",
+      "sd": "1d6"
+    },
+    "type": ["creature", "aquatic"],
+    "description": "<p><h3>Sahuagin Honor:</h3> <p>When you encounter a sahuagin knight, roll +Cha. On a 10+, you can challenge them to a duel or offer them a tribute. On a 7-9, you can challenge them to a duel or offer them a tribute but they demand something more. On a miss, they reject your offer and order their minions to attack.</p><h3>Sahuagin Duel:</h3><p>When you fight a sahuagin knight in a duel, roll +Str. On a 10+, you deal your damage and the knight yields or dies. On a 7-9, you deal your damage but the knight wounds you, dealing their damage to you. On a miss, the knight defeats you and decides your fate.</p></p>"
+  },
+  {
+    "name": "Sahuagin Mutant",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "barbarian",
+        "aquatic"
+      ]
+    },
+    "stats": {
+      "hp": 15,
+      "mp": 0,
+      "sp": 15,
+      "hd": "1d8",
+      "md": "0",
+      "sd": "1d8"
+    },
+    "type": ["creature", "aquatic"],
+    "description": "<p><h3>Sahuagin Abomination:</h3> <p>When you encounter a sahuagin mutant, roll +Wis. On a 10+, you identify their mutation and know how to exploit it. On a 7-9, you identify their mutation but it gives them an advantage over you. On a miss, you are horrified by their mutation and suffer the consequences.</p><h3>Sahuagin Devour:</h3><p>When you fight a sahuagin mutant in melee, roll +Dex. On a 10+, you deal your damage and avoid their bite. On a 7-9, you deal your damage but the mutant bites you with its monstrous jaws, dealing its damage to you. On a miss, the mutant bites you and tries to swallow you whole.</p></p>"
+  },
+  {
+    "name": "Fire Elemental",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "mage",
+        "fire"
+      ]
+    },
+    "stats": {
+      "hp": 10,
+      "mp": 15,
+      "sp": 10,
+      "hd": "1d6",
+      "md": "1d8",
+      "sd": "1d6"
+    },
+    "type": ["creature", "elemental"],
+    "description": "<p><h3>Fire Storm:</h3> <p>The fire elemental conjures a storm of fire around you. Roll +Int to find a way out. On a 10+, you escape the storm unharmed. On a 7-9, you escape the storm but take 1d4 damage or lose something valuable. On a miss, you are trapped in the storm and take 1d8 damage.</p><h3>Fire Blast:</h3><p>The fire elemental shoots a blast of fire at you. Roll +Dex to dodge it. On a 10+, you avoid the blast and deal your damage. On a 7-9, you avoid the blast but the elemental gets closer to you. On a miss, you are hit by the blast and take 1d8 damage and catch on fire.</p></p>"
+  },
+  {
+    "name": "Water Elemental",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "mage",
+        "water"
+      ]
+    },
+    "stats": {
+      "hp": 10,
+      "mp": 15,
+      "sp": 10,
+      "hd": "1d6",
+      "md": "1d8",
+      "sd": "1d6"
+    },
+    "type": ["creature", "elemental"],
+    "description": "<p><h3>Water Surge:</h3> <p>The water elemental creates a surge of water that sweeps you away. Roll +Str to resist it. On a 10+, you stand your ground and deal your damage. On a 7-9, you stand your ground but take 1d4 damage or lose something valuable. On a miss, you are swept away and take 1d6 damage.</p><h3>Water Blast:</h3><p>The water elemental shoots a blast of water at you. Roll +Dex to dodge it. On a 10+, you avoid the blast and deal your damage. On a 7-9, you avoid the blast but the elemental gets closer to you. On a miss, you are hit by the blast and take 1d6 damage and are knocked back or off balance.</p></p>"
+  },
+  {
+    "name": "Vampire Lord",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "mage",
+        "leader"
+      ]
+    },
+    "stats": {
+      "hp": 15,
+      "mp": 20,
+      "sp": 15,
+      "hd": "1d8",
+      "md": "1d10",
+      "sd": "1d8"
+    },
+    "type": [
+      "creature",
+      "undead"
+    ],
+    "description": "<p><h3>Vampire Charm:</h3> <p>The vampire lord tries to charm you with their gaze. Roll +Cha to resist it. On a 10+, you shake off their charm and can act freely. On a 7-9, you shake off their charm but they have an influence over you. The GM will tell you what it is. On a miss, you are charmed by them and will do anything they ask.</p><h3>Vampire Bite:</h3><p>The vampire lord tries to bite you with their fangs. Roll +Con to resist it. On a 10+, you fend them off and deal your damage. On a 7-9, you fend them off but they wound you, dealing their damage to you and draining your blood. The GM will tell you what it does. On a miss, they bite you and drain your blood until you are unconscious or dead.</p></p>"
+  },
+  {
+    "name": "Ancient Blue Dragon",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "wizard", "wizard"
+      ]
+    },
+    "stats": {
+      "hp": 50,
+      "mp": 25,
+      "sp": 20,
+      "hd": "1d10",
+      "md": "1d10",
+      "sd": "1d8"
+    },
+    "type": ["creature", "dragon"],
+    "description": "<p><h3>Dragon Storm:</h3> <p>The ancient blue dragon conjures a thunderstorm around you. Roll +Int to find a way out. On a 10+, you escape the storm unharmed. On a 7-9, you escape the storm but take 1d6 damage or lose something valuable. On a miss, you are trapped in the storm and take 1d10 damage.</p><h3>Lightning Breath:</h3><p>The ancient blue dragon shoots a blast of lightning at you. Roll +Dex to dodge it. On a 10+, you avoid the blast and deal your damage. On a 7-9, you avoid the blast but the dragon gets closer to you. On a miss, you are hit by the blast and take 1d10 damage and are stunned.</p></p>"
+  },
+  {
+    "name": "Salamander Warrior",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "soldier",
+        "barbarian",
+        "fire"
+      ]
+    },
+    "stats": {
+      "hp": 15,
+      "mp": 0,
+      "sp": 15,
+      "hd": "1d8",
+      "md": "0",
+      "sd": "1d8"
+    },
+    "type": ["creature", "vulcanic"],
+    "description": "<p><h3>Salamander Ambush:</h3> <p>The salamander warrior hides in the flames and waits for you. Roll +Wis to spot them. On a 10+, you notice them and avoid their ambush. On a 7-9, you notice them but they have already prepared their ambush. On a miss, you are caught unaware by their ambush and suffer the consequences.</p><h3>Salamander Strike:</h3><p>The salamander warrior strikes at you with their flaming spear. Roll +Str to resist it. On a 10+, you fend them off and deal your damage. On a 7-9, you fend them off but they wound you, dealing their damage to you and setting you on fire. On a miss, they strike you and deal +1d4 damage to you and set you on fire.</p></p>"
+  },
+  {
+    "name": "Salamander Pyromancer",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "mage",
+        "fire"
+      ]
+    },
+    "stats": {
+      "hp": 10,
+      "mp": 15,
+      "sp": 10,
+      "hd": "1d6",
+      "md": "1d8",
+      "sd": "1d6"
+    },
+    "type": ["creature", "vulcanic"],
+    "description": "<p><h3>Salamander Magic:</h3> <p>The salamander pyromancer casts a fire spell at you. Roll +Int to counter it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Salamander Burn:</h3><p>The salamander pyromancer burns you with their touch. Roll +Con to resist it. On a 10+, you shake off their touch and deal your damage. On a 7-9, you shake off their touch but they scorch you, dealing their damage to you and setting you on fire. On a miss, they burn you and deal +1d4 damage to you and set you on fire.</p></p>"
+  },
+  {
+    "name": "Vampire Spawn",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "barbarian",
+        "rogue"
+      ]
+    },
+    "stats": {
+      "hp": 12,
+      "mp": 0,
+      "sp": 15,
+      "hd": "1d8",
+      "md": "0",
+      "sd": "1d8"
+    },
+    "type": [
+      "creature",
+      "undead"
+    ],
+    "description": "<p><h3>Vampire Stealth:</h3> <p>The vampire spawn hides in the shadows and waits for you. Roll +Wis to spot them. On a 10+, you notice them and avoid their surprise attack. On a 7-9, you notice them but they have already struck. On a miss, you are caught unaware by their surprise attack and suffer the consequences.</p><h3>Vampire Bite:</h3><p>The vampire spawn tries to bite you with their fangs. Roll +Con to resist it. On a 10+, you fend them off and deal your damage. On a 7-9, you fend them off but they wound you, dealing their damage to you and draining your blood. The GM will tell you what it does. On a miss, they bite you and drain your blood until you are unconscious or turned.</p></p>"
+  },{ "name": "Centaur Warrior", "crystals": { "requires": [] , "provides": ["soldier", "barbarian" ] }, "stats": { "hp": 15, "mp": 0, "sp": 15, "hd": "1d8", "md":"0", "sd": "1d8" }, "type": "creature", "description": "<p><h3>Centaur Charge:</h3> <p>The centaur warrior charges at you with their spear. Roll +Dex to avoid it. On a 10+, you dodge their charge and deal your damage. On a 7-9, you dodge their charge but they get closer to you. On a miss, you are hit by their charge and take 1d8 damage and are knocked prone.</p><h3>Centaur Strike:</h3><p>The centaur warrior strikes at you with their axe. Roll +Str to resist it. On a 10+, you fend them off and deal your damage. On a 7-9, you fend them off but they wound you, dealing their damage to you. On a miss, they strike you and deal +1d4 damage to you.</p></p>" }, { "name": "Centaur Shaman", "crystals": { "requires": [] , "provides": ["mage", "leader" ] }, "stats": { "hp": 10, "mp": 15, "sp": 10, "hd": "1d6", "md": "1d8", "sd": "1d6" }, "type": "creature", "description": "<p><h3>Centaur Magic:</h3> <p>The centaur shaman casts a spell at you. Roll +Int to counter it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Centaur Blessing:</h3><p>The centaur shaman blesses their allies with their magic. Roll +Wis to disrupt it. On a 10+, you disrupt their blessing and gain an advantage over them. On a 7-9, you disrupt their blessing but they have another one ready. On a miss, they bless their allies and they gain an advantage over you.</p></p>" }, { "name": "Bandit", "crystals": { "requires": [] , "provides": ["rogue", "soldier" ] }, "stats": { "hp": 8, "mp": 0, "sp": 12, "hd": "1d6", "md": "0", "sd": "1d6" }, "type": "creature", "description": "<p><h3>Bandit Ambush:</h3> <p>The bandit hides in the shadows and waits for you. Roll +Wis to spot them. On a 10+, you notice them and avoid their surprise attack. On a 7-9, you notice them but they have already struck. On a miss, you are caught unaware by their surprise attack and suffer the consequences.</p><h3>Bandit Stab:</h3><p>The bandit stabs at you with their dagger. Roll +Dex to dodge it. On a 10+, you avoid the stab and deal your damage. On a 7-9, you avoid the stab but the bandit gets closer to you. On a miss, you are stabbed and take 1d6 damage and bleed.</p></p>"},
+  { "name": "Bandit Wizard", "crystals": { "requires": [] , "provides": ["mage", "rogue" ] }, "stats": { "hp": 8, "mp": 15, "sp": 10, "hd": "1d6", "md": "1d8", "sd": "1d6" }, "type": "creature", "description": "<p><h3>Bandit Magic:</h3> <p>The bandit wizard casts a spell at you. Roll +Int to counter it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Bandit Trick:</h3><p>The bandit wizard uses their magic to trick you. Roll +Wis to see through it. On a 10+, you see through their trick and gain an advantage over them. On a 7-9, you see through their trick but they have another one ready. On a miss, you fall for their trick and they gain an advantage over you.</p></p>" },
+{ "name": "Wizard Justiciar", "crystals": { "requires": [] , "provides": ["mage", "leader" ] }, "stats": { "hp": 10, "mp": 15, "sp": 10, "hd": "1d6", "md":"1d8", "sd": "1d6" }, "type": "creature", "description": "<p><h3>Wizard Law:</h3> <p>The wizard justiciar casts a spell to enforce the law. Roll +Int to resist it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Wizard Detain:</h3><p>The wizard justiciar casts a spell to detain you or your allies. Roll +Wis to avoid it. On a 10+, you avoid the spell and gain an advantage over them. On a 7-9, you avoid the spell but they have another one ready. On a miss, you or your allies are detained by the spell and can’t attack, block or activate abilities until your next turn.</p></p>" }, { "name": "Iron Golem", "crystals": { "requires": [] , "provides": ["soldier", "barbarian" ] }, "stats": { "hp": 20, "mp": 0, "sp": 10, "hd": "1d10", "md": "0", "sd": "1d8" }, "type": "creature", "description": "<p><h3>Iron Smash:</h3> <p>The iron golem smashes you with its fists. Roll +Str to resist it. On a 10+, you fend it off and deal your damage. On a 7-9, you fend it off but it crushes you, dealing its damage to you. On a miss, it smashes you and deals +1d4 damage to you.</p><h3>Iron Breath:</h3><p>The iron golem breathes fire at you. Roll +Dex to dodge it. On a 10+, you avoid the fire and deal your damage. On a 7-9, you avoid the fire but it gets closer to you. On a miss, you are hit by the fire and take 1d8 damage and catch on fire.</p></p>" }
+  ]
