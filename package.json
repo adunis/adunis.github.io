@@ -1,5 +1,6 @@
 {
   "name": "handfulofheroes",
+  "type": "module",
   "version": "1.0.0",
   "dependencies": {
     "download": "^3.3.0",

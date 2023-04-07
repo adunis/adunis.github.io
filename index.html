@@ -9,137 +9,46 @@
 
 
 <body>
-<div id="card-grid"> </div>
 
-<div id="character-card-template" style="display:none">
-    <div class="card">
-        <div class="card-header character-header">
-            <div class="left-crystals">
-                <div class="crystals-label-left">Requires</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.requires}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.requires}}
-                </div>
-            </div>
-            <div class="title">{{name}}</div>
-            <div class="right-crystals">
-                <div class="crystals-label-right">Provides</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.provides}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.provides}}
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="card-stats">
-                <div class="card-stat">
-                    <div class="card-stat-label">HP</div>
-                    <div class="card-stat-value">{{stats.hp}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">MP</div>
-                    <div class="card-stat-value">{{stats.mp}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">SP</div>
-                    <div class="card-stat-value">{{stats.sp}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">HD</div>
-                    <div class="card-stat-value">{{stats.hd}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">MD</div>
-                    <div class="card-stat-value">{{stats.md}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">SD</div>
-                    <div class="card-stat-value">{{stats.sd}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">Type</div>
-                    <div class="card-stat-value">{{type}}</div>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">
-            {{{description}}}
-        </div>
-    </div>
+
+<div id="menu">
+    <ul>
+        <a id="btn-Convert-Html2Image" href="#">Convert to JPGs</a>
+        <a id="load-characters" href="#">Load Handful of Heroes Characters</a>
+        <a id="load-features" href="#">Load Handful of Heroes Features, Trainings, Backgrounds</a>
+        <a id="load-items" href="#">Load Handful of Heroes Items (WIP)</a>
+        <a id="load-dnd-characters" href="#">Load D&D 5e Characters (WIP)</a>
+        <a id="load-dnd-items" href="#">Load D&D 5e Items (WIP)</a>
+        <a id="load-dnd-monsters" href="#">Load D&D 5e Monsters (WIP)</a>
+        <a id="load--json" href="#">Load JSON (WIP)</a>
+        <a id="export-json" href="#">Export loaded JSON (WIP)</a>
+
+    </ul>
 </div>
 
-<div id="creature-card-template" style="display:none">
-    <div class="card">
-        <div class="card-header character-header">
-            <div class="left-crystals">
-                <div class="crystals-label-left">Wants</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.requires}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.requires}}
-                </div>
-            </div>
-            <div class="title">{{name}}</div>
-            <div class="right-crystals">
-                <div class="crystals-label-right">Abilities</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.provides}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.provides}}
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="card-stats">
-                <div class="card-stat">
-                    <div class="card-stat-label">HP</div>
-                    <div class="card-stat-value">{{stats.hp}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">MP</div>
-                    <div class="card-stat-value">{{stats.mp}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">SP</div>
-                    <div class="card-stat-value">{{stats.sp}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">HD</div>
-                    <div class="card-stat-value">{{stats.hd}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">MD</div>
-                    <div class="card-stat-value">{{stats.md}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">SD</div>
-                    <div class="card-stat-value">{{stats.sd}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">Type</div>
-                    <div class="card-stat-value type">{{type}}</div>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">
-            {{{description}}}
-        </div>
-    </div>
+<br/>
+<div id="burger-menu">
+    <span></span>
 </div>
+<br>
+<div id="previewImg">
+</div>
+<br>
 
-<div id="rule-card-template" style="display:none">
+<div><h3>Loaded Cards:</h3></div>
+<div id="card-grid">
+ </div>
+
+<div id="card-template" style="display:none">
     <div class="card">
-        <div class="card-header character-header">
+        <div class="card-header character-header" style="background-image: url({{banner_image}}{{^banner_image}}https://i.ytimg.com/vi/TNMOlAGvQZc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCcgKyh_MA8=&rs=AOn4CLBisMbV1nalAt_d2wtPO4wjmmvl5Q{{/banner_image}})">
             <div class="left-crystals">
-                <div class="crystals-label-left"></div>
+                <div class="crystals-label-left">{{left_label}}{{^banner_image}}Requires{{/banner_image}}</div>
                 <div class="crystals-container">
                     <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
+                    {{#left}}
+                    <div class="card-stat-label">{{.}}</div>
+                    {{/left}}
                     {{#crystals.requires}}
                     <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
                     {{/crystals.requires}}
@@ -147,9 +56,12 @@
             </div>
             <div class="title">{{name}}</div>
             <div class="right-crystals">
-                <div class="crystals-label-right"></div>
+                <div class="crystals-label-right">{{right_label}}{{^banner_image}}Provides{{/banner_image}}</div>
                 <div class="crystals-container">
                     <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
+                    {{#right}}
+                    <div class="card-stat-label">{{.}}</div>
+                    {{/right}}
                     {{#crystals.provides}}
                     <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
                     {{/crystals.provides}}
@@ -158,8 +70,14 @@
         </div>
         <div class="card-footer">
             <div class="card-stats">
+                {{#stats}}
                 <div class="card-stat">
-                    <div class="card-stat-label">Type</div>
+                <div class="card-stat-label">{{stat_name}}</div>
+                <div class="card-stat-value">{{stat_value}}</div>
+                </div>
+                {{/stats}}
+                <div class="card-stat">
+                    <div class="card-stat-label">{{type_label}}{{^type_label}}Type{{/type_label}}</div>
                     <div class="card-stat-value">{{type}}</div>
                 </div>
             </div>
@@ -171,98 +89,6 @@
 </div>
 
 
-<div id="item-card-template" style="display:none">
-    <div class="card">
-        <div class="card-header item-header">
-            <div class="left-crystals">
-                <div class="crystals-label-right">Requires</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.requires}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.requires}}
-                </div>
-            </div>
-            <div class="title">{{name}}</div>
-            <div class="right-crystals">
-                <div class="crystals-label-left">Provides</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.provides}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.provides}}
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="card-stats">
-                <div class="card-stat">
-                    <div class="card-stat-label">Price</div>
-                    <div class="card-stat-value">{{price}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">Weight</div>
-                    <div class="card-stat-value">{{weight}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">Type</div>
-                    <div class="card-stat-value">
-                        {{type}}
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">
-            {{{description}}}
-        </div>
-    </div>
-</div>
-
-
-<div id="feature-card-template" style="display:none">
-    <div class="card">
-        <div class="card-header">
-            <div class="left-crystals">
-                <div class="crystals-label-left">Requires</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.requires}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.requires}}
-                </div>
-            </div>
-            <div class="title">{{name}}</div>
-            <div class="right-crystals">
-                <div class="crystals-label-right">Provides</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
-                    {{#crystals.provides}}
-                    <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
-                    {{/crystals.provides}}
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="card-stats">
-                <div class="card-stat">
-                    <div class="card-stat-label">Price</div>
-                    <div class="card-stat-value">{{price}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">Cost</div>
-                    <div class="card-stat-value">{{cost}}</div>
-                </div>
-                <div class="card-stat">
-                    <div class="card-stat-label">Type</div>
-                    <div class="card-stat-value">{{type}}</div>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">
-            {{{description}}}
-        </div>
-    </div>
-</div>
 </body>
 </html>
 

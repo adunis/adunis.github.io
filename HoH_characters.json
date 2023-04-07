@@ -1,19 +1,37 @@
 [{
-	"name": "Goblin",
+	"name": "Blacksmith",
 	"crystals": {
 	  "requires":
 		[] ,
-	  "provides": ["soldier"
+	  "provides": ["crafter"
 				 ]
 	},
-	"stats": {
-	  "hp": 10,
-	  "mp": 5,
-	  "sp": 10,
-	  "hd": "1d6",
-	  "md":"1d4",
-	  "sd": "1d4"
-	},
+	"stats": [
+		{
+			"stat_name": "hp",
+			"stat_value": 8
+		},
+		{
+			"stat_name": "mp",
+			"stat_value": 8
+		},
+		{
+			"stat_name": "sp",
+			"stat_value": 8
+		},
+		{
+			"stat_name": "hd",
+			"stat_value": 8
+		},
+		{
+			"stat_name": "mp",
+			"stat_value": 8
+		},
+		{
+			"stat_name": "sd",
+			"stat_value": 8
+		}
+	],
 	"type": "character",
 	"description": "<p>When you spend time working in your forge, choose one item to create and roll+Int. On a 10+, you successfully create the item to the best of your ability. Choose two options from the list below. On a 7-9, you successfully create the item, but choose one:</p><ul><li>The item is flawed in some way (the GM will tell you how)</li><li>The creation takes longer than expected</li><li>The creation requires rare or expensive materials</li></ul><p>On a miss, you fail to create the item and waste your materials.</p><p>Options:</p><ul><li>The item is of exceptional quality and gains a +1 bonus to damage or usefulness</li><li>The item has an interesting design or unique feature that sets it apart from other similar items</li><li>The item is created quickly and efficiently, taking half the expected time</li><li>The item is created using minimal materials, reducing the cost by half</li></ul></p>"
   },
@@ -23,14 +41,32 @@
 	  "requires": [],
 	  "provides": ["paladin"]
 	  },
-	  "stats": {
-	  "hp": 8,
-	  "mp": 2,
-	  "sp": 8,
-	  "hd": "1d8+1",
-	  "md":"1d4",
-	  "sd": "1d4"
-	  },
+	  "stats": [
+		  {
+			  "stat_name": "hp",
+			  "stat_value": 8
+		  },
+		  {
+			  "stat_name": "mp",
+			  "stat_value": 8
+		  },
+		  {
+			  "stat_name": "sp",
+			  "stat_value": 8
+		  },
+		  {
+			  "stat_name": "hd",
+			  "stat_value": 8
+		  },
+		  {
+			  "stat_name": "mp",
+			  "stat_value": 8
+		  },
+		  {
+			  "stat_name": "sd",
+			  "stat_value": 8
+		  }
+	  ],
 	  "type": "character",
 	  "description": "<p>As a squire, you are trained in the ways of chivalry and battle. You have the ability to assist a knight in combat or formal events. You gain the following abilities:</p><ul><li>+1 forward to your Protect move when assisting a knight</li><li>You may use your knowledge of heraldry to identify the banners of noble houses and important persons</li><li>If you have higher Charm than the knight you are assisting, you may take charge of a situation in their absence</li></ul>"
 	  },
@@ -40,14 +76,32 @@
 	  "requires": [],
 	  "provides": ["wizard"]
 	  },
-	  "stats": {
-	  "hp": 6,
-	  "mp": 10,
-	  "sp": 6,
-	  "hd": "1d4+1",
-	  "md":"1d8",
-	  "sd": "1d4"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>As an apprentice, you are learning the arcane arts from your master. You gain the following abilities:</p><ul><li>You are able to cast spells from your master's grimoire, if you have the MP to do so</li><li>You have knowledge of alchemy and can identify magical ingredients and substances</li><li>If you spend time studying, you can roll+Int to gain insight on a particular magical subject. On a 10+, you gain useful information. On a 7-9, you gain some information but also attract unwanted attention in the process</li></ul>"
 	  },
@@ -57,14 +111,32 @@
 	  "requires": [],
 	  "provides": ["rogue"]
 	  },
-	  "stats": {
-	  "hp": 5,
-	  "mp": 5,
-	  "sp": 8,
-	  "hd": "1d6+1",
-	  "md":"1d6",
-	  "sd": "1d6"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>As a street criminal, you know how to make your way in the world by any means necessary. You gain the following abilities:</p><ul><li>You gain +1 forward when using the Move Silently or Pick Locks moves</li><li>You have knowledge of the criminal underworld and can gather information or contacts within it</li><li>If you spend time casing a location, you can roll+Wis to learn about its security measures. On a 10+, you gain useful information. On a 7-9, you gain some information but it comes with a complication</li></ul>"
 	  },
@@ -74,14 +146,32 @@
 	  "requires": [],
 	  "provides": ["ranger"]
 	  },
-	  "stats": {
-	  "hp": 8,
-	  "mp": 5,
-	  "sp": 8,
-	  "hd": "1d8",
-	  "md":"1d6",
-	  "sd": "1d4"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>As a village hunter, you are skilled in tracking and hunting game in the nearby forests and fields. You gain the following abilities:</p><ul><li>You gain +1 forward when using the Track or Hunt moves</li><li>You have knowledge of the local flora and fauna, and can identify useful plants or animals</li><li>If you spend time studying a particular area, you can roll+Wis to learn about its wildlife and terrain. On a 10+, you gain useful information. On a 7-9, you gain some information but also attract unwanted attention in the process</li></ul>"
 	  },
@@ -91,14 +181,32 @@
 	  "requires": [],
 	  "provides": ["druid"]
 	  },
-	  "stats": {
-	  "hp": 6,
-	  "mp": 8,
-	  "sp": 6,
-	  "hd": "1d6",
-	  "md":"1d6",
-	  "sd": "1d8"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>As a groove initiate, you are part of a musical and spiritual tradition. You gain the following abilities:</p><ul><li>You gain +1 forward to your Charisma-based moves when performing music or dance</li><li>You have knowledge of various musical instruments and styles, and can identify their origins or influences</li><li>If you spend time practicing your music or meditation, you can roll+Wis to gain insights and inspiration. On a 10+, you gain useful information. On a 7-9, you gain some information but also expose yourself to a distracting or dangerous situation</li></ul>"
 	  },
@@ -108,14 +216,32 @@
 	  "requires": [],
 	  "provides": ["priest"]
 	  },
-	  "stats": {
-	  "hp": 8,
-	  "mp": 8,
-	  "sp": 6,
-	  "hd": "1d8",
-	  "md":"1d6",
-	  "sd": "1d4"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "class",
 	  "description": "<p>As a deacon, you are a representative of your faith and its teachings. You gain the following abilities:</p><ul><li>You gain +1 forward to your Wisdom-based moves when dealing with matters of faith or morality</li><li>You have knowledge of religious texts and symbols, and can identify their meanings or applications</li><li>If you spend time studying your faith or performing religious rituals, you can roll+Wis to gain divine insight or guidance. On a 10+, you gain useful information or a blessing. On a 7-9, you gain some information or a minor boon, but also expose yourself to temptation or danger</li></ul>"
 	  },
@@ -125,14 +251,32 @@
 	  "requires": [],
 	  "provides": ["ranger"]
 	  },
-	  "stats": {
-	  "hp": 10,
-	  "mp": 2,
-	  "sp": 8,
-	  "hd": "1d10",
-	  "md":"1d4",
-	  "sd": "1d4"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>You are a farmer, skilled in working the land to grow crops and raise livestock. You have the following abilities:</p><ul><li>You have knowledge of agriculture and can identify useful plants or animals</li><li>You are able to repair simple tools and equipment, such as plows or fences</li><li>If you spend time tending to your fields or livestock, you can roll+Wis to gain insight or productivity. On a 10+, you gain useful information or a bountiful harvest. On a 7-9, you gain some information or a minor boon, but also face a setback or complication</li></ul>"
 	  },
@@ -142,14 +286,32 @@
 	  "requires": [],
 	  "provides": ["druid"]
 	  },
-	  "stats": {
-	  "hp": 8,
-	  "mp": 2,
-	  "sp": 10,
-	  "hd": "1d8",
-	  "md":"1d4",
-	  "sd": "1d6"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>You are a fisherman, skilled in catching and preparing fish for consumption. You have the following abilities:</p><ul><li>You have knowledge of local fishing spots and techniques, and can identify useful bait or tackle</li><li>You are able to repair or maintain small boats or fishing gear</li><li>If you spend time fishing or studying the sea, you can roll+Wis to gain insight or a catch. On a 10+, you gain useful information or a bountiful catch. On a 7-9, you gain some information or a minor boon, but also face a hazard or setback</li></ul>"
 	  },
@@ -159,15 +321,383 @@
 	  "requires": [],
 	  "provides": ["bard"]
 	  },
-	  "stats": {
-	  "hp": 6,
-	  "mp": 8,
-	  "sp": 6,
-	  "hd": "1d6",
-	  "md":"1d6",
-	  "sd": "1d6"
-	  },
+		  "stats": [
+			  {
+				  "stat_name": "hp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "hd",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "mp",
+				  "stat_value": 8
+			  },
+			  {
+				  "stat_name": "sd",
+				  "stat_value": 8
+			  }
+		  ],
 	  "type": "character",
 	  "description": "<p>You are a minstrel, skilled in performing music and storytelling for entertainment. You have the following abilities:</p><ul><li>You have knowledge of various musical instruments and styles, and can identify their cultural or historical significance</li><li>You are able to compose or improvise songs or poems on a variety of topics</li><li>If you spend time performing or studying the arts, you can roll+Cha to gain inspiration or insight. On a 10+, you gain useful information or a favorable audience. On a 7-9, you gain some information or attention, but also offend or alienate someone in the process</li></ul>"
-	  }
-	  ]
+	  },
+	{
+		"name": "Agitator",
+		"crystals": {
+			"requires": [],
+			"provides": ["bard"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>You are a master of words and persuasion. You gain the following abilities:</p><ul><li>You can use your words to rally allies to your cause. When you speak to a group, you can roll+Cha. On a 10+, they believe in your cause and act accordingly. On a 7-9, they believe but only partially, and may need further convincing</li><li>You have a wide knowledge of underhanded tactics, and can spout lore about a criminal enterprise, cult, or group of ne'er do wells</li><li>You have a talent for identifying useful information, and can discern realities about a person or situation by analyzing their body language and tone of voice</li></ul>"
+	},
+	{
+		"name": "Alchemist's Apprentice",
+		"crystals": {
+			"requires": [],
+			"provides": ["crafter"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>You are a student of alchemy, with an innate understanding of the properties and potential of matter. You gain the following abilities:</p><ul><li>You can transmute basic materials into more useful forms. When presented with raw materials, you can roll+Int to see if you can successfully transmute them. On a 10+, you can transmute the material into a useful form. On a 7-9, you can transmute the material, but with some unforeseen side effect</li><li>You are able to craft and brew potions and elixirs. You can prepare up to two vials of potion or elixir per day. When consumed, these brews have a magical effect as determined by the GM</li><li>You are attuned to the magical properties of metals and gems, and can identify the properties and potential uses of precious materials with ease</li></ul>"
+	},
+	{
+		"name": "Artisan's Apprentice",
+		"crystals": {
+			"requires": [],
+			"provides": ["crafter"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>You possess a natural skill for craftsmanship and artistry, and are honing your skills under the tutelage of a master artisan. You gain the following abilities:</p><ul><li>You can create minor items and objects quickly and efficiently, using your knowledge of form and function. When presented with raw materials, you can craft a functional item with a successful roll+Wis. On a 10+, you craft a useful item. On a 7-9, the item has some flaw or weakness</li><li>You have an eye for detail and beauty, and can spout lore about art, architecture, and design</li><li>You have a natural ability to improvise and adapt, and gain a +1 to Defy Danger rolls when using your surroundings to your advantage</li></ul>"
+	},
+	{
+		"name": "Bawd",
+		"crystals": {
+			"requires": [],
+			"provides": ["bard"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>You are a master of seduction and manipulation, weaving lies and half-truths to get what you want. You gain the following abilities:</p><ul><li>You can read people easily, and can spout lore about their motivations, desires, and weaknesses</li><li>You have a silver tongue, and can roll+Cha to convince someone to do something they might not otherwise do. On a 10+, they do it without hesitation. On a 7-9, they need some convincing or a promise or bargain of some kind</li><li>You know how to work a crowd, and can roll+Cha to sway a group of people to your side. On a 10+, they all believe in your cause. On a 7-9, they believe but some may need further convincing or be convinced by an opposing voice</li></ul>"
+	},
+	{
+		"name": "Beggar",
+		"crystals": {
+			"requires": [],
+			"provides": ["rogue"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>You are a survivor, living by your wits and your ability to make do with whatever scraps come your way. You gain the following abilities:</p><ul><li>You know how to survive on the streets, and can spout lore about the criminal underworld, local gangs, and other denizens of the urban jungle</li><li>You know how to be unseen and unheard, and gain a +1 to Defy Danger when staying hidden or avoiding notice</li><li>You know how to scavenge for what you need, and can roll+Wis to search an area for useful supplies or scraps. On a 10+, you find something useful. On a 7-9, you find something, but it's not entirely clear how it might be useful</li></ul>"
+	},
+	{
+		"name": "Boatman",
+		"crystals": {
+			"requires": [],
+			"provides": ["ranger"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>You are a master of the water, navigating the rivers and seas with ease. You gain the following abilities:</p><ul><li>You are an expert in navigating waterways, and can spout lore about the tides, currents, and geography of any body of water you encounter</li><li>You have a keen eye for spotting danger, and gain a +1 to Discern Realities when searching for hidden enemies or hazards in aquatic environments</li><li>You are a skilled oarsman, and can roll+Str to power a boat or rowboat with great speed</li></ul>"
+	},
+	{
+		"name": "Bodyguard",
+		"crystals": {
+			"requires": [],
+			"provides": ["soldier"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>As a bodyguard, your job is to protect your employer at all costs. You gain the following abilities:</p><ul><li>You have a +2 bonus to Defy Danger when protecting someone you are paid to protect</li><li>You have an extra +1 armor when standing in defense of someone else</li><li>You can spend a hold to take the hit for someone you are protecting, even if they are not in immediate danger</li></ul>"
+	},
+	{
+		"name": "Bounty Hunter",
+		"crystals": {
+			"requires": [],
+			"provides": ["rogue"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>As a bounty hunter, you make your living by capturing fugitives and bringing them to justice. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when fighting against someone with a price on their head</li><li>You have a +1 bonus to Discern Realities when investigating a fugitive's whereabouts</li><li>You have a list of targets you are currently pursuing, each with a price on their head. When you take one of these targets captive, you gain the reward money and can mark them off your list</li></ul>"
+	},
+	{
+		"name": "Coachman",
+		"crystals": {
+			"requires": [],
+			"provides": ["ranger"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>As a coachman, you specialize in transporting people and goods across long distances. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when navigating unfamiliar terrain</li><li>You have a pack animal that can carry up to 4 weight of gear</li><li>You have a list of important NPCs you have transported before, each with their own story. When you encounter one of these NPCs again, you can mark their name off your list and have an easier time convincing them to help you</li></ul>"
+	},
+	{
+		"name": "Druid",
+		"crystals": {
+			"requires": [],
+			"provides": ["druid"]
+		},
+		"stats": [
+			{
+				"stat_name": "hp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "hd",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "mp",
+				"stat_value": 8
+			},
+			{
+				"stat_name": "sd",
+				"stat_value": 8
+			}
+		],
+		"type": "character",
+		"description": "<p>As a druid, you have a deep connection to the natural world and the spirits that reside within it. You gain the following abilities:</p><ul><li>You can shape shift into any animal that you have seen before. Your shape shifting is limited by the environment and the size of the animal</li><li>You can communicate with animals and plants, gaining valuable information about your environment</li><li>You have a deep spiritual connection to the land and can use your magic to heal it when it is harmed</li></ul>"
+	}
+	]

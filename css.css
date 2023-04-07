@@ -2,7 +2,7 @@
 
 #card-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
 }
 
@@ -24,19 +24,38 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
-    background: no-repeat url(https://i.pinimg.com/474x/0c/e5/6d/0ce56ddec3eb469a516d68adc4354b63.jpg) 0 0;
-    background-repeat: repeat;
+    background: #ffdf7f url(https://i.pinimg.com/474x/0c/e5/6d/0ce56ddec3eb469a516d68adc4354b63.jpg) repeat 0 0;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .card-header .title {
+    margin: auto;
+    height:25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Lora', serif;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
-    padding:15px;
+    padding:10px;
     color: #fff;
     text-shadow:1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,
             0 0 80px #000;
+}
+
+.title{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .crystals-label-right {
@@ -45,7 +64,7 @@
     font-weight: bold;
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .crystals-label-left {
@@ -54,7 +73,7 @@
     font-weight: bold;
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .left-crystals {
     width:100px;
@@ -71,7 +90,7 @@
     display: inline-block;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .card:before {
@@ -114,6 +133,10 @@
     background: no-repeat url(https://media.istockphoto.com/id/478061308/photo/detail-of-brass-door-at-royal-palace-in-fez-morocco.jpg?s=612x612&w=0&k=20&c=WPmC7gGCnc4X3aUb8iXTwhcC4CfLBt32WaCddw_ee7A=) 0 0;
     background-repeat: repeat;
     backdrop-filter: blur(8px); // This be the blur
+}
+
+table {
+    font-size:8px;
 }
 
 .item-header {
@@ -283,6 +306,18 @@
             0 0 30px #ff0084;
 }
 
+.crystal.crafter {
+    color: #ffee00;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #ffee00, 0 0 10px #ffee00, 0 0 10px #ffee00, 0 0 10px #ffee00,
+            0 0 30px #ffee00, 0 0 30px #ffee00, 0 0 30px #ffee00, 0 0 30px #ffee00,
+            0 0 30px #ffee00;
+
+}
+
+
 .crystal.druid {
     color: #004d13;
     display:inherit;
@@ -312,7 +347,6 @@
 .card-footer {
     border-top: 5px solid #cc9900;
     position: relative;
-    z-index: 1;
 }
 
 .card-stats {
@@ -329,7 +363,7 @@
 }
 
 .card-stat-label {
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -338,7 +372,7 @@
 }
 
 .card-stat-value {
-    font-size: 13px;
+    font-size: 10px;
     color: #fff;
     font-weight: bold;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -346,4 +380,94 @@
 
 .type {
     font-size:8px;
+}
+
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index:2;
+}
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #000000;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+}
+#burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+#burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 16px;
+}
+#burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+}
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+}
+#burger-menu.close span:after {
+    top: 0px;
+    left:0;
+    transform: rotate(90deg);
+    opacity:0;
+    width:0;
+}
+
+#menu{
+    z-index:1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#menu.overlay{
+    visibility: visible;
+    opacity: 1;
+    padding-top:100px;
+    background:rgba(0,0,0,0.5);
+}
+
+#menu li{
+    list-style:none;
+}
+#menu a{
+    color: #ffffff;
+    display:block;
+    font-size: 32px;
+    margin-bottom:30px;
+    text-decoration:none;
 }
