@@ -3,7 +3,7 @@
 	"crystals": {
 	  "requires":
 		[] ,
-	  "provides": ["crafter"
+	  "provides": ["gold"
 				 ]
 	},
 	"stats": [
@@ -39,7 +39,7 @@
 	  "name": "Squire",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["paladin"]
+	  "provides": ["blue"]
 	  },
 	  "stats": [
 		  {
@@ -74,7 +74,7 @@
 	  "name": "Apprentice",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["wizard"]
+	  "provides": ["cerulean"]
 	  },
 		  "stats": [
 			  {
@@ -109,7 +109,7 @@
 	  "name": "Street Criminal",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["rogue"]
+	  "provides": ["black"]
 	  },
 		  "stats": [
 			  {
@@ -144,7 +144,7 @@
 	  "name": "Village Hunter",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["ranger"]
+	  "provides": ["green"]
 	  },
 		  "stats": [
 			  {
@@ -179,7 +179,7 @@
 	  "name": "Initiate",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["druid"]
+	  "provides": ["emerald"]
 	  },
 		  "stats": [
 			  {
@@ -249,7 +249,7 @@
 	  "name": "Farmer",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["ranger"]
+	  "provides": ["green"]
 	  },
 		  "stats": [
 			  {
@@ -284,7 +284,7 @@
 	  "name": "Fisherman",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["druid"]
+	  "provides": ["emerald"]
 	  },
 		  "stats": [
 			  {
@@ -319,7 +319,7 @@
 	  "name": "Minstrel",
 	  "crystals": {
 	  "requires": [],
-	  "provides": ["bard"]
+	  "provides": ["purple"]
 	  },
 		  "stats": [
 			  {
@@ -354,7 +354,7 @@
 		"name": "Agitator",
 		"crystals": {
 			"requires": [],
-			"provides": ["bard"]
+			"provides": ["purple"]
 		},
 		"stats": [
 			{
@@ -389,7 +389,7 @@
 		"name": "Alchemist's Apprentice",
 		"crystals": {
 			"requires": [],
-			"provides": ["crafter"]
+			"provides": ["gold"]
 		},
 		"stats": [
 			{
@@ -424,7 +424,7 @@
 		"name": "Artisan's Apprentice",
 		"crystals": {
 			"requires": [],
-			"provides": ["crafter"]
+			"provides": ["gold"]
 		},
 		"stats": [
 			{
@@ -459,7 +459,7 @@
 		"name": "Bawd",
 		"crystals": {
 			"requires": [],
-			"provides": ["bard"]
+			"provides": ["purple"]
 		},
 		"stats": [
 			{
@@ -494,7 +494,7 @@
 		"name": "Beggar",
 		"crystals": {
 			"requires": [],
-			"provides": ["rogue"]
+			"provides": ["black"]
 		},
 		"stats": [
 			{
@@ -529,7 +529,7 @@
 		"name": "Boatman",
 		"crystals": {
 			"requires": [],
-			"provides": ["ranger"]
+			"provides": ["green"]
 		},
 		"stats": [
 			{
@@ -564,7 +564,7 @@
 		"name": "Bodyguard",
 		"crystals": {
 			"requires": [],
-			"provides": ["soldier"]
+			"provides": ["red"]
 		},
 		"stats": [
 			{
@@ -599,7 +599,7 @@
 		"name": "Bounty Hunter",
 		"crystals": {
 			"requires": [],
-			"provides": ["rogue"]
+			"provides": ["black"]
 		},
 		"stats": [
 			{
@@ -634,7 +634,7 @@
 		"name": "Coachman",
 		"crystals": {
 			"requires": [],
-			"provides": ["ranger"]
+			"provides": ["green"]
 		},
 		"stats": [
 			{
@@ -664,40 +664,5 @@
 		],
 		"type": "character",
 		"description": "<p>As a coachman, you specialize in transporting people and goods across long distances. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when navigating unfamiliar terrain</li><li>You have a pack animal that can carry up to 4 weight of gear</li><li>You have a list of important NPCs you have transported before, each with their own story. When you encounter one of these NPCs again, you can mark their name off your list and have an easier time convincing them to help you</li></ul>"
-	},
-	{
-		"name": "Druid",
-		"crystals": {
-			"requires": [],
-			"provides": ["druid"]
-		},
-		"stats": [
-			{
-				"stat_name": "hp",
-				"stat_value": 8
-			},
-			{
-				"stat_name": "mp",
-				"stat_value": 8
-			},
-			{
-				"stat_name": "sp",
-				"stat_value": 8
-			},
-			{
-				"stat_name": "hd",
-				"stat_value": 8
-			},
-			{
-				"stat_name": "mp",
-				"stat_value": 8
-			},
-			{
-				"stat_name": "sd",
-				"stat_value": 8
-			}
-		],
-		"type": "character",
-		"description": "<p>As a druid, you have a deep connection to the natural world and the spirits that reside within it. You gain the following abilities:</p><ul><li>You can shape shift into any animal that you have seen before. Your shape shifting is limited by the environment and the size of the animal</li><li>You can communicate with animals and plants, gaining valuable information about your environment</li><li>You have a deep spiritual connection to the land and can use your magic to heal it when it is harmed</li></ul>"
 	}
 	]

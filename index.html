@@ -9,33 +9,22 @@
 
 
 <body>
-
-
-<div id="menu">
-    <ul>
-        <a id="btn-Convert-Html2Image" href="#">Convert to JPGs</a>
-        <a id="load-characters" href="#">Load Handful of Heroes Characters</a>
-        <a id="load-features" href="#">Load Handful of Heroes Features, Trainings, Backgrounds</a>
-        <a id="load-items" href="#">Load Handful of Heroes Items (WIP)</a>
-        <a id="load-dnd-characters" href="#">Load D&D 5e Characters (WIP)</a>
-        <a id="load-dnd-items" href="#">Load D&D 5e Items (WIP)</a>
-        <a id="load-dnd-monsters" href="#">Load D&D 5e Monsters (WIP)</a>
-        <a id="load--json" href="#">Load JSON (WIP)</a>
-        <a id="export-json" href="#">Export loaded JSON (WIP)</a>
-
-    </ul>
-</div>
-
-<br/>
-<div id="burger-menu">
+<div class="search-container">
+<div class="action-bar-container"><div id="burger-menu">
     <span></span>
+</div> <input type="text" id="my-input" placeholder="Search JSON..."></div>
+    <div id="pagination" class="pagination"></div>
 </div>
+
+<div id="tooltip">vdvddv</div>
+
 <br>
 <div id="previewImg">
+</div>    <div id="selection-info" class="selection-info">
+    <span id="selected-count">0</span> selected cards,
+    <span id="deck-status">Deck not ready</span>
+    <button id="save-deck-button" style="display:none;">Save Deck</button>
 </div>
-<br>
-
-<div><h3>Loaded Cards:</h3></div>
 <div id="card-grid">
  </div>
 
@@ -88,7 +77,14 @@
     </div>
 </div>
 
+<div id="menu">
+    <ul>
+        <a id="btn-Convert-Html2Image" href="#">Convert to JPGs</a>
 
+        <a id="load--json" href="#">Load JSON (WIP)</a>
+        <a id="export-json" href="#">Export loaded JSON (WIP)</a>
+    </ul>
+</div>
 </body>
 </html>
 

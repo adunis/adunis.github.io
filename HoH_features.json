@@ -1,8 +1,11 @@
-[{    "name": "Fist of Ares",    "crystals": {      "requires": [],
-  "provides": ["priest","priest","barbarian"]
-},
+[{
+  "name": "What Are You Waiting For?",
+  "crystals": {
+    "provides": ["orange"],
+    "provides": []
+  },
   "type": "feature",
-  "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You have studied the art of war and the teachings of Ares, the god of war. When you spend time reflecting on these teachings, you can ask the GM one question about a current situation or an upcoming battle. The GM will answer truthfully, but be warned that the answer may not always be what you want to hear.</p>",
+  "description": "<p>When you cry out a challenge to your enemies, roll+CON. On a 10+, they treat you as the most obvious threat to be dealt with and ignore your companions, and you take +2 damage Ongoing against them. On a 7-9, only a few (the weakest or most foolhardy among them) fall prey to your taunting.</p>",
   "stats": [
     {
       "stat_name": "price",
@@ -15,10 +18,507 @@
   ]
 },
   {
+    "name": "The Upper Hand",
+    "crystals": {
+      "provides": ["orange"],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You take +1 to Last Breath rolls.</p><p>When you roll a 7-9 on a Last Breath roll, you make an offer to Death for your life, instead of the other way around. If Death accepts, you will be returned to life. If not, you die.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },{
+  "name": "Appetite for Fame and Glory",
+  "crystals": {
+    "requires": [],
+    "provides": ["orange", "orange"]
+  },
+  "type": "feature",
+  "description": "<p>You hunger for fame and glory, seeking to make a name for yourself and leave a lasting legacy. When you roll for a move while pursuing this appetite, roll 3d6 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},{
+  "name": "Appetite for Riches and Property",
+  "crystals": {
+    "requires": [],
+    "provides": ["orange", "orange"]
+  },
+  "type": "feature",
+  "description": "<p>Your insatiable desire for wealth and property drives you to take risks and make bold moves. When you roll for a move while pursuing this appetite, roll 3d6 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},{
+  "name": "Appetite for Destruction",
+  "crystals": {
+    "requires": [],
+    "provides": ["orange", "orange"]
+  },
+  "type": "feature",
+  "description": "<p>When you have an insatiable appetite for destruction, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of destruction.</p>",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},
+  {
+    "name": "Appetites of Power Over Others",
+    "crystals": {
+      "requires": [],
+      "provides": ["orange", "orange"]
+    },
+    "type": "feature",
+    "description": "<p>When you have an insatiable appetite for power over others, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of power.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Appetites of Mortal Pleasures",
+    "crystals": {
+      "requires": [],
+      "provides": ["orange", "orange"]
+    },
+    "type": "feature",
+    "description": "<p>When you have an insatiable appetite for mortal pleasures, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of pleasure.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Appetites of  Conquest",
+    "crystals": {
+      "requires": [],
+      "provides": ["orange", "orange"]
+    },
+    "type": "feature",
+    "description": "<p>When you have an insatiable appetite for conquest, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of conquest.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },{
+  "name": "Tribe Warrior",
+  "crystals": {
+    "requires": [],
+    "provides": ["orange"]
+  },
+  "type": "feature",
+  "description": "<p>Your tribe has honed your combat skills to perfection. Wul><li>Battle Cry: when you use your voice to bolster your allies or intimidate your enemies, roll+Cha. On a 10+, both. On a 7-9, choose one:</li><ul><li>Your allies rally: all allies who hear you recover 1d6 HP.</li><li>Your enemies falter: all enemies who hear you take -1d4 damage.</li></ul><li>War Paint: you can prepare your body for battle with tribal paint. Choose a benefit below, and describe the paint used to achieve this effect:</li><ul><li>+1d4 damage when attacking with melee weapons</li><li>+1 to all rolls to discern realities when tracking or studying a foe</li><li>+1 to Defy Danger against traps or hazards in natural environments</li><li>+1 to Discern Realities and Spout Lore when dealing with spirits or the supernatural</li></ul></ul>",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},{
+  "name": "The Cursed",
+  "crystals": {
+    "requires": [],
+    "provides": ["orange"]
+  },
+  "type": "feature",
+  "description": "<p>You are cursed by an ancient, powerful entity. The curse is both a blessing and a curse, granting you incredible power while slowly consuming you from within.</p><p>When you take this move, roll+CHA. On a 10+, the GM will describe the nature of the curse and its benefits. You may also choose one of the following:</p><ul><li>Gain +1 ongoing to all rolls related to the curse.</li><li>Gain a new move related to the curse.</li></ul><p>On a 7-9, the GM will describe the curse and its drawbacks. You must choose one of the following:</p><ul><li>Take -1 ongoing to all rolls not related to the curse.</li><li>Lose access to a move unrelated to the curse.</li></ul><p>Regardless of the result, the curse will slowly consume you. Every time you use a move related to the curse, mark corruption. When you reach 5 corruption, the curse will fully consume you and you will become an NPC controlled by the GM.</p>",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},
+  {
+  "name": "Werewolf",
+  "crystals": {
+    "requires": [],
+    "provides": ["orange"]
+  },
+  "type": "feature",
+  "description": "<p>You are a cursed creature, bound to change form under the light of the full moon. In human form, you are a skilled hunter and tracker, and gain +1 to Discern Realities when tracking prey. In werewolf form, you gain the following moves:</p><ul><li><strong>Rending Claws:</strong> when you deal damage in melee, you can choose to inflict an additional d4 damage.</li><li><strong>Fearsome Howl:</strong> when you howl, all enemies within earshot must defy danger or become frightened.</li><li><strong>Keen Senses:</strong> your senses are enhanced in werewolf form, giving you +1 to Discern Realities and allowing you to see in complete darkness.</li></ul><p>However, with great power comes great risk. Each time you change into werewolf form, you must roll+Con. On a 10+, you retain control of your actions. On a 7-9, the GM will give you a choice: either you can retain control but mark a point of corruption, or you can lose control and the GM will take over your actions for the duration of the transformation. On a miss, you lose control and the GM takes over your actions indefinitely.</p>",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},
+  {
+    "name": "Vampire",
+    "crystals": {
+      "requires": [],
+      "provides": ["orange"]
+    },
+    "type": "feature",
+    "description": "<p>You are an undead creature, cursed to feed on the blood of the living. You gain the following moves:</p><ul><li><strong>Bloodsucker:</strong> when you deal damage in melee, you can choose to heal 1d6 damage.</li><li><strong>Hypnotic Gaze:</strong> when you meet someone's gaze, roll+Cha. On a 10+, they become transfixed and will do anything you ask (within reason). On a 7-9, they become transfixed but will ask you to do something in return.</li><li><strong>Unholy Strength:</strong> you gain +1 to Hack and Slash and Volley.</li></ul><p>However, your curse comes with great vulnerabilities. You take double damage from holy water, and can be destroyed by sunlight or a stake through the heart. Additionally, you cannot enter a dwelling without being invited.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },{
+  "name": "Evidence of Faith",
+  "crystals": {
+    "requires": ["white"],
+    "provides": []
+  },
+  "type": "feature",
+  "description": "When you see the effects of divine magic, and you can ask the GM which deity granted the spell and its effects. You take +1 Forward to act on the answers.",
+  "stats": [
+    {
+      "stat_name": "price",
+      "stat_value": 0
+    },
+    {
+      "stat_name": "cost",
+      "stat_value": ""
+    }
+  ]
+},
+  {
+    "name": "Apotheosis",
+    "crystals": {
+      "requires": ["white"],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "When you take this move and spend some time establishing a unique and potent connection to your deity, choose another option from the Ascension list. In recognition of your devotion and faith, your deity bestows this gift upon you.",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Anathema",
+    "crystals": {
+      "requires": ["white"],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "When you would deal damage to an Enemy of your deity, you also choose one of the following.\nYour attack is Brutal (you roll damage twice and take the best results).\nYour attack ignores their armour or any other defenses.\nYou suppress one of its unnatural powers.\nYou force it from its host, if any.\nWhen you strike down an Enemy of your deity, they are disintegrated, obliterated wholly by the power of your faith.",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Faithful Defender",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>Your faith in your deity is unshakeable, and it serves as your greatest protection. When you wear no armour and bear no shield, you get 2-armour.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Serenity",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You have learned to move calmly and deliberately through dangerous situations, relying on your faith to guide and protect you. When you Defy Danger, take +1 to the roll.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Heaven's Weaving",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>Your faith grants you insight into others, allowing you to make deals and broker alliances with greater success. When you Parley with or otherwise broker a deal with someone, you may ask them up to two questions from the Discern Realities list.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Holy Beacon",
+    "crystals": {
+      "requires": ["white"],
+      "provides": [
+
+      ]
+    },
+    "type": "feature",
+    "description": "<p>Your faith draws the attention of those around you, allowing you to command their attention and hold their gaze. When you draw attention to yourself by word or deed, roll+CHA. On a 7+, everyone turns and looks. On a 10+, you hold their gaze so long as you continue giving them reason to watch.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Cheat Death",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "Requires Scales of Life and Death. <p>When you have 0 HP, instead of taking your Last Breath, roll+WIS. On a 10+, you live and choose one:</p><ul><li>You discover one of Death’s dark secrets.</li><li>You have a moment with a soul of the deceased.</li><li>You manage to stay beneath Death’s notice.</li></ul><p>On a 7-9, you live, but Death takes notice and you make a terrible discovery. On a 6-, in addition to whatever the GM says, you can cheat Death no longer and you must pass through the Black Gates now and forever.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Thaumaturgy",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you petition your deity to perform a miracle that pertains to their Domains, tell the GM what you desire. Miracles are always possible, but the GM will give you 1 to 4 of the following conditions (separated by “ANDs” and “ORs”):</p><ul><li>In return you will have to ________.</li><li>You’ll need help from ________.</li><li>It will require ________.</li><li>The effect will be unfocused or flawed.</li><li>You’ll have to satiate your deity’s Demands.</li><li>Your deity will be left weakened or vulnerable.</li><li>It will attract, summon, or empower your deity’s Enemies.</li></ul><p>Miracle examples: Raising someone from the dead; restoring someone’s missing limbs, eyes, horns, etc; unravelling the assorted dangers, threats, and grim portents of a front</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Miracle Worker",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "Requires Thaumaturgy. <p>When you use Thaumaturgy to further your deity’s will, you may ignore or veto one requirement of your choice.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Cloistered Wisdom",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You possess an extensive knowledge of your deity's Domains. When you Spout Lore or Discern Realities about something pertaining to your deity's Domains, you may roll +WIS instead of +INT.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Knowledge of the Faithful",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+        },
+      "type": "feature",
+      "description": "Requires Cloistered Wisdom. <p>You have gained a deep understanding of your deity's Domains. When you use Cloistered Wisdom and roll a 6-, treat the result as a 7-9.</p>",
+      "stats": [
+        {
+          "stat_name": "price",
+          "stat_value": 0
+        },
+        {
+          "stat_name": "cost",
+          "stat_value": ""
+        }
+      ]
+    },
+  {
+    "name": "The Scales of Life and Death",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You possess knowledge of the delicate balance between life and death. You can Aid and Interfere with an ally's Last Breath roll, and your allies can Aid and Interfere with your Last Breath rolls. However, be aware that Death will gladly rope you (or your allies) into its bargains.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Fist of Ares",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "white",
+        "white",
+        "orange"
+      ]
+    },
+    "type": "feature",
+    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You have studied the art of war and the teachings of Ares, the god of war. When you spend time reflecting on these teachings, you can ask the GM one question about a current situation or an upcoming battle. The GM will answer truthfully, but be warned that the answer may not always be what you want to hear.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
     "name": "Sword of Allah",
     "crystals": {
       "requires": [],
-      "provides": ["priest","priest","soldier"]
+      "provides": [
+        "white",
+        "white",
+        "red"
+      ]
     },
     "type": "feature",
     "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your devotion to Allah and your study of the holy texts have given you deep knowledge of the faith. When you spout lore about the tenets of Islam or the teachings of the Prophet Muhammad, you can roll+Wis instead of +Int. On a 10+, the GM will give you valuable information. On a 7-9, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
@@ -37,7 +537,11 @@
     "name": "Hand of Ra",
     "crystals": {
       "requires": [],
-      "provides": ["priest","priest","druid"]
+      "provides": [
+        "white",
+        "white",
+        "emerald"
+      ]
     },
     "type": "feature",
     "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your study of the ancient Egyptian religion and your devotion to Ra, the sun god, have given you deep knowledge of the faith. When you spout lore about the religion of Ra or the power of the sun, you can roll+Int instead of +Wis. On a 10+, the GM will give you valuable information. On a 7-9, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
@@ -51,30 +555,39 @@
         "stat_value": ""
       }
     ]
-  },{
-  "name": "Priest of Christ",
-  "crystals": {
-    "requires": [],
-    "provides": ["priest","priest","priest"]
   },
-  "type": "feature",
-  "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to wear armors and to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You are a devoted priest of Christ, with extensive knowledge of religious texts and rituals. When you consult your religious knowledge to overcome an obstacle, roll+Wis. On a 10+, the GM will give you useful information or guidance. On a 7-9, the GM will also give you an option to choose from:</p><ul><li> You can choose to accept the guidance, but it comes with a complication or cost.</li><li>You can choose to reject the guidance and try to overcome the obstacle on your own, but with a penalty.</li></ul>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Priest of Christ",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "white",
+        "white",
+        "white"
+      ]
     },
-    {
-      "stat_name": "cost",
-      "stat_value": ""
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to wear armors and to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You are a devoted priest of Christ, with extensive knowledge of religious texts and rituals. When you consult your religious knowledge to overcome an obstacle, roll+Wis. On a 10+, the GM will give you useful information or guidance. On a 7-9, the GM will also give you an option to choose from:</p><ul><li> You can choose to accept the guidance, but it comes with a complication or cost.</li><li>You can choose to reject the guidance and try to overcome the obstacle on your own, but with a penalty.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
   {
     "name": "Voice of Thor",
     "crystals": {
       "requires": [],
-      "provides": ["priest","priest","barbarian"]
+      "provides": [
+        "white",
+        "white",
+        "orange"
+      ]
     },
     "type": "feature",
     "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Electricity card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Voice of Thor to have in your deck the Circle of Water, Circle of Beasts, Circle of Ice and Circle of Mind cards in your deck.</p> <p>You have a deep understanding of the ancient Norse religion, and you can invoke the power of Thor in times of need. When you call upon the Voice of Thor to help you in battle, roll+Str. On a 10+, you can choose one from the list below. On a 7-9, you can still choose one, but with a complication:</p><ul><li> Your attacks deal extra damage.</li><li>You gain temporary hit points.</li><li>Your enemies are intimidated, and their attacks are weakened.</li><li>You gain a burst of strength and can move freely despite any restraints.</li></ul><p>After using this move, Thor demands that you pay him back by performing a task or quest for him.</p>",
@@ -93,7 +606,11 @@
     "name": "Eye of Beelzebub",
     "crystals": {
       "requires": [],
-      "provides": ["priest","priest","wizard"]
+      "provides": [
+        "white",
+        "white",
+        "cerulean"
+      ]
     },
     "type": "feature",
     "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Death card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Eye of Beelzebub you are also forbidden to have in your deck the Circle of Life, Circle of Sun, Circle of Water and Circle of Air cards in your deck.</p> <p>You have studied the dark arts and have gained the Eye of Beelzebub. This move allows you to gain knowledge or insight into a person or situation, but at a great cost. When you use this move, roll+Int. On a 10+, the GM will give you a clear and accurate vision or information. On a 7-9, the GM will still give you the information, but with a twist:</p><ul><li>You will gain the information, but it will be overwhelming or confusing.</li><li>You will gain the information, but at a great personal cost, such as losing a memory or a part of yourself.</li></ul><p>Additionally, every time you use this move, you must mark a point of corruption. Once you reach five points of corruption, you must make a deal with Beelzebub or suffer his wrath.</p>",
@@ -107,30 +624,35 @@
         "stat_value": ""
       }
     ]
-  },{
-  "name": "Zealot",
-  "crystals": {
-    "requires": [],
-    "provides": ["priest"]
   },
-  "type": "feature",
-  "description": "<p>Your faith was tempered upon the battlefield and wrought by trial and tribulation. You take +1 to Defend or Defy Danger against the Enemies of your deity, and when you Discern Realities you can always ask 'are there any signs of my Enemy's influence here?' in addition to your other questions.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Zealot",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "white"
+      ]
     },
-    {
-      "stat_name": "cost",
-      "stat_value": ""
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>Your faith was tempered upon the battlefield and wrought by trial and tribulation. You take +1 to Defend or Defy Danger against the Enemies of your deity, and when you Discern Realities you can always ask 'are there any signs of my Enemy's influence here?' in addition to your other questions.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
   {
     "name": "Healer",
     "crystals": {
       "requires": [],
-      "provides": ["priest"]
+      "provides": [
+        "white"
+      ]
     },
     "type": "feature",
     "description": "<p>You have long strived to help others, no matter how grave their wounds or how grim the price. You ignore the Slow tag on Bandages and on Herbs and Poultices, and whenever you like, you can spend 1 use of Adventuring Gear to produce 1-use of Bandages.</p>",
@@ -149,7 +671,9 @@
     "name": "Wayfarer",
     "crystals": {
       "requires": [],
-      "provides": ["priest"]
+      "provides": [
+        "white"
+      ]
     },
     "type": "feature",
     "description": "<p>You have traveled far and wide in the name of your faith, and your experience shows. You always know the fastest and most direct route to the nearest holy site, and when you Chart a Course or Undertake a Perilous Journey you always get to Keep Company (even if you're not the one rolling).</p>",
@@ -163,30 +687,35 @@
         "stat_value": ""
       }
     ]
-  },{
-  "name": "Divine Agent",
-  "crystals": {
-    "requires": [],
-    "provides": ["priest"]
   },
-  "type": "training",
-  "description": "<p>You were trained in a temple of a certain deity to become their religious enforcers. When you condemn someone for their words or deeds according to the precepts of your religion, they feel true shame. They may deny it or try to hide it, but your conviction always cuts deep; you take +1 Forward with them.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Divine Agent",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "white"
+      ]
     },
-    {
-      "stat_name": "cost",
-      "stat_value": ""
-    }
-  ]
-},
+    "type": "training",
+    "description": "<p>You were trained in a temple of a certain deity to become their religious enforcers. When you condemn someone for their words or deeds according to the precepts of your religion, they feel true shame. They may deny it or try to hide it, but your conviction always cuts deep; you take +1 Forward with them.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
   {
     "name": "Divine Preacher",
     "crystals": {
       "requires": [],
-      "provides": ["priest"]
+      "provides": [
+        "white"
+      ]
     },
     "type": "training",
     "description": "<p>You were trained in a temple of a certain deity to become their religious recruiters. When you instruct someone in their conduct or beliefs according to the precepts of your religion, they will genuinely consider your counsel. If they end up following your advice, they take +1 Forward.</p>",
@@ -205,7 +734,9 @@
     "name": "Divine Body",
     "crystals": {
       "requires": [],
-      "provides": ["priest"]
+      "provides": [
+        "white"
+      ]
     },
     "type": "training",
     "description": "<p>You were trained in a temple of a certain deity to become their religious incarnation. Choose a feature associated with your deity (rending claws, wings of sapphire feathers, an all-seeing eye, etc.); your deity has bestowed you with this auspicious boon.</p>",
@@ -224,7 +755,9 @@
     "name": "Divine Aura",
     "crystals": {
       "requires": [],
-      "provides": ["priest"]
+      "provides": [
+        "white"
+      ]
     },
     "type": "training",
     "description": "<p>You were trained in a temple of a certain deity to become their religious informant. Choose a type of energy (divine influence, powerful emotions, necrotic taint, etc.); you can sense this type of energy as if it were tangible and visible, and you can always tell when it is nearby.</p>",
@@ -238,298 +771,365 @@
         "stat_value": ""
       }
     ]
-  },{
-  "name": "Moon Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
   },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Moon Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Acid Spray: You can release a spray of acid that damages and corrodes objects and creatures.</li><li>Acid Armor: You can create a protective armor made of acid for yourself or others.</li><li>Insect Form or Familiar: You can transform into an insect or summon a familiar made of insects to aid you.</li><li>Darkness Area: You can create an area of darkness that blinds creatures within it.</li><li>Darkvision: You can see in the dark as if it were daylight.</li><li>Spider Climb: You can climb surfaces like a spider.</li><li>Web: You can create sticky webs to trap and immobilize creatures.</li><li>Induce Sadness: You can make creatures within the circle feel overwhelming sadness.</li><li>Moon Divination: You can ask the moon for guidance and receive insight or knowledge about a specific subject or situation.</li><li>Moonlight Burst: You can release a burst of moonlight that damages and blinds creatures within it.</li></ul><p>Weakness: Being in a location with strong solar influence or being in a location where lunar influence is strongly suppressed.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a moon deity"
-    }
-  ]
-},{
-  "name": "Arcane Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Arcane Circle and perform the ritual, roll+Int. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Arcane Circle: You can create a circle of arcane energy that provides magical protection and boosts spellcasting.</li><li>Alarm: You can set up a magical alarm that alerts you to the presence of creatures within a certain radius.</li><li>Identify: You can identify the magical properties of a creature, object, or spell.</li><li>Invisibility: You can make yourself or others invisible for a short period of time.</li><li>Unseen Servant: You can summon an invisible, magical servant to perform tasks for you.</li><li>Magic Circle: You can create a circle of protection that prevents creatures of a certain type from entering or leaving.</li><li>Magic Missile: You can launch a bolt of magical energy at a target.</li><li>Force Wall: You can create a wall of force to block off an area or protect yourself or others.</li><li>Mage Armor: You can create a magical armor that provides protection against physical and magical attacks.</li><li>Short Distance Teleport: You can teleport yourself or others a short distance.</li><li>Blink: You can blink in and out of existence, making it difficult for creatures to target you.</li><li>Astral Bodies Divination: You can read the stars and planets to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with counter-arcane properties or being in a location where arcane attacks are strongly suppressed.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a magic deity"
-    }
-  ]
-},{
-  "name": "Death Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Death Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Death Circle: You can create a circle that inflicts damage and weakens living creatures within it.</li><li>Raise Zombie: You can raise a zombie from a nearby corpse to fight for you.</li><li>Decay: You can cause organic material to quickly decompose and rot.</li><li>Cause Fear: You can cause fear in a creature, making it unable to move or act.</li><li>Ray of Sickness: You can shoot a beam of sickness that weakens and poisons a creature.</li><li>Inflict Wounds: You can cause severe wounds to a creature with a touch.</li><li>Vampiric Touch: You can drain the life force of a creature to heal yourself.</li><li>Human Corpse Divination: You can ask a question to a corpse and receive an answer from its memories.</li></ul><p>Weakness: Being in a location with a strong presence of life or being in a location where life-restoring magic is strongly supported.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a death deity"
-    }
-  ]
-},{
-  "name": "Mind Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Mind Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Color Spray: You can create a spray of colors that blinds and disorients creatures.</li><li>Telekinesis: You can move objects and creatures with your mind.</li><li>Charm Person: You can make a person friendly and obedient to you.</li><li>Comprehend Languages: You can understand and speak any language.</li><li>Disguise Self: You can change your appearance to look like someone else.</li><li>Sense Emotion: You can sense the emotions of nearby creatures.</li><li>Silent Image: You can create a visual illusion that looks and sounds real.</li><li>Sleep: You can make a creature fall asleep.</li><li>Mirror Image: You can create illusory duplicates of yourself to confuse enemies.</li><li>Erase Memory: You can remove a specific memory from a person's mind.</li></ul><p>Weakness: Being without other intelligent creatures close to you.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a trickster deity"
-    }
-  ]
-},{
-  "name": "Life Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Life Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Growth Size: You can cause plants and creatures within the circle to grow to an immense size, granting them increased strength and resilience.</li><li>Create Saplings: You can create a group of saplings that will grow into a dense forest over time.</li><li>Resurrect Body as Plants: You can bring a dead body back to life as a plant creature.</li><li>Bark Armor: You can create a protective armor made of bark for yourself or others.</li><li>Dispel Magic: You can dispel any magical effects within the circle.</li><li>Plant Divination: You can ask the plants for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong presence of death or being in a location where resurrection is strongly suppressed</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a nature deity"
-    }
-  ]
-},{
-  "name": "Beasts Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Beasts Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Mammal form or familiar: You can transform into a mammal or summon a beast familiar to aid you.</li><li>Enhance senses: You can heighten your senses, gaining improved vision, hearing, and smell.</li><li>Entrails divination: You can read the entrails of a slain beast to gain insight or knowledge about a specific subject or situation.</li><li>Induce Rage: You can cause a nearby beast to become enraged and attack a target of your choice.</li></ul><p>Weakness: Being in a location with strong animal repellents or being in a location with no beasts nearby.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a animal deity"
-    }]},{
-  "name": "Electricity Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Electricity Circle and perform the ritual, roll+Int. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Jump: You can jump to a faraway location with the power of electricity.</li><li>Magnify Gravity: You can increase the gravity in a specific area, making it difficult for creatures to move.</li><li>Thunderwave: You can create a powerful shockwave that damages and pushes back nearby creatures.</li><li>Shatter: You can create a loud and powerful sound that shatters objects and structures.</li><li>Lightning Bolt: You can shoot a bolt of lightning that damages a target.</li><li>Hasten: You can move faster than the eye can see, allowing you to dodge attacks or move quickly to another location.</li><li>Lightning Divination: You can ask the lightning for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with metal walls or floors that conduct electricity.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a storm deity"
-    }
-  ]
-},{
-  "name": "Air Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Air Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Wind Slash: You can unleash a powerful gust of wind that damages all creatures within its path.</li><li>Bird Form/Familiar: You can transform into a bird or summon a bird familiar to aid you.</li><li>Levitation: You can levitate yourself or others within the circle, allowing you to move through the air or avoid obstacles.</li><li>Misty Step: You can teleport a short distance within the circle, appearing in a cloud of mist.</li><li>Cloud Divination: You can read the signs and shapes of the clouds, gaining insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a sealed, airtight environment</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a sky deity"
-    }
-  ]
-},
   {
-  "name": "Earth Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Earth Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Grease: You can create a slippery surface in an area, causing creatures to slip and fall.</li><li>Earthbind: You can root creatures to the ground, immobilizing them.</li><li>Rock Armor: You can create a protective armor made of stone for yourself or others.</li><li>Tremorsense: You can sense vibrations and movements in the earth within a certain radius.</li><li>Slow: You can slow down creatures within the circle, making them move and act sluggishly.</li><li>Wall of Sand: You can create a wall of sand to block off an area or protect yourself or others.</li><li>Earth Divination: You can ask the earth for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with no solid ground or being in a building made of non-earth materials</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+    "name": "Moon Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a underground deity"
-    }
-  ]
-},{
-  "name": "Ice Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Moon Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Acid Spray: You can release a spray of acid that damages and corrodes objects and creatures.</li><li>Acid Armor: You can create a protective armor made of acid for yourself or others.</li><li>Insect Form or Familiar: You can transform into an insect or summon a familiar made of insects to aid you.</li><li>Darkness Area: You can create an area of darkness that blinds creatures within it.</li><li>Darkvision: You can see in the dark as if it were daylight.</li><li>Spider Climb: You can climb surfaces like a spider.</li><li>Web: You can create sticky webs to trap and immobilize creatures.</li><li>Induce Sadness: You can make creatures within the circle feel overwhelming sadness.</li><li>Moon Divination: You can ask the moon for guidance and receive insight or knowledge about a specific subject or situation.</li><li>Moonlight Burst: You can release a burst of moonlight that damages and blinds creatures within it.</li></ul><p>Weakness: Being in a location with strong solar influence or being in a location where lunar influence is strongly suppressed.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a moon deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Ice Circle and speak the words of power, roll+Int. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Ice Storm: You can summon a storm of ice and hail from within the circle, damaging all creatures within its radius.</li><li>Ice Armor: You can surround yourself or a creature within the circle with a protective armor made of ice, increasing their defense.</li><li>Frost Fingers: You can shoot icy projectiles from your fingertips, damaging one or more creatures within the circle.</li><li>Crustacean Form or Familiar: You can transform into a giant crab or summon a crustacean familiar to aid you within the circle.</li><li>Ice Conjuration: You can create an object made of ice within the circle, resistant or very sharp but brittle.</li><li>Ice Reflection: You can create mirrors made of ice within the circle, reflecting spells or projectiles back at their caster.</li></ul><p>Weakness: Being in a room with a fireplace or other source of strong infrared heat</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Arcane Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": ""
-    }
-  ]
-},{
-  "name": "Water Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Arcane Circle and perform the ritual, roll+Int. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Arcane Circle: You can create a circle of arcane energy that provides magical protection and boosts spellcasting.</li><li>Alarm: You can set up a magical alarm that alerts you to the presence of creatures within a certain radius.</li><li>Identify: You can identify the magical properties of a creature, object, or spell.</li><li>Invisibility: You can make yourself or others invisible for a short period of time.</li><li>Unseen Servant: You can summon an invisible, magical servant to perform tasks for you.</li><li>Magic Circle: You can create a circle of protection that prevents creatures of a certain type from entering or leaving.</li><li>Magic Missile: You can launch a bolt of magical energy at a target.</li><li>Force Wall: You can create a wall of force to block off an area or protect yourself or others.</li><li>Mage Armor: You can create a magical armor that provides protection against physical and magical attacks.</li><li>Short Distance Teleport: You can teleport yourself or others a short distance.</li><li>Blink: You can blink in and out of existence, making it difficult for creatures to target you.</li><li>Astral Bodies Divination: You can read the stars and planets to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with counter-arcane properties or being in a location where arcane attacks are strongly suppressed.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a magic deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Water Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Frog Form: You can transform yourself into a chosen amphibian or summon a familiar of the same type to aid you in battle.</li><li>Water Cannon: You can shoot a high-pressure stream of water, dealing damage to a single target.</li><li>Fog Cloud: You can summon a cloud of fog, reducing visibility and making it easier to sneak past enemies or escape.</li><li>Water Walk/Breath: You can walk on water or breathe underwater for a limited time.</li><li>Wall of Water: You can create a wall of water, providing cover or blocking enemy attacks.</li><li>Super Jump: You can jump high into the air or across long distances, reaching otherwise inaccessible places.</li><li>Water Divination: You can use water to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong source of heat or being in a dry environment.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Death Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a sea/river deity"
-    }
-  ]
-},{
-  "name": "Fire Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Death Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Death Circle: You can create a circle that inflicts damage and weakens living creatures within it.</li><li>Raise Zombie: You can raise a zombie from a nearby corpse to fight for you.</li><li>Decay: You can cause organic material to quickly decompose and rot.</li><li>Cause Fear: You can cause fear in a creature, making it unable to move or act.</li><li>Ray of Sickness: You can shoot a beam of sickness that weakens and poisons a creature.</li><li>Inflict Wounds: You can cause severe wounds to a creature with a touch.</li><li>Vampiric Touch: You can drain the life force of a creature to heal yourself.</li><li>Human Corpse Divination: You can ask a question to a corpse and receive an answer from its memories.</li></ul><p>Weakness: Being in a location with a strong presence of life or being in a location where life-restoring magic is strongly supported.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a death deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Fire Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Lizard/Crocodile form (choose 1 animal) or familiar.</li><li>Fire Blasts: You can unleash a series of powerful fire blasts that deal damage to a target or area.</li><li>Wall of Fire: You can create a wall of flames that damages anyone who tries to pass through it.</li><li>Reptile Familiar: You can summon a reptile familiar to assist you in battle or aid you in other ways.</li><li>Fire Divination: You can ask the flames for insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a lack of oxygen or being in a location with strong sources of water or other fire-extinguishing substances.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Mind Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a fire deity"
-    }
-  ]
-},{
-  "name": "Sun Circle",
-  "crystals": {
-    "requires": ["priest", "priest"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Mind Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Color Spray: You can create a spray of colors that blinds and disorients creatures.</li><li>Telekinesis: You can move objects and creatures with your mind.</li><li>Charm Person: You can make a person friendly and obedient to you.</li><li>Comprehend Languages: You can understand and speak any language.</li><li>Disguise Self: You can change your appearance to look like someone else.</li><li>Sense Emotion: You can sense the emotions of nearby creatures.</li><li>Silent Image: You can create a visual illusion that looks and sounds real.</li><li>Sleep: You can make a creature fall asleep.</li><li>Mirror Image: You can create illusory duplicates of yourself to confuse enemies.</li><li>Erase Memory: You can remove a specific memory from a person's mind.</li></ul><p>Weakness: Being without other intelligent creatures close to you.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a trickster deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Sun Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Heal Wounds: You can heal one or more creatures within the circle of wounds or afflictions they may have.</li><li>Absorb Spells: You can absorb a spell or magical effect within the circle, neutralizing it or gaining its energy for yourself.</li><li>Silence: You can silence one or more creatures or objects within the circle, rendering them unable to make noise or cast spells with verbal components.</li><li>Blind/Deafness: You can blind or deafen one or more creatures or objects within the circle, rendering them unable to see or hear.</li><li>Sun Burst: You can unleash a burst of sunlight from within the circle, blinding and damaging all creatures within its radius.</li><li>Sunlight Divination: You can ask the sun for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness. Lack of access to sunlight or intense darkness</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Life Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "Follower of a sun deity"
-    }
-  ]
-},{
-  "name": "Universal Circle",
-  "crystals": {
-    "requires": ["priest"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Life Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Growth Size: You can cause plants and creatures within the circle to grow to an immense size, granting them increased strength and resilience.</li><li>Create Saplings: You can create a group of saplings that will grow into a dense forest over time.</li><li>Resurrect Body as Plants: You can bring a dead body back to life as a plant creature.</li><li>Bark Armor: You can create a protective armor made of bark for yourself or others.</li><li>Dispel Magic: You can dispel any magical effects within the circle.</li><li>Plant Divination: You can ask the plants for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong presence of death or being in a location where resurrection is strongly suppressed</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a nature deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p><p>When you draw the Universal Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>You detect magic within the circle's bounds</li><li>You create a shield that protects those within the circle from magical attacks</li><li>You dispel a magical effect within the circle's bounds</li><li>You summon an elemental weapon to aid you in battle</li><li>You summon an elemental spirit to aid you outside of battle</li></ul><p>On a miss, the circle's power backfires, causing harm to those within its bounds.</p><p>Weakness: Being in a crowded, chaotic environment where many spells are being cast.</p></p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 0
+  {
+    "name": "Beasts Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": ""
-    }
-  ]
-},{
-  "name": "Bewitching Performance",
-  "crystals": {
-    "requires": ["bard", "bard"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Beasts Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Mammal form or familiar: You can transform into a mammal or summon a beast familiar to aid you.</li><li>Enhance senses: You can heighten your senses, gaining improved vision, hearing, and smell.</li><li>Entrails divination: You can read the entrails of a slain beast to gain insight or knowledge about a specific subject or situation.</li><li>Induce Rage: You can cause a nearby beast to become enraged and attack a target of your choice.</li></ul><p>Weakness: Being in a location with strong animal repellents or being in a location with no beasts nearby.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a animal deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>When you give a performance instilled with raw emotion to an audience of sentient, living creatures, choose one and roll+CHA. On a 7+, your magic will affect them as long as your performance lasts. On a 12+, the effects will linger after it ends.</p><ul><li>Torpor: On a 7-9, they become lethargic and inattentive. On a 10+, they fall asleep for a few minutes.</li><li>Dread: On a 7-9, they become fearful and desperate. On a 10+, they cower, run, or hide, seeking safety.</li><li>Fury: On a 7-9, they become riotous and violent. On a 10+, they form an armed and dangerous mob.</li><li>Hope: On a 7-9, they become fearless and resolute. On a 10+, they take significant, lasting action.</li></ul>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
+  {
+    "name": "Electricity Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]
-},{
-  "name": "Reputation",
-  "crystals": {
-    "requires": ["bard", "bard"],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Electricity Circle and perform the ritual, roll+Int. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Jump: You can jump to a faraway location with the power of electricity.</li><li>Magnify Gravity: You can increase the gravity in a specific area, making it difficult for creatures to move.</li><li>Thunderwave: You can create a powerful shockwave that damages and pushes back nearby creatures.</li><li>Shatter: You can create a loud and powerful sound that shatters objects and structures.</li><li>Lightning Bolt: You can shoot a bolt of lightning that damages a target.</li><li>Hasten: You can move faster than the eye can see, allowing you to dodge attacks or move quickly to another location.</li><li>Lightning Divination: You can ask the lightning for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with metal walls or floors that conduct electricity.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a storm deity"
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>When you first meet someone who’s heard tales about you, roll+CHA. On a 10+, tell the GM two things they’ve heard about you. On a 7-9, tell the GM one thing they’ve heard, and the GM will tell you another thing they’ve heard.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
+  {
+    "name": "Air Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Air Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Wind Slash: You can unleash a powerful gust of wind that damages all creatures within its path.</li><li>Bird Form/Familiar: You can transform into a bird or summon a bird familiar to aid you.</li><li>Levitation: You can levitate yourself or others within the circle, allowing you to move through the air or avoid obstacles.</li><li>Misty Step: You can teleport a short distance within the circle, appearing in a cloud of mist.</li><li>Cloud Divination: You can read the signs and shapes of the clouds, gaining insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a sealed, airtight environment</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a sky deity"
+      }
+    ]
+  },
+  {
+    "name": "Earth Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Earth Circle and perform the ritual, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Grease: You can create a slippery surface in an area, causing creatures to slip and fall.</li><li>Earthbind: You can root creatures to the ground, immobilizing them.</li><li>Rock Armor: You can create a protective armor made of stone for yourself or others.</li><li>Tremorsense: You can sense vibrations and movements in the earth within a certain radius.</li><li>Slow: You can slow down creatures within the circle, making them move and act sluggishly.</li><li>Wall of Sand: You can create a wall of sand to block off an area or protect yourself or others.</li><li>Earth Divination: You can ask the earth for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with no solid ground or being in a building made of non-earth materials</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a underground deity"
+      }
+    ]
+  },
+  {
+    "name": "Ice Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Ice Circle and speak the words of power, roll+Int. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Ice Storm: You can summon a storm of ice and hail from within the circle, damaging all creatures within its radius.</li><li>Ice Armor: You can surround yourself or a creature within the circle with a protective armor made of ice, increasing their defense.</li><li>Frost Fingers: You can shoot icy projectiles from your fingertips, damaging one or more creatures within the circle.</li><li>Crustacean Form or Familiar: You can transform into a giant crab or summon a crustacean familiar to aid you within the circle.</li><li>Ice Conjuration: You can create an object made of ice within the circle, resistant or very sharp but brittle.</li><li>Ice Reflection: You can create mirrors made of ice within the circle, reflecting spells or projectiles back at their caster.</li></ul><p>Weakness: Being in a room with a fireplace or other source of strong infrared heat</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Water Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Water Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Frog Form: You can transform yourself into a chosen amphibian or summon a familiar of the same type to aid you in battle.</li><li>Water Cannon: You can shoot a high-pressure stream of water, dealing damage to a single target.</li><li>Fog Cloud: You can summon a cloud of fog, reducing visibility and making it easier to sneak past enemies or escape.</li><li>Water Walk/Breath: You can walk on water or breathe underwater for a limited time.</li><li>Wall of Water: You can create a wall of water, providing cover or blocking enemy attacks.</li><li>Super Jump: You can jump high into the air or across long distances, reaching otherwise inaccessible places.</li><li>Water Divination: You can use water to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong source of heat or being in a dry environment.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a sea/river deity"
+      }
+    ]
+  },
+  {
+    "name": "Fire Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Fire Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Lizard/Crocodile form (choose 1 animal) or familiar.</li><li>Fire Blasts: You can unleash a series of powerful fire blasts that deal damage to a target or area.</li><li>Wall of Fire: You can create a wall of flames that damages anyone who tries to pass through it.</li><li>Reptile Familiar: You can summon a reptile familiar to assist you in battle or aid you in other ways.</li><li>Fire Divination: You can ask the flames for insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a lack of oxygen or being in a location with strong sources of water or other fire-extinguishing substances.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a fire deity"
+      }
+    ]
+  },
+  {
+    "name": "Sun Circle",
+    "crystals": {
+      "requires": [
+        "white",
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Sun Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>Heal Wounds: You can heal one or more creatures within the circle of wounds or afflictions they may have.</li><li>Absorb Spells: You can absorb a spell or magical effect within the circle, neutralizing it or gaining its energy for yourself.</li><li>Silence: You can silence one or more creatures or objects within the circle, rendering them unable to make noise or cast spells with verbal components.</li><li>Blind/Deafness: You can blind or deafen one or more creatures or objects within the circle, rendering them unable to see or hear.</li><li>Sun Burst: You can unleash a burst of sunlight from within the circle, blinding and damaging all creatures within its radius.</li><li>Sunlight Divination: You can ask the sun for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness. Lack of access to sunlight or intense darkness</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "Follower of a sun deity"
+      }
+    ]
+  },
+  {
+    "name": "Universal Circle",
+    "crystals": {
+      "requires": [
+        "white"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p><p>When you draw the Universal Circle and speak the words of power, roll+Wis. On a 10+, choose three from the list below. On a 7-9, choose two:</p><ul><li>You detect magic within the circle's bounds</li><li>You create a shield that protects those within the circle from magical attacks</li><li>You dispel a magical effect within the circle's bounds</li><li>You summon an elemental weapon to aid you in battle</li><li>You summon an elemental spirit to aid you outside of battle</li></ul><p>On a miss, the circle's power backfires, causing harm to those within its bounds.</p><p>Weakness: Being in a crowded, chaotic environment where many spells are being cast.</p></p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Bewitching Performance",
+    "crystals": {
+      "requires": [
+        "purple",
+        "purple"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you give a performance instilled with raw emotion to an audience of sentient, living creatures, choose one and roll+CHA. On a 7+, your magic will affect them as long as your performance lasts. On a 12+, the effects will linger after it ends.</p><ul><li>Torpor: On a 7-9, they become lethargic and inattentive. On a 10+, they fall asleep for a few minutes.</li><li>Dread: On a 7-9, they become fearful and desperate. On a 10+, they cower, run, or hide, seeking safety.</li><li>Fury: On a 7-9, they become riotous and violent. On a 10+, they form an armed and dangerous mob.</li><li>Hope: On a 7-9, they become fearless and resolute. On a 10+, they take significant, lasting action.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
+  },
+  {
+    "name": "Reputation",
+    "crystals": {
+      "requires": [
+        "purple",
+        "purple"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you first meet someone who’s heard tales about you, roll+CHA. On a 10+, tell the GM two things they’ve heard about you. On a 7-9, tell the GM one thing they’ve heard, and the GM will tell you another thing they’ve heard.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
+  },
   {
     "name": "A Knight in Shining Armour Appears",
     "crystals": {
-      "requires": ["bard", "bard"],
+      "requires": [
+        "purple",
+        "purple"
+      ],
       "provides": []
     },
     "type": "feature",
@@ -545,17 +1145,16 @@
       }
     ]
   },
-
   {
-  "name": "Fashion Matters",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>When you use your impeccable good-looks and considerable charms to your advantage, take +1 forward to Parley with anyone who respects your appearance.</p>",
+    "name": "Fashion Matters",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you use your impeccable good-looks and considerable charms to your advantage, take +1 forward to Parley with anyone who respects your appearance.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -566,30 +1165,34 @@
         "stat_value": null
       }
     ]
-},{
-  "name": "Throw Down the Gauntlet",
-  "crystals": {
-    "requires": ["bard"],
-    "provides": []
   },
-  "type": "feature",
-  "description": "<p>When your honour is insulted and you demand a duel, your opponent cannot decline. They may propose conditions and ask to use a substitute, but they cannot decline.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
+  {
+    "name": "Throw Down the Gauntlet",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>When your honour is insulted and you demand a duel, your opponent cannot decline. They may propose conditions and ask to use a substitute, but they cannot decline.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
+  },
   {
     "name": "Eldritch Tones",
     "crystals": {
       "requires": [
-        "bard", "bard"
+        "purple",
+        "purple"
       ],
       "provides": []
     },
@@ -610,7 +1213,7 @@
     "name": "Anything You Can Do, I Can Do Better",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -631,7 +1234,7 @@
     "name": "Song of Rest",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -652,7 +1255,7 @@
     "name": "Litany of Curses",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -668,36 +1271,17 @@
         "stat_value": null
       }
     ]
-  },{
-  "name": "Parry and Riposte",
-  "crystals": {
-    "requires": [
-      "soldier"
-    ],
-    "provides": []
   },
-  "type": "feature",
-  "description": "<p>When you attempt to deflect and dodge a melee attack while unarmed or wielding a precise weapon, roll+DEX. On a 7+, you avoid the attack. On a 10+, you also choose 1:</p><ul><li>You change up the distance, closing in or disengaging.</li><li>You deal half your damage (rounded up) to the attacker.</li></ul><p>On a miss, you are vulnerable to the attacker's next move.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]},
   {
-  "name": "Duellante",
-  "crystals": {
-    "requires": [
-      "soldier"
-    ],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>Requires: Parry and Riposte</p><p>Add these to your choices for Parry and Riposte:</p><ul><li>You disarm your attacker.</li><li>You trip, hamper, or embarrass your attacker.</li><li>You redirect their blow into someone or something else.</li></ul><p>When you Parry and Riposte, on a 12+, choose 2 (not 1).</p>",
+    "name": "Parry and Riposte",
+    "crystals": {
+      "requires": [
+        "red"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you attempt to deflect and dodge a melee attack while unarmed or wielding a precise weapon, roll+DEX. On a 7+, you avoid the attack. On a 10+, you also choose 1:</p><ul><li>You change up the distance, closing in or disengaging.</li><li>You deal half your damage (rounded up) to the attacker.</li></ul><p>On a miss, you are vulnerable to the attacker's next move.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -707,69 +1291,98 @@
         "stat_name": "cost",
         "stat_value": null
       }
-    ]},{
-  "name": "With a Little Help..",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
+    ]
   },
-  "type": "feature",
-  "description": "<p>You can Aid or Interfere with just a few impactful words. You also take +1 forward and your allies take +1 forward. You still risk the consequences of their action.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
+  {
+    "name": "Duellante",
+    "crystals": {
+      "requires": [
+        "red"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]},{
-  "name": "..For My Friends",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
+    "type": "feature",
+    "description": "<p>Requires: Parry and Riposte</p><p>Add these to your choices for Parry and Riposte:</p><ul><li>You disarm your attacker.</li><li>You trip, hamper, or embarrass your attacker.</li><li>You redirect their blow into someone or something else.</li></ul><p>When you Parry and Riposte, on a 12+, choose 2 (not 1).</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>Requires: With a Little Help..</p><p>When you Aid an ally, you act together in perfect harmony. Instead of aiding, you can roll 2d6 + CHA and your ally can use that result in place of one of their rolls until the rest of the session. You still risk the consequences of their action.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
+  {
+    "name": "With a Little Help..",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]},{
-  "name": "Enchanting Artist",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
+    "type": "feature",
+    "description": "<p>You can Aid or Interfere with just a few impactful words. You also take +1 forward and your allies take +1 forward. You still risk the consequences of their action.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
   },
-  "type": "feature",
-  "description": "<p>When you perform in front of an audience, describe the story you tell, the song you sing, or the details of your performance and roll+CHA. On a 7+, you hold the attention of all sentient, living creatures for as long as you perform and as long as nothing distracts them. On a 10+, you also choose 2. On a 7-9, choose 1.</p><ul><li>A member of the audience becomes enraptured with you; the GM will say who.</li><li>Someone comes to you afterwards, requesting your services or bearing news of an opportunity.</li><li>One or more members of the audience will give you gifts - the GM will say what.</li></ul>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": null
+  {
+    "name": "..For My Friends",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": null
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>Requires: With a Little Help..</p><p>When you Aid an ally, you act together in perfect harmony. Instead of aiding, you can roll 2d6 + CHA and your ally can use that result in place of one of their rolls until the rest of the session. You still risk the consequences of their action.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
+  },
+  {
+    "name": "Enchanting Artist",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you perform in front of an audience, describe the story you tell, the song you sing, or the details of your performance and roll+CHA. On a 7+, you hold the attention of all sentient, living creatures for as long as you perform and as long as nothing distracts them. On a 10+, you also choose 2. On a 7-9, choose 1.</p><ul><li>A member of the audience becomes enraptured with you; the GM will say who.</li><li>Someone comes to you afterwards, requesting your services or bearing news of an opportunity.</li><li>One or more members of the audience will give you gifts - the GM will say what.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": null
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": null
+      }
+    ]
+  },
   {
     "name": "I Heard About It",
     "crystals": {
-      "requires": ["bard"],
+      "requires": [
+        "purple"
+      ],
       "provides": []
     },
     "type": "feature",
@@ -784,71 +1397,76 @@
         "stat_value": null
       }
     ]
-  },{
-  "name": "Countersong",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
   },
-  "type": "feature",
-  "description": "<p>When you weave magic into your words or into a performance, You drown out the magical incantations of a spellcaster you can hear, causing their spell to fail. Roll +CHA,  on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 600
-    },
-    {
-      "stat_name": "cost",
-      "stat_value": "5 months"
-    }
-  ]
-},
   {
-  "name": "Whelming Blast",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>When you weave magic into your words or into a performance, you can have a foe becomes temporarily confused, causing them to lash out and attack anyone nearby. Roll +CHA,  on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armor Forward and +2 damage Forward.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 500
+    "name": "Countersong",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "4 months"
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>When you weave magic into your words or into a performance, You drown out the magical incantations of a spellcaster you can hear, causing their spell to fail. Roll +CHA,  on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 600
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "5 months"
+      }
+    ]
+  },
   {
-  "name": "Breaker of Chains",
-  "crystals": {
-    "requires": ["bard"],
-    "provides": []
-  },
-  "type": "feature",
-  "description": "<p>When you weave magic into your words or into a performance, you can have an ally freed of all physical restraints and roll+CHA. On a 10+, you achieve it. On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 2000
+    "name": "Whelming Blast",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "1 year"
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>When you weave magic into your words or into a performance, you can have a foe becomes temporarily confused, causing them to lash out and attack anyone nearby. Roll +CHA,  on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armor Forward and +2 damage Forward.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 500
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "4 months"
+      }
+    ]
+  },
+  {
+    "name": "Breaker of Chains",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you weave magic into your words or into a performance, you can have an ally freed of all physical restraints and roll+CHA. On a 10+, you achieve it. On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 2000
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 year"
+      }
+    ]
+  },
   {
     "name": "Invigorating Chorus",
     "crystals": {
-      "requires": ["bard"],
+      "requires": [
+        "purple"
+      ],
       "provides": []
     },
     "type": "feature",
@@ -867,37 +1485,42 @@
   {
     "name": "Metal Hurlant",
     "crystals": {
-      "requires": ["bard"],
+      "requires": [
+        "purple"
+      ],
       "provides": []
     },
     "type": "feature",
     "description": "<p>When you weave magic into your words or into a performance, you can have a foe takes 1d6+1 damage and is deafened for a few minutes and roll+CHA. On a 10+, you achieve it. On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice.</p>",
     "stats": []
-  },{
-  "name": "Inspire Greatness",
-  "crystals": {
-    "requires": [
-      "bard"
-    ],
-    "provides": []
   },
-  "type": "feature",
-  "description": "<p>When you weave magic into your words or into a performance, you can have an ally takes +1 armour Forward and +2 damage Forward and roll+CHA. On a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
-  "stats": [
-    {
-      "stat_name": "price",
-      "stat_value": 2000
+  {
+    "name": "Inspire Greatness",
+    "crystals": {
+      "requires": [
+        "purple"
+      ],
+      "provides": []
     },
-    {
-      "stat_name": "cost",
-      "stat_value": "1 year"
-    }
-  ]
-},
+    "type": "feature",
+    "description": "<p>When you weave magic into your words or into a performance, you can have an ally takes +1 armour Forward and +2 damage Forward and roll+CHA. On a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 2000
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 year"
+      }
+    ]
+  },
   {
     "name": "Dirge of Doom",
     "crystals": {
-      "requires": ["bard"],
+      "requires": [
+        "purple"
+      ],
       "provides": []
     },
     "type": "feature",
@@ -917,7 +1540,7 @@
     "name": "Inspire Courage",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -940,9 +1563,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -964,56 +1587,58 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
-      ]},
-      "type": "feature",
-      "description": "<p><p>The College of Woodwinds is situated in the city of Edinburgh, Scotland. The bards here are trained to play a tune on their woodwind instruments that creates a gust of wind, blocking a single incoming attack and dealing 1d6 damage to the attacker. Roll +CHA, on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
-      "stats": [
-        {
-          "stat_name": "price",
-          "stat_value": 2500
-        },
-        {
-          "stat_name": "cost",
-          "stat_value": "1 year"
-        }
+        "purple",
+        "purple",
+        "purple"
       ]
     },
+    "type": "feature",
+    "description": "<p><p>The College of Woodwinds is situated in the city of Edinburgh, Scotland. The bards here are trained to play a tune on their woodwind instruments that creates a gust of wind, blocking a single incoming attack and dealing 1d6 damage to the attacker. Roll +CHA, on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 2500
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 year"
+      }
+    ]
+  },
   {
     "name": "College of Brass",
     "crystals": {
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
-      ]},
-      "type": "feature",
-      "description": "<p><p>The College of Brass and Accordions, Fanfare of Fury is a prestigious institution located in the city of Paris, France. The bards here are taught to play a bold and commanding tune on their brass instruments, inspiring their allies to greatness and granting them +1 damage Forward and +1 armor Forward. Roll +CHA, on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
-      "stats": [
-        {
-          "stat_name": "price",
-          "stat_value": 3000
-        },
-        {
-          "stat_name": "cost",
-          "stat_value": "2 years"
-        }
+        "purple",
+        "purple",
+        "purple"
       ]
     },
+    "type": "feature",
+    "description": "<p><p>The College of Brass and Accordions, Fanfare of Fury is a prestigious institution located in the city of Paris, France. The bards here are taught to play a bold and commanding tune on their brass instruments, inspiring their allies to greatness and granting them +1 damage Forward and +1 armor Forward. Roll +CHA, on a 10+, you achieve it On a 7-9, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 3000
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "2 years"
+      }
+    ]
+  },
   {
     "name": "College of Voice",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1035,9 +1660,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1059,9 +1684,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1083,9 +1708,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1107,9 +1732,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1131,9 +1756,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1155,9 +1780,9 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": "feature",
@@ -1179,11 +1804,11 @@
       "requires": [
       ],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
-  },
+    },
     "type": "feature",
     "description": "<p>The College of Tea and Coffee Brewing: Elixir of Energy is located in the region of Bavaria, Germany. This college specializes in creating invigorating potions that grant temporary bursts of energy. When you brew an Elixir of Energy and give it to an ally, they gain +1 forward to any dice roll for the next 24 hours and increased energy. The elixir can be used only once per 24 hours.</p>",
     "stats": [
@@ -1202,7 +1827,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "training",
@@ -1224,9 +1849,9 @@
       "requires": [
       ],
       "provides": [
-        "ranger",
-        "ranger",
-        "ranger"
+        "green",
+        "green",
+        "green"
       ]
     },
     "type": "training",
@@ -1246,7 +1871,7 @@
     "name": "Setup Strike",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1267,7 +1892,7 @@
     "name": "Well Organized",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1288,7 +1913,7 @@
     "name": "Trackless Step",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1309,7 +1934,7 @@
     "name": "Camouflage",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1330,7 +1955,7 @@
     "name": "Armour Break",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1351,7 +1976,7 @@
     "name": "Relentless Harrier",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1372,7 +1997,7 @@
     "name": "Strider",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1412,7 +2037,7 @@
     "name": "Know Your Enemy",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1433,7 +2058,7 @@
     "name": "Grisly Trophy",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1444,7 +2069,7 @@
     "name": "Arcane Trophy",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1455,7 +2080,7 @@
     "name": "Favoured Enemy",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1466,7 +2091,7 @@
     "name": "Animal Companion",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1487,7 +2112,7 @@
     "name": "Improved Companion",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1508,7 +2133,7 @@
     "name": "Magnificent Specimen",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1529,7 +2154,7 @@
     "name": "A Safe Place",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1550,7 +2175,7 @@
     "name": "Constant Vigilance",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1571,7 +2196,7 @@
     "name": "Tools of the Trade",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1592,7 +2217,7 @@
     "name": "Hunt and Track",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1613,7 +2238,7 @@
     "name": "Always Prepared",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1634,7 +2259,7 @@
     "name": "Ruthless Slayer",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1655,7 +2280,7 @@
     "name": "Bestiary Knowledge",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -1678,7 +2303,7 @@
       "requires": [
       ],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "training",
@@ -1695,11 +2320,11 @@
     ]
   },
   {
-    "name": "Ranger",
+    "name": "green",
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "training",
@@ -1719,7 +2344,7 @@
     "name": "Healthy Distrust",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1740,7 +2365,7 @@
     "name": "Indomitable",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1761,7 +2386,7 @@
     "name": "Stand Your Ground",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1782,7 +2407,7 @@
     "name": "Smite Evil",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1803,7 +2428,7 @@
     "name": "Judge and Jury",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1824,7 +2449,7 @@
     "name": "Indomitable",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1845,7 +2470,7 @@
     "name": "Inspired Virtue",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1866,7 +2491,7 @@
     "name": "Shake it Off!",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1887,7 +2512,7 @@
     "name": "We Happy Few",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1908,7 +2533,7 @@
     "name": "Divine Favour",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1929,7 +2554,7 @@
     "name": "Bloody Aegis",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1950,7 +2575,7 @@
     "name": "Merciful Intervention",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1971,7 +2596,7 @@
     "name": "Voice of Authority",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -1992,7 +2617,7 @@
     "name": "Unquestioned Authority",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2013,7 +2638,7 @@
     "name": "Quest",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2034,7 +2659,7 @@
     "name": "Charge!",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2055,7 +2680,7 @@
     "name": "Ever Onward",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2076,7 +2701,7 @@
     "name": "Staunch Defender",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2097,7 +2722,7 @@
     "name": "Impervious Defender",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2118,7 +2743,7 @@
     "name": "The Chains of Faith",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2139,7 +2764,7 @@
     "name": "I Am the Law",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2160,7 +2785,7 @@
     "name": "Lay On Hands",
     "crystals": {
       "requires": [
-        "paladin"
+        "blue"
       ],
       "provides": []
     },
@@ -2184,9 +2809,9 @@
         ""
       ],
       "provides": [
-        "paladin",
-        "paladin",
-        "paladin"
+        "blue",
+        "blue",
+        "blue"
       ]
     },
     "type": "training",
@@ -2209,9 +2834,9 @@
         ""
       ],
       "provides": [
-        "paladin",
-        "paladin",
-        "paladin"
+        "blue",
+        "blue",
+        "blue"
       ]
     },
     "type": "training",
@@ -2234,9 +2859,9 @@
         ""
       ],
       "provides": [
-        "paladin",
-        "paladin",
-        "paladin"
+        "blue",
+        "blue",
+        "blue"
       ]
     },
     "type": "training",
@@ -2259,9 +2884,9 @@
         ""
       ],
       "provides": [
-        "paladin",
-        "paladin",
-        "paladin"
+        "blue",
+        "blue",
+        "blue"
       ]
     },
     "type": "training",
@@ -2284,9 +2909,9 @@
         ""
       ],
       "provides": [
-        "paladin",
-        "paladin",
-        "paladin"
+        "blue",
+        "blue",
+        "blue"
       ]
     },
     "type": "training",
@@ -2309,9 +2934,9 @@
         ""
       ],
       "provides": [
-        "paladin",
-        "paladin",
-        "paladin"
+        "blue",
+        "blue",
+        "blue"
       ]
     },
     "type": "feature",
@@ -2332,7 +2957,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "paladin"
+        "blue"
       ]
     },
     "type": "training",
@@ -2353,7 +2978,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "paladin"
+        "blue"
       ]
     },
     "type": "training",
@@ -2392,7 +3017,7 @@
     "name": "Predator Instincts",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2413,7 +3038,7 @@
     "name": "To Me, My Brothers!",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2446,7 +3071,7 @@
     "name": "Improved Weapon",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2467,7 +3092,7 @@
     "name": "Arcane Blacksmith",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2488,7 +3113,7 @@
     "name": "Strength of Ten",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2509,7 +3134,7 @@
     "name": "Strength of a Hundred",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2530,7 +3155,7 @@
     "name": "Shield Mastery",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2551,7 +3176,7 @@
     "name": "Great Khan",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2591,7 +3216,7 @@
     "name": "Through Death’s Eyes",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2612,7 +3237,7 @@
     "name": "Thicket of Blades",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2655,7 +3280,7 @@
       "requires": [
       ],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "stats": [
@@ -2677,7 +3302,7 @@
       "requires": [
       ],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "training",
@@ -2697,7 +3322,7 @@
     "name": "Not to be Trifled With",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2718,7 +3343,7 @@
     "name": "Deathless",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2739,7 +3364,7 @@
     "name": "Keen-Eyed",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2760,7 +3385,7 @@
     "name": "Impressive Poise",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2781,7 +3406,7 @@
     "name": "Armoured",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -2893,9 +3518,9 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard",
-        "wizard",
-        "wizard"
+        "cerulean",
+        "cerulean",
+        "cerulean"
       ]
     },
     "type": [
@@ -2917,7 +3542,7 @@
     "name": "Pyromancy",
     "crystals": {
       "requires": [
-        "druid"
+        "emerald"
       ],
       "provides": []
     },
@@ -2938,7 +3563,7 @@
     "name": "Arcane Specialization: Abjuration",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -2959,7 +3584,7 @@
     "name": "Connections",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -2980,7 +3605,7 @@
     "name": "Escape Route",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -2997,7 +3622,7 @@
     "name": "Evasion",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3014,7 +3639,7 @@
     "name": "Cunning Dilettante",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3031,7 +3656,7 @@
     "name": "Leave No Trace",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3052,7 +3677,7 @@
     "name": "Shoot First",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3073,7 +3698,7 @@
     "name": "Arcane Specialization: Conjuration",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3094,7 +3719,7 @@
     "name": "Arcane Specialization: Divination",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3115,7 +3740,7 @@
     "name": "Arcane Specialization: Transmutation",
     "crystals": {
       "requires": [
-        "druid"
+        "emerald"
       ],
       "provides": []
     },
@@ -3136,7 +3761,7 @@
     "name": "Tricks of the Trade",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3157,7 +3782,7 @@
     "name": "Poisoner",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3197,7 +3822,7 @@
     "name": "Cheap Shot",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3218,7 +3843,7 @@
     "name": "Heist",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3239,7 +3864,7 @@
     "name": "Underdog",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3260,7 +3885,7 @@
     "name": "All in the Wrist",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3281,7 +3906,7 @@
     "name": "Nothing Up My Sleeve",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3302,7 +3927,7 @@
     "name": "Wealth and Taste",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3323,7 +3948,7 @@
     "name": "Hideout",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3344,7 +3969,7 @@
     "name": "Envenom",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3365,7 +3990,7 @@
     "name": "Brewer",
     "crystals": {
       "requires": [
-        "crafter"
+        "gold"
       ],
       "provides": []
     },
@@ -3386,7 +4011,7 @@
     "name": "Danger Sense",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -3407,7 +4032,7 @@
     "name": "Backstab",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -3428,7 +4053,7 @@
     "name": "Arcane Specialization: Illusion",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -3449,7 +4074,7 @@
     "name": "Arcane Specialization: Necromancy",
     "crystals": {
       "requires": [
-        "priest"
+        "white"
       ],
       "provides": []
     },
@@ -3470,7 +4095,7 @@
     "name": "Commune",
     "crystals": {
       "requires": [
-        "priest"
+        "white"
       ],
       "provides": []
     },
@@ -3491,7 +4116,7 @@
     "name": "Arcane Specialization: Enchantment",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3512,8 +4137,8 @@
     "name": "Arcane Volley",
     "crystals": {
       "requires": [
-        "ranger",
-        "wizard"
+        "green",
+        "cerulean"
       ],
       "provides": []
     },
@@ -3534,7 +4159,7 @@
     "name": "Arcane Specializtion: Evocation",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3555,7 +4180,7 @@
     "name": "Shapeshifting",
     "crystals": {
       "requires": [
-        "druid"
+        "emerald"
       ],
       "provides": []
     },
@@ -3576,7 +4201,7 @@
     "name": "Spell Channeling",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3597,7 +4222,7 @@
     "name": "Empower Item",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3618,7 +4243,7 @@
     "name": "Counterspell",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3639,7 +4264,7 @@
     "name": "Protective Counter",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3660,7 +4285,7 @@
     "name": "Eidetic Spellcasting",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3681,7 +4306,7 @@
     "name": "Spell Knowledge",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3702,7 +4327,7 @@
     "name": "Sage Advice",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3723,7 +4348,7 @@
     "name": "Ritual",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3744,7 +4369,7 @@
     "name": "Spell Casting",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3765,7 +4390,7 @@
     "name": "Arcane Knowledge",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -3786,7 +4411,7 @@
     "name": "Bardic Lore",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -3808,9 +4433,9 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue",
-        "rogue",
-        "rogue"
+        "black",
+        "black",
+        "black"
       ]
     },
     "type": [
@@ -3834,9 +4459,9 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard",
-        "bard",
-        "bard"
+        "purple",
+        "purple",
+        "purple"
       ]
     },
     "type": [
@@ -3859,7 +4484,7 @@
     "name": "Arcane Algebra",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": [
         ""
@@ -3883,9 +4508,9 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier",
-        "soldier",
-        "soldier"
+        "red",
+        "red",
+        "red"
       ]
     },
     "type": [
@@ -3908,7 +4533,7 @@
     "name": "Charming and Open",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -3930,7 +4555,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "feature",
@@ -3951,7 +4576,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -3972,7 +4597,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -3992,7 +4617,7 @@
     "name": "A Port in the Storm",
     "crystals": {
       "requires": [
-        "bard"
+        "purple"
       ],
       "provides": []
     },
@@ -4013,7 +4638,7 @@
     "name": "Duelist's Parry",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -4035,7 +4660,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "feature",
@@ -4056,7 +4681,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "feature",
@@ -4077,7 +4702,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -4098,7 +4723,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "feature",
@@ -4119,7 +4744,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "feature",
@@ -4140,7 +4765,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "feature",
@@ -4160,7 +4785,7 @@
     "name": "Alchemical Expertise",
     "crystals": {
       "requires": [
-        "crafter"
+        "gold"
       ],
       "provides": []
     },
@@ -4181,7 +4806,7 @@
     "name": "Eye for Value",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -4203,7 +4828,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4224,7 +4849,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "feature",
@@ -4245,7 +4870,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "priest"
+        "white"
       ]
     },
     "type": "feature",
@@ -4266,7 +4891,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -4287,7 +4912,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "feature",
@@ -4308,7 +4933,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4329,7 +4954,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -4350,7 +4975,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "feature",
@@ -4371,7 +4996,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "feature",
@@ -4393,7 +5018,7 @@
       "requires": [
       ],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "feature",
@@ -4415,7 +5040,7 @@
       "requires": [
       ],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "feature",
@@ -4436,7 +5061,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -4457,7 +5082,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "paladin"
+        "blue"
       ]
     },
     "type": "feature",
@@ -4478,7 +5103,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "feature",
@@ -4499,7 +5124,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -4520,7 +5145,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -4541,7 +5166,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "feature",
@@ -4562,7 +5187,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -4583,7 +5208,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4604,7 +5229,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -4625,7 +5250,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4646,7 +5271,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "feature",
@@ -4667,7 +5292,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -4688,7 +5313,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "feature",
@@ -4709,7 +5334,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "feature",
@@ -4730,7 +5355,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4751,7 +5376,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -4772,7 +5397,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4793,7 +5418,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -4814,7 +5439,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "feature",
@@ -4835,7 +5460,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -4856,7 +5481,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -4877,7 +5502,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "feature",
@@ -4898,7 +5523,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -4920,7 +5545,7 @@
       "requires": [
       ],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -4943,7 +5568,7 @@
         ""
       ],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "feature",
@@ -4965,7 +5590,7 @@
       "requires": [
       ],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "feature",
@@ -4987,7 +5612,7 @@
       "requires": [
       ],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "feature",
@@ -5009,7 +5634,7 @@
       "requires": [
       ],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -5031,7 +5656,7 @@
       "requires": [
       ],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -5053,7 +5678,7 @@
       "requires": [
       ],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "feature",
@@ -5075,7 +5700,7 @@
       "requires": [
       ],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -5096,7 +5721,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "race",
@@ -5117,7 +5742,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "race",
@@ -5139,7 +5764,7 @@
       "requires": [
       ],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "feature",
@@ -5160,7 +5785,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "",
@@ -5181,7 +5806,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "",
@@ -5202,7 +5827,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "race",
@@ -5223,7 +5848,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "",
@@ -5240,7 +5865,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "",
@@ -5258,7 +5883,7 @@
       "requires": [
       ],
       "provides": [
-        "paladin"
+        "blue"
       ]
     },
     "type": "feature",
@@ -5279,7 +5904,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "priest"
+        "white"
       ]
     },
     "type": "race",
@@ -5320,7 +5945,7 @@
       "requires": [
       ],
       "provides": [
-        "priest"
+        "white"
       ]
     },
     "type": "feature",
@@ -5340,7 +5965,7 @@
     "name": "Ironclad",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -5361,7 +5986,7 @@
     "name": "Merciless",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -5382,7 +6007,7 @@
     "name": "Walk it Off",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -5403,7 +6028,7 @@
     "name": "Superior Warrior",
     "crystals": {
       "requires": [
-        "soldier"
+        "red"
       ],
       "provides": []
     },
@@ -5426,7 +6051,7 @@
       "requires": [
       ],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "race",
@@ -5446,8 +6071,8 @@
     "name": "Sense of Unease",
     "crystals": {
       "requires": [
-        "soldier",
-        "soldier"
+        "red",
+        "red"
       ],
       "provides": []
     },
@@ -5468,8 +6093,8 @@
     "name": "Weapon Soul Bounding",
     "crystals": {
       "requires": [
-        "soldier",
-        "soldier"
+        "red",
+        "red"
       ],
       "provides": []
     },
@@ -5492,7 +6117,7 @@
       "requires": [
       ],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "race",
@@ -5514,7 +6139,7 @@
       "requires": [
       ],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "feature",
@@ -5536,7 +6161,7 @@
       "requires": [
       ],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "feature",
@@ -5557,7 +6182,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "race",
@@ -5579,7 +6204,7 @@
       "requires": [
       ],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "race",
@@ -5600,7 +6225,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": "race",
@@ -5621,7 +6246,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": "race",
@@ -5642,7 +6267,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": "",
@@ -5663,7 +6288,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": "",
@@ -5684,7 +6309,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "race",
@@ -5705,7 +6330,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": "race",
@@ -5726,7 +6351,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": "race",
@@ -5747,7 +6372,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "bard"
+        "purple"
       ]
     },
     "type": "      \"background\"\n",
@@ -5768,7 +6393,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "rogue"
+        "black"
       ]
     },
     "type": [
@@ -5791,7 +6416,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": [
@@ -5814,7 +6439,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "priest"
+        "white"
       ]
     },
     "type": [
@@ -5837,7 +6462,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "paladin"
+        "blue"
       ]
     },
     "type": [
@@ -5861,7 +6486,7 @@
       "requires": [
       ],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": [
@@ -5884,7 +6509,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "crafter"
+        "gold"
       ]
     },
     "type": [
@@ -5907,7 +6532,7 @@
     "crystals": {
       "requires": [],
       "type": [
-        "bard"
+        "purple"
       ]
     },
     "type": "background",
@@ -5928,7 +6553,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "soldier"
+        "red"
       ]
     },
     "type": [
@@ -5951,7 +6576,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "druid"
+        "emerald"
       ]
     },
     "type": [
@@ -5974,7 +6599,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "training",
@@ -5996,7 +6621,7 @@
       "requires": [
       ],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "training",
@@ -6018,7 +6643,7 @@
       "requires": [
       ],
       "provides": [
-        "wizard"
+        "cerulean"
       ]
     },
     "type": "training",
@@ -6039,7 +6664,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "barbarian"
+        "orange"
       ]
     },
     "type": [
@@ -6062,7 +6687,7 @@
     "crystals": {
       "requires": [],
       "provides": [
-        "ranger"
+        "green"
       ]
     },
     "type": [
@@ -6084,7 +6709,7 @@
     "name": "Spelltwine",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -6101,7 +6726,7 @@
     "name": "Mercurial Blood",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -6118,7 +6743,7 @@
     "name": "Master Channeler",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": []
     },
@@ -6135,8 +6760,8 @@
     "name": "Sanctum",
     "crystals": {
       "requires": [
-        "wizard",
-        "wizard"
+        "cerulean",
+        "cerulean"
       ],
       "provides": [
       ]
@@ -6158,7 +6783,7 @@
     "name": "Quick Study",
     "crystals": {
       "requires": [
-        "wizard"
+        "cerulean"
       ],
       "provides": [
       ]
@@ -6180,7 +6805,7 @@
     "name": "Lurker",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -6201,7 +6826,7 @@
     "name": "Scoundrel",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
@@ -6222,7 +6847,7 @@
     "name": "Walker",
     "crystals": {
       "requires": [
-        "ranger"
+        "green"
       ],
       "provides": []
     },
@@ -6243,7 +6868,7 @@
     "name": "Mercurial",
     "crystals": {
       "requires": [
-        "rogue"
+        "black"
       ],
       "provides": []
     },
