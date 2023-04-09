@@ -5,6 +5,49 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.selection-info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.remove-button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.remove-button::before {
+    content: '\f1f8'; /* bin icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.flash {
+    animation: flash 0.5s ease-in-out;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .search-container {
     display: flex;
     justify-content: center;

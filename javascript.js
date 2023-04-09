@@ -1,111 +1,62 @@
 import mustache from "https://cdn.skypack.dev/mustache@4.2.0";
 import html2canvas from "https://cdn.skypack.dev/html2canvas";
-import $ from 'https://cdn.skypack.dev/jquery'
 
+let selectedCards = 0;
+let requiredCrystals = {};
+let providedCrystals = {};
 
-let data = null; // store the JSON data
+const selectedCardsList = document.querySelector("#selected-cards-list");
+const removeAllButton = document.createElement("button");
+removeAllButton.innerText = "Remove All";
+removeAllButton.classList.add("remove-all-button");
+removeAllButton.style.display = selectedCardsList.children.length > 5 ? "block" : "none";
+selectedCardsList.parentNode.appendChild(removeAllButton);
 
-// Initialize variables
-var selectedCards = 0;
-var requiredCrystals = {};
-var providedCrystals = {};
-
-// Add event listener to each card element to toggle selection
-var cardElements = document.querySelectorAll(".card-container");
-cardElements.forEach(function (cardElement) {
-    cardElement.addEventListener("click", function () {
-        this.classList.toggle("selected");
-
-
-    });
+removeAllButton.addEventListener("click", () => {
+    selectedCardsList.innerHTML = "";
+    removeAllButton.style.display = "none";
+    const selectedCards = selectedCardsList.querySelectorAll("li").length;
+    const selectedCount = document.querySelector("#selected-count");
+    selectedCount.textContent = selectedCards;
 });
 
+
+// Render card templates
 function renderCards(jsonData) {
-    for (var card in jsonData) {
-        var cardTemplate = document.querySelector("#card-template").innerHTML;
-        var renderedCard = mustache.render(cardTemplate, jsonData[card]);
-        var cardElement = document.createElement("div");
+
+    for (const card in jsonData) {
+        const cardTemplate = document.querySelector("#card-template").innerHTML;
+        const renderedCard = mustache.render(cardTemplate, jsonData[card]);
+        const cardElement = document.createElement("div");
+
         cardElement.classList.add("card-container");
         cardElement.innerHTML = renderedCard;
-        cardElement.setAttribute("data-json", JSON.stringify(jsonData[card])); // Set the data-json attribute
-        cardElement.addEventListener("click", function () {
-
-
-            if (selectedCards === 0) {
-                requiredCrystals = {};
-                providedCrystals = {};
-            }
-
-
-            this.classList.toggle("selected");
-            // Update selectedCards variable and show/hide save deck button
-            selectedCards = document.querySelectorAll(".card-container.selected").length;
-            if (selectedCards > 0) {
-                document.querySelector("#save-deck-button").style.display = "block";
-            } else {
-                document.querySelector("#save-deck-button").style.display = "none";
-            }
-
-            // Update required and provided crystals variables
-            if (this.classList.contains("selected")) {
-                var cardData = JSON.parse(this.getAttribute("data-json"));
-                var required = cardData.crystals.requires
-                var provided = cardData.crystals.provides
-                console.log("adding crystlals" + required + provided)
-
-                Object.keys(required).forEach(function (color) {
-                    requiredCrystals[color] = (requiredCrystals[color] || 0) + required[color];
-                });
-                Object.keys(provided).forEach(function (color) {
-                    providedCrystals[color] = (providedCrystals[color] || 0) + provided[color];
-                });
-            } else {
-                // Remove required and provided crystals of deselected card
-                var cardData = JSON.parse(this.getAttribute("data-json"));
-                var required = cardData.crystals.requires;
-                var provided = cardData.crystals.provides;
-                Object.keys(required).forEach(function(color) {
-                    requiredCrystals[color] -= required[color];
-                    if (requiredCrystals[color] <= 0) {
-                        delete requiredCrystals[color];
-                    }
-                });
-            }
-
-            // Update deck status text
-            var deckStatusText = "Deck not ready";
-            if (selectedCards > 0) {
-                var requiredCrystalsText = Object.keys(requiredCrystals).map(function (color) {
-                    return requiredCrystals[color];
-                }).join(", ");
-                var providedCrystalsText = Object.keys(providedCrystals).map(function (color) {
-                    return providedCrystals[color];
-                }).join(", ");
-                if (JSON.stringify(requiredCrystals) === JSON.stringify(providedCrystals)) {
-                    deckStatusText = "Deck ready";
-                } else {
-                    deckStatusText = "Deck not ready, Required Crystals:" + requiredCrystalsText + ", Provided Crystals:" + providedCrystalsText + ".";
-                }
-            }
-            document.querySelector("#deck-status").textContent = deckStatusText;
-            document.querySelector("#selected-count").textContent = selectedCards;
-
-        });
+        cardElement.setAttribute("data-json", JSON.stringify(jsonData[card]));
         document.querySelector("#card-grid").appendChild(cardElement);
+        cardElement.addEventListener("click", () => {
+            saveSelectedCards(cardElement);
+            cardElement.classList.add("flash");
+            setTimeout(() => {
+                cardElement.classList.remove("flash");
+            }, 500); // duration of the animation in milliseconds
+        })
     }
 }
+document.querySelector("#save-deck-button").addEventListener("click", () => {
+    const selectedCardsList = document.querySelector("#selected-cards-list");
+    const selectedCards = selectedCardsList.querySelectorAll("li");
+    const deckData = [];
 
-document.querySelector("#save-deck-button").addEventListener("click", function () {
-    var selectedCards = document.querySelectorAll(".selected");
-    var deckData = [];
-    for (var i = 0; i < selectedCards.length; i++) {
-        var cardData = JSON.parse(selectedCards[i].getAttribute("data-json"));
+    for (const selectedCard of selectedCards) {
+        const cardData = JSON.parse(selectedCard.getAttribute("data-json"));
         deckData.push(cardData);
     }
-    var deckJson = JSON.stringify(deckData);
-    var blob = new Blob([deckJson], {type: "application/json"});
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement("a");
+
+    const deckJson = JSON.stringify(deckData);
+    const blob = new Blob([deckJson], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+
     a.download = "deck.json";
     a.href = url;
     document.body.appendChild(a);
@@ -114,128 +65,207 @@ document.querySelector("#save-deck-button").addEventListener("click", function (
     URL.revokeObjectURL(url);
 });
 
-document.getElementById("btn-Convert-Html2Image").addEventListener("click", function () {
-
-    //your critical access to ressources !
-    //rules = document.styleSheets[i].cssRules;
-    var cards = document.getElementsByClassName("card");
+document.getElementById("btn-Convert-Html2Image").addEventListener("click", async function () {
+    const cards = document.getElementsByClassName("card");
     document.getElementById("pagination").innerHTML += "<p><h3>Generated JPGs:</h3></p>";
     document.getElementById("pagination").innerHTML += "<p><button>Download All</button></p>";
     burgerMenu.classList.toggle("close");
     overlay.classList.toggle("overlay");
 
-    for (var card in cards) {
-        document.querySelector("#previewImg").innerHTML = "";
-
-        const name = document.getElementsByClassName("title")[0].innerHTML;
-        html2canvas(cards[card], {allowTaint: true, logging: true, taintTest: false}).then(function (canvas) {
-            var anchorTag = document.createElement("a");
-            document.body.appendChild(anchorTag);
-            document.getElementById("previewImg").appendChild(canvas);
-            anchorTag.download = name + ".jpg";
-            try {
-                anchorTag.href = canvas.toDataURL();
-
-                anchorTag.target = '_blank';
-                anchorTag.click();
-            } catch (e) {
-                if (e.name !== "SecurityError") {
-                    throw e;
-                }
+    for (const card of cards) {
+        const name = card.querySelector(".title").textContent;
+        const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false});
+        const anchorTag = document.createElement("a");
+        document.body.appendChild(anchorTag);
+        document.getElementById("previewImg").appendChild(canvas);
+        anchorTag.download = name + ".jpg";
+        try {
+            anchorTag.href = canvas.toDataURL();
+            anchorTag.target = '_blank';
+            anchorTag.click();
+        } catch (e) {
+            if (e.name !== "SecurityError") {
+                throw e;
             }
-        })
+        }
     }
 });
 
-var burgerMenu = document.getElementById('burger-menu');
-var overlay = document.getElementById('menu');
+function saveSelectedCards(cardElement) {
+    const selectedCardsList = document.querySelector("#selected-cards-list");
 
-burgerMenu.addEventListener('click', function () {
-    overlay.classList.toggle("overlay");
-});
+    const cardData = JSON.parse(cardElement.getAttribute("data-json"));
+    const li = document.createElement("li");
+    li.setAttribute("data-json", JSON.stringify(cardData));
+    li.textContent = cardData.name;
+    removeAllButton.style.display = selectedCardsList.children.length > 5 ? "block" : "none";
 
-overlay.addEventListener('click', function () {
-    overlay.classList.remove("overlay");
-});
+    const removeButton = document.createElement("button");
+    removeButton.classList.add("remove-button");
+    removeButton.addEventListener("click", () => {
+        li.remove();
+        const selectedCards = selectedCardsList.querySelectorAll("li").length;
+        const selectedCount = document.querySelector("#selected-count");
+        selectedCount.textContent = selectedCards;
+    });
+    li.appendChild(removeButton);
 
-const filterData = async (filter, currentPage = 1) => {
-    let input, values, filtered;
-    input = document.getElementById("my-input");
+    selectedCardsList.appendChild(li);
 
-    var data = await fetch('HoH_all.json');
-    values = Object.values(await data.json()); // get an array of the values of the JSON object
-    filtered = values.filter(value => { // filter the values by the input value
-        let valueString;
-        valueString = JSON.stringify(value); // convert the value to a string
-        var words = filter.split(","); // split the input value by commas
-        var match = true; // flag to indicate if the value matches all words
-        words.forEach(word => { // loop through each word
-            if (!valueString.toLowerCase().includes(word.trim())) { // check if the value string contains the word
-                match = false; // if not, set match to false
-            }
-        });
-        return match; // return true if match is true, false otherwise
+    const selectedCards = selectedCardsList.querySelectorAll("li").length;
+
+    const saveDeckButton = document.querySelector("#save-deck-button");
+    saveDeckButton.style.display = selectedCards > 0 ? "block" : "none";
+
+    if (selectedCards === 0) {
+        requiredCrystals = {};
+        providedCrystals = {};
+    }
+
+    const required = cardData.crystals.requires;
+    const provided = cardData.crystals.provides;
+
+    // Update required and provided crystals variables
+    Object.keys(required).forEach(color => {
+        requiredCrystals[color] = (requiredCrystals[color] || 0) + required[color];
+    });
+    Object.keys(provided).forEach(color => {
+        providedCrystals[color] = (providedCrystals[color] || 0) + provided[color];
     });
 
+    // Update deck status text
+    const deckStatus = document.querySelector("#deck-status");
+    const selectedCount = document.querySelector("#selected-count");
+    selectedCount.textContent = selectedCards;
+    const requiredCrystalsText = Object.values(requiredCrystals).join(", ");
+    const providedCrystalsText = Object.values(providedCrystals).join(", ");
+
+    if (selectedCards > 0) {
+        if (JSON.stringify(requiredCrystals) === JSON.stringify(providedCrystals)) {
+            //deckStatus.textContent = "Deck ready";
+        } else {
+            //deckStatus.textContent = `Deck not ready, Required Crystals: ${requiredCrystalsText}, Provided Crystals: ${providedCrystalsText}.`;
+        }
+    } else {
+        //deckStatus.textContent = "Deck not ready";
+    }
+
+    selectedCount.textContent = selectedCards;
+}
+
+const burgerMenu = document.getElementById('burger-menu');
+const overlay = document.getElementById('menu');
+
+function toggleOverlay() {
+    overlay.classList.toggle("overlay");
+}
+
+burgerMenu.addEventListener('click', toggleOverlay);
+overlay.addEventListener('click', toggleOverlay);
+
+async function filterData(filter, currentPage = 1, jsonData) {
+    const values = Object.values(jsonData);
+    const filtered = values.filter((value) => {
+        const valueString = JSON.stringify(value).toLowerCase();
+        const words = filter.split(",").map((word) => word.trim());
+        return words.every((word) => valueString.includes(word));
+    });
     const itemsPerPage = 20;
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
     const paginatedResults = filtered.slice(start, end);
-
     document.querySelector("#card-grid").innerHTML = "";
-    renderCards(paginatedResults); // render only the filtered values
-
+    renderCards(paginatedResults);
     const totalPages = Math.ceil(filtered.length / itemsPerPage);
-
-    const nextPageButton = document.createElement('button');
-    nextPageButton.innerText = 'Next Page';
-    nextPageButton.addEventListener('click', () => {
+    const nextPageButton = document.createElement("button");
+    nextPageButton.innerText = "Next Page";
+    nextPageButton.addEventListener("click", () => {
         if (currentPage < totalPages) {
             currentPage++;
-            filterData(filter, currentPage);
+            filterData(filter, currentPage, loadedData);
         }
     });
-
-    const previousPageButton = document.createElement('button');
-    previousPageButton.innerText = 'Previous Page';
-    previousPageButton.addEventListener('click', () => {
+    const previousPageButton = document.createElement("button");
+    previousPageButton.innerText = "Previous Page";
+    previousPageButton.addEventListener("click", () => {
         if (currentPage > 1) {
             currentPage--;
-            filterData(filter, currentPage);
+            filterData(filter, currentPage, loadedData);
         }
     });
-
-    const pageButtonsContainer = document.createElement('div');
+    const pageButtonsContainer = document.createElement("div");
     for (let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement('button');
+        const pageButton = document.createElement("button");
         pageButton.innerText = i;
         if (i === currentPage) {
             pageButton.disabled = true;
         } else {
-            pageButton.addEventListener('click', () => {
-                filterData(filter, i);
+            pageButton.addEventListener("click", () => {
+                filterData(filter, i, loadedData);
             });
         }
         pageButtonsContainer.appendChild(pageButton);
     }
-
     document.querySelector("#pagination").innerHTML = "";
     document.querySelector("#pagination").appendChild(previousPageButton);
     document.querySelector("#pagination").appendChild(pageButtonsContainer);
     document.querySelector("#pagination").appendChild(nextPageButton);
-};
+}
 
-// Call the loadData function to start loading the data
-filterData("").then(r => console.log("opopo"));
+let loadedData = {};
+
+async function loadStartUp() {
+    const json = await fetch("HoH_all.json");
+    loadedData = await json.json();
+    await filterData("", 1, loadedData);
+}
+
+loadStartUp();
 
 const myInput = document.getElementById('my-input');
-myInput.addEventListener('keyup', async function () {
-    await filterData(this.value.toLowerCase());
+myInput.addEventListener('keyup', async function() {
+    await filterData(this.value.toLowerCase(), 1, loadedData);
 });
 
-window.addEventListener('load', async function () {
+window.addEventListener('load', async function() {
     const filter = myInput.value.toLowerCase();
-    if (filter !== "") {
-        await filterData(filter);
+    if (filter) {
+        await filterData(filter, 1, loadedData);
     }
+});
+
+// Load JSON file
+const loadJsonButton = document.querySelector("#load-json");
+loadJsonButton.addEventListener("click", function() {
+    const jsonFileInput = document.querySelector("#json-file-input");
+    jsonFileInput.click();
+});
+
+document.querySelector("#load-hoh").addEventListener("click", async function() {
+    await loadStartUp();
+    console.log("");
+});
+
+const jsonFileInput = document.querySelector("#json-file-input");
+jsonFileInput.addEventListener("change", function() {
+    const file = this.files[0];
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        const fileData = event.target.result;
+        try {
+            loadedData = JSON.parse(fileData);
+            filterData("", 1, loadedData).then(() => {
+                console.log("loadedData");
+            });
+        } catch (error) {
+            console.error("Invalid JSON file");
+        }
+    };
+    reader.readAsText(file);
+});
+
+// Export JSON file (WIP)
+const exportJsonButton = document.querySelector("#export-json");
+exportJsonButton.addEventListener("click", function() {
+    console.log(loadedData); // Replace with file download logic
 });
