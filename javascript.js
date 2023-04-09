@@ -264,8 +264,41 @@ jsonFileInput.addEventListener("change", function() {
     reader.readAsText(file);
 });
 
-// Export JSON file (WIP)
-const exportJsonButton = document.querySelector("#export-json");
-exportJsonButton.addEventListener("click", function() {
-    console.log(loadedData); // Replace with file download logic
+const generateBoosterPack = async () => {
+    const response = await fetch("HoH_all.json");
+    const data = await response.json();
+
+    const characters = data.filter(card => card.type === "character");
+    const features = data.filter(card => card.type === "feature");
+    const items = data.filter(card => card.type === "item");
+
+    const getRandomCards = (cards, count) => {
+        const randomCards = [];
+
+        while (randomCards.length < count) {
+            const randomIndex = Math.floor(Math.random() * cards.length);
+            const card = cards[randomIndex];
+
+            if (!randomCards.includes(card)) {
+                randomCards.push(card);
+            }
+        }
+
+        return randomCards;
+    };
+
+    const randomCards = [
+        ...getRandomCards(characters, 3),
+        ...getRandomCards(features, 5),
+        ...getRandomCards(items, 5)
+    ];
+
+    const json = JSON.stringify(randomCards);
+    return randomCards;
+};
+
+document.querySelector("#booster-pack").addEventListener("click", async () => {
+    const randomCards = await generateBoosterPack();
+filterData("", 1, randomCards);
+    console.log(randomCards);
 });
