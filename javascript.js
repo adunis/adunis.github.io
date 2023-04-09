@@ -215,6 +215,11 @@ async function filterData(filter, currentPage = 1, jsonData) {
 let loadedData = {};
 
 async function loadStartUp() {
+    selectedCardsList.innerHTML = "";
+    removeAllButton.style.display = "none";
+    const selectedCards = selectedCardsList.querySelectorAll("li").length;
+    const selectedCount = document.querySelector("#selected-count");
+    selectedCount.textContent = selectedCards;
     const json = await fetch("HoH_all.json");
     loadedData = await json.json();
     await filterData("", 1, loadedData);
@@ -299,6 +304,11 @@ const generateBoosterPack = async () => {
 
 document.querySelector("#booster-pack").addEventListener("click", async () => {
     const randomCards = await generateBoosterPack();
+    selectedCardsList.innerHTML = "";
+    removeAllButton.style.display = "none";
+    const selectedCards = selectedCardsList.querySelectorAll("li").length;
+    const selectedCount = document.querySelector("#selected-count");
+    selectedCount.textContent = selectedCards;
 filterData("", 1, randomCards);
     console.log(randomCards);
 });
