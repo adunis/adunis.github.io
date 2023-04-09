@@ -97,7 +97,7 @@ function saveSelectedCards(cardElement) {
     const cardData = JSON.parse(cardElement.getAttribute("data-json"));
     const li = document.createElement("li");
     li.setAttribute("data-json", JSON.stringify(cardData));
-    li.textContent = cardData.name;
+    li.textContent = cardData.name + " (" + cardData.type + ")";
     removeAllButton.style.display = selectedCardsList.children.length > 5 ? "block" : "none";
 
     const removeButton = document.createElement("button");
