@@ -25,6 +25,50 @@
     margin-left: 10px;
 }
 
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.flipped .card::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: url(https://img.freepik.com/premium-photo/seamless-pattern-with-bright-multicolored-texture-cosmos_343283-2280.jpg);
+    z-index: 1;
+}
+
+.card-container.flipped .card {
+    transform: rotateY(180deg);
+}
+
+
 .remove-button::before {
     content: '\f1f8'; /* bin icon */
     font-family: "Font Awesome 5 Free";
@@ -126,11 +170,6 @@
         grid-template-columns: repeat(5, 1fr);
     }
 }
-
-.selected {
-    border: 1px solid red;
-}
-
 
 /* for screens smaller than 768px */
 @media (max-width: 767px) {
@@ -675,4 +714,7 @@ table {
     font-size: 32px;
     margin-bottom:30px;
     text-decoration:none;
+}
+.hidden{
+    filter: motionBlur(10px);
 }

@@ -19,14 +19,17 @@
         <p>Help content goes here.</p>
     </div>
 
-
 </div>
 
 <input type="file" id="json-file-input" style="display: none;">
 </body>
 </html>
 
-<br>
+<br> <div id="booster-pack-container">
+    <div id="booster-pack-cards"></div>
+    <input type="file" id="booster-pack-file-input" accept=".json" style="display: none;">
+</div>
+
 <div id="previewImg">
 </div>    <div id="selection-info" class="selection-info">
     <ul id="selected-cards-list"></ul>
@@ -90,7 +93,9 @@
     <ul>
         <a id="btn-Convert-Html2Image" href="#">Convert to JPGs</a>
         <a id="load-hoh" href="#">Load HoH Data</a>
-        <a id="booster-pack" href="#">Get a Booster Pack</a>
+        <a id="open-booster-pack">Open booster pack</a>
+        <a id="booster-pack" href="#">Generate a Booster Pack</a>
+        <a id="loot-booster-pack" href="#">Generate a Loot Booster Pack</a>
         <a id="load-json" href="#">Load JSON</a>
     </ul>
 </div>

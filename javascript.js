@@ -57,6 +57,9 @@ function renderCards(jsonData) {
         cardElement.setAttribute("data-json", JSON.stringify(jsonData[card]));
         document.querySelector("#card-grid").appendChild(cardElement);
         cardElement.addEventListener("click", () => {
+            if (cardElement.classList.contains('flipped')) {
+                return;
+            }
             saveSelectedCards(cardElement);
             cardElement.classList.add("flash");
             setTimeout(() => {
@@ -416,5 +419,37 @@ input.addEventListener("input", () => {
     } else {
         popup.style.display = "none";
     }
+});
+
+const openBoosterPackButton = document.querySelector("#open-booster-pack");
+const boosterPackFileInput = document.querySelector("#booster-pack-file-input");
+
+openBoosterPackButton.addEventListener("click", () => {
+    boosterPackFileInput.click();
+});
+
+boosterPackFileInput.addEventListener("change", function() {
+    const file = this.files[0];
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        const fileData = event.target.result;
+        try {
+            loadedData = JSON.parse(fileData);
+            filterData("", 1, loadedData).then(() => {
+                // Hide all cards in grid
+                const gridCards = document.querySelectorAll(".card-container");
+                gridCards.forEach((card) => {
+                    card.classList.add("flipped");
+                    card.addEventListener('click', () => {
+                        card.classList.remove('flipped');
+
+                    });
+                });
+            });
+        } catch (error) {
+            console.error("Invalid JSON file");
+        }
+    };
+    reader.readAsText(file);
 });
 
