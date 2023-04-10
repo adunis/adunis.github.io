@@ -35,7 +35,8 @@
     <ul id="selected-cards-list"></ul>
     <span id="selected-count">0</span> cards
     <span id="deck-status"></span>
-    <button id="save-deck-button" style="display:none;">Export JSON Deck</button>
+    <button id="save-deck-button" style="display:none;">Export .Json file</button>
+    <button id="save-deck-button-encrypted" style="display:none;">Export .Hoh file</button>
 </div>
 <div id="card-grid">
  </div>
@@ -91,13 +92,11 @@
 
 <div id="menu">
     <ul>
-        <a id="open-booster-pack">(Player) Open booster pack</a>
-        <a id="btn-Convert-Html2Image" href="#">(Player) Convert to JPGs</a>
-        <a id="booster-pack" href="#">(GM) Generate a Booster Pack</a>
-        <a id="loot-booster-pack" href="#">(GM) Generate a Loot Booster Pack</a>
-        <a id="load-json" href="#">(GM) Load JSON</a>
-        <a id="load-hoh" href="#">(GM) Load HoH Data</a>
-
+        <a id="open-booster-pack">Open a booster pack (.Json or .Hoh file)</a>
+        <a id="load-json" href="#">Load cards (.Json file)</a>
+        <a id="btn-Convert-Html2Image" href="#">Convert cards to JPGs</a>
+        <a id="booster-pack" href="#">Generate a Booster Pack</a>
+        <a id="booster-loot-pack" href="#">Generate a Loot Pack</a>
+        <a id="load-hoh" href="#">Reset data</a>
     </ul>
 </div>
-
