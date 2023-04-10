@@ -365,22 +365,27 @@ table {
 
 .blue-color {
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 102, 255, 0.25);
+    box-shadow: inset 0 0 0 2000px rgba(1, 16, 255, 0.29);
 }
 
 .cerulean-color {
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 255, 214, 0.25);
+    box-shadow: inset 0 0 0 2000px rgba(0, 255, 211, 0.22);
 }
 
 .purple-color {
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(64, 0, 255, 0.25);
+    box-shadow: inset 0 0 0 2000px rgba(214, 87, 255, 0.3);
 }
 
 .orange-color {
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(255, 115, 0, 0.25);
+    box-shadow: inset 0 0 0 2000px rgba(255, 161, 82, 0.35);
+}
+
+.brown-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(143, 106, 73, 0.25);
 }
 
 .gold-color {
