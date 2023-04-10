@@ -3,6 +3,7 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 800px;
 }
 
 .selection-info {
@@ -145,18 +146,6 @@
     }
 }
 
-#tooltip {
-    content: attr(data-json);
-    display: none;
-    position: absolute;
-    font-size:9px;
-    z-index: 1;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    max-width: 300px;
-}
 
 .card-body h3 {
     font-size:16px;
@@ -174,9 +163,9 @@
     border-radius: 15px;
     border: 1px solid #cc9900;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #ffdf7f url(https://i.pinimg.com/474x/0c/e5/6d/0ce56ddec3eb469a516d68adc4354b63.jpg) repeat 0 0;
     overflow: hidden;
     position: relative;
-    background: #ffdf7f url(https://i.pinimg.com/474x/0c/e5/6d/0ce56ddec3eb469a516d68adc4354b63.jpg) repeat 0 0;
 }
 
 .card-header {
@@ -282,25 +271,92 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: no-repeat url(https://media.istockphoto.com/id/478061308/photo/detail-of-brass-door-at-royal-palace-in-fez-morocco.jpg?s=612x612&w=0&k=20&c=WPmC7gGCnc4X3aUb8iXTwhcC4CfLBt32WaCddw_ee7A=) 0 0;
-    background-repeat: repeat;
-    backdrop-filter: blur(8px); // This be the blur
+    background: url(https://memestatic.fjcdn.com/pictures/Very+strange+treasure+centermodgreenbig2the+following+is+a+list+of+100_6159df_6840144.jpg) repeat 0 0 ;
 }
 
 table {
     font-size:8px;
 }
 
-.item-header {
-    background: no-repeat url(https://dotesports.com/wp-content/uploads/2021/06/29111856/MTG-Treasure.jpg) 0 0;
-    background-size: 300px;
-    background-position: center;
+
+
+
+/* Character card style */
+.character-header {
+    background-size: 10% auto;
+    background: url(https://static.wikia.nocookie.net/diablo/images/a/a7/Diablo_Immortal_Classes_4.jpg);
 }
 
-.character-header {
-    background: no-repeat url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/12/Dungeons-Dragons-5-Best-Rogue-Features-5-Worst-features-image.jpg) 0 0;
-    background-size: 300px;
-    background-position: center;
+/* Feature card style */
+.feature-header {
+    background-size: 10% auto;
+    background: url(https://www.wargamer.com/wp-content/sites/wargamer/2021/05/dnd-5e-spells-wizard.jpg);
+}
+
+/* Item card style */
+.item-header {
+    background: url(https://memestatic.fjcdn.com/pictures/Very+strange+treasure+centermodgreenbig2the+following+is+a+list+of+100_6159df_6840144.jpg) repeat 0 0 ;
+}
+
+.cerulean-color.emerald-color{
+    box-shadow:
+            inset 0 0 60px rgba(0, 255, 179, 0.2),
+            inset 0 0 0 2000px rgba(116, 253, 3, 0.25);
+}
+
+.red-color.white-color {
+    box-shadow:
+    inset 0 0 60px rgba(255, 255, 255, 0.89),
+    inset 0 0 0 2000px rgba(253, 3, 149, 0.25);
+}
+.red-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(253, 3, 149, 0.15);
+}
+
+.green-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(3, 253, 157, 0.15);
+}
+
+.emerald-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(64, 255, 0, 0.25);
+}
+
+.blue-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 102, 255, 0.25);
+}
+
+.cerulean-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 255, 214, 0.25);
+}
+
+.purple-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(64, 0, 255, 0.25);
+}
+
+.orange-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 115, 0, 0.25);
+}
+
+.gold-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 196, 0, 0.25);
+}
+
+
+.black-color {
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.25);
+}
+
+.white-color {
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.25);
 }
 
 
@@ -331,6 +387,25 @@ table {
 .invisible{
     opacity:0;
 }
+
+.crystal.brown {
+    color: rgba(255, 0, 148, 0.3);
+    display:inline;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff,
+            0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #fff,
+            0 0 30px #4e00ff,
+            0 0 30px #4e00ff,
+            0 0 30px #4e00ff,
+            0 0 30px #4e00ff,
+            0 0 30px #6128e7,
+            0 0 30px #7d41ff,
+            0 0 30px #7d45ff;
+}
+
 
 .crystal.black {
     color: #000000;
@@ -377,7 +452,7 @@ table {
             0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff;
 }
 
-.crystal.green {
+.crystal.emerald {
     color: #0dff00;
     display:inline;
     text-shadow:
@@ -470,7 +545,7 @@ table {
 }
 
 
-.crystal.emerald {
+.crystal.green {
     color: #004d13;
     display:inherit;
     text-shadow:

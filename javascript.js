@@ -6,6 +6,29 @@ let requiredCrystals = {};
 let providedCrystals = {};
 
 const selectedCardsList = document.querySelector("#selected-cards-list");
+
+// Create "select all" button
+const selectAllButton = document.createElement("button");
+selectAllButton.textContent = "Add All";
+selectAllButton.addEventListener("click", () => {
+    const gridCards = document.querySelectorAll("#card-grid .card-container");
+    gridCards.forEach((card) => {
+        if (!card.classList.contains("selected")) {
+            console.log(card)
+            saveSelectedCards(card);
+            card.classList.add("flash");
+            setTimeout(() => {
+                card.classList.remove("flash");
+            }, 500);
+        }
+    });
+});
+
+// Add button to selection info div
+const selectionInfo = document.querySelector("#selection-info");
+selectionInfo.insertBefore(selectAllButton, selectedCardsList);
+
+
 const removeAllButton = document.createElement("button");
 removeAllButton.innerText = "Remove All";
 removeAllButton.classList.add("remove-all-button");
@@ -165,11 +188,69 @@ overlay.addEventListener('click', toggleOverlay);
 
 async function filterData(filter, currentPage = 1, jsonData) {
     const values = Object.values(jsonData);
-    const filtered = values.filter((value) => {
+    let filtered = values.filter((value) => {
         const valueString = JSON.stringify(value).toLowerCase();
         const words = filter.split(",").map((word) => word.trim());
-        return words.every((word) => valueString.includes(word));
+        return words.every((word) => {
+            if (word.toLowerCase().startsWith("type:")) {
+                // Handle type filter separately
+                const typeValue = word.split(":")[1].toLowerCase().trim();
+                if (Array.isArray(value.type)) {
+                    return value.type.includes(typeValue);
+                }
+                return value.type.toLowerCase() === typeValue;
+            } else if (word.toLowerCase().startsWith("crystals:")) {
+                // Handle crystals filter separately
+                const crystalsValue = word.split(":")[1].toLowerCase().trim();
+                console.log(value.crystals);
+                const crystalsObject = value.crystals;
+                if (crystalsObject && crystalsObject.requires && crystalsObject.requires.length > 0) {
+                    console.log(crystalsObject)
+                    return crystalsObject.requires.includes(crystalsValue)
+                }
+
+                if (crystalsObject && crystalsObject.provides && crystalsObject.provides.length > 0) {
+                    console.log(crystalsObject)
+                    return crystalsObject.provides.includes(crystalsValue);
+                }
+
+                return false;
+            } else {
+                // Regular text filter
+                const isIncluded = valueString.includes(word.toLowerCase());
+                if (word.includes(" ")) {
+                    // Handle multi-word queries
+                    const multiWordQuery = word.toLowerCase().split(" ");
+                    return isIncluded && multiWordQuery.every(query => valueString.includes(query));
+                }
+                return isIncluded;
+            }
+        });
+    }).filter((value) => {
+        // Handle additional filters
+        const valueString = JSON.stringify(value).toLowerCase();
+        const words = filter.split(",").map((word) => word.trim());
+        const typeFilters = words.filter((word) => word.toLowerCase().startsWith("type:"));
+        const crystalsFilters = words.filter((word) => word.toLowerCase().startsWith("crystals:"));
+        const additionalFilters = words.filter((word) => !word.toLowerCase().startsWith("type:") && !word.toLowerCase().startsWith("crystals:"));
+        return additionalFilters.every((word) => valueString.includes(word.toLowerCase())) &&
+            typeFilters.every((filter) => {
+                const typeValue = filter.split(":")[1].toLowerCase().trim();
+                if (Array.isArray(value.type)) {
+                    return value.type.includes(typeValue);
+                }
+                return value.type.toLowerCase() === typeValue;
+            }) &&
+            crystalsFilters.every((filter) => {
+                const crystalsValue = filter.split(":")[1].toLowerCase().trim();
+                const crystalsObject = value.crystals;
+                if (crystalsObject && (crystalsObject.requires.length > 0 || crystalsObject.provides.length > 0)) {
+                    return crystalsObject.requires.includes(crystalsValue) || crystalsObject.provides.includes(crystalsValue);
+                }
+                return false;
+            });
     });
+
     const itemsPerPage = 20;
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
@@ -275,7 +356,12 @@ const generateBoosterPack = async () => {
 
     const characters = data.filter(card => card.type === "character");
     const features = data.filter(card => card.type === "feature");
-    const items = data.filter(card => card.type === "item");
+    const trainings = data.filter(card => card.type === "training");
+    const items = data.filter(card => card.type === "item" && card.type !== "magic");
+    const backgrounds = data.filter(card => card.type === "background");
+    const abilities = data.filter(card => card.type === "ability");
+
+
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -293,9 +379,14 @@ const generateBoosterPack = async () => {
     };
 
     const randomCards = [
-        ...getRandomCards(characters, 3),
-        ...getRandomCards(features, 5),
-        ...getRandomCards(items, 5)
+        ...getRandomCards(characters, 1),
+        ...getRandomCards(features, 1),
+        ...getRandomCards(trainings, 1),
+        ...getRandomCards(items, 3),
+        ...getRandomCards(backgrounds, 1),
+        ...getRandomCards(abilities, 1)
+
+
     ];
 
     const json = JSON.stringify(randomCards);
@@ -312,3 +403,18 @@ document.querySelector("#booster-pack").addEventListener("click", async () => {
 filterData("", 1, randomCards);
     console.log(randomCards);
 });
+
+const inputElement = document.getElementById("my-input");
+
+const input = document.getElementById("my-input");
+const popup = document.getElementById("popup");
+
+input.addEventListener("input", () => {
+    const inputValue = input.value.toLowerCase();
+    if (inputValue === "help") {
+        popup.style.display = "block";
+    } else {
+        popup.style.display = "none";
+    }
+});
+
