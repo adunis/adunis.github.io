@@ -554,3 +554,26 @@ function decrypt(encryptedJson) {
     return JSON.parse(bytes);
 }
 
+boosterPackFileInput.addEventListener("change", function() {
+    const file = this.files[0];
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        try {
+            const fileData = event.target.result;
+            const decryptedJson = decrypt(fileData);
+            filterData("", 1, decryptedJson).then(() => {
+                // Hide all cards in grid
+                const gridCards = document.querySelectorAll(".card-container");
+                gridCards.forEach((card) => {
+                    card.classList.add("flipped");
+                    card.addEventListener('click', () => {
+                        card.classList.remove('flipped');
+                    });
+                });
+            });
+        } catch (error) {
+            console.error("Invalid or corrupted encrypted file");
+        }
+    };
+    reader.readAsText(file);
+});
