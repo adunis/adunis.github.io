@@ -1,6 +1,7 @@
 import mustache from "https://cdn.skypack.dev/mustache@4.2.0";
 import html2canvas from "https://cdn.skypack.dev/html2canvas";
 import CryptoJS from 'https://cdn.skypack.dev/crypto-js';
+import JSZip from 'https://cdn.skypack.dev/jszip';
 
 let selectedCards = 0;
 let requiredCrystals = {};
@@ -107,7 +108,34 @@ document.querySelector("#save-deck-button-encrypted").addEventListener("click", 
     const blob = new Blob([encryptedJson], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.download = "encrypted_booster.hoh"; // change the file extension to indicate that it is encrypted
+    const randomNumber = Math.floor(Math.random() * 10000000000000000);
+    const fileName = `handful_of_heroes_booster_${randomNumber}.hoh`;
+    a.download = fileName; // change the file extension to indicate that it is encrypted
+    a.href = url;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+});
+
+document.querySelector("#save-deck-button-loot-encrypted").addEventListener("click", () => {
+    const selectedCardsList = document.querySelector("#selected-cards-list");
+    const selectedCards = selectedCardsList.querySelectorAll("li");
+    const deckData = [];
+
+    for (const selectedCard of selectedCards) {
+        const cardData = JSON.parse(selectedCard.getAttribute("data-json"));
+        deckData.push(cardData);
+    }
+
+    const deckJson = JSON.stringify(deckData);
+    const encryptedJson = encrypt(deckJson); // encrypt the JSON data
+    const blob = new Blob([encryptedJson], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    const randomNumber = Math.floor(Math.random() * 10000000000000000);
+    const fileName = `handful_of_heroes_loot_${randomNumber}.hoh`;
+    a.download = fileName; // change the file extension to indicate that it is encrypted
     a.href = url;
     document.body.appendChild(a);
     a.click();
@@ -164,9 +192,11 @@ function saveSelectedCards(cardElement) {
 
     const saveDeckButton = document.querySelector("#save-deck-button");
     const saveDeckButtonEncrypted = document.querySelector("#save-deck-button-encrypted");
+    const saveDeckButtonLootEncrypted = document.querySelector("#save-deck-button-loot-encrypted");
 
     saveDeckButton.style.display = selectedCards > 0 ? "block" : "none";
     saveDeckButtonEncrypted.style.display = selectedCards > 0 ? "block" : "none";
+    saveDeckButtonLootEncrypted.style.display = selectedCards > 0 ? "block" : "none";
 
 
     if (selectedCards === 0) {
@@ -222,46 +252,7 @@ burgerMenu.addEventListener('click', toggleOverlay);
 overlay.addEventListener('click', toggleOverlay);
 
 async function filterData(filter, currentPage = 1, jsonData) {
-    const values = Object.values(jsonData);
-    let filtered = values.filter((value) => {
-        const valueString = JSON.stringify(value).toLowerCase();
-        const words = filter.split(",").map((word) => word.trim());
-        return words.every((word) => {
-            if (word.toLowerCase().startsWith("type:")) {
-                // Handle type filter separately
-                const typeValue = word.split(":")[1].toLowerCase().trim();
-                if (Array.isArray(value.type)) {
-                    return value.type.includes(typeValue);
-                }
-                return value.type.toLowerCase() === typeValue;
-            } else if (word.toLowerCase().startsWith("crystals:")) {
-                // Handle crystals filter separately
-                const crystalsValue = word.split(":")[1].toLowerCase().trim();
-                console.log(value.crystals);
-                const crystalsObject = value.crystals;
-                if (crystalsObject && crystalsObject.requires && crystalsObject.requires.length > 0) {
-                    console.log(crystalsObject)
-                    return crystalsObject.requires.includes(crystalsValue)
-                }
-
-                if (crystalsObject && crystalsObject.provides && crystalsObject.provides.length > 0) {
-                    console.log(crystalsObject)
-                    return crystalsObject.provides.includes(crystalsValue);
-                }
-
-                return false;
-            } else {
-                // Regular text filter
-                const isIncluded = valueString.includes(word.toLowerCase());
-                if (word.includes(" ")) {
-                    // Handle multi-word queries
-                    const multiWordQuery = word.toLowerCase().split(" ");
-                    return isIncluded && multiWordQuery.every(query => valueString.includes(query));
-                }
-                return isIncluded;
-            }
-        });
-    }).filter((value) => {
+    const filtered = jsonData.filter((value) => {
         // Handle additional filters
         const valueString = JSON.stringify(value).toLowerCase();
         const words = filter.split(",").map((word) => word.trim());
@@ -271,17 +262,22 @@ async function filterData(filter, currentPage = 1, jsonData) {
         return additionalFilters.every((word) => valueString.includes(word.toLowerCase())) &&
             typeFilters.every((filter) => {
                 const typeValue = filter.split(":")[1].toLowerCase().trim();
-                if (Array.isArray(value.type)) {
-                    return value.type.includes(typeValue);
+                if (value.type != null) {
+                   return Array.isArray(value.type) ? value.type.includes(typeValue) : value.type.toLowerCase() === typeValue;
                 }
-                return value.type.toLowerCase() === typeValue;
             }) &&
             crystalsFilters.every((filter) => {
+                console.log(value)
                 const crystalsValue = filter.split(":")[1].toLowerCase().trim();
                 const crystalsObject = value.crystals;
-                if (crystalsObject && (crystalsObject.requires.length > 0 || crystalsObject.provides.length > 0)) {
-                    return crystalsObject.requires.includes(crystalsValue) || crystalsObject.provides.includes(crystalsValue);
+                if (crystalsObject && crystalsObject.provides && crystalsObject.provides.length > 0) {
+                    return crystalsObject.provides.includes(crystalsValue);
                 }
+
+                if (crystalsObject && crystalsObject.requires && crystalsObject.requires.length > 0) {
+                    return crystalsObject.requires.includes(crystalsValue);
+                }
+
                 return false;
             });
     });
@@ -389,11 +385,11 @@ const generateBoosterPack = async () => {
     const response = await fetch("HoH_all.json");
     const data = await response.json();
 
-    const characters = data.filter(card => card.type.includes("character"));
-    const features = data.filter(card => card.type.includes("feature"));
-    const trainings = data.filter(card => card.type.includes("training"));
-    const backgrounds = data.filter(card => card.type.includes("background"));
-    const abilities = data.filter(card => card.type.includes("ability"));
+    const characters = data.filter(card => card.type && card.type.includes("character"));
+    const features = data.filter(card => card.type && card.type.includes("feature"));
+    const trainings = data.filter(card => card.type && card.type.includes("training"));
+    const backgrounds = data.filter(card => card.type && card.type.includes("background"));
+    const abilities = data.filter(card => card.type && card.type.includes("ability"));
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -426,8 +422,8 @@ const generateLootBoosterPack = async () => {
     const response = await fetch("HoH_all.json");
     const data = await response.json();
 
-    const items = data.filter(card => card.type.includes("item") && (!card.type.includes("common") || !card.type.includes("uncommon") || !card.type.includes("rare")));
-    const magic = data.filter(card => card.type.includes("item") &&  (card.type.includes("common") || card.type.includes("uncommon") || card.type.includes("rare")));
+    const items = data.filter(card => card.type && card.type.includes("item") && !card.type.includes("common")&& !card.type.includes("uncommon")&& !card.type.includes("rare"));
+    const magic = data.filter(card => card.type && card.type.includes("item") &&  (card.type.includes("common") || card.type.includes("uncommon") || card.type.includes("rare")));
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -445,8 +441,8 @@ const generateLootBoosterPack = async () => {
     };
 
     const randomCards = [
-        ...getRandomCards(items, 5),
-        ...getRandomCards(magic, 3)
+        ...getRandomCards(items, 6),
+        ...getRandomCards(magic, 1)
     ];
 
     const json = JSON.stringify(randomCards);
@@ -464,6 +460,59 @@ filterData("", 1, randomCards);
     console.log(randomCards);
 });
 
+document.querySelector("#booster-box").addEventListener("click", async () => {
+    const zip = new JSZip();
+
+    for (let i = 0; i < 20; i++) {
+        const randomCards = await generateBoosterPack();
+        const deckData = JSON.stringify(randomCards);
+        const encryptedJson = encrypt(deckData);
+        const blob = new Blob([encryptedJson], {type: "application/json"});
+
+        // Generate a random number and concatenate it with the file name
+        const randomNumber = Math.floor(Math.random() * 100000);
+        const fileName = `booster_pack_${randomNumber}.hoh`;
+
+        // Add the file to the zip object
+        zip.file(fileName, blob);
+    }
+
+});
+
+    document.querySelector("#loot-box").addEventListener("click", async () => {
+        const zip = new JSZip();
+
+        for (let i = 0; i < 20; i++) {
+            const randomCards = await generateLootBoosterPack()
+            const deckData = JSON.stringify(randomCards);
+            const encryptedJson = encrypt(deckData);
+            const blob = new Blob([encryptedJson], {type: "application/json"});
+
+            // Generate a random number and concatenate it with the file name
+            const randomNumber = Math.floor(Math.random() * 100000);
+            const fileName = `loot_box_${randomNumber}.hoh`;
+
+            // Add the file to the zip object
+            zip.file(fileName, blob);
+        }
+
+        // Generate the zip file and download it
+        zip.generateAsync({type: "blob"}).then(function (content) {
+            const url = URL.createObjectURL(content);
+            const a = document.createElement("a");
+            const randomNumber = Math.floor(Math.random() * 1000);
+            const fileBox = `loot_box_${randomNumber}.zip`;
+            a.download = fileBox;
+            a.href = url;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+    });
+
+
 document.querySelector("#booster-loot-pack").addEventListener("click", async () => {
     const randomCards = await generateLootBoosterPack();
     selectedCardsList.innerHTML = "";
@@ -474,6 +523,8 @@ document.querySelector("#booster-loot-pack").addEventListener("click", async () 
     filterData("", 1, randomCards);
     console.log(randomCards);
 });
+
+
 
 const inputElement = document.getElementById("my-input");
 
@@ -503,26 +554,3 @@ function decrypt(encryptedJson) {
     return JSON.parse(bytes);
 }
 
-boosterPackFileInput.addEventListener("change", function() {
-    const file = this.files[0];
-    const reader = new FileReader();
-    reader.onload = function(event) {
-        try {
-            const fileData = event.target.result;
-            const decryptedJson = decrypt(fileData);
-            filterData("", 1, decryptedJson).then(() => {
-                // Hide all cards in grid
-                const gridCards = document.querySelectorAll(".card-container");
-                gridCards.forEach((card) => {
-                    card.classList.add("flipped");
-                    card.addEventListener('click', () => {
-                        card.classList.remove('flipped');
-                    });
-                });
-            });
-        } catch (error) {
-            console.error("Invalid or corrupted encrypted file");
-        }
-    };
-    reader.readAsText(file);
-});

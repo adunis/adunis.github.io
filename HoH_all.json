@@ -4894,7 +4894,7 @@
     ]
   },
   {
-    "name": "Backstab",
+    "name": "Sneak Attack",
     "crystals": {
       "requires": [
         "black"
@@ -4902,7 +4902,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you attack someone up close and personal and they don’t see it coming, you deal your damage (as normal) and may choose to push your luck. If you do, roll+DEX. On a 18+, choose 2. On a 9-17, choose 1.</p><ul><li>You deal +1d6 damage.</li><li>They don’t cry out, make noise, or draw attention.</li><li>You stun or hamper them, at least for the moment.</li><li>You slip away before they can react.</li><li>Strike a weak spot, ignoring their armor.</li><li>You create an opportunity; you or an ally gain advantage if you act on it.</li></ul>",
+    "description": "<p>When you attack someone up close and personal and they don’t see it coming, you deal your damage (as normal) and may choose to push your luck. If you do, roll+DEX. On a 18+, choose 2. On a 9-17, choose 1.</p><ul><li>You deal +1d6 damage</li><li>They don’t cry out, make noise, or draw attention.</li><li>You stun or hamper them, at least for the moment. You gain 1 combo point. You can have to up to 5 combo points.</li><li>You slip away before they can react.</li><li>Strike a weak spot, ignoring their armor.</li><li>You create an opportunity; you or an ally gain advantage if you act on it.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -4911,6 +4911,27 @@
       {
         "stat_name": "cost",
         "stat_value": "5 months"
+      }
+    ]
+  },
+  {
+    "name": "Eviscerate",
+    "crystals": {
+      "requires": [
+        "black"
+      ],
+      "provides": []
+    },
+    "type": "move",
+    "description": "<p>When you attack with a melee weapon and try to strike a vital point on your enemy, causing them to bleed profusely, spend any number of combo points to deal additional damage to your target equal to the number of combo points spent. If you spend 3 or more combo points, you can choose one of the following additional effects:</p><ul><li>Disable your target’s limb of your choice (GM’s choice of the details).</li><li>Your target suffers from a debility of your choice.</li><li>Your target loses their next turn.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
       }
     ]
   },
@@ -5042,23 +5063,24 @@
     ]
   },
   {
-    "name": "Shapeshifting",
+    "name": "Wild Shape",
     "crystals": {
       "requires": [
+        "emerald",
         "emerald"
       ],
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call upon the power of nature to achieve your goals, roll+Con. On a 18+, choose three from the list below. On a 9-17, choose two:</p><ul><li>You transform into an animal of your choice that you have studied</li><li>You gain the abilities and instincts of your animal form</li><li>You retain your own mind and personality while in animal form</li><li>You can communicate with other animals of the same kind as you</li><li>You protect yourself from environmental hazards and natural attacks</li></ul><p>On a miss, the power of nature overwhelms you, causing you to lose control of your animal form until you calm down.</p>",
+    "description": "<p>When you touch a living animal or an organic piece of them (while they are stil alive), you can shapeshift into that creature. The animal can be as big as a bear or as small as a mice. Roll +WIS. On a 10+, choose 3 and hold 3. On a 7-9, choose 2 and hold 2:<br>- You retain your mental faculties<br>- You gain the physical abilities of the animal (e.g., claws, wings, etc.)<br>- You gain the senses of the animal (e.g., night vision, acute hearing, etc.). On a miss, the GM chooses two options (you can't fail the shapeshifting).</p><p>The size of the animal can affect your health and damage. If the animal is larger than your humanoid form, your HP becomes 20 and your hit damage (HD) becomes 2d6. If the animal is smaller, your HP becomes 3 and your hit damage (HD) becomes 1. If the animal is faster than your humanoid form, you gain +3 to DEX rolls. While in animal form, on any failed roll you make you lose 1 hold. When you lose all holds, yu are unable to control the animal instincts and you remain stuck in animal form. When you go to 0 HP while in animal form, you regain your humanoid form. You can return to your normal form at any time (while you are still in control.</p>",
     "stats": [
       {
         "stat_name": "price",
-        "stat_value": 1000
+        "stat_value": 0
       },
       {
         "stat_name": "cost",
-        "stat_value": "6 months"
+        "stat_value": ""
       }
     ]
   },
@@ -7885,7 +7907,7 @@
     },
     "type": [
       "item",
-      "uncommon",
+      "common",
       "potion"
     ],
     "description": "<p><h3>Heroic Boost:</h3><p>When you drink the potion of heroism, you feel a surge of courage and strength. For the next hour, you gain +1 to all your rolls and you can mark one additional option when you hack and slash or volley. You also ignore the effects of fear, pain, and exhaustion. However, after the hour is over, you suffer a -1 ongoing to all your rolls until you rest.</p></p>",
@@ -7897,6 +7919,75 @@
       {
         "stat_name": "price",
         "stat_value": "25 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Invisibility",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Vanish from Sight:</h3><p>When you drink the potion of invisibility, you turn invisible for the next hour. You can move without being seen or heard, and you have advantage on Dexterity (Stealth) checks. However, any attack or spell you make will end the effect. Also, the potion has a bitter taste that might make you gag and break your stealth.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.2 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "300 coins"
+      }
+    ]
+  },
+  {
+    "name": "Endure Elements Potion",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Endure Elements:</h3><p>Drinking this potion grants the imbiber the ability to endure extreme natural elements. The imbiber gains the Endure Elements effect for 1 hour, which allows them to endure extreme heat, extreme cold, severe wind, heavy precipitation, or any combination of these, without suffering any harm. This does not protect against magical effects or extreme environmental hazards such as lava or acid.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Levitation",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Float in the Air:</h3><p>When you drink the potion of levitation, you can float in the air for the next hour. You can move at a speed of 20 feet per round and you have advantage on Dexterity (Acrobatics) checks. However, you cannot fly higher than 30 feet above the ground and any attack or spell you make will end the effect.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "300 coins"
       }
     ]
   },
@@ -7949,6 +8040,48 @@
     ]
   },
   {
+    "name": "Nature's Chosen",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>Your bond with the wilds influences you in strange ways. Choose a Tell - a physical attribute that marks you as an avatar of nature. It remains with you, no matter what shape you take. You also have no need to eat or drink; if a move tells you to mark off a ration, just ignore it.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Communion of Whispers",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you spend time in a place, making note of its resident spirits and calling on the spirits of the land, roll+WIS. You will be granted a vision of significance to you, your allies, and the spirits around you. On a 10+, the vision will be clear and helpful to you. On a 7-9, the vision is unclear, its meaning murky. On a 6-, in addition to whatever the GM says, the vision is upsetting, frightening, or traumatizing; take -1 Forward.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
     "name": "Simple Bow",
     "crystals": {
       "requires": [
@@ -7973,6 +8106,77 @@
     ]
   },
   {
+    "name": "Circle of the Horned God",
+    "crystals": {
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "emerald",
+          "emerald",
+          "emerald"
+        ]
+      },
+      "type": "training",
+      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a 10+, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 7-9, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
+      "stats": [
+        {
+          "stat_name": "price",
+          "stat_value": 0
+        },
+        {
+          "stat_name": "cost",
+          "stat_value": "1 year"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Spiritwalkers of the Northern Forest",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "emerald",
+        "emerald",
+        "emerald"
+      ]
+    },
+    "type": "training",
+    "description": "<p>The Spiritwalkers of the Northern Forest have taught you to channel the power of the spirits of the air, water, fire, and earth. When you <em>consult the spirits</em>, roll+WIS. On a 10+, you can ask the GM any three questions, and they will answer you truthfully. On a 7-9, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 year"
+      }
+    ]
+  },
+  {
+    "name": "Order of the Silver Cord",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "emerald",
+        "emerald",
+        "emerald"
+      ]
+    },
+    "type": "training",
+    "description": "<p>You have been trained by the Mystical Order of the Silver Cord, which has taught you to speak with the spirits of the dead. When you <em>commune with the spirits</em>, roll+WIS. On a 10+, you can ask the GM any three questions about a deceased spirit, and they will answer you truthfully. On a 7-9, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 year"
+      }
+    ]
+  },
+  {
     "name": "Composite Bow",
     "crystals": {
       "requires": [
@@ -7993,6 +8197,174 @@
       {
         "stat_name": "price",
         "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Airborne Avatar",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Atarir Spirit to temporarily possess you, your body changes to adapt to it: ability to control and generate air, including creating gusts of wind and manipulating the direction and intensity of existing winds. Weakness: earth is deadly. Instinct: prone to arrogance and vanity. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Earth's Embrace",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Bumir Spirit to temporarily possess you, your body changes to adapt to it: Ability to control and generate earth, including shaping and moving earth and stone and creating small tremors or earthquakes. Weakness: air is deadly. Instinct: prone to greed and possessiveness. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": 0
+      }
+    ]
+  },
+  {
+    "name": "Mawur Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Mawur Spirit to temporarily possess you, your body changes to adapt to it: ability to control and generate light, including creating small sources of light or amplifying existing light sources. Weakness: darkness is deadly. Instinct: prone to optimism and naivety. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Possessed by Darkness",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Xanther Spirit to temporarily possess you, your body changes to adapt to it: Ability to control and generate darkness, including creating small sources of darkness or blocking out existing light sources. Weakness: light is deadly. Instinct: prone to pessimism and distrust. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Spirit of the Forest",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the <b>Taner Spirit</b> to temporarily possess you, your body changes to adapt to it:</p><ul><li>Ability to control and protect plants, including accelerating their growth and healing their injuries.</li><li>Weakness: pollution is deadly.</li><li>Instinct: prone to pacifism and passiveness.</li></ul> Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Nyassir Spirit Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "move",
+    "description": "<p>When you call the Nyassir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect marine life, including communicating with and controlling the behavior of aquatic animals. However, you are weak against pollution which can be deadly. Your instinct is prone to curiosity and adventurousness. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Apollor Spirit Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "move",
+    "description": "<p>When you call the Apollor Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect mountains, including strengthening their structures and stabilizing them against earthquakes. However, you are weak against earthquakes which can be deadly. Your instinct is prone to stubbornness and rigidity. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Kapka Spirit Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "move",
+    "description": "<p>When you call the Kapka Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to fly and see over long distances, including sensing prey from afar and diving at high speeds. However, you are sensitive to loud noises. Your instinct is prone to hunting and preying on weaker beings. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
       }
     ]
   },
@@ -8397,7 +8769,7 @@
       "item",
       "armor"
     ],
-    "description": "<p><h3>Deflect:</h3> <p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive). When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p><h3>Cushion:</h3> <p>When you take damage from a blunt weapon or an arrow while wearing plate armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p><h3>Bulky:</h3><p>When you use plate armor to defy danger by being stealthy, agile, or swimming, you get -2 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take +1d8 damage and must defy danger to avoid being stunned or immobilized. This armor is made of metal, which conducts and attracts these forces.</p></p>",
+    "description": "<p><h3>Deflect:</h3> <p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive). When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p><h3>Cushion:</h3> <p>When you take damage from a blunt weapon or an arrow while wearing plate armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p><h3>Bulky:</h3><p>When you use plate armor to defy danger by being stealthy, agile, or swimming, you get -5 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take +1d8 damage and must defy danger to avoid being stunned.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -8800,28 +9172,6 @@
       {
         "stat_name": "weight",
         "stat_value": "1 kg"
-      },
-      {
-        "stat_name": "price",
-        "stat_value": "20 coins"
-      }
-    ]
-  },
-  {
-    "name": "Healing Potion",
-    "crystals": {
-      "requires": [],
-      "provides": []
-    },
-    "type": [
-      "item",
-      "consumable"
-    ],
-    "description": "<p><h3>Drink Up:</h3> <p>When you drink this potion, heal 10 damage.</p></p>",
-    "stats": [
-      {
-        "stat_name": "weight",
-        "stat_value": "0.5 kg"
       },
       {
         "stat_name": "price",
@@ -9448,5 +9798,2014 @@
     "name": "Recover",
     "type": "move",
     "description": "When you spend a few days resting in safety and comfort, restore your HP to maximum and clear all your debilities. If you have suffered some serious injury, ask the GM how long it’ll take you to recover. If you’ve suffered a permanent disability, get with the GM and Make a Plan to adapt to it."
+  },
+  {
+    "name": "Lupi Spirit",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Lupi Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other wolves and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to pack mentality and loyalty. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Arana Spirit",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Arana Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to spin webs and climb, including injecting poison into prey and sensing vibrations. Your weakness is that fire is deadly. Your instinct is prone to trickery and manipulation. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Panthera Spirit",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Panthera Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to stealthily hunt and pounce on prey, including seeing in the dark and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to territoriality and protectiveness. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Oso Spirit Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Oso Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other bears and regenerating from injuries. Your weakness is that silver is deadly to you. Your instinct is to be prone to protectiveness and territoriality. Roll+WIS.  On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Crocodilus Spirit Possession",
+    "crystals": {
+      "requires": [
+        "feature"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Crocodilus Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to swim and hide in water, including sensing prey and regenerating from injuries. Your weakness is that fire is deadly to you. Your instinct is to be prone to cunning and patience. Roll +WIS, On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Agnir Spirit Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Agnir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and generate fire, including creating small flames or explosions and heating objects up to a certain temperature. Your weakness is that water is deadly to you. Your instinct is to be prone to anger and impulsiveness. Roll +WIS, on a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Apam Napatir Possession",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you call the Apam Napatir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and generate water, including manipulating its shape and flow and creating small waves or whirlpools. However, fire is deadly to you. In addition, you are prone to jealousy and envy.  Roll +WIS, On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": ""
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Call of the Wild",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you summon nature’s beasts to your presence or to the presence of someone else, choose a type of animal and roll+WIS. On a 7+, they congregate at a location you choose. On a 7-9, choose 1:</p><ul><li>It takes time for them to gather.</li><li>You are not precise about the location.</li><li>You attract other animals in addition to or instead of those you intended.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": "1000 coins, 6 months"
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 mp"
+      }
+    ]
+  },
+  {
+    "name": "Command Nature",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "When you use Call of the Wild, you may instead attempt to call upon nature’s chosen - treants, wisps, fey, and other magical creatures.",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": "1000 coins, 6 months"
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "2 mp"
+      }
+    ]
+  },
+  {
+    "name": "Eyes of the Tiger",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you mark an animal with blood, mud, or dirt, you can see through its eyes as if they were your own, no matter what distance separates you. Only one animal may be marked in this way at a time.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Weather Weaver",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you are under open skies when the sun rises, the GM will ask you what the weather will be that day. Tell them whatever you like; it comes to pass.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Rooted in Nature",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you stand perfectly still for a moment and listen to the world around you, roll +WIS. On a 10+ hold 3. On a 7-9 hold 2. On a miss hold 1, but you draw unwelcome attention or put yourself in a spot.</p><p>While you hold at least 1 hold, you may spend it to:</p><ul><li>Ask the GM one of the following questions: What here is of nature? What does nature want from me? How can I make nature help me?</li><li>Gain advantage on any roll that involves your connection to the natural world.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Fungal Bloom",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You call forth a burst of fungi from the ground beneath your feet, which can be used to obscure your movements or harm your enemies. Roll +INT.</p><ul><li>On a 10+ choose 3.</li><li>On a 7-9 choose 2.</li><li>On a miss, choose 1, but you expose yourself to danger.</li></ul><p>You may:</p><ul><li>Create an area of difficult terrain that lasts for a few minutes or until it is cleared.</li><li>Create a cloud of spores that obscures vision and smells bad, imposing a -1 penalty to all rolls for anyone within the area of effect.</li><li>Cause 1d6 damage to a target within range, as mushrooms burst from their flesh.</li><li>Summon a small army of fungus creatures to do your bidding.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 2
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "2 mp"
+      }
+    ]
+  },
+  {
+    "name": "Thorn Whip",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You conjure a thorny vine from thin air and lash out at your enemy. Roll +INT. On a 10+, choose 2. On a 7-9, choose 1.</p><ul><li>You deal 1d8 damage to the target.</li><li>You pull the target closer to you.</li><li>You disarm the target, causing them to drop a weapon or other held item.</li><li>You entangle the target, preventing them from moving until they break free.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": [
+          "1000 coins",
+          "1 month"
+        ]
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 mp"
+      }
+    ]
+  },
+  {
+    "name": "Nature's Bounty",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You imbue a small plant or portion of nature with vitality and growth. Roll +WIS. On a 10+, the plant grows and expands, providing a bounty of resources. On a 7-9, the plant grows, but attracts unwanted attention. On a miss, the plant becomes corrupted or diseased, withering away to nothing.</p><p>The plant may:</p><ul><li>Provide healing properties when ingested.</li><li>Grow to tremendous size, forming a shelter or blockade.</li><li>Produce a rare or valuable resource (e.g. diamonds, gold, rare herbs).</li><li>Attract wildlife or elementals to your aid.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": [
+          "1000 coins",
+          "1 month"
+        ]
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "2 mp"
+      }
+    ]
+  },
+  {
+    "name": "Moonfire",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You call upon the power of the moon, conjuring a bolt of silvery light to strike your enemy. Roll +WIS. On a 10+, deal 1d10 damage and choose one. On a 7-9, deal 1d8 damage and choose one. On a miss, the spell backfires and deals 1d4 damage to you.</p><ul><li>The target is blinded by the light, taking a -1 ongoing until they can clear their vision.</li><li>The spell creates an illusion that distracts or confuses the target.</li><li>The spell has a wider range or affects multiple targets.</li><li>The spell leaves a radiant residue that illuminates the area, providing better visibility for you and your allies.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": [
+          "1000 coins",
+          "1 month"
+        ]
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 mp"
+      }
+    ]
+  },
+  {
+    "name": "Thunderstorm",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You call forth a raging thunderstorm to strike your enemies. Roll +INT. On a 10+, deal 1d10 damage to all enemies in the area and choose one. On a 7-9, deal 1d8 damage to all enemies in the area and choose one. On a miss, the spell backfires and deals 1d6 damage to you and your allies.</p><ul><li>The storm creates a deafening roar, making it difficult for enemies to communicate.</li><li>The storm causes the ground to become slick and muddy, making it difficult to move or maintain balance.</li><li>The storm generates powerful winds that knock enemies back or prevent them from moving forward.</li><li>The storm attracts lightning strikes, which may hit enemies or ignite nearby objects or structures.</li></ul>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": [
+          "1000 coins",
+          "1 month"
+        ]
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "2 mp"
+      }
+    ]
+  },
+  {
+    "name": "Barkskin",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "spell",
+    "description": "<p>You call upon the power of the forest to protect yourself from harm. Roll +CON. On a 10+, your skin becomes tough as bark, giving you +2 armor. On a 7-9, your skin toughens, but you suffer a -1 ongoing to DEX until the spell wears off. On a miss, the spell backfires and you become vulnerable to nature-based attacks.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": [
+          "1000 coins",
+          "1 month"
+        ]
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": "1 mp"
+      }
+    ]
+  },
+  {
+    "name": "Spirit Shield",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "spell",
+    "description": "<p>You call upon the spirits of nature to protect you and your allies. When you cast this spell, you and all allies within sight gain a Spirit Shield. The next time you or an ally takes damage, roll+WIS. ✴On a 10+, the damage is negated. ✴On a 7-9, the damage is halved. After the shield has absorbed damage, it dissipates.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Spirit's Shed",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you take damage while you are possessed by a spirit or you are shapeshifted into an animal, you may choose to forcibly stop it in order to negate the damage. If you do, you can’t use this ability again until you take the time to appeal to the spirits.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Nature's Balance",
+    "crystals": {
+      "requires": [
+        "emerald",
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you deal damage, take 1 Balance. When you touch someone and channel the spirits of life, you may spend Balance. For each Balance spent, heal 1d6 HP. When you Make Camp or otherwise rest, lose all Balance.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Mimicry Mastery",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When using Wild Shape, you can also shapeshift into humanoid creatures of any size or shape, as long as they are the last being you touched or you touch an organic part of theirs (while they are still alive). In addition, you gain the abilities and memories of any humanoid you shapeshift into, allowing you to mimic their speech, behavior, and knowledge. If you touch an organic part of the humanod, the abilites and memories you acquire are only those that the humanoid possessed while the organic part was still attached to them.</p><p>While in humanoid form, on any failed roll you make you lose 1 hold. When you lose all holds, yu are unable to keep your own identity separated from that of the humanoid you take the form of and you start believing of being that humanoid. When you go to 0 HP while in humanoid form, you regain your humanoid form. You can return to your normal form at any time (while you are still in control.)</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Fury of the Bear",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>Requires Wild Shape.<p>When you take the form of a bear, your attacks are Brutal and gain the Forceful and Vicious tags. Additionally, you may spend a hold when dealing damage to knock an opponent down.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Serpent's Strike",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you take the form of a serpent, your attacks are Brutal and gain the Messy and Vicious tags. Additionally, you may spend a hold when dealing damage to deal extra damage equal to your level.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Lion's Roar",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>When you take the form of a lion, you gain the ability to intimidate and demoralize your opponents with a mighty roar. When you roar, roll +Charisma. On a 10+, your enemies are stunned and lose their next turn. On a 7-9, they are momentarily distracted and take -1 ongoing until they successfully attack or defend. Additionally, your attacks are Brutal and gain the Messy and Vicious tags.</p><p><em>Wild Form Move:</em> Roar to stun or distract your enemies, depending on the result of the roll.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      }
+    ]
+  },
+  {
+    "name": "Skin of the Earth",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can Wild Shape into a creature of the earth, such as a giant ant, a rock golem, or a treant. While in this form, you gain the ability to move through solid earth and stone as if it were air. You hold Power equal to your CON. You can spend your Power, 1-for-1, to use the shape’s magical or supernatural powers. When you spend your last Power, you return to your humanoid form.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Flame Form",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can Wild Shape into a creature of fire, such as a fire elemental, a salamander, or a phoenix. While in this form, you are immune to fire and can deal fire damage with your attacks. You hold Power equal to your CON. You can spend your Power, 1-for-1, to engulf an enemy in flames, dealing damage equal to your level. When you spend your last Power, you return to your humanoid form.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Storm Shape",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can Wild Shape into a creature of air, such as a storm giant, a djinni, or a griffon. While in this form, you can fly and control the winds. You hold Power equal to your CON. You can spend your Power, 1-for-1, to call forth a lightning bolt that strikes a target for damage equal to your level. When you spend your last Power, you return to your humanoid form.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Wave Walker",
+    "crystals": {
+      "requires": [
+        "emerald"
+      ],
+      "provides": []
+    },
+    "type": "feature",
+    "description": "<p>You can Wild Shape into a creature of water, such as a merfolk, a water elemental, or a sea serpent. While in this form, you can breathe underwater and control water. You hold Power equal to your CON. You can spend your Power, 1-for-1, to create a tidal wave that strikes a target for damage equal to your level. When you spend your last Power, you return to your humanoid form.</p>",
+    "stats": [
+      {
+        "stat_name": "price",
+        "stat_value": 0
+      },
+      {
+        "stat_name": "cost",
+        "stat_value": ""
+      }
+    ]
+  },
+  {
+    "name": "Hide from Animals Potion",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Hide from Animals:</h3><p>Drinking this potion grants the imbiber the ability to avoid detection by animals. The imbiber gains the Hide from Animals effect for 1 hour, which makes them undetectable by normal animals such as wolves, bears, or deer. This does not protect against magical or supernatural creatures or animals that have been trained or enchanted to detect specific scents or movements.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.3 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "40 coins"
+      }
+    ]
+  },
+  {
+    "name": "Hide from Undead Potion",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Hide from Undead:</h3><p>Drinking this potion grants the imbiber the ability to avoid detection by undead creatures. The imbiber gains the Hide from Undead effect for 1 hour, which makes them undetectable by most undead creatures such as zombies, skeletons, or ghosts. This does not protect against powerful or intelligent undead creatures or those that have been specifically trained or enchanted to detect living beings.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.3 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Dance",
+    "description": "When you move with such grace and agility that you seem to disappear from sight, spend 1 or more combo points for these options (you can take the same multiple times):<ul><li> You can move across any surface, including liquids, for 5 seconds.</li><li> you become invisible to all but magical senses, for 1 second. </li><li> you deal an extra 1d6 damage on your next attack </li><li> you gain +1 forward to Defy Danger or Hack and Slash.</li></ul>",
+    "crystals": {
+      "requires": [
+        "black",
+        "cerulean"
+      ],
+      "provides": []
+    },
+    "type": "feature"
+  },
+  {
+    "name": "Jump Potion",
+    "crystals": {
+      "requires": [
+        "jumping bean",
+        "fairy dust"
+      ],
+      "provides": [
+        "Jump effect"
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Jump:</h3><p>Drinking this potion grants the imbiber the ability to jump incredible distances. The imbiber gains the Jump effect for 1 hour, which allows them to jump up to 10 times their normal distance and height without suffering any harm or exhaustion. This does not grant the imbiber the ability to fly or levitate, nor does it protect,against falls or other hazards that might result from jumping such great distances.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.4 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "60 coins"
+      }
+    ]
+  },
+  {
+    "name": "Mage Armor Potion",
+    "crystals": {
+      "requires": [
+        "arcane dust",
+        "leather oil"
+      ],
+      "provides": [
+        "Mage Armor effect"
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Mage Armor:</h3><p>Drinking this potion creates a magical aura around the imbiber that protects them from harm. The imbiber gains the Mage Armor effect for 1 hour, which grants them a +3 bonus to their Armor Class. This does not stack with other magical armor effects and does not protect against magical attacks or effects that bypass normal armor.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.6 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "80 coins"
+      }
+    ]
+  },
+  {
+    "name": "Magic Fang Potion",
+    "crystals": {
+      "requires": [
+        "wolf fang",
+        "magical essence"
+      ],
+      "provides": [
+        "Magic Fang effect"
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Magic Fang:</h3><p>Drinking this potion enhances the imbiber's natural weapons or unarmed strikes with magical power. The imbiber gains the Magic Fang effect for 1 hour, which grants their natural weapons or unarmed strikes a +1 bonus to hit and damage. This does not affect weapons or attacks that are already magical in nature.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.4 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "70 coins"
+      }
+    ]
+  },
+  {
+    "name": "Magic Stone Oil",
+    "crystals": {
+      "requires": [
+        "magical essence",
+        "stone oil"
+      ],
+      "provides": [
+        "Magic Stone effect"
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "oil"
+    ],
+    "description": "<p><h3>Magic Stone:</h3><p>Applying this oil to a sling bullet or other small stone imbues it with magical power. The imbued stone gains the Magic Stone effect for 1 hour, which grants it a +1 bonus to hit and damage. The imbued stone also deals an additional 1d6 magical damage to the target. This effect lasts for one hit, after which the stone becomes a normal stone again. Only one stone can be imbued with this effect at a time.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.2 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "30 coins"
+      }
+    ]
+  },
+  {
+    "name": "Magic Weapon Oil",
+    "crystals": {
+      "requires": [
+        "magical essence",
+        "weapon oil"
+      ],
+      "provides": [
+        "Magic Weapon effect"
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "oil"
+    ],
+    "description": "<p><h3>Magic Weapon:</h3><p>Applying this oil to a non, magical weapon imbues it with magical power. The imbued weapon gains the Magic Weapon effect for 1 hour, which grants it a +1 bonus to hit and damage. The imbued weapon also deals an additional 1d6 magical damage to the target. This effect lasts for one hit, after which the weapon becomes a normal weapon again. Only one weapon can be imbued with this effect at a time.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.2 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Pass without Trace Potion",
+    "crystals": {
+      "requires": [
+        "dried mistletoe",
+        "animal fur"
+      ],
+      "provides": [
+        "Pass without Trace effect"
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Pass without Trace:</h3><p>Drinking this potion makes the imbiber nearly impossible to track. The imbiber gains the Pass without Trace effect for 1 hour, which grants them a +10 bonus to Dexterity (Stealth) checks made to avoid detection. The imbiber also leaves no tracks or scent and cannot be tracked by non-magical means.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "90 coins"
+      }
+    ]
+  },
+  {
+    "name": "Protection from (Alignment) Potion",
+    "crystals": {
+      "requires": [
+        "",
+        ""
+      ],
+      "provides": [
+        ""
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Protection from (Alignment):</h3><p>Drinking this potion grants the imbiber protection from a specific alignment. Choose one of the following: Chaos, Evil, Good, or Law. The imbiber gains the Protection from (Alignment) effect for 1 hour, which grants them advantage on saving throws against spells and other effects created by creatures of the chosen alignment. The imbiber also cannot be charmed, frightened, or possessed by creatures of the chosen alignment.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Remove Fear Potion",
+    "crystals": {
+      "requires": [
+        ""
+      ],
+      "provides": [
+        ""
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Remove Fear:</h3><p>Drinking this potion banishes fear from the imbiber's heart. The imbiber gains the Remove Fear effect for 1 hour, which grants them immunity to fear effects and allows them to remove the frightened condition from one creature they touch as an action. The imbiber is still vulnerable to other forms of mental manipulation and is not immune to the effects of fear caused by physical threats or danger.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Sanctuary Potion",
+    "crystals": {
+      "requires": [
+        ""
+      ],
+      "provides": [
+        ""
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Sanctuary:</h3><p>Drinking this potion imbues the imbiber with a sense of divine protection. The imbiber gains the Sanctuary effect for 1 hour, which allows them to create a 30-foot radius aura of protection centered on themselves. The aura lasts for 1 minute and moves with the imbiber. Any friendly creature within the aura gains advantage on saving throws against spells and other effects created by creatures outside the aura. The imbiber cannot attack or cast spells while maintaining the aura and the effect ends if the imbiber attacks or casts a spell.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "120 coins"
+      }
+    ]
+  },
+  {
+    "name": "Shield of Faith Potion",
+    "crystals": {
+      "requires": [
+        ""
+      ],
+      "provides": [
+        ""
+      ]
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Shield of Faith:</h3><p>Drinking this potion imbues the imbiber with a shimmering field of divine energy. The imbiber gains the Shield of Faith effect for 1 hour, which grants them a +2 bonus to AC. The imbiber also has advantage on saving throws against spells and other effects created by undead creatures. The effect ends if the imbiber casts a spell or attacks.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+    {
+      "name": "Shillelagh Oil",
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "type": [
+        "item",
+        "common",
+        "oil"
+      ],
+      "description": "<p>This magical oil can be applied to a club or staff to transform it into a powerful magical weapon. For the next minute, the weapon glows with a greenish light and deals an extra 1d8 damage to its target. In addition, the weapon becomes magical, allowing it to bypass resistances to non-magical attacks.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.1 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "50 coins"
+        }
+      ]
+    },
+    {
+      "name": "Bless Weapon Oil",
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "type": [
+        "item",
+        "common",
+        "oil"
+      ],
+      "description": "<p>This holy oil can be applied to a weapon to imbue it with the power of the gods. For the next minute, the weapon glows with a radiant light and deals an extra 1d6 radiant damage to undead and fiends. In addition, the weapon becomes magical, allowing it to bypass resistances to non-magical attacks.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.1 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "50 coins"
+        }
+      ]
+    },
+    {
+      "name": "Potion of Enlarge Person",
+      "crystals": {
+        "requires": [
+          {
+            "item": "giant's toenail",
+            "quantity": 1
+          },
+          {
+            "item": "troll hair",
+            "quantity": 2
+          }
+        ],
+        "provides": [
+          {
+            "effect": "enlarge",
+            "duration": 10
+          }
+        ]
+      },
+      "type": [
+        "item",
+        "uncommon",
+        "potion"
+      ],
+      "description": "<p>This potion causes the person who drinks it to grow to twice their normal size. While enlarged, the person gains +2 to their damage rolls, and they can lift and carry twice as much weight. However, they also become slower and more cumbersome, suffering a -2 penalty to their DEX score and reducing their movement speed by half.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.5 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "100 coins"
+        }
+      ]
+    },
+    {
+      "name": "Potion of Reduce Person",
+      "crystals": {
+        "requires": [
+          {
+            "item": "fairy dust",
+            "quantity": 2
+          },
+          {
+            "item": "newt's eye",
+            "quantity": 1
+          }
+        ],
+        "provides": [
+          {
+            "effect": "reduce",
+            "duration": 10
+          }
+        ]
+      },
+      "type": [
+        "item",
+        "uncommon",
+        "potion"
+      ],
+      "description": "<p>This potion causes the person who drinks it to shrink to half their normal size. While reduced, the person gains +2 to their,AC score, and they become more nimble and agile, gaining a +2 bonus to their DEX score and doubling their movement speed. However, they also suffer a -2 penalty to their STR score and can only carry half as much weight.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.5 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "100 coins"
+        }
+      ]
+    },
+    {
+      "name": "Potion of Aid",
+      "crystals": {
+        "requires": [
+          {
+            "item": "goldenroot",
+            "quantity": 1
+          },
+          {
+            "item": "crushed pearls",
+            "quantity": 2
+          }
+        ],
+        "provides": [
+          {
+            "effect": "aid",
+            "duration": 10
+          }
+        ]
+      },
+      "type": [
+        "item",
+        "uncommon",
+        "potion"
+      ],
+      "description": "<p>This potion provides a burst of energy and vitality to the person who drinks it. For the next minute, the person gains +10 temporary hit points, and they can add a +2 bonus to their attack rolls, damage rolls, and saving throws. In addition, they become immune to fear and gain advantage on all Wisdom (Perception) checks.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.5 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "150 coins"
+        }
+      ]
+    },
+    {
+      "name": "Potion of Barkskin",
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "type": [
+        "item",
+        "uncommon",
+        "potion"
+      ],
+      "description": "<p>This potion toughens the skin of the person who drinks it, providing natural armor protection. For the next minute, the person gains a +2 bonus to their AC score, and they become resistant to non-magical bludgeoning, piercing, and slashing damage. However, they also become slower and less agile, suffering a -2 penalty to their DEX score.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.5 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "150 coins"
+        }
+      ]
+    },
+    {
+      "name": "Potion of Bear's Endurance",
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "type": [
+        "item",
+        "uncommon",
+        "potion"
+      ],
+      "description": "<p>This potion imbues the person who drinks it with the endurance and strength of a bear. For the next minute, the person gains +4 to their Constitution score, increasing their maximum hit points and improving their resistance, to poisons, diseases, and other harmful effects. In addition, they gain advantage on all Constitution checks and saving throws. However, they also become more sluggish and slow, suffering a -2 penalty to their DEX score.</p>",
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "0.5 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "200 coins"
+        }
+      ]
+    },
+  {
+    "name": "Potion of Superior Resist Energy",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Resist Energy:</h3><p>When you drink the potion of resist energy, you gain resistance to a specific energy type for the next hour. Choose one of the following energy types: acid, cold, electricity, fire, or sonic. You gain resistance 20 against that energy type. If you are already resistant to that energy type, your resistance increases by 10 instead. </p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Cure Serious Wounds",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Cure Serious Wounds:</h3><p>When you drink the potion of cure serious wounds, you regain 3d8+3 hit points. </p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Oil of Daylight",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "oil"],
+    "description": "<p><h3>Daylight:</h3><p>When you apply the oil of daylight to a weapon or other object, it emits bright light in a 60-foot radius and dim light for an additional 60 feet for the next hour. </p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Displacement",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Displacement:</h3><p>When you drink the potion of displacement, you become displaced for the next minute. Attacks against you have a 50% miss chance, as if you had the displacement spell cast upon you. </p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "200 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Blur",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Blur:</h3><p>When you drink the potion of blur, you become hard to see and your movements appear blurred. For the next hour, you gain +1 to your Dexterity and your enemies have disadvantage on their attacks against you. However, you also have disadvantage on your attacks.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Bull's Strength",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Bull's Strength:</h3><p>When you drink the potion of bull's strength, you feel your muscles bulge and your veins pump with power. For the next hour, you gain +2 to your Strength and your damage with melee weapons is increased by one dice size. However, you also have disadvantage on your Dexterity-based rolls.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Cat's Grace",
+    "crystals": {
+      "requires": ["cat's eye"],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Cat's Grace:</h3><p>When you drink the potion of cat's grace, you become light and agile like a cat. For the next hour, you gain +2 to your Dexterity and your jumping distance is doubled. However, you also have disadvantage on your Strength-based rolls.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Cure Moderate Wounds",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Cure Moderate Wounds:</h3><p>When you drink the potion of cure moderate wounds, your injuries start to heal and your pain subsides. You regain 2d8+3 hit points.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },{
+  "name": "Oil of Darkness",
+  "crystals": {
+    "requires": ["shadow essence"],
+    "provides": []
+  },
+  "type": ["item", "uncommon", "oil"],
+  "description": "<p><h3>Darkness:</h3><p>When you apply the oil of darkness on, your weapon or armor, it emanates a thick darkness that can obscure even the brightest light. For the next hour, you have advantage on your stealth rolls and your attacks against enemies that rely on vision, but you also have disadvantage on your perception and investigation rolls.</p></p>",
+  "stats": [
+    {
+      "stat_name": "weight",
+      "stat_value": "0.5 kg"
+    },
+    {
+      "stat_name": "price",
+      "stat_value": "25 coins"
+    }
+  ]
+},
+  {
+    "name": "Potion of Darkvision",
+    "crystals": {
+      "requires": ["nightshade"],
+      "provides": []
+    },
+    "type": ["item", "uncommon", "potion"],
+    "description": "<p><h3>Darkvision:</h3><p>When you drink the potion of darkvision, your eyes adjust to darkness and you can see as if it were dim light. For the next hour, you gain darkvision up to 60 feet, and you can see in total darkness as if it were dim light. However, your sensitivity to light is increased, and you have disadvantage on your rolls that involve bright light.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  }, {
+  "name": "Potion of Delay Poison",
+  "crystals": {
+    "requires": [],
+    "provides": []
+  },
+  "type": [
+    "item",
+    "uncommon",
+    "potion"
+  ],
+  "description": "<p><h3>Delayed Reaction:</h3><p>When you drink this potion, you become immune to any poison for the next hour. If you're already poisoned, the potion gives you a chance to delay the effects of the poison, giving you +1 to your Defy Danger rolls to resist the poison's effects. However, after the hour is over, you must immediately Defy Danger again to avoid the poison's effects.</p></p>",
+  "stats": [
+    {
+      "stat_name": "weight",
+      "stat_value": "0.25 kg"
+    },
+    {
+      "stat_name": "price",
+      "stat_value": "50 coins"
+    }
+  ]
+},
+  {
+    "name": "Potion of Eagle's Splendor",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Graceful Confidence:</h3><p>When you drink this potion, you gain a +2 bonus to your charisma for the next hour. This bonus applies to your Charisma-based moves and interactions with NPCs.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Fox's Cunning",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Clever Mind:</h3><p>When you drink this potion, you gain a +2 bonus to your intelligence for the next hour. This bonus applies to your Intelligence-based moves and spells.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Invisibility",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Vanishing Act:</h3><p>When you drink this potion, you become invisible for the next hour. While invisible, you can still be heard, smelled, or touched, but you cannot be seen. Attacking or casting a spell will break your invisibility. Also, if you interact with an object or creature, you must roll +Dex to avoid revealing your location.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Lesser restoration",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Lesser Restoration:</h3><p>When you drink the potion of lesser restoration, you feel a surge of energy and vitality. You immediately recover from one of the following conditions: dazed, dazzled, fatigued, nauseated, shaken, or sickened.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Levitate",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion or oil"
+    ],
+    "description": "<p><h3>Levitate:</h3><p>When you drink the potion of levitate or apply the oil, you gain the ability to levitate off the ground. You can float up to 20 feet in any direction and can hover in place. The effect lasts for 10 minutes.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Misdirection",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Misdirection:</h3><p>When you drink the potion of misdirection, you become harder to hit. For the next hour, you gain a +2 bonus to your AC against all attacks.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Owl's wisdom",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Owl's Wisdom:</h3><p>When you drink the potion of owl's wisdom, you become wiser and more insightful. For the next hour, you gain a +2 bonus to your Wisdom score, which affects your spellcasting and some other moves.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Protection from arrows",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Protection from Arrows:</h3><p>When you drink this potion, you gain resistance to non-magical arrows. For the next 10 minutes, you take half damage from all attacks made by ranged weapons.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Remove paralysis",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Remove Paralysis:</h3><p>When you drink this potion, you are cured of all forms of paralysis. If you are currently paralyzed, you can immediately take an action.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Resist Energy",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Resist Energy:</h3><p>When you drink this potion, you gain resistance to a specific type of energy for the next 10 minutes. Choose one of the following types of energy: acid, cold, electricity, fire, or sonic. You take half damage from all attacks of that type of energy.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Spider climb",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Spider Climb:</h3><p>When you drink this potion, you gain the ability to climb walls and ceilings like a spider. You can climb at your normal speed and do not need to make Defy Danger rolls to do so. The effect lasts for 1 hour.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Undetectable alignment",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon",
+      "potion"
+    ],
+    "description": "<p><h3>Undetectable Alignment:</h3><p>When you drink this potion, your alignment becomes impossible to detect by magical or mundane means for 1 hour.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Superior Barkskin",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Barkskin:</h3><p>When you drink this potion, your skin becomes as tough as bark. You gain +3 armor for 1 hour.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Superior Shield of Faith",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Shield of Faith:</h3><p>When you drink this potion, a shimmering shield of force appears around you. You gain +4 to your AC for 1 hour.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Flame arrow (oil)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "oil"
+    ],
+    "description": "<p><h3>Flame Arrow:</h3><p>This oil imbues a single arrow (or similar projectile) with magical fire, allowing it to deal an extra 1d6 fire damage on a hit. The fire also ignites any flammable material it hits. The oil is consumed when the arrow is fired.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "30 coins"
+      }
+    ]
+  },
+  {
+    "name": "Fly (potion)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Flight:</h3><p>When you drink this potion, you gain the ability to fly at a speed of 30 feet (9 meters) per round for the next hour. You can fly up to 1000 feet (305 meters) above the ground and maneuver in any direction. At the end of the hour, you fall gently to the ground.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Gaseous form (potion)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Ethereal Form:</h3><p>When you drink this potion, you become insubstantial and can pass through solid objects as if they were not there. You can also move through small spaces and under doors. The effect lasts for up to 10 minutes or until you attack or are attacked. You cannot manipulate objects or interact with the physical world while in this form.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },  {
+  "name": "Potion of Greater Magic Fang +1",
+  "crystals": {
+    "requires": [],
+    "provides": []
+  },
+  "type": [
+    "item",
+    "rare",
+    "potion"
+  ],
+  "description": "<p><h3>Greater Magic Fang +1:</h3><p>When you drink this potion, your natural weapons gain a +1 enhancement bonus for the next hour. This bonus applies to attack rolls and damage rolls.</p></p>",
+  "stats": [
+    {
+      "stat_name": "weight",
+      "stat_value": "0.25 kg"
+    },
+    {
+      "stat_name": "price",
+      "stat_value": "50 coins"
+    }
+  ]
+},
+  {
+    "name": "Oil of Greater Magic Weapon +1",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "oil"
+    ],
+    "description": "<p><h3>Greater Magic Weapon +1:</h3><p>When you apply this oil to a weapon, it gains a +1 enhancement bonus for the next hour. This bonus applies to attack rolls and damage rolls.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Haste",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Haste:</h3><p>When you drink this potion, you gain the effects of the haste spell for the next minute. This means you gain an extra action on each of your turns, which can be used for attacking, moving, or performing other actions. You also gain a +1 bonus to AC and reflex saves, and a +1 bonus to attack rolls and damage rolls.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "75 coins"
+      }
+    ]
+  },
+  {
+    "name": "Potion of Heroism",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Heroic Boost:</h3><p>When you drink the potion of heroism, you feel a surge of courage and strength. For the next hour, you gain +1 to all your rolls and you can mark one additional option when you hack and slash or volley. You also ignore the effects of fear, pain, and exhaustion. However, after the hour is over, you suffer a -1 ongoing to all your rolls until you rest.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.25 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Keen edge (oil)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Keen Edge:</h3><p>When you apply this oil to a bladed weapon, it becomes incredibly sharp. The weapon gains the 'precise' and 'messy' tags for the next hour. Additionally, when you roll a 10+ on a Hack and Slash with this weapon, you may choose to deal an extra 1d4 damage or disarm your foe.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
+      }
+    ]
+  },
+  {
+    "name": "Magic circle against (alignment) (potion)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Magic Circle:</h3><p>When you drink this potion, you create a circle of protection against a specific alignment (chaos, evil, good, or law) around you. The circle has a radius of 10 feet and lasts for 1 hour. Creatures of the specified alignment cannot enter the circle by non-magical means. Any attempt to do so will cause them pain and they will be unable to cross the circle's boundary. Additionally, any summoned creatures of the specified alignment are banished back to their own plane of existence if they try to enter the circle.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Magic vestment +1 (oil)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare",
+      "potion"
+    ],
+    "description": "<p><h3>Magic Vestment:</h3><p>When you apply this oil to a piece of armor, it becomes magically enchanted. For the next hour, the armor gains a +1 bonus to its AC. Additionally, if the armor has any special properties (such as being made of mithril), those properties are enhanced for the duration of the oil's effect.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Neutralize poison",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Neutralize Poison:</h3><p>When you drink the potion of neutralize poison, you feel a sudden relief. This potion cures the effects of any poison or venom currently affecting you.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ]
+  },
+  {
+    "name": "Nondetection",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Nondetection:</h3><p>When you drink the potion of nondetection, you feel your senses become duller. For the next hour, you are immune to scrying and divination spells, and any attempts to detect your location or presence by magical or non-magical means automatically fail.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ]
+  },
+  {
+    "name": "Protection from energy (type)",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Protection from Energy (Type):</h3><p>When you drink the potion of protection from energy, you feel a warm energy wrap around you. For the next hour, you gain resistance to a specific energy type (acid, cold, fire, lightning, or thunder) of your choice. You have resistance 10 against that energy type, and you also have advantage on saving throws against spells and effects that deal that type of damage.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "150 coins"
+      }
+    ]
+  },
+  {
+    "name": "Rage",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common",
+      "potion"
+    ],
+    "description": "<p><h3>Rage:</h3><p>When you drink the potion of rage, you feel an intense surge of power. For the next minute, you have advantage on all your attacks, deal extra damage equal to your level, and have resistance to all damage. However, after the minute is over, you suffer a level of exhaustion.</p></p>",
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "200 coins"
+      }
+    ]
   }
 ]
