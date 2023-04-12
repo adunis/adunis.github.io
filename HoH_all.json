@@ -14938,7 +14938,6 @@
     "type": "character",
     "description": "<p>As a thief, you make your living by taking what doesn't belong to you. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when avoiding traps or other dangers</li><li>You have a set of lockpicks and other tools that allow you to pick locks and disable traps</li><li>You can hide in shadows and move silently, gaining a +1 bonus to Discern Realities when trying to avoid detection</li></ul>"
   },
-  [
     {
       "name": "Goblin",
       "crystals": {
@@ -15410,5 +15409,4 @@
       "type": "creature",
       "description": "<p><h3>Iron Smash:</h3> <p>The iron golem smashes you with its fists. Roll +Str to resist it. On a 10+, you fend it off and deal your damage. On a 7-9, you fend it off but it crushes you, dealing its damage to you. On a miss, it smashes you and deals +1d4 damage to you.</p><h3>Iron Breath:</h3><p>The iron golem breathes fire at you. Roll +Dex to dodge it. On a 10+, you avoid the fire and deal your damage. On a 7-9, you avoid the fire but it gets closer to you. On a miss, you are hit by the fire and take 1d8 damage and catch on fire.</p></p>"
     }
-  ]
 ]
