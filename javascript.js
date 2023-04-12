@@ -145,27 +145,34 @@ document.querySelector("#save-deck-button-loot-encrypted").addEventListener("cli
 
 document.getElementById("btn-Convert-Html2Image").addEventListener("click", async function () {
     const cards = document.getElementsByClassName("card");
-    document.getElementById("previewImg").innerHTML += "<p><h3>Generated JPGs:</h3></p>";
-    //document.getElementById("pagination").innerHTML += "<p><button>Download All</button></p>";
+    const zip = new JSZip();
+    const previewImg = document.getElementById("previewImg");
+    previewImg.innerHTML += "<p><h3>Generated JPGs:</h3></p>";
 
     for (const card of cards) {
         const name = card.querySelector(".title").textContent;
-        const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false});
-        const anchorTag = document.createElement("a");
-        document.body.appendChild(anchorTag);
-        document.getElementById("previewImg").appendChild(canvas);
-        anchorTag.download = name + ".jpg";
-        try {
-            anchorTag.href = canvas.toDataURL();
-            anchorTag.target = '_blank';
-            anchorTag.click();
-        } catch (e) {
-            if (e.name !== "SecurityError") {
-                throw e;
-            }
-        }
+        const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false, useCORS: true});
+        previewImg.appendChild(canvas);
+        const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg"));
+        zip.file(name + ".jpg", blob);
     }
+
+    zip.generateAsync({type: "blob"}).then(function (content) {
+        const url = URL.createObjectURL(content);
+        const a = document.createElement("a");
+        const randomNumber = Math.floor(Math.random() * 1000);
+        const fileBox = `images_${randomNumber}.zip`;
+        a.download = fileBox;
+        a.href = url;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+
+
 });
+
 
 function saveSelectedCards(cardElement) {
     const selectedCardsList = document.querySelector("#selected-cards-list");
@@ -410,7 +417,7 @@ const generateBoosterPack = async () => {
         ...getRandomCards(characters, 1),
         ...getRandomCards(features, 3),
         ...getRandomCards(trainings, 1),
-        ...getRandomCards(backgrounds, 1),
+        ...getRandomCards(backgrounds, 2),
         ...getRandomCards(abilities, 1)
     ];
 
@@ -476,6 +483,20 @@ document.querySelector("#booster-box").addEventListener("click", async () => {
         // Add the file to the zip object
         zip.file(fileName, blob);
     }
+
+    // Generate the zip file and download it
+    zip.generateAsync({type: "blob"}).then(function (content) {
+        const url = URL.createObjectURL(content);
+        const a = document.createElement("a");
+        const randomNumber = Math.floor(Math.random() * 1000);
+        const fileBox = `booster_box_${randomNumber}.zip`;
+        a.download = fileBox;
+        a.href = url;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
 
 });
 
@@ -566,6 +587,7 @@ boosterPackFileInput.addEventListener("change", function() {
                 const gridCards = document.querySelectorAll(".card-container");
                 gridCards.forEach((card) => {
                     card.classList.add("flipped");
+                    card.classList.add("flipped-background");
                     card.addEventListener('click', () => {
                         card.classList.remove('flipped');
                     });

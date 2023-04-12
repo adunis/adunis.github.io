@@ -25,14 +25,20 @@
     margin-left: 10px;
 }
 
+.subtitle{
+    font-size: 12px;
+    font-style: italic;
+}
+
 .card-container {
     perspective: 1000px;
+
 }
 
 .card {
     position: relative;
     width: 100%;
-    height: 0;
+    height: 600px;
     padding-bottom: 150%;
     transform-style: preserve-3d;
     transition: transform 1s;
@@ -53,6 +59,7 @@
 
 .card-back {
     transform: rotateY(180deg);
+
 }
 
 .flipped .card::before {
@@ -60,12 +67,13 @@
     left: 0;
     width: 100%;
     height: 200%;
-    background: url(https://img.freepik.com/premium-photo/seamless-pattern-with-bright-multicolored-texture-cosmos_343283-2280.jpg);
     z-index: 1;
+    background: url(cosmo.jpg);
 }
 
+
 .card-container.flipped .card {
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 
 
@@ -99,7 +107,6 @@
     align-items: center;
     width:100%;
     padding-top: 100px;
-    background-image: url('medieval-background.jpg');
     background-size: cover;
 }
 
@@ -109,7 +116,6 @@
     width: 100%;
     align-items: center;
     padding-top: 100px;
-    background-image: url('medieval-background.jpg');
     background-size: cover;
 }
 
@@ -163,7 +169,6 @@
 }
 
 
-
 /* for screens larger than 1024px */
 @media (min-width: 1025px) {
     #card-grid {
@@ -202,7 +207,7 @@
     border-radius: 15px;
     border: 1px solid #cc9900;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: #ffdf7f url(https://i.pinimg.com/474x/0c/e5/6d/0ce56ddec3eb469a516d68adc4354b63.jpg) repeat 0 0;
+    background: #ffdf7f url(parchment.jpg) repeat 0 0;
     overflow: hidden;
     position: relative;
 }
@@ -217,7 +222,7 @@
 .card-header .title {
     margin: auto;
     height:25%;
-    width: 50%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,13 +309,13 @@
 }
 
 .card-header {
-    height: 100px;
-    padding: 10px;
+    height: 70px;
     border-bottom: 1px solid #8a8743;
     display: flex;
     align-items: center;
+    background-size: cover;
     justify-content: space-between;
-    background: url(https://memestatic.fjcdn.com/pictures/Very+strange+treasure+centermodgreenbig2the+following+is+a+list+of+100_6159df_6840144.jpg) repeat 0 0 ;
+    background-image: url(spells.jpg);
 }
 
 table {
@@ -319,22 +324,21 @@ table {
 
 
 
-
 /* Character card style */
 .character-header {
-    background-size: 10% auto;
-    background: url(https://static.wikia.nocookie.net/diablo/images/a/a7/Diablo_Immortal_Classes_4.jpg);
+    background-size: cover;
+    background-image: url("adventurers.jpg");
 }
 
 /* Feature card style */
 .feature-header {
-    background-size: 10% auto;
-    background: url(https://www.wargamer.com/wp-content/sites/wargamer/2021/05/dnd-5e-spells-wizard.jpg);
+    background-size: cover;
+    background-image: url(spells.jpg);
 }
 
 /* Item card style */
 .item-header {
-    background: url(https://memestatic.fjcdn.com/pictures/Very+strange+treasure+centermodgreenbig2the+following+is+a+list+of+100_6159df_6840144.jpg) repeat 0 0 ;
+    background-image: url(treasure.jpg);
 }
 
 .cerulean-color.emerald-color{
