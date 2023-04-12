@@ -143,16 +143,20 @@ document.querySelector("#save-deck-button-loot-encrypted").addEventListener("cli
     URL.revokeObjectURL(url);
 });
 
+// Get the loading indicator element
+const loadingIndicator = document.getElementById("loadingIndicator");
+
 document.getElementById("btn-Convert-Html2Image").addEventListener("click", async function () {
+    // Show the loading indicator
+    loadingIndicator.style.display = "block";
+
     const cards = document.getElementsByClassName("card");
     const zip = new JSZip();
-    const previewImg = document.getElementById("previewImg");
-    previewImg.innerHTML += "<p><h3>Generated JPGs:</h3></p>";
+    //const previewImg = document.getElementById("previewImg");
 
     for (const card of cards) {
         const name = card.querySelector(".title").textContent;
         const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false, useCORS: true});
-        previewImg.appendChild(canvas);
         const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg"));
         zip.file(name + ".jpg", blob);
     }
@@ -168,9 +172,10 @@ document.getElementById("btn-Convert-Html2Image").addEventListener("click", asyn
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
+
+        // Hide the loading indicator
+        loadingIndicator.style.display = "none";
     });
-
-
 });
 
 

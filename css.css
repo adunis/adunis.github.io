@@ -206,10 +206,19 @@
     font-size: 13px;
     border-radius: 15px;
     border: 1px solid #cc9900;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: #ffdf7f url(parchment.jpg) repeat 0 0;
     overflow: hidden;
     position: relative;
+}
+
+
+@keyframes card-shadow {
+    from {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
 }
 
 .card-header {
@@ -218,6 +227,36 @@
     justify-content: center;
 }
 
+/* Style the loading indicator */
+#loadingIndicator {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 .card-header .title {
     margin: auto;

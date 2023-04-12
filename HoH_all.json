@@ -737,7 +737,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a fisherman, you know the ways of the sea and the creatures that dwell within it. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when dealing with hazards at sea</li><li>You have a +1 bonus to Spout Lore when recalling information about sea creatures</li><li>You can make a special move to catch a fish or other sea creature. Roll+Wis. On a 10+, you catch a big haul. On a 7-9, you catch something, but it's not quite what you were after. On a miss, you catch nothing.</li></ul>"
+    "description": "<p>As a fisherman, you know the ways of the sea and the creatures that dwell within it. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when dealing with hazards at sea</li><li>You have a +1 bonus to Spout Lore when recalling information about sea creatures</li><li>You can make a special move to catch a fish or other sea creature. Roll+Wis. On a  18+, you catch a big haul. On a 9-17, you catch something, but it's not quite what you were after. On a miss, you catch nothing.</li></ul>"
   },
   {
     "name": "Gambler",
@@ -848,7 +848,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a footpad, you are a street-smart thief who knows how to stay one step ahead of the law. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when avoiding notice or sneaking around</li><li>You have a +1 bonus to Discern Realities when investigating a potential target</li><li>You have a special move called 'Take Advantage of a Vulnerability.' When you have an opportunity to exploit a target's weakness, roll+Dex. On a 10+, choose three. On a 7-9, choose two. On a miss, you still get to choose one, but you also expose yourself to danger:<ul><li>You take something of value from the target</li><li>You learn a useful secret about the target</li><li>You create an opportunity for an ally to take advantage of the target</li><li>You avoid detection while exploiting the target's vulnerability</li></ul></li></ul>"
+    "description": "<p>As a footpad, you are a street-smart thief who knows how to stay one step ahead of the law. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when avoiding notice or sneaking around</li><li>You have a +1 bonus to Discern Realities when investigating a potential target</li><li>You have a special move called 'Take Advantage of a Vulnerability.' When you have an opportunity to exploit a target's weakness, roll+Dex. On a  18+, choose three. On a 9-17, choose two. On a miss, you still get to choose one, but you also expose yourself to danger:<ul><li>You take something of value from the target</li><li>You learn a useful secret about the target</li><li>You create an opportunity for an ally to take advantage of the target</li><li>You avoid detection while exploiting the target's vulnerability</li></ul></li></ul>"
   },
   {
     "name": "Boatman",
@@ -1071,7 +1071,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a trader, you have a keen eye for a bargain and are always on the lookout for profitable deals. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when investigating markets or trading opportunities</li><li>You have a list of goods you are currently seeking, and a list of goods you have to trade. When you visit a market, you can attempt to buy or sell goods on your lists at a favorable price</li><li>You have a network of contacts in various markets who can provide you with information and assistance. When you visit a new market, you can roll+CHA. On a 10+, you have a useful contact there. On a 7-9, you have a contact, but they will require a favor in return for their assistance</li></ul>"
+    "description": "<p>As a trader, you have a keen eye for a bargain and are always on the lookout for profitable deals. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when investigating markets or trading opportunities</li><li>You have a list of goods you are currently seeking, and a list of goods you have to trade. When you visit a market, you can attempt to buy or sell goods on your lists at a favorable price</li><li>You have a network of contacts in various markets who can provide you with information and assistance. When you visit a new market, you can roll+CHA. On a  18+, you have a useful contact there. On a 9-17, you have a contact, but they will require a favor in return for their assistance</li></ul>"
   },
   {
     "name": "Trapper",
@@ -1399,7 +1399,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a grave robber, you are an expert at breaking into tombs, crypts, and mausoleums in search of treasure. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when avoiding traps or other hazards in tombs and crypts</li><li>You have a list of rare treasures you are currently seeking. When you find one of these treasures, you can mark it off your list and gain the appropriate amount of treasure</li><li>You have a knack for identifying valuable items. When you first encounter a treasure, you can roll +INT. On a 10+, you can identify its value and any special properties it may have. On a 7-9, the GM will give you an idea of its value, but you may have to do some more research to learn more about it</li></ul>"
+    "description": "<p>As a grave robber, you are an expert at breaking into tombs, crypts, and mausoleums in search of treasure. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when avoiding traps or other hazards in tombs and crypts</li><li>You have a list of rare treasures you are currently seeking. When you find one of these treasures, you can mark it off your list and gain the appropriate amount of treasure</li><li>You have a knack for identifying valuable items. When you first encounter a treasure, you can roll +INT. On a  18+, you can identify its value and any special properties it may have. On a 9-17, the GM will give you an idea of its value, but you may have to do some more research to learn more about it</li></ul>"
   },
   {
     "name": "Hedge-Wizard's Apprentice",
@@ -6290,7 +6290,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you touch a living animal or an organic piece of them (while they are stil alive), you can shapeshift into that creature. The animal can be as big as a bear or as small as a mice. Roll +WIS. On a 10+, choose 3 and hold 3. On a 7-9, choose 2 and hold 2:<br>- You retain your mental faculties<br>- You gain the physical abilities of the animal (e.g., claws, wings, etc.)<br>- You gain the senses of the animal (e.g., night vision, acute hearing, etc.). On a miss, the GM chooses two options (you can't fail the shapeshifting).</p><p>The size of the animal can affect your health and damage. If the animal is larger than your humanoid form, your HP becomes 20 and your hit damage (HD) becomes 2d6. If the animal is smaller, your HP becomes 3 and your hit damage (HD) becomes 1. If the animal is faster than your humanoid form, you gain +3 to DEX rolls. While in animal form, on any failed roll you make you lose 1 hold. When you lose all holds, yu are unable to control the animal instincts and you remain stuck in animal form. When you go to 0 HP while in animal form, you regain your humanoid form. You can return to your normal form at any time (while you are still in control.</p>",
+    "description": "<p>When you touch a living animal or an organic piece of them (while they are stil alive), you can shapeshift into that creature. The animal can be as big as a bear or as small as a mice. Roll +WIS. On a  18+, choose 3 and hold 3. On a 9-17, choose 2 and hold 2:<br>- You retain your mental faculties<br>- You gain the physical abilities of the animal (e.g., claws, wings, etc.)<br>- You gain the senses of the animal (e.g., night vision, acute hearing, etc.). On a miss, the GM chooses two options (you can't fail the shapeshifting).</p><p>The size of the animal can affect your health and damage. If the animal is larger than your humanoid form, your HP becomes 20 and your hit damage (HD) becomes 2d6. If the animal is smaller, your HP becomes 3 and your hit damage (HD) becomes 1. If the animal is faster than your humanoid form, you gain +3 to DEX rolls. While in animal form, on any failed roll you make you lose 1 hold. When you lose all holds, yu are unable to control the animal instincts and you remain stuck in animal form. When you go to 0 HP while in animal form, you regain your humanoid form. You can return to your normal form at any time (while you are still in control.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -7828,7 +7828,7 @@
     ]
   },
   "type": "background",
-  "description": "<p><p class=\"subtitle\">Stiff Upper Lip.</p><p>You have a cool head under pressure. When you take damage, you may ignore the effects of the damage roll on a roll of 10+ on a d10.</p><p class=\"subtitle\">Resilient.</p><p>When you defy danger by enduring or toughing something out, you may roll +CON instead of the usual stat.</p><p class=\"subtitle\">Honed Senses.</p><p>You have advantage on perception checks that rely on smell or taste.</p></p>",
+  "description": "<p><p class=\"subtitle\">Stiff Upper Lip.</p><p>You have a cool head under pressure. When you take damage, you may ignore the effects of the damage roll on a roll of  18+ on a d10.</p><p class=\"subtitle\">Resilient.</p><p>When you defy danger by enduring or toughing something out, you may roll +CON instead of the usual stat.</p><p class=\"subtitle\">Honed Senses.</p><p>You have advantage on perception checks that rely on smell or taste.</p></p>",
   "stats": [
     {
       "stat_name": "price",
@@ -7910,7 +7910,7 @@
     ]
   },
   "type": "background",
-  "description": "<p><p class=\"subtitle\">Polish Heritage.</p><p>You have a strong connection to your Polish roots, granting you proficiency in History checks related to Polish history and culture.</p><p class=\"subtitle\">Resilient.</p><p>You have advantage on saving throws against poison and disease.</p><p class=\"subtitle\">Iron Will.</p><p>When you roll a 6- on the dice, you may immediately spend 1 hold to treat it as a 7-9 instead.</p></p>",
+  "description": "<p><p class=\"subtitle\">Polish Heritage.</p><p>You have a strong connection to your Polish roots, granting you proficiency in History checks related to Polish history and culture.</p><p class=\"subtitle\">Resilient.</p><p>You have advantage on saving throws against poison and disease.</p><p class=\"subtitle\">Iron Will.</p><p>When you roll a 1-8 on the dice, you may immediately spend 1 hold to treat it as a 9-17 instead.</p></p>",
   "stats": [
     {
       "stat_name": "price",
@@ -9292,7 +9292,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a pilot, you are a skilled operator of all types of vehicles. You gain the following abilities:</p><ul><li>You have a +1 bonus to Volley when firing a ranged weapon from a moving vehicle</li><li>You can perform stunts with your vehicle, such as jumps, spins, and drifts, that allow you to avoid obstacles and evade pursuers. When you do so, roll +DEX. On a 10+, you pull off the stunt successfully. On a 7-9, you succeed, but choose one:</li><ul><li>You suffer a -1 penalty to your next action</li><li>Your vehicle takes damage</li><li>You attract unwanted attention</li></ul><li>You have a network of contacts in the transportation industry who can provide you with information, resources, and favors. When you consult your contacts, roll +CHA. On a 10+, they help you out without asking for anything in return. On a 7-9, they help you out, but ask for a favor in return later</li></ul>"
+    "description": "<p>As a pilot, you are a skilled operator of all types of vehicles. You gain the following abilities:</p><ul><li>You have a +1 bonus to Volley when firing a ranged weapon from a moving vehicle</li><li>You can perform stunts with your vehicle, such as jumps, spins, and drifts, that allow you to avoid obstacles and evade pursuers. When you do so, roll +DEX. On a  18+, you pull off the stunt successfully. On a 9-17, you succeed, but choose one:</li><ul><li>You suffer a -1 penalty to your next action</li><li>Your vehicle takes damage</li><li>You attract unwanted attention</li></ul><li>You have a network of contacts in the transportation industry who can provide you with information, resources, and favors. When you consult your contacts, roll +CHA. On a  18+, they help you out without asking for anything in return. On a 9-17, they help you out, but ask for a favor in return later</li></ul>"
   },
   {
     "name": "Pit Fighter",
@@ -9329,7 +9329,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a pit fighter, you are no stranger to violence and combat. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when fighting in a pit or arena</li><li>You can take more punishment than most. Increase your maximum HP by 2</li><li>You have a reputation as a fearsome fighter. When you enter a dangerous area, roll+CHA. On a 10+, NPCs recognize you and are afraid to cross you. On a 7-9, they recognize you but may still try to test your mettle</li></ul>"
+    "description": "<p>As a pit fighter, you are no stranger to violence and combat. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when fighting in a pit or arena</li><li>You can take more punishment than most. Increase your maximum HP by 2</li><li>You have a reputation as a fearsome fighter. When you enter a dangerous area, roll+CHA. On a  18+, NPCs recognize you and are afraid to cross you. On a 9-17, they recognize you but may still try to test your mettle</li></ul>"
   },
   {
     "name": "Scribe",
@@ -9440,7 +9440,7 @@
       }
     ],
     "type": "character",
-    "description": "<p>As a prospector, you make your living by finding valuable minerals and ores. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when looking for mineral deposits or valuable gems</li><li>You have a small cache of mining tools, including a pickaxe and lantern</li><li>You have a map of the local mines and can navigate them with ease. When you need to find your way through a mine or cavern system, roll+WIS. On a 10+, you make good progress and find what you're looking for. On a 7-9, you get lost or delayed, but eventually make your way through. On a miss, you're hopelessly lost or stumble into danger</li></ul>"
+    "description": "<p>As a prospector, you make your living by finding valuable minerals and ores. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when looking for mineral deposits or valuable gems</li><li>You have a small cache of mining tools, including a pickaxe and lantern</li><li>You have a map of the local mines and can navigate them with ease. When you need to find your way through a mine or cavern system, roll+WIS. On a  18+, you make good progress and find what you're looking for. On a 9-17, you get lost or delayed, but eventually make your way through. On a miss, you're hopelessly lost or stumble into danger</li></ul>"
   },
   {
     "name": "Protagonist",
@@ -10488,7 +10488,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you spend time in a place, making note of its resident spirits and calling on the spirits of the land, roll+WIS. You will be granted a vision of significance to you, your allies, and the spirits around you. On a 10+, the vision will be clear and helpful to you. On a 7-9, the vision is unclear, its meaning murky. On a 6-, in addition to whatever the GM says, the vision is upsetting, frightening, or traumatizing; take -1 Forward.</p>",
+    "description": "<p>When you spend time in a place, making note of its resident spirits and calling on the spirits of the land, roll+WIS. You will be granted a vision of significance to you, your allies, and the spirits around you. On a  18+, the vision will be clear and helpful to you. On a 9-17, the vision is unclear, its meaning murky. On a 1-8, in addition to whatever the GM says, the vision is upsetting, frightening, or traumatizing; take -1 Forward.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10536,7 +10536,7 @@
         ]
       },
       "type": "training",
-      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a 10+, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 7-9, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
+      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  18+, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-17, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
       "stats": [
         {
           "stat_name": "price",
@@ -10563,7 +10563,7 @@
       ]
     },
     "type": "training",
-    "description": "<p>The Spiritwalkers of the Northern Forest have taught you to channel the power of the spirits of the air, water, fire, and earth. When you <em>consult the spirits</em>, roll+WIS. On a 10+, you can ask the GM any three questions, and they will answer you truthfully. On a 7-9, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
+    "description": "<p>The Spiritwalkers of the Northern Forest have taught you to channel the power of the spirits of the air, water, fire, and earth. When you <em>consult the spirits</em>, roll+WIS. On a  18+, you can ask the GM any three questions, and they will answer you truthfully. On a 9-17, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10589,7 +10589,7 @@
       ]
     },
     "type": "training",
-    "description": "<p>You have been trained by the Mystical Order of the Silver Cord, which has taught you to speak with the spirits of the dead. When you <em>commune with the spirits</em>, roll+WIS. On a 10+, you can ask the GM any three questions about a deceased spirit, and they will answer you truthfully. On a 7-9, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
+    "description": "<p>You have been trained by the Mystical Order of the Silver Cord, which has taught you to speak with the spirits of the dead. When you <em>commune with the spirits</em>, roll+WIS. On a  18+, you can ask the GM any three questions about a deceased spirit, and they will answer you truthfully. On a 9-17, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10637,7 +10637,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Atarir Spirit to temporarily possess you, your body changes to adapt to it: ability to control and generate air, including creating gusts of wind and manipulating the direction and intensity of existing winds. Weakness: earth is deadly. Instinct: prone to arrogance and vanity. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Atarir Spirit to temporarily possess you, your body changes to adapt to it: ability to control and generate air, including creating gusts of wind and manipulating the direction and intensity of existing winds. Weakness: earth is deadly. Instinct: prone to arrogance and vanity. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10658,7 +10658,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Bumir Spirit to temporarily possess you, your body changes to adapt to it: Ability to control and generate earth, including shaping and moving earth and stone and creating small tremors or earthquakes. Weakness: air is deadly. Instinct: prone to greed and possessiveness. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Bumir Spirit to temporarily possess you, your body changes to adapt to it: Ability to control and generate earth, including shaping and moving earth and stone and creating small tremors or earthquakes. Weakness: air is deadly. Instinct: prone to greed and possessiveness. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10679,7 +10679,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Mawur Spirit to temporarily possess you, your body changes to adapt to it: ability to control and generate light, including creating small sources of light or amplifying existing light sources. Weakness: darkness is deadly. Instinct: prone to optimism and naivety. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Mawur Spirit to temporarily possess you, your body changes to adapt to it: ability to control and generate light, including creating small sources of light or amplifying existing light sources. Weakness: darkness is deadly. Instinct: prone to optimism and naivety. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10700,7 +10700,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Xanther Spirit to temporarily possess you, your body changes to adapt to it: Ability to control and generate darkness, including creating small sources of darkness or blocking out existing light sources. Weakness: light is deadly. Instinct: prone to pessimism and distrust. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Xanther Spirit to temporarily possess you, your body changes to adapt to it: Ability to control and generate darkness, including creating small sources of darkness or blocking out existing light sources. Weakness: light is deadly. Instinct: prone to pessimism and distrust. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10721,7 +10721,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the <b>Taner Spirit</b> to temporarily possess you, your body changes to adapt to it:</p><ul><li>Ability to control and protect plants, including accelerating their growth and healing their injuries.</li><li>Weakness: pollution is deadly.</li><li>Instinct: prone to pacifism and passiveness.</li></ul> Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.",
+    "description": "<p>When you call the <b>Taner Spirit</b> to temporarily possess you, your body changes to adapt to it:</p><ul><li>Ability to control and protect plants, including accelerating their growth and healing their injuries.</li><li>Weakness: pollution is deadly.</li><li>Instinct: prone to pacifism and passiveness.</li></ul> Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.",
     "stats": [
       {
         "stat_name": "price",
@@ -10742,7 +10742,7 @@
       "provides": []
     },
     "type": "move",
-    "description": "<p>When you call the Nyassir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect marine life, including communicating with and controlling the behavior of aquatic animals. However, you are weak against pollution which can be deadly. Your instinct is prone to curiosity and adventurousness. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Nyassir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect marine life, including communicating with and controlling the behavior of aquatic animals. However, you are weak against pollution which can be deadly. Your instinct is prone to curiosity and adventurousness. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10763,7 +10763,7 @@
       "provides": []
     },
     "type": "move",
-    "description": "<p>When you call the Apollor Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect mountains, including strengthening their structures and stabilizing them against earthquakes. However, you are weak against earthquakes which can be deadly. Your instinct is prone to stubbornness and rigidity. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Apollor Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect mountains, including strengthening their structures and stabilizing them against earthquakes. However, you are weak against earthquakes which can be deadly. Your instinct is prone to stubbornness and rigidity. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -10784,7 +10784,7 @@
       "provides": []
     },
     "type": "move",
-    "description": "<p>When you call the Kapka Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to fly and see over long distances, including sensing prey from afar and diving at high speeds. However, you are sensitive to loud noises. Your instinct is prone to hunting and preying on weaker beings. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Kapka Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to fly and see over long distances, including sensing prey from afar and diving at high speeds. However, you are sensitive to loud noises. Your instinct is prone to hunting and preying on weaker beings. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -11144,7 +11144,7 @@
     "item",
     "weapon","uncommon", "magic"
   ],
-  "description": "<p><p class=\"subtitle\">Infernal Flames:</p> <p>When you strike with the Infernal Longsword, roll+Str. On a 18+, deal your damage plus 1d6 fire damage. On a 9-17, deal your damage, but your blade is now coated in infernal flames and you take -1 ongoing until you either sheathe or stow the sword.</p><p class=\"subtitle\">Devilish Bargain:</p> <p>Once per day, when you score a 10+ with the Infernal Longsword, you may choose to deal an additional 1d6 fire damage and take -1 ongoing for the rest of the session. If you do, the demon bound within the sword whispers terrible secrets to you about your companions or your quest, and the GM will offer you a devilish bargain to fulfill its dark desires. If you refuse, the demon will be bound and you will take -1 forward to all rolls until the end of the session.</p></p>",
+  "description": "<p><p class=\"subtitle\">Infernal Flames:</p> <p>When you strike with the Infernal Longsword, roll+Str. On a 18+, deal your damage plus 1d6 fire damage. On a 9-17, deal your damage, but your blade is now coated in infernal flames and you take -1 ongoing until you either sheathe or stow the sword.</p><p class=\"subtitle\">Devilish Bargain:</p> <p>Once per day, when you score a  18+ with the Infernal Longsword, you may choose to deal an additional 1d6 fire damage and take -1 ongoing for the rest of the session. If you do, the demon bound within the sword whispers terrible secrets to you about your companions or your quest, and the GM will offer you a devilish bargain to fulfill its dark desires. If you refuse, the demon will be bound and you will take -1 forward to all rolls until the end of the session.</p></p>",
   "stats": [
     {
       "stat_name": "weight",
@@ -11167,7 +11167,7 @@
     "item",
     "weapon","uncommon", "magic"
   ],
-  "description": "<p><p class=\"subtitle\">Orcish Fury:</p> <p>When you hack and slash with the Orcish Longsword, roll+Str. On a 10+, deal your damage and take +1 forward. On a 7-9, deal your damage, but the orcish fury within you demands a tribute. Choose one:</p><ul><li>The orcish rage takes over and you attack the nearest ally instead of your intended target.</li><li>The orcish bloodlust demands you keep fighting. You cannot disengage until either you or your opponent are taken out of the fight.</li><li>The orcish spirits demand a sacrifice. Take -1 forward to all rolls until you make an offering to the spirits.</li></ul><p class=\"subtitle\">Blood for Blood:</p><p>When you kill with the Orcish Longsword, you may choose to spill blood onto the blade as an offering to the orcish spirits. If you do, you gain +1 forward to your next attack and the spirits will guide your hand in combat.</p></p>",
+  "description": "<p><p class=\"subtitle\">Orcish Fury:</p> <p>When you hack and slash with the Orcish Longsword, roll+Str. On a  18+, deal your damage and take +1 forward. On a 9-17, deal your damage, but the orcish fury within you demands a tribute. Choose one:</p><ul><li>The orcish rage takes over and you attack the nearest ally instead of your intended target.</li><li>The orcish bloodlust demands you keep fighting. You cannot disengage until either you or your opponent are taken out of the fight.</li><li>The orcish spirits demand a sacrifice. Take -1 forward to all rolls until you make an offering to the spirits.</li></ul><p class=\"subtitle\">Blood for Blood:</p><p>When you kill with the Orcish Longsword, you may choose to spill blood onto the blade as an offering to the orcish spirits. If you do, you gain +1 forward to your next attack and the spirits will guide your hand in combat.</p></p>",
   "stats": [
     {
       "stat_name": "weight",
@@ -11410,7 +11410,7 @@
     "uncommon",
     "magic"
   ],
-  "description": "<p><p class=\"subtitle\">Deadly Accuracy:</p> <p>When you volley with the Gnomish Enchanted Crossbow, roll +Dex instead of +Str. On a 7-9, you have to move to get the shot, placing you in danger as described by the GM. On a 10+, you have a clear shot and deal your damage. On a 12+, choose one extra effect from the list below:</p><ul><li>Your shot pierces through your target and hits an additional enemy behind them, dealing your damage to both targets.</li><li>Your shot ricochets off a nearby object and hits a second enemy nearby, dealing your damage to them as well.</li><li>Your shot deals an extra 1d6 damage to targets that are wearing metal armor or are otherwise heavily armored.</li></ul><p class=\"subtitle\">Gnomish Engineering:</p><p>When you examine or repair the Gnomish Enchanted Crossbow, roll +Int. On a 10+, choose one of the following:</p><ul><li>You discover a new mechanism that adds an additional benefit to the crossbow, such as a grappling hook or a hidden compartment for storing bolts.</li><li>You repair the crossbow to full functionality, restoring any lost or damaged components.</li></ul></p>",
+  "description": "<p><p class=\"subtitle\">Deadly Accuracy:</p> <p>When you volley with the Gnomish Enchanted Crossbow, roll +Dex instead of +Str. On a 9-17, you have to move to get the shot, placing you in danger as described by the GM. On a  18+, you have a clear shot and deal your damage. On a 12+, choose one extra effect from the list below:</p><ul><li>Your shot pierces through your target and hits an additional enemy behind them, dealing your damage to both targets.</li><li>Your shot ricochets off a nearby object and hits a second enemy nearby, dealing your damage to them as well.</li><li>Your shot deals an extra 1d6 damage to targets that are wearing metal armor or are otherwise heavily armored.</li></ul><p class=\"subtitle\">Gnomish Engineering:</p><p>When you examine or repair the Gnomish Enchanted Crossbow, roll +Int. On a  18+, choose one of the following:</p><ul><li>You discover a new mechanism that adds an additional benefit to the crossbow, such as a grappling hook or a hidden compartment for storing bolts.</li><li>You repair the crossbow to full functionality, restoring any lost or damaged components.</li></ul></p>",
   "stats": [
     {
       "stat_name": "weight",
@@ -11435,7 +11435,7 @@
     "uncommon",
     "magic"
   ],
-  "description": "<p><p class=\"subtitle\">Versatile:</p> <p>The Gnomish Enchanted Spear can be used for both melee and ranged attacks. When you wield it in melee combat, roll +Str. On a 7-9, you deal your damage and take some damage in return. On a 10+, you deal your damage and choose one extra effect from the list below:</p><ul><li>You knock your enemy off balance, causing them to drop their weapon or fall prone.</li><li>You push your enemy back a few feet, creating some distance between you and them.</li><li>You disarm your enemy, causing them to drop their weapon.</li></ul><p class=\"subtitle\">Gnomish Design:</p><p>When you examine or modify the Gnomish Enchanted Spear, roll +Wis. On a 10+, choose one of the following:</p><ul><li>You discover a new mechanism that adds an additional benefit to the spear, such as a retractable blade or a mechanism for launching the spear like a javelin.</li><li>You modify the spear to better suit your fighting style, gaining +1 forward when you wield it in combat.</li></ul></p>",
+  "description": "<p><p class=\"subtitle\">Versatile:</p> <p>The Gnomish Enchanted Spear can be used for both melee and ranged attacks. When you wield it in melee combat, roll +Str. On a 9-17, you deal your damage and take some damage in return. On a  18+, you deal your damage and choose one extra effect from the list below:</p><ul><li>You knock your enemy off balance, causing them to drop their weapon or fall prone.</li><li>You push your enemy back a few feet, creating some distance between you and them.</li><li>You disarm your enemy, causing them to drop their weapon.</li></ul><p class=\"subtitle\">Gnomish Design:</p><p>When you examine or modify the Gnomish Enchanted Spear, roll +Wis. On a  18+, choose one of the following:</p><ul><li>You discover a new mechanism that adds an additional benefit to the spear, such as a retractable blade or a mechanism for launching the spear like a javelin.</li><li>You modify the spear to better suit your fighting style, gaining +1 forward when you wield it in combat.</li></ul></p>",
   "stats": [
     {
       "stat_name": "weight",
@@ -11740,7 +11740,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Kit of the Rogue:</p> <p>When you need to get out of a tight spot, mark off a use of your Rogue's Kit and choose one option:</p><ul><li>Picks a lock, roll +Dex. On 10+, you unlock the door or chest without any trouble. On 7-9, you unlock it, but choose one from the list below. On 6-, you can't unlock it, and choose one from the list below and the GM will make a hard move.</li><li>The lock is damaged, and can't be used again.</li><li>The noise attracts unwanted attention.</li><li>You trigger a trap.</li></ul></p>",
+    "description": "<p><p class=\"subtitle\">Kit of the Rogue:</p> <p>When you need to get out of a tight spot, mark off a use of your Rogue's Kit and choose one option:</p><ul><li>Picks a lock, roll +Dex. On  18+, you unlock the door or chest without any trouble. On 9-17, you unlock it, but choose one from the list below. On 1-8, you can't unlock it, and choose one from the list below and the GM will make a hard move.</li><li>The lock is damaged, and can't be used again.</li><li>The noise attracts unwanted attention.</li><li>You trigger a trap.</li></ul></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -11982,7 +11982,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Climbing:</p> <p>When you use this rope to climb a vertical surface, roll+Dexterity. On a 10+, you make it up safely. On a 7-9, you make it up but the GM will offer you a hard bargain or an ugly choice.</p></p>",
+    "description": "<p><p class=\"subtitle\">Climbing:</p> <p>When you use this rope to climb a vertical surface, roll+Dexterity. On a  18+, you make it up safely. On a 9-17, you make it up but the GM will offer you a hard bargain or an ugly choice.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12026,7 +12026,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Sacred Energy:</p> <p>When you present this holy symbol to undead creatures, roll+WIS. On a 10+, they are destroyed or driven off. On a 7-9, they are repelled or weakened, but you suffer a setback or cost.</p></p>",
+    "description": "<p><p class=\"subtitle\">Sacred Energy:</p> <p>When you present this holy symbol to undead creatures, roll+WIS. On a  18+, they are destroyed or driven off. On a 9-17, they are repelled or weakened, but you suffer a setback or cost.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12048,7 +12048,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Unlock:</p> <p>When you use these lockpicks to try and open a locked door or container, roll+DEX. On a 10+, the lock opens. On a 7-9, the lock opens but you leave evidence of your tampering behind.</p></p>",
+    "description": "<p><p class=\"subtitle\">Unlock:</p> <p>When you use these lockpicks to try and open a locked door or container, roll+DEX. On a  18+, the lock opens. On a 9-17, the lock opens but you leave evidence of your tampering behind.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12092,7 +12092,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you throw one of these knives at an enemy, roll+DEX. On a 10+, deal your damage. On a 7-9, deal your damage but they close in on you.</p></p>",
+    "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you throw one of these knives at an enemy, roll+DEX. On a  18+, deal your damage. On a 9-17, deal your damage but they close in on you.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12136,7 +12136,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Hook On:</p> <p>When you throw this grappling hook to catch onto a high surface, roll+STR. On a 10+, you catch it and can climb up. On a 7-9, you catch it but something bad happens.</p></p>",
+    "description": "<p><p class=\"subtitle\">Hook On:</p> <p>When you throw this grappling hook to catch onto a high surface, roll+STR. On a  18+, you catch it and can climb up. On a 9-17, you catch it but something bad happens.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12202,7 +12202,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you throw one of these knives at an enemy, roll+DEX. On a 10+, deal your damage. On a 7-9, deal your damage but they close in on you.</p></p>",
+    "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you throw one of these knives at an enemy, roll+DEX. On a  18+, deal your damage. On a 9-17, deal your damage but they close in on you.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12246,7 +12246,7 @@
       "item",
       "gear"
     ],
-    "description": "<p><p class=\"subtitle\">Hook On:</p> <p>When you throw this grappling hook to catch onto a high surface, roll+STR. On a 10+, you catch it and can climb up. On a 7-9, you catch it but something bad happens.</p></p>",
+    "description": "<p><p class=\"subtitle\">Hook On:</p> <p>When you throw this grappling hook to catch onto a high surface, roll+STR. On a  18+, you catch it and can climb up. On a 9-17, you catch it but something bad happens.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
@@ -12430,7 +12430,7 @@
   {
     "name": "Reaction",
     "type": "rule",
-    "description": "When during a timed scene round its not your turn but you want still to act in reaction to somebody’s else action, roll +DEX or +INT. On a 10+, you move permanently move your turn order before somebody’s else turn and you make your action. On a 7-9 you permanently move your turn after somebody’s else turn and you make your action."
+    "description": "When during a timed scene round its not your turn but you want still to act in reaction to somebody’s else action, roll +DEX or +INT. On a  18+, you move permanently move your turn order before somebody’s else turn and you make your action. On a 9-17 you permanently move your turn after somebody’s else turn and you make your action."
   },
   {
     "name": "Damage",
@@ -12455,32 +12455,32 @@
   {
     "name": "Defy Danger (CHA)",
     "type": "rule",
-    "description": "When you use your charisma to charm, bluff, or fit in with a dangerous situation, roll+CHA. On a 12+, you are able to sway the situation to your favor and gain an advantage. On a 7-9, you can navigate the danger, but only if you make a difficult choice: give up a valuable item, reveal a personal secret, or make a dangerous promise. On a miss, you are exposed as a fraud and the danger turns against you."
+    "description": "When you use your charisma to charm, bluff, or fit in with a dangerous situation, roll+CHA. On a 12+, you are able to sway the situation to your favor and gain an advantage. On a 9-17, you can navigate the danger, but only if you make a difficult choice: give up a valuable item, reveal a personal secret, or make a dangerous promise. On a miss, you are exposed as a fraud and the danger turns against you."
   },
   {
     "name": "Defy Danger (WILL)",
     "type": "rule",
-    "description": "When you rely on your senses and exert your willpower to defy a danger, roll+WIS. On a 12+, you are able to overcome the danger and gain a deeper understanding of the situation. On a 7-9, you can resist the danger, but only if you make a risky choice: mark an experience, face a fear, or reveal a secret. On a miss, the danger overwhelms you."
+    "description": "When you rely on your senses and exert your willpower to defy a danger, roll+WIS. On a 12+, you are able to overcome the danger and gain a deeper understanding of the situation. On a 9-17, you can resist the danger, but only if you make a risky choice: mark an experience, face a fear, or reveal a secret. On a miss, the danger overwhelms you."
   },
   {
     "name": "Defy Danger (INT)",
     "type": "rule",
-    "description": "When you use your expertise to outsmart a danger, roll+INT. On a 12+, you are able to anticipate the danger and turn it to your advantage, learning something new and valuable in the process. On a 7-9, you can overcome the danger, but only if you make a difficult choice: sacrifice resources, reveal a weakness, or leave something behind. On a miss, your plan backfires and makes things worse."
+    "description": "When you use your expertise to outsmart a danger, roll+INT. On a 12+, you are able to anticipate the danger and turn it to your advantage, learning something new and valuable in the process. On a 9-17, you can overcome the danger, but only if you make a difficult choice: sacrifice resources, reveal a weakness, or leave something behind. On a miss, your plan backfires and makes things worse."
   },
   {
     "name": "Defy Danger (CON)",
     "type": "rule",
-    "description": "When you need to endure a danger and hold steady, roll+CON. On a 12+, you are able to push through the danger and come out on top, gaining an unexpected advantage. On a 7-9, you can endure the danger, but only if you make a hard choice: mark a debility, reveal a vulnerability, or expose someone else to danger. On a miss, you buckle under the pressure."
+    "description": "When you need to endure a danger and hold steady, roll+CON. On a 12+, you are able to push through the danger and come out on top, gaining an unexpected advantage. On a 9-17, you can endure the danger, but only if you make a hard choice: mark a debility, reveal a vulnerability, or expose someone else to danger. On a miss, you buckle under the pressure."
   },
   {
     "name": "Defy Danger (DEX)",
     "type": "rule",
-    "description": "When you use your speed, agility, or finesse to avoid a danger, roll+DEX. On a 12+, you defy the danger and gain the upper hand in the situation. On a 7-9, you can avoid the danger, but only if you make a tough choice: leave something important behind, take harm or a debility, or reveal your position to a new threat. On a miss, the danger catches up with you."
+    "description": "When you use your speed, agility, or finesse to avoid a danger, roll+DEX. On a 12+, you defy the danger and gain the upper hand in the situation. On a 9-17, you can avoid the danger, but only if you make a tough choice: leave something important behind, take harm or a debility, or reveal your position to a new threat. On a miss, the danger catches up with you."
   },
   {
     "name": "Defy Danger (STR)",
     "type": "rule",
-    "description": "When you attempt to use brute force to defy a danger, roll+STR. On a 12+, you succeed with ease and gain an advantage in the situation. On a 7-9, you face a tough choice: suffer damage, end up in a bad spot, or put someone else in danger in order to overcome the danger. On a miss, the danger overcomes you."
+    "description": "When you attempt to use brute force to defy a danger, roll+STR. On a 12+, you succeed with ease and gain an advantage in the situation. On a 9-17, you face a tough choice: suffer damage, end up in a bad spot, or put someone else in danger in order to overcome the danger. On a miss, the danger overcomes you."
   },
   {
     "name": "Aid",
@@ -12490,17 +12490,17 @@
   {
     "name": "Defend",
     "type": "rule",
-    "description": "When you stand in defense of a person, item, or location under attack, roll+CON. ✴On a 10+, hold 3. ✴On a 7–9, hold 1. So long as you stand in defense, when you or the thing you defend is attacked you may spend hold, 1 for 1, to choose an option:\n\nRedirect an attack from the thing you defend, to yourself\nHalve the attack’s effect or damage\nOpen up the attacker to an ally giving that ally +1 forward against the attacker\nDeal damage to the attacker equal to your level"
+    "description": "When you stand in defense of a person, item, or location under attack, roll+CON. ✴On a  18+, hold 3. ✴On a 7–9, hold 1. So long as you stand in defense, when you or the thing you defend is attacked you may spend hold, 1 for 1, to choose an option:\n\nRedirect an attack from the thing you defend, to yourself\nHalve the attack’s effect or damage\nOpen up the attacker to an ally giving that ally +1 forward against the attacker\nDeal damage to the attacker equal to your level"
   },
   {
     "name": "Discern Realities",
     "type": "rule",
-    "description": "When you hold on to a sensory impression or insight about a certain environment, roll +WIS: on a 10+, hold 3; on a 7-9, hold 1. Spend your hold on any of the following questions, and take advantage on your next move that acts on the answers. On a failure, the GM will give you misleading information, or you will miss something important.\n\nWhat went down here that someone is trying to cover up?\nWho's the big player behind the scenes?\nWhat are they planning to do next?\nWho's got something to gain here?\nWhat's the weakest point of this place?\nWhat does this place smell like that nobody else seems to notice?\nWhat here doesn't belong or match up with the rest?"
+    "description": "When you hold on to a sensory impression or insight about a certain environment, roll +WIS: on a  18+, hold 3; on a 9-17, hold 1. Spend your hold on any of the following questions, and take advantage on your next move that acts on the answers. On a failure, the GM will give you misleading information, or you will miss something important.\n\nWhat went down here that someone is trying to cover up?\nWho's the big player behind the scenes?\nWhat are they planning to do next?\nWho's got something to gain here?\nWhat's the weakest point of this place?\nWhat does this place smell like that nobody else seems to notice?\nWhat here doesn't belong or match up with the rest?"
   },
   {
     "name": "Spout Lore",
     "type": "rule",
-    "description": "When you hold on to a piece of knowledge or insight about a certain topic, roll+INT. On a 10+ hold 3; on a 7-9 hold 1. Spend your hold on any of the following choices:\n\n- You anticipate a danger related to the topic at hand, and gain +1 forward when acting on it.\n- You remember a useful fact or detail that can help you in your current situation.\n- You recognize a symbol or clue related to the topic, and gain +1 forward when investigating it.\n\nOn a failure, the GM will give you misleading information or you will forget something important that you thought you knew."
+    "description": "When you hold on to a piece of knowledge or insight about a certain topic, roll+INT. On a  18+ hold 3; on a 9-17 hold 1. Spend your hold on any of the following choices:\n\n- You anticipate a danger related to the topic at hand, and gain +1 forward when acting on it.\n- You remember a useful fact or detail that can help you in your current situation.\n- You recognize a symbol or clue related to the topic, and gain +1 forward when investigating it.\n\nOn a failure, the GM will give you misleading information or you will forget something important that you thought you knew."
   },
   {
     "name": "Miss",
@@ -12510,17 +12510,17 @@
   {
     "name": "Order Hirelings",
     "type": "rule",
-    "description": "Hirelings do what you tell them to, so long as it isn’t obviously dangerous, degrading, or stupid, and their cost is met. When a hireling finds themselves in a dangerous, degrading, or just flat-out crazy situation due to your orders roll+loyalty. \nOn a 10+ they stand firm and carry out the order. \nOn a 7–9 they do it for now, but come back with serious demands later. Meet them or the hireling quits on the worst terms."
+    "description": "Hirelings do what you tell them to, so long as it isn’t obviously dangerous, degrading, or stupid, and their cost is met. When a hireling finds themselves in a dangerous, degrading, or just flat-out crazy situation due to your orders roll+loyalty. \nOn a  18+ they stand firm and carry out the order. \nOn a 7–9 they do it for now, but come back with serious demands later. Meet them or the hireling quits on the worst terms."
   },
   {
     "name": "Reality Check",
     "type": "rule",
-    "description": "When you study a situation or a person, trying to understand if it’s a reality or only an hallucination caused by your insanity, roll +INT. On a 10+, hold 3. On a 7-9, hold 1. Spend your hold to ask the GM questions from the list below. \n\n- What here is real, and what is only in my mind?\n- What will happen next, and is it a product of my delusion or an actual event?\n- What should I do, to maintain my grip on reality?\n- How can I tell if what I’m experiencing is real or just a hallucination?\n\nOn a 6-, the GM chooses a hallucination that seems real and can manipulate the fiction accordingly. You also lose 1 sanity."
+    "description": "When you study a situation or a person, trying to understand if it’s a reality or only an hallucination caused by your insanity, roll +INT. On a  18+, hold 3. On a 9-17, hold 1. Spend your hold to ask the GM questions from the list below. \n\n- What here is real, and what is only in my mind?\n- What will happen next, and is it a product of my delusion or an actual event?\n- What should I do, to maintain my grip on reality?\n- How can I tell if what I’m experiencing is real or just a hallucination?\n\nOn a 1-8, the GM chooses a hallucination that seems real and can manipulate the fiction accordingly. You also lose 1 sanity."
   },
   {
     "name": "Witness Horror",
     "type": "rule",
-    "description": "When you witness an otherworldly horror, learn a truth that shatters your reality or see an abhorrent act of brutality, roll +WIS. On a 10+, the GM will tell you something interesting and you choose 1. On a 7-9, you choose 2. On a miss, you suffer all 3.\n\n- You suffer a major emotional trauma and take -1 ongoing until you can come to terms with what you've seen.\n- Fear takes hold of you and you hesitate, stumble, or freeze.\n- You lose 1d6 / 1d12 / 1d20 morale depending on the gravity of the event. When it gets to 0, the character goes permanently insane.\n\nWhen you try to understand rationally what just happened, roll +INT. On a 10+, you fully understand what you have seen and go temporarily insane for 1d10 hours."
+    "description": "When you witness an otherworldly horror, learn a truth that shatters your reality or see an abhorrent act of brutality, roll +WIS. On a  18+, the GM will tell you something interesting and you choose 1. On a 9-17, you choose 2. On a miss, you suffer all 3.\n\n- You suffer a major emotional trauma and take -1 ongoing until you can come to terms with what you've seen.\n- Fear takes hold of you and you hesitate, stumble, or freeze.\n- You lose 1d6 / 1d12 / 1d20 morale depending on the gravity of the event. When it gets to 0, the character goes permanently insane.\n\nWhen you try to understand rationally what just happened, roll +INT. On a  18+, you fully understand what you have seen and go temporarily insane for 1d10 hours."
   },
   {
     "name": "Encumbrance",
@@ -12535,12 +12535,12 @@
   {
     "name": "Carouse",
     "type": "rule",
-    "description": "When the party returns triumphant and throws a big party, spend 100 coins and roll + extra 100s of coins. On a 10+ choose 3. On a 7–9 choose 1. On a miss, you still choose one, but things get really out of hand.\n- You befriend a useful NPC\n- You hear rumors of an opportunity\n- You gain useful information\n- You are not entangled, ensorcelled, or tricked\n- Mark XP (each member of the party)"
+    "description": "When the party returns triumphant and throws a big party, spend 100 coins and roll + extra 100s of coins. On a  18+ choose 3. On a 7–9 choose 1. On a miss, you still choose one, but things get really out of hand.\n- You befriend a useful NPC\n- You hear rumors of an opportunity\n- You gain useful information\n- You are not entangled, ensorcelled, or tricked\n- Mark XP (each member of the party)"
   },
   {
     "name": "Supply",
     "type": "rule",
-    "description": "When you go to buy something with gold on hand, if it’s something readily available in the settlement you’re in, you can buy it at the market price. If it’s something special, beyond what’s usually available here, or non-mundane, roll+Cha. On a 10+ you find what you’re looking for at a fair price. On a 7–9 you’ll have to pay more or settle for something similar."
+    "description": "When you go to buy something with gold on hand, if it’s something readily available in the settlement you’re in, you can buy it at the market price. If it’s something special, beyond what’s usually available here, or non-mundane, roll+Cha. On a  18+ you find what you’re looking for at a fair price. On a 7–9 you’ll have to pay more or settle for something similar."
   },
   {
     "name": "Resupply",
@@ -12585,7 +12585,7 @@
   {
     "name": "Last Breath",
     "type": "rule",
-    "description": "Last Breath\nWhen you’re dying you catch a glimpse of what lies beyond the Black Gates of Death’s Kingdom (the GM will describe it). Then roll+Cos. \nOn a 10+ you’ve cheated death— you’re in a bad spot but you’re still alive. \nOn a 7–9 Death will offer you a bargain. Take it and stabilize or refuse and pass beyond the Black Gates into whatever fate awaits you. On a miss, your fate is sealed. You’re marked as Death’s own and you’ll cross the threshold soon. The GM will tell you when. If you die, destroy all the cards in your character deck. When creating a new character, you get a new booster pack and you can use all the cards from your side deck acquired with previous characters."
+    "description": "Last Breath\nWhen you’re dying you catch a glimpse of what lies beyond the Black Gates of Death’s Kingdom (the GM will describe it). Then roll+Cos. \nOn a  18+ you’ve cheated death— you’re in a bad spot but you’re still alive. \nOn a 7–9 Death will offer you a bargain. Take it and stabilize or refuse and pass beyond the Black Gates into whatever fate awaits you. On a miss, your fate is sealed. You’re marked as Death’s own and you’ll cross the threshold soon. The GM will tell you when. If you die, destroy all the cards in your character deck. When creating a new character, you get a new booster pack and you can use all the cards from your side deck acquired with previous characters."
   },
   {
     "name": "Recover",
@@ -12601,7 +12601,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Lupi Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other wolves and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to pack mentality and loyalty. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Lupi Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other wolves and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to pack mentality and loyalty. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12622,7 +12622,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Arana Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to spin webs and climb, including injecting poison into prey and sensing vibrations. Your weakness is that fire is deadly. Your instinct is prone to trickery and manipulation. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Arana Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to spin webs and climb, including injecting poison into prey and sensing vibrations. Your weakness is that fire is deadly. Your instinct is prone to trickery and manipulation. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12643,7 +12643,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Panthera Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to stealthily hunt and pounce on prey, including seeing in the dark and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to territoriality and protectiveness. Roll+WIS. On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Panthera Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to stealthily hunt and pounce on prey, including seeing in the dark and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to territoriality and protectiveness. Roll+WIS. On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12664,7 +12664,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Oso Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other bears and regenerating from injuries. Your weakness is that silver is deadly to you. Your instinct is to be prone to protectiveness and territoriality. Roll+WIS.  On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Oso Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other bears and regenerating from injuries. Your weakness is that silver is deadly to you. Your instinct is to be prone to protectiveness and territoriality. Roll+WIS.  On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12685,7 +12685,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Crocodilus Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to swim and hide in water, including sensing prey and regenerating from injuries. Your weakness is that fire is deadly to you. Your instinct is to be prone to cunning and patience. Roll +WIS, On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Crocodilus Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to swim and hide in water, including sensing prey and regenerating from injuries. Your weakness is that fire is deadly to you. Your instinct is to be prone to cunning and patience. Roll +WIS, On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12854,7 +12854,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Agnir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and generate fire, including creating small flames or explosions and heating objects up to a certain temperature. Your weakness is that water is deadly to you. Your instinct is to be prone to anger and impulsiveness. Roll +WIS, on a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Agnir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and generate fire, including creating small flames or explosions and heating objects up to a certain temperature. Your weakness is that water is deadly to you. Your instinct is to be prone to anger and impulsiveness. Roll +WIS, on a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12875,7 +12875,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you call the Apam Napatir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and generate water, including manipulating its shape and flow and creating small waves or whirlpools. However, fire is deadly to you. In addition, you are prone to jealousy and envy.  Roll +WIS, On a 10+, the spirit quickly possesses you and without issue. On a 7-9, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+    "description": "<p>When you call the Apam Napatir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and generate water, including manipulating its shape and flow and creating small waves or whirlpools. However, fire is deadly to you. In addition, you are prone to jealousy and envy.  Roll +WIS, On a  18+, the spirit quickly possesses you and without issue. On a 9-17, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -12896,7 +12896,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you summon nature’s beasts to your presence or to the presence of someone else, choose a type of animal and roll+WIS. On a 7+, they congregate at a location you choose. On a 7-9, choose 1:</p><ul><li>It takes time for them to gather.</li><li>You are not precise about the location.</li><li>You attract other animals in addition to or instead of those you intended.</li></ul>",
+    "description": "<p>When you summon nature’s beasts to your presence or to the presence of someone else, choose a type of animal and roll+WIS. On a 7+, they congregate at a location you choose. On a 9-17, choose 1:</p><ul><li>It takes time for them to gather.</li><li>You are not precise about the location.</li><li>You attract other animals in addition to or instead of those you intended.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -12980,7 +12980,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you stand perfectly still for a moment and listen to the world around you, roll +WIS. On a 10+ hold 3. On a 7-9 hold 2. On a miss hold 1, but you draw unwelcome attention or put yourself in a spot.</p><p>While you hold at least 1 hold, you may spend it to:</p><ul><li>Ask the GM one of the following questions: What here is of nature? What does nature want from me? How can I make nature help me?</li><li>Gain advantage on any roll that involves your connection to the natural world.</li></ul>",
+    "description": "<p>When you stand perfectly still for a moment and listen to the world around you, roll +WIS. On a  18+ hold 3. On a 9-17 hold 2. On a miss hold 1, but you draw unwelcome attention or put yourself in a spot.</p><p>While you hold at least 1 hold, you may spend it to:</p><ul><li>Ask the GM one of the following questions: What here is of nature? What does nature want from me? How can I make nature help me?</li><li>Gain advantage on any roll that involves your connection to the natural world.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -13001,7 +13001,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>You call forth a burst of fungi from the ground beneath your feet, which can be used to obscure your movements or harm your enemies. Roll +INT.</p><ul><li>On a 10+ choose 3.</li><li>On a 7-9 choose 2.</li><li>On a miss, choose 1, but you expose yourself to danger.</li></ul><p>You may:</p><ul><li>Create an area of difficult terrain that lasts for a few minutes or until it is cleared.</li><li>Create a cloud of spores that obscures vision and smells bad, imposing a -1 penalty to all rolls for anyone within the area of effect.</li><li>Cause 1d6 damage to a target within range, as mushrooms burst from their flesh.</li><li>Summon a small army of fungus creatures to do your bidding.</li></ul>",
+    "description": "<p>You call forth a burst of fungi from the ground beneath your feet, which can be used to obscure your movements or harm your enemies. Roll +INT.</p><ul><li>On a  18+ choose 3.</li><li>On a 9-17 choose 2.</li><li>On a miss, choose 1, but you expose yourself to danger.</li></ul><p>You may:</p><ul><li>Create an area of difficult terrain that lasts for a few minutes or until it is cleared.</li><li>Create a cloud of spores that obscures vision and smells bad, imposing a -1 penalty to all rolls for anyone within the area of effect.</li><li>Cause 1d6 damage to a target within range, as mushrooms burst from their flesh.</li><li>Summon a small army of fungus creatures to do your bidding.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -13022,7 +13022,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>You conjure a thorny vine from thin air and lash out at your enemy. Roll +INT. On a 10+, choose 2. On a 7-9, choose 1.</p><ul><li>You deal 1d8 damage to the target.</li><li>You pull the target closer to you.</li><li>You disarm the target, causing them to drop a weapon or other held item.</li><li>You entangle the target, preventing them from moving until they break free.</li></ul>",
+    "description": "<p>You conjure a thorny vine from thin air and lash out at your enemy. Roll +INT. On a  18+, choose 2. On a 9-17, choose 1.</p><ul><li>You deal 1d8 damage to the target.</li><li>You pull the target closer to you.</li><li>You disarm the target, causing them to drop a weapon or other held item.</li><li>You entangle the target, preventing them from moving until they break free.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -13046,7 +13046,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>You imbue a small plant or portion of nature with vitality and growth. Roll +WIS. On a 10+, the plant grows and expands, providing a bounty of resources. On a 7-9, the plant grows, but attracts unwanted attention. On a miss, the plant becomes corrupted or diseased, withering away to nothing.</p><p>The plant may:</p><ul><li>Provide healing properties when ingested.</li><li>Grow to tremendous size, forming a shelter or blockade.</li><li>Produce a rare or valuable resource (e.g. diamonds, gold, rare herbs).</li><li>Attract wildlife or elementals to your aid.</li></ul>",
+    "description": "<p>You imbue a small plant or portion of nature with vitality and growth. Roll +WIS. On a  18+, the plant grows and expands, providing a bounty of resources. On a 9-17, the plant grows, but attracts unwanted attention. On a miss, the plant becomes corrupted or diseased, withering away to nothing.</p><p>The plant may:</p><ul><li>Provide healing properties when ingested.</li><li>Grow to tremendous size, forming a shelter or blockade.</li><li>Produce a rare or valuable resource (e.g. diamonds, gold, rare herbs).</li><li>Attract wildlife or elementals to your aid.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -13070,7 +13070,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>You call upon the power of the moon, conjuring a bolt of silvery light to strike your enemy. Roll +WIS. On a 10+, deal 1d10 damage and choose one. On a 7-9, deal 1d8 damage and choose one. On a miss, the spell backfires and deals 1d4 damage to you.</p><ul><li>The target is blinded by the light, taking a -1 ongoing until they can clear their vision.</li><li>The spell creates an illusion that distracts or confuses the target.</li><li>The spell has a wider range or affects multiple targets.</li><li>The spell leaves a radiant residue that illuminates the area, providing better visibility for you and your allies.</li></ul>",
+    "description": "<p>You call upon the power of the moon, conjuring a bolt of silvery light to strike your enemy. Roll +WIS. On a  18+, deal 1d10 damage and choose one. On a 9-17, deal 1d8 damage and choose one. On a miss, the spell backfires and deals 1d4 damage to you.</p><ul><li>The target is blinded by the light, taking a -1 ongoing until they can clear their vision.</li><li>The spell creates an illusion that distracts or confuses the target.</li><li>The spell has a wider range or affects multiple targets.</li><li>The spell leaves a radiant residue that illuminates the area, providing better visibility for you and your allies.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -13094,7 +13094,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>You call forth a raging thunderstorm to strike your enemies. Roll +INT. On a 10+, deal 1d10 damage to all enemies in the area and choose one. On a 7-9, deal 1d8 damage to all enemies in the area and choose one. On a miss, the spell backfires and deals 1d6 damage to you and your allies.</p><ul><li>The storm creates a deafening roar, making it difficult for enemies to communicate.</li><li>The storm causes the ground to become slick and muddy, making it difficult to move or maintain balance.</li><li>The storm generates powerful winds that knock enemies back or prevent them from moving forward.</li><li>The storm attracts lightning strikes, which may hit enemies or ignite nearby objects or structures.</li></ul>",
+    "description": "<p>You call forth a raging thunderstorm to strike your enemies. Roll +INT. On a  18+, deal 1d10 damage to all enemies in the area and choose one. On a 9-17, deal 1d8 damage to all enemies in the area and choose one. On a miss, the spell backfires and deals 1d6 damage to you and your allies.</p><ul><li>The storm creates a deafening roar, making it difficult for enemies to communicate.</li><li>The storm causes the ground to become slick and muddy, making it difficult to move or maintain balance.</li><li>The storm generates powerful winds that knock enemies back or prevent them from moving forward.</li><li>The storm attracts lightning strikes, which may hit enemies or ignite nearby objects or structures.</li></ul>",
     "stats": [
       {
         "stat_name": "price",
@@ -13118,7 +13118,7 @@
       "provides": []
     },
     "type": "spell",
-    "description": "<p>You call upon the power of the forest to protect yourself from harm. Roll +CON. On a 10+, your skin becomes tough as bark, giving you +2 armor. On a 7-9, your skin toughens, but you suffer a -1 ongoing to DEX until the spell wears off. On a miss, the spell backfires and you become vulnerable to nature-based attacks.</p>",
+    "description": "<p>You call upon the power of the forest to protect yourself from harm. Roll +CON. On a  18+, your skin becomes tough as bark, giving you +2 armor. On a 9-17, your skin toughens, but you suffer a -1 ongoing to DEX until the spell wears off. On a miss, the spell backfires and you become vulnerable to nature-based attacks.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -13142,7 +13142,7 @@
       "provides": []
     },
     "type": "spell",
-    "description": "<p>You call upon the spirits of nature to protect you and your allies. When you cast this spell, you and all allies within sight gain a Spirit Shield. The next time you or an ally takes damage, roll+WIS. ✴On a 10+, the damage is negated. ✴On a 7-9, the damage is halved. After the shield has absorbed damage, it dissipates.</p>",
+    "description": "<p>You call upon the spirits of nature to protect you and your allies. When you cast this spell, you and all allies within sight gain a Spirit Shield. The next time you or an ally takes damage, roll+WIS. ✴On a  18+, the damage is negated. ✴On a 9-17, the damage is halved. After the shield has absorbed damage, it dissipates.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -13269,7 +13269,7 @@
       "provides": []
     },
     "type": "feature",
-    "description": "<p>When you take the form of a lion, you gain the ability to intimidate and demoralize your opponents with a mighty roar. When you roar, roll +Charisma. On a 10+, your enemies are stunned and lose their next turn. On a 7-9, they are momentarily distracted and take -1 ongoing until they successfully attack or defend. Additionally, your attacks are Brutal and gain the Messy and Vicious tags.</p><p><em>Wild Form Move:</em> Roar to stun or distract your enemies, depending on the result of the roll.</p>",
+    "description": "<p>When you take the form of a lion, you gain the ability to intimidate and demoralize your opponents with a mighty roar. When you roar, roll +Charisma. On a  18+, your enemies are stunned and lose their next turn. On a 9-17, they are momentarily distracted and take -1 ongoing until they successfully attack or defend. Additionally, your attacks are Brutal and gain the Messy and Vicious tags.</p><p><em>Wild Form Move:</em> Roar to stun or distract your enemies, depending on the result of the roll.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -14648,7 +14648,7 @@
       "rare",
       "potion"
     ],
-    "description": "<p><p class=\"subtitle\">Keen Edge:</p><p>When you apply this oil to a bladed weapon, it becomes incredibly sharp. The weapon gains the 'precise' and 'messy' tags for the next hour. Additionally, when you roll a 10+ on a Hack and Slash with this weapon, you may choose to deal an extra 1d4 damage or disarm your foe.</p></p>",
+    "description": "<p><p class=\"subtitle\">Keen Edge:</p><p>When you apply this oil to a bladed weapon, it becomes incredibly sharp. The weapon gains the 'precise' and 'messy' tags for the next hour. Additionally, when you roll a  18+ on a Hack and Slash with this weapon, you may choose to deal an extra 1d4 damage or disarm your foe.</p></p>",
     "stats": [
       {
         "stat_name": "weight",
