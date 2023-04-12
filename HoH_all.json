@@ -1935,7 +1935,7 @@
       ]
     },
     "type": "feature",
-    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You have studied the art of war and the teachings of Ares, the god of war. When you spend time reflecting on these teachings, you can ask the GM one question about a current situation or an upcoming battle. The GM will answer truthfully, but be warned that the answer may not always be what you want to hear.</p>",
+    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are  a Fist of Ares you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You have studied the art of war and the teachings of Ares, the god of war. When you spend time reflecting on these teachings, you can ask the GM one question about a current situation or an upcoming battle. The GM will answer truthfully, but be warned that the answer may not always be what you want to hear.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -1958,7 +1958,7 @@
       ]
     },
     "type": "feature",
-    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your devotion to Allah and your study of the holy texts have given you deep knowledge of the faith. When you spout lore about the tenets of Islam or the teachings of the Prophet Muhammad, you can roll+Wis instead of +Int. On a 18+, the GM will give you valuable information. On a 9-17, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
+    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are a Sword of Allah, you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your devotion to Allah and your study of the holy texts have given you deep knowledge of the faith. When you spout lore about the tenets of Islam or the teachings of the Prophet Muhammad, you can roll+Wis instead of +Int. On a 18+, the GM will give you valuable information. On a 9-17, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
     "stats": [
       {
         "stat_name": "price",
@@ -1981,7 +1981,7 @@
       ]
     },
     "type": "feature",
-    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your study of the ancient Egyptian religion and your devotion to Ra, the sun god, have given you deep knowledge of the faith. When you spout lore about the religion of Ra or the power of the sun, you can roll+Int instead of +Wis. On a 18+, the GM will give you valuable information. On a 9-17, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
+    "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are a Hand of Ra you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your study of the ancient Egyptian religion and your devotion to Ra, the sun god, have given you deep knowledge of the faith. When you spout lore about the religion of Ra or the power of the sun, you can roll+Wis instead of +Int. On a 18+, the GM will give you valuable information. On a 9-17, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
     "stats": [
       {
         "stat_name": "price",

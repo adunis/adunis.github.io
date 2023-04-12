@@ -156,7 +156,7 @@ document.getElementById("btn-Convert-Html2Image").addEventListener("click", asyn
 
     for (const card of cards) {
         const name = card.querySelector(".title").textContent;
-        const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false, useCORS: true});
+        const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false, useCORS: true, scale: 2});
         const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg"));
         zip.file(name + ".jpg", blob);
     }

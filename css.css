@@ -211,16 +211,6 @@
     position: relative;
 }
 
-
-@keyframes card-shadow {
-    from {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    to {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
-}
-
 .card-header {
     display: flex;
     align-items: center;
@@ -762,9 +752,6 @@ table {
     font-size: 15px;
     margin-bottom:30px;
     text-decoration:none;
-}
-.hidden{
-    filter: motionBlur(10px);
 }
 
 #menu .sparkly-btn{
