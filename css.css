@@ -792,3 +792,16 @@ table {
         transform: scale(1);
     }
 }
+
+#drop-area-label{
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.38);
+    text-align: center;
+    padding-top: 200px;
+}
+
+#drop-area.highlight {
+    border: 10px dashed #000;
+    padding:20px;
+    margin:20px;
+}

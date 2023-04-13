@@ -604,3 +604,67 @@ boosterPackFileInput.addEventListener("change", function() {
     };
     reader.readAsText(file);
 });
+
+const dropArea = document.querySelector("#drop-area");
+
+// Prevent default drag behaviors
+['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+    dropArea.addEventListener(eventName, preventDefaults, false)
+    document.body.addEventListener(eventName, preventDefaults, false)
+});
+
+// Highlight drop area when item is dragged over it
+['dragenter', 'dragover'].forEach(eventName => {
+    dropArea.addEventListener(eventName, highlight, false)
+});
+
+['dragleave', 'drop'].forEach(eventName => {
+    dropArea.addEventListener(eventName, unhighlight, false)
+});
+
+// Handle dropped files
+dropArea.addEventListener('drop', handleDrop, false);
+
+function preventDefaults (e) {
+    e.preventDefault()
+    e.stopPropagation()
+}
+
+function highlight(e) {
+    dropArea.classList.add('highlight')
+}
+
+function unhighlight(e) {
+    dropArea.classList.remove('highlight')
+}
+
+function handleDrop(e) {
+    const dt = e.dataTransfer;
+    const files = dt.files;
+
+    // Check if file is valid
+    if (files.length > 0) {
+        const file = files[0];
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            try {
+                const fileData = event.target.result;
+                const decryptedJson = decrypt(fileData);
+                filterData("", 1, decryptedJson).then(() => {
+                    // Hide all cards in grid
+                    const gridCards = document.querySelectorAll(".card-container");
+                    gridCards.forEach((card) => {
+                        card.classList.add("flipped");
+                        card.classList.add("flipped-background");
+                        card.addEventListener('click', () => {
+                            card.classList.remove('flipped');
+                        });
+                    });
+                });
+            } catch (error) {
+                console.error("Invalid or corrupted encrypted file");
+            }
+        };
+        reader.readAsText(file);
+    }
+}
