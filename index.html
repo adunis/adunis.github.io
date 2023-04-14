@@ -51,7 +51,7 @@
 
 <div id="card-template" style="display:none">
     <div class="card {{#crystals.requires}} {{.}}-color {{/crystals.requires}} {{#crystals.provides}} {{.}}-color {{/crystals.provides}}">
-        <div class="card-header {{#type}} {{.}}-header {{/type}}">
+        <div class="card-header {{#type}} {{.}}-header {{/type}}" style="background-image:url('images/{{header_image}}');">
             <div class="left-crystals">
                 <div class="crystals-label-left">{{left_label}}Requires</div>
                 <div class="crystals-container">
@@ -64,8 +64,7 @@
                     {{/crystals.requires}}
                 </div>
             </div>
-            <div class="icon-image-container">
-                <img class="icon-image" src="{{icon_image}}{{^icon_image}}https://wowmeta.com/assets/icons/specs/druid-restoration.jpg{{/icon_image}}" alt="{{icon_alt_text}}">
+            <div class="icon-image-container">-
                 <div class="title">{{name}}</div>
             </div>
             <div class="right-crystals">
