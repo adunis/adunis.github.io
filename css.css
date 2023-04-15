@@ -68,7 +68,7 @@
     width: 100%;
     height: 200%;
     z-index: 1;
-    background: url(cosmo.jpg);
+    background: url(images/cosmo.jpg);
 }
 
 
@@ -211,7 +211,7 @@
     position: relative;
 }
 
-.card-header {
+.hoh-card-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,9 +248,21 @@
     100% { transform: rotate(360deg); }
 }
 
-.card-header .title {
+.hoh-card-header {
+    height:100px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.header-image {
+     height:219px;
+     padding-top:169px;
+     padding-bottom:50px;
+ }
+
+
+.hoh-card-header .title {
     margin: auto;
-    height:230px;
     width: 120px;
     display: flex;
     align-items: center;
@@ -258,8 +270,6 @@
     font-family: 'Lora', serif;
     font-size: 16px;
     text-align: center;
-    padding-top:200px;
-    padding-bottom:40px;
     color: #fff;
     text-shadow:1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,0 0 40px #000,
             0 0 80px #000;
@@ -291,27 +301,26 @@
     margin-bottom: 3px;
 }
 .left-crystals {
+    height:30px;
     width:100px;
-    height:120px;
     display: inline-block;
     flex-direction: column;
     justify-content: center;
     margin-right: 10px;
-    padding-top:200px;
-    padding-bottom:50px;
+    padding-left:10px;
 
 }
 .left-crystals .crystal {
 }
+
 .right-crystals {
+    height:30px;
     width:100px;
-    height:120px;
     display: inline-block;
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
-    padding-top:200px;
-    padding-bottom:50px;
+    padding-right: 10px;
 }
 
 .card:before {
@@ -344,14 +353,14 @@
     z-index: 0;
 }
 
-.card-header {
-    height:250px;
+.hoh-card-header {
+    height:219px;
     border-bottom: 1px solid #8a8743;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-size: cover;
-    background-image: url(spells.jpg);
+    background-image: url(images/spells.jpg);
 }
 
 table {
@@ -363,18 +372,18 @@ table {
 /* Character card style */
 .character-header {
     background-size: cover;
-    background-image: url("adventurers.jpg");
+    background-image: url("images/adventurers.jpg");
 }
 
 /* Feature card style */
 .feature-header {
     background-size: cover;
-    background-image: url(spells.jpg);
+    background-image: url(images/spells.jpg);
 }
 
 /* Item card style */
 .item-header {
-    background-image: url(treasure.jpg);
+    background-image: url(images/treasure.jpg);
 }
 
 .cerulean-color.emerald-color{
@@ -639,7 +648,7 @@ table {
 }
 
 
-.card-header h2 {
+.hoh-card-header h2 {
     margin: 0;
     font-size: 24px;
     color: #fff;

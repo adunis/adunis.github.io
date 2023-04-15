@@ -46,30 +46,45 @@ removeAllButton.addEventListener("click", () => {
 });
 
 
-// Render card templates
-function renderCards(jsonData) {
+function isImageLocal(url) {
+    return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = `/images/${url.split("/").pop()}`;
+    });
+}
+async function renderCards(jsonData) {
 
-    for (const card in jsonData) {
+    for (const card of jsonData) {
+        var cardtoRender = card;
         const cardTemplate = document.querySelector("#card-template").innerHTML;
-        const renderedCard = mustache.render(cardTemplate, jsonData[card]);
-        const cardElement = document.createElement("div");
 
+
+        if (card.header_image && !(await isImageLocal(card.header_image))) {
+            console.log(card.header_image)
+            cardtoRender.header_image = null
+        }
+
+        const cardElement = document.createElement("div");
+        var renderedCard = mustache.render(cardTemplate, cardtoRender);
         cardElement.classList.add("card-container");
         cardElement.innerHTML = renderedCard;
-        cardElement.setAttribute("data-json", JSON.stringify(jsonData[card]));
+        cardElement.setAttribute("data-json", JSON.stringify(card));
         document.querySelector("#card-grid").appendChild(cardElement);
         cardElement.addEventListener("click", () => {
-            if (cardElement.classList.contains('flipped')) {
+            if (cardElement.classList.contains("flipped")) {
                 return;
             }
             saveSelectedCards(cardElement);
             cardElement.classList.add("flash");
             setTimeout(() => {
                 cardElement.classList.remove("flash");
-            }, 500); // duration of the animation in milliseconds
-        })
+            }, 500);
+        });
     }
 }
+
 document.querySelector("#save-deck-button").addEventListener("click", () => {
     const selectedCardsList = document.querySelector("#selected-cards-list");
     const selectedCards = selectedCardsList.querySelectorAll("li");
@@ -81,7 +96,7 @@ document.querySelector("#save-deck-button").addEventListener("click", () => {
     }
 
     const deckJson = JSON.stringify(deckData);
-    const blob = new Blob([deckJson], { type: "application/json" });
+    const blob = new Blob([deckJson], {type: "application/json"});
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
 
@@ -105,7 +120,7 @@ document.querySelector("#save-deck-button-encrypted").addEventListener("click", 
 
     const deckJson = JSON.stringify(deckData);
     const encryptedJson = encrypt(deckJson); // encrypt the JSON data
-    const blob = new Blob([encryptedJson], { type: "application/json" });
+    const blob = new Blob([encryptedJson], {type: "application/json"});
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     const randomNumber = Math.floor(Math.random() * 10000000000000000);
@@ -130,7 +145,7 @@ document.querySelector("#save-deck-button-loot-encrypted").addEventListener("cli
 
     const deckJson = JSON.stringify(deckData);
     const encryptedJson = encrypt(deckJson); // encrypt the JSON data
-    const blob = new Blob([encryptedJson], { type: "application/json" });
+    const blob = new Blob([encryptedJson], {type: "application/json"});
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     const randomNumber = Math.floor(Math.random() * 10000000000000000);
@@ -156,7 +171,13 @@ document.getElementById("btn-Convert-Html2Image").addEventListener("click", asyn
 
     for (const card of cards) {
         const name = card.querySelector(".title").textContent;
-        const canvas = await html2canvas(card, {allowTaint: true, logging: true, taintTest: false, useCORS: true, scale: 2});
+        const canvas = await html2canvas(card, {
+            allowTaint: true,
+            logging: true,
+            taintTest: false,
+            useCORS: true,
+            scale: 2
+        });
         const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg"));
         zip.file(name + ".jpg", blob);
     }
@@ -275,7 +296,7 @@ async function filterData(filter, currentPage = 1, jsonData) {
             typeFilters.every((filter) => {
                 const typeValue = filter.split(":")[1].toLowerCase().trim();
                 if (value.type != null) {
-                   return Array.isArray(value.type) ? value.type.includes(typeValue) : value.type.toLowerCase() === typeValue;
+                    return Array.isArray(value.type) ? value.type.includes(typeValue) : value.type.toLowerCase() === typeValue;
                 }
             }) &&
             crystalsFilters.every((filter) => {
@@ -352,11 +373,11 @@ async function loadStartUp() {
 loadStartUp();
 
 const myInput = document.getElementById('my-input');
-myInput.addEventListener('keyup', async function() {
+myInput.addEventListener('keyup', async function () {
     await filterData(this.value.toLowerCase(), 1, loadedData);
 });
 
-window.addEventListener('load', async function() {
+window.addEventListener('load', async function () {
     const filter = myInput.value.toLowerCase();
     if (filter) {
         await filterData(filter, 1, loadedData);
@@ -365,21 +386,21 @@ window.addEventListener('load', async function() {
 
 // Load JSON file
 const loadJsonButton = document.querySelector("#load-json");
-loadJsonButton.addEventListener("click", function() {
+loadJsonButton.addEventListener("click", function () {
     const jsonFileInput = document.querySelector("#json-file-input");
     jsonFileInput.click();
 });
 
-document.querySelector("#load-hoh").addEventListener("click", async function() {
+document.querySelector("#load-hoh").addEventListener("click", async function () {
     await loadStartUp();
     console.log("");
 });
 
 const jsonFileInput = document.querySelector("#json-file-input");
-jsonFileInput.addEventListener("change", function() {
+jsonFileInput.addEventListener("change", function () {
     const file = this.files[0];
     const reader = new FileReader();
-    reader.onload = function(event) {
+    reader.onload = function (event) {
         const fileData = event.target.result;
         try {
             loadedData = JSON.parse(fileData);
@@ -434,8 +455,8 @@ const generateLootBoosterPack = async () => {
     const response = await fetch("HoH_all.json");
     const data = await response.json();
 
-    const items = data.filter(card => card.type && card.type.includes("item") && !card.type.includes("common")&& !card.type.includes("uncommon")&& !card.type.includes("rare"));
-    const magic = data.filter(card => card.type && card.type.includes("item") &&  (card.type.includes("common") || card.type.includes("uncommon") || card.type.includes("rare")));
+    const items = data.filter(card => card.type && card.type.includes("item") && !card.type.includes("common") && !card.type.includes("uncommon") && !card.type.includes("rare"));
+    const magic = data.filter(card => card.type && card.type.includes("item") && (card.type.includes("common") || card.type.includes("uncommon") || card.type.includes("rare")));
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -468,7 +489,7 @@ document.querySelector("#booster-pack").addEventListener("click", async () => {
     const selectedCards = selectedCardsList.querySelectorAll("li").length;
     const selectedCount = document.querySelector("#selected-count");
     selectedCount.textContent = selectedCards;
-filterData("", 1, randomCards);
+    filterData("", 1, randomCards);
     console.log(randomCards);
 });
 
@@ -505,38 +526,38 @@ document.querySelector("#booster-box").addEventListener("click", async () => {
 
 });
 
-    document.querySelector("#loot-box").addEventListener("click", async () => {
-        const zip = new JSZip();
+document.querySelector("#loot-box").addEventListener("click", async () => {
+    const zip = new JSZip();
 
-        for (let i = 0; i < 20; i++) {
-            const randomCards = await generateLootBoosterPack()
-            const deckData = JSON.stringify(randomCards);
-            const encryptedJson = encrypt(deckData);
-            const blob = new Blob([encryptedJson], {type: "application/json"});
+    for (let i = 0; i < 20; i++) {
+        const randomCards = await generateLootBoosterPack()
+        const deckData = JSON.stringify(randomCards);
+        const encryptedJson = encrypt(deckData);
+        const blob = new Blob([encryptedJson], {type: "application/json"});
 
-            // Generate a random number and concatenate it with the file name
-            const randomNumber = Math.floor(Math.random() * 100000);
-            const fileName = `loot_box_${randomNumber}.hoh`;
+        // Generate a random number and concatenate it with the file name
+        const randomNumber = Math.floor(Math.random() * 100000);
+        const fileName = `loot_box_${randomNumber}.hoh`;
 
-            // Add the file to the zip object
-            zip.file(fileName, blob);
-        }
+        // Add the file to the zip object
+        zip.file(fileName, blob);
+    }
 
-        // Generate the zip file and download it
-        zip.generateAsync({type: "blob"}).then(function (content) {
-            const url = URL.createObjectURL(content);
-            const a = document.createElement("a");
-            const randomNumber = Math.floor(Math.random() * 1000);
-            const fileBox = `loot_box_${randomNumber}.zip`;
-            a.download = fileBox;
-            a.href = url;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        });
-
+    // Generate the zip file and download it
+    zip.generateAsync({type: "blob"}).then(function (content) {
+        const url = URL.createObjectURL(content);
+        const a = document.createElement("a");
+        const randomNumber = Math.floor(Math.random() * 1000);
+        const fileBox = `loot_box_${randomNumber}.zip`;
+        a.download = fileBox;
+        a.href = url;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     });
+
+});
 
 
 document.querySelector("#booster-loot-pack").addEventListener("click", async () => {
@@ -549,7 +570,6 @@ document.querySelector("#booster-loot-pack").addEventListener("click", async () 
     filterData("", 1, randomCards);
     console.log(randomCards);
 });
-
 
 
 const inputElement = document.getElementById("my-input");
@@ -580,10 +600,10 @@ function decrypt(encryptedJson) {
     return JSON.parse(bytes);
 }
 
-boosterPackFileInput.addEventListener("change", function() {
+boosterPackFileInput.addEventListener("change", function () {
     const file = this.files[0];
     const reader = new FileReader();
-    reader.onload = function(event) {
+    reader.onload = function (event) {
         try {
             const fileData = event.target.result;
             const decryptedJson = decrypt(fileData);
@@ -625,7 +645,7 @@ const dropArea = document.querySelector("#drop-area");
 // Handle dropped files
 dropArea.addEventListener('drop', handleDrop, false);
 
-function preventDefaults (e) {
+function preventDefaults(e) {
     e.preventDefault()
     e.stopPropagation()
 }
@@ -646,7 +666,7 @@ function handleDrop(e) {
     if (files.length > 0) {
         const file = files[0];
         const reader = new FileReader();
-        reader.onload = function(event) {
+        reader.onload = function (event) {
             try {
                 const fileData = event.target.result;
                 const decryptedJson = decrypt(fileData);

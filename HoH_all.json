@@ -6771,7 +6771,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Abjuration.png"
+      "header_image":"Arcane Specialization_ Abjuration.png"
    },
    {
       "name":"Connections",
@@ -6955,7 +6955,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Conjuration.png"
+      "header_image":"Arcane Specialization_ Conjuration.png"
    },
    {
       "name":"Arcane Specialization: Divination",
@@ -6983,7 +6983,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Divination.png"
+      "header_image":"Arcane Specialization_ Divination.png"
    },
    {
       "name":"Arcane Specialization: Transmutation",
@@ -7011,7 +7011,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Transmutation.png"
+      "header_image":"Arcane Specialization_ Transmutation.png"
    },
    {
       "name":"Tricks of the Trade",
@@ -7899,7 +7899,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Illusion.png"
+      "header_image":"Arcane Specialization_ Illusion.png"
    },
    {
       "name":"Arcane Specialization: Necromancy",
@@ -7927,7 +7927,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Necromancy.png"
+      "header_image":"Arcane Specialization_ Necromancy.png"
    },
    {
       "name":"Commune",
@@ -7983,7 +7983,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Arcane Specialization: Enchantment.png"
+      "header_image":"Arcane Specialization_ Enchantment.png"
    },
    {
       "name":"Arcane Volley",
