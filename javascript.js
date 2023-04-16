@@ -63,7 +63,7 @@ async function renderCards(jsonData) {
 
         if (card.header_image && !(await isImageLocal(card.header_image))) {
             console.log(card.header_image)
-            cardtoRender.header_image = null
+            cardtoRender.header_image = ""
         }
 
         const cardElement = document.createElement("div");
