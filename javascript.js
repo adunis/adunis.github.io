@@ -46,25 +46,11 @@ removeAllButton.addEventListener("click", () => {
 });
 
 
-function isImageLocal(url) {
-    return new Promise((resolve) => {
-        const img = new Image();
-        img.onload = () => resolve(true);
-        img.onerror = () => resolve(false);
-        img.src = `/images/${url.split("/").pop()}`;
-    });
-}
 async function renderCards(jsonData) {
 
     for (const card of jsonData) {
         var cardtoRender = card;
         const cardTemplate = document.querySelector("#card-template").innerHTML;
-
-
-        if (card.header_image && !(await isImageLocal(card.header_image))) {
-            console.log(card.header_image)
-            cardtoRender.header_image = ""
-        }
 
         const cardElement = document.createElement("div");
         var renderedCard = mustache.render(cardTemplate, cardtoRender);

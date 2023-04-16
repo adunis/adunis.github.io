@@ -525,7 +525,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Alchemist's Apprentice.png"
+      "header_image":"Alchemists Apprentice.png"
    },
    {
       "name":"Artisan's Apprentice",
@@ -569,7 +569,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Artisan's Apprentice.png"
+      "header_image":"Artisans Apprentice.png"
    },
    {
       "name":"Bawd",
@@ -790,94 +790,6 @@
          "longitude":-122.4194
       },
       "header_image":"Exciseman.png"
-   },
-   {
-      "name":"Farmer",
-      "crystals":{
-         "requires":[
-            
-         ],
-         "provides":[
-            "emerald"
-         ]
-      },
-      "stats":[
-         {
-            "stat_name":"hp",
-            "stat_value":10
-         },
-         {
-            "stat_name":"mp",
-            "stat_value":6
-         },
-         {
-            "stat_name":"sp",
-            "stat_value":8
-         },
-         {
-            "stat_name":"hd",
-            "stat_value":9
-         },
-         {
-            "stat_name":"mp",
-            "stat_value":7
-         },
-         {
-            "stat_name":"sd",
-            "stat_value":6
-         }
-      ],
-      "type":"character",
-      "description":"<p>As a farmer, you work the land to provide food for yourself and others. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when working in the fields or dealing with livestock</li><li>You have a +1 bonus to Discern Realities when investigating plant diseases, pests, and weather patterns</li><li>You can heal yourself or an ally by tending to their wounds with your farming knowledge</li></ul>",
-      "geo_location":{
-         "latitude":37.7749,
-         "longitude":-122.4194
-      },
-      "header_image":"Farmer.png"
-   },
-   {
-      "name":"Fisherman",
-      "crystals":{
-         "requires":[
-            
-         ],
-         "provides":[
-            "green"
-         ]
-      },
-      "stats":[
-         {
-            "stat_name":"hp",
-            "stat_value":6
-         },
-         {
-            "stat_name":"mp",
-            "stat_value":6
-         },
-         {
-            "stat_name":"sp",
-            "stat_value":6
-         },
-         {
-            "stat_name":"hd",
-            "stat_value":6
-         },
-         {
-            "stat_name":"mp",
-            "stat_value":6
-         },
-         {
-            "stat_name":"sd",
-            "stat_value":6
-         }
-      ],
-      "type":"character",
-      "description":"<p>As a fisherman, you know the ways of the sea and the creatures that dwell within it. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when dealing with hazards at sea</li><li>You have a +1 bonus to Spout Lore when recalling information about sea creatures</li><li>You can make a special move to catch a fish or other sea creature. Roll+Wis. On a  18+, you catch a big haul. On a 9-17, you catch something, but it's not quite what you were after. On a miss, you catch nothing.</li></ul>",
-      "geo_location":{
-         "latitude":37.7749,
-         "longitude":-122.4194
-      },
-      "header_image":"Fisherman.png"
    },
    {
       "name":"Gambler",
@@ -1389,7 +1301,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"What Are You Waiting For?.png"
+      "header_image":"What Are You Waiting For.png"
    },
    {
       "name":"The Upper Hand",
@@ -1728,7 +1640,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Hedge-Wizard's Apprentice.png"
+      "header_image":"Hedge-Wizards Apprentice.png"
    },
    {
       "name":"Herbalist",
@@ -2156,7 +2068,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Heaven's Weaving.png"
+      "header_image":"Heavens Weaving.png"
    },
    {
       "name":"Holy Beacon",
@@ -8403,7 +8315,7 @@
          "latitude":37.7749,
          "longitude":-122.4194
       },
-      "header_image":"Thieves' Guild.png"
+      "header_image":"Thieves Guild.png"
    },
    {
       "name":"Bardic College",

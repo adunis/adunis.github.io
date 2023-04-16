@@ -255,9 +255,9 @@
 }
 
 .header-image {
-     height:219px;
-     padding-top:169px;
-     padding-bottom:50px;
+     height:180px;
+     padding-top:130px;
+     padding-bottom:30px;
  }
 
 
@@ -354,7 +354,7 @@
 }
 
 .hoh-card-header {
-    height:219px;
+    height:180px;
     border-bottom: 1px solid #8a8743;
     display: flex;
     align-items: center;
