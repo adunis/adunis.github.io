@@ -7,6 +7,7 @@ let selectedCards = 0;
 let requiredCrystals = {};
 let providedCrystals = {};
 
+
 const selectedCardsList = document.querySelector("#selected-cards-list");
 
 // Create "select all" button
@@ -26,9 +27,38 @@ selectAllButton.addEventListener("click", () => {
     });
 });
 
-// Add button to selection info div
-const selectionInfo = document.querySelector("#selection-info");
-selectionInfo.insertBefore(selectAllButton, selectedCardsList);
+// Create "Save Deck" button
+const saveDeckButton = document.createElement("button");
+saveDeckButton.textContent = "Save Deck";
+saveDeckButton.addEventListener("click", () => {
+    const gridCards = document.querySelectorAll("#card-grid .card-container");
+    gridCards.forEach((card) => {
+        if (!card.classList.contains("selected")) {
+            console.log(card)
+            saveSelectedCards(card);
+            card.classList.add("flash");
+            setTimeout(() => {
+                card.classList.remove("flash");
+            }, 500);
+        }
+    });
+});
+
+
+// Get the filename of the current HTML page
+const filename = window.location.pathname.split("/").pop();
+
+// Call relevant code based on the filename
+if (filename === "deck-manager.html") {
+    // Add button to selection info div
+    const selectionInfo = document.querySelector("#selection-info");
+    selectionInfo.insertBefore(saveDeckButton, selectedCardsList);}
+else {
+    // Add button to selection info div
+    const selectionInfo = document.querySelector("#selection-info");
+    selectionInfo.insertBefore(selectAllButton, selectedCardsList);
+
+}
 
 
 const removeAllButton = document.createElement("button");
@@ -46,7 +76,7 @@ removeAllButton.addEventListener("click", () => {
 });
 
 
-async function renderCards(jsonData) {
+async function renderCards(jsonData, isBooster) {
 
     for (const card of jsonData) {
         var cardtoRender = card;
@@ -68,6 +98,14 @@ async function renderCards(jsonData) {
                 cardElement.classList.remove("flash");
             }, 500);
         });
+
+        if (isBooster){
+                    cardElement.classList.add("flipped");
+                    cardElement.classList.add("flipped-background");
+                    cardElement.addEventListener('click', () => {
+                        cardElement.classList.remove('flipped');
+                    });
+        }
     }
 }
 
@@ -214,8 +252,18 @@ function saveSelectedCards(cardElement) {
     const saveDeckButtonLootEncrypted = document.querySelector("#save-deck-button-loot-encrypted");
 
     saveDeckButton.style.display = selectedCards > 0 ? "block" : "none";
-    saveDeckButtonEncrypted.style.display = selectedCards > 0 ? "block" : "none";
-    saveDeckButtonLootEncrypted.style.display = selectedCards > 0 ? "block" : "none";
+
+    const filename = window.location.pathname.split("/").pop();
+
+// Call relevant code based on the filename
+    if (filename !== "deck-manager.html") {
+        // Add button to selection info div
+        const selectionInfo = document.querySelector("#selection-info");
+        selectionInfo.insertBefore(saveDeckButton, selectedCardsList);
+        saveDeckButtonEncrypted.style.display = selectedCards > 0 ? "block" : "none";
+        saveDeckButtonLootEncrypted.style.display = selectedCards > 0 ? "block" : "none";
+
+    }
 
 
     if (selectedCards === 0) {
@@ -270,7 +318,7 @@ function toggleOverlay() {
 burgerMenu.addEventListener('click', toggleOverlay);
 overlay.addEventListener('click', toggleOverlay);
 
-async function filterData(filter, currentPage = 1, jsonData) {
+async function filterData(filter, currentPage = 1, jsonData, isBooster) {
     const filtered = jsonData.filter((value) => {
         // Handle additional filters
         const valueString = JSON.stringify(value).toLowerCase();
@@ -301,12 +349,25 @@ async function filterData(filter, currentPage = 1, jsonData) {
             });
     });
 
-    const itemsPerPage = 20;
+    let itemsPerPage = 20;
+
+    // Get the filename of the current HTML page
+    const filename = window.location.pathname.split("/").pop();
+
+    // Call relevant code based on the filename
+    if (filename === "deck-manager.html") {
+        itemsPerPage = 100;
+    }
+
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
     const paginatedResults = filtered.slice(start, end);
-    document.querySelector("#card-grid").innerHTML = "";
-    renderCards(paginatedResults);
+    const htmlname = window.location.pathname.split("/").pop();
+// Call relevant code based on the filename
+    if (htmlname !== "deck-manager.html") {
+        document.querySelector("#card-grid").innerHTML = "";
+    }
+    renderCards(paginatedResults, isBooster);
     const totalPages = Math.ceil(filtered.length / itemsPerPage);
     const nextPageButton = document.createElement("button");
     nextPageButton.innerText = "Next Page";
@@ -346,14 +407,38 @@ async function filterData(filter, currentPage = 1, jsonData) {
 let loadedData = {};
 
 async function loadStartUp() {
-    selectedCardsList.innerHTML = "";
-    removeAllButton.style.display = "none";
-    const selectedCards = selectedCardsList.querySelectorAll("li").length;
-    const selectedCount = document.querySelector("#selected-count");
-    selectedCount.textContent = selectedCards;
-    const json = await fetch("HoH_all.json");
-    loadedData = await json.json();
-    await filterData("", 1, loadedData);
+
+    // Get the filename of the current HTML page
+    const filename = window.location.pathname.split("/").pop();
+
+    // Call relevant code based on the filename
+    if (filename === "deck-manager.html") {
+
+    } else if (filename === "gm-panel.html") {
+        selectedCardsList.innerHTML = "";
+        removeAllButton.style.display = "none";
+        const selectedCards = selectedCardsList.querySelectorAll("li").length;
+        const selectedCount = document.querySelector("#selected-count");
+        selectedCount.textContent = selectedCards;
+        const json = await fetch("HoH_all.json");
+        loadedData = await json.json();
+        await filterData("", 1, loadedData);
+    } else if (filename === "index.html") {
+        selectedCardsList.innerHTML = "";
+        removeAllButton.style.display = "none";
+        const selectedCards = selectedCardsList.querySelectorAll("li").length;
+        const selectedCount = document.querySelector("#selected-count");
+        selectedCount.textContent = selectedCards;
+        const json = await fetch("HoH_all.json");
+        loadedData = await json.json();
+        await filterData("", 1, loadedData);
+    } else if (filename === 'card-creator.html'){
+        const jsonEditor = document.querySelector("#json-editor");
+        if (jsonEditor != null){
+            const jsonData = JSON.parse(jsonEditor.value);
+            await filterData("", 1, [jsonData], false);
+        }
+    }
 }
 
 loadStartUp();
@@ -594,17 +679,7 @@ boosterPackFileInput.addEventListener("change", function () {
         try {
             const fileData = event.target.result;
             const decryptedJson = decrypt(fileData);
-            filterData("", 1, decryptedJson).then(() => {
-                // Hide all cards in grid
-                const gridCards = document.querySelectorAll(".card-container");
-                gridCards.forEach((card) => {
-                    card.classList.add("flipped");
-                    card.classList.add("flipped-background");
-                    card.addEventListener('click', () => {
-                        card.classList.remove('flipped');
-                    });
-                });
-            });
+            filterData("", 1, decryptedJson, true);
         } catch (error) {
             console.error("Invalid or corrupted encrypted file");
         }
@@ -656,18 +731,13 @@ function handleDrop(e) {
         reader.onload = function (event) {
             try {
                 const fileData = event.target.result;
-                const decryptedJson = decrypt(fileData);
-                filterData("", 1, decryptedJson).then(() => {
-                    // Hide all cards in grid
-                    const gridCards = document.querySelectorAll(".card-container");
-                    gridCards.forEach((card) => {
-                        card.classList.add("flipped");
-                        card.classList.add("flipped-background");
-                        card.addEventListener('click', () => {
-                            card.classList.remove('flipped');
-                        });
-                    });
-                });
+                if (file.name.endsWith(".hoh")) {
+                    const decryptedJson = decrypt(fileData);
+                    filterData("", 1, decryptedJson, true);
+                }
+                else {
+                    filterData("", 1, JSON.parse(fileData));
+                }
             } catch (error) {
                 console.error("Invalid or corrupted encrypted file");
             }
@@ -675,3 +745,11 @@ function handleDrop(e) {
         reader.readAsText(file);
     }
 }
+
+const jsonEditor = document.querySelector("#json-editor");
+    jsonEditor.addEventListener("input", () => {
+        const jsonData = JSON.parse(jsonEditor.value);
+        console.log(jsonData);
+        filterData("", 1, [jsonData], false);
+    })
+

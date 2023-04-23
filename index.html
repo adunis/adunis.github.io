@@ -12,9 +12,14 @@
 
 
 <body>
-<div id="drop-area">
-<div id="drop-area-label">Drag and drop the booster pack file here</div>
-<input type="file" id="booster-pack-file-input" accept=".hoh" style="display: none;">
+
+<div id="navbar">
+    <a class="active" href="index.html">Card Browser</a>
+    <a href="deck-manager.html">Deck Manager</a>
+    <a href="card-creator.html">Card Creator</a>
+    <a href="gm-panel.html">GM Panel</a>
+</div>
+
 <div class="search-container">
 <div class="action-bar-container">
     <div id="burger-menu">
@@ -24,8 +29,6 @@
     <div id="popup" style="display:none">
         <p>Help content goes here.</p>
     </div>
-
-</div>
 
 <input type="file" id="json-file-input"  accept=".json" style="display: none;">
 
@@ -129,13 +132,9 @@
 
 <div id="menu">
     <ul>
-        <a id="open-booster-pack" href="#" class="sparkly-btn">Open booster/loot pack</a>
+        <a id="open-booster-pack" href="#"></a>
+        <a id="btn-Convert-Html2Image" href="#"></a>
         <a id="load-json" href="#">Load cards</a>
-        <a id="btn-Convert-Html2Image" href="#">Convert visible cards to JPGs</a>
-        <a id="booster-pack" href="#">Generate a Booster Pack</a>
-        <a id="booster-box" href="#">Generate a Booster Box</a>
-        <a id="booster-loot-pack" href="#">Generate a Loot Pack</a>
-        <a id="loot-box" href="#">Generate a Loot Box</a>
         <a id="load-hoh" href="#">Reset data</a>
     </ul>
 </div>

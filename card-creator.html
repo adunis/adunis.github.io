@@ -1,0 +1,222 @@
+<html>
+<head>
+  <title>Card Creator</title>
+  <link rel="stylesheet" type="text/css" href="css.css" />
+  <script type="module" src="javascript.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+<main>
+  <div id="navbar">
+    <a class="active" href="index.html">Card Browser</a>
+    <a href="deck-manager.html">Deck Manager</a>
+    <a href="card-creator.html">Card Creator</a>
+    <a href="gm-panel.html">GM Panel</a>
+  </div>
+
+  <div id="previewImg">
+</div>
+  <div id="selection-info" class="selection-info">
+    <ul id="selected-cards-list"></ul>
+    <span id="selected-count">0</span> cards
+    <span id="deck-status"></span>
+    <button id="save-deck-button" style="display:none;">Export deck</button>
+    <button id="save-deck-button-encrypted" style="display:none;">Export booster</button>
+    <button id="save-deck-button-loot-encrypted" style="display:none;">Export loot</button>
+  </div>
+  <div id="drop-area">
+    <div id="drop-area-label">Drag and drop the booster pack file here</div>
+    <input type="file" id="booster-pack-file-input" accept=".hoh" style="display: none;">
+    <div class="search-container">
+      <div class="action-bar-container">
+        <div id="burger-menu">
+          <span></span>
+        </div> <input type="text" id="my-input" placeholder="You can filter by key:value, for example type:item or crystals:red. Write 'help' for more. "></div>
+      <div id="pagination" class="pagination"></div>
+      <div id="popup" style="display:none">
+        <p>Help content goes here.</p>
+      </div>
+
+    </div>
+  <input type="file" id="json-file-input"  accept=".json" style="display: none;">
+
+
+
+    <div class="card-creator-container">
+  <div id="card-template" style="display:none">
+    <div class="card {{#crystals.requires}} {{.}}-color {{/crystals.requires}} {{#crystals.provides}} {{.}}-color {{/crystals.provides}}">
+      <div class="hoh-card-header {{#type}} {{.}}-header {{/type}} header-image" style=" {{#header_image}} background-image:url('images/{{header_image}}');  {{/header_image}}" >
+        <div class="left-crystals">
+          <div class="crystals-label-left">{{left_label}}Requires</div>
+          <div class="crystals-container">
+            <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
+            {{#left}}
+            <div class="card-stat-label">{{.}}</div>
+            {{/left}}
+            {{#crystals.requires}}
+            <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
+            {{/crystals.requires}}
+          </div>
+        </div>
+        <div class="icon-image-container">-
+          <div class="title">{{name}}</div>
+        </div>
+        <div class="right-crystals">
+          <div class="crystals-label-right">{{right_label}}Provides</div>
+          <div class="crystals-container">
+            <div class="crystal soldier invisible">&#x1f79a;&#xfe0e;</div>
+            {{#right}}
+            <div class="card-stat-label">{{.}}</div>
+            {{/right}}
+            {{#crystals.provides}}
+            <div class="crystal {{.}}">&#x1f79a;&#xfe0e;</div>
+            {{/crystals.provides}}
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="card-stats">
+          {{#stats}}
+          <div class="card-stat">
+            <div class="card-stat-label">{{stat_name}}</div>
+            <div class="card-stat-value">{{stat_value}}</div>
+          </div>
+          {{/stats}}
+          <div class="card-stat">
+            <div class="card-stat-label">{{type_label}}{{^type_label}}Type{{/type_label}}</div>
+            <div class="card-stat-value">{{type}}</div>
+          </div>
+        </div>
+        <div class="card-stats">
+          {{#abilities}}
+          <div class="card-stat">
+            <div class="card-stat-label">{{ability_name}}</div>
+            <div class="card-stat-value">{{ability_value}}</div>
+          </div>
+          {{/abilities}}
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="description">
+          {{#description}}
+          {{{description}}}
+          {{/description}}
+        </div>
+
+        {{#moves}}
+        <div class="moves">
+          {{#moves_name}}
+          {{#moves_requirements}}
+          <span class="crystal {{.}}">&#x1f79a;&#xfe0e;</span>
+          {{/moves_requirements}}
+          <div class="subtitle">{{{moves_name}}}</div>
+          {{/moves_name}}
+        </div>
+        {{#moves_description}}
+        <div>{{{moves_description}}}</div>
+        {{/moves_description}}
+        {{/moves}}
+      </div>
+    </div>
+  </div>
+
+  <section class="card-template-section">
+    <div id="card-grid">
+    </div>
+  </section>
+  <section class="json-editor-section">
+    <textarea id="json-editor">{
+    "name": "Blacksmith",
+    "crystals": {
+      "requires": [],
+      "provides": [
+        "gold",
+        "red"
+      ]
+    },
+    "stats": [
+      {
+        "stat_name": "hp",
+        "stat_value": 10
+      },
+      {
+        "stat_name": "mp",
+        "stat_value": 4
+      },
+      {
+        "stat_name": "sp",
+        "stat_value": 6
+      },
+      {
+        "stat_name": "hd",
+        "stat_value": "1d6"
+      },
+      {
+        "stat_name": "md",
+        "stat_value": "1d8"
+      },
+      {
+        "stat_name": "sd",
+        "stat_value": "1d6"
+      }
+    ],
+    "type": "character",
+    "description": "<p>When you spend time working in your forge, choose one item to create and roll+Int. On a 18+, you successfully create the item to the best of your ability. Choose two options from the list below. On a 9-17, you successfully create the item, but choose one:</p><ul><li>The item is flawed in some way (the GM will tell you how)</li><li>The creation takes longer than expected</li><li>The creation requires rare or expensive materials</li></ul><p>On a miss, you fail to create the item and waste your materials.</p><p>Options:</p><ul><li>The item is of exceptional quality and gains a +1 bonus to damage or usefulness</li><li>The item has an interesting design or unique feature that sets it apart from other similar items</li><li>The item is created quickly and efficiently, taking half the expected time</li><li>The item is created using minimal materials, reducing the cost by half</li></ul></p>",
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "header_image": "Blacksmith.png",
+    "abilities": [
+      {
+        "ability_name": "STR",
+        "ability_value": 0
+      },
+      {
+        "ability_name": "DEX",
+        "ability_value": 0
+      },
+      {
+        "ability_name": "COS",
+        "ability_value": 1
+      },
+      {
+        "ability_name": "INT",
+        "ability_value": 1
+      },
+      {
+        "ability_name": "WIS",
+        "ability_value": 0
+      },
+      {
+        "ability_name": "CAR",
+        "ability_value": 0
+      }
+    ]
+  }</textarea>
+  </section>
+  </div>
+</main>
+</body>
+
+<div id="menu">
+  <ul>
+    <a id="open-booster-pack" href="#" class="sparkly-btn">Open booster/loot pack</a>
+    <a id="load-json" href="#">Load cards</a>
+    <a id="btn-Convert-Html2Image" href="#">Convert visible cards to JPGs</a>
+    <a id="booster-pack" href="#">Generate a Booster Pack</a>
+    <a id="booster-box" href="#">Generate a Booster Box</a>
+    <a id="booster-loot-pack" href="#">Generate a Loot Pack</a>
+    <a id="loot-box" href="#">Generate a Loot Box</a>
+    <a id="load-hoh" href="#">Reset data</a>
+  </ul>
+</div>
+
+<!-- Add a loading element -->
+<div id="loadingIndicator">
+  <div class="spinner"></div>
+</div>
+
+</html>

@@ -2124,7 +2124,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "orange"
+            "orange", "orange"
          ]
       },
       "type": "background",
@@ -2150,7 +2150,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "black"
+            "black", "black"
          ]
       },
       "stats": [
@@ -2218,7 +2218,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "cerulean"
+            "cerulean", "emerald"
          ]
       },
       "stats": [
@@ -2286,7 +2286,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "green"
+            "emerald", "emerald"
          ]
       },
       "stats": [
@@ -2354,7 +2354,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "green"
+            "green", "blue"
          ]
       },
       "stats": [
@@ -2422,7 +2422,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "green"
+            "green", "red"
          ]
       },
       "stats": [
@@ -2490,7 +2490,7 @@ json_list = [
       "crystals": {
          "requires": [],
          "provides": [
-            "purple"
+            "purple", "white"
          ]
       },
       "stats": [
