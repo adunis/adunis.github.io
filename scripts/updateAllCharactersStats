@@ -1,0 +1,163 @@
+default_values = {
+  "hp": 6,
+  "mp": 0,
+  "sp": 6,
+  "hd": "1d4",
+  "md": "1d4",
+  "sd": "1d4",
+  "STR": 0,
+  "DEX": 0,
+  "CON": 0,
+  "INT": 0,
+  "WIS": 0,
+  "CAR": 0
+};
+
+
+modifiers = {
+    "red": {
+        "hp": 4,
+        "mp": 2,
+        "hd_steps": 1,
+        "md_steps": 1,
+        "STR": 1,
+        "COS": 1,
+        "WIS": -1,
+    },
+    "orange": {
+        "hp": 6,
+        "hd_steps": 2,
+        "STR": 1,
+        "COS": 1,
+        "INT": -1
+    },
+    "green": {
+        "hp": 4,
+        "mp": 2,
+        "hd_steps": 1,
+        "sd_steps": 1,
+        "DEX": 1,
+        "STR": 1,
+        "INT": -1,
+    },
+    "emerald": {
+        "hp": 1,
+        "sp": 2,
+        "mp": 3,
+        "md_steps": 1,
+        "sd_steps": 1,
+        "WIS": 1,
+        "COS": 1,
+        "CAR": -1,
+    },
+    "cerulean": {
+        "mp": 6,
+        "md_steps": 2,
+        "INT": 1,
+        "WIS": 1,
+        "STR": -1,
+        "COS": -1
+    },
+    "purple": {
+        "hp": 2,
+        "mp": 2,
+        "sp": 2,
+        "sd_steps": 2,
+        "CAR": 1,
+        "DEX": 1,
+        "COS": -1,
+    },
+    "gold": {
+        "mp": 2,
+        "mp": 2,
+        "mp": 2,
+        "sd_steps": 1,
+        "md_steps": 1,
+        "WIS": 1,
+        "INT": 1,
+        "STR": -1,
+    },
+    "black": {
+        "hp": 2,
+        "mp": 1,
+        "sp": 3,
+        "hd_steps": 1,
+        "sd_steps": 1,
+        "DEX": 1,
+        "INT": 1,
+        "WIS": -1,
+    },
+    "blue": {
+        "hp": 3,
+        "sp": 1,
+        "mp": 2,
+        "hd_steps": 1,
+        "md_steps": 1,
+        "STR": 1,
+        "CAR": 1,
+        "WIS": -1,
+    },
+    "white": {
+        "hp": 1,
+        "mp": 3,
+        "sp": 2,
+        "md_steps": 1,
+        "sd_steps": 1,
+        "WIS": 1,
+        "CAR": 1,
+        "COS": -1,
+    },
+}
+
+for card in json_list:
+    if ('creature' in card['type']) or ('character' in card['type']):
+        card["stats"] = [
+            {"stat_name": "hp", "stat_value": default_values["hp"]},
+            {"stat_name": "mp", "stat_value": default_values["mp"]},
+            {"stat_name": "sp", "stat_value": default_values["sp"]},
+            {"stat_name": "hd", "stat_value": default_values["hd"]},
+            {"stat_name": "md", "stat_value": default_values["md"]},
+            {"stat_name": "sd", "stat_value": default_values["sd"]}
+        ]
+        card["abilities"] = [            {"ability_name": "STR", "ability_value": default_values["STR"]},
+            {"ability_name": "DEX", "ability_value": default_values["DEX"]},
+            {"ability_name": "COS", "ability_value": default_values["CON"]},
+            {"ability_name": "INT", "ability_value": default_values["INT"]},
+            {"ability_name": "WIS", "ability_value": default_values["WIS"]},
+            {"ability_name": "CAR", "ability_value": default_values["CAR"]}
+        ]
+
+step_array = ["1", "1d2", "1d4", "1d6", "1d8", "1d10", "2d6", "2d8", "3d6", "3d8", "4d6", "4d8", "6d6", "6d8", "8d6", "8d8", "12d6", "12d8", "16d6"]
+
+for card in json_list:
+    if ('creature' in card['type']) or ('character' in card['type']):
+        abilities = card['abilities']
+        stats = card['stats']
+        crystals = card['crystals']['provides']
+        for crystal in crystals:
+            if crystal in modifiers:
+                modifier = modifiers[crystal]
+                for key, value in modifier.items():
+                    if key in [ability["ability_name"] for ability in abilities]:
+                        ability_index = [ability["ability_name"] for ability in abilities].index(key)
+                        abilities[ability_index]["ability_value"] += value
+                    elif key.endswith("_steps"):
+                            stat_index = [stat["stat_name"] for stat in stats].index(key.replace('_steps', ''))
+                            # Look up the original stat value
+                            original_stat_value = stats[stat_index]["stat_value"]
+                            # Determine the index of the original value in the step array
+                            original_step_index = step_array.index(original_stat_value)
+                            # Determine the new index of the value in the step array
+                            new_step_index = min(max(original_step_index + value, 0), len(step_array)-1)
+                            # Update the stat value with the new step value
+                            stats[stat_index]["stat_value"] = step_array[new_step_index]
+                    elif key in [stat["stat_name"] for stat in stats]:
+                            stat_index = [stat["stat_name"] for stat in stats].index(key)
+                            # Update the stat value with the new value
+                            stats[stat_index]["stat_value"] += value
+
+        card['abilities'] = abilities
+        card['stats'] = stats
+
+json_string = json.dumps(json_list, ensure_ascii=False, indent=2)
+print(json_string)

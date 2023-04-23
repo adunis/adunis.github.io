@@ -25,10 +25,6 @@
     margin-left: 10px;
 }
 
-.subtitle{
-    font-size: 12px;
-    font-style: italic;
-}
 
 .card-container {
     perspective: 1000px;
@@ -195,9 +191,11 @@
     font-size:16px;
 }
 
-.card-body  {
+.description  {
     font-size:11px;
 }
+
+
 
 .card {
     font-family: 'Lora', serif;
@@ -303,11 +301,11 @@
 .left-crystals {
     height:30px;
     width:100px;
-    display: inline-block;
     flex-direction: column;
     justify-content: center;
     margin-right: 10px;
     padding-left:10px;
+    margin-bottom:240px;
 
 }
 .left-crystals .crystal {
@@ -321,7 +319,10 @@
     justify-content: center;
     margin-left: 10px;
     padding-right: 10px;
+    margin-bottom:240px;
 }
+
+
 
 .card:before {
     content: "";
@@ -454,28 +455,26 @@ table {
 
 
 .crystals-container {
-    display: flex;
-    align-items: center;
-}
-
-.crystals-container {
-    display: flex;
-    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(4, 20px [col-start]);
+    margin-bottom:20px;
+    margin-left: -9px;
+    margin-right: -9px;
+    justify-content: end;
 }
 
 .crystal {
-    width: 18px;
-    height: 18px;
+    width: 13px;
+    height: 13px;
     margin-right: 2px;
     margin-left: 2px;
+    margin-bottom:10px;
 }
 
 .crystal{
     display:none;
-    font-size:20px;
+    font-size:15px;
 }
-
-
 
 .invisible{
     opacity:0;
@@ -846,4 +845,15 @@ table {
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+.moves {
+    display: block ruby;
+    padding-top: 5px;
+    font-size: 8px;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-style: italic;
 }

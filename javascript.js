@@ -406,9 +406,9 @@ const generateBoosterPack = async () => {
 
     const characters = data.filter(card => card.type && card.type.includes("character"));
     const features = data.filter(card => card.type && card.type.includes("feature"));
-    const trainings = data.filter(card => card.type && card.type.includes("training"));
     const backgrounds = data.filter(card => card.type && card.type.includes("background"));
-    const abilities = data.filter(card => card.type && card.type.includes("ability"));
+    const species = data.filter(card => card.type && card.type.includes("species"));
+    const destinies = data.filter(card => card.type && card.type.includes("destiny"));
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -428,9 +428,10 @@ const generateBoosterPack = async () => {
     const randomCards = [
         ...getRandomCards(characters, 1),
         ...getRandomCards(features, 3),
-        ...getRandomCards(trainings, 1),
-        ...getRandomCards(backgrounds, 2),
-        ...getRandomCards(abilities, 1)
+        ...getRandomCards(backgrounds, 3),
+        ...getRandomCards(species, 1),
+        ...getRandomCards(destinies, 1)
+
     ];
 
     const json = JSON.stringify(randomCards);

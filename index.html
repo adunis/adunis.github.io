@@ -93,9 +93,35 @@
                     <div class="card-stat-value">{{type}}</div>
                 </div>
             </div>
+            <div class="card-stats">
+                {{#abilities}}
+                <div class="card-stat">
+                    <div class="card-stat-label">{{ability_name}}</div>
+                    <div class="card-stat-value">{{ability_value}}</div>
+                </div>
+                {{/abilities}}
+            </div>
         </div>
         <div class="card-body">
-            {{{description}}}
+            <div class="description">
+                {{#description}}
+                {{{description}}}
+                {{/description}}
+            </div>
+
+            {{#moves}}
+            <div class="moves">
+            {{#moves_name}}
+            {{#moves_requirements}}
+            <span class="crystal {{.}}">&#x1f79a;&#xfe0e;</span>
+            {{/moves_requirements}}
+            <div class="subtitle">{{{moves_name}}}</div>
+            {{/moves_name}}
+            </div>
+            {{#moves_description}}
+            <div>{{{moves_description}}}</div>
+            {{/moves_description}}
+            {{/moves}}
         </div>
     </div>
 

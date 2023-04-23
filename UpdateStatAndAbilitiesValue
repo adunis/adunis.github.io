@@ -1,33 +1,34 @@
-[
+import json
+
+json_list = [
    {
       "name": "Blacksmith",
       "crystals": {
          "requires": [],
          "provides": [
-            "gold",
-            "red"
+            "gold", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 10
+            "stat_value": 12
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 3
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value":6
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d6"
+            "stat_value": "1d8"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -52,11 +53,11 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value":0
          },
          {
             "ability_name": "WIS",
@@ -73,30 +74,29 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "blue",
-            "red"
+            "blue", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 13
+            "stat_value": 6
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 0
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 6
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -113,7 +113,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -121,7 +121,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -129,11 +129,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -142,30 +142,29 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "cerulean",
-            "cerulean"
+            "cerulean", "cerulean"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 12
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "2d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -182,7 +181,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -190,15 +189,15 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -211,34 +210,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "red"
+            "black", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -251,23 +249,23 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -280,14 +278,13 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "green",
-            "emerald"
+            "green", "emerald"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 11
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
@@ -295,7 +292,7 @@
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -303,11 +300,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -320,27 +317,27 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": -1
+            "ability_value": 0
          }
       ]
    },
@@ -349,14 +346,13 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "white",
-            "purple"
+            "white", "purple"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
@@ -368,15 +364,15 @@
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "md",
             "stat_value": "1d6"
          },
          {
+            "stat_name": "md",
+            "stat_value": "1d4"
+         },
+         {
             "stat_name": "sd",
-            "stat_value": "1d10"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -393,11 +389,11 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -405,11 +401,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 2
+            "ability_value": 0
          }
       ]
    },
@@ -418,14 +414,13 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "green",
-            "white"
+            "green", "white"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 11
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
@@ -433,7 +428,7 @@
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -441,11 +436,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -458,27 +453,27 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -487,14 +482,13 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "emerald",
-            "green"
+            "emerald", "green"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 11
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
@@ -502,7 +496,7 @@
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -510,11 +504,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -527,27 +521,27 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": -1
+            "ability_value": 0
          }
       ]
    },
@@ -556,8 +550,7 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "purple",
-            "purple"
+            "purple", "purple"
          ]
       },
       "stats": [
@@ -567,7 +560,7 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
@@ -575,7 +568,7 @@
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -583,7 +576,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "2d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -600,11 +593,11 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -616,7 +609,7 @@
          },
          {
             "ability_name": "CAR",
-            "ability_value": 2
+            "ability_value": 0
          }
       ]
    },
@@ -625,22 +618,21 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "purple",
-            "red"
+            "purple", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -648,11 +640,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -665,11 +657,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -681,11 +673,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -694,34 +686,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "gold",
-            "cerulean"
+            "gold", "cerulean"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 8
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d10"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -734,7 +725,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -742,15 +733,15 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -763,34 +754,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "gold",
-            "purple"
+            "gold", "purple"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "md",
             "stat_value": "1d6"
          },
          {
+            "stat_name": "md",
+            "stat_value": "1d4"
+         },
+         {
             "stat_name": "sd",
-            "stat_value": "1d10"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -803,27 +793,27 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -832,8 +822,7 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "purple",
-            "black"
+            "purple", "black"
          ]
       },
       "stats": [
@@ -843,11 +832,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 11
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -859,7 +848,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d10"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -876,23 +865,23 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -901,8 +890,7 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "gold",
-            "red"
+            "gold", "red"
          ]
       },
       "stats": [
@@ -912,11 +900,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -924,11 +912,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -949,11 +937,11 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -970,146 +958,7 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "purple",
-            "orange"
-         ]
-      },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 14
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 2
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d8"
-         }
-      ],
-      "type": "character",
-      "description": "<p>As an entertainer, you thrive on the spotlight and the attention of a crowd. You gain the following abilities:</p><ul><li>You have a +1 bonus to Parley when negotiating with someone who is enjoying your performance</li><li>You can distract enemies with a dazzling performance, allowing your allies to take advantage of the situation. When you successfully Defy Danger to distract enemies, allies gain a +1 forward against them</li><li>You have a repertoire of songs, dances, and other performances that you can use to charm and entertain your audience</li></ul>",
-      "geo_location": {
-         "latitude": 37.7749,
-         "longitude": -122.4194
-      },
-      "header_image": "Entertainer.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 1
-         }
-      ]
-   },
-   {
-      "name": "Beggar",
-      "crystals": {
-         "requires": [],
-         "provides": [
-            "black",
-            "blue"
-         ]
-      },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 11
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 3
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 10
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
-      "type": "character",
-      "description": "<p>You are a survivor, living by your wits and your ability to make do with whatever scraps come your way. You gain the following abilities:</p><ul><li>You know how to survive on the streets, and can spout lore about the criminal underworld, local gangs, and other denizens of the urban jungle</li><li>You know how to be unseen and unheard, and gain a +1 to Defy Danger when staying hidden or avoiding notice</li><li>You know how to scavenge for what you need, and can roll+Wis to search an area for useful supplies or scraps. On a 18+, you find something useful. On a 9-17, you find something, but it's not entirely clear how it might be useful</li></ul>",
-      "geo_location": {
-         "latitude": 37.7749,
-         "longitude": -122.4194
-      },
-      "header_image": "Beggar.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 1
-         }
-      ]
-   },
-   {
-      "name": "Exciseman",
-      "crystals": {
-         "requires": [],
-         "provides": [
-            "blue",
-            "white"
+            "purple", "orange"
          ]
       },
       "stats": [
@@ -1123,7 +972,7 @@
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -1131,11 +980,147 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
+            "stat_value": "1d4"
+         }
+      ],
+      "type": "character",
+      "description": "<p>As an entertainer, you thrive on the spotlight and the attention of a crowd. You gain the following abilities:</p><ul><li>You have a +1 bonus to Parley when negotiating with someone who is enjoying your performance</li><li>You can distract enemies with a dazzling performance, allowing your allies to take advantage of the situation. When you successfully Defy Danger to distract enemies, allies gain a +1 forward against them</li><li>You have a repertoire of songs, dances, and other performances that you can use to charm and entertain your audience</li></ul>",
+      "geo_location": {
+         "latitude": 37.7749,
+         "longitude": -122.4194
+      },
+      "header_image": "Entertainer.png",
+      "abilities": [
+         {
+            "ability_name": "STR",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "DEX",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "COS",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "INT",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "WIS",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "CAR",
+            "ability_value": 0
+         }
+      ]
+   },
+   {
+      "name": "Beggar",
+      "crystals": {
+         "requires": [],
+         "provides": [
+            "black", "blue"
+         ]
+      },
+      "stats": [
+         {
+            "stat_name": "hp",
+            "stat_value": 10
+         },
+         {
+            "stat_name": "mp",
+            "stat_value": 5
+         },
+         {
+            "stat_name": "sp",
+            "stat_value": 10
+         },
+         {
+            "stat_name": "hd",
             "stat_value": "1d6"
+         },
+         {
+            "stat_name": "md",
+            "stat_value": "1d4"
+         },
+         {
+            "stat_name": "sd",
+            "stat_value": "1d4"
+         }
+      ],
+      "type": "character",
+      "description": "<p>You are a survivor, living by your wits and your ability to make do with whatever scraps come your way. You gain the following abilities:</p><ul><li>You know how to survive on the streets, and can spout lore about the criminal underworld, local gangs, and other denizens of the urban jungle</li><li>You know how to be unseen and unheard, and gain a +1 to Defy Danger when staying hidden or avoiding notice</li><li>You know how to scavenge for what you need, and can roll+Wis to search an area for useful supplies or scraps. On a 18+, you find something useful. On a 9-17, you find something, but it's not entirely clear how it might be useful</li></ul>",
+      "geo_location": {
+         "latitude": 37.7749,
+         "longitude": -122.4194
+      },
+      "header_image": "Beggar.png",
+      "abilities": [
+         {
+            "ability_name": "STR",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "DEX",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "COS",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "INT",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "WIS",
+            "ability_value": 0
+         },
+         {
+            "ability_name": "CAR",
+            "ability_value": 0
+         }
+      ]
+   },
+   {
+      "name": "Exciseman",
+      "crystals": {
+         "requires": [],
+         "provides": [
+            "blue", "white"
+         ]
+      },
+      "stats": [
+         {
+            "stat_name": "hp",
+            "stat_value": 10
+         },
+         {
+            "stat_name": "mp",
+            "stat_value": 5
+         },
+         {
+            "stat_name": "sp",
+            "stat_value": 10
+         },
+         {
+            "stat_name": "hd",
+            "stat_value": "1d6"
+         },
+         {
+            "stat_name": "md",
+            "stat_value": "1d4"
+         },
+         {
+            "stat_name": "sd",
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1148,7 +1133,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -1156,7 +1141,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -1168,7 +1153,7 @@
          },
          {
             "ability_name": "CAR",
-            "ability_value": 2
+            "ability_value": 0
          }
       ]
    },
@@ -1177,26 +1162,25 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "orange"
+            "black", "orange"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 14
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 1
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d10"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -1204,7 +1188,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1217,15 +1201,15 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -1233,7 +1217,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1246,34 +1230,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "green",
-            "red"
+            "green", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 14
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1286,23 +1269,23 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1315,34 +1298,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "black"
+            "red", "black"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1355,23 +1337,23 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1384,34 +1366,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "green",
-            "red"
+            "green", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 14
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1424,23 +1405,23 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1453,30 +1434,29 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "blue"
+            "red", "blue"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 13
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -1493,7 +1473,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -1501,7 +1481,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -1509,11 +1489,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -1522,34 +1502,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "red"
+            "black", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1562,23 +1541,23 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1591,22 +1570,21 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "blue",
-            "purple"
+            "blue", "purple"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 11
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -1614,11 +1592,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1631,15 +1609,15 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -1647,11 +1625,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 2
+            "ability_value": 0
          }
       ]
    },
@@ -1660,26 +1638,25 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "green"
+            "black", "green"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -1687,7 +1664,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1700,11 +1677,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -1716,7 +1693,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1729,8 +1706,7 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "green",
-            "gold"
+            "green", "gold"
          ]
       },
       "stats": [
@@ -1740,11 +1716,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -1752,11 +1728,11 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1773,7 +1749,7 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -1785,7 +1761,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1798,34 +1774,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "red"
+            "black", "red"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1838,23 +1813,23 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -2
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -1867,34 +1842,33 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "green",
-            "blue"
+            "green", "blue"
          ]
       },
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 13
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 4
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -1907,11 +1881,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 2
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -1919,15 +1893,15 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -2182,15 +2156,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 1
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -2202,7 +2176,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -2219,7 +2193,7 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -2227,11 +2201,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -2250,23 +2224,23 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 6
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -2283,7 +2257,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -2291,15 +2265,15 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -2322,11 +2296,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -2338,7 +2312,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -2351,11 +2325,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -2363,7 +2337,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -2390,11 +2364,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -2406,7 +2380,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -2419,11 +2393,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -2431,7 +2405,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -2458,11 +2432,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -2474,7 +2448,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -2487,11 +2461,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -2499,7 +2473,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -2522,19 +2496,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -2542,7 +2516,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -2559,11 +2533,11 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -2575,7 +2549,7 @@
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -4700,15 +4674,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 1
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -4720,7 +4694,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -4737,7 +4711,7 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -4745,11 +4719,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -4772,11 +4746,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -4784,7 +4758,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -4801,7 +4775,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -4809,7 +4783,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -4817,7 +4791,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -7130,27 +7104,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -7171,7 +7145,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -7179,11 +7153,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -7198,19 +7172,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 0
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -7231,7 +7205,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -7239,11 +7213,11 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -7270,11 +7244,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -7286,7 +7260,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -7299,11 +7273,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -7311,7 +7285,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -7338,11 +7312,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -7350,7 +7324,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -7367,7 +7341,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -7375,7 +7349,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -7383,7 +7357,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -7406,11 +7380,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -7422,7 +7396,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -7435,11 +7409,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -7447,7 +7421,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -7470,19 +7444,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 0
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -7503,7 +7477,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -7511,11 +7485,11 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -7538,19 +7512,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -7558,7 +7532,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -7575,11 +7549,11 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -7591,7 +7565,7 @@
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -7610,11 +7584,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -7622,7 +7596,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -7639,7 +7613,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -7647,7 +7621,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -7655,7 +7629,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -7674,27 +7648,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -7707,7 +7681,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -7719,11 +7693,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -7742,27 +7716,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -7783,7 +7757,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -7791,11 +7765,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": -1
+            "ability_value": 0
          }
       ]
    },
@@ -8688,27 +8662,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -8729,7 +8703,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -8737,11 +8711,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": -1
+            "ability_value": 0
          }
       ]
    },
@@ -8756,15 +8730,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -8772,7 +8746,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -8789,7 +8763,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -8805,11 +8779,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -12198,19 +12172,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 0
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -12266,19 +12240,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -12286,7 +12260,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12303,11 +12277,11 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -12319,7 +12293,7 @@
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -12338,11 +12312,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -12350,7 +12324,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -12367,7 +12341,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -12375,7 +12349,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -12383,7 +12357,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -12402,27 +12376,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 3
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12443,7 +12417,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -12451,11 +12425,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -12474,11 +12448,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -12490,7 +12464,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12503,11 +12477,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -12515,7 +12489,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -12538,19 +12512,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 12
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 0
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d8"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -12571,7 +12545,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -12579,11 +12553,11 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -12606,27 +12580,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12639,7 +12613,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -12651,11 +12625,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -12678,11 +12652,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -12694,7 +12668,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12707,11 +12681,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -12719,7 +12693,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -12742,27 +12716,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12775,7 +12749,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -12787,11 +12761,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -12810,15 +12784,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -12826,7 +12800,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -12843,7 +12817,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -12859,11 +12833,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -12878,19 +12852,19 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
@@ -12898,7 +12872,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12915,11 +12889,11 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -12931,7 +12905,7 @@
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -12950,11 +12924,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -12966,7 +12940,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -12979,11 +12953,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -12991,7 +12965,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -13014,23 +12988,23 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 6
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -13047,7 +13021,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -13055,15 +13029,15 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -13082,15 +13056,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -13098,7 +13072,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -13115,7 +13089,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -13131,11 +13105,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -13154,11 +13128,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -13170,7 +13144,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -13183,11 +13157,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -13195,7 +13169,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -13218,15 +13192,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 1
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -13238,7 +13212,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -13255,7 +13229,7 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -13263,11 +13237,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -13290,11 +13264,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -13306,7 +13280,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -13319,11 +13293,11 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -13331,7 +13305,7 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
@@ -13354,27 +13328,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -13387,7 +13361,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -13399,11 +13373,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -13422,27 +13396,27 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -13455,7 +13429,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -13467,11 +13441,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -13901,46 +13875,41 @@
          "longitude": -122.4194
       },
       "header_image": "Gardening Magic by Prof. Florea.png"
+   },{
+   "name": "Battleaxe",
+   "crystals": {
+      "requires": [],
+      "provides": []
    },
-   {
-      "name": "Battleaxe",
-      "crystals": {
-         "requires": [],
-         "provides": []
+   "type": "item",
+   "moves": [
+      {
+         "moves_requirements": ["red"],
+         "moves_name": "Armor Breaker",
+         "moves_description": "<p>When you attack an enemy wearing chain armor with your battleaxe, roll +Str. On a 10+, you deal your damage and ignore the armor's defense. On a 7-9, you deal your damage but the armor holds up, causing it to take -1 ongoing to all rolls. On a miss, you leave yourself open to counterattack.</p>"
       },
-      "type": "item",
-      "moves": [
-         {
-            "moves_requirements": [
-               "red"
-            ],
-            "moves_name": "Armor Breaker",
-            "moves_description": "<p>When you attack an enemy wearing chain armor with your battleaxe, roll +Str. On a 10+, you deal your damage and ignore the armor's defense. On a 7-9, you deal your damage but the armor holds up, causing it to take -1 ongoing to all rolls. On a miss, you leave yourself open to counterattack.</p>"
-         },
-         {
-            "moves_requirements": [
-               "orange"
-            ],
-            "moves_name": "Item Destroyer",
-            "moves_description": "<p>When you destroy an enemy's item with your battleaxe, roll +Str. On a 10+, you shatter the item and deal your damage. On a 7-9, you damage the item but it holds up, causing it to take -1 ongoing to all rolls. On a miss, you leave yourself open to counterattack.</p>"
-         }
-      ],
-      "stats": [
-         {
-            "stat_name": "weight",
-            "stat_value": "3 kg"
-         },
-         {
-            "stat_name": "price",
-            "stat_value": "50 coins"
-         }
-      ],
-      "geo_location": {
-         "latitude": 37.7749,
-         "longitude": -122.4194
+      {
+         "moves_requirements": ["orange"],
+         "moves_name": "Item Destroyer",
+         "moves_description": "<p>When you destroy an enemy's item with your battleaxe, roll +Str. On a 10+, you shatter the item and deal your damage. On a 7-9, you damage the item but it holds up, causing it to take -1 ongoing to all rolls. On a miss, you leave yourself open to counterattack.</p>"
+      }
+   ],
+   "stats": [
+      {
+         "stat_name": "weight",
+         "stat_value": "3 kg"
       },
-      "header_image": "Battleaxe.png"
+      {
+         "stat_name": "price",
+         "stat_value": "50 coins"
+      }
+   ],
+   "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
    },
+   "header_image": "Battleaxe.png"
+},
    {
       "name": "Worm of Revivification",
       "crystals": {
@@ -13973,23 +13942,19 @@
    {
       "name": "Longsword",
       "crystals": {
-         "requires": [],
+         "requires": [
+         ],
          "provides": []
       },
       "type": "item",
       "moves": [
          {
-            "moves_requirements": [
-               "red",
-               "red"
-            ],
+            "moves_requirements": ["red", "red"],
             "moves_name": "Swordsman",
             "moves_description": "<p>When you attack with a longsword, roll +Dex. On a 9-17, you deal your damage. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack inflicts a grievous wound, causing your target to take -1 ongoing to all rolls until they receive healing or medical attention</li><li>Your attack creates an opening, giving you or an ally +1 forward to their next attack against the target</li><li>Your attack stuns or knocks down your target, giving you or an ally an opportunity to quicklyact before they can react</li></ul>"
          },
          {
-            "moves_requirements": [
-               "black"
-            ],
+            "moves_requirements": ["black"],
             "moves_name": "Defensive Parry",
             "moves_description": "<p>When you use a longsword to defend yourself, roll+Dex instead of +Con. On a 18+, you deflect the attack and take no damage. On a 9-17, you deflect the attack but suffer a -1 penalty to your next attack roll.</p>"
          }
@@ -14388,26 +14353,26 @@
    },
    {
       "name": "Circle of the Horned God",
-      "crystals": {
-         "requires": [],
-         "provides": [
-            "emerald",
-            "emerald",
-            "emerald"
-         ]
-      },
-      "type": "background",
-      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  18+, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-17, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
-      "stats": [
-         {
-            "stat_name": "",
-            "stat_value": ""
+         "crystals": {
+            "requires": [],
+            "provides": [
+               "emerald",
+               "emerald",
+               "emerald"
+            ]
          },
-         {
-            "stat_name": "",
-            "stat_value": ""
-         }
-      ],
+         "type": "background",
+         "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  18+, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-17, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
+         "stats": [
+            {
+               "stat_name": "",
+               "stat_value": ""
+            },
+            {
+               "stat_name": "",
+               "stat_value": ""
+            }
+         ],
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
@@ -15668,16 +15633,12 @@
       ],
       "moves": [
          {
-            "moves_requirements": [
-               "red"
-            ],
+            "moves_requirements": ["red"],
             "moves_name": "Shield Bash",
             "moves_description": "<p>When you attack with a round shield, roll +Str. On a 9-17, you deal your damage and push your target back. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack dazes or disorients your target, giving you or an ally +1 forward to their next attack against them</li><li>Your attack knocks your target off balance, giving you or an ally an opportunity to quickly act before they can recover</li><li>Your attack breaks or damages your target's weapon or armor, reducing its effectiveness</li></ul>"
          },
          {
-            "moves_requirements": [
-               "black"
-            ],
+            "moves_requirements": ["black"],
             "moves_name": "Shatter Shield",
             "moves_description": "<p>When you take damage that would harm or kill you, you can choose to break your round shield and ignore the damage. You can only do this once per shield.</p>"
          }
@@ -15699,63 +15660,57 @@
       "header_image": "Round Shield.png"
    },
    {
-      "name": "Kite Shield",
-      "crystals": {
-         "requires": [],
-         "provides": []
-      },
-      "type": "item",
-      "moves": [
-         {
-            "moves_requirements": [
-               "blue"
-            ],
-            "moves_name": "Covering Fire",
-            "moves_description": "<p>When you use a kite shield to defend yourself or an ally from ranged attacks, roll+Con. On a 18+, you deflect or block the attacks and take no damage. On a 9-17, you deflect or block the attacks but suffer a -1 penalty to your next action.</p>"
-         },
-         {
-            "moves_requirements": [
-               "red"
-            ],
-            "moves_name": "Shatter Shield",
-            "moves_description": "<p>When you take damage that would harm or kill you, you can choose to break your kite shield and ignore the damage. You can only do this once per shield.</p>"
-         }
+   "name": "Kite Shield",
+   "crystals": {
+      "requires": [
       ],
-      "stats": [
-         {
-            "stat_name": "weight",
-            "stat_value": "4 kg"
-         },
-         {
-            "stat_name": "price",
-            "stat_value": "35 coins"
-         }
-      ],
-      "geo_location": {
-         "latitude": 37.7749,
-         "longitude": -122.4194
-      },
-      "header_image": "Kite Shield.png"
+      "provides": []
    },
+   "type": "item",
+   "moves": [
+      {
+         "moves_requirements": ["blue"],
+         "moves_name": "Covering Fire",
+         "moves_description": "<p>When you use a kite shield to defend yourself or an ally from ranged attacks, roll+Con. On a 18+, you deflect or block the attacks and take no damage. On a 9-17, you deflect or block the attacks but suffer a -1 penalty to your next action.</p>"
+      },
+      {
+         "moves_requirements": ["red"],
+         "moves_name": "Shatter Shield",
+         "moves_description": "<p>When you take damage that would harm or kill you, you can choose to break your kite shield and ignore the damage. You can only do this once per shield.</p>"
+      }
+   ],
+   "stats": [
+      {
+         "stat_name": "weight",
+         "stat_value": "4 kg"
+      },
+      {
+         "stat_name": "price",
+         "stat_value": "35 coins"
+      }
+   ],
+   "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+   },
+   "header_image": "Kite Shield.png"
+},
    {
       "name": "Pavise Shield",
       "crystals": {
-         "requires": [],
+         "requires": [
+         ],
          "provides": []
       },
       "type": "item",
       "moves": [
          {
-            "moves_requirements": [
-               "blue"
-            ],
+            "moves_requirements": ["blue"],
             "moves_name": "Deploy Shield",
             "moves_description": "<p>When you set up a pavise shield as a cover, roll +Con. On a 9-17, you and anyone behind the shield gain +1 armor against ranged attacks. On a 18+, you and anyone behind the shield gain +2 armor against ranged attacks and are immune to explosions. On a 20+, you also gain +1 forward to your next action from behind the shield.</p>"
          },
          {
-            "moves_requirements": [
-               "red"
-            ],
+            "moves_requirements": ["red"],
             "moves_name": "Shield Breaker",
             "moves_description": "<p>When you attack with a pavise shield, roll +Str. On a 9-17, you deal your damage and force your target to give ground. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack shatters or splinters your target's shield or armor, reducing its effectiveness</li><li>Your attack pushes your target into a dangerous position, such as off a cliff or into a trap</li><li>Your attack intimidates or demoralizes your target, causing them to surrender or flee</li></ul>"
          }
@@ -17218,11 +17173,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -17230,7 +17185,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -17247,7 +17202,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -17255,7 +17210,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -17263,7 +17218,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -17286,11 +17241,11 @@
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -17298,7 +17253,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -17315,7 +17270,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -17323,7 +17278,7 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
@@ -17331,7 +17286,7 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -17350,23 +17305,23 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 6
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -17383,7 +17338,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -17391,15 +17346,15 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -17418,15 +17373,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 2
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 7
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -17434,7 +17389,7 @@
          },
          {
             "stat_name": "md",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -17451,7 +17406,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -17467,11 +17422,11 @@
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
-            "ability_value": 1
+            "ability_value": 0
          }
       ]
    },
@@ -19842,23 +19797,23 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 6
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 6
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
-            "stat_value": "1d4"
+            "stat_value": "1d6"
          },
          {
             "stat_name": "md",
-            "stat_value": "1d8"
+            "stat_value": "1d4"
          },
          {
             "stat_name": "sd",
@@ -19875,7 +19830,7 @@
       "abilities": [
          {
             "ability_name": "STR",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "DEX",
@@ -19883,15 +19838,15 @@
          },
          {
             "ability_name": "COS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -19910,15 +19865,15 @@
       "stats": [
          {
             "stat_name": "hp",
-            "stat_value": 8
+            "stat_value": 10
          },
          {
             "stat_name": "mp",
-            "stat_value": 1
+            "stat_value": 5
          },
          {
             "stat_name": "sp",
-            "stat_value": 9
+            "stat_value": 10
          },
          {
             "stat_name": "hd",
@@ -19930,7 +19885,7 @@
          },
          {
             "stat_name": "sd",
-            "stat_value": "1d6"
+            "stat_value": "1d4"
          }
       ],
       "type": "character",
@@ -19947,7 +19902,7 @@
          },
          {
             "ability_name": "DEX",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "COS",
@@ -19955,11 +19910,11 @@
          },
          {
             "ability_name": "INT",
-            "ability_value": 1
+            "ability_value": 0
          },
          {
             "ability_name": "WIS",
-            "ability_value": -1
+            "ability_value": 0
          },
          {
             "ability_name": "CAR",
@@ -19972,35 +19927,19 @@
       "crystals": {
          "requires": [],
          "provides": [
-            "black"
+            "soldier",
+            "barbarian",
+            "rogue"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 1
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 8,
+         "mp": 2,
+         "sp": 5,
+         "hd": "1d6",
+         "md": "1d4",
+         "sd": "1d4"
+      },
       "type": [
          "creature",
          "goblinoid"
@@ -20010,69 +19949,26 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Goblin.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Goblin.png"
    },
    {
       "name": "Goblin Shaman",
       "crystals": {
          "requires": [],
          "provides": [
-            "cerulean",
-            "black"
+            "wizard",
+            "wizard",
+            "rogue"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 7
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 6,
+         "mp": 10,
+         "sp": 5,
+         "hd": "1d4",
+         "md": "1d6",
+         "sd": "1d4"
+      },
       "type": [
          "creature",
          "goblinoid"
@@ -20082,70 +19978,26 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Goblin Shaman.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Goblin Shaman.png"
    },
    {
       "name": "Goblin Chieftain",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "blue",
-            "purple"
+            "soldier",
+            "barbarian",
+            "leader"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 15
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d8"
-         }
-      ],
+      "stats": {
+         "hp": 12,
+         "mp": 5,
+         "sp": 10,
+         "hd": "1d8",
+         "md": "1d6",
+         "sd": "1d6"
+      },
       "type": [
          "creature",
          "goblinoid"
@@ -20155,69 +20007,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Goblin Chieftain.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 2
-         }
-      ]
+      "header_image": "Goblin Chieftain.png"
    },
    {
       "name": "Goblin Berserker",
       "crystals": {
          "requires": [],
          "provides": [
-            "orange",
-            "red"
+            "barbarian",
+            "rogue"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 16
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 2
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 0,
+         "sp": 15,
+         "hd": "1d6",
+         "md": "0",
+         "sd": "1d8"
+      },
       "type": [
          "creature",
          "goblinoid"
@@ -20227,69 +20035,26 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Goblin Berserker.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Goblin Berserker.png"
    },
    {
       "name": "Sahuagin",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "orange"
+            "soldier",
+            "barbarian",
+            "aquatic"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 16
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 2
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 0,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "0",
+         "sd": "1d6"
+      },
       "type": [
          "creature",
          "aquatic"
@@ -20299,69 +20064,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Sahuagin.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Sahuagin.png"
    },
    {
       "name": "Sahuagin Shaman",
       "crystals": {
          "requires": [],
          "provides": [
-            "cerulean",
-            "emerald"
+            "mage",
+            "aquatic"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 7
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 8,
+         "mp": 10,
+         "sp": 5,
+         "hd": "1d4",
+         "md": "1d6",
+         "sd": "1d4"
+      },
       "type": [
          "creature",
          "aquatic"
@@ -20371,70 +20092,26 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Sahuagin Shaman.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": -1
-         }
-      ]
+      "header_image": "Sahuagin Shaman.png"
    },
    {
       "name": "Sahuagin Knight",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "blue",
-            "orange"
+            "soldier",
+            "barbarian",
+            "aquatic"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 19
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 4
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 7
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "2d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 12,
+         "mp": 0,
+         "sp": 10,
+         "hd": "1d8",
+         "md": "0",
+         "sd": "1d6"
+      },
       "type": [
          "creature",
          "aquatic"
@@ -20444,69 +20121,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Sahuagin Knight.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 3
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 1
-         }
-      ]
+      "header_image": "Sahuagin Knight.png"
    },
    {
       "name": "Sahuagin Mutant",
       "crystals": {
          "requires": [],
          "provides": [
-            "orange",
-            "purple"
+            "barbarian",
+            "aquatic"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 14
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 2
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d8"
-         }
-      ],
+      "stats": {
+         "hp": 15,
+         "mp": 0,
+         "sp": 15,
+         "hd": "1d8",
+         "md": "0",
+         "sd": "1d8"
+      },
       "type": [
          "creature",
          "aquatic"
@@ -20516,69 +20149,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Sahuagin Mutant.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 1
-         }
-      ]
+      "header_image": "Sahuagin Mutant.png"
    },
    {
       "name": "Fire Elemental",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "orange"
+            "mage",
+            "fire"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 16
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 2
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 15,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "1d8",
+         "sd": "1d6"
+      },
       "type": [
          "creature",
          "elemental"
@@ -20588,69 +20177,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Fire Elemental.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Fire Elemental.png"
    },
    {
       "name": "Water Elemental",
       "crystals": {
          "requires": [],
          "provides": [
-            "cerulean",
-            "orange"
+            "mage",
+            "water"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 12
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 15,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "1d8",
+         "sd": "1d6"
+      },
       "type": [
          "creature",
          "elemental"
@@ -20660,71 +20205,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Water Elemental.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Water Elemental.png"
    },
    {
       "name": "Vampire Lord",
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "black",
-            "black",
-            "purple"
+            "mage",
+            "leader"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 14
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 5
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 17
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "2d8"
-         }
-      ],
+      "stats": {
+         "hp": 15,
+         "mp": 20,
+         "sp": 15,
+         "hd": "1d8",
+         "md": "1d10",
+         "sd": "1d8"
+      },
       "type": [
          "creature",
          "undead"
@@ -20734,78 +20233,25 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Vampire Lord.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 4
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 3
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -3
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 1
-         }
-      ]
+      "header_image": "Vampire Lord.png"
    },
    {
       "name": "Ancient Blue Dragon",
       "crystals": {
          "requires": [],
          "provides": [
-            "cerulean",
-            "cerulean",
-            "cerulean",
-            "cerulean",
-            "cerulean",
-            "orange",
-            "orange",
-            "orange",
-            "orange",
-            "orange",
-            "orange"
+            "wizard",
+            "wizard"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 42
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 30
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "8d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "6d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 50,
+         "mp": 25,
+         "sp": 20,
+         "hd": "1d10",
+         "md": "1d10",
+         "sd": "1d8"
+      },
       "type": [
          "creature",
          "dragon"
@@ -20815,70 +20261,26 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Ancient Blue Dragon.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 5
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Ancient Blue Dragon.png"
    },
    {
       "name": "Salamander Warrior",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "orange",
-            "red"
+            "soldier",
+            "barbarian",
+            "fire"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 20
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 4
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "2d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 15,
+         "mp": 0,
+         "sp": 15,
+         "hd": "1d8",
+         "md": "0",
+         "sd": "1d8"
+      },
       "type": [
          "creature",
          "vulcanic"
@@ -20888,143 +20290,53 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Salamander Warrior.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 3
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 3
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Salamander Warrior.png"
    },
    {
       "name": "Salamander Pyromancer",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "cerulean",
-            "emerald"
+            "mage",
+            "fire"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 11
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 11
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "2d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 15,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "1d8",
+         "sd": "1d6"
+      },
       "type": [
-         "creature"
+         "creature",
+         "vulcanic"
       ],
       "description": "<p><h3>Salamander Magic:</h3> <p>The salamander pyromancer casts a fire spell at you. Roll +Int to counter it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Salamander Burn:</h3><p>The salamander pyromancer burns you with their touch. Roll +Con to resist it. On a 10+, you shake off their touch and deal your damage. On a 7-9, you shake off their touch but they scorch you, dealing their damage to you and setting you on fire. On a miss, they burn you and deal +1d4 damage to you and set you on fire.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Salamander Pyromancer.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": -1
-         }
-      ]
+      "header_image": "Salamander Pyromancer.png"
    },
    {
       "name": "Vampire Spawn",
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "cerulean",
-            "red",
-            "black"
+            "barbarian",
+            "rogue"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 14
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 10
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 12
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d8"
-         }
-      ],
+      "stats": {
+         "hp": 12,
+         "mp": 0,
+         "sp": 15,
+         "hd": "1d8",
+         "md": "0",
+         "sd": "1d8"
+      },
       "type": [
          "creature",
          "undead"
@@ -21034,458 +20346,161 @@
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Vampire Spawn.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 3
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Vampire Spawn.png"
    },
    {
       "name": "Centaur Warrior",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "orange"
+            "soldier",
+            "barbarian"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 16
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 2
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 15,
+         "mp": 0,
+         "sp": 15,
+         "hd": "1d8",
+         "md": "0",
+         "sd": "1d8"
+      },
       "type": "creature",
       "description": "<p><h3>Centaur Charge:</h3> <p>The centaur warrior charges at you with their spear. Roll +Dex to avoid it. On a 10+, you dodge their charge and deal your damage. On a 7-9, you dodge their charge but they get closer to you. On a miss, you are hit by their charge and take 1d8 damage and are knocked prone.</p><h3>Centaur Strike:</h3><p>The centaur warrior strikes at you with their axe. Roll +Str to resist it. On a 10+, you fend them off and deal your damage. On a 7-9, you fend them off but they wound you, dealing their damage to you. On a miss, they strike you and deal +1d4 damage to you.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Centaur Warrior.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Centaur Warrior.png"
    },
    {
       "name": "Centaur Shaman",
       "crystals": {
          "requires": [],
          "provides": [
-            "emerald",
-            "orange"
+            "mage",
+            "leader"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 13
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 3
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 15,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "1d8",
+         "sd": "1d6"
+      },
       "type": "creature",
       "description": "<p><h3>Centaur Magic:</h3> <p>The centaur shaman casts a spell at you. Roll +Int to counter it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Centaur Blessing:</h3><p>The centaur shaman blesses their allies with their magic. Roll +Wis to disrupt it. On a 10+, you disrupt their blessing and gain an advantage over them. On a 7-9, you disrupt their blessing but they have another one ready. On a miss, they bless their allies and they gain an advantage over you.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Centaur Shaman.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": -1
-         }
-      ]
+      "header_image": "Centaur Shaman.png"
    },
    {
       "name": "Bandit",
       "crystals": {
          "requires": [],
          "provides": [
-            "black",
-            "red"
+            "rogue",
+            "soldier"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 12
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 3
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 8,
+         "mp": 0,
+         "sp": 12,
+         "hd": "1d6",
+         "md": "0",
+         "sd": "1d6"
+      },
       "type": "creature",
       "description": "<p><h3>Bandit Ambush:</h3> <p>The bandit hides in the shadows and waits for you. Roll +Wis to spot them. On a 10+, you notice them and avoid their surprise attack. On a 7-9, you notice them but they have already struck. On a miss, you are caught unaware by their surprise attack and suffer the consequences.</p><h3>Bandit Stab:</h3><p>The bandit stabs at you with their dagger. Roll +Dex to dodge it. On a 10+, you avoid the stab and deal your damage. On a 7-9, you avoid the stab but the bandit gets closer to you. On a miss, you are stabbed and take 1d6 damage and bleed.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Bandit.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Bandit.png"
    },
    {
       "name": "Bandit Wizard",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "cerulean",
-            "black"
+            "mage",
+            "rogue"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 12
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 9
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d10"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d6"
-         }
-      ],
+      "stats": {
+         "hp": 8,
+         "mp": 15,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "1d8",
+         "sd": "1d6"
+      },
       "type": "creature",
       "description": "<p><h3>Bandit Magic:</h3> <p>The bandit wizard casts a spell at you. Roll +Int to counter it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Bandit Trick:</h3><p>The bandit wizard uses their magic to trick you. Roll +Wis to see through it. On a 10+, you see through their trick and gain an advantage over them. On a 7-9, you see through their trick but they have another one ready. On a miss, you fall for their trick and they gain an advantage over you.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Bandit Wizard.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Bandit Wizard.png"
    },
    {
       "name": "Wizard Justiciar",
       "crystals": {
          "requires": [],
          "provides": [
-            "red",
-            "cerulean",
-            "cerulean"
+            "mage",
+            "leader"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 10
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 14
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "2d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 10,
+         "mp": 15,
+         "sp": 10,
+         "hd": "1d6",
+         "md": "1d8",
+         "sd": "1d6"
+      },
       "type": "creature",
       "description": "<p><h3>Wizard Law:</h3> <p>The wizard justiciar casts a spell to enforce the law. Roll +Int to resist it. On a 10+, you negate their spell and deal your damage. On a 7-9, you negate their spell but they have another one ready. On a miss, you are hit by their spell and suffer the effects.</p><h3>Wizard Detain:</h3><p>The wizard justiciar casts a spell to detain you or your allies. Roll +Wis to avoid it. On a 10+, you avoid the spell and gain an advantage over them. On a 7-9, you avoid the spell but they have another one ready. On a miss, you or your allies are detained by the spell and can’t attack, block or activate abilities until your next turn.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Wizard Justiciar.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Wizard Justiciar.png"
    },
    {
       "name": "Iron Golem",
       "crystals": {
          "requires": [],
          "provides": [
-            "orange",
-            "orange",
-            "orange",
-            "orange"
+            "soldier",
+            "barbarian"
          ]
       },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 30
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 0
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "4d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
+      "stats": {
+         "hp": 20,
+         "mp": 0,
+         "sp": 10,
+         "hd": "1d10",
+         "md": "0",
+         "sd": "1d8"
+      },
       "type": "creature",
       "description": "<p><h3>Iron Smash:</h3> <p>The iron golem smashes you with its fists. Roll +Str to resist it. On a 10+, you fend it off and deal your damage. On a 7-9, you fend it off but it crushes you, dealing its damage to you. On a miss, it smashes you and deals +1d4 damage to you.</p><h3>Iron Breath:</h3><p>The iron golem breathes fire at you. Roll +Dex to dodge it. On a 10+, you avoid the fire and deal your damage. On a 7-9, you avoid the fire but it gets closer to you. On a miss, you are hit by the fire and take 1d8 damage and catch on fire.</p></p>",
       "geo_location": {
          "latitude": 37.7749,
          "longitude": -122.4194
       },
-      "header_image": "Iron Golem.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 4
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 4
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -4
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
+      "header_image": "Iron Golem.png"
    },
-   {
-      "name": "Treasure Finder",
-      "crystals": {
-         "requires": [],
-         "provides": []
-      },
+   {    "name": "Treasure Finder",    "crystals": {      "requires": [],
+      "provides": []
+   },
       "type": "destiny",
       "description": "<p>You have heard rumors of a great treasure hidden in a dangerous place. To complete this destiny, you must find and obtain the treasure. Once you have claimed the treasure, everyone in your party gains 10 XP points as a reward. Additionally, everyone in your party gains 1 XP point each session by taking actions that move you closer to the treasure or that help you overcome obstacles in your search.</p>",
       "stats": [],
@@ -21524,288 +20539,167 @@
          "longitude": -122.4194
       },
       "header_image": "beast_slayer.png"
-   },
-   {
-      "name": "Tribe Warrior",
-      "crystals": {
-         "requires": [],
-         "provides": [
-            "orange",
-            "orange"
-         ]
-      },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 18
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 0
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "2d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
-      "type": "character",
-      "description": "<p>You are a fierce warrior from a tribal community. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when fighting against a creature that is not from your tribe</li><li>You are skilled in using ranged weapons and gain a +1 bonus to Volley rolls when using them</li><li>You have a natural resistance to poisons and diseases, and gain a +2 bonus to Defy Danger rolls made to resist them</li></ul>",
-      "geo_location": {
-         "latitude": 0,
-         "longitude": 0
-      },
-      "header_image": "TribeWarrior.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
-   },
-   {
-      "name": "Storyteller",
-      "crystals": {
-         "requires": [],
-         "provides": [
-            "purple",
-            "purple"
-         ]
-      },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 10
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 4
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 10
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "2d6"
-         }
-      ],
-      "type": "character",
-      "description": "<p>As a storyteller, you have a knack for spinning tales and weaving magic. You gain the following abilities:</p><ul><li>You have a +1 bonus to Spout Lore when recalling information about legends, myths, or fables</li><li>You can roll +Int instead of +Cha to Parley with NPCs if you can engage them in a compelling narrative</li><li>You can cast a minor illusion once per day as a cantrip, creating an illusory image or sound to enhance your storytelling</li></ul>",
-      "geo_location": {
-         "latitude": 47.6062,
-         "longitude": -122.3321
-      },
-      "header_image": "Storyteller.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 2
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 2
-         }
-      ]
-   },
-   {
-      "name": "Historian",
-      "crystals": {
-         "requires": [],
-         "provides": [
-            "purple",
-            "cerulean"
-         ]
-      },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 8
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d8"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d8"
-         }
-      ],
-      "type": "character",
-      "description": "<p>You are a historian, knowledgeable in the ways of the past. You gain the following abilities:</p><ul><li>You have a +1 bonus to Spout Lore when trying to recall historical events or figures</li><li>You gain an additional spell from the wizard spell list, and can cast it once per day without preparing it</li><li>You always have a quill and parchment on you, and can use them to make notes or record important information</li></ul>",
-      "geo_location": {
-         "latitude": 40.7128,
-         "longitude": -74.006
-      },
-      "header_image": "Historian.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": -1
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": -2
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 1
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 1
-         }
-      ]
-   },
-   {
-      "name": "Turinese Clock-Knight",
-      "crystals": {
-         "requires": [
-            "gold",
-            "gold",
-            "gold",
-            "gold"
-         ],
-         "provides": [
-            "orange",
-            "orange",
-            "orange",
-            "orange"
-         ]
-      },
-      "stats": [
-         {
-            "stat_name": "hp",
-            "stat_value": 30
-         },
-         {
-            "stat_name": "mp",
-            "stat_value": 0
-         },
-         {
-            "stat_name": "sp",
-            "stat_value": 6
-         },
-         {
-            "stat_name": "hd",
-            "stat_value": "4d6"
-         },
-         {
-            "stat_name": "md",
-            "stat_value": "1d4"
-         },
-         {
-            "stat_name": "sd",
-            "stat_value": "1d4"
-         }
-      ],
-      "type": "character",
-      "description": "<p>The Turinese Clock-Knight is a warrior of precision, wielding a clockwork sword and shield with skill and grace. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when wielding a clockwork weapon</li><li>You can spend an action to wind up your sword, granting you +1 forward to your next Hack and Slash or Parry roll</li><li>You have a +1 bonus to Discern Realities when investigating clockwork or mechanical devices</li></ul>",
-      "geo_location": {
-         "latitude": 45.0703,
-         "longitude": 7.6869
-      },
-      "header_image": "Turinese_Clock-Knight.png",
-      "abilities": [
-         {
-            "ability_name": "STR",
-            "ability_value": 4
-         },
-         {
-            "ability_name": "DEX",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "COS",
-            "ability_value": 4
-         },
-         {
-            "ability_name": "INT",
-            "ability_value": -4
-         },
-         {
-            "ability_name": "WIS",
-            "ability_value": 0
-         },
-         {
-            "ability_name": "CAR",
-            "ability_value": 0
-         }
-      ]
    }
 ]
+
+
+default_values = {
+  "hp": 6,
+  "mp": 0,
+  "sp": 6,
+  "hd": "1d4",
+  "md": "1d4",
+  "sd": "1d4",
+  "STR": 0,
+  "DEX": 0,
+  "CON": 0,
+  "INT": 0,
+  "WIS": 0,
+  "CAR": 0
+};
+
+
+modifiers = {
+    "red": {
+        "hp": 4,
+        "mp": 2,
+        "hd_steps": 1,
+        "md_steps": 1,
+        "STR": 1,
+        "COS": 1,
+        "WIS": -1,
+    },
+    "orange": {
+        "hp": 6,
+        "hd_steps": 2,
+        "STR": 1,
+        "COS": 1,
+        "INT": -1
+    },
+    "green": {
+        "hp": 4,
+        "mp": 2,
+        "hd_steps": 1,
+        "sd_steps": 1,
+        "DEX": 1,
+        "STR": 1,
+        "INT": -1,
+    },
+    "emerald": {
+        "hp": 1,
+        "sp": 2,
+        "mp": 3,
+        "md_steps": 1,
+        "sd_steps": 1,
+        "WIS": 1,
+        "COS": 1,
+        "CAR": -1,
+    },
+    "cerulean": {
+        "mp": 6,
+        "md_steps": 2,
+        "INT": 1,
+        "WIS": 1,
+        "STR": -1,
+        "COS": -1
+    },
+    "purple": {
+        "hp": 2,
+        "mp": 2,
+        "sp": 2,
+        "sd_steps": 2,
+        "CAR": 1,
+        "DEX": 1,
+        "COS": -1,
+    },
+    "gold": {
+        "mp": 2,
+        "mp": 2,
+        "mp": 2,
+        "sd_steps": 1,
+        "md_steps": 1,
+        "WIS": 1,
+        "INT": 1,
+        "STR": -1,
+    },
+    "black": {
+        "hp": 2,
+        "mp": 1,
+        "sp": 3
+        "hd_steps": 1,
+        "sd_steps": 1,
+        "DEX": 1,
+        "INT": 1,
+        "WIS": -1,
+    },
+    "blue": {
+        "hp": 3,
+        "sp": 1,
+        "mp": 2,
+        "hd_steps": 1,
+        "md_steps": 1,
+        "STR": 1,
+        "CAR": 1,
+        "WIS": -1,
+    },
+    "white": {
+        "hp": 1,
+        "mp": 3,
+        "sp": 2,
+        "md_steps": 1,
+        "sd_steps": 1,
+        "WIS": 1,
+        "CAR": 1,
+        "COS": -1,
+    },
+}
+
+for card in json_list:
+    if card["type"] == "character":
+        card["stats"] = [
+            {"stat_name": "hp", "stat_value": default_values["hp"]},
+            {"stat_name": "mp", "stat_value": default_values["mp"]},
+            {"stat_name": "sp", "stat_value": default_values["sp"]},
+            {"stat_name": "hd", "stat_value": default_values["hd"]},
+            {"stat_name": "md", "stat_value": default_values["md"]},
+            {"stat_name": "sd", "stat_value": default_values["sd"]}
+        ]
+        card["abilities"] = [            {"ability_name": "STR", "ability_value": default_values["STR"]},
+            {"ability_name": "DEX", "ability_value": default_values["DEX"]},
+            {"ability_name": "COS", "ability_value": default_values["CON"]},
+            {"ability_name": "INT", "ability_value": default_values["INT"]},
+            {"ability_name": "WIS", "ability_value": default_values["WIS"]},
+            {"ability_name": "CAR", "ability_value": default_values["CAR"]}
+        ]
+        
+for card in json_list:
+    if card['type'] == 'character':
+        abilities = card['abilities']
+        stats = card['stats']
+        crystals = card['crystals']['provides']
+        for crystal in crystals:
+            if crystal in modifiers:
+                modifier = modifiers[crystal]
+                for key, value in modifier.items():
+                    if key in [ability["ability_name"] for ability in abilities]:
+                        ability_index = [ability["ability_name"] for ability in abilities].index(key)
+                        abilities[ability_index]["ability_value"] += value
+                    elif key in [stat["stat_name"] for stat in stats]:
+                        stat_index = [stat["stat_name"] for stat in stats].index(key)
+                    if key.endswith('d'):
+                        dice_value = int(key[0])
+                        # Check if the key is "hd" or if it ends with "_steps" and the base key is "hd"
+                        if key == "hd" or (key.endswith("_steps") and key[:-9] == "hd"):
+                            index = ['1d2', '1d4', '1d6', '1d8', '1d10', '1d12'].index(stats["hd"])
+                            if value > 0:
+                                index = min(index + value, 5)
+                            elif value < 0:
+                                index = max(index + value, 0)
+                            stats[stat_index]["stat_value"] = '1d' + str(2 ** (dice_value - 1) * (index + 1))
+                        else:
+                            stats[stat_index]["stat_value"] += value
+        card['abilities'] = abilities   
+        card['stats'] = stats
+
+json_string = json.dumps(json_list, ensure_ascii=False, indent=2)
+print(json_string)
