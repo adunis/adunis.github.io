@@ -746,10 +746,192 @@ function handleDrop(e) {
     }
 }
 
+const autoCalculateToggle = document.querySelector('#auto-calculate-toggle');
+let isChecked = autoCalculateToggle.checked;
 const jsonEditor = document.querySelector("#json-editor");
     jsonEditor.addEventListener("input", () => {
-        const jsonData = JSON.parse(jsonEditor.value);
+        let jsonData = JSON.parse(jsonEditor.value);
         console.log(jsonData);
+        if (isChecked){
+            jsonData = autoCalculateStats(jsonData);
+        }
         filterData("", 1, [jsonData], false);
     })
+
+const default_values = {
+    "hp": 6,
+    "mp": 0,
+    "sp": 6,
+    "hd": "1d4",
+    "md": "1d4",
+    "sd": "1d4",
+    "STR": 0,
+    "DEX": 0,
+    "CON": 0,
+    "INT": 0,
+    "WIS": 0,
+    "CAR": 0
+};
+
+const modifiers = {
+    "red": {
+        "hp": 4,
+        "mp": 2,
+        "hd_steps": 1,
+        "md_steps": 1,
+        "STR": 1,
+        "COS": 1,
+        "WIS": -1,
+    },
+    "orange": {
+        "hp": 6,
+        "hd_steps": 2,
+        "STR": 1,
+        "COS": 1,
+        "INT": -1
+    },
+    "green": {
+        "hp": 4,
+        "mp": 2,
+        "hd_steps": 1,
+        "sd_steps": 1,
+        "DEX": 1,
+        "STR": 1,
+        "INT": -1,
+    },
+    "emerald": {
+        "hp": 1,
+        "sp": 2,
+        "mp": 3,
+        "md_steps": 1,
+        "sd_steps": 1,
+        "WIS": 1,
+        "COS": 1,
+        "CAR": -1,
+    },
+    "cerulean": {
+        "mp": 6,
+        "md_steps": 2,
+        "INT": 1,
+        "WIS": 1,
+        "STR": -1,
+        "COS": -1
+    },
+    "purple": {
+        "hp": 2,
+        "mp": 2,
+        "sp": 2,
+        "sd_steps": 2,
+        "CAR": 1,
+        "DEX": 1,
+        "COS": -1,
+    },
+    "gold": {
+        "hp": 2,
+        "mp": 2,
+        "sp": 2,
+        "sd_steps": 1,
+        "md_steps": 1,
+        "WIS": 1,
+        "INT": 1,
+        "STR": -1,
+    },
+    "black": {
+        "hp": 2,
+        "mp": 1,
+        "sp": 3,
+        "hd_steps": 1,
+        "sd_steps": 1,
+        "DEX": 1,
+        "INT": 1,
+        "WIS": -1,
+    },
+    "blue": {
+        "hp": 3,
+        "sp": 1,
+        "mp": 2,
+        "hd_steps": 1,
+        "md_steps": 1,
+        "STR": 1,
+        "CAR": 1,
+        "WIS": -1,
+    },
+    "white": {
+        "hp": 1,
+        "mp": 3,
+        "sp": 2,
+        "md_steps": 1,
+        "sd_steps": 1,
+        "WIS": 1,
+        "CAR": 1,
+        "COS": -1,
+    },
+};
+
+function autoCalculateStats(card) {
+
+    if (card['type'].includes('creature') || card['type'].includes('character')) {
+        card['stats'] = [
+            { "stat_name": "hp", "stat_value": default_values["hp"] },
+            { "stat_name": "mp", "stat_value": default_values["mp"] },
+            { "stat_name": "sp", "stat_value": default_values["sp"] },
+            { "stat_name": "hd", "stat_value": default_values["hd"] },
+            { "stat_name": "md", "stat_value": default_values["md"] },
+            { "stat_name": "sd", "stat_value": default_values["sd"] }
+        ];
+        card['abilities'] = [
+            { "ability_name": "STR", "ability_value": default_values["STR"] },
+            { "ability_name": "DEX", "ability_value": default_values["DEX"] },
+            { "ability_name": "COS", "ability_value": default_values["CON"] },
+            { "ability_name": "INT", "ability_value": default_values["INT"] },
+            { "ability_name": "WIS", "ability_value": default_values["WIS"] },
+            { "ability_name": "CAR", "ability_value": default_values["CAR"] }
+        ];
+    }
+
+    const stepArray = ["1", "1d2", "1d4", "1d6", "1d8", "1d10", "2d6", "2d8", "3d6", "3d8", "4d6", "4d8", "6d6", "6d8", "8d6", "8d8", "12d6", "12d8", "16d6"]
+
+    if (card.type.includes('creature') || card.type.includes('character')) {
+        let abilities = card.abilities;
+        let stats = card.stats;
+        let crystals = card.crystals.provides;
+
+        crystals.forEach((crystal) => {
+            if (crystal in modifiers) {
+                let modifier = modifiers[crystal];
+                for (let [key, value] of Object.entries(modifier)) {
+                    if (abilities.some((ability) => ability.ability_name === key)) {
+                        let abilityIndex = abilities.findIndex((ability) => ability.ability_name === key);
+                        abilities[abilityIndex].ability_value += value;
+                    } else if (key.endsWith('_steps')) {
+                        let statName = key.replace('_steps', '');
+                        let statIndex = stats.findIndex((stat) => stat.stat_name === statName);
+                        if (statIndex !== -1) {
+                            let originalStatValue = stats[statIndex].stat_value;
+                            let originalStepIndex = stepArray.indexOf(originalStatValue);
+                            let newStepIndex = Math.min(Math.max(originalStepIndex + value, 0), stepArray.length - 1);
+                            stats[statIndex].stat_value = stepArray[newStepIndex];
+                        }
+                    } else if (stats.some((stat) => stat.stat_name === key)) {
+                        let statIndex = stats.findIndex((stat) => stat.stat_name === key);
+                        stats[statIndex].stat_value += value;
+                    }
+                }
+            }
+        });
+
+        card.abilities = abilities;
+        card.stats = stats;
+        return card;
+    }
+}
+
+autoCalculateToggle.addEventListener('change', () => {
+    isChecked = autoCalculateToggle.checked;
+    if (isChecked) {
+        const jsonData = JSON.parse(jsonEditor.value);
+        let card = autoCalculateStats(jsonData);
+        filterData("", 1, [card], false);
+    }
+});
 
