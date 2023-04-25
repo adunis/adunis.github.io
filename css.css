@@ -221,9 +221,9 @@
 }
 
 .description  {
-    font-size:11px;
+    padding-top: 10px;
+    font-size:10px;
 }
-
 
 
 .card {
@@ -981,7 +981,7 @@ table {
 
 .moves {
     display: block ruby;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 8px;
 }
 

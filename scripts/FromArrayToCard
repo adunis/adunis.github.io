@@ -1,0 +1,213 @@
+import json
+
+input_list = [  {
+    "name": "Minor Glyph of Strength",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Strengthening",
+      "description": "When you use this enchantment, spend 1 mp and add +1 to your Strength for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of Agility",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Agility Boost",
+      "description": "When you use this enchantment, spend 1 mp and add +1 to your Agility for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of Intelligence",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Intelligence Boost",
+      "description": "When you use this enchantment, spend 1 mp and add +1 to your Intelligence for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of Charisma",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Charisma Boost",
+      "description": "When you use this enchantment, spend 1 mp and add +1 to your Charisma for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of Constitution",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Constitution Boost",
+      "description": "When you use this enchantment, spend 1 mp and add +1 to your Constitution for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of Wisdom",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Wisdom Boost",
+      "description": "When you use this enchantment, spend 1 mp and add +1 to your Wisdom for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of Speed",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "1 mp",
+      "name": "Speed Boost",
+      "description": "When you use this enchantment, spend 1 mp and add +5 feet to your movement speed for the next 10 minutes."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },  {
+    "name": "Minor Glyph of the Ram's Strength",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "yellow",
+      "name": "Ram's Charge",
+      "description": "When you use this enchantment, spend 1 mp and charge forward with the force of a ram. Roll +STR. On a 10+, deal your weapon's damage to a single target and push them back. On a 7-9, deal your weapon's damage to a single target, but they also deal their damage to you."
+    },
+    "price": "50 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of the Bull's Endurance",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "green",
+      "name": "Enduring Charge",
+      "description": "When you use this enchantment, spend 1 mp and charge forward with the endurance of a bull. Roll +CON. On a 10+, deal your weapon's damage to a single target and gain 2 armor until the end of your next turn. On a 7-9, deal your weapon's damage to a single target and take 1 damage yourself."
+    },
+    "price": "45 coins",
+    "weight": "0.4 kg"
+  },
+  {
+    "name": "Minor Glyph of the Twins' Agility",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "orange",
+      "name": "Twin Strike",
+      "description": "When you use this enchantment, spend 1 mp and strike with the agility of the twins. Roll +DEX. On a 10+, deal your weapon's damage to two separate targets. On a 7-9, deal your weapon's damage to one target and take 1 damage yourself."
+    },
+    "price": "60 coins",
+    "weight": "0.6 kg"
+  },
+  {
+    "name": "Minor Glyph of the Crab's Protection",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "blue",
+      "name": "Crab's Shell",
+      "description": "When you use this enchantment, spend 1 mp and gain the protection of the crab's shell. Roll +WIS. On a 10+, gain 3 armor until the end of your next turn. On a 7-9, gain 2 armor until the end of your next turn."
+    },
+    "price": "55 coins",
+    "weight": "0.5 kg"
+  },
+  {
+    "name": "Minor Glyph of the Lion's Fury",
+    "type": ["item", "common", "magic"],
+    "move": {
+      "requirement": "red",
+      "name": "Lion's Roar",
+      "description": "When you use this enchantment, spend 1 mp and roar with the fury of the lion. Roll +CHA. On a 10+, deal your weapon's damage to a single target and intimidate them. On a 7-9, deal your weapon's damage to a single target and draw their attention."
+    },
+    "price": "65 coins",
+    "weight": "0.7 kg"
+
+  },
+  {
+    "name": "Minor Glyph of the Maiden's Grace",
+    "type": ["item", "common", "magic"],
+"move": {
+"requirement": "purple",
+"name": "Graceful Step",
+"description": "When you use this enchantment, spend 1 mp and move with the grace of the maiden. Roll +DEX. On a 10+, move to any location within your sight without triggering any traps or hazards. On a 7-9, move to any location within your sight, but trigger any traps or hazards that may be in your path."
+},
+"price": "70 coins",
+"weight": "0.8 kg"
+},
+{
+"name": "Minor Glyph of the Scales' Balance",
+"type": ["item", "common", "magic"],
+"move": {
+"requirement": "silver",
+"name": "Balancing Act",
+"description": "When you use this enchantment, spend 1 mp and balance with the precision of the scales. Roll +WIS. On a 10+, gain +1 forward to your next move. On a 7-9, maintain your balance, but suffer -1 ongoing until you rest."
+},
+"price": "75 coins",
+"weight": "0.9 kg"
+},
+{
+"name": "Minor Glyph of the Scorpion's Sting",
+"type": ["item", "common", "magic"],
+"move": {
+"requirement": "black",
+"name": "Scorpion Strike",
+"description": "When you use this enchantment, spend 1 mp and strike with the deadly sting of the scorpion. Roll +STR. On a 10+, deal your weapon's damage and poison the target, dealing 1d4 damage per turn until cured. On a 7-9, deal your weapon's damage and poison the target, but the poison only lasts for 1 turn."
+},
+"price": "80 coins",
+"weight": "1.0 kg"
+},
+{
+"name": "Minor Glyph of the Archer's Aim",
+"type": ["item", "common", "magic"],
+"move": {
+"requirement": "brown",
+"name": "Deadly Aim",
+"description": "When you use this enchantment, spend 1 mp and take aim with the precision of the archer. Roll +DEX. On a 10+, deal your weapon's damage and ignore any armor the target may have. On a 7-9, deal your weapon's damage, but the target's armor is only reduced by half."
+},
+"price": "85 coins",
+"weight": "1.1 kg"
+},
+{
+"name": "Minor Glyph of the Fishes' Agility",
+"type": ["item", "common", "magic"],
+"move": {
+"requirement": "teal",
+"name": "Fish Leap",
+"description": "When you use this enchantment, spend 1 mp and leap with the agility of the fishes. Roll +DEX. On a 10+, jump to any location within your sight and gain +1 forward to your next move. On a 7-9, jump to any location within your sight, but take 1 damage from the impact."
+},
+"price": "90 coins",
+"weight": "1.2 kg"
+}
+  ]
+
+output_list = []
+
+for item in input_list:
+    new_item = {}
+    new_item["name"] = item["name"]
+    new_item["crystals"] = {"requires": [], "provides": []}
+    new_item["type"] = item["type"]
+    new_item["moves"] = [{
+            "moves_requirements": "cerulean",
+            "moves_name": item["move"]["name"],
+            "moves_description": item["move"]["description"]
+        }]
+    new_item["stats"] = [
+            {"stat_name": "weight", "stat_value": item["weight"]},
+            {"stat_name": "price", "stat_value": item["price"]}
+        ]
+    new_item["geo_location"] = {"latitude": 37.7749, "longitude": -122.4194}
+    new_item["header_image"] = item["name"] + ".png"
+    output_list.append(new_item)
+
+# Convert the output list to a JSON string and print it
+print(json.dumps(output_list, indent=2))
