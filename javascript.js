@@ -528,7 +528,11 @@ const generateLootBoosterPack = async () => {
     const data = await response.json();
 
     const items = data.filter(card => card.type && card.type.includes("item") && !card.type.includes("common") && !card.type.includes("uncommon") && !card.type.includes("rare"));
-    const magic = data.filter(card => card.type && card.type.includes("item") && (card.type.includes("common") || card.type.includes("uncommon") || card.type.includes("rare")));
+
+// Filter the magic cards by rarity
+    const commonMagic = data.filter(card => card.type && card.type.includes("item") && card.type.includes("common"));
+    const uncommonMagic = data.filter(card => card.type && card.type.includes("item") && card.type.includes("uncommon"));
+    const rareMagic = data.filter(card => card.type && card.type.includes("item") && card.type.includes("rare"));
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -545,9 +549,12 @@ const generateLootBoosterPack = async () => {
         return randomCards;
     };
 
+// Select one magic card based on their rarity probability
+    const randomMagicCard = Math.random() < 0.9 ? getRandomCards(commonMagic, 1)[0] : Math.random() < 0.99 ? getRandomCards(uncommonMagic, 1)[0] : getRandomCards(rareMagic, 1)[0];
+
     const randomCards = [
         ...getRandomCards(items, 6),
-        ...getRandomCards(magic, 1)
+        randomMagicCard
     ];
 
     const json = JSON.stringify(randomCards);
