@@ -1,0 +1,50 @@
+items = [{
+		"name": "Dragon's Memory Dust",
+		"type": ["material", "rare"],
+		"move": {
+			"requirement": "black",
+			"name": "Harvest Memory Dust",
+			"description": "When you harvest the memory dust from a Timewarping Dragon's mind-altering breath, you can make a potion that grants you the power to manipulate memories. When you drink this potion, roll +CHA. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You can erase a memory from a target's mind (up to the last 24 hours) or make them forget a specific fact or piece of information</li><li>You can implant a false memory in a target's mind, making them believe something that never happened or something that is not true</li> <li>You gain temporary access to a specific memory of the Timewarping Dragon, gaining insight into a situation or a person</li></ul> The effect lasts for 1 hour and requires spending 1 MP to use. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP."
+		}
+	},
+	{
+		"name": "Dragon's Lightning Essence",
+		"type": ["material", "rare"],
+		"move": {
+			"requirement": "gold",
+			"name": "Harvest Lightning Essence",
+			"description": "When you harvest the lightning essence from a Timewarping Dragon's electrifying breath, you can make a potion that grants you the power of lightning. When you drink this potion, roll +INT. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You gain the ability to channel lightning through your body, dealing extra damage with your melee attacks and creating electric arcs that hit nearby enemies</li><li>You gain the ability to control and redirect lightning bolts, striking targets within your line of sight</li><li>You gain the ability to create an electric shield around you, blocking incoming attacks and dealing damage to attackers</li></ul> Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP."
+		}
+	},
+	{
+		"name": "Dragon's Time Essence",
+		"type": ["material", "rare"],
+		"move": {
+			"requirement": "cerulean",
+			"name": "Harvest Time Essence",
+			"description": "When you harvest the time essence from a Timewarping Dragon's temporal breath, you can make a potion that grants you the power to manipulate time. When you drink this potion, roll +WIS. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You can slow down time, giving yourself an advantage in combat and allowing you to dodge attacks more easily</li><li>You can speed up time, gaining extra movement and actions during your turn</li><li>You can jump through time, moving yourself or a target a few seconds or minutes into the past or future, depending on the level of success</li></ul> The effect lasts for 1 hour and requires spending 1 MP to use. Additionally, you can use the time essence to enchant a weapon or a piece of armor. When you successfully strike a target, you can choose to activate the enchantment, causing the target to become 'unstuck in time', experiencing brief moments of confusion and disorientation that affect their perception of time and space. This effect lasts for 1 minute and requires spending 1 MP to use. <li>You can access and view a specific memory from your own past, gaining insights or knowledge from it</li></ul> Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP.</p>",
+			"price": "200 coins",
+			"weight": "0.1 kg"
+		}
+	},
+	{
+		"name": "Thunderstone",
+		"type": ["material", "common"],
+		"move": {
+			"requirement": "gold",
+			"name": "Harvest Thunderstone",
+			"description": "When you harvest a Thunderstone from a Timewarping Dragon's body, you can create a potion that imbues the user with the power of thunder. When you drink this potion, roll +CON. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>Your next melee attack deals extra lightning damage</li><li>You gain resistance to lightning damage for the next hour</li><li>You can summon a bolt of lightning to strike a target within your line of sight</li></ul> The effect lasts for 1 hour, during which you can use any of the chosen options. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP.</p>"
+		}
+	},
+	{
+		"name": "Stormglass",
+		"type": ["material", "rare"],
+		"move": {
+			"requirement": "blue",
+			"name": "Harvest Stormglass",
+			"description": "When you harvest Stormglass from a Timewarping Dragon's scales, you can create a potion that grants the user the power of protection. When you drink this potion, roll +WIS. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You gain resistance to elemental damage for the next hour</li><li>You gain a +1 bonus to AC for the next hour</li><li>You can create a barrier that protects you and your allies from incoming attacks</li></ul>. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP.</p>"
+		},
+		"price": "500 coins",
+		"weight": "1 kg"
+	}
+]
