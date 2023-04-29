@@ -108,26 +108,15 @@
         <div class="card-body">
             {{#moves}}
             <div class="moves">
-            {{#moves_name}}
+                <div class="description">{{#description}} {{{description}}} {{/description}}</div>
             {{#moves_requirements}}
-            <span class="crystal {{.}}">&#x1f79a;&#xfe0e;</span>
-            {{/moves_requirements}}
-            <div class="subtitle">{{{moves_name}}}</div>
-            {{/moves_name}}
+            <span class="crystal {{.}}">&#x1f79a;&#xfe0e;</span>{{/moves_requirements}}
+                {{#moves_name}}<div class="subtitle">{{{moves_name}}}</div>{{/moves_name}}
+                {{#moves_description}}<div>{{{moves_description}}}</div>{{/moves_description}}
             </div>
-            {{#moves_description}}
-            <div>{{{moves_description}}}</div>
-            {{/moves_description}}
             {{/moves}}
-
-            <div class="description">
-                {{#description}}
-                {{{description}}}
-                {{/description}}
-            </div>
         </div>
     </div>
-
 </div>
 
 <div id="menu">

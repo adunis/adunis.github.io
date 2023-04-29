@@ -218,6 +218,7 @@
 
 .card-body h3 {
     font-size:16px;
+
 }
 
 .description  {
@@ -788,16 +789,11 @@ table {
     letter-spacing: 2px;
 }
 
-.card-body {
-    margin-top:-30px;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-align: left;
-}
-
 .card-footer {
     border-top: 5px solid #cc9900;
     position: relative;
+    padding: 0px;
+    margin: 4px;
 }
 
 .card-stats {
@@ -981,8 +977,9 @@ table {
 
 .moves {
     display: block ruby;
-    padding-top: 10px;
+    padding-top: 0px;
     font-size: 8px;
+    margin-top:3px;
 }
 
 .subtitle {
@@ -1024,4 +1021,9 @@ textarea {
     background-color: #f7f7f7;
     resize: none;
     box-sizing: border-box;
+}
+
+.card-body {
+    text-align: left;
+    padding: 0 3px;
 }

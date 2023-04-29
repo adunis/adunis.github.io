@@ -14625,7 +14625,6 @@
     "moves": [
       {
         "moves_requirements": [
-          "red",
           "red"
         ],
         "moves_name": "Swordsman",
@@ -16041,8 +16040,15 @@
     "type": [
       "item",
       "weapon"
-    ],
-    "description": "<p><p class=\"subtitle\">Crossbow Expert:</p> <p>When you attack with a crossbow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 1 point of armor</li><li>Your attack hits an additional target within range</li><li>Your attack pins your target to a wall or the ground, preventing them from moving until they free themselves</li></ul></p>",
+    ], "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Crossbow Expert",
+      "moves_description": "<p>When you attack with a crossbow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 1 point of armor</li><li>Your attack hits an additional target within range</li><li>Your attack pins your target to a wall or the ground, preventing them from moving until they free themselves</li></ul></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16071,7 +16077,15 @@
       "item",
       "weapon"
     ],
-    "description": "<p><p class=\"subtitle\">Heavy Crossbow Expert:</p> <p>When you attack with a heavy crossbow, roll +Str. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack knocks your target back or off balance</li><li>Your attack deals +1d4 damage</li></ul></p>",
+    "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Heavy Crossbow Expert",
+      "moves_description": "<p>When you attack with a heavy crossbow, roll +Str. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack knocks your target back or off balance</li><li>Your attack deals +1d4 damage</li></ul></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16144,7 +16158,6 @@
     "name": "Simple Bow",
     "crystals": {
       "requires": [
-        "green"
       ],
       "provides": []
     },
@@ -16152,7 +16165,15 @@
       "item",
       "weapon"
     ],
-    "description": "<p><p class=\"subtitle\">Bow Expert:</p> <p>When you attack with a simple bow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack is silent and unnoticed</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d4 damage if you have the high ground or surprise</li></ul></p>",
+    "moves": [
+    {
+      "moves_requirements": [
+        "green"
+      ],
+      "moves_name": "Bow Expert",
+      "moves_description": "<p>When you attack with a simple bow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack is silent and unnoticed</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d4 damage if you have the high ground or surprise</li></ul></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16257,15 +16278,21 @@
     "name": "Composite Bow",
     "crystals": {
       "requires": [
-        "green"
       ],
       "provides": []
     },
     "type": [
       "item",
       "weapon"
-    ],
-    "description": "<p><p class=\"subtitle\">Composite Bow Expert:</p> <p>When you attack with a composite bow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack pierces armor, ignoring 1 point of armor</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d6 damage if you have the high ground or surprise</li></ul></p>",
+    ],  "moves": [
+    {
+      "moves_requirements": [
+        "green"
+      ],
+      "moves_name": "Composite Bow Expert",
+      "moves_description": " <p>When you attack with a composite bow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack pierces armor, ignoring 1 point of armor</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d6 damage if you have the high ground or surprise</li></ul></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16494,8 +16521,6 @@
     "name": "Longbow",
     "crystals": {
       "requires": [
-        "green",
-        "red"
       ],
       "provides": []
     },
@@ -16503,7 +16528,15 @@
       "item",
       "weapon"
     ],
-    "description": "<p><p class=\"subtitle\">Longbow Expert:</p> <p>When you attack with a longbow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack has extreme range, reaching targets far beyond normal sight</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d8 damage if you have the high ground or surprise</li></ul></p>",
+    "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Longbow Expert",
+      "moves_description": "When you attack with a longbow, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack has extreme range, reaching targets far beyond normal sight</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d8 damage if you have the high ground or surprise</li></ul>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16532,7 +16565,15 @@
       "item",
       "weapon"
     ],
-    "description": "<p> <p class=\"subtitle\">Arquebus Expert:</p> <p>When you attack with an arquebus, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack creates a loud bang and a flash of fire, startling or scaring anyone nearby who is not prepared for it</li><li>Your attack deals +1d6 damage and sets your target or something nearby on fire</li></ul></p>",
+    "moves": [
+    {
+      "moves_requirements": [
+        "gold"
+      ],
+      "moves_name": "Arquebus Expert",
+      "moves_description": "<p>When you attack with an arquebus, roll +Dex. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack creates a loud bang and a flash of fire, startling or scaring anyone nearby who is not prepared for it</li><li>Your attack deals +1d6 damage and sets your target or something nearby on fire</li></ul></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16561,8 +16602,15 @@
     "type": [
       "item",
       "weapon"
-    ],
-    "description": "<p><p class=\"subtitle\">Heavy Blunderbuss Expert:</p> <p>When you attack with a heavy blunderbuss, roll +Str. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 3 points of armor</li><li>Your attack creates a loud bang and a flash of fire, stunning or scaring anyone nearby who is not prepared for it</li><li>Your attack deals +1d8 damage and sets your target and anything nearby on fire</li></ul></p>",
+    ],"moves": [
+    {
+      "moves_requirements": [
+        "gold", "red"
+      ],
+      "moves_name": "Heavy Blunderbuss Expert",
+      "moves_description": "<p>When you attack with a heavy blunderbuss, roll +Str. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 3 points of armor</li><li>Your attack creates a loud bang and a flash of fire, stunning or scaring anyone nearby who is not prepared for it</li><li>Your attack deals +1d8 damage and sets your target and anything nearby on fire</li></ul></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16583,15 +16631,28 @@
     "name": "Club",
     "crystals": {
       "requires": [
-        "orange"
       ],
       "provides": []
     },
     "type": [
       "item",
       "weapon"
-    ],
-    "description": "<p><p class=\"subtitle\">Brutal Smash:</p> <p>When you attack with a club, roll +Str. On a 9-17, you deal your damage. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack breaks or damages something your target is holding or wearing</li><li>Your attack sends your target flying or sprawling, giving you or an ally an opportunity to quickly act before they can recover</li><li>Your attack dazes or disorients your target, giving them -1 forward to their next roll</li></ul><p class=\"subtitle\">Heavy Swing:</p><p>When you use a club to hack and slash, you can choose to take -1 to the roll. If you do, you add +2 to the damage you deal on a hit.</p></p>",
+    ],"moves": [
+    {
+      "moves_requirements": [
+        "orange"
+      ],
+      "moves_name": "Brutal Smash",
+      "moves_description": " <p>When you attack with a club, roll +Str. On a 9-17, you deal your damage. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack breaks or damages something your target is holding or wearing</li><li>Your attack sends your target flying or sprawling, giving you or an ally an opportunity to quickly act before they can recover</li><li>Your attack dazes or disorients your target, giving them -1 forward to their next roll</li></ul>"
+    },
+    {
+      "moves_requirements": [
+        "orange"
+      ],
+      "moves_name": ">Heavy Swing",
+      "moves_description": "<p>When you use a club to hack and slash, you can choose to take -1 to the roll. If you do, you add +2 to the damage you deal on a hit.</p></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -16872,7 +16933,10 @@
       ],
       "provides": []
     },
-    "type": ["item", "common"],
+    "type": [
+      "item",
+      "common"
+    ],
     "moves": [
       {
         "moves_requirements": [
@@ -16912,7 +16976,10 @@
       ],
       "provides": []
     },
-    "type": ["item", "common"],
+    "type": [
+      "item",
+      "common"
+    ],
     "moves": [
       {
         "moves_requirements": [
@@ -17024,42 +17091,46 @@
       "longitude": -122.3321
     },
     "header_image": "Greathammer.png"
-  },   {
-  "name": "Shortsword",
-  "crystals": {
-    "requires": [],
-    "provides": []
   },
-  "type": "item",
-  "moves": [
-    {
-      "moves_requirements": ["red"],
-      "moves_name": "Swift Draw",
-      "moves_description": "<p>When you attack with a shortsword while drawing it from its sheath, roll +Dex. On a 10+, deal your damage and choose one additional effect from the list below:</p><ul><li>You avoid any counterattack or damage from the target</li><li>You deal an extra 1d4 damage to the target</li><li>You impress or intimidate the target and gain a +1 forward against them</li></ul><p>On a 7-9, you deal your damage but the GM will choose one of the following consequences:</p><ul><li>You leave yourself open to the enemy's attack</li><li>You only deal your damage, without any additional effect</li><li>You draw the unwanted attention of a third party</li></ul>"
+  {
+    "name": "Shortsword",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "moves_requirements": ["black"],
-      "moves_name": "Bleeding Wound",
-      "moves_description": "<p>When you strike an enemy with a shortsword and inflict a wound, roll +Str. On a 10+, in addition to your damage, your enemy will lose an extra 1d6 damage at the start of each of their turns until they receive healing or medical attention. On a 7-9, you inflict the wound and your damage, but the enemy will take half the bleeding damage (rounded down) and the GM will choose one of the following consequences:</p><ul><li>The enemy retaliates with a ferocious attack, dealing you damage as well</li><li>You leave an opening and another enemy takes advantage of it</li><li>You get too focused on the enemy and lose track of your surroundings</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1 kg"
+    "type": "item",
+    "moves": [
+      {
+        "moves_requirements": [
+          "red"
+        ],
+        "moves_name": "Swift Draw",
+        "moves_description": "<p>When you attack with a shortsword while drawing it from its sheath, roll +Dex. On a 10+, deal your damage and choose one additional effect from the list below:</p><ul><li>You avoid any counterattack or damage from the target</li><li>You deal an extra 1d4 damage to the target</li><li>You impress or intimidate the target and gain a +1 forward against them</li></ul><p>On a 7-9, you deal your damage but the GM will choose one of the following consequences:</p><ul><li>You leave yourself open to the enemy's attack</li><li>You only deal your damage, without any additional effect</li><li>You draw the unwanted attention of a third party</li></ul>"
+      },
+      {
+        "moves_requirements": [
+          "black"
+        ],
+        "moves_name": "Bleeding Wound",
+        "moves_description": "<p>When you strike an enemy with a shortsword and inflict a wound, roll +Str. On a 10+, in addition to your damage, your enemy will lose an extra 1d6 damage at the start of each of their turns until they receive healing or medical attention. On a 7-9, you inflict the wound and your damage, but the enemy will take half the bleeding damage (rounded down) and the GM will choose one of the following consequences:</p><ul><li>The enemy retaliates with a ferocious attack, dealing you damage as well</li><li>You leave an opening and another enemy takes advantage of it</li><li>You get too focused on the enemy and lose track of your surroundings</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
     },
-    {
-      "stat_name": "price",
-      "stat_value": "20 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
+    "header_image": "Shortsword.png"
   },
-  "header_image": "Shortsword.png"
-}
-,
   {
     "name": "Infernal Longsword",
     "crystals": {
@@ -17121,12 +17192,16 @@
     ],
     "moves": [
       {
-        "moves_requirements": ["red"],
+        "moves_requirements": [
+          "red"
+        ],
         "moves_name": "Orcish Fury",
         "moves_description": "<p>When you hack and slash with the Orcish Longsword, roll+Str. On a 18+, deal your damage and take +1 forward. On a 9-17, deal your damage, but the orcish fury within you demands a tribute. Choose one:</p><ul><li>The orcish rage takes over and you attack the nearest ally instead of your intended target.</li><li>The orcish bloodlust demands you keep fighting. You cannot disengage until either you or your opponent are taken out of the fight.</li><li>The orcish spirits demand a sacrifice. Take -1 forward to all rolls until you make an offering to the spirits.</li></ul>"
       },
       {
-        "moves_requirements": ["emerald"],
+        "moves_requirements": [
+          "emerald"
+        ],
         "moves_name": "Blood for Blood",
         "moves_description": "<p>When you kill with the Orcish Longsword, you may choose to spill blood onto the blade as an offering to the orcish spirits. If you do, you gain +1 forward to your next attack and the spirits will guide your hand in combat.</p>"
       }
@@ -17148,41 +17223,48 @@
     "header_image": "Orcish Longsword.png"
   },
   {
-  "name": "Elven Shortsword",
-  "crystals": {
-    "requires": [
+    "name": "Elven Shortsword",
+    "crystals": {
+      "requires": [
+      ],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "common"
     ],
-    "provides": []
-  },
-  "type": [ "item", "common"],
-  "moves": [
-    {
-      "moves_requirements": ["black"],
-      "moves_name": "Acrobatic Strike",
-      "moves_description": "<p>When you attack with the Elven Shortsword while performing an acrobatic maneuver, roll +Dex instead of +Str. On a 10+, deal your damage and choose one: you take +1 forward to your next move, or you avoid their attack.</p>"
+    "moves": [
+      {
+        "moves_requirements": [
+          "black"
+        ],
+        "moves_name": "Acrobatic Strike",
+        "moves_description": "<p>When you attack with the Elven Shortsword while performing an acrobatic maneuver, roll +Dex instead of +Str. On a 10+, deal your damage and choose one: you take +1 forward to your next move, or you avoid their attack.</p>"
+      },
+      {
+        "moves_requirements": [
+          "cerulean"
+        ],
+        "moves_name": "Enchant Weapon",
+        "moves_description": "<p>When you spend 1 magic point to channel enchantment magic into the Elven Shortsword, choose one of the following:</p> <ul><li>Deal an additional 1d4 arcane damage on your next successful attack.</li><li>Disarm your opponent on your next successful attack.</li><li>Teleport behind your opponent on your next successful attack.</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
     },
-    {
-      "moves_requirements": ["cerulean"],
-      "moves_name": "Enchant Weapon",
-      "moves_description": "<p>When you spend 1 magic point to channel enchantment magic into the Elven Shortsword, choose one of the following:</p> <ul><li>Deal an additional 1d4 arcane damage on your next successful attack.</li><li>Disarm your opponent on your next successful attack.</li><li>Teleport behind your opponent on your next successful attack.</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "50 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
+    "header_image": "Elven Shortsword.png"
   },
-  "header_image": "Elven Shortsword.png"
-},
   {
     "name": "Dwarven Shortsword",
     "crystals": {
@@ -17190,15 +17272,23 @@
       ],
       "provides": []
     },
-    "type": ["item", "common"],
+    "type": [
+      "item",
+      "common"
+    ],
     "moves": [
       {
-        "moves_requirements": ["white", "white"],
+        "moves_requirements": [
+          "white",
+          "white"
+        ],
         "moves_name": "Huge Creature Parry",
         "moves_description": "<p>When you use a Dwarven Shortsword to parry an attack from a creature larger than yourself, roll+Str instead of +Dex. On a 10+, you deflect the attack and take no damage. On a 7-9, you deflect the attack but suffer a -1 penalty to your next attack roll.</p>"
       },
       {
-        "moves_requirements": ["cerulean"],
+        "moves_requirements": [
+          "cerulean"
+        ],
         "moves_name": "Explosive Shot",
         "moves_description": "<p>When you shoot an explosive shot from your Dwarven Shortsword, spend 1 magic point and roll+Int. On a 10+, you deal your damage to a single target and choose one additional effect from the list below. On a 7-9, you deal your damage but also choose one drawback from the list below. On a 6-, the explosive shot misfires and causes you harm.<ul><li>Your attack hits an additional target nearby</li><li>Your attack inflicts a burning effect, dealing 1d6 additional damage each turn until the target receives healing or medical attention</li><li>Your attack creates a loud noise, stunning your target and any nearby enemies for a moment</li></ul></p>"
       }
@@ -17231,7 +17321,22 @@
       "uncommon",
       "magic"
     ],
-    "description": "<p><p class=\"subtitle\">Sylvan Protection:</p> <p>When you wear the Sylvan Gauntlet, roll +Con. On a 9-17, you gain +1 armor. On a 18+, you gain +2 armor and you can choose to create a shield of foliage that provides additional protection. On a 20+, you can choose two effects.</p><ul><li>Your shield of foliage provides +2 armor</li><li>Your shield of foliage causes enemies that attack you to suffer damage</li><li>You can heal 1d6 damage when you create your shield of foliage</li></ul><p class=\"subtitle\">Sylvan Nature:</p><p>The Sylvan Gauntlet is made of a natural material that seems to be a combination of wood and leaves. When you wear this gauntlet, you gain the ability to communicate with plants and animals.</p></p>",
+    "moves": [
+      {
+        "moves_requirements": [
+          "emerald", "green"
+        ],
+        "moves_name": "Sylvan Protection",
+        "moves_description": "<p> When you wear the Sylvan Gauntlet, roll +Con. On a 9-17, you gain +1 armor. On a 18+, you gain +2 armor and you can choose to create a shield of foliage that provides additional protection. On a 20+, you can choose two effects.</p><ul><li>Your shield of foliage provides +2 armor</li><li>Your shield of foliage causes enemies that attack you to suffer damage</li><li>You can heal 1d6 damage when you create your shield of foliage</li></ul>"
+      },
+      {
+        "moves_requirements": [
+          "emerald"
+        ],
+        "moves_name": "Sylvan Nature",
+        "moves_description": "The Sylvan Gauntlet is made of a natural material that seems to be a combination of wood and leaves. When you wear this gauntlet, you gain the ability to communicate with plants and animals."
+      }
+    ],
     "stats": [
       {
         "stat_name": "weight",
@@ -17247,41 +17352,50 @@
       "longitude": -122.4194
     },
     "header_image": "Sylvan Gauntlet.png"
-  },{
-  "name": "Sylvan Scimitar",
-  "crystals": {
-    "requires": [],
-    "provides": []
   },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["emerald", "gold"],
-      "moves_name": "Sylvan Strike",
-      "moves_description": "<p>When you attack with the Sylvan Scimitar, roll +Str. On a 10+, you deal your damage and choose one additional effect from the list below. On a 7-9, you deal your damage but expose yourself to the enemy's attack.</p> <ul><li>You deal +1d4 damage</li><li>You can choose to deal your damage as either piercing or slashing damage</li><li>You ignore your target's armor</li></ul>"
+  {
+    "name": "Sylvan Scimitar",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "moves_requirements": ["cerulean"],
-      "moves_name": "Animal Senses",
-      "moves_description": "<p>By spending 1 magic point, you can gain animal-like senses that allow you to track creatures, detect hidden objects, and sense danger more acutely. These senses last for an hour.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1.5 kg"
+    "type": [
+      "item",
+      "uncommon"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "emerald",
+          "gold"
+        ],
+        "moves_name": "Sylvan Strike",
+        "moves_description": "<p>When you attack with the Sylvan Scimitar, roll +Str. On a 10+, you deal your damage and choose one additional effect from the list below. On a 7-9, you deal your damage but expose yourself to the enemy's attack.</p> <ul><li>You deal +1d4 damage</li><li>You can choose to deal your damage as either piercing or slashing damage</li><li>You ignore your target's armor</li></ul>"
+      },
+      {
+        "moves_requirements": [
+          "cerulean"
+        ],
+        "moves_name": "Animal Senses",
+        "moves_description": "<p>By spending 1 magic point, you can gain animal-like senses that allow you to track creatures, detect hidden objects, and sense danger more acutely. These senses last for an hour.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
     },
-    {
-      "stat_name": "price",
-      "stat_value": "50 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
+    "header_image": "Sylvan_Scimitar.png"
   },
-  "header_image": "Sylvan_Scimitar.png"
-},
   {
     "name": "Minor Glyph of Apollo's Radiance",
     "crystals": {
@@ -19227,15 +19341,23 @@
       ],
       "provides": []
     },
-    "type": ["item", " uncommon"],
+    "type": [
+      "item",
+      " uncommon"
+    ],
     "moves": [
       {
-        "moves_requirements": ["orange", "gold"],
+        "moves_requirements": [
+          "orange",
+          "gold"
+        ],
         "moves_name": "Hacker",
         "moves_description": "<p>When you attack with the Gnomish Axe, roll +Str. On a 9-17, you deal your damage. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack severs a magical connection, causing the target to lose access to one of their magical abilities or spells</li><li>Your attack reveals a hidden path or secret door in the environment</li><li>Your attack deals +1d6 damage to non-Gnomish or non-Dwarven creatures</li></ul>"
       },
       {
-        "moves_requirements": ["emerald"],
+        "moves_requirements": [
+          "emerald"
+        ],
         "moves_name": "Gnomic Precision",
         "moves_description": "<p>When you Hack and Slash with the Gnomish Axe, you deal an extra 1d4 damage if you have access to the knowledge of your enemy's weaknesses, such as through discern realities or spout lore.</p>"
       }
@@ -19256,57 +19378,76 @@
       "longitude": -122.4194
     },
     "header_image": "Gnomish Axe.png"
-  },{
-  "name": "Gnomish Enchanted Crossbow",
-  "crystals": {
-    "requires": [
+  },
+  {
+    "name": "Gnomish Enchanted Crossbow",
+    "crystals": {
+      "requires": [
+      ],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon"
     ],
-    "provides": []
-  },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["gold", "red"],
-      "moves_name": "Deadly Accuracy",
-      "moves_description": "<p>When you volley with the Gnomish Enchanted Crossbow, roll +Dex instead of +Str. On a 9-17, you have to move to get the shot, placing you in danger as described by the GM. On a 18+, you have a clear shot and deal your damage. On a 12+, choose one extra effect from the list below:</p> <ul><li>Your shot pierces through your target and hits an additional enemy behind them, dealing your damage to both targets.</li><li>Your shot ricochets off a nearby object and hits a second enemy nearby, dealing your damage to them as well.</li><li>Your shot deals an extra 1d6 damage to targets that are wearing metal armor or are otherwise heavily armored.</li></ul>"
+    "moves": [
+      {
+        "moves_requirements": [
+          "gold",
+          "red"
+        ],
+        "moves_name": "Deadly Accuracy",
+        "moves_description": "<p>When you volley with the Gnomish Enchanted Crossbow, roll +Dex instead of +Str. On a 9-17, you have to move to get the shot, placing you in danger as described by the GM. On a 18+, you have a clear shot and deal your damage. On a 12+, choose one extra effect from the list below:</p> <ul><li>Your shot pierces through your target and hits an additional enemy behind them, dealing your damage to both targets.</li><li>Your shot ricochets off a nearby object and hits a second enemy nearby, dealing your damage to them as well.</li><li>Your shot deals an extra 1d6 damage to targets that are wearing metal armor or are otherwise heavily armored.</li></ul>"
+      },
+      {
+        "moves_requirements": [
+          "emerald",
+          "gold"
+        ],
+        "moves_name": "Gnomish Engineering",
+        "moves_description": "<p>When you examine or repair the Gnomish Enchanted Crossbow, roll +Int. On a 18+, choose one of the following:</p> <ul><li>You discover a new mechanism that adds an additional benefit to the crossbow, such as a grappling hook or a hidden compartment for storing bolts.</li><li>You repair the crossbow to full functionality, restoring any lost or damaged components.</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "4 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "200 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
     },
-    {
-      "moves_requirements": ["emerald", "gold"],
-      "moves_name": "Gnomish Engineering",
-      "moves_description": "<p>When you examine or repair the Gnomish Enchanted Crossbow, roll +Int. On a 18+, choose one of the following:</p> <ul><li>You discover a new mechanism that adds an additional benefit to the crossbow, such as a grappling hook or a hidden compartment for storing bolts.</li><li>You repair the crossbow to full functionality, restoring any lost or damaged components.</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "4 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "200 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
+    "header_image": "Gnomish Enchanted Crossbow.png"
   },
-  "header_image": "Gnomish Enchanted Crossbow.png"
-},
   {
     "name": "Elven Bow",
     "crystals": {
       "requires": [],
       "provides": []
     },
-    "type": ["item", "weapon", "uncommon", "magic"],
+    "type": [
+      "item",
+      "weapon",
+      "uncommon",
+      "magic"
+    ],
     "moves": [
       {
-        "moves_requirements": ["cerulean"],
+        "moves_requirements": [
+          "green"
+        ],
         "moves_name": "Elven Accuracy",
         "moves_description": "<p>When you fire an arrow from an Elven Bow, roll +Dex. On a 9-17, you deal your damage. On a 18+, you deal your damage and can choose to pin the enemy to a surface, immobilizing them. On a 20+, you can choose two effects.</p><ul><li>Your attack deals additional damage to enemies with a weakness to the magical properties of the bow</li><li>Your attack hits an additional target</li><li>Your attack deals +1d6 damage</li></ul>"
       },
       {
-        "moves_requirements": ["emerald"],
+        "moves_requirements": [
+          "emerald"
+        ],
         "moves_name": "Mysterious Material",
         "moves_description": "<p>The Elven Bow is made of a mysterious material that seems to be a combination of wood and metal. When you wield this weapon, you can see through the eyes of birds and beasts that fly.</p>"
       }
@@ -19326,365 +19467,455 @@
       "longitude": -122.4194
     },
     "header_image": "Elven Bow.png"
-  },{
-  "name": "Treasure Map",
-  "crystals": {
-    "requires": [],
-    "provides": []
   },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["green"],
-      "moves_name": "Cartographer",
-      "moves_description": "<p>When you study this treasure map or scroll, roll +Int. On a 10+, hold 3. On a 7-9, hold 1. Spend your hold to ask the GM any one question about the location of the treasure, such as 'What is the terrain like around the treasure?' or 'What kind of guardians protect the treasure?' On a miss, the GM will provide false information.</p>"
-    },
-    {
-      "moves_requirements": ["gold"],
-      "moves_name": "Richest Find",
-      "moves_description": "<p>When you discover and claim the treasure indicated on this map or scroll, you gain an additional 3d100 coins worth of treasure.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "0.5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "50 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 40.7128,
-    "longitude": -74.0060
-  },
-  "header_image": "Treasure Map.png"
-}, {
-  "name": "Flawless Diamond",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["gold"],
-      "moves_name": "Appraisal",
-      "moves_description": "<p>When you show off your flawless diamond to someone with an eye for valuable goods, roll +Cha. On a 10+, they recognize its worth and offer to pay double the standard price. On a 7-9, they're interested, but they'll need some time to gather the funds. On a miss, they scoff and dismiss it as a fake, and any future attempts to sell it to them will be even more difficult.</p>"
-    },
-    {
-      "moves_requirements": ["gold", "emerald"],
-      "moves_name": "Prismatic Refraction",
-      "moves_description": "<p>When you hold your flawless diamond up to the light and focus your energy, roll +Wis. On a 10+, you create a dazzling array of colored light that illuminates the area around you, distracting and dazzling your enemies. Choose 1 option from the list below:</p><ul><li>Choose a target within range. They are momentarily stunned, and their next attack suffers a -1 penalty.</li><li>All allies within range gain +1 forward to their next attack.</li><li>Heal yourself or an ally within range for 1d8 HP.</li></ul><p>On a 7-9, you still create the light show, but choose 1 option from the list above and 1 from the list below:</p><ul><li>You attract unwanted attention. The GM will tell you what kind of danger presents itself.</li><li>The diamond loses its luster and is now worth half its original value.</li><li>You become disoriented and suffer a -1 penalty to your next move.</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "0.5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "500 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 40.7128,
-    "longitude": -74.0060
-  },
-  "header_image": "Flawless_Diamond.png"
-},{
-  "name": "Stolen Artwork",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["black", "purple"],
-      "moves_name": "Fence",
-      "moves_description": "<p>When you try to sell the stolen artwork to a fence, roll +Cha. On a 10+, you successfully sell it for a good price. On a 7-9, you sell it for a lower price, or the fence offers you a job in exchange. On a 6 or less, the fence turns you away or turns you over to the authorities.</p>"
-    },
-    {
-      "moves_requirements": ["green", "white"],
-      "moves_name": "Expert Appraiser",
-      "moves_description": "<p>When you attempt to appraise the stolen artwork, roll +Int. On a 10+, you accurately determine its true value and history. On a 7-9, you get some useful information, but not the whole picture. On a 6 or less, you misinterpret the value or history and could make a costly mistake.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "500 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
-  },
-  "header_image": "Stolen Artwork.png"
-},
   {
-  "name": "Orb of Prophecy",
-  "crystals": {
-    "requires": ["cerulean"],
-    "provides": []
-  },
-  "type": ["item", "rare"],
-  "moves": [
-    {
-      "moves_requirements": ["cerulean", "emerald"],
-      "moves_name": "Foresight",
-      "moves_description": "<p>When you gaze into the Orb of Prophecy, roll +Wis. On a 10+, you can ask the GM any question about the future, and they will answer truthfully. On a 7-9, the GM will answer, but the answer may be vague or cryptic. On a miss, the GM will give you a false answer or an unwelcome truth.</p>"
+    "name": "Treasure Map",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "moves_requirements": ["cerulean"],
-      "moves_name": "Ward Against Evil",
-      "moves_description": "<p>When you hold the Orb of Prophecy and concentrate, roll +Int. On a 10+, you and your allies are protected from evil for a time. Choose one effect from the list below. On a 7-9, the effect is temporary or limited in scope. On a miss, you attract the attention of evil forces.</p> <ul><li>Your enemies are repelled or driven away from you and your allies</li><li>Your allies are healed of any curses or ailments caused by dark magic</li><li>Your senses are enhanced, allowing you to detect hidden or secret dangers</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "1000 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 51.5074,
-    "longitude": -0.1278
-  },
-  "header_image": "Orb_of_Prophecy.png"
-},{
-  "name": "Amulet of the Ancients",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": ["item", "rare"],
-  "moves": [
-    {
-      "moves_requirements": ["cerulean"],
-      "moves_name": "Ancient Knowledge",
-      "moves_description": "<p>When you consult the Amulet of the Ancients for knowledge, roll +Int. On a 10+, the Amulet provides you with useful information about your current situation or a relevant historical event. On a 7-9, the Amulet provides you with limited or cryptic information, leaving room for interpretation. On a miss, the Amulet either remains silent or provides you with misleading information.</p>"
-    },
-    {
-      "moves_requirements": ["emerald", "cerulean"],
-      "moves_name": "Elemental Blast",
-      "moves_description": "<p>When you unleash the power of the Amulet to create an elemental blast, roll +Wis. On a 10+, choose two options from the list below. On a 7-9, choose one. On a miss, you lose control of the blast, causing unintended damage or harm.</p> <ul><li>The blast deals extra damage to your target</li><li>The blast affects an additional target or area</li><li>The blast inflicts a negative status effect on your target, such as burning, freezing, or stunning</li><li>The blast creates an obstacle or hazard for your target, such as a wall of fire or a pool of acid</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "0.5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "1000 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 51.5074,
-    "longitude": -0.1278
-  },
-  "header_image": "Amulet_of_the_Ancients.png"
-},{
-  "name": "Amulet of Arcane Might",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": ["item", "rare"],
-  "moves": [
-    {
-      "moves_requirements": ["cerulean"],
-      "moves_name": "Arcane Empowerment",
-      "moves_description": "<p>When you cast a spell while wearing the Amulet of Arcane Might, roll +Int. On a 10+, you can cast the spell at a higher level than usual (up to the maximum level you can cast). On a 7-9, the spell is cast normally, but you take -1 ongoing to cast spells until you take a short rest. On a 6-, the spell backfires, and you take 1d6 damage per level of the spell.</p>"
-    },
-    {
-      "moves_requirements": ["emerald", "cerulean"],
-      "moves_name": "Elemental Mastery",
-      "moves_description": "<p>When you cast a spell that deals elemental damage (fire, ice, lightning, etc.) while wearing the Amulet of Arcane Might, roll +Int. On a 10+, the spell deals an extra d6 damage of the same type. On a 7-9, the spell deals the extra damage, but also causes collateral damage to the surroundings. The GM will describe what this entails. On a 6-, the spell backfires, and you take 1d6 damage of the same type.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "0.5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "500 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 40.7128,
-    "longitude": -74.0060
-  },
-  "header_image": "Amulet_of_Arcane_Might.png"
-},{
-  "name": "Amulet of Mysteries",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["cerulean", "purple"],
-      "moves_name": "Mystic Knowledge",
-      "moves_description": "<p>When you spend time studying the Amulet of Mysteries, roll +Int. On a 10+, ask the GM any three questions about the current situation or history of the area. On a 7-9, ask one question and the GM will ask you one in return.</p>"
-    },
-    {
-      "moves_requirements": ["cerulean", "cerulean", "purple"],
-      "moves_name": "Mystical Resonance",
-      "moves_description": "<p>When you use the Amulet of Mysteries in conjunction with another magical artifact, roll +Wis. On a 10+, both artifacts activate at full strength. On a 7-9, both activate but one will malfunction or become unstable. On a 6 or less, both artifacts become inert.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "0.5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "100 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 40.7128,
-    "longitude": -74.0060
-  },
-  "header_image": "Amulet_of_Mysteries.png"
-},{
-  "name": "Sleeping Bag",
-  "crystals": {
-    "requires": [
+    "type": [
+      "item",
+      "uncommon"
     ],
-    "provides": []
-  },
-  "type": "item",
-  "moves": [
-    {
-      "moves_requirements": ["green"],
-      "moves_name": "Wilderness Rest",
-      "moves_description": "<p>When you sleep in your sleeping bag in a dangerous or wild area, you can roll +Wis. On a 10+, you rest peacefully and regain all your health and spells. On a 7-9, you rest, but choose one from the list below. On a miss, the GM will tell you what danger you encounter while resting.</p><ul><li>You are awoken by a curious animal or monster, but you manage to scare it off</li><li>You have a strange dream or vision that might have some significance</li><li>You wake up with a feeling of unease or paranoia</li></ul>"
+    "moves": [
+      {
+        "moves_requirements": [
+          "green"
+        ],
+        "moves_name": "Cartographer",
+        "moves_description": "<p>When you study this treasure map or scroll, roll +Int. On a 10+, hold 3. On a 7-9, hold 1. Spend your hold to ask the GM any one question about the location of the treasure, such as 'What is the terrain like around the treasure?' or 'What kind of guardians protect the treasure?' On a miss, the GM will provide false information.</p>"
+      },
+      {
+        "moves_requirements": [
+          "gold"
+        ],
+        "moves_name": "Richest Find",
+        "moves_description": "<p>When you discover and claim the treasure indicated on this map or scroll, you gain an additional 3d100 coins worth of treasure.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 40.7128,
+      "longitude": -74.0060
     },
-    {
-      "moves_requirements": ["purple"],
-      "moves_name": "Cuddle Bonus",
-      "moves_description": "<p>When you share your sleeping bag with someone, you can roll +Cha. On a 10+, you both get some extra rest and choose one from the list below. On a 7-9, you both rest, but choose only one. On a miss, you both have trouble sleeping.</p><ul><li>You both heal an additional amount of damage or recover an additional spell</li><li>You both gain a +1 forward to your next roll</li><li>You both share a moment of intimacy or bonding</li></ul>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1.5 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "25 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
+    "header_image": "Treasure Map.png"
   },
-  "header_image": "SleepingBag.png"
-},{
-  "name": "Lightweight Tent",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": "item",
-  "moves": [
-    {
-      "moves_requirements": ["emerald"],
-      "moves_name": "Elemental Protection",
-      "moves_description": "<p>When you set up the lightweight tent in a natural environment, you may spend 1 mp and you and your allies gain +5 ongoing to Defy Danger rolls made to avoid damage from natural elements (such as rain, wind, or extreme temperatures) while inside the tent.</p>"
-    },
-    {
-      "moves_requirements": ["gold"],
-      "moves_name": "Expert Craftsmanship",
-      "moves_description": "<p>When you take the time to set up the lightweight tent properly, you can make it even more durable and stable. You and your allies can heal an additional +1d4 HP when they take a rest inside the tent.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1 kg"
-    },
-    {
-      "stat_name": "price",
-      "stat_value": "20 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 37.7749,
-    "longitude": -122.4194
-  },
-  "header_image": "Lightweight_Tent.png"
-},
   {
-  "name": "Ancient Runes",
-  "crystals": {
-    "requires": [],
-    "provides": []
-  },
-  "type": ["item", "uncommon"],
-  "moves": [
-    {
-      "moves_requirements": ["cerulean"],
-      "moves_name": "Magical Translation",
-      "moves_description": "<p>When you study the ancient runes using magical means, roll +Int. On a 10+, ask the GM two questions from the list below. On a 7-9, ask one question. The GM will answer truthfully and provide any additional relevant information.<ul><li>What magical properties or effects does this script describe or enable?</li><li>What is the historical significance of this script or what event does it describe?</li><li>What kind of ritual or spell can be performed using this script?</li><li>What kind of magical creature or entity is mentioned in this script?</li></ul></p>"
+    "name": "Flawless Diamond",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "moves_requirements": ["white"],
-      "moves_name": "Divine Insight",
-      "moves_description": "<p>When you seek the guidance of a divine entity to understand the ancient runes, spend 1 mp and roll +Wis. On a 10+, the divine entity provides you with a clear and unambiguous answer to your question. On a 7-9, the divine entity answers truthfully, but may also ask you to perform a task or service in return for its help.</p>"
-    }
-  ],
-  "stats": [
-    {
-      "stat_name": "weight",
-      "stat_value": "1 kg"
+    "type": [
+      "item",
+      "uncommon"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "gold"
+        ],
+        "moves_name": "Appraisal",
+        "moves_description": "<p>When you show off your flawless diamond to someone with an eye for valuable goods, roll +Cha. On a 10+, they recognize its worth and offer to pay double the standard price. On a 7-9, they're interested, but they'll need some time to gather the funds. On a miss, they scoff and dismiss it as a fake, and any future attempts to sell it to them will be even more difficult.</p>"
+      },
+      {
+        "moves_requirements": [
+          "gold",
+          "emerald"
+        ],
+        "moves_name": "Prismatic Refraction",
+        "moves_description": "<p>When you hold your flawless diamond up to the light and focus your energy, roll +Wis. On a 10+, you create a dazzling array of colored light that illuminates the area around you, distracting and dazzling your enemies. Choose 1 option from the list below:</p><ul><li>Choose a target within range. They are momentarily stunned, and their next attack suffers a -1 penalty.</li><li>All allies within range gain +1 forward to their next attack.</li><li>Heal yourself or an ally within range for 1d8 HP.</li></ul><p>On a 7-9, you still create the light show, but choose 1 option from the list above and 1 from the list below:</p><ul><li>You attract unwanted attention. The GM will tell you what kind of danger presents itself.</li><li>The diamond loses its luster and is now worth half its original value.</li><li>You become disoriented and suffer a -1 penalty to your next move.</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "500 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 40.7128,
+      "longitude": -74.0060
     },
-    {
-      "stat_name": "price",
-      "stat_value": "100 coins"
-    }
-  ],
-  "geo_location": {
-    "latitude": 40.7128,
-    "longitude": -74.0060
+    "header_image": "Flawless_Diamond.png"
   },
-  "header_image": "AncientRunes.png"
-},
+  {
+    "name": "Stolen Artwork",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "black",
+          "purple"
+        ],
+        "moves_name": "Fence",
+        "moves_description": "<p>When you try to sell the stolen artwork to a fence, roll +Cha. On a 10+, you successfully sell it for a good price. On a 7-9, you sell it for a lower price, or the fence offers you a job in exchange. On a 6 or less, the fence turns you away or turns you over to the authorities.</p>"
+      },
+      {
+        "moves_requirements": [
+          "green",
+          "white"
+        ],
+        "moves_name": "Expert Appraiser",
+        "moves_description": "<p>When you attempt to appraise the stolen artwork, roll +Int. On a 10+, you accurately determine its true value and history. On a 7-9, you get some useful information, but not the whole picture. On a 6 or less, you misinterpret the value or history and could make a costly mistake.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "500 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "header_image": "Stolen Artwork.png"
+  },
+  {
+    "name": "Orb of Prophecy",
+    "crystals": {
+      "requires": [
+        "cerulean"
+      ],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "cerulean",
+          "emerald"
+        ],
+        "moves_name": "Foresight",
+        "moves_description": "<p>When you gaze into the Orb of Prophecy, roll +Wis. On a 10+, you can ask the GM any question about the future, and they will answer truthfully. On a 7-9, the GM will answer, but the answer may be vague or cryptic. On a miss, the GM will give you a false answer or an unwelcome truth.</p>"
+      },
+      {
+        "moves_requirements": [
+          "cerulean"
+        ],
+        "moves_name": "Ward Against Evil",
+        "moves_description": "<p>When you hold the Orb of Prophecy and concentrate, roll +Int. On a 10+, you and your allies are protected from evil for a time. Choose one effect from the list below. On a 7-9, the effect is temporary or limited in scope. On a miss, you attract the attention of evil forces.</p> <ul><li>Your enemies are repelled or driven away from you and your allies</li><li>Your allies are healed of any curses or ailments caused by dark magic</li><li>Your senses are enhanced, allowing you to detect hidden or secret dangers</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "1000 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "header_image": "Orb_of_Prophecy.png"
+  },
+  {
+    "name": "Amulet of the Ancients",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "cerulean"
+        ],
+        "moves_name": "Ancient Knowledge",
+        "moves_description": "<p>When you consult the Amulet of the Ancients for knowledge, roll +Int. On a 10+, the Amulet provides you with useful information about your current situation or a relevant historical event. On a 7-9, the Amulet provides you with limited or cryptic information, leaving room for interpretation. On a miss, the Amulet either remains silent or provides you with misleading information.</p>"
+      },
+      {
+        "moves_requirements": [
+          "emerald",
+          "cerulean"
+        ],
+        "moves_name": "Elemental Blast",
+        "moves_description": "<p>When you unleash the power of the Amulet to create an elemental blast, roll +Wis. On a 10+, choose two options from the list below. On a 7-9, choose one. On a miss, you lose control of the blast, causing unintended damage or harm.</p> <ul><li>The blast deals extra damage to your target</li><li>The blast affects an additional target or area</li><li>The blast inflicts a negative status effect on your target, such as burning, freezing, or stunning</li><li>The blast creates an obstacle or hazard for your target, such as a wall of fire or a pool of acid</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "1000 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "header_image": "Amulet_of_the_Ancients.png"
+  },
+  {
+    "name": "Amulet of Arcane Might",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "rare"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "cerulean"
+        ],
+        "moves_name": "Arcane Empowerment",
+        "moves_description": "<p>When you cast a spell while wearing the Amulet of Arcane Might, roll +Int. On a 10+, you can cast the spell at a higher level than usual (up to the maximum level you can cast). On a 7-9, the spell is cast normally, but you take -1 ongoing to cast spells until you take a short rest. On a 6-, the spell backfires, and you take 1d6 damage per level of the spell.</p>"
+      },
+      {
+        "moves_requirements": [
+          "emerald",
+          "cerulean"
+        ],
+        "moves_name": "Elemental Mastery",
+        "moves_description": "<p>When you cast a spell that deals elemental damage (fire, ice, lightning, etc.) while wearing the Amulet of Arcane Might, roll +Int. On a 10+, the spell deals an extra d6 damage of the same type. On a 7-9, the spell deals the extra damage, but also causes collateral damage to the surroundings. The GM will describe what this entails. On a 6-, the spell backfires, and you take 1d6 damage of the same type.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "500 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "header_image": "Amulet_of_Arcane_Might.png"
+  },
+  {
+    "name": "Amulet of Mysteries",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "cerulean",
+          "purple"
+        ],
+        "moves_name": "Mystic Knowledge",
+        "moves_description": "<p>When you spend time studying the Amulet of Mysteries, roll +Int. On a 10+, ask the GM any three questions about the current situation or history of the area. On a 7-9, ask one question and the GM will ask you one in return.</p>"
+      },
+      {
+        "moves_requirements": [
+          "cerulean",
+          "cerulean",
+          "purple"
+        ],
+        "moves_name": "Mystical Resonance",
+        "moves_description": "<p>When you use the Amulet of Mysteries in conjunction with another magical artifact, roll +Wis. On a 10+, both artifacts activate at full strength. On a 7-9, both activate but one will malfunction or become unstable. On a 6 or less, both artifacts become inert.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "header_image": "Amulet_of_Mysteries.png"
+  },
+  {
+    "name": "Sleeping Bag",
+    "crystals": {
+      "requires": [
+      ],
+      "provides": []
+    },
+    "type": "item",
+    "moves": [
+      {
+        "moves_requirements": [
+          "green"
+        ],
+        "moves_name": "Wilderness Rest",
+        "moves_description": "<p>When you sleep in your sleeping bag in a dangerous or wild area, you can roll +Wis. On a 10+, you rest peacefully and regain all your health and spells. On a 7-9, you rest, but choose one from the list below. On a miss, the GM will tell you what danger you encounter while resting.</p><ul><li>You are awoken by a curious animal or monster, but you manage to scare it off</li><li>You have a strange dream or vision that might have some significance</li><li>You wake up with a feeling of unease or paranoia</li></ul>"
+      },
+      {
+        "moves_requirements": [
+          "purple"
+        ],
+        "moves_name": "Cuddle Bonus",
+        "moves_description": "<p>When you share your sleeping bag with someone, you can roll +Cha. On a 10+, you both get some extra rest and choose one from the list below. On a 7-9, you both rest, but choose only one. On a miss, you both have trouble sleeping.</p><ul><li>You both heal an additional amount of damage or recover an additional spell</li><li>You both gain a +1 forward to your next roll</li><li>You both share a moment of intimacy or bonding</li></ul>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "25 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "header_image": "SleepingBag.png"
+  },
+  {
+    "name": "Lightweight Tent",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": "item",
+    "moves": [
+      {
+        "moves_requirements": [
+          "emerald"
+        ],
+        "moves_name": "Elemental Protection",
+        "moves_description": "<p>When you set up the lightweight tent in a natural environment, you may spend 1 mp and you and your allies gain +5 ongoing to Defy Danger rolls made to avoid damage from natural elements (such as rain, wind, or extreme temperatures) while inside the tent.</p>"
+      },
+      {
+        "moves_requirements": [
+          "gold"
+        ],
+        "moves_name": "Expert Craftsmanship",
+        "moves_description": "<p>When you take the time to set up the lightweight tent properly, you can make it even more durable and stable. You and your allies can heal an additional +1d4 HP when they take a rest inside the tent.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "header_image": "Lightweight_Tent.png"
+  },
+  {
+    "name": "Ancient Runes",
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "type": [
+      "item",
+      "uncommon"
+    ],
+    "moves": [
+      {
+        "moves_requirements": [
+          "cerulean"
+        ],
+        "moves_name": "Magical Translation",
+        "moves_description": "<p>When you study the ancient runes using magical means, roll +Int. On a 10+, ask the GM two questions from the list below. On a 7-9, ask one question. The GM will answer truthfully and provide any additional relevant information.<ul><li>What magical properties or effects does this script describe or enable?</li><li>What is the historical significance of this script or what event does it describe?</li><li>What kind of ritual or spell can be performed using this script?</li><li>What kind of magical creature or entity is mentioned in this script?</li></ul></p>"
+      },
+      {
+        "moves_requirements": [
+          "white"
+        ],
+        "moves_name": "Divine Insight",
+        "moves_description": "<p>When you seek the guidance of a divine entity to understand the ancient runes, spend 1 mp and roll +Wis. On a 10+, the divine entity provides you with a clear and unambiguous answer to your question. On a 7-9, the divine entity answers truthfully, but may also ask you to perform a task or service in return for its help.</p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "header_image": "AncientRunes.png"
+  },
   {
     "name": "Mace",
     "crystals": {
       "requires": [],
       "provides": []
     },
-    "type": ["item", "weapon"],
+    "type": [
+      "item",
+      "weapon"
+    ],
     "moves": [
       {
-        "moves_requirements": ["red"],
+        "moves_requirements": [
+          "red"
+        ],
         "moves_name": "Crusher Blow",
         "moves_description": "<p>When you attack with a mace, roll +Str. On a 9-17, you deal your damage. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack shatters or crushes something your target is holding or wearing</li><li>Your attack sends a shockwave, knocking down or stunning nearby enemies</li><li>Your attack deals +1d4 damage</li></ul>"
       },
       {
-        "moves_requirements": ["orange"],
+        "moves_requirements": [
+          "orange"
+        ],
         "moves_name": "All In",
         "moves_description": "<p>When you use a mace to hack and slash an enemy of your deity or cause, you can choose to take -5 to the roll. If you do, you add +2d4 to the damage you deal on a hit.</p>"
       }
@@ -19709,7 +19940,6 @@
     "name": "Gambeson armor",
     "crystals": {
       "requires": [
-        "red"
       ],
       "provides": []
     },
@@ -19717,7 +19947,22 @@
       "item",
       "armor"
     ],
-    "description": "<p><p class=\"subtitle\">Cushion:</p> <p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive). When you take damage from a blunt weapon or an arrow while wearing gambeson armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p><p class=\"subtitle\">Stealthy:</p><p>When you use gambeson armor to defy danger by sneaking or hiding, you get +1 to the roll. This armor is quiet and can be dyed to match different environments.</p></p>",
+    "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Cushion",
+      "moves_description": "<p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive). When you take damage from a blunt weapon or an arrow while wearing gambeson armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p>"
+    },
+    {
+      "moves_requirements": [
+        "black"
+      ],
+      "moves_name": "Stealthy",
+      "moves_description": "<p>When you use gambeson armor to defy danger by sneaking or hiding, you get +1 to the roll. This armor is quiet and can be dyed to match different environments.</p></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -19747,8 +19992,21 @@
     "type": [
       "item",
       "armor"
-    ],
-    "description": "<p><p class=\"subtitle\">Deflect:</p> <p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive). When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p><p class=\"subtitle\">Cushion:</p> <p>When you take damage from a blunt weapon or an arrow while wearing plate armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p><p class=\"subtitle\">Bulky:</p><p>When you use plate armor to defy danger by being stealthy, agile, or swimming, you get -5 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take +1d8 damage and must defy danger to avoid being stunned.</p></p>",
+    ], "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Deflect",
+      "moves_description": "<p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive). When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p>"
+    },
+    {
+      "moves_requirements": [
+      ],
+      "moves_name": "Stealthy",
+      "moves_description": "<p>When you use plate armor to defy danger by being stealthy, agile, or swimming, you get -5 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take +1d8 damage and must defy danger to avoid being stunned.</p></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -19777,8 +20035,21 @@
     "type": [
       "item",
       "armor"
-    ],
-    "description": "<p><p class=\"subtitle\">Dissipative:</p> <p>When you wear chainmail armor, you get +2 armor (armor reduces the damage you receive). When you take damage from fire or acid while wearing chainmail armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d8.</p><p class=\"subtitle\">Cushion:</p> <p>When you take damage from a blunt weapon or an arrow while wearing chainmail armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p><p class=\"subtitle\">Clumsy:</p><p>When you use chainmail armor to defy danger by being stealthy or agile, you get -1 to the roll. This armor is noisy and heavy, making you more noticeable and slower.</p></p>",
+    ], "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Dissipative",
+      "moves_description": "<p>When you wear chainmail armor, you get +2 armor (armor reduces the damage you receive). When you take damage from fire or acid while wearing chainmail armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d8.</p>"
+    },
+    {
+      "moves_requirements": [
+      ],
+      "moves_name": "Clumsy",
+      "moves_description": "<p>When you use chainmail armor to defy danger by being stealthy or agile, you get -1 to the roll. This armor is noisy and heavy, making you more noticeable and slower.</p></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -19921,12 +20192,25 @@
     "name": "Buckler",
     "crystals": {
       "requires": [
-        "red"
       ],
       "provides": []
     },
-    "type": "item",
-    "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you attack with a buckler, roll +Dex. On a 9-17, you deal your damage and gain +1 armor until your next action. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack exposes or exploits a weakness in your target\\'s defense, giving you or an ally +1 forward to their next attack against them</li><li>Your attack disarms or distracts your target, giving you or an ally an opportunity to quickly act before they can react</li><li>Your attack stuns or wounds your target, causing them to take -1 ongoing to all rolls until they receive healing or medical attention</li></ul><p class=\"subtitle\">Dodge and Parry:</p><p>When you use a buckler to defend yourself in close quarters, roll+Dex instead of +Con. On a 18+, you evade or deflect the attack and take no damage. On a 9-17, you evade or deflect the attack but suffer a -1 penalty to your next action.</p></p>",
+    "type": "item",  "moves": [
+    {
+      "moves_requirements": [
+        "red"
+      ],
+      "moves_name": "Quick Strike:",
+      "moves_description": "When you attack with a buckler, roll +Dex. On a 9-17, you deal your damage and gain +1 armor until your next action. On a 18+, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack exposes or exploits a weakness in your target\\'s defense, giving you or an ally +1 forward to their next attack against them</li><li>Your attack disarms or distracts your target, giving you or an ally an opportunity to quickly act before they can react</li><li>Your attack stuns or wounds your target, causing them to take -1 ongoing to all rolls until they receive healing or medical attention</li></ul>"
+    },
+    {
+      "moves_requirements": [
+        "black"
+      ],
+      "moves_name": "Dodge and Parry",
+      "moves_description": "<p>When you use a buckler to defend yourself in close quarters, roll+Dex instead of +Con. On a 18+, you evade or deflect the attack and take no damage. On a 9-17, you evade or deflect the attack but suffer a -1 penalty to your next action.</p></p>"
+    }
+  ],
     "stats": [
       {
         "stat_name": "weight",
@@ -20809,7 +21093,10 @@
       "requires": [],
       "provides": []
     },
-    "type": ["item", "common"],
+    "type": [
+      "item",
+      "common"
+    ],
     "description": "<p><p class=\"subtitle\">Money:</p> <p>When you use 1 kg of gold to buy something, mark off the gold and you have enough money for the purchase. 1 kg of gold is equivalent to 1000 coins",
     "geo_location": {
       "latitude": 37.7749,
@@ -26422,1031 +26709,1031 @@
       "longitude": -122.4194
     }
   },
-    {
-      "name": "Deer Antler",
-      "description": "A large antler shed by a deer. It could be used as a decoration or crafted into something useful.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "header_image": "Deer_Antler.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "10 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      }
+  {
+    "name": "Deer Antler",
+    "description": "A large antler shed by a deer. It could be used as a decoration or crafted into something useful.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Fishing Net",
-      "description": "A large net used for catching fish. It could also be used for other purposes, like trapping small animals.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Deer_Antler.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
       },
-      "header_image": "Fishing_Net.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "3 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "20 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "10 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Fishing Net",
+    "description": "A large net used for catching fish. It could also be used for other purposes, like trapping small animals.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Mushroom Spores",
-      "description": "A vial of spores from a rare and delicious mushroom. If planted in the right conditions, they could grow into a valuable crop.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Fishing_Net.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "3 kg"
       },
-      "header_image": "Mushroom_Spores.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "50 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Mushroom Spores",
+    "description": "A vial of spores from a rare and delicious mushroom. If planted in the right conditions, they could grow into a valuable crop.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Rabbit Foot",
-      "description": "A lucky charm made from the foot of a rabbit. It is said to bring good fortune to its owner.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Mushroom_Spores.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
       },
-      "header_image": "Rabbit_Foot.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "5 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Rabbit Foot",
+    "description": "A lucky charm made from the foot of a rabbit. It is said to bring good fortune to its owner.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Hunting Trap",
-      "description": "A metal trap used for catching small animals. It could be dangerous if mishandled.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Rabbit_Foot.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
       },
-      "header_image": "Hunting_Trap.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "30 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "5 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Hunting Trap",
+    "description": "A metal trap used for catching small animals. It could be dangerous if mishandled.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Bear Grease",
-      "description": "A jar of grease made from bear fat. It could be used as a lubricant or as a salve for treating minor injuries.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Hunting_Trap.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Bear_Grease.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "15 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "30 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Bear Grease",
+    "description": "A jar of grease made from bear fat. It could be used as a lubricant or as a salve for treating minor injuries.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Honeycomb",
-      "description": "A delicious and sweet honeycomb harvested from a beehive. It could be used as a sweetener or as a trade item.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Bear_Grease.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Honeycomb.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "25 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "15 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Honeycomb",
+    "description": "A delicious and sweet honeycomb harvested from a beehive. It could be used as a sweetener or as a trade item.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Falconry Gloves",
-      "description": "A pair of gloves used for handling and training falcons. They are made from sturdy leather and have reinforced fingertips.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Honeycomb.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Falconry_Gloves.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "50 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "25 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Falconry Gloves",
+    "description": "A pair of gloves used for handling and training falcons. They are made from sturdy leather and have reinforced fingertips.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Wolf Pelt",
-      "description": "A thick and warm pelt from a wolf. It could be used as a rug or as a piece of clothing.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Falconry_Gloves.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Wolf_Pelt.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "35 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Wolf Pelt",
+    "description": "A thick and warm pelt from a wolf. It could be used as a rug or as a piece of clothing.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Horned Beetle",
-      "description": "A large and dangerous beetle with sharp horns. It could be used as a test of courage or as a rare ingredient for alchemical concoctions.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Wolf_Pelt.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Horned_Beetle.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "100 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "35 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Horned Beetle",
+    "description": "A large and dangerous beetle with sharp horns. It could be used as a test of courage or as a rare ingredient for alchemical concoctions.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Tracking Powder",
-      "description": "A fine powder made from crushed herbs and minerals. It could be used to track animals or as a component for certain spells.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Horned_Beetle.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Tracking_Powder.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "20 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Tracking Powder",
+    "description": "A fine powder made from crushed herbs and minerals. It could be used to track animals or as a component for certain spells.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Climbing Rope",
-      "description": "A sturdy 50-foot length of rope, perfect for climbing or rappelling.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Tracking_Powder.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
       },
-      "header_image": "Climbing_Rope.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "30 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Climbing Rope",
+    "description": "A sturdy 50-foot length of rope, perfect for climbing or rappelling.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Grappling Hook",
-      "description": "A metal hook attached to a length of rope, useful for climbing and rappelling or pulling objects toward you.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Climbing_Rope.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Grappling_Hook.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "10 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "30 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Grappling Hook",
+    "description": "A metal hook attached to a length of rope, useful for climbing and rappelling or pulling objects toward you.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Flint and Steel",
-      "description": "A small kit containing flint and steel for starting fires in the wilderness.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Grappling_Hook.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
       },
-      "header_image": "Flint_and_Steel.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "5 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "10 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Flint and Steel",
+    "description": "A small kit containing flint and steel for starting fires in the wilderness.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Healing Herbs",
-      "description": "A bundle of healing herbs that can be used to make a poultice or tea that heals 1d8 HP.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Flint_and_Steel.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Healing_Herbs.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "20 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "5 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Healing Herbs",
+    "description": "A bundle of healing herbs that can be used to make a poultice or tea that heals 1d8 HP.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Lockpicks",
-      "description": "A small set of tools used for picking locks. Useful for getting past locked doors and chests.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Healing_Herbs.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Lockpicks.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "25 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Lockpicks",
+    "description": "A small set of tools used for picking locks. Useful for getting past locked doors and chests.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Cooking Pot",
-      "description": "A small pot with a lid, useful for cooking meals over a campfire.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Lockpicks.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Cooking_Pot.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "10 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "25 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Cooking Pot",
+    "description": "A small pot with a lid, useful for cooking meals over a campfire.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Antitoxin",
-      "description": "A vial of antitoxin that can be used to cure poison.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Cooking_Pot.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
       },
-      "header_image": "Antitoxin.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "50 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "10 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Antitoxin",
+    "description": "A vial of antitoxin that can be used to cure poison.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Sleeping Bag",
-      "description": "A warm, comfortable sleeping bag that provides a good night's rest in the wilderness.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Antitoxin.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Sleeping_Bag.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "50 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Sleeping Bag",
+    "description": "A warm, comfortable sleeping bag that provides a good night's rest in the wilderness.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Signal Whistle",
-      "description": "A small whistle that can be used to signal for help or to communicate with allies at a distance.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Sleeping_Bag.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Signal_Whistle.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "5 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "50 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Signal Whistle",
+    "description": "A small whistle that can be used to signal for help or to communicate with allies at a distance.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Chromatic Dust",
-      "description": "A small bag of shimmering dust that, when thrown into the air, creates a colorful, distracting display.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Signal_Whistle.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
       },
-      "header_image": "Chromatic_Dust.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "20 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "5 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Chromatic Dust",
+    "description": "A small bag of shimmering dust that, when thrown into the air, creates a colorful, distracting display.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Mushroom Stew",
-      "description": "A thick, chunky stew made from mushrooms and other forest ingredients. It's surprisingly tasty, but the smell might be off-putting to some.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Chromatic_Dust.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
       },
-      "header_image": "Mushroom_Stew.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "2 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "20 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Mushroom Stew",
+    "description": "A thick, chunky stew made from mushrooms and other forest ingredients. It's surprisingly tasty, but the smell might be off-putting to some.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Fishing Net",
-      "description": "A large, tangled fishing net. It might be useful for catching fish or trapping small animals.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Mushroom_Stew.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
       },
-      "header_image": "Fishing_Net.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "5 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "2 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Fishing Net",
+    "description": "A large, tangled fishing net. It might be useful for catching fish or trapping small animals.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Lockpicks",
-      "description": "A set of slim metal tools used for picking locks. They look well-used and slightly rusted.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Fishing_Net.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Lockpicks.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "10 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "5 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Lockpicks",
+    "description": "A set of slim metal tools used for picking locks. They look well-used and slightly rusted.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Spool of Twine",
-      "description": "A small spool of rough twine. It might come in handy for tying things up or making traps.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Lockpicks.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Spool_of_Twine.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "1 coin"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "10 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Spool of Twine",
+    "description": "A small spool of rough twine. It might come in handy for tying things up or making traps.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Bag of Mushrooms",
-      "description": "A small bag filled with various mushrooms. They might have medicinal properties, or they might just be tasty.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Spool_of_Twine.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.2 kg"
       },
-      "header_image": "Bag_of_Mushrooms.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "3 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "1 coin"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Bag of Mushrooms",
+    "description": "A small bag filled with various mushrooms. They might have medicinal properties, or they might just be tasty.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Rat Tail",
-      "description": "A severed rat tail. It might be used in some kind of potion or spell.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Bag_of_Mushrooms.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Rat_Tail.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "1 coin"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "3 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Rat Tail",
+    "description": "A severed rat tail. It might be used in some kind of potion or spell.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Horned Beetle Shell",
-      "description": "A sturdy shell from a horned beetle. It could be used to fashion armor or other protective gear.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Rat_Tail.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
       },
-      "header_image": "Horned_Beetle_Shell.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "4 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "1 coin"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Horned Beetle Shell",
+    "description": "A sturdy shell from a horned beetle. It could be used to fashion armor or other protective gear.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Sack of Grain",
-      "description": "A large sack filled with grain. It might be useful for feeding animals or for making bread.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Horned_Beetle_Shell.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Sack_of_Grain.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "3 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "4 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Sack of Grain",
+    "description": "A large sack filled with grain. It might be useful for feeding animals or for making bread.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Bottle of Oil",
-      "description": "A small bottle filled with oil. It might be used for lighting torches or for making things slippery.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Sack_of_Grain.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Bottle_of_Oil.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.3 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "2 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "3 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Bottle of Oil",
+    "description": "A small bottle filled with oil. It might be used for lighting torches or for making things slippery.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Furry Pelt",
-      "description": "A shaggy pelt from some kind of small animal. It might be used for warmth or for making clothing.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Bottle_of_Oil.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.3 kg"
       },
-      "header_image": "Furry_Pelt.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "5 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "2 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Furry Pelt",
+    "description": "A shaggy pelt from some kind of small animal. It might be used for warmth or for making clothing.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Venetian Glass Goblet",
-      "description": "Crafted by the skilled glassblowers of Venice, this goblet features intricate patterns and vivid colors that are unique to the city's glass-making tradition.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Furry_Pelt.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Venetian_Glass_Goblet.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "150 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "5 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Venetian Glass Goblet",
+    "description": "Crafted by the skilled glassblowers of Venice, this goblet features intricate patterns and vivid colors that are unique to the city's glass-making tradition.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Bavarian Beer Stein",
-      "description": "This sturdy mug is a staple in every Bavarian household, and is decorated with intricate designs that showcase the region's rich brewing culture.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Venetian_Glass_Goblet.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
       },
-      "header_image": "Bavarian_Beer_Stein.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.8 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "100 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "150 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Bavarian Beer Stein",
+    "description": "This sturdy mug is a staple in every Bavarian household, and is decorated with intricate designs that showcase the region's rich brewing culture.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "English Tea Set",
-      "description": "This delicate tea set is made from the finest English bone china, and is adorned with classic floral patterns that are synonymous with the country's tea-drinking traditions.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Bavarian_Beer_Stein.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.8 kg"
       },
-      "header_image": "English_Tea_Set.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.7 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "200 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "English Tea Set",
+    "description": "This delicate tea set is made from the finest English bone china, and is adorned with classic floral patterns that are synonymous with the country's tea-drinking traditions.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Celtic Knot Rug",
-      "description": "Hand-woven by skilled artisans in the Celtic lands, this rug features intricate knotwork patterns that are steeped in ancient symbolism.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "English_Tea_Set.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.7 kg"
       },
-      "header_image": "Celtic_Knot_Rug.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "120 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "200 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Celtic Knot Rug",
+    "description": "Hand-woven by skilled artisans in the Celtic lands, this rug features intricate knotwork patterns that are steeped in ancient symbolism.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Norman Tapestry",
-      "description": "This exquisitely crafted tapestry tells the story of the Norman conquest of England, and is a prized possession in any Norman household.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Celtic_Knot_Rug.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Norman_Tapestry.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "180 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "120 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Norman Tapestry",
+    "description": "This exquisitely crafted tapestry tells the story of the Norman conquest of England, and is a prized possession in any Norman household.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Florentine Perfume Bottle",
-      "description": "This ornate bottle is filled with a heady perfume that is unique to the Florentine region, and is coveted by nobles and merchants alike.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Norman_Tapestry.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1.5 kg"
       },
-      "header_image": "Florentine_Perfume_Bottle.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.3 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "175 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "180 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Florentine Perfume Bottle",
+    "description": "This ornate bottle is filled with a heady perfume that is unique to the Florentine region, and is coveted by nobles and merchants alike.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Parisian Chandelier",
-      "description": "This grand chandelier is a masterpiece of Parisian craftsmanship, and features sparkling crystals that illuminate any room with a warm and inviting glow.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Florentine_Perfume_Bottle.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.3 kg"
       },
-      "header_image": "Parisian_Chandelier.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "190 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "175 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Parisian Chandelier",
+    "description": "This grand chandelier is a masterpiece of Parisian craftsmanship, and features sparkling crystals that illuminate any room with a warm and inviting glow.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Viennese Clock",
-      "description": "This elegant clock is a symbol of Viennese precision and craftsmanship, and features intricate mechanisms that keep time with unparalleled accuracy.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Parisian_Chandelier.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "5 kg"
       },
-      "header_image": "Viennese_Clock.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "160 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "190 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Viennese Clock",
+    "description": "This elegant clock is a symbol of Viennese precision and craftsmanship, and features intricate mechanisms that keep time with unparalleled accuracy.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Swiss Cheese Board",
-      "description": "This rustic cheese board is hand-carved from the finest Swiss wood, and is a staple in every Swiss household for serving up delicious cheeses and charcuterie.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Viennese_Clock.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "2 kg"
       },
-      "header_image": "Swiss_Cheese_Board.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "110 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "160 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Swiss Cheese Board",
+    "description": "This rustic cheese board is hand-carved from the finest Swiss wood, and is a staple in every Swiss household for serving up delicious cheeses and charcuterie.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
-    {
-      "name": "Tuscan Olive Oil Flask",
-      "description": "This rustic flask is filled with the finest olive oil from the rolling hills of Tuscany, and is a prized possession in any Tuscan kitchen.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
+    "header_image": "Swiss_Cheese_Board.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
       },
-      "header_image": "Tuscan_Olive_Oil_Flask.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "130 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
+      {
+        "stat_name": "price",
+        "stat_value": "110 coins"
       }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Tuscan Olive Oil Flask",
+    "description": "This rustic flask is filled with the finest olive oil from the rolling hills of Tuscany, and is a prized possession in any Tuscan kitchen.",
+    "type": "item",
+    "crystals": {
+      "requires": [],
+      "provides": []
     },
+    "header_image": "Tuscan_Olive_Oil_Flask.png",
+    "moves": [],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "130 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
   {
     "name": "Eadric's Larder of Leicester",
     "description": "This magical larder from the city of Leicester can preserve food for weeks without spoilage. It is powered by a crystal shard enchanted by an alchemist.",
@@ -29716,38 +30003,33 @@
     }
   },
   {
-    "name": "Dragon's Memory Dust",
+    "name": "Weak Soul Gem",
     "type": [
-      "item",
-      "uncommon",
-      "ingredient"
+      "material",
+      "common",
+      "item"
     ],
     "crystals": {
       "requires": [],
       "provides": []
     },
-    "header_image": "Dragon's Memory Dust.png",
+    "header_image": "Weak Soul Gem.png",
+    "description": "",
     "moves": [
       {
-        "moves_requirements": [
-          "black"
-        ],
-        "moves_name": "Harvest Memory Dust",
-        "moves_description": "When you harvest the memory dust from a Timewarping Dragon's mind-altering breath, you can make a potion that grants you the power to manipulate memories. When you drink this potion, roll +CHA. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You can erase a memory from a target's mind (up to the last 24 hours) or make them forget a specific fact or piece of information</li><li>You can implant a false memory in a target's mind, making them believe something that never happened or something that is not true</li> <li>You gain temporary access to a specific memory of the Timewarping Dragon, gaining insight into a situation or a person</li></ul> The effect lasts for 1 hour and requires spending 1 MP to use. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP."
+        "moves_requirements": "",
+        "moves_name": "Harvest Weak Soul Gem",
+        "moves_description": "You can combine it with other ingredients to create a Minor Glyph, a magical symbol that can be used to enchant items. To create a Minor Glyph, you need to spend 1 hour of uninterrupted work and have access to a crafting station  and some ingredients that will determine its properties. Once created, the glyph can be applied to an item with an enchantment slot, granting it a minor magical effect. "
       }
     ],
     "stats": [
       {
         "stat_name": "weight",
-        "stat_value": "1 kg"
+        "stat_value": "0.05 kg"
       },
       {
         "stat_name": "price",
-        "stat_value": "100 coins"
-      },
-      {
-        "stat_name": "source",
-        "stat_value": "Timewarping Dragon"
+        "stat_value": "50 coins"
       }
     ],
     "geo_location": {
@@ -29756,38 +30038,166 @@
     }
   },
   {
+    "name": "Average Soul Gem",
+    "type": [
+      "material",
+      "uncommon",
+      "item"
+    ],
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "header_image": "Average Soul Gem.png",
+    "description": "",
+    "moves": [
+      {
+        "moves_requirements": "",
+        "moves_name": "Harvest Average Soul Gem",
+        "moves_description": "You can use it to create a Glyph, a powerful magical symbol that can be used to enchant items. To create a Glyph, you need to spend 2 hours of uninterrupted work and have access to a crafting station  and some ingredients that will determine its properties. Once created, the glyph can be applied to an item with an enchantment slot, granting it a significant magical effect."
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "150 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Strong Soul Gem",
+    "type": [
+      "material",
+      "rare",
+      "item"
+    ],
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "header_image": "Strong Soul Gem.png",
+    "description": "",
+    "moves": [
+      {
+        "moves_requirements": "",
+        "moves_name": "Harvest Strong Soul Gem",
+        "moves_description": "You can use it to create a Greater Glyph, a complex magical symbol that can be used to enchant items with incredibly powerful effects. To create a Greater Glyph, you need to spend 4 hours of uninterrupted work and have access to a crafting station and some ingredients that will determine its properties. Once created, the glyph can be applied to an item with an enchantment slot, granting it an incredibly powerful magical effect."
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.2 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "500 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },{
+  "name": "Goblin's Tooth",
+  "type": [
+    "material",
+    "common",
+    "item"
+  ],
+  "crystals": {
+    "requires": [],
+    "provides": []
+  },
+  "header_image": "Goblin's Tooth.png",
+  "moves": [
+    {
+      "moves_requirements": "",
+      "moves_name": "Potion of Goblin's Fury",
+      "moves_description": "You can craft 50 potions spending 10 coins each. When you drink this potion, roll +STR. On a 20+ choose 3, on a 16+, choose 2. On a 9-15, choose only one.<ul><li>You gain the ability to see in the dark for 1 hour.</li><li>You gain the ability to move quickly for 1 minute, gaining +1 armor and +1d4 damage to your next attack.</li><li>You gain the ability to intimidate your enemies, making them flee for a short time.</li></ul>"
+    },
+    {
+      "moves_requirements": "cerulean",
+      "moves_name": "Minor Glyph of Goblin's Rage",
+      "moves_description": "(Requires Weak Soul Gem to craft it) <br> Costs 1 mp to use it, works like Goblin's Fury, but +3 to STR roll and has an additional option: create a sonic boom that damages enemies in a cone in front of you."
+    },
+    {
+      "moves_requirements": "cerulean",
+      "moves_name": "Glyph of Goblin's Wrath",
+      "moves_description": "(Requires Average Soul Gem to craft it) <br> Costs 2 mp to use it, works like Goblin's Fury, but +3 to STR roll and has an additional option: summon a pack of goblin minions to fight by your side for 1 minute."
+    },
+    {
+      "moves_requirements": "cerulean",
+      "moves_name": "Greater Glyph of Goblin's Havoc",
+      "moves_description": "(Requires Strong Soul Gem to craft it) <br> Costs 3 mp to use it, works like Goblin's Fury, but +3 to STR roll and has an additional option: transform into a giant goblin for 1 minute, gaining +3 armor and +2d6 damage to your attacks."
+    }
+  ],
+  "stats": [
+    {
+      "stat_name": "weight",
+      "stat_value": "0.05 kg"
+    },
+    {
+      "stat_name": "price",
+      "stat_value": "50 coins"
+    }
+  ],
+  "geo_location": {
+    "latitude": 47.6062,
+    "longitude": -122.3321
+  }
+},
+  {
     "name": "Dragon's Lightning Essence",
     "type": [
-      "item",
-      "uncommon",
-      "ingredient"
+      "material",
+      "rare",
+      "item"
     ],
     "crystals": {
       "requires": [],
       "provides": []
     },
     "header_image": "Dragon's Lightning Essence.png",
+    "description": "",
     "moves": [
       {
-        "moves_requirements": [
-          "gold"
-        ],
-        "moves_name": "Harvest Lightning Essence",
-        "moves_description": "When you harvest the lightning essence from a Timewarping Dragon's electrifying breath, you can make a potion that grants you the power of lightning. When you drink this potion, roll +INT. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You gain the ability to channel lightning through your body, dealing extra damage with your melee attacks and creating electric arcs that hit nearby enemies</li><li>You gain the ability to control and redirect lightning bolts, striking targets within your line of sight</li><li>You gain the ability to create an electric shield around you, blocking incoming attacks and dealing damage to attackers</li></ul> Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP."
+        "moves_requirements": "",
+        "moves_name": "Potion of Lightning",
+        "moves_description": "You can craft 50 potions spending 100 coins each. When you drink this potion, roll +INT. On a 20+ choose 3, on a 16+, choose 2. On a 9-15, choose only one.<ul><li>You gain the ability to channel lightning through your body, dealing extra md damage with your melee attacks and creating electric arcs that hit nearby enemies</li><li>You gain the ability to create an electric shield around you, absorbing md damage and dealing it to attackers</li></ul>"
+      },
+      {
+        "moves_requirements": "cerulean",
+        "moves_name": "Minor Glyph of Lightning",
+        "moves_description": "(Requires Weak Soul Gem to craft it) <br> Costs 1 mp to use it, works like Potion of Lightning"
+      },
+      {
+        "moves_requirements": "cerulean",
+        "moves_name": "Glyph of Lightning",
+        "moves_description": "(Requires Average Soul Gem to craft it) <br> Costs 2 mp to use it, works like Potion of Lightning, but +3 to INT roll and has an additional option: create a lightning blast that damages all enemies within range."
+      },
+      {
+        "moves_requirements": "cerulean",
+        "moves_name": "Greater Glyph of Lightning",
+        "moves_description": "(Requires Strong Soul Gem to craft it) <br> Costs 3 mp to use it, works like Potion of Lightning, but +3 to INT roll and has an additional option:  Summon a Dragon made of lightning that lasts 1 minute"
       }
     ],
     "stats": [
       {
         "stat_name": "weight",
-        "stat_value": "1 kg"
+        "stat_value": "0.1 kg"
       },
       {
         "stat_name": "price",
-        "stat_value": "100 coins"
-      },
-      {
-        "stat_name": "source",
-        "stat_value": "Timewarping Dragon"
+        "stat_value": "300 coins"
       }
     ],
     "geo_location": {
@@ -29796,38 +30206,103 @@
     }
   },
   {
-    "name": "Dragon's Time Essence",
+    "name": "Raw Gem",
     "type": [
-      "item",
-      "uncommon",
-      "ingredient"
+      "material",
+      "common",
+      "item"
     ],
     "crystals": {
       "requires": [],
       "provides": []
     },
-    "header_image": "Dragon's Time Essence.png",
+    "header_image": "Raw Gem.png",
+    "description": "A raw gemstone of various colors and types, not worth much on its own. Examples: Agate, Amazonite, Amber, Amethyst, Aventurine, Bloodstone, Carnelian, Chrysoprase, Citrine, Fluorite, Garnet, Hematite, Jade, Jasper, Lapis Lazuli, Moonstone, Obsidian, Peridot, Rose Quartz, Turquoise",
     "moves": [
       {
-        "moves_requirements": [
-          "cerulean"
-        ],
-        "moves_name": "Harvest Time Essence",
-        "moves_description": "When you harvest the time essence from a Timewarping Dragon's temporal breath, you can make a potion that grants you the power to manipulate time. When you drink this potion, roll +WIS. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You can slow down time, giving yourself an advantage in combat and allowing you to dodge attacks more easily</li><li>You can speed up time, gaining extra movement and actions during your turn</li><li>You can jump through time, moving yourself or a target a few seconds or minutes into the past or future, depending on the level of success</li></ul>. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP.</p>"
+        "moves_requirements": "",
+        "moves_name": "Create Weak Soul Gem",
+        "moves_description": "When a creature with a lesser soul dies in the vicinity of a raw gem, its soul gets catpured by it creating a Weak Soul Gem."
       }
     ],
     "stats": [
       {
         "stat_name": "weight",
-        "stat_value": "1 kg"
+        "stat_value": "0.1 kg"
       },
       {
         "stat_name": "price",
-        "stat_value": "100 coins"
+        "stat_value": "50 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Precious Gem",
+    "type": [
+      "material",
+      "uncommon",
+      "item"
+    ],
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "header_image": "Precious Gem.png",
+    "description": "A beautiful gemstone of various colors and types, with a moderate value. Examples: Diamond, Emerald, Ruby, Sapphire, Opal, Aquamarine, Topaz, Garnet, Amethyst, Pearl, Tourmaline, Alexandrite, Tanzanite, Zircon, Peridot, Spinel, Morganite, Tsavorite, Chrome Diopside, Kunzite",
+    "moves": [
+      {
+        "moves_requirements": "",
+        "moves_name": "Create Average Soul Gem",
+        "moves_description": "When a creature with a average soul dies in the vicinity of a precious gem, its soul gets catpured by it creating a Average Soul Gem."
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.2 kg"
       },
       {
-        "stat_name": "source",
-        "stat_value": "Timewarping Dragon"
+        "stat_name": "price",
+        "stat_value": "150 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Very Rare Gem",
+    "type": [
+      "material",
+      "rare",
+      "item"
+    ],
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "header_image": "Very Rare Gem.png",
+    "description": "An extremely valuable and rare gemstone of various colors and types. Examples: Black Opal, Demantoid Garnet, Jadeite, Benitoite, Musgravite, Grandidierite, Tanzanite, Poudretteite, Serendibite, Red Beryl, Jeremejevite, Paraiba Tourmaline, Blue Garnet, Painite, Black Jade, Benitoite, Alexandrite, Red Diamonds, Pink Star Diamond, Blue Moon Diamond",
+    "moves": [
+      {
+        "moves_requirements": "",
+        "moves_name": "Create Strong Soul Gem",
+        "moves_description": "When a creature with a strong soul dies in the vicinity of a very rare gem, its soul gets catpured by it creating a Strong Soul Gem."
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "0.5 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "1000 coins"
       }
     ],
     "geo_location": {
@@ -29838,9 +30313,9 @@
   {
     "name": "Thunderstone",
     "type": [
-      "item",
-      "uncommon",
-      "ingredient"
+      "material",
+      "rare",
+      "item"
     ],
     "crystals": {
       "requires": [],
@@ -29849,11 +30324,9 @@
     "header_image": "Thunderstone.png",
     "moves": [
       {
-        "moves_requirements": [
-          "gold"
-        ],
-        "moves_name": "Harvest Thunderstone",
-        "moves_description": "When you harvest a Thunderstone from a Timewarping Dragon's body, you can create a potion that imbues the user with the power of thunder. When you drink this potion, roll +CON. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>Your next melee attack deals extra lightning damage</li><li>You gain resistance to lightning damage for the next hour</li><li>You can summon a bolt of lightning to strike a target within your line of sight</li></ul> The effect lasts for 1 hour, during which you can use any of the chosen options. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP.</p>"
+        "moves_requirements": "",
+        "moves_name": "",
+        "moves_description": "<p>You learn a recipe of a poison that inflicts a debilitating shock to the target's nervous system. You can craft 50 of them spending 100 coins each. When you apply this poison to a weapon, roll +DEX. On a 10+, choose 3. On a 7-9, choose only 1. </p><ul><li>The target is stunned and cannot act for a few seconds</li><li>The target takes extra damage from the poisoned weapon</li><li>The target is unable to use magical abilities for a few seconds</li><li>The target's movements are slowed down, reducing its speed and agility</li></ul><p>Additionally, you can use the thunderstone to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +DEX and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your DEX roll. You can also choose to add an additional option: create a thunderous explosion that damages all enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your DEX roll. You can also choose to add two additional options: create a chain lightning effect that jumps from one target to another within range, or create a thunderstorm that damages all enemies within an area.</li></ul><p></p>"
       }
     ],
     "stats": [
@@ -29864,10 +30337,6 @@
       {
         "stat_name": "price",
         "stat_value": "100 coins"
-      },
-      {
-        "stat_name": "source",
-        "stat_value": "Timewarping Dragon"
       }
     ],
     "geo_location": {
@@ -29878,22 +30347,20 @@
   {
     "name": "Stormglass",
     "type": [
-      "item",
-      "uncommon",
-      "ingredient"
+      "material",
+      "rare",
+      "item"
     ],
     "crystals": {
       "requires": [],
       "provides": []
     },
-    "header_image": "Stormglass.png",
+    "header_image": "Dragon's Stormglass.png",
     "moves": [
       {
-        "moves_requirements": [
-          "blue"
-        ],
-        "moves_name": "Harvest Stormglass",
-        "moves_description": "When you harvest Stormglass from a Timewarping Dragon's scales, you can create a potion that grants the user the power of protection. When you drink this potion, roll +WIS. On a 10+, choose 3 of the following options. On a 7-9, choose only one. <ul><li>You gain resistance to elemental damage for the next hour</li><li>You gain a +1 bonus to AC for the next hour</li><li>You can create a barrier that protects you and your allies from incoming attacks</li></ul>. Additionally, you can also enchant an item, allowing you to use any of the chosen options as a triggered ability. However, each use of the enchantment requires spending 1 MP.</p>"
+        "moves_requirements": "",
+        "moves_name": "",
+        "moves_description": "<p>You learn to craft a glass shard that shatters on impact and releases a powerful electric shock. You can craft 50 of them spending 100 coins each.  When you throw this poison shard at a target, roll +DEX. On a 10+, choose 3. On a 7-9, choose only 1.</p><ul><li>The target takes damage from the poison and is stunned for a few seconds</li><li>The target takes extra damage from the poisoned shard</li><li>The target is unable to use magical abilities for a few seconds</li><li>The target's movements are slowed down, reducing its speed and agility</li></ul><p>Additionally, you can use the stormglass to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +DEX and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your DEX roll. You can also choose to add an additional option: create a thunderous explosion that damages all enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your DEX roll. You can also choose to add two additional options: create a chain lightning effect that jumps from one target to another within range, or create a thunderstorm that damages all enemies within an area.</li></ul><p></p>"
       }
     ],
     "stats": [
@@ -29904,15 +30371,154 @@
       {
         "stat_name": "price",
         "stat_value": "100 coins"
-      },
-      {
-        "stat_name": "source",
-        "stat_value": "Timewarping Dragon"
       }
     ],
     "geo_location": {
       "latitude": 37.7749,
       "longitude": -122.4194
     }
+  },
+  {
+    "name": "Dragon's Memory Dust",
+    "type": [
+      "material",
+      "rare",
+      "item"
+    ],
+    "crystals": {
+      "requires": [],
+      "provides": []
+    },
+    "header_image": "Dragon's Memory Dust.png",
+    "moves": [
+      {
+        "moves_requirements": "",
+        "moves_name": "",
+        "moves_description": "<p>You learn to craft a poison that inflicts a memory loss effect on your target. You can craft 50 of them spending 100 coins each. When you apply this poison to a weapon, roll +DEX. On a 10+, choose 2. On a 7-9, choose only one.</p><ul><li>The target forgets how to use their weapon and suffers a -2 penalty to their attack rolls</li><li>The target forgets their skills and abilities, losing access to one of them (GM's choice)</li></ul><p>Additionally, you can use the memory dust to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +INT and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your INT roll. You can also choose to add an additional option: create an illusion that makes the target forget their current objective and become confused for one turn.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your INT roll. You can also choose to add two additional options: make the target forget all their spells and magical abilities, or make them forget a crucial piece of information related to their current quest or mission.</li></ul><p></p>"
+      }
+    ],
+    "stats": [
+      {
+        "stat_name": "weight",
+        "stat_value": "1 kg"
+      },
+      {
+        "stat_name": "price",
+        "stat_value": "100 coins"
+      }
+    ],
+    "geo_location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  },
+  {
+    "name": "Dragon's Time Essence",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "1 kg",
+    "moves": [
+      {
+        "moves_requirement": "gold",
+        "moves_name": "",
+        "moves_description": "<p>You learn a recipe of a potion and can craft 50 of them spending 100 coins each. When you drink this potion, roll +INT. On a 10+, choose 2. On a 7-9, choose only one.</p><ul><li>You gain the ability to slow down time for everyone except yourself, allowing you to act more quickly and dodge attacks with ease.</li><li>You gain the ability to speed up time for yourself, allowing you to move and attack faster than your enemies can react.</li></ul><p>Additionally, you can use the time essence to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +INT and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your INT roll. You can also choose to add an additional option: create a temporal distortion that slows down enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your INT roll. You can also choose to add two additional options: create a temporal acceleration that speeds up allies within range, or create a time-stop effect that freezes all enemies within an area.</li></ul><p></p>"
+      }
+    ]}
+  ,
+  {
+    "name": "Thunderstone",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "1 kg",
+    "move": {
+      "moves_requirement": "gold",
+      "moves_name": "",
+      "moves_description": "<p>You learn a recipe of a poison that inflicts a debilitating shock to the target's nervous system. You can craft 50 of them spending 100 coins each. When you apply this poison to a weapon, roll +DEX. On a 10+, choose 3. On a 7-9, choose only 1. </p><ul><li>The target is stunned and cannot act for a few seconds</li><li>The target takes extra damage from the poisoned weapon</li><li>The target is unable to use magical abilities for a few seconds</li><li>The target's movements are slowed down, reducing its speed and agility</li></ul><p>Additionally, you can use the thunderstone to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +DEX and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your DEX roll. You can also choose to add an additional option: create a thunderous explosion that damages all enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your DEX roll. You can also choose to add two additional options: create a chain lightning effect that jumps from one target to another within range, or create a thunderstorm that damages all enemies within an area.</li></ul><p></p>"
+    }
+  },
+  {
+    "name": "Stormglass",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "1 kg",
+    "moves": [{
+      "moves_requirement": "gold",
+      "moves_name": "",
+      "moves_description": "<p>You learn to craft a glass shard that shatters on impact and releases a powerful electric shock. You can craft 50 of them spending 100 coins each.  When you throw this poison shard at a target, roll +DEX. On a 10+, choose 3. On a 7-9, choose only 1.</p><ul><li>The target takes damage from the poison and is stunned for a few seconds</li><li>The target takes extra damage from the poisoned shard</li><li>The target is unable to use magical abilities for a few seconds</li><li>The target's movements are slowed down, reducing its speed and agility</li></ul><p>Additionally, you can use the stormglass to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +DEX and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your DEX roll. You can also choose to add an additional option: create a thunderous explosion that damages all enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your DEX roll. You can also choose to add two additional options: create a chain lightning effect that jumps from one target to another within range, or create a thunderstorm that damages all enemies within an area.</li></ul><p></p>"
+    }]},
+  {
+    "name": "Dragon's Memory Dust",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "1 kg",
+    "move": {
+      "requirement": "gold",
+      "name": "",
+      "description": "<p>You learn to craft a poison that inflicts a memory loss effect on your target. You can craft 50 of them spending 100 coins each. When you apply this poison to a weapon, roll +DEX. On a 10+, choose 2. On a 7-9, choose only one.</p><ul><li>The target forgets how to use their weapon and suffers a -2 penalty to their attack rolls</li><li>The target forgets their skills and abilities, losing access to one of them (GM's choice)</li></ul><p>Additionally, you can use the memory dust to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +INT and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your INT roll. You can also choose to add an additional option: create an illusion that makes the target forget their current objective and become confused for one turn.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your INT roll. You can also choose to add two additional options: make the target forget all their spells and magical abilities, or make them forget a crucial piece of information related to their current quest or mission.</li></ul><p></p>"
+    }
+  },
+  {
+    "name": "Troll's Blood Moss",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "50 coins",
+    "weight": "0.5 kg",
+    "moves": [{
+      "moves_requirement": "gold",
+      "moves_name": "",
+      "moves_description": "<p>You learn to brew a potion that grants immense strength and endurance for a short period of time. You can brew 10 of them spending 50 coins each. When you drink this potion, roll +CON. On a 10+, choose 3. On a 7-9, choose only 1.</p><ul><li>Your physical attacks deal extra damage</li><li>You gain resistance to physical damage</li><li>You can lift and carry heavy objects with ease</li><li>You can run and swim at incredible speeds</li></ul><p>Additionally, you can use the Troll's Blood Moss to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +CON and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your CON roll. You can also choose to add an additional option: create a shockwave that knocks back enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your CON roll. You can also choose to add two additional options: create a sonic boom that damages all enemies within an area, or create a force field that grants temporary invulnerability to you and your allies within range.</li></ul><p></p>"
+    }]
+  },
+  {
+    "name": "Troll's Eye",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "0.2 kg",
+    "moves": [{
+      "moves_requirement": "gold",
+      "moves_name": "",
+      "moves_description": "<p>You learn to create an elixir that enhances your vision and perception. You can create 20 of them spending 100 coins each. When you drink this elixir, roll +WIS. On a 10+, choose 3. On a 7-9, choose only 1.</p><ul><li>You can see in complete darkness</li><li>You can see invisible creatures and objects</li><li>Your vision becomes incredibly sharp, allowing you to spot hidden details and clues</li><li>You gain resistance to blindness and other vision impairments</li></ul><p>Additionally, you can use the Troll's Eye to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +WIS and choose the same options</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your WIS roll. You can also choose to add an additional option: create a blinding flash that dazzles enemies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain. a +5 bonus to your WIS roll. You can also choose to add two additional options: create an illusion that confuses enemies within range, or create a beacon that reveals hidden objects and secrets within an area.</li></ul>"
+    }]
+  },
+  {
+    "name": "Unicorn's Grace",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "1 kg",
+    "move": [{
+      "moves_description": "<p>You learn a recipe of a potion that imbues you with the grace and agility of a unicorn. When you drink this potion, roll +DEX. On a 10+, choose 2. On a 7-9, choose only one.</p><ul><li>You gain increased speed and agility, allowing you to move more quickly and dodge attacks with ease.</li><li>You gain the ability to move silently, making it harder for enemies to detect your presence.</li></ul><p>Additionally, you can use Unicorn's Grace to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +DEX and choose the same options.</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your DEX roll. You can also choose to add an additional option: create an illusionary copy of yourself that distracts enemies.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your DEX roll. You can also choose to add two additional options: create a blinding flash that dazzles enemies within range, or create a protective barrier that increases your defenses against attacks.</li></ul>"
+    }]
+  },
+  {
+    "name": "Unicorn's Healing Horn",
+    "type": [
+      "material",
+      "rare", "item"
+    ],
+    "price": "100 coins",
+    "weight": "1 kg",
+    "moves": [{
+      "moves_description": "<p>You learn a recipe of a potion that harnesses the healing power of a unicorn's horn. When you drink this potion, roll +WIS. On a 10+, choose 2. On a 7-9, choose only one.</p><ul><li>You are healed of all injuries and ailments.</li><li>You gain temporary hit points that protect you from further harm.</li></ul><p>Additionally, you can use Unicorn's Healing Horn to craft glyphs, a minor one using a weak soul gem, a normal one using an average one and a greater glyph using a strong soul gem. </p><ul><li>Minor Glyph: Spend 1 mp, roll +WIS and choose the same options.</li><li>Glyph: Spend 2 mp, choose the same options and gain a +3 bonus to your WIS roll. You can also choose to add an additional option: create a healing aura that restores the health of allies within range.</li><li>Greater Glyph: Spend 3 Mp, choose the same options and gain a +5 bonus to your WIS roll. You can also choose to add two additional options: create a burst of healing energy that restores the health of all allies within an area, or create a ward that prevents damage and negates negative effects for a short time.</li></ul>"
+    }]
   }
 ]
