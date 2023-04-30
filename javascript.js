@@ -47,21 +47,15 @@ saveDeckButton.addEventListener("click", () => {
 
 // Get the filename of the current HTML page
 const filename = window.location.pathname.split("/").pop();
+const removeAllButton = document.createElement("button");
+
 
 // Call relevant code based on the filename
-if (filename === "deck-manager.html") {
-    // Add button to selection info div
-    const selectionInfo = document.querySelector("#selection-info");
-    selectionInfo.insertBefore(saveDeckButton, selectedCardsList);}
-else {
+if (filename === "gm-panel.html") {
     // Add button to selection info div
     const selectionInfo = document.querySelector("#selection-info");
     selectionInfo.insertBefore(selectAllButton, selectedCardsList);
 
-}
-
-
-const removeAllButton = document.createElement("button");
 removeAllButton.innerText = "Remove All";
 removeAllButton.classList.add("remove-all-button");
 removeAllButton.style.display = selectedCardsList.children.length > 5 ? "block" : "none";
@@ -75,19 +69,105 @@ removeAllButton.addEventListener("click", () => {
     selectedCount.textContent = selectedCards;
 });
 
+}
+
 
 async function renderCards(jsonData, isBooster) {
+    let cardId = 0;
+    const editorModal = document.querySelector(".editor-modal");
+    const modal = document.querySelector(".editor-modal");
+    const jsonEditorSection = document.querySelector(".json-editor-section");
+    const jsonEditor = document.querySelector("#json-editor");
+    const autoCalculateToggle = document.querySelector("#auto-calculate-toggle");
+    const submitButton = document.querySelector("#submit-button");
+    const cancelButton = document.querySelector("#cancel-button");
 
     for (const card of jsonData) {
-        var cardtoRender = card;
+        card.id = cardId++;
         const cardTemplate = document.querySelector("#card-template").innerHTML;
-
         const cardElement = document.createElement("div");
-        var renderedCard = mustache.render(cardTemplate, cardtoRender);
+        var renderedCard = mustache.render(cardTemplate, card);
         cardElement.classList.add("card-container");
         cardElement.innerHTML = renderedCard;
+        cardElement.setAttribute("data-json-id", card.id);
         cardElement.setAttribute("data-json", JSON.stringify(card));
+
+        const editButton = document.createElement("button");
+        editButton.innerText = "Edit";
+        editButton.classList.add("edit-button");
+
+        const discardButton = document.createElement("button");
+        discardButton.innerText = "Discard";
+        discardButton.classList.add("discard-button");
+        discardButton.addEventListener("click", (event) => {
+            event.stopPropagation();
+            cardElement.remove();
+        });
+
+        const mainDeckButton = document.createElement("button");
+        mainDeckButton.innerText = "Put in Main Deck";
+        mainDeckButton.classList.add("main-deck-button");
+        mainDeckButton.addEventListener("click", (event) => {
+            event.stopPropagation();
+            card.status = "main_deck";
+            cardElement.setAttribute("data-json", JSON.stringify(card));
+            saveSelectedCards(cardElement);
+            const sideDeckElements = document.querySelectorAll(`[data-json-id="${card.id}"][data-status="side_deck"]`);
+            for (const sideDeckElement of sideDeckElements) {
+                sideDeckElement.classList.remove("side-deck");
+                sideDeckElement.removeAttribute("data-status");
+            }
+            cardElement.classList.add("main-deck");
+            cardElement.setAttribute("data-status", "main_deck");
+        });
+
+        const sideDeckButton = document.createElement("button");
+        sideDeckButton.innerText = "Put in SideDeck";
+        sideDeckButton.classList.add("side-deck-button");
+        sideDeckButton.addEventListener("click", (event) => {
+            event.stopPropagation();
+            card.status = "side_deck";
+            cardElement.setAttribute("data-json", JSON.stringify(card));
+            saveSelectedCards(cardElement);
+            const mainDeckElements = document.querySelectorAll(`[data-json-id="${card.id}"][data-status="main_deck"]`);
+            for (const mainDeckElement of mainDeckElements) {
+                mainDeckElement.classList.remove("main-deck");
+                mainDeckElement.removeAttribute("data-status");
+            }
+            cardElement.classList.add("side-deck");
+            cardElement.setAttribute("data-status", "side_deck");
+        });
+
+        const buttonsContainer = document.createElement("div");
+        buttonsContainer.classList.add("buttons-container");
+
+
+        if (window.location.pathname.endsWith("gm-panel.html")) {
+            const editButton = document.createElement("button");
+            editButton.innerText = "Edit";
+            editButton.classList.add("edit-button");
+
+            editButton.addEventListener("click", (event) => {
+                event.stopPropagation();
+
+                const previewCard = document.createElement("div");
+                previewCard.innerHTML = mustache.render(cardTemplate, card);
+                const cardPreview = document.querySelector(".card-preview");
+                cardPreview.setAttribute("data-json-id", JSON.stringify(card.id));
+                cardPreview.innerHTML = "";
+                cardPreview.appendChild(previewCard);
+
+                editorModal.classList.add("open");
+                jsonEditor.value = JSON.stringify(card, null, 2);
+            });
+
+            buttonsContainer.appendChild(editButton);
+        }
+
+        cardElement.appendChild(buttonsContainer);
+
         document.querySelector("#card-grid").appendChild(cardElement);
+
         cardElement.addEventListener("click", () => {
             if (cardElement.classList.contains("flipped")) {
                 return;
@@ -99,38 +179,154 @@ async function renderCards(jsonData, isBooster) {
             }, 500);
         });
 
-        if (isBooster){
-                    cardElement.classList.add("flipped");
-                    cardElement.classList.add("flipped-background");
-                    cardElement.addEventListener('click', () => {
-                        cardElement.classList.remove('flipped');
-                    });
+
+        if (window.location.pathname.endsWith("deck-manager.html")) {
+            buttonsContainer.appendChild(discardButton);
+            buttonsContainer.appendChild(mainDeckButton);
+            buttonsContainer.appendChild(sideDeckButton);
+
+
+        if (card.status === "side_deck") {
+            cardElement.classList.add("side-deck");
+            cardElement.setAttribute("data-status", "side_deck");
+            const discardButton = document.createElement("button");
+            discardButton.innerText = "Discard";
+            discardButton.classList.add("discard-button");
+
+            discardButton.addEventListener("click", (event) => {
+                event.stopPropagation();
+                cardElement.remove();
+            });
+            cardElement.appendChild(discardButton);
+
+            const mainDeckButton = document.createElement("button");
+            mainDeckButton.innerText = "Put in Main Deck";
+            mainDeckButton.classList.add("main-deck-button");
+
+            mainDeckButton.addEventListener("click", (event) => {
+                event.stopPropagation();
+                card.status = "main_deck";
+                cardElement.setAttribute("data-json", JSON.stringify(card));
+                cardElement.setAttribute("data-status", "main_deck");
+            });
+            cardElement.appendChild(mainDeckButton);
+        } else if (card.status === "main_deck") {
+            const sideDeckButton = document.createElement("button");
+            sideDeckButton.innerText = "Put in Side Deck";
+            sideDeckButton.classList.add("side-deck-button");
+
+            sideDeckButton.addEventListener("click", (event) => {
+                event.stopPropagation();
+                card.status = "side_deck";
+                cardElement.setAttribute("data-json", JSON.stringify(card));
+                cardElement.setAttribute("data-status", "side_deck");
+            });
+            cardElement.appendChild(sideDeckButton);
+        }
+
+        if (cardElement.getAttribute("data-status") === "side_deck") {
+            cardElement.classList.add("greyscale");
+        }
+
+
+        }
+
+
+        document.querySelector("#card-grid").appendChild(cardElement);
+
+        cardElement.addEventListener("click", () => {
+            if (cardElement.classList.contains("flipped")) {
+                return;
+            }
+            saveSelectedCards(cardElement);
+            cardElement.classList.add("flash");
+            setTimeout(() => {
+                cardElement.classList.remove("flash");
+            }, 500);
+        });
+
+        if (isBooster) {
+            cardElement.classList.add("flipped");
+            cardElement.classList.add("flipped-background");
+            cardElement.addEventListener('click', () => {
+                cardElement.classList.remove('flipped');
+            });
         }
     }
-}
 
-document.querySelector("#save-deck-button").addEventListener("click", () => {
-    const selectedCardsList = document.querySelector("#selected-cards-list");
-    const selectedCards = selectedCardsList.querySelectorAll("li");
-    const deckData = [];
+    submitButton.addEventListener("click", async () => {
+        const newJsonData = jsonEditor.value;
+        const updatedCard = JSON.parse(newJsonData);
+        if (autoCalculateToggle.checked) {
+            // Calculate card stats automatically
+        }
+        const cardPreview = document.querySelector(".card-preview");
+        const cardId = cardPreview.getAttribute("data-json-id");
+        const cardElement = document.querySelector(".card-container[data-json-id='" + cardId + "']");
 
-    for (const selectedCard of selectedCards) {
-        const cardData = JSON.parse(selectedCard.getAttribute("data-json"));
-        deckData.push(cardData);
+        // Find card with matching name and update its properties
+        const cardIndex = loadedData.findIndex((card) => card.name === updatedCard.name);
+
+        if (cardIndex !== -1) {
+            loadedData[cardIndex] = updatedCard;
+        } else {
+            // Add new card to loadedData
+            loadedData.push(updatedCard);
+        }
+
+        // Save changes to HoH_all.json file
+        const fileName = window.prompt("Save file as:", "HoH_all.json");
+        if (fileName !== null) {
+            // Create a new blob with the updated jsonData
+            const blob = new Blob([JSON.stringify(loadedData)], {type: "application/json"});
+            // Create a download link for the blob and click it
+            const downloadLink = document.createElement("a");
+            downloadLink.download = fileName;
+            downloadLink.href = URL.createObjectURL(blob);
+            downloadLink.click();
+        }
+
+        // Update card element with new data
+        const cardTemplate = document.querySelector("#card-template").innerHTML;
+        cardElement.innerHTML = mustache.render(cardTemplate, updatedCard);
+        editorModal.classList.remove("open");
+    });
+
+    cancelButton.addEventListener("click", async () => {
+        editorModal.classList.remove("open");
+    });
+
     }
 
-    const deckJson = JSON.stringify(deckData);
-    const blob = new Blob([deckJson], {type: "application/json"});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
+if (filename === "gm-panel.html" || filename === "index.html") {
 
-    a.download = "deck.json";
-    a.href = url;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-});
+    document.querySelector("#save-deck-button").addEventListener("click", () => {
+        const selectedCardsList = document.querySelector("#selected-cards-list");
+        const selectedCards = selectedCardsList.querySelectorAll("li");
+        const deckData = [];
+
+        for (const selectedCard of selectedCards) {
+            const cardData = JSON.parse(selectedCard.getAttribute("data-json"));
+            deckData.push(cardData);
+        }
+
+
+        const deckJson = JSON.stringify(deckData);
+        const blob = new Blob([deckJson], {type: "application/json"});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+
+        a.download = "deck.json";
+        a.href = url;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+
+}
+
+if (filename === "gm-panel.html") {
 
 document.querySelector("#save-deck-button-encrypted").addEventListener("click", () => {
     const selectedCardsList = document.querySelector("#selected-cards-list");
@@ -156,6 +352,10 @@ document.querySelector("#save-deck-button-encrypted").addEventListener("click", 
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 });
+}
+
+
+if (filename === "gm-panel.html") {
 
 document.querySelector("#save-deck-button-loot-encrypted").addEventListener("click", () => {
     const selectedCardsList = document.querySelector("#selected-cards-list");
@@ -181,6 +381,7 @@ document.querySelector("#save-deck-button-loot-encrypted").addEventListener("cli
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 });
+}
 
 // Get the loading indicator element
 const loadingIndicator = document.getElementById("loadingIndicator");
@@ -349,14 +550,14 @@ async function filterData(filter, currentPage = 1, jsonData, isBooster) {
             });
     });
 
-    let itemsPerPage = 20;
+    let itemsPerPage = 50;
 
     // Get the filename of the current HTML page
     const filename = window.location.pathname.split("/").pop();
 
     // Call relevant code based on the filename
     if (filename === "deck-manager.html") {
-        itemsPerPage = 100;
+        itemsPerPage = 200;
     }
 
     const start = (currentPage - 1) * itemsPerPage;
@@ -407,39 +608,70 @@ async function filterData(filter, currentPage = 1, jsonData, isBooster) {
 let loadedData = {};
 
 async function loadStartUp() {
-
     // Get the filename of the current HTML page
     const filename = window.location.pathname.split("/").pop();
 
-    // Call relevant code based on the filename
+    // Create a modal that allows the user to choose between uploading a custom JSON file or using the default file
+    const modal = document.querySelector("#json-upload-modal");
+    const customFileUploadButton = document.querySelector("#custom-file-upload-button");
+    const defaultFileUploadButton = document.querySelector("#default-file-upload-button");
+    const fileInput = document.querySelector("#json-file-input-2");
+
+    customFileUploadButton.addEventListener("click", () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener("change", async () => {
+        const selectedFile = fileInput.files[0];
+        if (selectedFile) {
+            const reader = new FileReader();
+            reader.onload = async function (event) {
+                const jsonData = JSON.parse(event.target.result);
+                // Call relevant code based on the filename and loaded data
+                loadedData = jsonData;
+                await handleLoadedData(jsonData, filename);
+            };
+            reader.readAsText(selectedFile);
+        }
+        modal.classList.remove("open");
+    });
+
+    defaultFileUploadButton.addEventListener("click", async () => {
+        const json = await fetch("HoH_all.json");
+        loadedData = await json.json();
+        // Call relevant code based on the filename and loaded data
+        await handleLoadedData(loadedData, filename);
+        modal.classList.remove("open");
+    });
+
+    modal.classList.add("open");
+
+}
+async function handleLoadedData(loadedData, filename) {
     if (filename === "deck-manager.html") {
 
+        await filterData("", 1, loadedData);
     } else if (filename === "gm-panel.html") {
+        // Handle GM panel
         selectedCardsList.innerHTML = "";
         removeAllButton.style.display = "none";
         const selectedCards = selectedCardsList.querySelectorAll("li").length;
         const selectedCount = document.querySelector("#selected-count");
         selectedCount.textContent = selectedCards;
-        const json = await fetch("HoH_all.json");
-        loadedData = await json.json();
         await filterData("", 1, loadedData);
     } else if (filename === "index.html") {
+        const json = await fetch("HoH_all.json");
+        const loadedData = await json.json();
+        // Handle index
         selectedCardsList.innerHTML = "";
         removeAllButton.style.display = "none";
         const selectedCards = selectedCardsList.querySelectorAll("li").length;
         const selectedCount = document.querySelector("#selected-count");
         selectedCount.textContent = selectedCards;
-        const json = await fetch("HoH_all.json");
-        loadedData = await json.json();
         await filterData("", 1, loadedData);
-    } else if (filename === 'card-creator.html'){
-        const jsonEditor = document.querySelector("#json-editor");
-        if (jsonEditor != null){
-            const jsonData = JSON.parse(jsonEditor.value);
-            await filterData("", 1, [jsonData], false);
-        }
     }
 }
+
 
 loadStartUp();
 
@@ -561,95 +793,105 @@ const generateLootBoosterPack = async () => {
     return randomCards;
 };
 
-document.querySelector("#booster-pack").addEventListener("click", async () => {
-    const randomCards = await generateBoosterPack();
-    selectedCardsList.innerHTML = "";
-    removeAllButton.style.display = "none";
-    const selectedCards = selectedCardsList.querySelectorAll("li").length;
-    const selectedCount = document.querySelector("#selected-count");
-    selectedCount.textContent = selectedCards;
-    filterData("", 1, randomCards);
-    console.log(randomCards);
-});
-
-document.querySelector("#booster-box").addEventListener("click", async () => {
-    const zip = new JSZip();
-
-    for (let i = 0; i < 20; i++) {
+if (filename === "gm-panel.html") {
+    document.querySelector("#booster-pack").addEventListener("click", async () => {
         const randomCards = await generateBoosterPack();
-        const deckData = JSON.stringify(randomCards);
-        const encryptedJson = encrypt(deckData);
-        const blob = new Blob([encryptedJson], {type: "application/json"});
+        selectedCardsList.innerHTML = "";
+        removeAllButton.style.display = "none";
+        const selectedCards = selectedCardsList.querySelectorAll("li").length;
+        const selectedCount = document.querySelector("#selected-count");
+        selectedCount.textContent = selectedCards;
+        filterData("", 1, randomCards);
+        console.log(randomCards);
+    });
+}
 
-        // Generate a random number and concatenate it with the file name
-        const randomNumber = Math.floor(Math.random() * 100000);
-        const fileName = `booster_pack_${randomNumber}.hoh`;
+if (filename === "gm-panel.html") {
+    document.querySelector("#booster-box").addEventListener("click", async () => {
+        const zip = new JSZip();
 
-        // Add the file to the zip object
-        zip.file(fileName, blob);
-    }
+        for (let i = 0; i < 20; i++) {
+            const randomCards = await generateBoosterPack();
+            const deckData = JSON.stringify(randomCards);
+            const encryptedJson = encrypt(deckData);
+            const blob = new Blob([encryptedJson], {type: "application/json"});
 
-    // Generate the zip file and download it
-    zip.generateAsync({type: "blob"}).then(function (content) {
-        const url = URL.createObjectURL(content);
-        const a = document.createElement("a");
-        const randomNumber = Math.floor(Math.random() * 1000);
-        const fileBox = `booster_box_${randomNumber}.zip`;
-        a.download = fileBox;
-        a.href = url;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+            // Generate a random number and concatenate it with the file name
+            const randomNumber = Math.floor(Math.random() * 100000);
+            const fileName = `booster_pack_${randomNumber}.hoh`;
+
+            // Add the file to the zip object
+            zip.file(fileName, blob);
+        }
+
+        // Generate the zip file and download it
+        zip.generateAsync({type: "blob"}).then(function (content) {
+            const url = URL.createObjectURL(content);
+            const a = document.createElement("a");
+            const randomNumber = Math.floor(Math.random() * 1000);
+            const fileBox = `booster_box_${randomNumber}.zip`;
+            a.download = fileBox;
+            a.href = url;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+    });
+}
+
+
+if (filename === "gm-panel.html") {
+    document.querySelector("#loot-box").addEventListener("click", async () => {
+        const zip = new JSZip();
+
+        for (let i = 0; i < 20; i++) {
+            const randomCards = await generateLootBoosterPack()
+            const deckData = JSON.stringify(randomCards);
+            const encryptedJson = encrypt(deckData);
+            const blob = new Blob([encryptedJson], {type: "application/json"});
+
+            // Generate a random number and concatenate it with the file name
+            const randomNumber = Math.floor(Math.random() * 100000);
+            const fileName = `loot_box_${randomNumber}.hoh`;
+
+            // Add the file to the zip object
+            zip.file(fileName, blob);
+        }
+
+        // Generate the zip file and download it
+        zip.generateAsync({type: "blob"}).then(function (content) {
+            const url = URL.createObjectURL(content);
+            const a = document.createElement("a");
+            const randomNumber = Math.floor(Math.random() * 1000);
+            const fileBox = `loot_box_${randomNumber}.zip`;
+            a.download = fileBox;
+            a.href = url;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
     });
 
-});
+}
 
-document.querySelector("#loot-box").addEventListener("click", async () => {
-    const zip = new JSZip();
 
-    for (let i = 0; i < 20; i++) {
-        const randomCards = await generateLootBoosterPack()
-        const deckData = JSON.stringify(randomCards);
-        const encryptedJson = encrypt(deckData);
-        const blob = new Blob([encryptedJson], {type: "application/json"});
+if (filename === "gm-panel.html") {
 
-        // Generate a random number and concatenate it with the file name
-        const randomNumber = Math.floor(Math.random() * 100000);
-        const fileName = `loot_box_${randomNumber}.hoh`;
-
-        // Add the file to the zip object
-        zip.file(fileName, blob);
-    }
-
-    // Generate the zip file and download it
-    zip.generateAsync({type: "blob"}).then(function (content) {
-        const url = URL.createObjectURL(content);
-        const a = document.createElement("a");
-        const randomNumber = Math.floor(Math.random() * 1000);
-        const fileBox = `loot_box_${randomNumber}.zip`;
-        a.download = fileBox;
-        a.href = url;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+    document.querySelector("#booster-loot-pack").addEventListener("click", async () => {
+        const randomCards = await generateLootBoosterPack();
+        selectedCardsList.innerHTML = "";
+        removeAllButton.style.display = "none";
+        const selectedCards = selectedCardsList.querySelectorAll("li").length;
+        const selectedCount = document.querySelector("#selected-count");
+        selectedCount.textContent = selectedCards;
+        filterData("", 1, randomCards);
+        console.log(randomCards);
     });
-
-});
-
-
-document.querySelector("#booster-loot-pack").addEventListener("click", async () => {
-    const randomCards = await generateLootBoosterPack();
-    selectedCardsList.innerHTML = "";
-    removeAllButton.style.display = "none";
-    const selectedCards = selectedCardsList.querySelectorAll("li").length;
-    const selectedCount = document.querySelector("#selected-count");
-    selectedCount.textContent = selectedCards;
-    filterData("", 1, randomCards);
-    console.log(randomCards);
-});
-
+}
 
 const inputElement = document.getElementById("my-input");
 
@@ -756,14 +998,20 @@ function handleDrop(e) {
 const autoCalculateToggle = document.querySelector('#auto-calculate-toggle');
 let isChecked = autoCalculateToggle.checked;
 const jsonEditor = document.querySelector("#json-editor");
-    jsonEditor.addEventListener("input", () => {
-        let jsonData = JSON.parse(jsonEditor.value);
-        console.log(jsonData);
-        if (isChecked){
-            jsonData = autoCalculateStats(jsonData);
-        }
-        filterData("", 1, [jsonData], false);
-    })
+const cardPreview = document.querySelector(".card-preview");
+
+jsonEditor.addEventListener("input", () => {
+    let jsonData = JSON.parse(jsonEditor.value);
+    if (isChecked) {
+        jsonData = autoCalculateStats(jsonData);
+    }
+    cardPreview.innerHTML = ""; // clear the card preview
+    const cardTemplate = document.querySelector("#card-template").innerHTML;
+    const renderedCard = mustache.render(cardTemplate, jsonData);
+    const cardElement = document.createElement("div");
+    cardElement.innerHTML = renderedCard;
+    cardPreview.appendChild(cardElement);
+});
 
 const default_values = {
     "hp": 6,
@@ -937,8 +1185,7 @@ autoCalculateToggle.addEventListener('change', () => {
     isChecked = autoCalculateToggle.checked;
     if (isChecked) {
         const jsonData = JSON.parse(jsonEditor.value);
-        let card = autoCalculateStats(jsonData);
-        filterData("", 1, [card], false);
+        autoCalculateStats(jsonData);
     }
 });
 

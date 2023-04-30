@@ -1,5 +1,7 @@
 [
   {
+    "id": "",
+    "status": "main_deck",
     "name": "Blacksmith",
     "crystals": {
       "requires": [],
