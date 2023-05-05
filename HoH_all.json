@@ -20074,9 +20074,7 @@
     {
       "name": "Round Shield",
       "crystals": {
-        "requires": [
-          "red"
-        ],
+        "requires": [],
         "provides": []
       },
       "type": [
@@ -20538,9 +20536,7 @@
     {
       "name": "Dwarven Hardtack Ration",
       "crystals": {
-        "requires": [
-          "+1 CON"
-        ],
+        "requires": [],
         "provides": []
       },
       "type": "item",
@@ -20733,7 +20729,23 @@
         "item",
         "gear"
       ],
-      "description": "<p><p class=\"subtitle\">Light:</p> <p>When you light this torch, it illuminates the area around you for a short distance.</p></p>",
+      "description": "",
+      "moves": [
+        {
+          "moves_requirements": [
+            "orange"
+          ],
+          "moves_name": "The Torch Bearer",
+          "moves_description": "<p>When you fight with your torch as your primary weapon, roll+STR. On a 16-19, you deal your damage to the enemy and they are temporarily blinded by the brightness of your torch, giving you an advantage. On a 9-15, choose one:</p>\n<ul>\n<li>You deal your damage to the enemy, but the torch is extinguished in the process.</li>\n<li>You retain your grip on the torch, but the enemy manages to grab hold of it and flings it out of your hand, leaving you temporarily defenseless.</li>\n</ul>\n<p>On a miss, the enemy overpowers you and gains control of the torch, leaving you in complete darkness and at their mercy.</p>"
+        },
+        {
+          "moves_requirements": [
+            "green"
+          ],
+          "moves_name": "The Torch Reveals",
+          "moves_description": "<p>When you use your torch to investigate an area, roll+Wis. On a 20+ hold 5, On a 16-19, hold 3. On a 9-15, hold 1. Spend your hold to:</p>\n  <ul>\n    <li>Discover a hidden door or passage</li>\n    <li>Detect the presence of magic, as a faint aura visible only through the flame</li>\n    <li>Spot a detail or clue that others would miss</li>\n  </ul>\n  <p>On a miss, the GM will tell you what danger you have overlooked or what threat now knows your presence.</p>."
+        }
+      ],
       "stats": [
         {
           "stat_name": "weight",
@@ -20857,33 +20869,6 @@
         "longitude": -122.4194
       },
       "header_image": "Throwing Knives.png"
-    },
-    {
-      "name": "Torch",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "type": [
-        "item",
-        "gear"
-      ],
-      "description": "<p><p class=\"subtitle\">Light:</p> <p>When you light this torch, it illuminates the area around you for a short distance.</p></p>",
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "1 coin each"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Torch.png"
     },
     {
       "name": "Grappling Hook",
@@ -26937,31 +26922,6 @@
         {
           "stat_name": "price",
           "stat_value": "30 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      }
-    },
-    {
-      "name": "Grappling Hook",
-      "description": "A metal hook attached to a length of rope, useful for climbing and rappelling or pulling objects toward you.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "header_image": "Grappling Hook.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "10 coins"
         }
       ],
       "geo_location": {
