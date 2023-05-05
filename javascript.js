@@ -272,7 +272,7 @@ async function renderCards(jsonData, isBooster) {
             const cardElement = document.querySelector(".card-container[data-json-id='" + cardId + "']");
 
             // Find card with matching name and update its properties
-            const cardIndex = loadedData.findIndex((card) => card.name === updatedCard.name);
+            const cardIndex = loadedData["deck_list"].findIndex((card) => card.name === updatedCard.name);
 
             if (cardIndex !== -1) {
                 loadedData[cardIndex] = updatedCard;
@@ -570,6 +570,34 @@ async function filterData(filter, currentPage = 1, jsonData, isBooster) {
         deckStatsElement.innerHTML = mustache.render(deckStatsTemplate, loadedData);
         document.querySelector("#deck-stats").appendChild(deckStatsElement);
 
+        const deckName = document.getElementById("deck-name-text");
+        const deckPicture = document.getElementById("deck-picture");
+        const deckDescription = document.getElementById("deck-description");
+
+// add event listeners for editing deck name, image, and description
+        deckName.addEventListener("click", () => {
+            const newDeckName = prompt("Enter new deck name:");
+            if (newDeckName) {
+                loadedData["deck_name"] = newDeckName;
+                deckName.textContent = newDeckName;
+            }
+        });
+
+        deckPicture.addEventListener("click", () => {
+            const newDeckImage = prompt("Enter new deck image URL:");
+            if (newDeckImage) {
+                loadedData["deck_image"] = newDeckImage;
+                deckPicture.style.backgroundImage = `url(${newDeckImage})`;
+            }
+        });
+
+        deckDescription.addEventListener("click", () => {
+            const newDeckDescription = prompt("Enter new deck description:");
+            if (newDeckDescription) {
+                loadedData["deck_description"] = newDeckDescription;
+                deckDescription.textContent = newDeckDescription;
+            }
+        });
 
         const increaseCoinsBtn = document.getElementById("increase-coins-btn");
         increaseCoinsBtn.addEventListener("click", function() {
@@ -1470,3 +1498,4 @@ autoCalculateToggle.addEventListener('change', () => {
         autoCalculateStats(jsonData);
     }
 });
+
