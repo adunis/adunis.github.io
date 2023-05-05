@@ -998,12 +998,12 @@ const generateCharacter = async (color = '') => {
     const getRandomCards = (cards, count) => {
         const randomCards = [];
 
-
+        if (cards.length < count){
+            count = cards.length;
+        }
 
         while (randomCards.length < count) {
-            if (randomCards.length < count){
-                count = randomCards.length;
-            }
+
             const randomIndex = Math.floor(Math.random() * cards.length);
             const card = cards[randomIndex];
 
