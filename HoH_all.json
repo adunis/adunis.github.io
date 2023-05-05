@@ -16043,7 +16043,6 @@
       "name": "Crossbow",
       "crystals": {
         "requires": [
-          "red"
         ],
         "provides": []
       },
@@ -16080,7 +16079,6 @@
       "name": "Heavy Crossbow",
       "crystals": {
         "requires": [
-          "red"
         ],
         "provides": []
       },
@@ -16091,7 +16089,7 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
+            "red", "red"
           ],
           "moves_name": "Heavy Crossbow Expert",
           "moves_description": "<p>When you attack with a heavy crossbow, roll +Str. On a 18+, you deal your damage and choose one additional effect from the list below. On a 9-17, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack knocks your target back or off balance</li><li>Your attack deals +1d4 damage</li></ul></p>"
@@ -16566,7 +16564,6 @@
       "name": "Arquebus",
       "crystals": {
         "requires": [
-          "gold"
         ],
         "provides": []
       },
@@ -19380,7 +19377,7 @@
     {
       "name": "Gnomish Enchanted Crossbow",
       "crystals": {
-        "requires": [],
+        "requires": ["gold"],
         "provides": []
       },
       "type": [
@@ -19948,14 +19945,21 @@
             "red"
           ],
           "moves_name": "Cushion",
-          "moves_description": "<p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive). When you take damage from a blunt weapon or an arrow while wearing gambeson armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p>"
+          "moves_description": "<p>When you take damage from a blunt weapon or an arrow while wearing gambeson armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p>"
         },
         {
           "moves_requirements": [
-            "black"
+            ""
           ],
           "moves_name": "Stealthy",
           "moves_description": "<p>When you use gambeson armor to defy danger by sneaking or hiding, you get +1 to the roll. This armor is quiet and can be dyed to match different environments.</p></p>"
+        },
+        {
+          "moves_requirements": [
+            ""
+          ],
+          "moves_name": "Protective ",
+          "moves_description": "<p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive).\n"
         }
       ],
       "stats": [
@@ -19978,9 +19982,6 @@
       "name": "Plate armor",
       "crystals": {
         "requires": [
-          "red",
-          "red",
-          "red"
         ],
         "provides": []
       },
@@ -19991,15 +19992,20 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
+            "red", "red", "red"
           ],
           "moves_name": "Deflect",
-          "moves_description": "<p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive). When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p>"
+          "moves_description": "<p>When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d6.</p>"
         },
         {
           "moves_requirements": [],
-          "moves_name": "Stealthy",
+          "moves_name": "Clumsy",
           "moves_description": "<p>When you use plate armor to defy danger by being stealthy, agile, or swimming, you get -5 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take +1d8 damage and must defy danger to avoid being stunned.</p></p>"
+        },
+        {
+          "moves_requirements": [],
+          "moves_name": "Protective",
+          "moves_description": "<p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive).</p>"
         }
       ],
       "stats": [
@@ -20022,8 +20028,6 @@
       "name": "Chainmail armor",
       "crystals": {
         "requires": [
-          "red",
-          "red"
         ],
         "provides": []
       },
@@ -20034,15 +20038,21 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
+            "red", "red"
           ],
           "moves_name": "Dissipative",
-          "moves_description": "<p>When you wear chainmail armor, you get +2 armor (armor reduces the damage you receive). When you take damage from fire or acid while wearing chainmail armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d8.</p>"
+          "moves_description": "<p>When you take damage from fire or acid while wearing chainmail armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d8.</p>"
         },
         {
           "moves_requirements": [],
           "moves_name": "Clumsy",
           "moves_description": "<p>When you use chainmail armor to defy danger by being stealthy or agile, you get -1 to the roll. This armor is noisy and heavy, making you more noticeable and slower.</p></p>"
+        },
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Protective",
+          "moves_description": "<p>When you wear chainmail armor, you get +2 armor (armor reduces the damage you receive)."
         }
       ],
       "stats": [
