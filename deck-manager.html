@@ -175,11 +175,21 @@
 
     <div id="json-upload-modal" class="modal">
         <div class="modal-content">
-            <h2>Upload JSON File</h2>
-            <p>Choose an option:</p>
             <div class="file-upload-buttons">
-                <button id="custom-file-upload-button">Load your deck</button>
-                <button id="generate-character">Random character</button>
+                <div id="color-buttons">
+                <button id="custom-file-upload-button" class="big-button">Load your deck</button>
+                   <button class="color-button red-color" data-color="red"> <div class="crystal red space-to-right">&#x1f79a;&#xfe0e; </div> Red (Soldiers, mercenaries, war) </button>
+                    <button class="color-button blue-color" data-color="blue"> <div class=" crystal blue space-to-right">&#x1f79a;&#xfe0e; </div> Blue (Paladins, justice, protection) </button>
+                    <button class="color-button cerulean-color" data-color="cerulean"> <div class=" crystal cerulean space-to-right">&#x1f79a;&#xfe0e; </div> Cerulean (Arcane, wizards, eldritch) </button>
+                    <button class="color-button emerald-color" data-color="emerald"> <div class=" crystal emerald space-to-right">&#x1f79a;&#xfe0e; </div> Emerald (Nature, spirits, druids) </button>
+                    <button class="color-button green-color" data-color="green"> <div class=" crystal green space-to-right">&#x1f79a;&#xfe0e; </div> Green (Wilderness, survival, hunting) </button>
+                    <button class="color-button white-color" data-color="white"> <div class=" crystal white space-to-right">&#x1f79a;&#xfe0e; </div> White (Religion, divine, priests) </button>
+                    <button class="color-button black-color" data-color="black"> <div class=" crystal black space-to-right">&#x1f79a;&#xfe0e; </div> Black (Darkness, stealth, criminality)</button>
+                    <button class="color-button orange-color" data-color="orange"> <div class=" crystal orange space-to-right">&#x1f79a;&#xfe0e; </div> Orange (Barbarians, monsters, strength) </button>
+                    <button class="color-button purple-color" data-color="purple"> <div class=" crystal purple space-to-right">&#x1f79a;&#xfe0e; </div> Purple (Charisma, bards, travelling)</button>
+                    <button class="color-button gold-color" data-color="gold"> <div class=" crystal gold space-to-right">&#x1f79a;&#xfe0e; </div> Gold (Merchants, artisans, experts)</button>
+                    <button class="color-button" data-color=""> <div class=" crystal silver">&#x1f79a;&#xfe0e; </div> Jack of all trades (Random colors) </button>
+                </div>
             </div>
             <input type="file" id="json-file-input-2" accept=".json" style="display:none">
         </div>

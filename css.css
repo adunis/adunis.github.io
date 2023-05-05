@@ -229,6 +229,28 @@
 }
 
 
+.color-button {
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    text-shadow:1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000,0 0 40px #000;
+    background: #ffdf7f url(parchment.jpg) repeat 0 0;
+}
+
+.big-button {
+    width:400px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow:1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000,0 0 40px #000;
+    background: #ffdf7f url(parchment.jpg) repeat 0 0;
+}
+
 .card {
     font-family: 'Lora', serif;
     width: 300px;
@@ -771,6 +793,20 @@ table {
 
 }
 
+.crystal.silver {
+    color: #545453;
+    display:inherit;
+    text-shadow:
+            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+            0 0 10px #919191, 0 0 10px #8c8c8c, 0 0 10px #3a3a3a, 0 0 10px #000000, 0 0 10px #ffee00, 0 0 10px #ffee00,
+            0 0 30px #4f4f4f, 0 0 30px #5b5b5b, 0 0 30px #2d2d2d, 0 0 30px #575757,
+            0 0 30px #888888;
+
+}
+
+.space-to-right {
+    margin-right:10px;
+}
 
 .crystal.green {
     color: #004d13;
@@ -1141,8 +1177,8 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: auto;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -1305,4 +1341,7 @@ button {
 #deck-description {
     width: 300px;
     margin:10px;
+}
+.big-button {
+    font-size:30px;
 }
