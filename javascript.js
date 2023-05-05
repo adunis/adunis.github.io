@@ -72,6 +72,13 @@ removeAllButton.addEventListener("click", () => {
 }
 
 
+//This is a JavaScript function that is responsible for rendering cards on a web page, given a JSON object representing the card data. The function uses Mustache.js to render the card template and create the HTML elements for each card.
+// The function first sets up some variables and constants, including references to the HTML elements that will be used to display and interact with the cards.
+// Next, it loops through each card in the JSON data, creates a new HTML element for the card, and renders the card using the card template and Mustache.js. The card element is then added to the web page, and event listeners are set up to handle clicks on the card and the various buttons associated with each card.
+// If the web page is the "gm-panel.html" page, an "Edit" button is also added to each card that will open a modal dialog where the user can edit the card data in JSON format.
+// If the web page is the "deck-manager.html" page, additional buttons are added to each card to allow the user to move the card between the main deck and the side deck, or discard the card altogether. Depending on the initial status of the card, either the "Put in Main Deck" and "Discard" buttons, or the "Put in Side Deck" button, are added to the card.
+// Overall, this function provides a flexible and dynamic way to render and interact with cards on a web page, and can be customized to fit a wide range of use cases.
+
 async function renderCards(jsonData, isBooster) {
     let cardId = 0;
     const editorModal = document.querySelector(".editor-modal");
@@ -79,8 +86,22 @@ async function renderCards(jsonData, isBooster) {
     const jsonEditorSection = document.querySelector(".json-editor-section");
     const jsonEditor = document.querySelector("#json-editor");
     const autoCalculateToggle = document.querySelector("#auto-calculate-toggle");
+    const miniCardView = document.querySelector("#mini-card-view");
     const submitButton = document.querySelector("#submit-button");
     const cancelButton = document.querySelector("#cancel-button");
+
+    miniCardView.addEventListener("change", () => {
+        console.log("switched")
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(function (card) {
+            if (card.classList.contains('mini-card')) {
+                card.classList.remove('mini-card');
+            } else {
+                card.classList.add('mini-card');
+            }
+        });
+    });
+
 
     for (const card of jsonData) {
         card.id = cardId++;
@@ -466,7 +487,6 @@ function saveSelectedCards(cardElement) {
 
     }
 
-
     if (selectedCards === 0) {
         requiredCrystals = {};
         providedCrystals = {};
@@ -484,21 +504,8 @@ function saveSelectedCards(cardElement) {
     });
 
     // Update deck status text
-    const deckStatus = document.querySelector("#deck-status");
     const selectedCount = document.querySelector("#selected-count");
     selectedCount.textContent = selectedCards;
-    const requiredCrystalsText = Object.values(requiredCrystals).join(", ");
-    const providedCrystalsText = Object.values(providedCrystals).join(", ");
-
-    if (selectedCards > 0) {
-        if (JSON.stringify(requiredCrystals) === JSON.stringify(providedCrystals)) {
-            //deckStatus.textContent = "Deck ready";
-        } else {
-            //deckStatus.textContent = `Deck not ready, Required Crystals: ${requiredCrystalsText}, Provided Crystals: ${providedCrystalsText}.`;
-        }
-    } else {
-        //deckStatus.textContent = "Deck not ready";
-    }
 
     selectedCount.textContent = selectedCards;
 }
@@ -519,8 +526,24 @@ function toggleOverlay() {
 burgerMenu.addEventListener('click', toggleOverlay);
 overlay.addEventListener('click', toggleOverlay);
 
+
+//This is an asynchronous function named filterData that takes four arguments: filter, currentPage, jsonData, and isBooster. It filters the jsonData based on the filter argument and the additional filters for type and crystals. The filtered data is then paginated and passed to the renderCards method along with the isBooster argument.
+// The function also checks if the current HTML page is deck-manager.html and if so, it renders the deck statistics template to the #deck-stats element. The number of items per page is determined by the filename, and a pagination component is created with Next Page, Previous Page, and numbered page buttons.
+// When the Next Page or Previous Page button is clicked, the currentPage value is incremented or decremented, and the filterData method is called again with the updated currentPage value.
+
+
 async function filterData(filter, currentPage = 1, jsonData, isBooster) {
-    const filtered = jsonData.filter((value) => {
+
+    const htmlname = window.location.pathname.split("/").pop();
+
+    if (htmlname == "deck-manager.html") {
+        const deckStatsTemplate = document.querySelector("#deck-stats-template").innerHTML;
+        const deckStatsElement = document.createElement("div");
+        deckStatsElement.innerHTML = mustache.render(deckStatsTemplate, jsonData);
+        document.querySelector("#deck-stats").appendChild(deckStatsElement);
+    }
+
+    const filtered = jsonData["deck_list"].filter((value) => {
         // Handle additional filters
         const valueString = JSON.stringify(value).toLowerCase();
         const words = filter.split(",").map((word) => word.trim());
@@ -563,7 +586,6 @@ async function filterData(filter, currentPage = 1, jsonData, isBooster) {
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
     const paginatedResults = filtered.slice(start, end);
-    const htmlname = window.location.pathname.split("/").pop();
 // Call relevant code based on the filename
     if (htmlname !== "deck-manager.html") {
         document.querySelector("#card-grid").innerHTML = "";
@@ -1188,4 +1210,5 @@ autoCalculateToggle.addEventListener('change', () => {
         autoCalculateStats(jsonData);
     }
 });
+
 

@@ -23,7 +23,7 @@
 <div id="drop-area">
     <div id="drop-area-label">Drag and drop the booster pack file here</div>
     <input type="file" id="booster-pack-file-input" accept=".hoh" style="display: none;">
-    <div class="search-container">
+    <div class="search-container"  style="display:none">
         <div class="action-bar-container">
             <div id="burger-menu">
                 <span></span>
@@ -32,7 +32,15 @@
         <div id="popup" style="display:none">
             <p>Help content goes here.</p>
         </div>
+    </div>
 
+
+
+
+    <input type="checkbox" id="mini-card-view" />
+    <label for="mini-card-view">Mini card template</label>
+
+    <div id="deck-stats">
     </div>
 
     <input type="file" id="json-file-input"  accept=".json" style="display: none;">
@@ -45,10 +53,17 @@
     <div id="previewImg">
     </div>
 
+
     <div id="card-grid">
     </div>
 
+    <div id="deck-stats-template" style="display:none">
+        <h1> {{deck_name}}</h1>
+        <h2>Provided Crystals: {{provided_crystals}}</h2>
+        <h2>Required Crystals: {{required_crystals}}</h2>
+        <h3>XP: {{xp}}</h3>
 
+    </div>
 
     <div id="card-template" style="display:none">
         <div class="card {{#crystals.requires}} {{.}}-color {{/crystals.requires}} {{#crystals.provides}} {{.}}-color {{/crystals.provides}}">
@@ -129,6 +144,7 @@
         </div>
 
     </div>
+
 
     <div id="menu">
         <ul>
