@@ -44,7 +44,6 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: auto;
 }
 
@@ -985,6 +984,7 @@ table {
 }
 
 .moves {
+    display: block ruby;
     padding-top: 0px;
     font-size: 8px;
     margin-top:3px;
@@ -1162,7 +1162,7 @@ textarea {
     }
 }
 
-.card-container.side-deck {
+.card-container.deactivated {
     filter: grayscale(100%);
 }
 
@@ -1174,3 +1174,136 @@ textarea {
     height: 300px;
 }
 
+#mini-card-view {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#mini-card-view + label {
+    position:fixed;
+    bottom: 30px;
+    left: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+#mini-card-view + label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#mini-card-view:checked + label:before {
+    background-color: #333333;
+    transform: scale(0.8);
+}
+
+#mini-card-view:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+#deck-stats {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#save-deck-manager-button {
+    color: #ffffff;
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#save-button {
+    color: #ffffff;
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    color: #ffffff;
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-character {
+    position: relative;
+}
+.main-character::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 10px);
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/crown.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.discard-button::before {
+    content: '\f1f8'; /* bin icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+}
+
+
+.main-char-button::before {
+    content: '\f521'; /* bin icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+}
+
+
+.main-deck-button::before {
+    content: '\f055'; /* bin icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+}
+
+
+.side-deck-button::before {
+    content: '\f146'; /* bin icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+}
+
+#deck-picture {
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    margin:20px;
+}
+
+#deck-description {
+    width: 300px;
+    margin:10px;
+}

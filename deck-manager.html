@@ -20,50 +20,40 @@
     <a href="gm-panel.html">GM Panel</a>
 </div>
 
+<div id="deck-stats">
+</div>
+
 <div id="drop-area">
-    <div id="drop-area-label">Drag and drop the booster pack file here</div>
-    <input type="file" id="booster-pack-file-input" accept=".hoh" style="display: none;">
-    <div class="search-container"  style="display:none">
+    <div id="drop-area-label">Drag and drop to add new cards</div>
+    <input type="file" id="booster-pack-file-input" accept=".hoh,.json" style="display: none;">
+    <div class="search-container">
         <div class="action-bar-container">
             <div id="burger-menu">
                 <span></span>
             </div> <input type="text" id="my-input" placeholder="You can filter by key:value, for example type:item or crystals:red. Write 'help' for more. "></div>
-        <div id="pagination" class="pagination"></div>
-        <div id="popup" style="display:none">
-            <p>Help content goes here.</p>
-        </div>
-    </div>
-
-
-
-
-    <input type="checkbox" id="mini-card-view" />
-    <label for="mini-card-view">Mini card template</label>
-
-    <div id="deck-stats">
+        <div id="pagination" class="pagination" style="display: none;"></div>
+        <div id="popup" style="display:none"><p>Help content goes here.</p></div>
     </div>
 
     <input type="file" id="json-file-input"  accept=".json" style="display: none;">
 
     <br> <div id="booster-pack-container">
     <div id="booster-pack-cards"></div>
-
 </div>
 
-    <div id="previewImg">
-    </div>
+    <div id="previewImg"></div>
 
 
-    <div id="card-grid">
-    </div>
+    <div id="card-grid"></div>
 
     <div id="deck-stats-template" style="display:none">
-        <h1> {{deck_name}}</h1>
-        <h2>Provided Crystals: {{provided_crystals}}</h2>
-        <h2>Required Crystals: {{required_crystals}}</h2>
-        <h3>XP: {{xp}}</h3>
-
+        <div id="deck-name-text">{{deck_name}}</div>
+        <div id="deck-picture" style="background-image:url('{{deck_image}}');"></div>
+        <div id="deck-description">{{deck_description}}</div>
+        <div>XP: <span id="xp-counter">{{xp}}{{^xp}}0{{/xp}}</span> <button  id="increase-xp-btn">+</button> <button  id="decrease-xp-btn">-</button></div>
+        <div>Coins: <span id="coin-counter">{{coins}}{{^coins}}0{{/coins}}</span> <button id="increase-coins-btn">+</button> <button id="decrease-coins-btn">-</button></div>
     </div>
+
 
     <div id="card-template" style="display:none">
         <div class="card {{#crystals.requires}} {{.}}-color {{/crystals.requires}} {{#crystals.provides}} {{.}}-color {{/crystals.provides}}">
@@ -145,11 +135,35 @@
 
     </div>
 
+    <!-- Modal for editing cards -->
+    <div class="editor-modal">
+        <div class="editor-modal-content">
+            <div class="editor-container">  <div class="card-preview"></div>
+                <section class="json-editor-section">
+                    <div id="toggle-container">
+                        <input type="checkbox" id="auto-calculate-toggle">
+                        <label for="auto-calculate-toggle">Auto calculate stats</label>
+                    </div>
+
+                    <textarea id="json-editor">{</textarea>
+                </section></div>
+            <div class="button-container">
+                <button id="submit-button">Save changes</button>
+                <button id="cancel-button">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+
+
 
     <div id="menu">
         <ul>
-            <a id="open-booster-pack" href="#" class="sparkly-btn">Open booster/loot pack or load deck</a>
+            <a id="open-booster-pack" href="#" class="sparkly-btn">Add cards to deck</a>
+            <a id="load-json" href="#">Load another deck</a>
             <a id="btn-Convert-Html2Image" href="#">Convert visible cards to JPGs</a>
+            <a id="load-hoh" href="#"></a>
+
         </ul>
     </div>
 
@@ -165,12 +179,22 @@
             <p>Choose an option:</p>
             <div class="file-upload-buttons">
                 <button id="custom-file-upload-button">Load your deck</button>
-                <button id="default-file-upload-button">Starter Fighter Deck</button>
+                <button id="generate-character">Random character</button>
             </div>
             <input type="file" id="json-file-input-2" accept=".json" style="display:none">
         </div>
     </div>
 
+    <div id="selection-info" class="selection-info">
+        <span id="selected-count" style="display: none;">0</span>
+        <span id="deck-status" style="display: none;"></span>
+        <ul id="selected-cards-list" style="display: none;"></ul>
+        <button id="save-deck-manager-button">Save Deck</button>
+
+    </div>
+
+    <input type="checkbox" id="mini-card-view" />
+    <label for="mini-card-view">Mini card template</label>
 
 
 </div></body>
