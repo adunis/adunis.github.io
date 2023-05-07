@@ -1326,7 +1326,8 @@ const generateCharacter = async (color = '') => {
 
     const characters = (data.filter(card => card.type && card.type.includes("character")));
     const features = filterCardsByColor(data.filter(card => card.type && card.type.includes("feature")));
-    const trainings = filterCardsByColor(data.filter(card => card.type && card.type.includes("training")));
+    const trainings = data.filter(card => card.type && card.type === "training");
+    const coreTrainings = filterCardsByColor(data.filter(card => card.type && card.type.includes("core training")));
     const backgrounds = data.filter(card => card.type && card.type.includes("background"));
     const species = data.filter(card => card.type && card.type.includes("species"));
     const destinies = data.filter(card => card.type && card.type.includes("destiny"));
@@ -1352,16 +1353,29 @@ const generateCharacter = async (color = '') => {
         return randomCards;
     };
 
+if (color === ''){
     return [
         ...getRandomCards(characters, 1),
-        ...getRandomCards(features, 3),
+        ...getRandomCards(coreTrainings, 1),
+        ...getRandomCards(trainings, 4),
+        ...getRandomCards(features, 4),
         ...getRandomCards(backgrounds, 1),
-        ...getRandomCards(trainings, 2),
         ...getRandomCards(species, 1),
         ...getRandomCards(destinies, 1),
-        ...getRandomCards(items, 6)
-
+        ...getRandomCards(items, 5)
     ];
+} else {
+    return [
+        ...getRandomCards(characters, 1),
+        ...getRandomCards(coreTrainings, 1),
+        ...getRandomCards(trainings, 1),
+        ...getRandomCards(features, 2),
+        ...getRandomCards(backgrounds, 1),
+        ...getRandomCards(species, 1),
+        ...getRandomCards(destinies, 1),
+        ...getRandomCards(items, 5)
+    ];
+}
 };
 
 const generateLootBoosterPack = async () => {

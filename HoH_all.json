@@ -2001,10 +2001,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange",
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You hunger for fame and glory, seeking to make a name for yourself and leave a lasting legacy. When you roll for a move while pursuing this appetite, roll 3d6 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
       "stats": [
         {
@@ -2028,10 +2029,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange",
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>Your insatiable desire for wealth and property drives you to take risks and make bold moves. When you roll for a move while pursuing this appetite, roll 3d6 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
       "stats": [
         {
@@ -2055,10 +2057,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange",
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>When you have an insatiable appetite for destruction, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of destruction.</p>",
       "stats": [
         {
@@ -2082,10 +2085,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange",
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>When you have an insatiable appetite for power over others, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of power.</p>",
       "stats": [
         {
@@ -2109,10 +2113,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange",
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>When you have an insatiable appetite for mortal pleasures, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of pleasure.</p>",
       "stats": [
         {
@@ -2136,10 +2141,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange",
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>When you have an insatiable appetite for conquest, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of conquest.</p>",
       "stats": [
         {
@@ -2163,10 +2169,11 @@
         "requires": [],
         "provides": [
           "orange",
+          "orange", 
           "orange"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>Your tribe has honed your combat skills to perfection. Wul><li>Battle Cry: when you use your voice to bolster your allies or intimidate your enemies, roll+Cha. On a 16-19, both. On a 9-15, choose one:</li><ul><li>Your allies rally: all allies who hear you recover 1d6 HP.</li><li>Your enemies falter: all enemies who hear you take -1d4 damage.</li></ul><li>War Paint: you can prepare your body for battle with tribal paint. Choose a benefit below, and describe the paint used to achieve this effect:</li><ul><li>+1d4 damage when attacking with melee weapons</li><li>+1 to all rolls to discern realities when tracking or studying a foe</li><li>+1 to Defy Danger against traps or hazards in natural environments</li><li>+1 to Discern Realities and Spout Lore when dealing with spirits or the supernatural</li></ul></ul>",
       "stats": [
         {
@@ -2395,6 +2402,7 @@
       "crystals": {
         "requires": [],
         "provides": [
+          "green",
           "green"
         ]
       },
@@ -2463,7 +2471,8 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "purple"
+          "purple",
+          "cerulean"
         ]
       },
       "stats": [
@@ -2531,10 +2540,10 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "training"
         ]
       },
-      "type": "feature",
+      "type": "training",
       "description": "<p>You are cursed by an ancient, powerful entity. The curse is both a blessing and a curse, granting you incredible power while slowly consuming you from within.</p><p>When you take this move, roll+CHA. On a 16-19, the GM will describe the nature of the curse and its benefits. You may also choose one of the following:</p><ul><li>Gain +1 ongoing to all rolls related to the curse.</li><li>Gain a new move related to the curse.</li></ul><p>On a 9-15, the GM will describe the curse and its drawbacks. You must choose one of the following:</p><ul><li>Take -1 ongoing to all rolls not related to the curse.</li><li>Lose access to a move unrelated to the curse.</li></ul><p>Regardless of the result, the curse will slowly consume you. Every time you use a move related to the curse, mark corruption. When you reach 5 corruption, the curse will fully consume you and you will become an NPC controlled by the GM.</p>",
       "stats": [
         {
@@ -2557,10 +2566,12 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "orange",
+          "orange",
+          "green"
         ]
       },
-      "type": "feature",
+      "type": "core training",
       "description": "<p>You are a cursed creature, bound to change form under the light of the full moon. In human form, you are a skilled hunter and tracker, and gain +1 to Discern Realities when tracking prey. In werewolf form, you gain the following moves:</p><ul><li><strong>Rending Claws:</strong> when you deal damage in melee, you can choose to inflict an additional d4 damage.</li><li><strong>Fearsome Howl:</strong> when you howl, all enemies within earshot must defy danger or become frightened.</li><li><strong>Keen Senses:</strong> your senses are enhanced in werewolf form, giving you +1 to Discern Realities and allowing you to see in complete darkness.</li></ul><p>However, with great power comes great risk. Each time you change into werewolf form, you must roll+Con. On a 16-19, you retain control of your actions. On a 9-15, the GM will give you a choice: either you can retain control but mark a point of corruption, or you can lose control and the GM will take over your actions for the duration of the transformation. On a miss, you lose control and the GM takes over your actions indefinitely.</p>",
       "stats": [
         {
@@ -2583,10 +2594,13 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "orange",
+          "orange",
+          "black"
+
         ]
       },
-      "type": "feature",
+      "type": "core training",
       "description": "<p>You are an undead creature, cursed to feed on the blood of the living. You gain the following moves:</p><ul><li><strong>Bloodsucker:</strong> when you deal damage in melee, you can choose to heal 1d6 damage.</li><li><strong>Hypnotic Gaze:</strong> when you meet someone's gaze, roll+Cha. On a 16-19, they become transfixed and will do anything you ask (within reason). On a 9-15, they become transfixed but will ask you to do something in return.</li><li><strong>Unholy Strength:</strong> you gain +1 to Hack and Slash and Volley.</li></ul><p>However, your curse comes with great vulnerabilities. You take double damage from holy water, and can be destroyed by sunlight or a stake through the heart. Additionally, you cannot enter a dwelling without being invited.</p>",
       "stats": [
         {
@@ -2890,8 +2904,1376 @@
       },
       "header_image": "The Scales of Life and Death.png"
     },
+      {
+        "name": "Priest of Vulcan",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Vulcan you are also forbidden to have in your deck the Water, Ice, Air, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Vulcan.png"
+      },
+      {
+        "name": "Priest of Neptune",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Neptune you are also forbidden to have in your deck the Electricity, Fire, Air, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Neptune.png"
+      },
+      {
+        "name": "Priest of Boreas",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Boreas you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Boreas.png"
+      },
+      {
+        "name": "Priest of Terra",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Terra you are also forbidden to have in your deck the Electricity, Air, Mind, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Terra.png"
+      },
+      {
+        "name": "Priest of Aeolus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Aeolus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Aeolus.png"
+      },
+      {
+        "name": "Priest of Jupiter",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are a Priest of Jupiter you are also forbidden to have in your deck the Ice, Earth, Beasts, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Jupiter.png"
+      },
+      {
+        "name": "Priest of Diana",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Diana you are also forbidden to have in your deck the Electricity, Fire, Water, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Diana.png"
+      },
+      {
+        "name": "Priest of Ceres",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Ceres you are also forbidden to have in your deck the Electricity, Death, Mind, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Ceres.png"
+      },
+      {
+        "name": "Priest of Orcus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Orcus you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Orcus.png"
+      },
+      {
+        "name": "Priest of Mercury",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Mercury you are also forbidden to have in your deck the Electricity, Beasts, Death, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Mercury.png"
+      },
+      {
+        "name": "Priest of Mars",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Mars you are also forbidden to have in your deck the Electricity, Ice, Water, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Mars.png"
+      },
+      {
+        "name": "Priest of Minerva",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Minerva you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Minerva.png"
+      },
+      {
+        "name": "Priest of Janus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beginnings and endings card. You still need to meet its requirements to use it. While you are a Priest of Janus you are also forbidden to have in your deck the Electricity, Ice, Air, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Janus.png"
+      },
+      {
+        "name": "Priest of Fortuna",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Fortuna you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Fortuna.png"
+      },
+      {
+        "name": "Priest of Pluto",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Pluto you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Pluto.png"
+      },
+      {
+        "name": "Priest of Hecate",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Hecate you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hecate.png"
+      },
+      {
+        "name": "Priest of Vesta",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Vesta you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Vesta.png"
+      },
+      {
+        "name": "Priest of Aurora",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Aurora you are also forbidden to have in your deck the Electricity, Ice, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Aurora.png"
+      },
+      {
+        "name": "Priest of Mithras",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Mithras you are also forbidden to have in your deck the Ice, Water, Mind, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Mithras.png"
+      },
+      {
+        "name": "Priest of Bacchus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Bacchus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Bacchus.png"
+      },
+      {
+        "name": "Priest of Saturn",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Saturn you are also forbidden to have in your deck the Electricity, Ice, Air, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Saturn.png"
+      },
+      {
+        "name": "Priest of Juno",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Juno you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Juno.png"
+      },
+      {
+        "name": "Priest of Venus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Venus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Venus.png"
+      },
+      {
+        "name": "Priest of Silvanus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Silvanus you are also forbidden to have in your deck the Electricity, Ice, Water, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Silvanus.png"
+      },
+      {
+        "name": "Priest of Eris",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Eris you are also forbidden to have in your deck the Electricity, Ice, Water, Life domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Eris.png"
+      },
+      {
+        "name": "Priest of Somnus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Somnus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Somnus.png"
+      },
+      {
+        "name": "Priest of Melpomene",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Melpomene you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Melpomene.png"
+      },
+      {
+        "name": "Priest of Thalia",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Thalia you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Thalia.png"
+      },
+      {
+        "name": "Priest of Athena",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Athena you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Athena.png"
+      },
+      {
+        "name": "Priest of Hermes",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Hermes you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hermes.png"
+      },
+      {
+        "name": "Priest of Nemesis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Nemesis you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Nemesis.png"
+      },
+      {
+        "name": "Priest of Aesculapius",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Aesculapius you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Aesculapius.png"
+      },
+      {
+        "name": "Priest of Magna Mater",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Magna Mater you are also forbidden to have in your deck the Electricity, Ice, Water, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Magna Mater.png"
+      },
+      {
+        "name": "Priest of Uranus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Uranus you are also forbidden to have in your deck the Ice, Water, Beasts, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Uranus.png"
+      },
+      {
+        "name": "Priest of Hades",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Hades you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hades.png"
+      },
+      {
+        "name": "Priest of Agni",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Agni you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Agni.png"
+      },
+      {
+        "name": "Priest of Varuna",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Varuna you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Varuna.png"
+      },
+      {
+        "name": "Priest of Ymir",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Ymir you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Ymir.png"
+      },
+      {
+        "name": "Priest of Geb",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Geb you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Geb.png"
+      },
+      {
+        "name": "Priest of Vayu",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Vayu you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Vayu.png"
+      },
+      {
+        "name": "Priest of Thor",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Thunder card. You still need to meet its requirements to use it. While you are a Priest of Thor you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Thor.png"
+      },
+      {
+        "name": "Priest of Hecate",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Hecate you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hecate.png"
+      },
+      {
+        "name": "Priest of Ereshkigal",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Ereshkigal you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Ereshkigal.png"
+      },
+      {
+        "name": "Priest of Hathor",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fertility card. You still need to meet its requirements to use it. While you are a Priest of Hathor you are also forbidden to have in your deck the Electricity, Beasts, Death, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hathor.png"
+      },
+      {
+        "name": "Priest of Tiamat",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Chaos card. You still need to meet its requirements to use it. While you are a Priest of Tiamat you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Tiamat.png"
+      },
+      {
+        "name": "Priest of Diana",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Diana you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Diana.png"
+      },
+      {
+        "name": "Priest of Freyr",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Freyr you are also forbidden to have in your deck the Fire, Electricity, Beasts, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Freyr.png"
+      },
+      {
+        "name": "Priest of Thoth",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Thoth you are also forbidden to have in your deck the Fire, Ice, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Thoth.png"
+      },
+      {
+        "name": "Priest of Loki",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Light card. You still need to meet its requirements to use it. While you are a Priest of Loki you are also forbidden to have in your deck the Sun, Earth, Water, Electricity domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Loki.png"
+      },
+      {
+        "name": "Priest of Hermes",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Hermes you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hermes.png"
+      },
+      {
+        "name": "Priest of Aphrodite",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Aphrodite you are also forbidden to have in your deck the Electricity, Beasts, Death, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Aphrodite.png"
+      },
+      {
+        "name": "Priest of Cernunnos",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Cernunnos you are also forbidden to have in your deck the Fire, Electricity, Water, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Cernunnos.png"
+      },
+      {
+        "name": "Priest of Xochiquetzal",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Xochiquetzal you are also forbidden to have in your deck the Death, Ice, Electricity, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Xochiquetzal.png"
+      },
+      {
+        "name": "Priest of Anubis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Anubis.png"
+      },
+      {
+        "name": "Priest of Isis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Isis.png"
+      },
+      {
+        "name": "Priest of Xochiquetzal",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Xochiquetzal you are also forbidden to have in your deck the Death, Ice, Electricity, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Xochiquetzal.png"
+      },
+      {
+        "name": "Priest of Anubis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Anubis.png"
+      },
+      {
+        "name": "Priest of Isis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Isis.png"
+      },
+      {
+        "name": "Priest of Apollo",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Apollo you are also forbidden to have in your deck the Ice, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Apollo.png"
+      },
+      {
+        "name": "Priest of Hephaestus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Hephaestus you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hephaestus.png"
+      },
+      {
+        "name": "Priest of Poseidon",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Poseidon you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Poseidon.png"
+      },
+      {
+        "name": "Priest of Skadi",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Skadi you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Skadi.png"
+      },
+      {
+        "name": "Priest of Gaia",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Gaia you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Gaia.png"
+      },
+      {
+        "name": "Priest of Zeus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Zeus you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Zeus.png"
+      },
+      {
+        "name": "Priest of Zeus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are a Priest of Zeus you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Zeus.png"
+      },
+      {
+        "name": "Priest of Anubis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Anubis.png"
+      },
+      {
+        "name": "Priest of Hathor",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Hathor you are also forbidden to have in your deck the Electricity, Beasts, Death, Mind domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Hathor.png"
+      },
+      {
+        "name": "Priest of Thoth",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Thoth you are also forbidden to have in your deck the Fire, Ice, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Thoth.png"
+      },
+      {
+        "name": "Priest of Isis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Isis.png"
+      },
+      {
+        "name": "Priest of Artemis",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Artemis you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Artemis.png"
+      },
+      {
+        "name": "Priest of Khepri",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Khepri you are also forbidden to have in your deck the Ice, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Khepri.png"
+      },
+      {
+        "name": "Priest of Prometheus",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Prometheus you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Prometheus.png"
+      },
+      {
+        "name": "Priest of Lir",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Lir you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Lir.png"
+      },
+      {
+        "name": "Priest of Boreas",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Boreas you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Boreas.png"
+      },
+      {
+        "name": "Priest of Terra",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Terra you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Terra.png"
+      },
+      {
+        "name": "Priest of Odin",
+        "crystals": {
+          "requires": [],
+          "provides": [
+            "white",
+            "white",
+            "white"
+          ]
+        },
+        "type": "core training",
+        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Odin you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+        "geo_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "header_image": "Priest of Odin.png"
+      },
     {
-      "name": "Fist of Ares",
+      "name": "Priest of Ares",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2900,18 +4282,8 @@
           "orange"
         ]
       },
-      "type": "feature",
-      "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are  a Fist of Ares you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You have studied the art of war and the teachings of Ares, the god of war. When you spend time reflecting on these teachings, you can ask the GM one question about a current situation or an upcoming battle. The GM will answer truthfully, but be warned that the answer may not always be what you want to hear.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. While you are  a Priest of Ares you are also forbidden to have in your deck the Domain of Death, Domain of Arcane, Domain of Moon and Domain of Mind cards in your deck.</p>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -2919,7 +4291,7 @@
       "header_image": "Fist of Ares.png"
     },
     {
-      "name": "Sword of Allah",
+      "name": "Priest of Allah",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2928,26 +4300,16 @@
           "red"
         ]
       },
-      "type": "feature",
-      "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are a Sword of Allah, you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your devotion to Allah and your study of the holy texts have given you deep knowledge of the faith. When you spout lore about the tenets of Islam or the teachings of the Prophet Muhammad, you can roll+Wis instead of +Int. On a 16-19, the GM will give you valuable information. On a 9-15, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. While you are a Priest of Allah, you are also forbidden to have in your deck the Domain of Death, Domain of Arcane, Domain of Moon and Domain of Mind cards in your deck.</p>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Sword of Allah.png"
+      "header_image": "Priest of Allah.png"
     },
     {
-      "name": "Hand of Ra",
+      "name": "Priest of Ra",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2956,18 +4318,8 @@
           "emerald"
         ]
       },
-      "type": "feature",
-      "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are a Hand of Ra you are also forbidden to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>Your study of the ancient Egyptian religion and your devotion to Ra, the sun god, have given you deep knowledge of the faith. When you spout lore about the religion of Ra or the power of the sun, you can roll+Wis instead of +Int. On a 16-19, the GM will give you valuable information. On a 9-15, the GM will give you an interesting tidbit, but it may not be entirely accurate or helpful.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Ra you are also forbidden to have in your deck the Domain of Death, Domain of Mind, Domain of Arcane and Domain of Moon cards in your deck.</p>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -2984,18 +4336,8 @@
           "white"
         ]
       },
-      "type": "feature",
-      "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Sun card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to wear armors and to have in your deck the Circle of Death, Circle of Arcane, Circle of Moon and Circle of Mind cards in your deck.</p><p>You are a devoted priest of Christ, with extensive knowledge of religious texts and rituals. When you consult your religious knowledge to overcome an obstacle, roll+Wis. On a 16-19, the GM will give you useful information or guidance. On a 9-15, the GM will also give you an option to choose from:</p><ul><li> You can choose to accept the guidance, but it comes with a complication or cost.</li><li>You can choose to reject the guidance and try to overcome the obstacle on your own, but with a penalty.</li></ul>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are Priest of Christ you are also forbidden to wear armors and to have in your deck the Domain of Death, Domain of Arcane, Domain of Moon and Domain of Mind cards in your deck.</p>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -3003,7 +4345,7 @@
       "header_image": "Priest of Christ.png"
     },
     {
-      "name": "Voice of Thor",
+      "name": "Priest of Thor",
       "crystals": {
         "requires": [],
         "provides": [
@@ -3012,18 +4354,8 @@
           "orange"
         ]
       },
-      "type": "feature",
-      "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Electricity card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Voice of Thor to have in your deck, you are forbidden fromm having the Circle of Water, Circle of Beasts, Circle of Ice and Circle of Mind cards in your deck.</p> <p>You have a deep understanding of the ancient Norse religion, and you can invoke the power of Thor in times of need. When you call upon the Voice of Thor to help you in battle, roll+Str. On a 16-19, you can choose one from the list below. On a 9-15, you can still choose one, but with a complication:</p><ul><li> Your attacks deal extra damage.</li><li>You gain temporary hit points.</li><li>Your enemies are intimidated, and their attacks are weakened.</li><li>You gain a burst of strength and can move freely despite any restraints.</li></ul><p>After using this move, Thor demands that you pay him back by performing a task or quest for him.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are Priest of Thor to have in your deck, you are forbidden fromm having the Domain of Water, Domain of Beasts, Domain of Ice and Domain of Mind cards in your deck.</p> ",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -3031,7 +4363,7 @@
       "header_image": "Voice of Thor.png"
     },
     {
-      "name": "Eye of Beelzebub",
+      "name": "Priest of Beelzebub",
       "crystals": {
         "requires": [],
         "provides": [
@@ -3040,18 +4372,8 @@
           "cerulean"
         ]
       },
-      "type": "feature",
-      "description": "<p>When you acquire this card in your deck, you can also get for free the Circle of Death card (but you are not forced to put it in your deck). You still need to meet its requirements to use it. While you are Eye of Beelzebub you are also forbidden to have in your deck the Circle of Life, Circle of Sun, Circle of Water and Circle of Air cards in your deck.</p> <p>You have studied the dark arts and have gained the Eye of Beelzebub. This move allows you to gain knowledge or insight into a person or situation, but at a great cost. When you use this move, roll+Int. On a 16-19, the GM will give you a clear and accurate vision or information. On a 9-15, the GM will still give you the information, but with a twist:</p><ul><li>You will gain the information, but it will be overwhelming or confusing.</li><li>You will gain the information, but at a great personal cost, such as losing a memory or a part of yourself.</li></ul><p>Additionally, every time you use this move, you must mark a point of corruption. Once you reach five points of corruption, you must make a deal with Beelzebub or suffer his wrath.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are Priest of Beelzebub you are also forbidden to have in your deck the Domain of Life, Domain of Sun, Domain of Water and Domain of Air cards in your deck.</p>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -3241,7 +4563,7 @@
       "header_image": "Divine Aura.png"
     },
     {
-      "name": "Moon Circle",
+      "name": "Moon Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3250,7 +4572,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Moon Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Acid Spray: You can release a spray of acid that damages and corrodes objects and creatures.</li><li>Acid Armor: You can create a protective armor made of acid for yourself or others.</li><li>Insect Form or Familiar: You can transform into an insect or summon a familiar made of insects to aid you.</li><li>Darkness Area: You can create an area of darkness that blinds creatures within it.</li><li>Darkvision: You can see in the dark as if it were daylight.</li><li>Spider Climb: You can climb surfaces like a spider.</li><li>Web: You can create sticky webs to trap and immobilize creatures.</li><li>Induce Sadness: You can make creatures within the circle feel overwhelming sadness.</li><li>Moon Divination: You can ask the moon for guidance and receive insight or knowledge about a specific subject or situation.</li><li>Moonlight Burst: You can release a burst of moonlight that damages and blinds creatures within it.</li></ul><p>Weakness: Being in a location with strong solar influence or being in a location where lunar influence is strongly suppressed.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Moon Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Acid Spray: You can release a spray of acid that damages and corrodes objects and creatures.</li><li>Acid Armor: You can create a protective armor made of acid for yourself or others.</li><li>Insect Form or Familiar: You can transform into an insect or summon a familiar made of insects to aid you.</li><li>Darkness Area: You can create an area of darkness that blinds creatures within it.</li><li>Darkvision: You can see in the dark as if it were daylight.</li><li>Spider Climb: You can climb surfaces like a spider.</li><li>Web: You can create sticky webs to trap and immobilize creatures.</li><li>Induce Sadness: You can make creatures within the circle feel overwhelming sadness.</li><li>Moon Divination: You can ask the moon for guidance and receive insight or knowledge about a specific subject or situation.</li><li>Moonlight Burst: You can release a burst of moonlight that damages and blinds creatures within it.</li></ul><p>Weakness: Being in a location with strong solar influence or being in a location where lunar influence is strongly suppressed.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3268,7 +4590,7 @@
       "header_image": "Moon Circle.png"
     },
     {
-      "name": "Arcane Circle",
+      "name": "Arcane Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3277,7 +4599,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Arcane Circle and perform the ritual, roll+Int and spend 1 Mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Arcane Circle: You can create a circle of arcane energy that provides magical protection and boosts spellcasting.</li><li>Alarm: You can set up a magical alarm that alerts you to the presence of creatures within a certain radius.</li><li>Identify: You can identify the magical properties of a creature, object, or spell.</li><li>Invisibility: You can make yourself or others invisible for a short period of time.</li><li>Unseen Servant: You can summon an invisible, magical servant to perform tasks for you.</li><li>Magic Circle: You can create a circle of protection that prevents creatures of a certain type from entering or leaving.</li><li>Magic Missile: You can launch a bolt of magical energy at a target.</li><li>Force Wall: You can create a wall of force to block off an area or protect yourself or others.</li><li>Mage Armor: You can create a magical armor that provides protection against physical and magical attacks.</li><li>Short Distance Teleport: You can teleport yourself or others a short distance.</li><li>Blink: You can blink in and out of existence, making it difficult for creatures to target you.</li><li>Astral Bodies Divination: You can read the stars and planets to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with counter-arcane properties or being in a location where arcane attacks are strongly suppressed.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Arcane Domain circle on the ground perform the ritual, roll+Int and spend 1 Mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Arcane Circle: You can create a Domain of arcane energy that provides magical protection and boosts spellcasting.</li><li>Alarm: You can set up a magical alarm that alerts you to the presence of creatures within a certain radius.</li><li>Identify: You can identify the magical properties of a creature, object, or spell.</li><li>Invisibility: You can make yourself or others invisible for a short period of time.</li><li>Unseen Servant: You can summon an invisible, magical servant to perform tasks for you.</li><li>Magic Circle: You can create a Domain of protection that prevents creatures of a certain type from entering or leaving.</li><li>Magic Missile: You can launch a bolt of magical energy at a target.</li><li>Force Wall: You can create a wall of force to block off an area or protect yourself or others.</li><li>Mage Armor: You can create a magical armor that provides protection against physical and magical attacks.</li><li>Short Distance Teleport: You can teleport yourself or others a short distance.</li><li>Blink: You can blink in and out of existence, making it difficult for creatures to target you.</li><li>Astral Bodies Divination: You can read the stars and planets to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with counter-arcane properties or being in a location where arcane attacks are strongly suppressed.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3295,7 +4617,7 @@
       "header_image": "Arcane Circle.png"
     },
     {
-      "name": "Death Circle",
+      "name": "Death Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3304,7 +4626,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Death Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Death Circle: You can create a circle that inflicts damage and weakens living creatures within it.</li><li>Raise Zombie: You can raise a zombie from a nearby corpse to fight for you.</li><li>Decay: You can cause organic material to quickly decompose and rot.</li><li>Cause Fear: You can cause fear in a creature, making it unable to move or act.</li><li>Ray of Sickness: You can shoot a beam of sickness that weakens and poisons a creature.</li><li>Inflict Wounds: You can cause severe wounds to a creature with a touch.</li><li>Vampiric Touch: You can drain the life force of a creature to heal yourself.</li><li>Human Corpse Divination: You can ask a question to a corpse and receive an answer from its memories.</li></ul><p>Weakness: Being in a location with a strong presence of life or being in a location where life-restoring magic is strongly supported.</p>",
+      "description": "<p>You can only have 2 Domain in your deck, beside the Universal Domain.</p><p>When you draw the Death Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Death Circle: You can create a circle that inflicts damage and weakens living creatures within it.</li><li>Raise Zombie: You can raise a zombie from a nearby corpse to fight for you.</li><li>Decay: You can cause organic material to quickly decompose and rot.</li><li>Cause Fear: You can cause fear in a creature, making it unable to move or act.</li><li>Ray of Sickness: You can shoot a beam of sickness that weakens and poisons a creature.</li><li>Inflict Wounds: You can cause severe wounds to a creature with a touch.</li><li>Vampiric Touch: You can drain the life force of a creature to heal yourself.</li><li>Human Corpse Divination: You can ask a question to a corpse and receive an answer from its memories.</li></ul><p>Weakness: Being in a location with a strong presence of life or being in a location where life-restoring magic is strongly supported.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3322,7 +4644,7 @@
       "header_image": "Death Circle.png"
     },
     {
-      "name": "Mind Circle",
+      "name": "Mind Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3331,7 +4653,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Mind Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Color Spray: You can create a spray of colors that blinds and disorients creatures.</li><li>Telekinesis: You can move objects and creatures with your mind.</li><li>Charm Person: You can make a person friendly and obedient to you.</li><li>Comprehend Languages: You can understand and speak any language.</li><li>Disguise Self: You can change your appearance to look like someone else.</li><li>Sense Emotion: You can sense the emotions of nearby creatures.</li><li>Silent Image: You can create a visual illusion that looks and sounds real.</li><li>Sleep: You can make a creature fall asleep.</li><li>Mirror Image: You can create illusory duplicates of yourself to confuse enemies.</li><li>Erase Memory: You can remove a specific memory from a person's mind.</li></ul><p>Weakness: Being without other intelligent creatures close to you.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Mind Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Color Spray: You can create a spray of colors that blinds and disorients creatures.</li><li>Telekinesis: You can move objects and creatures with your mind.</li><li>Charm Person: You can make a person friendly and obedient to you.</li><li>Comprehend Languages: You can understand and speak any language.</li><li>Disguise Self: You can change your appearance to look like someone else.</li><li>Sense Emotion: You can sense the emotions of nearby creatures.</li><li>Silent Image: You can create a visual illusion that looks and sounds real.</li><li>Sleep: You can make a creature fall asleep.</li><li>Mirror Image: You can create illusory duplicates of yourself to confuse enemies.</li><li>Erase Memory: You can remove a specific memory from a person's mind.</li></ul><p>Weakness: Being without other intelligent creatures close to you.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3349,7 +4671,7 @@
       "header_image": "Mind Circle.png"
     },
     {
-      "name": "Life Circle",
+      "name": "Life Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3358,7 +4680,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Life Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Growth Size: You can cause plants and creatures within the circle to grow to an immense size, granting them increased strength and resilience.</li><li>Create Saplings: You can create a group of saplings that will grow into a dense forest over time.</li><li>Resurrect Body as Plants: You can bring a dead body back to life as a plant creature.</li><li>Bark Armor: You can create a protective armor made of bark for yourself or others.</li><li>Dispel Magic: You can dispel any magical effects within the circle.</li><li>Plant Divination: You can ask the plants for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong presence of death or being in a location where resurrection is strongly suppressed</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Life Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Growth Size: You can cause plants and creatures within the circle to grow to an immense size, granting them increased strength and resilience.</li><li>Create Saplings: You can create a group of saplings that will grow into a dense forest over time.</li><li>Resurrect Body as Plants: You can bring a dead body back to life as a plant creature.</li><li>Bark Armor: You can create a protective armor made of bark for yourself or others.</li><li>Dispel Magic: You can dispel any magical effects within the circle.</li><li>Plant Divination: You can ask the plants for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong presence of death or being in a location where resurrection is strongly suppressed</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3376,7 +4698,7 @@
       "header_image": "Life Circle.png"
     },
     {
-      "name": "Beasts Circle",
+      "name": "Beasts Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3385,7 +4707,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Beasts Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Mammal form or familiar: You can transform into a mammal or summon a beast familiar to aid you.</li><li>Enhance senses: You can heighten your senses, gaining improved vision, hearing, and smell.</li><li>Entrails divination: You can read the entrails of a slain beast to gain insight or knowledge about a specific subject or situation.</li><li>Induce Rage: You can cause a nearby beast to become enraged and attack a target of your choice.</li></ul><p>Weakness: Being in a location with strong animal repellents or being in a location with no beasts nearby.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Beasts Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Mammal form or familiar: You can transform into a mammal or summon a beast familiar to aid you.</li><li>Enhance senses: You can heighten your senses, gaining improved vision, hearing, and smell.</li><li>Entrails divination: You can read the entrails of a slain beast to gain insight or knowledge about a specific subject or situation.</li><li>Induce Rage: You can cause a nearby beast to become enraged and attack a target of your choice.</li></ul><p>Weakness: Being in a location with strong animal repellents or being in a location with no beasts nearby.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3403,7 +4725,7 @@
       "header_image": "Beasts Circle.png"
     },
     {
-      "name": "Electricity Circle",
+      "name": "Electricity Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3412,7 +4734,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Electricity Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Jump: You can jump to a faraway location with the power of electricity.</li><li>Magnify Gravity: You can increase the gravity in a specific area, making it difficult for creatures to move.</li><li>Thunderwave: You can create a powerful shockwave that damages and pushes back nearby creatures.</li><li>Shatter: You can create a loud and powerful sound that shatters objects and structures.</li><li>Lightning Bolt: You can shoot a bolt of lightning that damages a target.</li><li>Hasten: You can move faster than the eye can see, allowing you to dodge attacks or move quickly to another location.</li><li>Lightning Divination: You can ask the lightning for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with metal walls or floors that conduct electricity.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Electricity Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Jump: You can jump to a faraway location with the power of electricity.</li><li>Magnify Gravity: You can increase the gravity in a specific area, making it difficult for creatures to move.</li><li>Thunderwave: You can create a powerful shockwave that damages and pushes back nearby creatures.</li><li>Shatter: You can create a loud and powerful sound that shatters objects and structures.</li><li>Lightning Bolt: You can shoot a bolt of lightning that damages a target.</li><li>Hasten: You can move faster than the eye can see, allowing you to dodge attacks or move quickly to another location.</li><li>Lightning Divination: You can ask the lightning for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with metal walls or floors that conduct electricity.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3430,7 +4752,7 @@
       "header_image": "Electricity Circle.png"
     },
     {
-      "name": "Air Circle",
+      "name": "Air Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3439,7 +4761,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Air Circle and speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Wind Slash: You can unleash a powerful gust of wind that damages all creatures within its path.</li><li>Bird Form/Familiar: You can transform into a bird or summon a bird familiar to aid you.</li><li>Levitation: You can levitate yourself or others within the circle, allowing you to move through the air or avoid obstacles.</li><li>Misty Step: You can teleport a short distance within the circle, appearing in a cloud of mist.</li><li>Cloud Divination: You can read the signs and shapes of the clouds, gaining insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a sealed, airtight environment</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p> When you draw the Air Domain circle on the ground speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Wind Slash: You can unleash a powerful gust of wind that damages all creatures within its path.</li><li>Bird Form/Familiar: You can transform into a bird or summon a bird familiar to aid you.</li><li>Levitation: You can levitate yourself or others within the circle, allowing you to move through the air or avoid obstacles.</li><li>Misty Step: You can teleport a short distance within the circle, appearing in a cloud of mist.</li><li>Cloud Divination: You can read the signs and shapes of the clouds, gaining insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a sealed, airtight environment</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3457,7 +4779,7 @@
       "header_image": "Air Circle.png"
     },
     {
-      "name": "Earth Circle",
+      "name": "Earth Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3466,7 +4788,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p>When you draw the Earth Circle and perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Grease: You can create a slippery surface in an area, causing creatures to slip and fall.</li><li>Earthbind: You can root creatures to the ground, immobilizing them.</li><li>Rock Armor: You can create a protective armor made of stone for yourself or others.</li><li>Tremorsense: You can sense vibrations and movements in the earth within a certain radius.</li><li>Slow: You can slow down creatures within the circle, making them move and act sluggishly.</li><li>Wall of Sand: You can create a wall of sand to block off an area or protect yourself or others.</li><li>Earth Divination: You can ask the earth for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with no solid ground or being in a building made of non-earth materials</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Earth Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Grease: You can create a slippery surface in an area, causing creatures to slip and fall.</li><li>Earthbind: You can root creatures to the ground, immobilizing them.</li><li>Rock Armor: You can create a protective armor made of stone for yourself or others.</li><li>Tremorsense: You can sense vibrations and movements in the earth within a certain radius.</li><li>Slow: You can slow down creatures within the circle, making them move and act sluggishly.</li><li>Wall of Sand: You can create a wall of sand to block off an area or protect yourself or others.</li><li>Earth Divination: You can ask the earth for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with no solid ground or being in a building made of non-earth materials</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3484,7 +4806,7 @@
       "header_image": "Earth Circle.png"
     },
     {
-      "name": "Ice Circle",
+      "name": "Ice Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3493,7 +4815,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Ice Circle and speak the words of power, roll+Int. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Ice Storm: You can summon a storm of ice and hail from within the circle, damaging all creatures within its radius.</li><li>Ice Armor: You can surround yourself or a creature within the circle with a protective armor made of ice, increasing their defense.</li><li>Frost Fingers: You can shoot icy projectiles from your fingertips, damaging one or more creatures within the circle.</li><li>Crustacean Form or Familiar: You can transform into a giant crab or summon a crustacean familiar to aid you within the circle.</li><li>Ice Conjuration: You can create an object made of ice within the circle, resistant or very sharp but brittle.</li><li>Ice Reflection: You can create mirrors made of ice within the circle, reflecting spells or projectiles back at their caster.</li></ul><p>Weakness: Being in a room with a fireplace or other source of strong infrared heat</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p> When you draw the Ice Domain circle on the ground speak the words of power, roll+Int. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Ice Storm: You can summon a storm of ice and hail from within the circle, damaging all creatures within its radius.</li><li>Ice Armor: You can surround yourself or a creature within the circle with a protective armor made of ice, increasing their defense.</li><li>Frost Fingers: You can shoot icy projectiles from your fingertips, damaging one or more creatures within the circle.</li><li>Crustacean Form or Familiar: You can transform into a giant crab or summon a crustacean familiar to aid you within the circle.</li><li>Ice Conjuration: You can create an object made of ice within the circle, resistant or very sharp but brittle.</li><li>Ice Reflection: You can create mirrors made of ice within the circle, reflecting spells or projectiles back at their caster.</li></ul><p>Weakness: Being in a room with a fireplace or other source of strong infrared heat</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3511,7 +4833,7 @@
       "header_image": "Ice Circle.png"
     },
     {
-      "name": "Water Circle",
+      "name": "Water Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3520,7 +4842,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Water Circle and speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Frog Form: You can transform yourself into a chosen amphibian or summon a familiar of the same type to aid you in battle.</li><li>Water Cannon: You can shoot a high-pressure stream of water, dealing damage to a single target.</li><li>Fog Cloud: You can summon a cloud of fog, reducing visibility and making it easier to sneak past enemies or escape.</li><li>Water Walk/Breath: You can walk on water or breathe underwater for a limited time.</li><li>Wall of Water: You can create a wall of water, providing cover or blocking enemy attacks.</li><li>Super Jump: You can jump high into the air or across long distances, reaching otherwise inaccessible places.</li><li>Water Divination: You can use water to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong source of heat or being in a dry environment.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p> When you draw the Water Domain circle on the ground speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Frog Form: You can transform yourself into a chosen amphibian or summon a familiar of the same type to aid you in battle.</li><li>Water Cannon: You can shoot a high-pressure stream of water, dealing damage to a single target.</li><li>Fog Cloud: You can summon a cloud of fog, reducing visibility and making it easier to sneak past enemies or escape.</li><li>Water Walk/Breath: You can walk on water or breathe underwater for a limited time.</li><li>Wall of Water: You can create a wall of water, providing cover or blocking enemy attacks.</li><li>Super Jump: You can jump high into the air or across long distances, reaching otherwise inaccessible places.</li><li>Water Divination: You can use water to gain insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a strong source of heat or being in a dry environment.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3538,7 +4860,7 @@
       "header_image": "Water Circle.png"
     },
     {
-      "name": "Fire Circle",
+      "name": "Fire Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3547,7 +4869,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Fire Circle and speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Lizard/Crocodile form (choose 1 animal) or familiar.</li><li>Fire Blasts: You can unleash a series of powerful fire blasts that deal damage to a target or area.</li><li>Wall of Fire: You can create a wall of flames that damages anyone who tries to pass through it.</li><li>Reptile Familiar: You can summon a reptile familiar to assist you in battle or aid you in other ways.</li><li>Fire Divination: You can ask the flames for insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a lack of oxygen or being in a location with strong sources of water or other fire-extinguishing substances.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p> When you draw the Fire Domain circle on the ground speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Lizard/Crocodile form (choose 1 animal) or familiar.</li><li>Fire Blasts: You can unleash a series of powerful fire blasts that deal damage to a target or area.</li><li>Wall of Fire: You can create a wall of flames that damages anyone who tries to pass through it.</li><li>Reptile Familiar: You can summon a reptile familiar to assist you in battle or aid you in other ways.</li><li>Fire Divination: You can ask the flames for insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with a lack of oxygen or being in a location with strong sources of water or other fire-extinguishing substances.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3565,7 +4887,7 @@
       "header_image": "Fire Circle.png"
     },
     {
-      "name": "Sun Circle",
+      "name": "Sun Domain",
       "crystals": {
         "requires": [
           "white",
@@ -3574,7 +4896,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Circles in your deck, beside the Universal Circle.</p><p> When you draw the Sun Circle and speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Heal Wounds: You can heal one or more creatures within the circle of wounds or afflictions they may have.</li><li>Absorb Spells: You can absorb a spell or magical effect within the circle, neutralizing it or gaining its energy for yourself.</li><li>Silence: You can silence one or more creatures or objects within the circle, rendering them unable to make noise or cast spells with verbal components.</li><li>Blind/Deafness: You can blind or deafen one or more creatures or objects within the circle, rendering them unable to see or hear.</li><li>Sun Burst: You can unleash a burst of sunlight from within the circle, blinding and damaging all creatures within its radius.</li><li>Sunlight Divination: You can ask the sun for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness. Lack of access to sunlight or intense darkness</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p> When you draw the Sun Domain circle on the ground speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Heal Wounds: You can heal one or more creatures within the Domain of wounds or afflictions they may have.</li><li>Absorb Spells: You can absorb a spell or magical effect within the circle, neutralizing it or gaining its energy for yourself.</li><li>Silence: You can silence one or more creatures or objects within the circle, rendering them unable to make noise or cast spells with verbal components.</li><li>Blind/Deafness: You can blind or deafen one or more creatures or objects within the circle, rendering them unable to see or hear.</li><li>Sun Burst: You can unleash a burst of sunlight from within the circle, blinding and damaging all creatures within its radius.</li><li>Sunlight Divination: You can ask the sun for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness. Lack of access to sunlight or intense darkness</p>",
       "stats": [
         {
           "stat_name": "",
@@ -3592,7 +4914,7 @@
       "header_image": "Sun Circle.png"
     },
     {
-      "name": "Universal Circle",
+      "name": "Universal Domain",
       "crystals": {
         "requires": [
           "white"
@@ -3600,7 +4922,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p><p>When you draw the Universal Circle and speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>You detect magic within the circle's bounds</li><li>You create a shield that protects those within the circle from magical attacks</li><li>You dispel a magical effect within the circle's bounds</li><li>You summon an elemental weapon to aid you in battle</li><li>You summon an elemental spirit to aid you outside of battle</li></ul><p>On a miss, the circle's power backfires, causing harm to those within its bounds.</p><p>Weakness: Being in a crowded, chaotic environment where many spells are being cast.</p></p>",
+      "description": "<p><p>When you draw the Universal Domain circle on the ground speak the words of power, roll+Wis. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>You detect magic within the circle's bounds</li><li>You create a shield that protects those within the circle from magical attacks</li><li>You dispel a magical effect within the circle's bounds</li><li>You summon an elemental weapon to aid you in battle</li><li>You summon an elemental spirit to aid you outside of battle</li></ul><p>On a miss, the circle's power backfires, causing harm to those within its bounds.</p><p>Weakness: Being in a crowded, chaotic environment where many spells are being cast.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -3615,7 +4937,7 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Universal Circle.png"
+      "header_image": "Universal Domain.png"
     },
     {
       "name": "Bewitching Performance",
@@ -4230,7 +5552,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Percussions, Drumming Rally is a renowned institution located in the city of Seville, Spain. Here, the bards learn to play the powerful and inspiring rhythms that can clear an ally's mind of fear and grant them +1 armor Forward. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. An ally takes +1 armour Forward and +2 damage Forward.</p></p>",
       "stats": [
         {
@@ -4258,7 +5580,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Woodwinds is situated in the city of Edinburgh, Scotland. The bards here are trained to play a tune on their woodwind instruments that creates a gust of wind, blocking a single incoming attack and dealing 1d6 damage to the attacker. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
       "stats": [
         {
@@ -4286,7 +5608,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": " core training",
       "description": "<p><p>The College of Brass and Accordions, Fanfare of Fury is a prestigious institution located in the city of Paris, France. The bards here are taught to play a bold and commanding tune on their brass instruments, inspiring their allies to greatness and granting them +1 damage Forward and +1 armor Forward. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
       "stats": [
         {
@@ -4316,7 +5638,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Voice, Siren's Song is located in the city of Athens, Greece. The bards here are skilled in singing a mesmerizing and seductive tune that lures a single foe in, causing them to become entranced and more vulnerable to further attacks. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice. </p></p>",
       "stats": [
         {
@@ -4344,7 +5666,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Lute and Strings: Melody of Madness is located in the bustling city of Venice, renowned for its rich artistic heritage. The college is housed in a grand Venetian palace, where students of music come to hone their craft.</p><p>When you play a frenetic and chaotic tune on your lute, roll+Cha. On a 16-19, choose two from the list below. On a 9-15, choose one:</p><ul><li>A single foe becomes confused and attacks anyone nearby</li><li>Other foes are momentarily stunned by the power of your music</li><li>All allies within earshot are inspired and gain +1 forward</li></ul><p>On a miss, the melody of madness backfires, causing harm to yourself or your allies.</p></p>",
       "stats": [
         {
@@ -4372,7 +5694,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Sculpting: Golem's Grasp is located in the remote mountain village of Carrara, where the finest marble in the land is mined. The college is housed in a grand marble temple, where students of sculpture come to learn the secrets of animating stone.</p><p>When you animate a stone golem that grasps and crushes a single foe, roll+Int. On a 16-19, the golem deals 1d6 damage and restrains the foe. On a 9-15, choose one from the list below:</p><ul><li>The golem deals damage but does not restrain the foe</li><li>The golem is not fully under your control and may act on its own accord</li><li>The golem is slow to react and may take a moment to carry out your command</li></ul><p>On a miss, the golem goes out of control and harms you or your allies.</p></p>",
       "stats": [
         {
@@ -4400,7 +5722,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Painting: Mightier than the Sword is located in Florence, Italy, a city known for its art and culture in the year 1444. As a student of this college, you have mastered the ability to bring your paintings to life, allowing you to summon shadowy figures that attack your enemies. When you use this feature, roll+Int. On a 16-19, your painting springs to life and deals 1d6+1 damage to a single foe. On a 9-15, your painting attacks but also attracts unwanted attention or complications. On a miss, your painting may turn against you or cause unintended harm.</p></p>",
       "stats": [
         {
@@ -4428,7 +5750,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Cooking: Healing Stew is located in Lyon, France, a city renowned for its culinary traditions in the year 1444. As a student of this college, you have learned to prepare nourishing stews that can heal your allies and grant them extra protection. When you use this feature, roll+Wis. On a 16-19, your stew restores 1d6+1 health to a single ally and grants them +1 armor forward. On a 9-15, your stew still heals but attracts unwanted attention or complications. On a miss, your stew may have unintended consequences, such as making your allies sick or attracting unwanted attention.</p></p>",
       "stats": [
         {
@@ -4456,7 +5778,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>The College of Blacksmithing: Repairer is located in Nuremberg, Germany, a city famous for its skilled blacksmiths in the year 1444. As a student of this college, you have honed your skills in repairing and maintaining weapons and armor. When you use this feature, roll+Str. On a 16-19, you repair and maintain all of your companions' weapons and armor, granting them +1 forward for using a weapon and +1 forward for using a shield or an armor. On a 9-15, you still repair and maintain, but attract unwanted attention or complications. On a miss, your repairs may be subpar, causing harm or failure during battle.</p></p>",
       "stats": [
         {
@@ -4484,7 +5806,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>The College of Dancing: Dance of Love is located in the city of Venice, Italy. The college is known for teaching students how to perform seductive dances that can influence their foes. When you perform the Dance of Love, choose a single foe and roll +CHA, on a 16-19, you achieve it. They become infatuated with you and are distracted, making them vulnerable to further attacks. This effect lasts for a few moments before wearing off. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM’s choice.   </p>",
       "stats": [
         {
@@ -4512,7 +5834,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>The College of Tea and Coffee Brewing: Elixir of Energy is located in the region of Bavaria, Germany. This college specializes in creating invigorating potions that grant temporary bursts of energy. When you brew an Elixir of Energy and give it to an ally, they gain +1 forward to any dice roll for the next 24 hours and increased energy. The elixir can be used only once per 24 hours.</p>",
       "stats": [
         {
@@ -4557,12 +5879,10 @@
       "header_image": "Wanderer.png"
     },
     {
-      "name": "Hunter Training",
+      "name": "Expert Hunter",
       "crystals": {
         "requires": [],
         "provides": [
-          "green",
-          "green",
           "green"
         ]
       },
@@ -5213,10 +6533,12 @@
       "crystals": {
         "requires": [],
         "provides": [
+          "green",
+          "green",
           "green"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You are a member of the Hunters of the Lunar Temple, a secretive organization that worships a Moon-like deity located in the Carpathian Mountains of Transylvania. You’ve lived with the critters and creatures of the wilds just as much, if not more, than your own kind. You can understand animals, and when you spend some time in the wilderness, you can change your Animal Companion by bonding with a creature with the area. Your previous Animal Companion returns to the wilderness but remains in the region. When you watch deeply the moon, you can summon any of your previous animal companions to exchange with your current one.</p>",
       "stats": [
         {
@@ -5239,6 +6561,8 @@
       "crystals": {
         "requires": [],
         "provides": [
+          "green",
+          "green",
           "green"
         ]
       },
@@ -5766,7 +7090,7 @@
           "blue"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>You have been trained in the Holy Order of St. Michael, a group of paladins dedicated to upholding justice and righteousness. When you question a defeated, captured, or willing individual, you can stare into their eyes to know if they are lying or not. Your oath demands that you never let a crime go unpunished and that you always seek to bring justice to the land.</p></p>",
       "stats": [
         {
@@ -5796,7 +7120,7 @@
           "blue"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>You have been trained in the Sisters of Mercy, a religious order of healers and caretakers. Your oath demands that you let no innocent creature suffer in your presence. Whenever you heal someone else, you are healed for half the amount you healed them by. Your order believes in the sanctity of life and that all beings deserve compassion and care.</p></p>",
       "stats": [
         {
@@ -5826,7 +7150,7 @@
           "blue"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>You have been trained in the Order of the Silver Shield, a knightly order dedicated to protecting the weak and standing up against tyranny. Your oath demands that you refuse to let those who have power abuse it. Whenever you Defend another person and choose to damage the attacker, you deal full damage (not half). Your order believes in the chivalric virtues of bravery, honor, and selflessness.</p></p>",
       "stats": [
         {
@@ -5856,7 +7180,7 @@
           "blue"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>You have been trained in the Order of the Pure Heart, a monastic order that values asceticism and self-discipline. Your oath demands that you abstain from mortal pleasures and finery. You are immune to all mundane poisons and diseases. Your order believes in the pursuit of spiritual purity and detachment from worldly desires.</p></p>",
       "stats": [
         {
@@ -5886,7 +7210,7 @@
           "blue"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p><p>You have been trained in the Brotherhood of the Iron Fist, a group of warriors who value loyalty and camaraderie above all else. Your oath demands that you remain true to your word and to your allies. When you speak the truth, none can doubt you; they might deny what you say, but in their hearts they recognise the truth. Your order believes in the importance of brotherhood and the bonds forged through battle.</p></p>",
       "stats": [
         {
@@ -5916,7 +7240,7 @@
           "blue"
         ]
       },
-      "type": "feature",
+      "type": "core feature",
       "description": "You have been trained in a holy order of penitent clerics devoted to seeking redemption for past sins. Your order believes in avoiding needless violence and seeks to prevent conflicts whenever possible. When you try to prevent a conflict, take +1 to your roll.\n\nTo become a member of this order, you must undergo a rigorous initiation process that involves a pilgrimage to holy sites throughout Europe. Only those who have shown a true commitment to penance and a willingness to put the needs of others before their own are accepted as members.",
       "stats": [
         {
@@ -6195,7 +7519,7 @@
       "header_image": "Thicket of Blades.png"
     },
     {
-      "name": "Mercenary",
+      "name": "Sellsword",
       "crystals": {
         "requires": [],
         "provides": [
@@ -6434,7 +7758,7 @@
           "cerulean"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "You have extensive training in the arcane arts, and can draw upon your knowledge to gain insight into magical phenomena. When you encounter a magical effect or creature, you may roll+Int. On a 16-19, you understand the nature and origin of the magic, and gain +1 forward to discern realities or spout lore related to it. On a 9-15, you have some knowledge of the magic, but it is incomplete or outdated, and you only gain +1 forward if you act on the information immediately. On a miss, the magic overwhelms you, and you suffer -1 ongoing to all rolls related to magic until you receive a moment of rest or a counteracting spell.",
       "stats": [
         {
@@ -8621,7 +9945,7 @@
           "black"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You have risen through the ranks of the thieves' guild to become a master of their secret language, Thieves' Cant. When you spout lore or discern realities about something related to the criminal underworld, take +1 to your roll. Additionally, when speaking in Thieves' Cant, you are able to communicate covertly with other members of the guild, conveying hidden messages and information that outsiders would not understand.</p>",
       "stats": [
         {
@@ -8649,7 +9973,7 @@
           "purple"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You have attended the bardic college and learned the secrets of music. You can use the bard moves and play any instrument. When you spout lore or discern realities about something related to art, culture, or history, take +1 to your roll.</p>",
       "stats": [
         {
@@ -8696,7 +10020,7 @@
       "header_image": "Arcane Algebra.png"
     },
     {
-      "name": "Enlisted",
+      "name": "Royal Guard Soldier",
       "crystals": {
         "requires": [],
         "provides": [
@@ -8705,7 +10029,7 @@
           "red"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "  <p>When you encounter a situation involving military forces or warfare, roll +Intelligence.</p>\n  <ul>\n    <li>On a 10+, you have extensive knowledge of the army's organization, tactics, and ranks. The GM will answer any three questions you have about the army or the war effort.</li>\n    <li>On a 7-9, you have some knowledge of the army and its tactics, but the GM will choose one question you ask and answer it truthfully while the other two are left unanswered or shrouded in uncertainty.</li>\n    <li>On a 6-, the GM will provide you with misinformation or false information, or you may attract unwanted attention from the army or its enemies.</li>\n  </ul>\n  <p>Regardless of your result, the GM will also tell you something interesting or important about the army or the war effort that you didn't know before.</p>",
       "stats": [
         {
@@ -11241,7 +12565,9 @@
       "name": "Magical Tatoos",
       "crystals": {
         "requires": [],
-        "provides": ["orange"]
+        "provides": [
+          "orange"
+        ]
       },
       "type": "training",
       "description": "<p class=\"subtitle\">Magical Tattoos</p><p>You have intricate tattoos on your body that glow when you use magic or you become strongly emotional</p>",
@@ -12025,7 +13351,9 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Centaur.png"},    {
+      "header_image": "Centaur.png"
+    },
+    {
       "name": "Centaur",
       "crystals": {
         "requires": [],
@@ -16280,7 +17608,7 @@
       "header_image": "Simple Bow.png"
     },
     {
-      "name": "Circle of the Horned God",
+      "name": "Domain of the Horned God",
       "crystals": {
         "requires": [],
         "provides": [
@@ -16289,8 +17617,8 @@
           "emerald"
         ]
       },
-      "type": "training",
-      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  16-19, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-15, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
+      "type": "core training",
+      "description": "<p>Your training in the Druidic Domain of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  16-19, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-15, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -16305,7 +17633,7 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Circle of the Horned God.png"
+      "header_image": "Domain of the Horned God.png"
     },
     {
       "name": "Spiritwalkers of the Northern Forest",
@@ -16317,7 +17645,7 @@
           "emerald"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>The Spiritwalkers of the Northern Forest have taught you to channel the power of the spirits of the air, water, fire, and earth. When you <em>consult the spirits</em>, roll+WIS. On a  16-19, you can ask the GM any three questions, and they will answer you truthfully. On a 9-15, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
       "stats": [
         {
@@ -16345,7 +17673,7 @@
           "emerald"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You have been trained by the Mystical Order of the Silver Cord, which has taught you to speak with the spirits of the dead. When you <em>commune with the spirits</em>, roll+WIS. On a  16-19, you can ask the GM any three questions about a deceased spirit, and they will answer you truthfully. On a 9-15, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
       "stats": [
         {
@@ -21535,7 +22863,17 @@
     {
       "name": "Time Off",
       "type": "rule",
-      "description": "When the party spends 1 week in a certain area, choose one <ul> <li>training (random or specific background card)</li>, <li>working (gold and random item card) </li>, <li>socialize (gain 1 xp, random npc card, npc cards can be used to get a favor from someone)</li>, </li> resupply (2 random item cards) </li>, </li> study (1 lore card, lore cards can be used to get a +5 bonus Discern Realities) </li>, <li> monster hunting (1 monster card, monster cards can be used to deal an attack in a weak point or something liek that) </li> <li> meditate (1 destiny card) </li> , <li> recover:  restore your HP to maximum and clear all your debilities <li> </ul>",
+      "description": "When the party spends 1 month in a certain area, choose one <ul> <li>training (random training card)</li>, <li>working (gold and random item card) </li>, <li>socialize (gain 1 xp, random npc card, npc cards can be used to get a favor from someone)</li>, </li> resupply (2 random item cards) </li>, </li> study (1 lore card, lore cards can be used to get a +5 bonus Discern Realities) </li>, <li> monster hunting (1 monster card, monster cards can be used to deal an attack in a weak point or something liek that) </li> <li> meditate (1 destiny card) </li> , <li> recover:  restore your HP to maximum and clear all your debilities <li> </ul>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Time Off.png"
+    },
+    {
+      "name": "Time Skip",
+      "type": "rule",
+      "description": "When the party spends 1 year don't adventuring, choose one: <ul> <li>training (random core training card and 3 training cards)</li>, <li>working (random core training card and gold) </li>, <li>socialize (random core training card and npc cards)</li>, </li> resupply (2 random item cards) </li>, </li> study (1 lore card, lore cards can be used to get a +5 bonus Discern Realities) </li>, <li> monster hunting (1 monster card, monster cards can be used to deal an attack in a weak point or something liek that) </li> <li> meditate (1 destiny card) </li> , <li> recover:  restore your HP to maximum and clear all your debilities <li> </ul>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -24184,7 +25522,7 @@
         "mythic",
         "potion"
       ],
-      "description": "<p><p class=\"subtitle\">Magic Circle:</p><p>When you drink this potion, you create a circle of protection against a specific alignment (chaos, evil, good, or law) around you. The circle has a radius of 10 feet and lasts for 1 hour. Creatures of the specified alignment cannot enter the circle by non-magical means. Any attempt to do so will cause them pain and they will be unable to cross the circle\\'s boundary. Additionally, any summoned creatures of the specified alignment are banished back to their own plane of existence if they try to enter the circle.</p></p>",
+      "description": "<p><p class=\"subtitle\">Magic Circle:</p><p>When you drink this potion, you create a Domain of protection against a specific alignment (chaos, evil, good, or law) around you. The circle has a radius of 10 feet and lasts for 1 hour. Creatures of the specified alignment cannot enter the circle by non-magical means. Any attempt to do so will cause them pain and they will be unable to cross the circle\\'s boundary. Additionally, any summoned creatures of the specified alignment are banished back to their own plane of existence if they try to enter the circle.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -26398,7 +27736,7 @@
           "stat_value": "1d4"
         }
       ],
-      "type": "character",
+      "type": "advanced character",
       "description": "<p>The Turinese Clock-Knight is a warrior of precision, wielding a clockwork sword and shield with skill and grace. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when wielding a clockwork weapon</li><li>You can spend an action to wind up your sword, granting you +1 forward to your next Hack and Slash or Parry roll</li><li>You have a +1 bonus to Discern Realities when investigating clockwork or mechanical devices</li></ul>",
       "geo_location": {
         "latitude": 45.0703,
@@ -26431,6 +27769,888 @@
           "ability_value": 0
         }
       ]
+    },
+    {
+      "name": "Guild of Blacksmiths",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Goldsmiths",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Masons",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Bakers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Brewers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Butchers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Carpenters",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Clothworkers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Dyers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of ths guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Fishmongers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Glassworkers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Leatherworkers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Mercers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Painters",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Potters",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Shipwrights",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Tailors",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Tanners",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Guild of Weavers",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The Mage's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "cerulean",
+          "cerulean",
+          "cerulean"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The Assassin's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black",
+          "black",
+          "black"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The Smuggler's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black",
+          "black",
+          "black"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The Fence's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black",
+          "black",
+          "black"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The Assassin's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black",
+          "black",
+          "black"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The Alchemist's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Enchanter's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold",
+          "gold",
+          "cerulean"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Explorer's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "purple",
+          "purple",
+          "green"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Cartographer's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "purple",
+          "purple",
+          "gold"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of the Cartographer's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "The White Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Bande Nere",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of Saint George",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Great Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Catalan Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Picard Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Aragonese Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Navarrese Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of Saint Florian",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Breton Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Italian Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The English Company",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Hat",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Banner",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Star",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Lion",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Rose",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Dove",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "The Company of the Heron",
+      "crystals": {
+        "requires": [
+          "red",
+          "red",
+          "red"
+        ],
+        "provides": []
+      },
+      "type": "core training",
+      "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "Mercenary Band Contacts.png"
+    },
+    {
+      "name": "Adventurer's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "red",
+          "red",
+          "purple"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of the Adventurer's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
+    },
+    {
+      "name": "Monster Hunter's Guild",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "green",
+          "green",
+          "orange"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>You are a member of the Monster Hunter's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the guild or its activities that you didn't know before.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Guild Contacts.png"
     },
     {
       "name": "Pitchfork",
@@ -30646,7 +32866,6 @@
       ],
       "header_image": "Florences Rumor 2.png"
     },
-
     {
       "name": "Venetians",
       "crystals": {
@@ -36263,6 +38482,5 @@
       },
       "header_image": "Appetite for Fame and Glory.png"
     }
-
   ]
 }
