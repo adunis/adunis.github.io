@@ -6125,7 +6125,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "When you are struck by a physical attack while wielding a shield, you can choose to have your shield take the brunt of it, destroying it but leaving you unharmed.",
+      "description": "<p>When you enter combat with your shield at the ready, roll +STR. On a 10+, hold 3. On a 7-9, hold 1. You can spend your hold at any time during combat to:</p>\n\n<ul>\n  <li><strong>Defend:</strong> Spend 1 hold to deflect an incoming attack or missile with your shield, reducing the damage you take by your shield's armor rating.</li>\n  \n  <li><strong>Bash:</strong> Spend 1 hold to make a powerful bash with your shield, dealing your shield's damage and stunning your target for a moment.</li>\n  \n  <li><strong>Push:</strong> Spend 1 hold to shove an opponent back, creating distance between you and them.</li>\n  \n  <li><strong>Protect:</strong> Spend 1 hold to interpose yourself between an ally and harm, taking the blow instead of them.</li>\n</ul>\n\n<p>When you run out of hold, your shield is no longer at the ready and you lose the benefits of this move until you have a chance to prepare it again.</p>\n\n",
       "stats": [
         {
           "stat_name": "",
@@ -6141,32 +6141,6 @@
         "longitude": -122.4194
       },
       "header_image": "Shield Mastery.png"
-    },
-    {
-      "name": "Great Khan",
-      "crystals": {
-        "requires": [
-          "red"
-        ],
-        "provides": []
-      },
-      "type": "feature",
-      "description": "<p>Requires: Level 6+, To Me, My Brothers!</p><p>When you use To Me, My Brothers! You choose an additional option on a 7+. Add the following to the list:</p><ul><li>The warband will bring mystical powers or ancient artifacts to bear on your foes.</li><li>The warband will follow you as long as you continue to bring them victories.</li></ul>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Great Khan.png"
     },
     {
       "name": "Through Death’s Eyes",
@@ -8728,7 +8702,7 @@
       "header_image": "Arcane Algebra.png"
     },
     {
-      "name": "Martial Training",
+      "name": "Enlisted",
       "crystals": {
         "requires": [],
         "provides": [
@@ -8740,7 +8714,7 @@
       "type": [
         "background"
       ],
-      "description": "<p>You have trained in the art of combat and learned the secrets of war. You can use the fighter moves and wield any weapon. When you spout lore or discern realities about something related to warfare, take +1 to your roll.</p>",
+      "description": "  <p>When you encounter a situation involving military forces or warfare, roll +Intelligence.</p>\n  <ul>\n    <li>On a 10+, you have extensive knowledge of the army's organization, tactics, and ranks. The GM will answer any three questions you have about the army or the war effort.</li>\n    <li>On a 7-9, you have some knowledge of the army and its tactics, but the GM will choose one question you ask and answer it truthfully while the other two are left unanswered or shrouded in uncertainty.</li>\n    <li>On a 6-, the GM will provide you with misinformation or false information, or you may attract unwanted attention from the army or its enemies.</li>\n  </ul>\n  <p>Regardless of your result, the GM will also tell you something interesting or important about the army or the war effort that you didn't know before.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -8976,19 +8950,1020 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "orange"
         ]
       },
       "type": "species",
-      "description": "<p><p class=\"subtitle\">Adaptability.</p><p>You are adaptable and able to quickly adjust to new situations. When you Defy Danger due to being caught off guard or unprepared, you can use +WIS instead of +DEX.</p><p class=\"subtitle\">Connections.</p><p>You have friends and acquaintances all over the world. When you arrive somewhere, you may declare that you know someone there and describe who it is. The GM will tell you what they know or have heard about that person.</p><p class=\"subtitle\">Grit.</p><p>You are tough and resilient. When you Take a Breather, you heal +1d4 HP.</p></p>",
-      "stats": [
+      "moves": [
         {
-          "stat_name": "",
-          "stat_value": ""
-        },
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+        "moves_requirements": [
+        ],
+        "moves_name": "Curse of the Diseases",
+        "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
         {
-          "stat_name": "",
-          "stat_value": ""
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Human.png"
+    }, {
+      "name": "Human",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "species",
+      "moves": [
+        {
+          "moves_requirements": [
+          ],
+          "moves_name": "Humanity",
+          "moves_description": "<p>As a human, you are a highly adaptable and versatile creature. When you make a roll using one of your advantages, mark it off. You may only mark each choice once per session. You gain six advantages: +3 to Discern Realities, +3 to Defy Danger, +3 to Hack and Slash, +3 to Spout Lore, +3 to Parley, +3 to Volley, +3 to Defend, +3 to Aid or Interferce</p>"
+        },{
+          "moves_requirements": [
+          ],
+          "moves_name": "Curse of the Diseases",
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, roll +Constitution. On a 10+, choose two advantages from the list below. On a 7-9, choose one. <ul><li>+1 ongoing while Defending against non-magical sources of damage. Your body's immune system has grown stronger to fight off infections and other physical threats.</li> <li>+1 ongoing while Spouting Lore about medical treatments, diseases, or biological phenomena. Your experience with illness has taught you a great deal about the workings of the body and the natural world.</li><li>Once per day, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding.</li><li>You gain a new, temporary ability based on the disease you have contracted. Work with the GM to create an ability that makes sense for your particular illness.</li></ul>When you overcome the disease, mark experience and gain the opportunity to permanently keep one of the advantages you chose, if it makes sense for your character's growth and development."
         }
       ],
       "geo_location": {
@@ -16455,7 +17430,7 @@
         ],
         "provides": []
       },
-      "type": "move",
+      "type": "feature",
       "description": "<p>When you call the Nyassir Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect marine life, including communicating with and controlling the behavior of aquatic animals. However, you are weak against pollution which can be deadly. Your instinct is prone to curiosity and adventurousness. Roll+WIS. On a  16-19, the spirit quickly possesses you and without issue. On a 9-15, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
       "stats": [
         {
@@ -16481,7 +17456,7 @@
         ],
         "provides": []
       },
-      "type": "move",
+      "type": "feature",
       "description": "<p>When you call the Apollor Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to control and protect mountains, including strengthening their structures and stabilizing them against earthquakes. However, you are weak against earthquakes which can be deadly. Your instinct is prone to stubbornness and rigidity. Roll+WIS. On a  16-19, the spirit quickly possesses you and without issue. On a 9-15, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
       "stats": [
         {
@@ -16507,7 +17482,7 @@
         ],
         "provides": []
       },
-      "type": "move",
+      "type": "feature",
       "description": "<p>When you call the Kapka Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to fly and see over long distances, including sensing prey from afar and diving at high speeds. However, you are sensitive to loud noises. Your instinct is prone to hunting and preying on weaker beings. Roll+WIS. On a  16-19, the spirit quickly possesses you and without issue. On a 9-15, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
       "stats": [
         {
@@ -20091,10 +21066,14 @@
         },
         {
           "moves_requirements": [
-            "black"
+            "red"
           ],
           "moves_name": "Shatter Shield",
           "moves_description": "<p>When you take damage that would harm or kill you, you can choose to break your round shield and ignore the damage. You can only do this once per shield.</p>"
+        },{
+        "moves_requirements": [],
+        "moves_name": "Protective",
+        "moves_description": "While holding this shield in one hand, you gain 1 Armor (you reduce by 1 all the damage you receive)"
         }
       ],
       "stats": [
@@ -20123,7 +21102,7 @@
       "moves": [
         {
           "moves_requirements": [
-            "blue"
+            "red"
           ],
           "moves_name": "Covering Fire",
           "moves_description": "<p>When you use a kite shield to defend yourself or an ally from ranged attacks, roll+Con. On a 16-19, you deflect or block the attacks and take no damage. On a 9-15, you deflect or block the attacks but suffer a -1 penalty to your next action.</p>"
@@ -20134,6 +21113,11 @@
           ],
           "moves_name": "Shatter Shield",
           "moves_description": "<p>When you take damage that would harm or kill you, you can choose to break your kite shield and ignore the damage. You can only do this once per shield.</p>"
+        }
+        ,{
+          "moves_requirements": [],
+          "moves_name": "Protective",
+          "moves_description": "While holding this shield in one hand, you gain 1 Armor (you reduce by 1 all the damage you receive)"
         }
       ],
       "stats": [
@@ -20162,7 +21146,7 @@
       "moves": [
         {
           "moves_requirements": [
-            "blue"
+            "red"
           ],
           "moves_name": "Deploy Shield",
           "moves_description": "<p>When you set up a pavise shield as a cover, roll +Con. On a 9-15, you and anyone behind the shield gain +1 armor against ranged attacks. On a 16-19, you and anyone behind the shield gain +2 armor against ranged attacks and are immune to explosions. On a 20+, you also gain +1 forward to your next action from behind the shield.</p>"
@@ -20173,6 +21157,11 @@
           ],
           "moves_name": "Shield Breaker",
           "moves_description": "<p>When you attack with a pavise shield, roll +Str. On a 9-15, you deal your damage and force your target to give ground. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack shatters or splinters your target's shield or armor, reducing its effectiveness</li><li>Your attack pushes your target into a dangerous position, such as off a cliff or into a trap</li><li>Your attack intimidates or demoralizes your target, causing them to surrender or flee</li></ul>"
+        }
+        ,{
+          "moves_requirements": [],
+          "moves_name": "Protective",
+          "moves_description": "While holding this shield in one hand, you gain 1 Armor (you reduce by 1 all the damage you receive)"
         }
       ],
       "stats": [
@@ -21355,9 +22344,113 @@
       "header_image": "Level Up.png"
     },
     {
+      "name": "War of the Dragons",
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "type": "item",
+      "moves": [
+        {
+          "moves_requirements": [],
+          "moves_name": "",
+          "moves_description": "<p>The War of the Dragons was a catastrophic event that shook the world in the 14th century, in which two factions of dragons, the Flamebreathers and the Frostwings, rose up against humanity and sparked a worldwide conflict that lasted for over a decade. The dragons were incredibly powerful, with a variety of abilities including fire and ice breath, flight, and immense physical strength. They were able to lay waste to entire cities and armies with ease, and even other fantasy races such as elves and dwarves were unable to withstand their power.\n\nThe Flamebreathers were led by the great red dragon, Zephyros, and controlled much of southern Europe including the Iberian Peninsula and Italy, while the Frostwings were led by the powerful white dragon, Boreas, and dominated much of northern Europe including Scandinavia and Russia. The dragons had enslaved the orcs, using them as soldiers in their armies and forcing them to do their bidding.\n\nHumanity was led by a coalition of nations including England, France, and the Holy Roman Empire, and was supported by the elves of the Germanic regions and the dwarves of the Alpine region. Despite being vastly outnumbered and outmatched by the dragons, humanity was able to mount a formidable defense due to their ingenuity and tenacity. They employed a variety of tactics including the use of ballistae and trebuchets to take down the dragons in flight, and the use of enchanted weapons to penetrate their tough hides.\n\nThe War of the Dragons was a turning point in the history of Europe and the world, with the dragons being defeated by humanity in the year 1378, thanks to the combined efforts of the various factions. The orcs were freed from their slavery, and the dragons were forced to retreat to their respective regions, where they remained for centuries to come.</p> "
+        },
+        {
+          "moves_requirements": [],
+          "moves_name": "",
+          "moves_description": "You get +1 ongoing to spout lore and discern reality checks related to the War of the Dragons."
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "2 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "30 coins"
+        }
+      ],
+      "geo_location": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "header_image": "War_of_the_Dragons.png"
+    },{
+      "name": "Angels and Demon War",
+      "crystals": {
+        "requires": ["cerulean"],
+        "provides": []
+      },
+      "type": "item",
+      "moves": [
+        {
+          "moves_requirements": [],
+          "moves_name": "",
+          "moves_description": "<p>The Angels and Demon War was a cataclysmic conflict that took place in the year 0, according to legend. The war was fought between two powerful factions, the angels of heaven and the demons of hell. The conflict is said to have been sparked by a disagreement over the creation of humanity, with the angels believing that humans were created in the image of God, while the demons believed that humans were inferior creatures not worthy of God's love.\n\nThe war lasted for centuries and devastated the entire world. Angels and demons alike waged fierce battles across the skies and on the earth, with entire cities and civilizations being destroyed in the process. The war ended in a stalemate, with neither side emerging as the clear victor. However, it is said that the angels and demons agreed to a truce, with the angels being given dominion over the heavens and the demons being confined to hell.</p>"
+        },
+        {
+          "moves_requirements": ["cerulean"],
+          "moves_name": "Bonus",
+          "moves_description": "You get +1 ongoing to spout lore and discern reality checks related to the Angels and Demon War."
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "2 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "50 coins"
+        }
+      ],
+      "geo_location": {
+        "latitude": 33.6844,
+        "longitude": 73.0479
+      },
+      "header_image": "Angels_and_Demons_War.png"
+    },
+    {
+      "name": "Discovery of Magic",
+      "crystals": {
+        "requires": [],
+        "provides": ["cerulean"]
+      },
+      "type": "item",
+      "moves": [
+        {
+          "moves_requirements": [],
+          "moves_name": "",
+          "moves_description": "<p>The Discovery of Magic was a pivotal moment in the history of the world, occurring around the year -3000. Prior to this event, magic was not known to exist and the world was much different than it is today. However, everything changed when a group of scholars stumbled upon an ancient text that revealed the existence of magic and how to harness its power.</p>\n\n<p>The scholars were from different parts of the world, including Sumeria, Egypt, and India, and each brought their own knowledge and skills to the table. Together, they deciphered the text and began to experiment with the techniques and formulas described within. Over time, they were able to develop a system of magic that allowed them to wield incredible power, from summoning elemental creatures to manipulating time and space.</p>\n\n<p>The Discovery of Magic had a profound impact on the world, leading to the rise of powerful empires and kingdoms that were able to dominate their rivals thanks to their mastery of magic. It also led to the creation of magical artifacts, such as enchanted swords and amulets, that could grant their wielders incredible abilities. However, the discovery also led to conflicts between those who wielded magic and those who did not, with some fearing the power of the magic-users and seeking to suppress or destroy them.</p>"
+        },
+        {
+          "moves_requirements": [],
+          "moves_name": "Bonus",
+          "moves_description": "You get +1 ongoing to spout lore and discern reality checks related to magic and magical artifacts."
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "1 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "50 coins"
+        }
+      ],
+      "geo_location": {
+        "latitude": 41.9028,
+        "longitude": 12.4964
+      },
+      "header_image": "Discovery_of_Magic.png"
+    },
+    {
       "name": "Time Off",
       "type": "rule",
-      "description": "When the party spends 1 week in a certain area, choose one: training (random background card), working (random item card), socialize (gain 1 xp, random npc card, npc cards can be used to get a favor from someone), resupply (2 random item cards), study (1 lore card, lore cards can be used to automatically succeed any check if the lore is relevant to the check roll), investigate (1 monster card, monster cards can be used to deal an attack in a weak point or something liek that), meditate (1 destiny card), recover:  restore your HP to maximum and clear all your debilities",
+      "description": "When the party spends 1 week in a certain area, choose one <ul> <li>training (random or specific background card)</li>, <li>working (gold and random item card) </li>, <li>socialize (gain 1 xp, random npc card, npc cards can be used to get a favor from someone)</li>, </li> resupply (2 random item cards) </li>, </li> study (1 lore card, lore cards can be used to get a +5 bonus Discern Realities) </li>, <li> monster hunting (1 monster card, monster cards can be used to deal an attack in a weak point or something liek that) </li> <li> meditate (1 destiny card) </li> , <li> recover:  restore your HP to maximum and clear all your debilities <li> </ul>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
