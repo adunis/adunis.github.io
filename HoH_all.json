@@ -1996,7 +1996,7 @@
       "header_image": "The Upper Hand.png"
     },
     {
-      "name": "Appetite for Fame and Glory",
+      "name": "Seeker of Fame and Glory",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2006,7 +2006,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You hunger for fame and glory, seeking to make a name for yourself and leave a lasting legacy. When you roll for a move while pursuing this appetite, roll 3d6 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
+      "description": "<p>You hunger for fame and glory, seeking to make a name for yourself and leave a lasting legacy. When you roll for a move while pursuing this appetite, roll 2d20 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2021,10 +2021,10 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "Appetite for Riches and Property",
+      "name": "Seeker of Riches and Property",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2034,7 +2034,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>Your insatiable desire for wealth and property drives you to take risks and make bold moves. When you roll for a move while pursuing this appetite, roll 3d6 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
+      "description": "<p>Your insatiable desire for wealth and property drives you to take risks and make bold moves. When you roll for a move while pursuing this appetite, roll 2d20 and take the best two dice. However, if any of the dice you roll are duplicates, the GM will introduce a complication or danger that comes about due to your heedless pursuits.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2049,10 +2049,10 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Appetite for Riches and Property.png"
+      "header_image": "Seeker of Riches and Property.png"
     },
     {
-      "name": "Appetite for Destruction",
+      "name": "Seeker of Destruction",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2062,7 +2062,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for destruction, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of destruction.</p>",
+      "description": "<p>When you have an insatiable appetite for destruction, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of destruction.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2077,7 +2077,7 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Appetite for Destruction.png"
+      "header_image": "Seeker of Destruction.png"
     },
     {
       "name": "Appetites of Power Over Others",
@@ -2090,7 +2090,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for power over others, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of power.</p>",
+      "description": "<p>When you have an insatiable appetite for power over others, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of power.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2118,7 +2118,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for mortal pleasures, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of pleasure.</p>",
+      "description": "<p>When you have an insatiable appetite for mortal pleasures, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of pleasure.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2146,7 +2146,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for conquest, roll 3d6 instead of 2d6 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of conquest.</p>",
+      "description": "<p>When you have an insatiable appetite for conquest, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of conquest.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -32890,7 +32890,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Milanese",
@@ -32916,7 +32916,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Romans",
@@ -32942,7 +32942,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Turinese",
@@ -32968,7 +32968,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Florentines",
@@ -32994,7 +32994,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Neapolitans ",
@@ -33020,7 +33020,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Palermitans",
@@ -33046,7 +33046,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Catanians",
@@ -33072,7 +33072,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bolognese",
@@ -33098,7 +33098,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Forlivesi",
@@ -33124,7 +33124,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Genovesi",
@@ -33150,7 +33150,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sienese",
@@ -33176,7 +33176,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Lucchesi",
@@ -33202,7 +33202,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Ferrarese",
@@ -33228,7 +33228,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Mantuans",
@@ -33254,7 +33254,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Padovani",
@@ -33280,7 +33280,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Veronesi",
@@ -33306,7 +33306,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Urbinese",
@@ -33332,7 +33332,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Perugians",
@@ -33358,7 +33358,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Anconans",
@@ -33384,7 +33384,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Ravennans",
@@ -33410,7 +33410,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Riminians",
@@ -33436,7 +33436,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Vicenzans",
@@ -33462,7 +33462,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Trevisans",
@@ -33488,7 +33488,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Luganese",
@@ -33514,7 +33514,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bellinzonese",
@@ -33540,7 +33540,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Locarnese",
@@ -33566,7 +33566,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Mendrisiese",
@@ -33592,7 +33592,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Comaschi",
@@ -33618,7 +33618,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Varese",
@@ -33644,7 +33644,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Chiavenna",
@@ -33670,7 +33670,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Tirano",
@@ -33696,7 +33696,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sondrio",
@@ -33722,7 +33722,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bormio",
@@ -33748,7 +33748,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Parisians",
@@ -33774,7 +33774,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Marseillais",
@@ -33800,7 +33800,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Lyonnais",
@@ -33826,7 +33826,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Normans",
@@ -33852,7 +33852,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bordeaux",
@@ -33878,7 +33878,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Rouenais",
@@ -33904,7 +33904,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Nantais",
@@ -33930,7 +33930,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Toulousains",
@@ -33956,7 +33956,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Dijonnais",
@@ -33982,7 +33982,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Angevins",
@@ -34008,7 +34008,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Orl\u00c3\u00a9anais",
@@ -34034,7 +34034,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Tourangeaux",
@@ -34060,7 +34060,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bavarians",
@@ -34086,7 +34086,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Prussians",
@@ -34112,7 +34112,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Saxons",
@@ -34138,7 +34138,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Swabians",
@@ -34164,7 +34164,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Frisians",
@@ -34190,7 +34190,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Hessians",
@@ -34216,7 +34216,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Thuringians",
@@ -34242,7 +34242,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Amiens",
@@ -34268,7 +34268,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Lille",
@@ -34294,7 +34294,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Rennes",
@@ -34320,7 +34320,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Londoners",
@@ -34346,7 +34346,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Kentish",
@@ -34372,7 +34372,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sussexians",
@@ -34398,7 +34398,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Essexites",
@@ -34424,7 +34424,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Suffolkers",
@@ -34450,7 +34450,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Norfolkians",
@@ -34476,7 +34476,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Cambridgers",
@@ -34502,7 +34502,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Avignon",
@@ -34528,7 +34528,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Reims",
@@ -34554,7 +34554,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Poitiers",
@@ -34580,7 +34580,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Caen",
@@ -34606,7 +34606,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Montpellier",
@@ -34632,7 +34632,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Nancy",
@@ -34658,7 +34658,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Amiens",
@@ -34684,7 +34684,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Swedes",
@@ -34710,7 +34710,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Danes",
@@ -34736,7 +34736,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Norwegians",
@@ -34762,7 +34762,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Icelanders",
@@ -34788,7 +34788,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Finns",
@@ -34814,7 +34814,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sami",
@@ -34840,7 +34840,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Karelians",
@@ -34866,7 +34866,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Estonians",
@@ -34892,7 +34892,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Lithuanians",
@@ -34918,7 +34918,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Wallachians",
@@ -34944,7 +34944,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Moldavians",
@@ -34970,7 +34970,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Transylvanians",
@@ -34996,7 +34996,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banat Swabians",
@@ -35022,7 +35022,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sz\u00c3\u00a9kelys",
@@ -35048,7 +35048,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Saxon Transylvanians",
@@ -35074,7 +35074,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Iberians Andalusians",
@@ -35100,7 +35100,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Aragonese",
@@ -35126,7 +35126,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Asturians",
@@ -35152,7 +35152,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Balearics",
@@ -35178,7 +35178,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Basques",
@@ -35204,7 +35204,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Canary Islanders",
@@ -35230,7 +35230,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Cantabrians",
@@ -35256,7 +35256,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Castilian people",
@@ -35282,7 +35282,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Catalan people",
@@ -35308,7 +35308,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Extremaduran people",
@@ -35334,7 +35334,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Galician people",
@@ -35360,7 +35360,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Leonese people",
@@ -35386,7 +35386,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Valencian people",
@@ -35412,7 +35412,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Turks",
@@ -35438,7 +35438,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Tatars",
@@ -35464,7 +35464,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Azeris",
@@ -35490,7 +35490,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Uzbeks",
@@ -35516,7 +35516,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Turkmens",
@@ -35542,7 +35542,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Circassians",
@@ -35568,7 +35568,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Morrocans ",
@@ -35594,7 +35594,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Tlemcen",
@@ -35620,7 +35620,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Ifriqiyns ",
@@ -35646,7 +35646,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Hafsids",
@@ -35672,7 +35672,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Fezians",
@@ -35698,7 +35698,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Mamluks ",
@@ -35724,7 +35724,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Hilal",
@@ -35750,7 +35750,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Sulaym",
@@ -35776,7 +35776,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Tamim",
@@ -35802,7 +35802,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Quraysh",
@@ -35828,7 +35828,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Rabi'ah",
@@ -35854,7 +35854,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Ghatafan",
@@ -35880,7 +35880,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Bakr",
@@ -35906,7 +35906,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Taghlib",
@@ -35932,7 +35932,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Uqayl",
@@ -35958,7 +35958,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Banu Asad",
@@ -35984,7 +35984,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Kalderash",
@@ -36010,7 +36010,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Lovari",
@@ -36036,7 +36036,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sinti",
@@ -36062,7 +36062,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Romungro",
@@ -36088,7 +36088,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Ursari",
@@ -36114,7 +36114,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Boyash",
@@ -36140,7 +36140,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Xoraxai",
@@ -36166,7 +36166,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "L\u00c4\u0192utari",
@@ -36192,7 +36192,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "D\u00c5\u00beambazi",
@@ -36218,7 +36218,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Romanichal",
@@ -36244,7 +36244,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sz\u00c3\u00a9kelys",
@@ -36270,7 +36270,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "J\u00c3\u00a1sz",
@@ -36296,7 +36296,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Kun",
@@ -36322,7 +36322,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Kabar",
@@ -36348,7 +36348,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Pecheneg",
@@ -36374,7 +36374,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Russians",
@@ -36400,7 +36400,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Ukrainians",
@@ -36426,7 +36426,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Belarusians",
@@ -36452,7 +36452,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Rusyns",
@@ -36478,7 +36478,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Poles",
@@ -36504,7 +36504,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Czechs",
@@ -36530,7 +36530,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Slovaks",
@@ -36556,7 +36556,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sorbs",
@@ -36582,7 +36582,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Kashubians",
@@ -36608,7 +36608,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Silesians",
@@ -36634,7 +36634,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Polabians",
@@ -36660,7 +36660,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Serbs",
@@ -36686,7 +36686,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Croats",
@@ -36712,7 +36712,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bosniaks",
@@ -36738,7 +36738,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Montenegrins",
@@ -36764,7 +36764,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Macedonians",
@@ -36790,7 +36790,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Slovenes",
@@ -36816,7 +36816,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Bulgarians",
@@ -36842,7 +36842,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Ashkenazi Jews",
@@ -36868,7 +36868,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sephardi Jews",
@@ -36894,7 +36894,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Romaniote Jews",
@@ -36920,7 +36920,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Italkim Jews",
@@ -36946,7 +36946,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Mizrahi Jews",
@@ -36972,7 +36972,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Karaite Jews",
@@ -36998,7 +36998,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Douglas",
@@ -37024,7 +37024,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Stewart",
@@ -37050,7 +37050,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Campbell",
@@ -37076,7 +37076,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Macdonald",
@@ -37102,7 +37102,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Mackenzie",
@@ -37128,7 +37128,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Grant",
@@ -37154,7 +37154,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Fraser",
@@ -37180,7 +37180,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan Sinclair",
@@ -37206,7 +37206,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "O'Neill",
@@ -37232,7 +37232,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "O'Donnell",
@@ -37258,7 +37258,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "O'Brien",
@@ -37284,7 +37284,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "MacCarthy",
@@ -37310,7 +37310,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Albanians",
@@ -37336,7 +37336,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Golden Sun",
@@ -37362,7 +37362,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Silver Moon",
@@ -37388,7 +37388,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Radiant Dawn",
@@ -37414,7 +37414,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Green Forest",
@@ -37440,7 +37440,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Misty Vale",
@@ -37466,7 +37466,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Wildflower",
@@ -37492,7 +37492,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Shadowed Blade",
@@ -37518,7 +37518,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Bloodied Moon",
@@ -37544,7 +37544,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Cursed Star",
@@ -37570,7 +37570,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Mangrove Forest",
@@ -37596,7 +37596,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Jungle Mountains",
@@ -37622,7 +37622,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Coral Reef",
@@ -37648,7 +37648,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Voodoo Tribes",
@@ -37674,7 +37674,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Depths Tribes",
@@ -37700,7 +37700,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Sun Tribes",
@@ -37726,7 +37726,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Ice Wolves",
@@ -37752,7 +37752,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Frost Giants",
@@ -37778,7 +37778,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Snow Leopards",
@@ -37804,7 +37804,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Poisonous Vines",
@@ -37830,7 +37830,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Rotting Trees",
@@ -37856,7 +37856,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Marsh Hags",
@@ -37882,7 +37882,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Iron Fist",
@@ -37908,7 +37908,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Stone Heart",
@@ -37934,7 +37934,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Crimson Mountain",
@@ -37960,7 +37960,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Iron Forge",
@@ -37986,7 +37986,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Golden Mine",
@@ -38012,7 +38012,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Dark Tunnels",
@@ -38038,7 +38038,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Cloud Walkers",
@@ -38064,7 +38064,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Sky Hunters",
@@ -38090,7 +38090,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Mountain Monks",
@@ -38116,7 +38116,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Reef Blades",
@@ -38142,7 +38142,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Coral Casters",
@@ -38168,7 +38168,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Clan of the Seaborn Sentinels",
@@ -38194,7 +38194,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Whistlers Communities",
@@ -38220,7 +38220,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Gatherers Communities",
@@ -38246,7 +38246,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Acrobats Communities",
@@ -38272,7 +38272,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "Illusionists Communities",
@@ -38298,7 +38298,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Stoneworkers",
@@ -38324,7 +38324,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Tinkerers",
@@ -38350,7 +38350,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Leafwalkers",
@@ -38376,7 +38376,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Woodcarvers",
@@ -38402,7 +38402,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Forest Lurkers",
@@ -38428,7 +38428,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Tree Eaters",
@@ -38454,7 +38454,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     },
     {
       "name": "The Hog Tamers",
@@ -38480,7 +38480,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "header_image": "Appetite for Fame and Glory.png"
+      "header_image": "Seeker of Fame and Glory.png"
     }
   ]
 }
