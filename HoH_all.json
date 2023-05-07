@@ -2062,7 +2062,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for destruction, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of destruction.</p>",
+      "description": "<p>When you have an insatiable appetite for destruction, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are equal to 12, 17 or 13 the GM will introduce a complication or danger that arises due to your reckless pursuit of destruction.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2080,7 +2080,7 @@
       "header_image": "Seeker of Destruction.png"
     },
     {
-      "name": "Appetites of Power Over Others",
+      "name": "Seeker of Power Over Others",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2090,7 +2090,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for power over others, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of power.</p>",
+      "description": "<p>When you have an insatiable appetite for power over others, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are equal to 12, 17 or 13 the GM will introduce a complication or danger that arises due to your reckless pursuit of power.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2105,10 +2105,10 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Appetites of Power Over Others.png"
+      "header_image": "Seeker of Power Over Others.png"
     },
     {
-      "name": "Appetites of Mortal Pleasures",
+      "name": "Seeker of Mortal Pleasures",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2118,7 +2118,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for mortal pleasures, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of pleasure.</p>",
+      "description": "<p>When you have an insatiable appetite for mortal pleasures, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are equal to 12, 17 or 13 the GM will introduce a complication or danger that arises due to your reckless pursuit of pleasure.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2133,10 +2133,10 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Appetites of Mortal Pleasures.png"
+      "header_image": "Seeker of Mortal Pleasures.png"
     },
     {
-      "name": "Appetites of  Conquest",
+      "name": "Seeker of  Conquest",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2146,7 +2146,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>When you have an insatiable appetite for conquest, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are duplicates, such as rolling 1 and 1 or 2, 2 and 2, the GM will introduce a complication or danger that arises due to your reckless pursuit of conquest.</p>",
+      "description": "<p>When you have an insatiable appetite for conquest, roll 2d20 instead of 1d20 when making moves. Take the best two dice. However, if any of the dice you roll are equal to 12, 17 or 13 the GM will introduce a complication or danger that arises due to your reckless pursuit of conquest.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2161,7 +2161,7 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Appetites of  Conquest.png"
+      "header_image": "Seeker of  Conquest.png"
     },
     {
       "name": "Tribe Warrior",
