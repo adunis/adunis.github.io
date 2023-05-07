@@ -17608,7 +17608,7 @@
       "header_image": "Simple Bow.png"
     },
     {
-      "name": "Domain of the Horned God",
+      "name": "Druid of the Horned God",
       "crystals": {
         "requires": [],
         "provides": [
@@ -17618,7 +17618,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>Your training in the Druidic Domain of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  16-19, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-15, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
+      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  16-19, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-15, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -17636,7 +17636,7 @@
       "header_image": "Domain of the Horned God.png"
     },
     {
-      "name": "Spiritwalkers of the Northern Forest",
+      "name": "Spiritwalker of the Northern Forest",
       "crystals": {
         "requires": [],
         "provides": [
