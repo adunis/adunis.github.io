@@ -1326,7 +1326,8 @@ const generateCharacter = async (color = '') => {
 
     const characters = (data.filter(card => card.type && card.type.includes("character")));
     const features = filterCardsByColor(data.filter(card => card.type && card.type.includes("feature")));
-    const backgrounds = filterCardsByColor(data.filter(card => card.type && card.type.includes("background")));
+    const trainings = filterCardsByColor(data.filter(card => card.type && card.type.includes("training")));
+    const backgrounds = data.filter(card => card.type && card.type.includes("background"));
     const species = data.filter(card => card.type && card.type.includes("species"));
     const destinies = data.filter(card => card.type && card.type.includes("destiny"));
     const items = data.filter(card => card.type && card.type.includes("item") && !card.type.includes("uncommon") && !card.type.includes("rare") && !card.type.includes("mythic"));
@@ -1354,7 +1355,8 @@ const generateCharacter = async (color = '') => {
     return [
         ...getRandomCards(characters, 1),
         ...getRandomCards(features, 3),
-        ...getRandomCards(backgrounds, 2),
+        ...getRandomCards(backgrounds, 1),
+        ...getRandomCards(trainings, 2),
         ...getRandomCards(species, 1),
         ...getRandomCards(destinies, 1),
         ...getRandomCards(items, 6)

@@ -1,4 +1,43 @@
-{
+import json
+import random
+import nltk
+from nltk.corpus import wordnet as wn
+
+# Define a function to determine the name of the card based on its crystals
+def determine_name(crystals):
+    color_map = {
+        "red": "Military",
+        "orange": "Barbaric",
+        "green": "Survivalist",
+        "emerald": "Spiritual",
+        "cerulean": "Arcane",
+        "purple": "Bardic",
+        "gold": "Artisan",
+        "black": "Criminal",
+        "blue": "Holy",
+        "white": "Religious"
+    }
+    names = []
+    for crystal in crystals:
+        if crystal in color_map:
+            color_name = color_map[crystal]
+            synsets = wn.synsets(color_name, pos='n')
+            if len(synsets) > 0:
+                synonyms = set()
+                for synset in synsets:
+                    synonyms.update(set(synset.lemma_names()))
+                synonyms.discard(color_name)
+                if len(synonyms) > 0:
+                    name = random.choice(list(synonyms)).capitalize()
+                    names.append(name)
+    if len(names) > 0:
+        training_synonyms = ["Training", "Academy", "School", "Initiate", "Mentorship"]
+        training_name = random.choice(training_synonyms)
+        return names[0] + " " + training_name
+    else:
+        return None
+
+text = {
   "deck_name": "Deckname",
   "player_name": "",
   "XP": 0,
@@ -9964,7 +10003,7 @@
       "header_image": "Human.png"
     },
     {
-      "name": "In the military",
+      "name": "European",
       "crystals": {
         "requires": [],
         "provides": [
@@ -9990,7 +10029,7 @@
       "header_image": "European.png"
     },
     {
-      "name": "No pain no gain",
+      "name": "African",
       "crystals": {
         "requires": [],
         "provides": [
@@ -9998,7 +10037,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Resilience.</p><p>You have endured many hardships and have developed a strong will to survive. When you defy danger through sheer force of will, you may roll +WIS instead of the usual stat.</p>",
+      "description": "<p><p class=\"subtitle\">Resilience.</p><p>You have endured many hardships and have developed a strong will to survive. When you defy danger through sheer force of will, you may roll +WIS instead of the usual stat.</p><p class=\"subtitle\">Cultural Heritage.</p><p>You have a rich history and cultural traditions that have been passed down through generations. When you parley with someone from your culture, you may roll +WIS instead of the usual stat.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10016,7 +10055,7 @@
       "header_image": "African.png"
     },
     {
-      "name": "Personal Code",
+      "name": "MiddleEastern",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10024,7 +10063,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Honor.</p><p>You value your honor and reputation above all else. When you parley with someone while defending your honor or reputation, you may roll +STR instead of the usual stat.</p>",
+      "description": "<p><p class=\"subtitle\">Honor.</p><p>You value your honor and reputation above all else. When you parley with someone while defending your honor or reputation, you may roll +STR instead of the usual stat.</p><p class=\"subtitle\">Cultural Heritage.</p><p>You have a rich history and cultural traditions that have been passed down through generations. When you parley with someone from your culture, you may roll +STR instead of the usual stat.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10198,11 +10237,11 @@
       "header_image": "Tiefling.png"
     },
     {
-      "name": "Samurai Warrior",
+      "name": "Samurai",
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "red"
         ]
       },
       "type": "training",
@@ -10224,7 +10263,7 @@
       "header_image": "Samurai.png"
     },
     {
-      "name": "Viking Warrior",
+      "name": "Viking",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10232,7 +10271,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Berserker Rage.</p><p>When you enter a frenzied rage, you gain +1 to damage and +1 to hack and slash rolls. You also take +1 damage from all sources.</p>",
+      "description": "<p><p class=\"subtitle\">Berserker Rage.</p><p>When you enter a frenzied rage, you gain +1 to damage and +1 to hack and slash rolls. You also take +1 damage from all sources.</p><p class=\"subtitle\">Thor\\'s Blessing.</p><p>You have the favor of the thunder god, Thor. Once per day, you can call upon him for aid, gaining a +1 bonus to a single roll. This blessing comes at a price, however, as Thor demands tribute in the form of a valuable item or sacrifice.</p><p class=\"subtitle\">Skaldic Poetry.</p><p>You are a skilled poet and storyteller, and your tales can inspire your companions to greatness. Once per day, you can recite a poem or story that grants +1 forward to a roll made by a party member.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10250,7 +10289,7 @@
       "header_image": "Viking.png"
     },
     {
-      "name": "Tribal Dance Warrior",
+      "name": "Maori",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10258,7 +10297,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Haka Dance.</p><p>You can perform a Haka Dance before battle to intimidate your enemies and bolster your allies. Roll+CHA to inspire your allies or frighten your foes.</p><p class=\"subtitle\">Pounamu Weaponry.</p><p>You are skilled in the use of traditional Maori weapons, such as the Taiaha, Patu, or Mere. You have a +1 bonus to hack and slash rolls when using these weapons.</p></p>",
+      "description": "<p><p class=\"subtitle\">Haka Dance.</p><p>You can perform a Haka Dance before battle to intimidate your enemies and bolster your allies. Roll+CHA to inspire your allies or frighten your foes.</p><p class=\"subtitle\">Pounamu Weaponry.</p><p>You are skilled in the use of traditional Maori weapons, such as the Taiaha, Patu, or Mere. You have a +1 bonus to hack and slash rolls when using these weapons.</p><p class=\"subtitle\">Ancestral Connection.</p><p>You have a strong connection to your ancestors and the spirits of nature. You can commune with them to gain insight, guidance, or assistance.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10276,15 +10315,15 @@
       "header_image": "Maori.png"
     },
     {
-      "name": "Savy businessman",
+      "name": "Italian",
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "red"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Savvy Business Sense.</p><p>When you spout lore about the economy or business, roll +WIS instead of +INT.</p></p>",
+      "description": "<p><p class=\"subtitle\">Romantic Flair.</p><p>You gain +1 ongoing when you use charm and seduction to get what you want from someone.</p><p class=\"subtitle\">Savvy Business Sense.</p><p>When you spout lore about the economy or business, roll +WIS instead of +INT.</p><p class=\"subtitle\">Mediterranean Blood.</p><p>You have advantage on saving throws against diseases and poisons.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10302,15 +10341,15 @@
       "header_image": "Italian.png"
     },
     {
-      "name": "Flamenco Dancer",
+      "name": "Iberic",
       "crystals": {
         "requires": [],
         "provides": [
-          "purple"
+          "blue"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Flamenco Dance.</p><p>When you perform the flamenco dance, you and your allies gain +1 forward to parley or to any roll that involves persuasion or intimidation.</p><p class=\"subtitle\">Hot-blooded.</p><p>When you attack an enemy, you may choose to deal extra damage but also expose yourself to their attack.</p></p>",
+      "description": "<p><p class=\"subtitle\">Adaptable.</p><p>You have +1 ongoing to defy danger or discern realities when adapting to a new environment or culture.</p><p class=\"subtitle\">Flamenco Dance.</p><p>When you perform the flamenco dance, you and your allies gain +1 forward to parley or to any roll that involves persuasion or intimidation.</p><p class=\"subtitle\">Hot-blooded.</p><p>When you attack an enemy, you may choose to deal extra damage but also expose yourself to their attack.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10328,15 +10367,15 @@
       "header_image": "Iberic.png"
     },
     {
-      "name": "Tinker",
+      "name": "Balkan",
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "orange"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Master of Improvisation.</p><p>When you use a piece of equipment or an object in a creative or unexpected way, you may roll +CAR instead of the usual stat.</p></p>",
+      "description": "<p><p class=\"subtitle\">Nomadic Heritage.</p><p>You have +1 ongoing to defy danger or discern realities when you are traveling or exploring new terrain.</p><p class=\"subtitle\">Blood Vengeance.</p><p>When someone harms or kills a member of your family or tribe, you gain +1 ongoing to all rolls against them until you get your revenge.</p><p class=\"subtitle\">Master of Improvisation.</p><p>When you use a piece of equipment or an object in a creative or unexpected way, you may roll +CAR instead of the usual stat.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10354,7 +10393,7 @@
       "header_image": "Balkan.png"
     },
     {
-      "name": "Metropolitan",
+      "name": "French",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10362,7 +10401,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Artistic Sensibility.</p><p>When you Discern Realities to study a work of art, you may ask one additional question about it.</p><p class=\"subtitle\">Haute Cuisine.</p><p>You gain +1 ongoing when you Spout Lore about food or cooking.</p><p class=\"subtitle\">Je Ne Sais Quoi.</p><p>You may reroll any one failed Parley roll per session.</p></p>",
+      "description": "<p><p class=\"subtitle\">Artistic Sensibility.</p><p>When you Discern Realities to study a work of art, you may ask one additional question about it.</p><p class=\"subtitle\">Haute Cuisine.</p><p>You gain +1 ongoing when you Spout Lore about food or cooking.</p><p class=\"subtitle\">Je Ne Sais Quoi.</p><p>You may reroll any one failed Parley roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10380,15 +10419,15 @@
       "header_image": "French.png"
     },
     {
-      "name": "Stoic",
+      "name": "Scandinavian",
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "emerald"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Fearless.</p><p>You have +1 ongoing to defy danger or hack and slash when you are facing a powerful or intimidating foe.</p><p class=\"subtitle\">Iron Will.</p><p>When you face mental or emotional stress, you may choose to endure it and gain +1 forward to your next action, but also mark experience if you fail.</p></p>",
+      "description": "<p><p class=\"subtitle\">Fearless.</p><p>You have +1 ongoing to defy danger or hack and slash when you are facing a powerful or intimidating foe.</p><p class=\"subtitle\">Viking Lore.</p><p>You have access to ancient legends and stories that reveal the strengths and weaknesses of legendary creatures or historical figures.</p><p class=\"subtitle\">Iron Will.</p><p>When you face mental or emotional stress, you may choose to endure it and gain +1 forward to your next action, but also mark experience if you fail.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10406,7 +10445,7 @@
       "header_image": "Scandinavian.png"
     },
     {
-      "name": "Clock-like Minded",
+      "name": "German",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10414,7 +10453,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Engineering Mindset.</p><p>When you Spout Lore about engineering or mechanics, you get +1.</p><p class=\"subtitle\">Disciplined Training.</p><p>You have advantage on saving throws against being dazed or stunned.</p></p>",
+      "description": "<p><p class=\"subtitle\">Efficiency.</p><p>When you Defy Danger by acting quickly, roll +INT instead of the usual stat.</p><p class=\"subtitle\">Engineering Mindset.</p><p>When you Spout Lore about engineering or mechanics, you get +1.</p><p class=\"subtitle\">Disciplined Training.</p><p>You have advantage on saving throws against being dazed or stunned.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10440,7 +10479,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You are an alchemist, trained in the art of transmutation and the creation of magical potions. You start knowing the recipe for two of these potions:</p><ul><li>Health Poison: Ingested or applied. The target regains 2d6 HP. (Cost: 30 to make)</li><li>Magic Potion: Ingested or inhaled. The target regains 1 MP but loses 1d6 HP. (Cost: 60)</li>. You can learn how to make other potions by finding new ingredients. ",
+      "description": "<p>You are an alchemist, trained in the art of transmutation and the creation of magical potions. You start knowing the recipe for two of these potions:</p><ul><li>Love Poison: Ingested or applied. The target becomes infatuated with the first creature they see, and will do anything to win their affection until the poison wears off after INT hours. (Cost: 30)</li><li>Hallucinogen: Ingested or inhaled. The target experiences vivid and often disturbing hallucinations for INT hours (Cost: 20)</li><li>Polymorph Poison: Ingested or applied. The target's body transforms into a random animal form for INT hours (Cost: 20)</li><li>Amnesia Poison: Ingested or applied. The target forgets everything that happened in the past 24 hours, and may have difficulty remembering new information for INT hours (Cost: 50)</li><li>Time Warp Poison: Ingested or applied. The target's perception of time is altered, making it seem as if time is moving much faster or slower than it actually is for INT minutes (Cost: 50)</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -10484,7 +10523,7 @@
       "header_image": "Eye for Value.png"
     },
     {
-      "name": "Traveller",
+      "name": "Bedouin",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10492,7 +10531,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Nomadic.</p><p>You have advantage on discern realities or spout lore rolls that relate to survival or travel. You can easily navigate terrain and find food and water in arid environments. You also have disadvantage on charisma checks when dealing with settled folk who are not used to your ways.</p>",
+      "description": "<p><p class=\"subtitle\">Nomadic.</p><p>You have advantage on discern realities or spout lore rolls that relate to survival or travel. You can easily navigate terrain and find food and water in arid environments. You also have disadvantage on charisma checks when dealing with settled folk who are not used to your ways.</p><p class=\"subtitle\">Desert Survivalist.</p><p>You have resistance to fire damage and advantage on saving throws against extreme heat or cold. You can also track creatures or individuals through the desert, and you have a +1 bonus to hack and slash rolls when using a weapon that you have crafted from desert materials.</p><p class=\"subtitle\">Camel Companion.</p><p>You have a trained camel companion who can carry you and your gear through the desert. Your camel is a loyal ally and can be commanded to perform simple tasks, such as guarding your campsite or carrying messages. Your camel is not trained for combat, however, and will flee from danger unless properly trained.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10510,7 +10549,33 @@
       "header_image": "Bedouin.png"
     },
     {
-      "name": "Catholic",
+      "name": "Turinese",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Mechanical Aptitude.</p><p>You gain proficiency in tinkering with mechanical devices and can make repairs to them quickly. You also have advantage on intelligence checks related to engineering or machinery.</p><p class=\"subtitle\">Steam-Powered.</p><p>You have a special connection to steam power and can use it to augment your abilities. Once per day, you can gain temporary hit points equal to your level + your intelligence modifier by tapping into the power of a nearby steam engine or boiler.</p><p class=\"subtitle\">Vulnerable to Electrification.</p><p>You have disadvantage on saving throws against lightning or electric damage.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Turinese.png"
+    },
+    {
+      "name": "Catholic Faith",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10536,7 +10601,7 @@
       "header_image": "Catholic Faith.png"
     },
     {
-      "name": "Archeologist",
+      "name": "Roman",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10544,7 +10609,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Ancient History.</p><p>When you spout lore or discern realities about ancient magical artifacts or items, take +1 to your roll.</p><p class=\"subtitle\">Ancient Artifacts.</p><p>You have a talent for identifying and understanding the magical properties of ancient artifacts and items. When you examine an ancient artifact or item, roll+Int. On a 16-19 you gain a useful insight into its powers and properties, on a 9-15 you gain some insight but also attract unwanted attention, and on a 1-8 the GM will tell you a hard truth about it.</p>",
+      "description": "<p><p class=\"subtitle\">Ancient History.</p><p>You have extensive knowledge of Rome\\'s rich history and arcane lore. When you spout lore or discern realities about ancient magical artifacts or items in Rome, take +1 to your roll.</p><p class=\"subtitle\">Ancient Artifacts.</p><p>You have a talent for identifying and understanding the magical properties of ancient artifacts and items. When you examine an ancient artifact or item, roll+Int. On a 16-19 you gain a useful insight into its powers and properties, on a 9-15 you gain some insight but also attract unwanted attention, and on a 1-8 the GM will tell you a hard truth about it.</p><p class=\"subtitle\">Ancient Magic.</p><p>You have studied the ancient magical practices of Rome and know how to harness its power. When you cast a spell using an ancient magical component or incantation, take +1 to your spellcasting roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10562,7 +10627,7 @@
       "header_image": "Roman.png"
     },
     {
-      "name": "Diplomatic",
+      "name": "Bolognese",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10570,7 +10635,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">The Mediators.</p><p>You are part of the Mediators Guild, a group of skilled negotiators who are often called upon to resolve conflicts between different races. You gain +1 forward when you attempt to mediate a conflict or negotiate a treaty between different factions or races.</p></p>",
+      "description": "<p><p class=\"subtitle\">Diplomatic Skills.</p><p>When you parley with someone, you can always ask them for something even on a failure. You also get +1 forward when you act on the information you gathered through a successful parley.</p><p class=\"subtitle\">Master Alchemist.</p><p>You have the ability to create powerful potions and remedies. When you have access to an alchemy lab, you can create potions and remedies that can heal injuries, cure diseases, and grant temporary boosts to physical or mental abilities.</p><p class=\"subtitle\">Bolognese Mediators.</p><p>You are part of the Bolognese Mediators, a group of skilled negotiators who are often called upon to resolve conflicts between different races. You gain +1 forward when you attempt to mediate a conflict or negotiate a treaty between different factions or races.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10588,15 +10653,15 @@
       "header_image": "Bolognese.png"
     },
     {
-      "name": "Farm Boy",
+      "name": "Forlivese",
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "green"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Skilled Farmers.</p><p>You have expertise in raising animals and growing crops. You can identify the best quality livestock and crops, and you can care for them to ensure they remain healthy and productive. You gain +1 forward when you act on information you have learned about animals or crops.</p><p class=\"subtitle\">Livestock Trade.</p><p>You have connections in the livestock industry, and you can trade in high-quality meats. When you try to sell livestock, you gain +1 forward to your roll. You also have advantage on saving throws against attempts to steal your livestock.</p></p>",
+      "description": "<p><p class=\"subtitle\">Skilled Farmers.</p><p>You have expertise in raising animals and growing crops. You can identify the best quality livestock and crops, and you can care for them to ensure they remain healthy and productive. You gain +1 forward when you act on information you have learned about animals or crops.</p><p class=\"subtitle\">Forlivesi Brutes.</p><p>You are part of the Forlivesi Brutes, a group of formidable warriors who are renowned for their physical prowess. You gain +1 forward when you use brute force to accomplish a task, such as breaking down a door or lifting heavy objects.</p><p class=\"subtitle\">Livestock Trade.</p><p>You have connections in the livestock industry, and you can trade in high-quality meats. When you try to sell livestock, you gain +1 forward to your roll. You also have advantage on saving throws against attempts to steal your livestock.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10611,18 +10676,18 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Farm Boy.png"
+      "header_image": "Forlivese.png"
     },
     {
-      "name": "Chef",
+      "name": "Romagna",
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "emerald"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Culinary Tradition.</p><p>You have a deep knowledge of the culinary traditions and can prepare delicious and nourishing meals from even the most meager of ingredients. When you make a campfire meal, take +1 to the roll.</p>",
+      "description": "<p><p class=\"subtitle\">Culinary Tradition.</p><p>You have a deep knowledge of the culinary traditions of Romagna and can prepare delicious and nourishing meals from even the most meager of ingredients. When you make a campfire meal, take +1 to the roll.</p><p class=\"subtitle\">Fierce Independence.</p><p>You are fiercely independent and self-reliant. When you defy danger on your own, take +1 to the roll.</p><p class=\"subtitle\">Mystical Connection.</p><p>You have a deep connection with the natural world and the spirits that inhabit it. When you cast a spell to summon, commune with, or banish a spirit, take +1 to your spellcasting roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10640,7 +10705,7 @@
       "header_image": "Romagna.png"
     },
     {
-      "name": "Weaver",
+      "name": "Lucchese",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10648,7 +10713,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Textile Industry.</p><p>You have extensive knowledge of the textile industry of Lucca and can identify the quality and properties of any fabric or clothing. When you spout lore or discern realities about textiles or clothing, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Textile Industry.</p><p>You have extensive knowledge of the textile industry of Lucca and can identify the quality and properties of any fabric or clothing. When you spout lore or discern realities about textiles or clothing, take +1 to your roll.</p><p class=\"subtitle\">Strategic Prowess.</p><p>You are a master of defensive warfare and can devise strategies to protect yourself and your allies from harm. When you defend a location or an ally, take +1 to your roll.</p><p class=\"subtitle\">Engineering Knowledge.</p><p>You have a deep understanding of mechanical devices and can use them to your advantage. When you use a mechanical device, take +1 to the roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10666,7 +10731,7 @@
       "header_image": "Lucchese.png"
     },
     {
-      "name": "Mystical Mind",
+      "name": "Ravennese",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10674,7 +10739,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Mystical Artistry.</p><p>You are a master of the mystical arts, and your artistry reflects this. When you spout lore or discern realities about mystical or magical subjects, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Mystical Artistry.</p><p>You are a master of the mystical arts, and your artistry reflects this. When you spout lore or discern realities about mystical or magical subjects, take +1 to your roll.</p><p class=\"subtitle\">Mystical Mosaics.</p><p>You have a talent for creating stunning and intricate mosaic artwork infused with mystical energy. When you create a magical mosaic artwork that depicts a specific subject or tells a story, roll+Cha. On a 16-19, you successfully imbue the artwork with powerful magical energies that can aid your allies in combat or provide valuable insights into a situation. On a 9-15, you create the artwork, but it has unforeseen consequences or attracts unwanted attention. On a 1-8, the GM will tell you a hard truth about the artwork.</p><p class=\"subtitle\">Mystical Lore.</p><p>You have studied the mystical practices of the Ravennati and know how to harness their power. When you cast a spell using a mystical component or incantation associated with Ravennati magic, take +1 to your spellcasting roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10692,7 +10757,7 @@
       "header_image": "Ravennese.png"
     },
     {
-      "name": "Fruit Farmer",
+      "name": "Catanian",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10700,7 +10765,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Fruitful Harvest.</p><p>You are a skilled farmer and have learned to cultivate delicious and nutritious fruits and vegetables. When you gather food in the wild, you always find enough for yourself and one other person, and it is always delicious and nutritious.</p></p>",
+      "description": "<p><p class=\"subtitle\">Lava Magic.</p><p>You have studied the ways of the volcanic magic and have learned to harness its power. When you cast a spell that involves lava or fire, take +1 to your spellcasting roll.</p><p class=\"subtitle\">Fertile Soil.</p><p>You have a deep connection to the earth and the soil of Catania. When you spend a day working on the land, you can heal yourself of 1d4 damage.</p><p class=\"subtitle\">Fruitful Harvest.</p><p>You are a skilled farmer and have learned to cultivate delicious and nutritious fruits and vegetables. When you gather food in the wild, you always find enough for yourself and one other person, and it is always delicious and nutritious.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10718,15 +10783,15 @@
       "header_image": "Catanian.png"
     },
     {
-      "name": "Dragon Hunter",
+      "name": "Milanese",
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "red"
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Dragon Hunter.</p><p>You have been trained in the art of dragon hunting by the Milanesi Dragonslayers. When you face a dragon in combat, take +1 forward to your attack rolls and +1 to your damage rolls.</p>",
+      "description": "<p><p class=\"subtitle\">Elegant Appearance.</p><p>You are always dressed in the finest clothes and have an air of sophistication and refinement about you. When you attempt to sway someone with your charm, take +1 to your roll.</p><p class=\"subtitle\">Dragon Hunter.</p><p>You have been trained in the art of dragon hunting by the Milanesi Dragonslayers. When you face a dragon in combat, take +1 forward to your attack rolls and +1 to your damage rolls.</p><p class=\"subtitle\">Fashionable Gear.</p><p>You have access to the finest fabrics and the most skilled tailors in Milan. Your armor and weapons are always stylish and fashionable, giving you +1 forward to any move that involves impressing someone with your appearance.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10744,41 +10809,15 @@
       "header_image": "Milanese.png"
     },
     {
-      "name": "Fashionable",
+      "name": "Parisian",
       "crystals": {
         "requires": [],
         "provides": [
-          "purple"
+          "cerulean"
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Fashionable Gear.</p><p>You have access to the finest fabrics and the most skilled tailors in Milan. Your armor and weapons are always stylish and fashionable, giving you +1 forward to any move that involves impressing someone with your appearance.</p></p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Milanese.png"
-    },
-    {
-      "name": "Les bonnes manieres",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "purple"
-        ]
-      },
-      "type": "training",
-      "description": "<p class=\"subtitle\">Elegance and Refinement.</p><p>You have learned to embody the elegance and refinement of the Parisian lifestyle. When you interact with nobility or high society, take +1 to your Charisma-based rolls.</p></p>",
+      "description": "<p><p class=\"subtitle\">Parisian Fashion.</p><p>You have an eye for fashion and are well-versed in the latest trends of Paris. When you make a Charisma-based roll related to fashion or style, take +1 to your roll.</p><p class=\"subtitle\">Magical Arrows.</p><p>You have been trained by the Parisian Muskeeters in the art of archery and imbuing your arrows with magic. When you fire an arrow, you may choose to expend a spell slot to imbue it with additional magical energy, dealing extra damage equal to your level.</p><p class=\"subtitle\">Elegance and Refinement.</p><p>You have learned to embody the elegance and refinement of the Parisian lifestyle. When you interact with nobility or high society, take +1 to your Charisma-based rolls.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10796,15 +10835,15 @@
       "header_image": "Parisian.png"
     },
     {
-      "name": "Spice Master",
+      "name": "Marseillese",
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "green"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Exotic Spices.</p><p>You have a knack for finding and identifying exotic spices from all corners of the world. When you use spices in cooking or alchemy, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Exotic Spices.</p><p>You have a knack for finding and identifying exotic spices from all corners of the world. When you use spices in cooking or alchemy, take +1 to your roll.</p><p class=\"subtitle\">Marseille Mermaids.</p><p>You have trained with the Marseille Mermaids and are skilled in underwater combat. When you fight underwater, take +1 to your rolls.</p><p class=\"subtitle\">Toughness and Resourcefulness.</p><p>You have learned to embody the toughness and resourcefulness of the Marseillais people. When you are in a situation that requires grit and resilience, take +1 to your rolls.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10822,15 +10861,15 @@
       "header_image": "Marseillese.png"
     },
     {
-      "name": "Beginner Air Rider",
+      "name": "Lyon",
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "cerulean"
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Flying Mount Training.</p><p>You have trained extensively with a certain flying mount. When you ride on the back of a flying creature, you take +1 ongoing to your rolls to spot, chase, or outmaneuver enemies in the sky.</p></p>",
+      "description": "<p><p class=\"subtitle\">Silk Weaving.</p><p>You have learned the art of silk weaving, and can craft luxurious garments that are highly sought after by nobles and royalty. When you use your craft to create clothing or other items, take +1 to your roll.</p><p class=\"subtitle\">Secret Society.</p><p>You are a member of a secret society in Lyon that works in the shadows to maintain the balance of power in the city. When you gather information about a person or organization that is involved in the city\\'s politics or power struggles, take +1 to your roll.</p><p class=\"subtitle\">Gryphon Training.</p><p>You have trained extensively with the Lyon Gryphons, the city\\'s elite aerial unit. When you ride on the back of a gryphon, you take +1 ongoing to your rolls to spot, chase, or outmaneuver enemies in the sky.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10848,7 +10887,7 @@
       "header_image": "Lyon.png"
     },
     {
-      "name": "Beginner Land Rider",
+      "name": "Norman",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10856,7 +10895,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Master Rider.</p><p>You have been trained in the art of horsemanship, and are a skilled rider. When mounted, take +1 to your Defy Danger rolls made to avoid attacks and obstacles.</p>",
+      "description": "<p><p class=\"subtitle\">Master Rider.</p><p>You have been trained in the art of horsemanship since childhood, and are a skilled rider. When mounted, take +1 to your Defy Danger rolls made to avoid attacks and obstacles.</p><p class=\"subtitle\">Seafaring Folk.</p><p>You are at home on the sea and have spent much of your life sailing and fishing. You take +1 ongoing when you Defy Danger on a ship or other vessel.</p><p class=\"subtitle\">Cunning Trapper.</p><p>You are skilled in the art of trapping and have learned to set snares and traps to catch your prey. When you set a trap, take +1 to your roll to Defy Danger when your prey is lured into the trap.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10874,7 +10913,7 @@
       "header_image": "Norman.png"
     },
     {
-      "name": "Wine Expert",
+      "name": "Bordeaux",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10882,7 +10921,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Wine Connoisseur.</p><p>You are an expert in the art of wine-making and have an extensive knowledge of the vintages produced all over the world. When you share a bottle of wine with someone, take +1 to your Parley roll.</p>",
+      "description": "<p><p class=\"subtitle\">Wine Connoisseur.</p><p>You are an expert in the art of wine-making and have an extensive knowledge of the vintages produced in Bordeaux. When you share a bottle of Bordeaux wine with someone, take +1 to your Parley roll.</p><p class=\"subtitle\">Dragon\\'s Breath.</p><p>You have learned to harness the power of fire and can breathe a cone of flame up to 30 feet long. When you unleash your Dragon\\'s Breath, roll+Cha. On a 16-19, you deal 1d8 damage to all creatures in the area. On a 9-15, you deal half damage, and the GM chooses one:</p><ul><li>You take -1 forward</li><li>You draw unwanted attention or put someone in a spot.</li></ul><p class=\"subtitle\">Refined Tastes.</p><p>You are a connoisseur of fine things, and have a keen eye for quality. When you Spout Lore about a valuable or rare item, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10900,15 +10939,15 @@
       "header_image": "Bordeaux.png"
     },
     {
-      "name": "Rune scribe",
+      "name": "Golden Sun Clan",
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "black"
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Artisan.</p><p>You are skilled in the creation of magical artifacts. When you Craft a magical item, take +1 to your roll.</p></p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Paris</p><p class=\"subtitle\">Elegant Movements.</p><p>You are known for your graceful and elegant movements, which are considered very attractive to humans. When you Parley with a human, take +1 to your roll.</p><p class=\"subtitle\">Sophisticated Fashion Sense.</p><p>You have a keen eye for fashion and style. When you Spout Lore about fashion or clothing, take +1 to your roll.</p><p class=\"subtitle\">Artisan.</p><p>You are skilled in the creation of magical artifacts. When you Craft a magical item, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10926,7 +10965,7 @@
       "header_image": "Golden Sun Clan.png"
     },
     {
-      "name": "Singer",
+      "name": "Silver Moon Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10934,7 +10973,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Musical Talent.</p><p>You are known for your soothing and melodic voice, which is often sought after for singing or public speaking. When you Aid or interfere with someone using your voice, take +1 to your roll.</p><p class=\"subtitle\">Opera Performance.</p><p>You are skilled in the art of opera performance. When you Perform an opera piece, take +1 to your roll.</p></p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Milan</p><p><p class=\"subtitle\">Musical Talent.</p><p>You are known for your soothing and melodic voice, which is often sought after for singing or public speaking. When you Aid or interfere with someone using your voice, take +1 to your roll.</p><p class=\"subtitle\">Opera Performance.</p><p>You are skilled in the art of opera performance. When you Perform an opera piece, take +1 to your roll.</p><p class=\"subtitle\">Bard.</p><p>You are a skilled bard. When you Cast a spell using music or singing, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10952,7 +10991,33 @@
       "header_image": "Silver Moon Clan.png"
     },
     {
-      "name": "Stalker",
+      "name": "Radiant Dawn Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Barcelona</p><p><p class=\"subtitle\">Keen Senses.</p><p>You have a keen sense of taste and smell, which make you an excellent judge of quality ingredients. When you Discern Realities related to food or spices, take +1 to your roll.</p><p class=\"subtitle\">Exotic Spices Trade.</p><p>You are skilled in the trade of exotic spices. When you Spout Lore about exotic spices, take +1 to your roll.</p><p class=\"subtitle\">Expert Cook.</p><p>You are an expert cook. When you Cook a meal, take +1 to your roll.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Radiant Dawn Clan.png"
+    },
+    {
+      "name": "Green Forest Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10960,7 +11025,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Stealth and Camouflage.</p><p>You are skilled at remaining unnoticed and blending into your surroundings. When you defy danger or parley while using stealth or camouflage, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in the Black Forest </p><p><p class=\"subtitle\">Keen Senses.</p><p>You have sharp senses and excellent perception, allowing you to detect hidden dangers and opportunities. When you discern realities or spout lore about your environment, take +1 to your roll.</p><p class=\"subtitle\">Stealth and Camouflage.</p><p>You are skilled at remaining unnoticed and blending into your surroundings. When you defy danger or parley while using stealth or camouflage, take +1 to your roll.</p><p class=\"subtitle\">Green Forest Rangers.</p><p>You are a member of the elite Green Forest Rangers, a group of stealthy scouts who excel at gathering intelligence and ambushing enemies. When you act as part of a Green Forest Ranger unit, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10978,15 +11043,41 @@
       "header_image": "Green Forest Clan.png"
     },
     {
-      "name": "Perfumer",
+      "name": "Misty Vale Clan",
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "emerald"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Natural Perfumer.</p><p>You have a deep knowledge of plants and their fragrances, allowing you to create potent perfumes and natural remedies. When you use a  perfume, you take +1 to your Defy Danger roll against being detected by smell.</p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Misty Vale in Wales</p><p><p class=\"subtitle\">Connection to Nature.</p><p>You have a deep connection to the natural world and can communicate with plants and animals. When you spout lore or discern realities about nature, take +1 to your roll.</p><p class=\"subtitle\">Divination and Prophecy.</p><p>You possess a rare intuition that allows you to glimpse into the future and understand the will of the spirits. When you spout lore or discern realities about the spirit world, take +1 to your roll.</p><p class=\"subtitle\">Misty Vale Shamans.</p><p>You are a member of the esteemed Misty Vale Shamans, a group of spiritual leaders who use their magic to communicate with the ancestors and call upon their aid in battle. When you act as part of a Misty Vale Shaman unit, take +1 to your roll.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Misty Vale Clan.png"
+    },
+    {
+      "name": "Wildflower Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "green"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in France forests</p><p><p class=\"subtitle\">Natural Perfumer.</p><p>You have a deep knowledge of plants and their fragrances, allowing you to create potent perfumes and natural remedies. When you use a Wildflower perfume, you take +1 to your Defy Danger roll against being detected by smell.</p><p class=\"subtitle\">Toxicologist.</p><p>You are skilled in the use of poisons and antidotes, and can create potent toxins from the plants of the forest. When you use a Wildflower poison, roll+Int. On a 16-19, you deal 1d8 damage to the target. On a 9-15, you deal half damage, and the GM chooses one:</p><ul><li>You take -1 forward</li><li>You draw unwanted attention or put someone in a spot.</li></ul><p class=\"subtitle\">Forest Walker.</p><p>You are a master of navigating the forests of France, and can find your way through even the densest undergrowth. When you Spout Lore about the local flora and fauna, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11004,7 +11095,33 @@
       "header_image": "Wildflower Clan.png"
     },
     {
-      "name": "I know someone",
+      "name": "Shadowed Blade Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Sherwood</p><p><p class=\"subtitle\">Assassin\\'s Blade.</p><p>You are a skilled assassin and have been trained in the art of stealth and assassination by the Shadowed Blades. When you attack a surprised or unsuspecting enemy, deal +1d6 damage.</p><p class=\"subtitle\">Shadow Step.</p><p>You have the ability to move quickly and silently through the shadows. When you use your Shadow Step to move to a new location, roll+Dex. On a 16-19, you move silently and without being detected. On a 9-15, you are detected but still make it to your destination. On a miss, you are detected and the GM chooses one:</p><ul><li>You take -1 forward</li><li>You draw unwanted attention or put someone in a spot.</li></ul><p class=\"subtitle\">Witty Banter.</p><p>You have a sharp wit and quick thinking, which can be very attractive to humans. When you Parley with someone, take +1 to your roll.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Shadowed Blade Clan.png"
+    },
+    {
+      "name": "Bloodied Moon Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11012,7 +11129,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Black Market Connections.</p><p>You have connections to the black market trade in illegal magical substances and underground fight clubs. When you Spout Lore about the black market or fight clubs, take +1 to your roll.</p></p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Prague</p><p><p class=\"subtitle\">Magical Enhancement.</p><p>You have the ability to enhance your strength and endurance in combat using magic. When you Hack and Slash, roll+Con instead of Str. On a 16-19, deal your damage and take no damage in return. On a 9-15, deal your damage but also take damage in return. On a miss, you take damage but deal no damage in return.</p><p class=\"subtitle\">Black Market Connections.</p><p>You have connections to the black market trade in illegal magical substances and underground fight clubs. When you Spout Lore about the black market or fight clubs, take +1 to your roll.</p><p class=\"subtitle\">Fierce Competitor.</p><p>You have a fierce and competitive nature, which can be very alluring to humans. When you Defy Danger, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11030,7 +11147,7 @@
       "header_image": "Bloodied Moon Clan.png"
     },
     {
-      "name": "I know where",
+      "name": "Cursed Star Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11038,7 +11155,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Smuggler.</p><p>You have connections with the underworld and are skilled at smuggling goods across borders. When you Spout Lore about the location of a hidden stash or a secret smuggling route, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Amsterdam</p><p><p class=\"subtitle\">Cursebreaker.</p><p>You have a natural talent for breaking curses and hexes. When you Defy Danger to break a curse or remove a hex, take +1 to your roll.</p><p class=\"subtitle\">Smuggler.</p><p>You have connections with the underworld and are skilled at smuggling goods across borders. When you Spout Lore about the location of a hidden stash or a secret smuggling route, take +1 to your roll.</p><p class=\"subtitle\">Enigmatic Personality.</p><p>You have a mysterious and alluring personality that can be very seductive to humans. When you Parley with a human, take +1 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11056,7 +11173,7 @@
       "header_image": "Cursed Star Clan.png"
     },
     {
-      "name": "Canoa sailor",
+      "name": "Mangrove Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11064,7 +11181,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Canoe-Building Expertise.</p><p>You are skilled in the art of building canoes.  When you travel by water in your canoe, take +1 forward to any Defy Danger roll.</p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Amazon delta</p><p><p class=\"subtitle\">Canoe-Building Expertise.</p><p>You are skilled in the art of building canoes and navigating through the dense mangrove forests of your homeland. When you travel by water in your canoe, take +1 forward to any Defy Danger roll.</p><p class=\"subtitle\">Tropical Medicine.</p><p>You have an extensive knowledge of the exotic plants and herbs of the jungle. When you successfully use them to heal someone, take +1 forward to any healing rolls.</p><p class=\"subtitle\">Spear-Thrower.</p><p>You are skilled in the use of the spear and are able to hit your targets with deadly accuracy. When you successfully attack with a spear, deal +1 damage.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11082,7 +11199,33 @@
       "header_image": "Mangrove Clan.png"
     },
     {
-      "name": "Treasure Diver",
+      "name": "Jungle Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "red"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Central America</p><p><p class=\"subtitle\">Expert Metalworker.</p><p>You are skilled in the art of metalworking and can create weapons and armor of exceptional quality. When you create a weapon or armor, it has the \\'precise\\' tag.</p><p class=\"subtitle\">Jungle Survivalist.</p><p>You are able to navigate through the hot and humid conditions of the jungle with ease. When you travel through the jungle, take +1 forward to any Defy Danger roll.</p><p class=\"subtitle\">Striking Features.</p><p>Your angular features are considered very handsome by humans, giving you an advantage when dealing with them. When you Parley with a human using your looks, take +1 forward to your roll.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Jungle Clan.png"
+    },
+    {
+      "name": "Coral Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11090,7 +11233,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Pearl Diver.</p><p>You are skilled in the art of diving for pearls and other valuable treasures. When you Defy Danger to navigate treacherous underwater environments, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Elf and being born in Carribeans</p><p><p class=\"subtitle\">Aquatic Magic.</p><p>You have an innate connection with the sea and can cast spells underwater with ease. When you Cast a Spell underwater, take +1 to your spellcasting roll.</p><p class=\"subtitle\">Pearl Diver.</p><p>You are skilled in the art of diving for pearls and other valuable treasures. When you Defy Danger to navigate treacherous underwater environments, take +1 to your roll.</p><p class=\"subtitle\">Siren\\'s Song.</p><p>You can sing a haunting melody that enchants those who hear it. When you use your Siren\\'s Song to seduce someone, roll+Cha. On a 16-19, they are charmed and will do anything you ask. On a 9-15, they are charmed but will ask you to prove your loyalty first.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11108,15 +11251,41 @@
       "header_image": "Coral Clan.png"
     },
     {
-      "name": "Tough",
+      "name": "Troll",
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "emerald"
+        ]
+      },
+      "type": "species",
+      "description": "<p><p class=\"subtitle\">Corrupted by the Primal Lake.</p><p>You are an elf that has been corrupted by the primal lake that existed in Europe many millennia ago. Your body has been altered, giving you incredible regenerative abilities and a natural resistance to magic. However, your mind has been affected as well, making you prone to fits of berserk rage.</p><p class=\"subtitle\">Shamanic Magic.</p><p>You have been trained in the ways of shamanic magic, allowing you to communicate with the spirits of the natural world and bend them to your will. When you cast a shamanic spell, take +1 to your roll.</p><p class=\"subtitle\">Berserker Rage.</p><p>When you go into a berserker rage, you gain incredible strength and stamina, but you lose control of yourself and become a danger to everyone around you. Roll+Con. On a 16-19, you gain the benefits of the rage without losing control. On a 9-15, choose one:</p><ul><li>You lose control and attack the nearest creature</li><li>You lose control and cause collateral damage to the environment</li></ul><p class=\"subtitle\">Regeneration.</p><p>Your body is able to regenerate from even the most severe injuries. When you heal naturally, take +1 to your roll.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Troll.png"
+    },
+    {
+      "name": "Britannic",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "red"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Stiff Upper Lip.</p><p>You have a cool head under pressure. When you take damage, you may ignore the effects of the damage roll on a roll of 16-19 on a d20.</p>",
+      "description": "<p><p class=\"subtitle\">Stiff Upper Lip.</p><p>You have a cool head under pressure. When you take damage, you may ignore the effects of the damage roll on a roll of  16-19 on a d20.</p><p class=\"subtitle\">Resilient.</p><p>When you defy danger by enduring or toughing something out, you may roll +CON instead of the usual stat.</p><p class=\"subtitle\">Honed Senses.</p><p>You have advantage on perception checks that rely on smell or taste.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11134,7 +11303,33 @@
       "header_image": "Britannic.png"
     },
     {
-      "name": "Mysterious",
+      "name": "Swiss",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "green"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Mountain Heritage.</p><p>You are familiar with mountainous terrain and have advantage on rolls to navigate through it.</p><p class=\"subtitle\">Meticulous.</p><p>When you spend time to carefully plan out your next move, you may roll +INT to aid you in your task.</p><p class=\"subtitle\">Thrifty.</p><p>You gain +1 coin when you successfully haggle for goods and services.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Swiss.png"
+    },
+    {
+      "name": "Romanian",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11142,7 +11337,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Mysterious.</p><p>When you attempt to hide your true intentions or motives, you may roll +CHA to do so.</p>",
+      "description": "<p><p class=\"subtitle\">Cunning.</p><p>You have advantage on rolls to discern when someone is lying to you.</p><p class=\"subtitle\">Mysterious.</p><p>When you attempt to hide your true intentions or motives, you may roll +CHA to do so.</p><p class=\"subtitle\">Vengeful.</p><p>When someone wrongs you or someone close to you, you gain +1 ongoing to rolls that involve bringing them to justice.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11160,7 +11355,137 @@
       "header_image": "Romanian.png"
     },
     {
-      "name": "Climber",
+      "name": "Ukrainian",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Strong-Willed.</p><p>You have advantage on rolls to resist being intimidated or coerced into doing something against your will.</p><p class=\"subtitle\">Resourceful.</p><p>When you improvise a solution to a problem, you may roll +WIS to aid you in your task.</p><p class=\"subtitle\">Unyielding.</p><p>When you are dealing with a difficult or dangerous situation, you may roll +CON to grit your teeth and push through it.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Ukrainian.png"
+    },
+    {
+      "name": "Polish",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "blue"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Polish Heritage.</p><p>You have a strong connection to your Polish roots, granting you proficiency in History checks related to Polish history and culture.</p><p class=\"subtitle\">Resilient.</p><p>You have advantage on saving throws against poison and disease.</p><p class=\"subtitle\">Iron Will.</p><p>When you roll a 1-8 on the dice, you may immediately spend 1 hold to treat it as a 9-15 instead.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Polish.png"
+    },
+    {
+      "name": "Croatian",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "red"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Coastal Heritage.</p><p>You have a strong connection to your Croatian coastal heritage, granting you proficiency in Navigation and Survival checks related to seafaring.</p><p class=\"subtitle\">Fierce Fighter.</p><p>When you hack and slash an enemy, you may add +1d4 damage to your attack.</p><p class=\"subtitle\">Iron Stomach.</p><p>You have advantage on saving throws against being poisoned or diseased by food or drink.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Croatian.png"
+    },
+    {
+      "name": "Serbian",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "yellow"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Serbian Heritage.</p><p>You have a strong connection to your Serbian roots, granting you proficiency in History checks related to Serbian history and culture.</p><p class=\"subtitle\">Fearsome Warrior.</p><p>When you hack and slash an enemy, you may add +1d4 damage to your attack.</p><p class=\"subtitle\">Mental Fortitude.</p><p>You have advantage on saving throws against being charmed or intimidated.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Serbian.png"
+    },
+    {
+      "name": "Hungarian",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "blue"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Horseback Expertise.</p><p>You have trained extensively in horseback riding. You have advantage on rolls to control or command a horse.</p><p class=\"subtitle\">Agile.</p><p>When you defy danger by acting with speed or dexterity, you may roll +DEX instead of the usual stat.</p><p class=\"subtitle\">Spirited.</p><p>You have advantage on rolls to resist being intimidated.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Hungarian.png"
+    },
+    {
+      "name": "Austrian",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11168,7 +11493,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Alpinist.</p><p>You have advantage on rolls to climb or traverse mountainous terrain.</p></p>",
+      "description": "<p><p class=\"subtitle\">Musician.</p><p>You have trained as a musician. You may use your musical abilities to soothe a savage beast or create an advantage in social situations.</p><p class=\"subtitle\">Resourceful.</p><p>When you defy danger by finding a way out of a tough spot, you may roll +INT instead of the usual stat.</p><p class=\"subtitle\">Alpinist.</p><p>You have advantage on rolls to climb or traverse mountainous terrain.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11186,15 +11511,43 @@
       "header_image": "Austrian.png"
     },
     {
-      "name": "Hot-headed",
+      "name": "Orc",
       "crystals": {
-        "requires": [],
+        "requires": [
+          ""
+        ],
         "provides": [
           "orange"
         ]
       },
+      "type": "species",
+      "description": "<p><p class=\"subtitle\">Blood of Goblins and Humans.</p><p>You are a member of the Orcs, a race created by ancient sorcerers who mixed the blood of goblins and humans in an attempt to create a superior race. You are native to the harsh and unforgiving lands of the north, and you are known for your brute strength and fierce, warlike nature.</p><p class=\"subtitle\">Brute Strength.</p><p>You possess incredible physical strength, allowing you to overpower most opponents in combat. When you attempt to break or destroy an object or structure, take +1 to your roll.</p><p class=\"subtitle\">Fierce Nature.</p><p>You have a fierce, warlike nature that makes you a formidable opponent on the battlefield. When you enter combat, take +1 to your roll.</p><p class=\"subtitle\">Intimidating Presence.</p><p>Your appearance and demeanor are intimidating to most creatures. When you attempt to intimidate or frighten an opponent, take +1 to your roll.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Orc.png"
+    },
+    {
+      "name": "Ice Wolves Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "green"
+        ]
+      },
       "type": "training",
-      "description": "<p class=\"subtitle\">Ferocious Charge</p><p>When you charge into battle, you can choose to deal extra damage equal to your level, but suffer a -1 ongoing penalty to your damage rolls until you take a moment to catch your breath.</p></p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Arctic Circle<p><p><p class=\"subtitle\">Ice Wolf Pack</p><p>You are a member of the Ice Wolves, a pack of elite hunters and trackers known for their pack mentality and endurance. When you undertake a perilous journey through the frozen wilderness, roll+Wis. On a 16-19, you reach your destination safely and gain insight into the dangers ahead. On a 9-15, you reach your destination but suffer a setback, the GM will tell you what. On a miss, you become lost in the snow and ice, the GM will tell you what danger you encounter.</p><p><p class=\"subtitle\">Frost Resistance</p><p>Your body has adapted to the freezing temperatures of the Arctic Circle. You gain +1 armor against cold-based attacks.</p><p><p class=\"subtitle\">Ferocious Charge</p><p>When you charge into battle, you can choose to deal extra damage equal to your level, but suffer a -1 ongoing penalty to your damage rolls until you take a moment to catch your breath.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11212,7 +11565,315 @@
       "header_image": "Ice Wolves Clan.png"
     },
     {
-      "name": "Fishing",
+      "name": "Frost Giants Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Scandinavia</p><p><p class=\"subtitle\">Frost Giant Physiology</p><p>Your body is incredibly tough and resilient, able to withstand even the harshest conditions of the frozen mountains. You gain +1 armor against physical attacks.</p><p><p class=\"subtitle\">Heavy Hitter</p><p>You can wield heavy weapons and armor with ease. When you deal damage with a weapon or attack that has the \\'heavy\\' tag, you deal +1d4 damage.</p><p><p class=\"subtitle\">Tactical Genius</p><p>You are a master of tactics and strategy, able to quickly assess a situation and come up with a plan of action. When you spout lore about a conflict or enemy, roll+Int. On a 16-19, the GM will give you useful information about the situation. On a 9-15, the information is incomplete, and the GM will tell you what you need to do to get the full picture.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Frost Giants Clan.png"
+    },
+    {
+      "name": "Snow Leopards Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Russian Taiga</p><p><p class=\"subtitle\">Snow Leopard Clan</p><p>You are a member of the Snow Leopard Clan, a group of orcs who live in the frozen forests of the Russian Taiga. You are known for your agility and speed, which make you excellent at reconnaissance and sabotage missions. When you are in a dangerous situation and need to act quickly, roll+Dex. On a 16-19, hold 3, on a 9-15, hold 1. You may spend your hold 1 for 1 to:</p><ul><li>Take +1 forward when you act on the information you gained through reconnaissance or sabotage</li><li>Avoid being detected by enemies, despite being in their line of sight</li><li>Move quickly and silently through an area, bypassing any traps or obstacles that would slow you down</li></ul><p>You can use your hold at any time, but it expires at the end of the scene.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Snow Leopards Clan.png"
+    },
+    {
+      "name": "Poisonous Vines Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Camargue swamps</p><p><p class=\"subtitle\">Deadly Poison</p><p>You belong to the Poisonous Vines Orc clan, known for their skill in creating deadly poisons and stealthy assassins. When you have time to gather materials and create a deadly poison, roll+Intelligence. On a 16-19, you get 3 doses. On a 9-15, you get 1 dose. When you use a poison, spend a dose to:</p><ul><li>Deal +1d6 damage to a foe you hit with a melee attack</li><li>Paralyze a foe you hit with a ranged attack, rendering them unable to act for 1 round</li><li>Slow a foe you hit with a melee or ranged attack, reducing their movement speed by half for 1 round</li></ul><p>Your poisons are always lethal, and any creature that fails to resist them dies within 1d4 rounds.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Poisonous Vines Clan.png"
+    },
+    {
+      "name": "Rotting Trees Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "emerald"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Po Delta</p><p><p class=\"subtitle\">Raise Undead</p><p>You belong to the Rotting Trees Orc clan, known for their ability to summon and control undead creatures. When you use your necromancy to raise undead, roll+Wisdom. On a 16-19, choose 1. On a 9-15, choose 2:<ul><li>The undead you raise are loyal to you and obey your commands without question</li><li>The undead you raise are stronger and more durable than normal</li><li>The undead you raise have special abilities or powers</li></ul><p>Your undead creatures are immune to pain and fear, and they will fight for you until destroyed.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Rotting Trees Clan.png"
+    },
+    {
+      "name": "Marsh Hags Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "cerulean"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in East Anglia</p><p><p class=\"subtitle\">Necromantic Expertise</p><p>You are a member of the Marsh Hags Orc clan, known for your expertise in necromancy. You have the ability to curse and hex your enemies, using your magic to gain the upper hand in battle. When you cast a spell to curse or hex an enemy, roll+Int. On a 16-19, hold 3. On a 9-15, hold 1. You may spend hold 1 for 1 to:</p><ul><li>Inflict -1d6 damage to an enemy</li><li>Make an enemy suffer -1 ongoing to their next action</li><li>Disrupt an enemy\\'s spell or ritual</li></ul><p>You can use your hold at any time, but it expires at the end of the scene.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Marsh Hags Clan.png"
+    },
+    {
+      "name": "Iron Fist Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Swiss Alps</p><p><p class=\"subtitle\">Iron Fist Brigade</p><p>You come from the Iron Fist Clan, known for their skilled blacksmiths and powerful weapons. As a member of the Iron Fist Orcs, you gain the following moves:</p><ul><li><strong>Iron Grip:</strong> When you successfully grapple an opponent, you can choose to deal damage instead of holding them in place.</li><li><strong>Two-Handed Mastery:</strong> When you wield a two-handed weapon, add an extra +1d4 damage.</li><li><strong>Armor Smith:</strong> You are skilled in the art of armor-making. When you spend a few hours working on a suit of armor, you can improve its defensive properties by +1.</li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Iron Fist Clan.png"
+    },
+    {
+      "name": "Stone Heart Orc",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "red"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Pyrenees</p><p><p class=\"subtitle\">Stone Heart Sentinels</p><p>You come from the Stone Heart Clan, known for their impressive fortresses and heavily-armored guards. As a member of the Stone Heart Orcs, you gain the following moves:</p><ul><li><strong>Shield Wall:</strong> When you stand shoulder-to-shoulder with your allies, you can spend a hold to add +1 armor to everyone in the group.</li><li><strong>Unwavering Resolve:</strong> When you are subjected to a fear effect, roll+Con. On a 16-19, you shake it off and gain +1 forward against the source of the fear. On a 9-15, you are momentarily shaken but can still act. On a miss, you are overcome with fear and must flee or cower.</li><li><strong>Fortress Builder:</strong> You are skilled in the art of fortification. When you spend a few hours working on a defensive structure, you can improve its defensive properties by +1.</li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Stone Heart Orc.png"
+    },
+    {
+      "name": "Crimson Mountain Orc",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "orange"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Orc and being born in Carpathians mountains</p><p><p class=\"subtitle\">Bloodthirsty Raiders</p><p>You come from the Crimson Mountain Clan, known for their red-colored armor and their fearsome reputation on the battlefield. You are a member of the Crimson Mountain Raiders, a group of skilled cavalry who strike fear into the hearts of their enemies with their swift and deadly charges. When you charge into battle, roll+Con. On a 16-19, you deal an additional 1d6 damage to your enemies and your enemies are afraid and hesitate. On a 9-15, choose one:</p><ul><li>You deal an additional 1d4 damage to your enemies</li><li>You drive back your enemies, forcing them to choose between taking damage or giving ground</li><li>You disorient your enemies, making them vulnerable to your allies\\' attacks</li></ul><p>Your ferocity and love of battle make you feared by both humans and elves, and your thirst for blood can lead you into dangerous situations. But when the battle is won, you are revered by your clan as a hero of the Crimson Mountain.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Crimson Mountain Orc.png"
+    },
+    {
+      "name": "Iron Forge Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Carpathians depths</p><p><p class=\"subtitle\">Iron Legion</p><p>You come from the Clan of the Iron Forge, known for their expert blacksmiths and production of high-quality weapons and armor. As a Deep Dwarf of this clan, you possess physical strength and endurance, as well as tough and resilient personalities. You have been trained in the art of siege warfare as a member of the Iron Legion, a special army unit of heavily-armored soldiers. </p><p><strong>When you use your strength to overcome an obstacle or resist an attack, roll +Str. On a 16-19, you do it with ease. On a 9-15, you succeed, but choose one: You take damage, you leave something important behind, or you lose your footing and end up in a bad spot. </strong></p><p><strong>When you use your knowledge of siege warfare to plan or execute an assault, roll +Int. On a 16-19, the assault is a resounding success. On a 9-15, the assault succeeds, but choose one: You suffer heavy losses, you take longer than expected, or you lose something important in the process.</strong></p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Iron Forge Clan.png"
+    },
+    {
+      "name": "Golden Mine Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "purple"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Pyrenees depths</p><p><p class=\"subtitle\">Golden Guard</p><p>You come from the Clan of the Golden Mine, known for their rich veins of gold and trade in precious metals. As a Deep Dwarf of this clan, you possess wealth and prosperity, as well as mercantile and diplomatic skills. You have been trained as a member of the Golden Guard, a special army unit of elite mercenaries hired for protection by wealthy clients.</p><p><strong>When you use your wealth and resources to gain an advantage, roll +Cha. On a 16-19, you have the perfect resource for the situation. On a 9-15, you have something useful, but it comes with a complication or cost.</strong></p><p><strong>When you use your mercantile and diplomatic skills to negotiate or manipulate others, roll +Wis. On a 16-19, they believe your words and follow your lead. On a 9-15, they are hesitant, and you must make them an offer or provide proof to convince them.</strong></p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Golden Mine Clan.png"
+    },
+    {
+      "name": "Dark Tunnels Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Alps depths</p><p><p class=\"subtitle\">Dark Tunnels Explorer</p><p>You come from the Dark Tunnels Clan, a group of dwarves renowned for their exploration and mapping of the underground tunnels and caverns of Europe. Your special abilities reflect your clan\\'s expertise in reconnaissance and infiltration.</p><p class=\"subtitle\">Darkvision</p><p>You can see in the dark as if it were daylight.</p><p class=\"subtitle\">Stoneworking</p><p>You have a deep understanding of stonework and stonemasonry. When you examine stonework, roll+Wis. On a 16-19, ask the GM three questions from the list below. On a 9-15, ask one question.</p><ul><li>What was crafted here?</li><li>What is valuable here?</li><li>What is flawed or imperfect here?</li><li>What is hidden here?</li></ul><p class=\"subtitle\">Underground Expertise</p><p>You have a +1 ongoing to all rolls made to navigate underground tunnels and caverns.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Dark Tunnels Clan.png"
+    },
+    {
+      "name": "Cloud Walkers Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "cerulean"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Lhasa</p><p><p class=\"subtitle\">Cloudwalking Magic</p><p>You are a member of the Clan of the Cloud Walkers, known for your expertise in cloudwalking magic. You can walk on clouds and even soar through the skies. When you use your cloudwalking magic, roll+WIS. On a 16-19, hold 3. On a 9-15, hold 2. On a 1-8, hold 1. Spend your hold to:</p><ul><li>Move quickly across the clouds and avoid obstacles or enemies</li><li>Hide in the clouds and become invisible to enemies</li><li>Surprise an enemy by dropping down from the clouds and attacking them</li></ul><p>You can use your hold at any time, but it expires at the end of the scene.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Cloud Walkers Clan.png"
+    },
+    {
+      "name": "Sky Hunters Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11220,7 +11881,55 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Skilled Fishers and Divers</p><p>You are skilled in the arts of fishing and diving, and can hold your own in any underwater environment. You have +1 ongoing to any move that involves fishing or diving.</p></p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwaf and being born in Pokhara</p><p><p class=\"subtitle\">Hunter of the Skies</p><p>You are a member of the Clan of the Sky Hunters, known for your expertise in hunting and tracking prey from the air. You are also skilled in the art of taming and riding flying beasts. When you ride a flying beast, roll+DEX. On a 16-19, gain 3 hold. On a 9-15, gain 2 hold. On a 1-8, gain 1 hold. Spend your hold to:</p><ul><li>Command your beast to attack an enemy</li><li>Move quickly and avoid obstacles or enemies</li><li>Use your beast to distract an enemy or create a diversion</li></ul><p>You can use your hold at any time, but it expires at the end of the scene.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Sky Hunters Clan.png"
+    },
+    {
+      "name": "Mountain Monks Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "blue"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Kathmandu</p><p><p class=\"subtitle\">Mountain Monks</p><p>You are a member of the Mountain Monks, a clan of dwarves located in the city of Kathmandu who are known for their expertise in meditation and spiritual enlightenment. You are able to harness your inner energy and perform feats of incredible strength and endurance. When you meditate for at least 10 minutes, you gain the following abilities:</p><ul><li>Advantage on Strength and Constitution saving throws and ability checks for the next hour</li><li>Resistance to non-magical bludgeoning, piercing, and slashing damage for the next hour</li><li>Regain 1d8 hit points for each hour of meditation</li></ul><p>In addition, you are able to heal others through touch. When you lay your hands on a wounded creature, you may heal them for 1d8 hit points, plus an additional 1d8 hit points for each hour of meditation you have completed that day. You may only use this ability once per target per day.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Mountain Monks Clan.png"
+    },
+    {
+      "name": "Reef Blades Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Venice</p><p><p class=\"subtitle\">Expert Underwater Fighters</p><p>You are a member of the Reef Blades clan, a group of expert underwater fighters who use their magic to enhance their strength and agility in the water. When you are underwater, gain +1 ongoing to any move that involves physical combat.</p><p><p class=\"subtitle\">Close Connection with the Sea</p><p>You have a close connection with the sea and its creatures. You can speak to any aquatic creature and understand its responses as if it were speaking your language.</p><p><p class=\"subtitle\">Skilled Fishers and Divers</p><p>You are skilled in the arts of fishing and diving, and can hold your own in any underwater environment. You have +1 ongoing to any move that involves fishing or diving.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11238,13 +11947,13 @@
       "header_image": "Reef Blades Clan.png"
     },
     {
-      "name": "Magical Tatoos",
+      "name": "Coral Casters Dwarf",
       "crystals": {
         "requires": [],
-        "provides": ["orange"]
+        "provides": []
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Magical Tattoos</p><p>You have intricate tattoos on your body that glow when you use magic or you become strongly emotional</p>",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Barcelona</p><p><p class=\"subtitle\">Water and Earth Magic</p><p>You are a member of the Coral Casters clan, a group of magic-users who specialize in water and earth magic. When you cast a spell that involves water or earth, roll+Int. On a 16-19 choose 2, on a 9-15 choose 1:</p><ul><li>The spell is more powerful than you intended</li><li>You do not suffer any negative consequences from the spell</li><li>You can cast the spell again without spending any additional spell slots</li></ul><p><p class=\"subtitle\">Magical Tattoos</p><p>You have intricate tattoos on your body that are a mark of your magical prowess. When you use magic, your tattoos glow with a soft purple light.</p><p><p class=\"subtitle\">Pearl Trader</p><p>You are skilled in the art of trading and can get better deals when buying or selling pearls. You have +1 ongoing to any move that involves pearl trading.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11260,6 +11969,32 @@
         "longitude": -122.4194
       },
       "header_image": "Coral Casters Dwarf.png"
+    },
+    {
+      "name": "Seaborn Sentinel Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Requirement.</p><p>Being an Dwarf and being born in Marseille</p><p><p class=\"subtitle\">Seaborn Sentinel</p><p>You are a member of the Seaborn Sentinels, a group of heavily-armored soldiers who are trained in the art of maritime warfare. You are known for your rare and stoic personality, which is a result of your fierce loyalty to your clan and your duty to defend your home.</p><p>When you fight on a ship or in any maritime environment, you gain the following moves:</p><ul><li><strong>Maritime Tactics:</strong> When you assess a maritime threat, roll+Wis. On a 16-19, ask the GM 3 questions from the list below. On a 9-15, ask 1 question.<br><ul><li>What here poses the biggest threat?</li><li>What here is the most vulnerable?</li><li>What is the enemy\\'s objective?</li><li>What is the best way to take advantage of the environment?</li></ul></li><li><strong>Ironclad Defense:</strong> When you defend a ship or maritime territory, gain +1 armor.</li><li><strong>Boarding Party:</strong> When you lead a boarding party, choose 1 additional benefit for your allies:<br><ul><li>Advantage on their next attack roll</li><li>+1 forward to damage</li><li>Ignore armor</li></ul></li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Seaborn Sentinel Clan.png"
     },
     {
       "name": "Ironclad",
@@ -11870,7 +12605,7 @@
       "header_image": "Superior Warrior.png"
     },
     {
-      "name": "Whistler Knight",
+      "name": "Whistlers Halfling",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11878,7 +12613,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Whistling Cavalry</p><p>The Whistling Cavalry is a special army unit made up of skilled riders and archers who use their musical abilities to command and control their mounts in battle. When you fight from horseback, you can use your musical abilities to give orders to your mount. Your mount will obey your commands to the best of its ability, and you can use it to make attacks or move around the battlefield.</p></p>",
+      "description": "<p><p class=\"subtitle\">Musical Talent</p><p>The Whistlers are known for their musical abilities, and they can use their talent to influence the emotions of those around them. When you use your musical abilities to help your allies, roll+Cha. On a 16-19 they take +1 forward, on a 9-15 they take +1 forward, but you expose yourself to danger, retribution, or cost.</p><p class=\"subtitle\">Skilled Fencers</p><p>The Whistlers are skilled fencers, and they use their agility and quick reflexes to outmaneuver their opponents. When you Hack and Slash with a finesse weapon, you can roll+Dex instead of +Str.</p><p class=\"subtitle\">Whistling Cavalry</p><p>The Whistling Cavalry is a special army unit made up of skilled riders and archers who use their musical abilities to command and control their mounts in battle. When you fight from horseback, you can use your musical abilities to give orders to your mount. Your mount will obey your commands to the best of its ability, and you can use it to make attacks or move around the battlefield.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11950,15 +12685,15 @@
       "header_image": "Weapon Soul Bounding.png"
     },
     {
-      "name": "Gatherer",
+      "name": "Gatherer Clan",
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "emerald"
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Foraging Expertise</p><p>You are an expert in identifying and collecting rare herbs and plants that can be used for medicinal or magical purposes. You have a +2 bonus to Discern Realities rolls when looking for herbs or plants, and you can always find food and water for yourself and your companions, even in the most barren and desolate of places.</p></p><p>",
+      "description": "<p><p class=\"subtitle\">Foraging Expertise</p><p>You are a member of the Gatherers, a clan of halflings known for their foraging and gathering skills. You are an expert in identifying and collecting rare herbs and plants that can be used for medicinal or magical purposes. You have a +2 bonus to Discern Realities rolls when looking for herbs or plants, and you can always find food and water for yourself and your companions, even in the most barren and desolate of places.</p></p><p><p class=\"subtitle\">Thievery Skills</p><p>You are also a skilled thief, trained in the art of stealth and agility. You have a +2 bonus to Defy Danger rolls when sneaking or stealing, and you can pick locks and pockets with ease. You can also use your agility to gain an advantage in combat, gaining a +1 bonus to Hack and Slash rolls when using a light or finesse weapon.</p></p><p><p class=\"subtitle\">Herbalist Training</p><p>You have been trained as a Herbalist, a special army unit of the Gatherers that uses their knowledge of plants and their magical properties to create powerful potions and remedies for use in battle. You can spend a few hours and some herbs to create a potion that provides a specific effect, such as healing, strength, or invisibility. The GM will tell you what herbs you need and what the potion will do.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11976,7 +12711,59 @@
       "header_image": "Gatherer Clan.png"
     },
     {
-      "name": "Workaholic",
+      "name": "Acrobats Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Agile Performer</p><p>You are a member of the Acrobats Halfling clan, known for their agility and love of performance. You gain a +1 ongoing to defy danger using your acrobatic abilities. Additionally, you may use your acrobatic skills to distract your foes and aid your allies. When you perform a distracting maneuver, roll+Dex. On a 16-19, choose 2. On a 9-15, choose 1:</p><ul><li>Your allies gain +1 forward</li><li>Your foes take -1 ongoing</li><li>You create an opportunity for an ally to act without reprisal</li></ul><p>These effects last until your next distracting maneuver.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Acrobats Clan.png"
+    },
+    {
+      "name": "Illusionists Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "cerulean"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Mastery of Deception</p><p>You are a member of the Illusionists Halfling clan, known for their mastery of magic and love of deception. You can create illusions that are so convincing that they affect all senses. When you cast an illusion, roll+Int. On a 16-19, choose 3. On a 9-15, choose 2:</p><ul><li>The illusion is completely convincing to all senses</li><li>The illusion persists for as long as you concentrate, even if the target interacts with it</li><li>The illusion can affect multiple targets</li><li>The illusion can move and interact with the environment</li></ul><p>The illusion lasts until you dismiss it or it is interacted with in a way that reveals its true nature. Additionally, you can use your illusions to create distractions or mislead your enemies. When you do, roll+Cha. On a 16-19, choose 2. On a 9-15, choose 1:</p><ul><li>Your foes are confused and disoriented, and take -1 ongoing</li><li>You create an opportunity for an ally to act without reprisal</li><li>Your foes reveal information or secrets to you</li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Illusionists Clan.png"
+    },
+    {
+      "name": "Stoneworkers Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11984,7 +12771,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Rare Work Ethic</p><p>You are known for your rare work ethic and your attention to detail. When you spend time working on a project, you may choose to take +1 ongoing to any rolls you make related to that project. However, you must also choose one of the following: <ul><li>You work yourself to exhaustion, take -1 ongoing to all rolls until you rest</li><li>You neglect other duties or responsibilities, and may incur the wrath of someone who was counting on you</li></ul></p>",
+      "description": "<p><p class=\"subtitle\">Stone Shapers</p><p>You are a member of the Stoneworkers, a clan of gnomes known for their expert craftsmanship and their ability to shape stone into intricate and beautiful works of art. When you work with stone, you gain a +1 forward to any rolls you make to shape or manipulate it.</p><p class=\"subtitle\">Rare Work Ethic</p><p>You are known for your rare work ethic and your attention to detail. When you spend time working on a project, you may choose to take +1 ongoing to any rolls you make related to that project. However, you must also choose one of the following: <ul><li>You work yourself to exhaustion, take -1 ongoing to all rolls until you rest</li><li>You neglect other duties or responsibilities, and may incur the wrath of someone who was counting on you</li></ul></p><p class=\"subtitle\">Stonemages</p><p>In times of war, the Stoneworkers have been known to use their stone-shaping abilities to create powerful magical weapons and armor for their special army unit, the Stonemages. When you enter battle, choose one of the following: <ul><li>You wield a magical stone weapon that deals +1d6 damage, but is heavy and unwieldy (-1 ongoing to all rolls while wielding it)</li><li>You wear a magical stone armor that reduces damage taken by 1, but is cumbersome and slows you down (-1 ongoing to all rolls that require mobility or agility)</li><li>You carry a magical stone shield that grants you +1 armor, but is unwieldy and difficult to maneuver (-1 ongoing to all rolls that require dexterity or coordination)</li></ul></p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -12002,7 +12789,7 @@
       "header_image": "Stoneworkers Clan.png"
     },
     {
-      "name": "Inventor",
+      "name": "Tinkerer Clan",
       "crystals": {
         "requires": [],
         "provides": [
@@ -12010,7 +12797,7 @@
         ]
       },
       "type": "training",
-      "description": "<li><b>Inventor:</b> When you have time and materials to work with, you can invent a new device or gadget. Describe the device you want to create, and then roll+Int. On a 16-19 choose 2, on a 9-15 choose 1:<ul><li>The device works as intended</li><li>The device is reliable and won\\'t break down easily</li><li>The device has additional features beyond its intended purpose</li><li>The device is safe to use</li></ul>On a miss, the device has significant flaws or dangers that the GM will describe to you.</li><li>",
+      "description": "<p><p class=\"subtitle\">Tinkerers</p><p>The Tinkerers are a clan of gnomes located in the city of Syracuse. They are known for their love of experimentation and their natural curiosity. They are constantly coming up with new inventions and gadgets, and they are always looking for ways to improve upon existing technologies. They are often hired by other races to repair and maintain their machines and equipment, and they are known for their innovative and resourceful approach to problem-solving.</p><p><ul><li><b>Inventor:</b> When you have time and materials to work with, you can invent a new device or gadget. Describe the device you want to create, and then roll+Int. On a 16-19 choose 2, on a 9-15 choose 1:<ul><li>The device works as intended</li><li>The device is reliable and won\\'t break down easily</li><li>The device has additional features beyond its intended purpose</li><li>The device is safe to use</li></ul>On a miss, the device has significant flaws or dangers that the GM will describe to you.</li><li><b>Gadgeteer:</b> You have an array of gadgets and tools at your disposal. Choose two gadgets from the list below, and describe them:<ul><li>Steam-powered grappling hook</li><li>Explosive devices</li><li>Smoke bombs</li><li>Spring-loaded boots</li><li>Telescopic goggles</li><li>Teleportation device</li><li>Portable laboratory</li><li>Other (describe to the GM)</li></ul>You can use each gadget once per day, and each gadget has a different effect. The GM will describe the specifics of each gadget\\'s effect when you use it.</li><li><b>Gnomish Artillery:</b> When you lead a group of Tinkerers in battle, you can choose to form the Gnomish Artillery. This unit is made up of expert engineers who use their inventions and gadgets to rain destruction upon their foes. Choose a target within range, and roll+Dex. On a 16-19 choose 2, on a 9-15 choose 1:<ul><li>The target takes 1d10 damage</li><li>The target is stunned and cannot act next turn</li><li>The target is knocked back or off-balance</li><li>The attack doesn\\'t cause collateral damage to allies or the environment</li></ul>On a miss, the attack has unintended consequences that the GM will describe to you.</li></ul></p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -12025,7 +12812,139 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Centaur.png"},    {
+      "header_image": "Tinkerer Clan.png"
+    },
+    {
+      "name": "Leafwalkers Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "emerald"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">The Leafwalkers</p><p>The Leafwalkers are a gnome race located in the Białowieża Forest. They are known for their stealthy and agile nature, making them skilled scouts and rangers. Their special army unit, the Leafblade Battalion, is a group of skilled warriors who wield magical, enchanted knives that allow them to teleport through trees. They are also highly respected for their ability to defend their forest homes from invaders.</p><ul><li><b>Camouflage:</b> You can blend in with your surroundings. When you <em>stay still and quiet</em> in natural surroundings, you are invisible to anyone who is not specifically searching for you. On a 16-19, choose 3, on a 9-15 choose 2:<ul><li>You can move slowly without breaking your camouflage</li><li>You can communicate with others without breaking your camouflage</li><li>You can take a basic action without breaking your camouflage</li></ul></li><li><b>Teleport:</b> When you <em>use a Leafblade to teleport through a tree</em>, roll+Dex. On a 16-19 choose 3, on a 9-15 choose 2:<ul><li>You arrive safely at your destination</li><li>You bring someone with you</li><li>You bring something with you</li><li>You leave no trace of your passage</li></ul></li><li><b>Defend the Forest:</b> When you <em>defend your forest home from invaders</em>, add +1 to your roll. On a 20+, choose 2, on a 10-11 choose 1:<ul><li>You drive off the invaders and they don\\'t return</li><li>You learn something about their plans and weaknesses</li><li>You gain the support of a powerful ally in your forest home</li></ul></li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Leafwalkers Clan.png"
+    },
+    {
+      "name": "Woodcarvers Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "gold"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p>The Woodcarvers are a gnome race located in Val Gardena, a valley in the Dolomites. They are known for their artistic talent and their love of nature. They are skilled woodworkers, creating intricate and beautiful carvings and sculptures. However, they are also skilled in using these sculptures as weapons in war, imbuing them with magic to enhance their destructive power. They are often hired by other races to create and maintain their war machines, and they are known for their creativity and resourcefulness in battle.</p><ul><li><b>Artistic Flair:</b> You are a master of woodcarving and sculpture. When you <em>create a work of art</em>, roll+Cha. On a 16-19, choose 3, on a 9-15 choose 2:<ul><li>Your art inspires someone who sees it to take action on your behalf</li><li>Your art is imbued with magical power</li><li>Your art is noticed by someone important or influential</li></ul></li><li><b>Wooden Weapon:</b> When you <em>fight with a wooden weapon</em>, you may choose to imbue it with magic. Roll+Int. On a 16-19, choose 2, on a 9-15 choose 1:<ul><li>It deals +1d6 damage</li><li>It has the <em>forceful</em> tag</li><li>It has the <em>igniting</em> tag</li></ul></li><li><b>Inventive Mind:</b> When you <em>create or repair a mechanical device or war machine</em>, roll+Int. On a 16-19, choose 3, on a 9-15 choose 2:<ul><li>The device or machine works perfectly</li><li>The device or machine has an additional useful function</li><li>You learn something new about mechanical devices or war machines</li></ul></li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Woodcarvers Clan.png"
+    },
+    {
+      "name": "Forest Lurker Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "black"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Stealthy Scouts</p><p>The Forest Lurker Goblins are skilled in the art of stealth and scouting. When you use the move Scout Ahead, you gain an additional option:</p><ul><li>Leave no trace of your passing and don\\'t trigger any traps or alarms</li></ul><p>In addition, when you use the move Ambush, you gain an additional option:</p><ul><li>Deal an extra 1d4 damage to a foe you ambush</li></ul><p>Finally, when you use the move Hide in Shadows, you may remain hidden for as long as you wish, as long as you remain still and do not make any noise.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Forest Lurker Clan.png"
+    },
+    {
+      "name": "Tree Eater Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "red"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Lumberjacks and Loggers</p><p>The Tree Eater Goblins are skilled in the art of cutting down trees and surviving in harsh environments. When you use the move Hack and Slash with an axe or other cutting tool, you gain an additional option:</p><ul><li>Deal an extra 1d4 damage to a foe you hit</li></ul><p>In addition, when you use the move Endure Hardship, you gain an additional option:</p><ul><li>Ignore an additional point of damage from environmental hazards or extreme temperatures</li></ul><p>Finally, when you use the move Drink, you may drink any alcoholic beverage without suffering any ill effects, and gain +1 forward when you do so.</p></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Tree Eater Clan.png"
+    },
+    {
+      "name": "Hog Tamer Clan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "green"
+        ]
+      },
+      "type": "training",
+      "description": "<p><p class=\"subtitle\">Ferocious Hog Tamers</p><p>The Hog Tamer Goblins are a clan located in the Apennine Mountains in Italy. They are known for their ability to tame and train wild hogs, which they use as mounts in battle. These hogs are fiercely loyal to their Goblin handlers, and they are feared by their enemies on the battlefield. The Hog Tamers have a special army unit called the Hog Riders, a group of skilled warriors who use their hogs to charge into battle with devastating force.</p><p><ul><li><b>Hog-Riding Expertise:</b> You gain +1 ongoing when you Defy Danger while mounted on a hog.</li><li><b>Ferocious Charge:</b> When you charge into battle on your hog, deal +1d4 damage to your enemies.</li><li><b>Hog Whisperer:</b> You have a natural affinity with hogs. You can communicate with them, and you know how to calm them down and keep them under control.</li></ul></p>",
+      "stats": [
+        {
+          "stat_name": "",
+          "stat_value": ""
+        },
+        {
+          "stat_name": "",
+          "stat_value": ""
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Hog Tamer Clan.png"
+    },
+    {
       "name": "Centaur",
       "crystals": {
         "requires": [],
@@ -13750,7 +14669,7 @@
           "orange"
         ]
       },
-      "type": "species",
+      "type": "training",
       "description": "<p><p class=\"subtitle\">Cold-Blooded Lizardfolk</p><p>The Lizardfolk are a race of cold-blooded humanoids that inhabit the marshes and swamps of Eastern Europe. They are known for their ability to adapt to any environment, and for their natural strength and resilience. The Lizardfolk have a complex social structure, with each tribe led by a powerful Shaman who is both a religious leader and a warrior.</p><p><ul><li><b>Camouflage:</b> When you stay still in a natural environment, you blend in with your surroundings and become nearly invisible.</li><li><b>Quick Reflexes:</b> You have lightning-fast reflexes. When you act under fire, take +1 ongoing.</li><li><b>Predator\\'s Instinct:</b> You have an innate sense of your prey\\'s movements. When you track a creature through the wilderness, take +1 ongoing to discern realities about it.</li></ul></p>",
       "stats": [
         {
@@ -13776,7 +14695,7 @@
           "green"
         ]
       },
-      "type": "species",
+      "type": "training",
       "description": "<p><p class=\"subtitle\">Amphibious Fishfolk</p><p>The Fishfolk are a race of amphibious creatures that live in the rivers, lakes, and seas of Western Europe. They have the body of a fish and the arms and torso of a humanoid, and are able to breathe both air and water. The Fishfolk are skilled swimmers and fishermen, and their society is based around the importance of water and the worship of aquatic deities.</p><p><ul><li><b>Aquatic Adaptation:</b> You can breathe both air and water, and are immune to pressure and temperature changes in water.</li><li><b>Underwater Fighter:</b> You have trained extensively in underwater combat. When you fight underwater, take +1 forward.</li><li><b>Fisherman\\'s Luck:</b> You have a natural talent for fishing. When you try to catch fish, take +1 forward.</li></ul></p>",
       "stats": [
         {
@@ -21457,7 +22376,7 @@
         "requires": [],
         "provides": []
       },
-      "type": "lore",
+      "type": "item",
       "moves": [
         {
           "moves_requirements": [],
@@ -21468,6 +22387,16 @@
           "moves_requirements": [],
           "moves_name": "",
           "moves_description": "You get +1 ongoing to spout lore and discern reality checks related to the War of the Dragons."
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "2 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "30 coins"
         }
       ],
       "geo_location": {
@@ -21484,7 +22413,7 @@
         ],
         "provides": []
       },
-      "type": "lore",
+      "type": "item",
       "moves": [
         {
           "moves_requirements": [],
@@ -21497,6 +22426,16 @@
           ],
           "moves_name": "Bonus",
           "moves_description": "You get +1 ongoing to spout lore and discern reality checks related to the Angels and Demon War."
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "2 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "50 coins"
         }
       ],
       "geo_location": {
@@ -21513,7 +22452,7 @@
           "cerulean"
         ]
       },
-      "type": "lore",
+      "type": "item",
       "moves": [
         {
           "moves_requirements": [],
@@ -21524,6 +22463,16 @@
           "moves_requirements": [],
           "moves_name": "Bonus",
           "moves_description": "You get +1 ongoing to spout lore and discern reality checks related to magic and magical artifacts."
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "1 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "50 coins"
         }
       ],
       "geo_location": {
@@ -30682,7 +31631,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>People from the city of Milan, a city known for its fashion and design. They are known for their trade in fine fabrics and their skilled tailors, who create some of the most fashionable clothing in all of Europe. Their special army unit is the The Milanesi Dragonslayers - A group of warriors from Milan, trained in the art of dragon hunting. They are known for their bravery and their ability to track and slay even the most fearsome of dragons. Milanese are known for their elegant and refined appearances.</p>",
+      "description": "<p>People from the city of Milan, a city known for its fashion and design. They are known for their trade in fine fabrics and their skilled tailors, who create some of the most fashionable clothing in all of Europe. Their special army unit is theThe Milanesi Dragonslayers - A group of warriors from Milan, trained in the art of dragon hunting. They are known for their bravery and their ability to track and slay even the most fearsome of dragons. Milanese are known for their elegant and refined appearances.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -34734,7 +35683,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "blue"
         ]
       },
       "type": "background",
@@ -34760,7 +35709,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "white"
+          "orange"
         ]
       },
       "type": "background",
@@ -34786,7 +35735,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "gold"
         ]
       },
       "type": "background",
@@ -34812,7 +35761,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "blue"
         ]
       },
       "type": "background",
@@ -34864,7 +35813,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "black"
         ]
       },
       "type": "background",
@@ -34890,7 +35839,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -34916,7 +35865,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "orange"
         ]
       },
       "type": "background",
@@ -34942,7 +35891,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "gold"
         ]
       },
       "type": "background",
@@ -34968,7 +35917,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "red"
         ]
       },
       "type": "background",
@@ -34994,7 +35943,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -35020,7 +35969,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "blue"
         ]
       },
       "type": "background",
@@ -35046,7 +35995,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "purple"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -35072,7 +36021,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "white"
         ]
       },
       "type": "background",
@@ -35098,7 +36047,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "red"
         ]
       },
       "type": "background",
@@ -35124,7 +36073,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "red"
         ]
       },
       "type": "background",
@@ -35176,7 +36125,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "emerald"
         ]
       },
       "type": "background",
@@ -35202,7 +36151,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "purple"
         ]
       },
       "type": "background",
@@ -35228,7 +36177,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "black"
         ]
       },
       "type": "background",
@@ -35254,7 +36203,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "emerald"
         ]
       },
       "type": "background",
@@ -35280,7 +36229,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "white"
         ]
       },
       "type": "background",
@@ -35306,7 +36255,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "gold"
         ]
       },
       "type": "background",
@@ -35332,7 +36281,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "green"
         ]
       },
       "type": "background",
@@ -35358,7 +36307,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "emerald"
         ]
       },
       "type": "background",
@@ -35384,7 +36333,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "white"
         ]
       },
       "type": "background",
@@ -35410,7 +36359,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "orange"
         ]
       },
       "type": "background",
@@ -35436,7 +36385,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "purple"
         ]
       },
       "type": "background",
@@ -35462,7 +36411,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "red"
         ]
       },
       "type": "background",
@@ -35488,7 +36437,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "white"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -35514,7 +36463,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "white"
         ]
       },
       "type": "background",
@@ -35540,7 +36489,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "orange"
         ]
       },
       "type": "background",
@@ -35566,7 +36515,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "blue"
         ]
       },
       "type": "background",
@@ -35592,7 +36541,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "orange"
         ]
       },
       "type": "background",
@@ -35618,7 +36567,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "white"
         ]
       },
       "type": "background",
@@ -35644,7 +36593,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "black"
         ]
       },
       "type": "background",
@@ -35670,7 +36619,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -35696,7 +36645,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "orange"
         ]
       },
       "type": "background",
@@ -35722,7 +36671,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "emerald"
         ]
       },
       "type": "background",
@@ -35748,7 +36697,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "orange"
         ]
       },
       "type": "background",
@@ -35774,7 +36723,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "purple"
         ]
       },
       "type": "background",
@@ -35800,7 +36749,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -35826,7 +36775,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "red"
         ]
       },
       "type": "background",
@@ -35852,7 +36801,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "gold"
         ]
       },
       "type": "background",
@@ -35878,7 +36827,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "white"
+          "purple"
         ]
       },
       "type": "background",
@@ -35956,7 +36905,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "purple"
         ]
       },
       "type": "background",
@@ -35982,7 +36931,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "purple"
+          "green"
         ]
       },
       "type": "background",
@@ -36008,7 +36957,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -36034,7 +36983,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "purple"
         ]
       },
       "type": "background",
@@ -36086,7 +37035,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "cerulean"
         ]
       },
       "type": "background",
@@ -36112,7 +37061,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold"
+          "purple"
         ]
       },
       "type": "background",
@@ -36138,7 +37087,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "emerald"
+          "purple"
         ]
       },
       "type": "background",
@@ -36190,7 +37139,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "gold"
         ]
       },
       "type": "background",
@@ -36216,7 +37165,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "green"
         ]
       },
       "type": "background",
@@ -36242,7 +37191,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "green"
+          "red"
         ]
       },
       "type": "background",
@@ -36266,3 +37215,15 @@
 
   ]
 }
+
+
+# Iterate over each card and update the name if needed
+for card in text["deck_list"]:
+    if "training" in card["type"]:
+        new_name = determine_name(card["crystals"]["provides"])
+        if new_name is not None:
+            card["name"] = new_name
+
+# Write the updated cards to a new JSON file
+with open("updated_cards.json", "w") as f:
+    json.dump(text, f, indent=4)
