@@ -7749,7 +7749,7 @@
       "header_image": "Riddle of Steel.png"
     },
     {
-      "name": "Arcane Training",
+      "name": "Arcane Spellcaster",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10045,7 +10045,7 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Martial Training.png"
+      "header_image": "Royal Guard Soldier.png"
     },
     {
       "name": "Charming and Open",
