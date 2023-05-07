@@ -12332,7 +12332,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "black"
         ]
       },
       "type": "training",
@@ -17636,7 +17636,7 @@
       "header_image": "Domain of the Horned God.png"
     },
     {
-      "name": "Spiritwalker of the Northern Forest",
+      "name": "Shaman of the Northern Forest",
       "crystals": {
         "requires": [],
         "provides": [
@@ -17664,7 +17664,7 @@
       "header_image": "Spiritwalkers of the Northern Forest.png"
     },
     {
-      "name": "Order of the Silver Cord",
+      "name": "Mystic of the Silver Cord",
       "crystals": {
         "requires": [],
         "provides": [
@@ -28244,7 +28244,7 @@
         "requires": [],
         "provides": [
           "purple",
-          "purple",
+          "green",
           "green"
         ]
       },
