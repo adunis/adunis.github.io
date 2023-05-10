@@ -29453,31 +29453,6 @@
       }
     },
     {
-      "name": "Sleeping Bag",
-      "description": "A warm, comfortable sleeping bag that provides a good night's rest in the wilderness.",
-      "type": "item",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "header_image": "Sleeping Bag.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "50 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      }
-    },
-    {
       "name": "Signal Whistle",
       "description": "A small whistle that can be used to signal for help or to communicate with allies at a distance.",
       "type": "item",
