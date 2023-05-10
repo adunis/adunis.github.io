@@ -1019,6 +1019,7 @@ table {
 }
 
 .moves {
+    display:block ruby;
     padding-top: 0px;
     padding: 5px;
     font-size: 8px;
