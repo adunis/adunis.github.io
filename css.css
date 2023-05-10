@@ -1333,7 +1333,7 @@ button {
 }
 
 #deck-picture {
-    width: 150px;
+    width: auto;
     height: 200px;
     background-size: cover;
     margin:20px;
