@@ -47,7 +47,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>When you spend time working in your forge, choose one item to create and roll+Int. On a 16-19, you successfully create the item to the best of your ability. Choose two options from the list below. On a 9-15, you successfully create the item, but choose one:</p><ul><li>The item is flawed in some way (the GM will tell you how)</li><li>The creation takes longer than expected</li><li>The creation requires rare or expensive materials</li></ul><p>On a miss, you fail to create the item and waste your materials.</p><p>Options:</p><ul><li>The item is of exceptional quality and gains a +1 bonus to damage or usefulness</li><li>The item has an interesting design or unique feature that sets it apart from other similar items</li><li>The item is created quickly and efficiently, taking half the expected time</li><li>The item is created using minimal materials, reducing the cost by half</li></ul></p>",
+      "description": "<p>When you spend time working in your forge, choose one item to create and roll+Int. On a 16-19, you successfully create the item to the best of your ability. Choose two options from the list below. On a 9-15, you successfully create the item, but choose one:</p><ul><li>The item is flawed in some way (the GM will tell you how)</li><li>The creation takes longer than expected</li><li>The creation requires rare or expensive materials</li></ul><p>Options:</p><ul><li>The item is of exceptional quality and gains a +1 bonus to damage or usefulness</li><li>The item has an interesting design or unique feature that sets it apart from other similar items</li><li>The item is created quickly and efficiently, taking half the expected time</li></ul></p>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -2169,7 +2169,7 @@
         "requires": [],
         "provides": [
           "orange",
-          "orange", 
+          "orange",
           "orange"
         ]
       },
@@ -2572,7 +2572,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a cursed creature, bound to change form under the light of the full moon. In human form, you are a skilled hunter and tracker, and gain +1 to Discern Realities when tracking prey. In werewolf form, you gain the following moves:</p><ul><li><strong>Rending Claws:</strong> when you deal damage in melee, you can choose to inflict an additional d4 damage.</li><li><strong>Fearsome Howl:</strong> when you howl, all enemies within earshot must defy danger or become frightened.</li><li><strong>Keen Senses:</strong> your senses are enhanced in werewolf form, giving you +1 to Discern Realities and allowing you to see in complete darkness.</li></ul><p>However, with great power comes great risk. Each time you change into werewolf form, you must roll+Con. On a 16-19, you retain control of your actions. On a 9-15, the GM will give you a choice: either you can retain control but mark a point of corruption, or you can lose control and the GM will take over your actions for the duration of the transformation. On a miss, you lose control and the GM takes over your actions indefinitely.</p>",
+      "description": "<p>You are a cursed creature, bound to change form under the light of the full moon. In human form, you are a skilled hunter and tracker, and gain +1 to Discern Realities when tracking prey. In werewolf form, you gain the following moves:</p><ul><li><strong>Rending Claws:</strong> when you deal damage in melee, you can choose to inflict an additional d4 damage.</li><li><strong>Fearsome Howl:</strong> when you howl, all enemies within earshot must defy danger or become frightened.</li><li><strong>Keen Senses:</strong> your senses are enhanced in werewolf form, giving you +1 to Discern Realities and allowing you to see in complete darkness.</li></ul><p>However, with great power comes great risk. Each time you change into werewolf form, you must roll+Con. On a 16-19, you retain control of your actions. On a 9-15, the GM will give you a choice: either you can retain control but mark a point of corruption, or you can lose control and the GM will take over your actions for the duration of the transformation. On a miss, you lose control and the GM takes over your actions indefinitely. When you reach 10 corruption points, you become a Feral Lycantrope that loses completely its humanity.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -2597,7 +2597,6 @@
           "orange",
           "orange",
           "black"
-
         ]
       },
       "type": "core training",
@@ -2904,1374 +2903,1374 @@
       },
       "header_image": "The Scales of Life and Death.png"
     },
-      {
-        "name": "Priest of Vulcan",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Vulcan you are also forbidden to have in your deck the Water, Ice, Air, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Vulcan.png"
-      },
-      {
-        "name": "Priest of Neptune",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Neptune you are also forbidden to have in your deck the Electricity, Fire, Air, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Neptune.png"
-      },
-      {
-        "name": "Priest of Boreas",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Boreas you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Boreas.png"
-      },
-      {
-        "name": "Priest of Terra",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Terra you are also forbidden to have in your deck the Electricity, Air, Mind, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Terra.png"
-      },
-      {
-        "name": "Priest of Aeolus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Aeolus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Aeolus.png"
-      },
-      {
-        "name": "Priest of Jupiter",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are a Priest of Jupiter you are also forbidden to have in your deck the Ice, Earth, Beasts, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Jupiter.png"
-      },
-      {
-        "name": "Priest of Diana",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Diana you are also forbidden to have in your deck the Electricity, Fire, Water, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Diana.png"
-      },
-      {
-        "name": "Priest of Ceres",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Ceres you are also forbidden to have in your deck the Electricity, Death, Mind, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Ceres.png"
-      },
-      {
-        "name": "Priest of Orcus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Orcus you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Orcus.png"
-      },
-      {
-        "name": "Priest of Mercury",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Mercury you are also forbidden to have in your deck the Electricity, Beasts, Death, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Mercury.png"
-      },
-      {
-        "name": "Priest of Mars",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Mars you are also forbidden to have in your deck the Electricity, Ice, Water, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Mars.png"
-      },
-      {
-        "name": "Priest of Minerva",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Minerva you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Minerva.png"
-      },
-      {
-        "name": "Priest of Janus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beginnings and endings card. You still need to meet its requirements to use it. While you are a Priest of Janus you are also forbidden to have in your deck the Electricity, Ice, Air, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Janus.png"
-      },
-      {
-        "name": "Priest of Fortuna",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Fortuna you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Fortuna.png"
-      },
-      {
-        "name": "Priest of Pluto",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Pluto you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Pluto.png"
-      },
-      {
-        "name": "Priest of Hecate",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Hecate you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hecate.png"
-      },
-      {
-        "name": "Priest of Vesta",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Vesta you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Vesta.png"
-      },
-      {
-        "name": "Priest of Aurora",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Aurora you are also forbidden to have in your deck the Electricity, Ice, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Aurora.png"
-      },
-      {
-        "name": "Priest of Mithras",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Mithras you are also forbidden to have in your deck the Ice, Water, Mind, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Mithras.png"
-      },
-      {
-        "name": "Priest of Bacchus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Bacchus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Bacchus.png"
-      },
-      {
-        "name": "Priest of Saturn",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Saturn you are also forbidden to have in your deck the Electricity, Ice, Air, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Saturn.png"
-      },
-      {
-        "name": "Priest of Juno",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Juno you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Juno.png"
-      },
-      {
-        "name": "Priest of Venus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Venus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Venus.png"
-      },
-      {
-        "name": "Priest of Silvanus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Silvanus you are also forbidden to have in your deck the Electricity, Ice, Water, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Silvanus.png"
-      },
-      {
-        "name": "Priest of Eris",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Eris you are also forbidden to have in your deck the Electricity, Ice, Water, Life domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Eris.png"
-      },
-      {
-        "name": "Priest of Somnus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Somnus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Somnus.png"
-      },
-      {
-        "name": "Priest of Melpomene",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Melpomene you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Melpomene.png"
-      },
-      {
-        "name": "Priest of Thalia",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Thalia you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Thalia.png"
-      },
-      {
-        "name": "Priest of Athena",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Athena you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Athena.png"
-      },
-      {
-        "name": "Priest of Hermes",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Hermes you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hermes.png"
-      },
-      {
-        "name": "Priest of Nemesis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Nemesis you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Nemesis.png"
-      },
-      {
-        "name": "Priest of Aesculapius",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Aesculapius you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Aesculapius.png"
-      },
-      {
-        "name": "Priest of Magna Mater",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Magna Mater you are also forbidden to have in your deck the Electricity, Ice, Water, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Magna Mater.png"
-      },
-      {
-        "name": "Priest of Uranus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Uranus you are also forbidden to have in your deck the Ice, Water, Beasts, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Uranus.png"
-      },
-      {
-        "name": "Priest of Hades",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Hades you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hades.png"
-      },
-      {
-        "name": "Priest of Agni",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Agni you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Agni.png"
-      },
-      {
-        "name": "Priest of Varuna",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Varuna you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Varuna.png"
-      },
-      {
-        "name": "Priest of Ymir",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Ymir you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Ymir.png"
-      },
-      {
-        "name": "Priest of Geb",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Geb you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Geb.png"
-      },
-      {
-        "name": "Priest of Vayu",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Vayu you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Vayu.png"
-      },
-      {
-        "name": "Priest of Thor",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Thunder card. You still need to meet its requirements to use it. While you are a Priest of Thor you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Thor.png"
-      },
-      {
-        "name": "Priest of Hecate",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Hecate you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hecate.png"
-      },
-      {
-        "name": "Priest of Ereshkigal",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Ereshkigal you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Ereshkigal.png"
-      },
-      {
-        "name": "Priest of Hathor",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fertility card. You still need to meet its requirements to use it. While you are a Priest of Hathor you are also forbidden to have in your deck the Electricity, Beasts, Death, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hathor.png"
-      },
-      {
-        "name": "Priest of Tiamat",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Chaos card. You still need to meet its requirements to use it. While you are a Priest of Tiamat you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Tiamat.png"
-      },
-      {
-        "name": "Priest of Diana",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Diana you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Diana.png"
-      },
-      {
-        "name": "Priest of Freyr",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Freyr you are also forbidden to have in your deck the Fire, Electricity, Beasts, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Freyr.png"
-      },
-      {
-        "name": "Priest of Thoth",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Thoth you are also forbidden to have in your deck the Fire, Ice, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Thoth.png"
-      },
-      {
-        "name": "Priest of Loki",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Light card. You still need to meet its requirements to use it. While you are a Priest of Loki you are also forbidden to have in your deck the Sun, Earth, Water, Electricity domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Loki.png"
-      },
-      {
-        "name": "Priest of Hermes",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Hermes you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hermes.png"
-      },
-      {
-        "name": "Priest of Aphrodite",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Aphrodite you are also forbidden to have in your deck the Electricity, Beasts, Death, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Aphrodite.png"
-      },
-      {
-        "name": "Priest of Cernunnos",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Cernunnos you are also forbidden to have in your deck the Fire, Electricity, Water, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Cernunnos.png"
-      },
-      {
-        "name": "Priest of Xochiquetzal",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Xochiquetzal you are also forbidden to have in your deck the Death, Ice, Electricity, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Xochiquetzal.png"
-      },
-      {
-        "name": "Priest of Anubis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Anubis.png"
-      },
-      {
-        "name": "Priest of Isis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Isis.png"
-      },
-      {
-        "name": "Priest of Xochiquetzal",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Xochiquetzal you are also forbidden to have in your deck the Death, Ice, Electricity, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Xochiquetzal.png"
-      },
-      {
-        "name": "Priest of Anubis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Anubis.png"
-      },
-      {
-        "name": "Priest of Isis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Isis.png"
-      },
-      {
-        "name": "Priest of Apollo",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Apollo you are also forbidden to have in your deck the Ice, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Apollo.png"
-      },
-      {
-        "name": "Priest of Hephaestus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Hephaestus you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hephaestus.png"
-      },
-      {
-        "name": "Priest of Poseidon",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Poseidon you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Poseidon.png"
-      },
-      {
-        "name": "Priest of Skadi",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Skadi you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Skadi.png"
-      },
-      {
-        "name": "Priest of Gaia",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Gaia you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Gaia.png"
-      },
-      {
-        "name": "Priest of Zeus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Zeus you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Zeus.png"
-      },
-      {
-        "name": "Priest of Zeus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are a Priest of Zeus you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Zeus.png"
-      },
-      {
-        "name": "Priest of Anubis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Anubis.png"
-      },
-      {
-        "name": "Priest of Hathor",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Hathor you are also forbidden to have in your deck the Electricity, Beasts, Death, Mind domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Hathor.png"
-      },
-      {
-        "name": "Priest of Thoth",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Thoth you are also forbidden to have in your deck the Fire, Ice, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Thoth.png"
-      },
-      {
-        "name": "Priest of Isis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Isis.png"
-      },
-      {
-        "name": "Priest of Artemis",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Artemis you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Artemis.png"
-      },
-      {
-        "name": "Priest of Khepri",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Khepri you are also forbidden to have in your deck the Ice, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Khepri.png"
-      },
-      {
-        "name": "Priest of Prometheus",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Prometheus you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Prometheus.png"
-      },
-      {
-        "name": "Priest of Lir",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Lir you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Lir.png"
-      },
-      {
-        "name": "Priest of Boreas",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Boreas you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Boreas.png"
-      },
-      {
-        "name": "Priest of Terra",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Terra you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Terra.png"
-      },
-      {
-        "name": "Priest of Odin",
-        "crystals": {
-          "requires": [],
-          "provides": [
-            "white",
-            "white",
-            "white"
-          ]
-        },
-        "type": "core training",
-        "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Odin you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
-        "geo_location": {
-          "latitude": 37.7749,
-          "longitude": -122.4194
-        },
-        "header_image": "Priest of Odin.png"
-      },
+    {
+      "name": "Priest of Vulcan",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Vulcan you are also forbidden to have in your deck the Water, Ice, Air, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Vulcan.png"
+    },
+    {
+      "name": "Priest of Neptune",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Neptune you are also forbidden to have in your deck the Electricity, Fire, Air, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Neptune.png"
+    },
+    {
+      "name": "Priest of Boreas",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Boreas you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Boreas.png"
+    },
+    {
+      "name": "Priest of Terra",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Terra you are also forbidden to have in your deck the Electricity, Air, Mind, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Terra.png"
+    },
+    {
+      "name": "Priest of Aeolus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Aeolus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Aeolus.png"
+    },
+    {
+      "name": "Priest of Jupiter",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are a Priest of Jupiter you are also forbidden to have in your deck the Ice, Earth, Beasts, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Jupiter.png"
+    },
+    {
+      "name": "Priest of Diana",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Diana you are also forbidden to have in your deck the Electricity, Fire, Water, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Diana.png"
+    },
+    {
+      "name": "Priest of Ceres",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Ceres you are also forbidden to have in your deck the Electricity, Death, Mind, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Ceres.png"
+    },
+    {
+      "name": "Priest of Orcus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Orcus you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Orcus.png"
+    },
+    {
+      "name": "Priest of Mercury",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Mercury you are also forbidden to have in your deck the Electricity, Beasts, Death, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Mercury.png"
+    },
+    {
+      "name": "Priest of Mars",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Mars you are also forbidden to have in your deck the Electricity, Ice, Water, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Mars.png"
+    },
+    {
+      "name": "Priest of Minerva",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Minerva you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Minerva.png"
+    },
+    {
+      "name": "Priest of Janus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beginnings and endings card. You still need to meet its requirements to use it. While you are a Priest of Janus you are also forbidden to have in your deck the Electricity, Ice, Air, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Janus.png"
+    },
+    {
+      "name": "Priest of Fortuna",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Fortuna you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Fortuna.png"
+    },
+    {
+      "name": "Priest of Pluto",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Pluto you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Pluto.png"
+    },
+    {
+      "name": "Priest of Hecate",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Hecate you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hecate.png"
+    },
+    {
+      "name": "Priest of Vesta",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Vesta you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Vesta.png"
+    },
+    {
+      "name": "Priest of Aurora",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Aurora you are also forbidden to have in your deck the Electricity, Ice, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Aurora.png"
+    },
+    {
+      "name": "Priest of Mithras",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Mithras you are also forbidden to have in your deck the Ice, Water, Mind, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Mithras.png"
+    },
+    {
+      "name": "Priest of Bacchus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Bacchus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Bacchus.png"
+    },
+    {
+      "name": "Priest of Saturn",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Saturn you are also forbidden to have in your deck the Electricity, Ice, Air, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Saturn.png"
+    },
+    {
+      "name": "Priest of Juno",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Juno you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Juno.png"
+    },
+    {
+      "name": "Priest of Venus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Venus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Venus.png"
+    },
+    {
+      "name": "Priest of Silvanus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Silvanus you are also forbidden to have in your deck the Electricity, Ice, Water, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Silvanus.png"
+    },
+    {
+      "name": "Priest of Eris",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Eris you are also forbidden to have in your deck the Electricity, Ice, Water, Life domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Eris.png"
+    },
+    {
+      "name": "Priest of Somnus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Somnus you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Somnus.png"
+    },
+    {
+      "name": "Priest of Melpomene",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Melpomene you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Melpomene.png"
+    },
+    {
+      "name": "Priest of Thalia",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Thalia you are also forbidden to have in your deck the Electricity, Ice, Water, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Thalia.png"
+    },
+    {
+      "name": "Priest of Athena",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Athena you are also forbidden to have in your deck the Electricity, Fire, Water, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Athena.png"
+    },
+    {
+      "name": "Priest of Hermes",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Hermes you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hermes.png"
+    },
+    {
+      "name": "Priest of Nemesis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Nemesis you are also forbidden to have in your deck the Electricity, Fire, Water, Life domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Nemesis.png"
+    },
+    {
+      "name": "Priest of Aesculapius",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Aesculapius you are also forbidden to have in your deck the Electricity, Fire, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Aesculapius.png"
+    },
+    {
+      "name": "Priest of Magna Mater",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Magna Mater you are also forbidden to have in your deck the Electricity, Ice, Water, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Magna Mater.png"
+    },
+    {
+      "name": "Priest of Uranus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Uranus you are also forbidden to have in your deck the Ice, Water, Beasts, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Uranus.png"
+    },
+    {
+      "name": "Priest of Hades",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Hades you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hades.png"
+    },
+    {
+      "name": "Priest of Agni",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Agni you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Agni.png"
+    },
+    {
+      "name": "Priest of Varuna",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Varuna you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Varuna.png"
+    },
+    {
+      "name": "Priest of Ymir",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Ymir you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Ymir.png"
+    },
+    {
+      "name": "Priest of Geb",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Geb you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Geb.png"
+    },
+    {
+      "name": "Priest of Vayu",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Vayu you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Vayu.png"
+    },
+    {
+      "name": "Priest of Thor",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Thunder card. You still need to meet its requirements to use it. While you are a Priest of Thor you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Thor.png"
+    },
+    {
+      "name": "Priest of Hecate",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Hecate you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hecate.png"
+    },
+    {
+      "name": "Priest of Ereshkigal",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Ereshkigal you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Ereshkigal.png"
+    },
+    {
+      "name": "Priest of Hathor",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fertility card. You still need to meet its requirements to use it. While you are a Priest of Hathor you are also forbidden to have in your deck the Electricity, Beasts, Death, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hathor.png"
+    },
+    {
+      "name": "Priest of Tiamat",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Chaos card. You still need to meet its requirements to use it. While you are a Priest of Tiamat you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Tiamat.png"
+    },
+    {
+      "name": "Priest of Diana",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Diana you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Diana.png"
+    },
+    {
+      "name": "Priest of Freyr",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Freyr you are also forbidden to have in your deck the Fire, Electricity, Beasts, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Freyr.png"
+    },
+    {
+      "name": "Priest of Thoth",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Thoth you are also forbidden to have in your deck the Fire, Ice, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Thoth.png"
+    },
+    {
+      "name": "Priest of Loki",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Light card. You still need to meet its requirements to use it. While you are a Priest of Loki you are also forbidden to have in your deck the Sun, Earth, Water, Electricity domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Loki.png"
+    },
+    {
+      "name": "Priest of Hermes",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Universal card. You still need to meet its requirements to use it. While you are a Priest of Hermes you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hermes.png"
+    },
+    {
+      "name": "Priest of Aphrodite",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Aphrodite you are also forbidden to have in your deck the Electricity, Beasts, Death, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Aphrodite.png"
+    },
+    {
+      "name": "Priest of Cernunnos",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Beasts card. You still need to meet its requirements to use it. While you are a Priest of Cernunnos you are also forbidden to have in your deck the Fire, Electricity, Water, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Cernunnos.png"
+    },
+    {
+      "name": "Priest of Xochiquetzal",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Xochiquetzal you are also forbidden to have in your deck the Death, Ice, Electricity, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Xochiquetzal.png"
+    },
+    {
+      "name": "Priest of Anubis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Anubis.png"
+    },
+    {
+      "name": "Priest of Isis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Isis.png"
+    },
+    {
+      "name": "Priest of Xochiquetzal",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Xochiquetzal you are also forbidden to have in your deck the Death, Ice, Electricity, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Xochiquetzal.png"
+    },
+    {
+      "name": "Priest of Anubis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Anubis.png"
+    },
+    {
+      "name": "Priest of Isis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Magic card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Isis.png"
+    },
+    {
+      "name": "Priest of Apollo",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Apollo you are also forbidden to have in your deck the Ice, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Apollo.png"
+    },
+    {
+      "name": "Priest of Hephaestus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Hephaestus you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hephaestus.png"
+    },
+    {
+      "name": "Priest of Poseidon",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Poseidon you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Poseidon.png"
+    },
+    {
+      "name": "Priest of Skadi",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Skadi you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Skadi.png"
+    },
+    {
+      "name": "Priest of Gaia",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Gaia you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Gaia.png"
+    },
+    {
+      "name": "Priest of Zeus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Zeus you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Zeus.png"
+    },
+    {
+      "name": "Priest of Zeus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Electricity card. You still need to meet its requirements to use it. While you are a Priest of Zeus you are also forbidden to have in your deck the Fire, Water, Ice, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Zeus.png"
+    },
+    {
+      "name": "Priest of Anubis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Death card. You still need to meet its requirements to use it. While you are a Priest of Anubis you are also forbidden to have in your deck the Fire, Electricity, Life, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Anubis.png"
+    },
+    {
+      "name": "Priest of Hathor",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Life card. You still need to meet its requirements to use it. While you are a Priest of Hathor you are also forbidden to have in your deck the Electricity, Beasts, Death, Mind domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Hathor.png"
+    },
+    {
+      "name": "Priest of Thoth",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Mind card. You still need to meet its requirements to use it. While you are a Priest of Thoth you are also forbidden to have in your deck the Fire, Ice, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Thoth.png"
+    },
+    {
+      "name": "Priest of Isis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Arcane card. You still need to meet its requirements to use it. While you are a Priest of Isis you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Isis.png"
+    },
+    {
+      "name": "Priest of Artemis",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Moon card. You still need to meet its requirements to use it. While you are a Priest of Artemis you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Artemis.png"
+    },
+    {
+      "name": "Priest of Khepri",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Sun card. You still need to meet its requirements to use it. While you are a Priest of Khepri you are also forbidden to have in your deck the Ice, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Khepri.png"
+    },
+    {
+      "name": "Priest of Prometheus",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Fire card. You still need to meet its requirements to use it. While you are a Priest of Prometheus you are also forbidden to have in your deck the Water, Ice, Air, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Prometheus.png"
+    },
+    {
+      "name": "Priest of Lir",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Water card. You still need to meet its requirements to use it. While you are a Priest of Lir you are also forbidden to have in your deck the Fire, Electricity, Mind, Moon domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Lir.png"
+    },
+    {
+      "name": "Priest of Boreas",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Ice card. You still need to meet its requirements to use it. While you are a Priest of Boreas you are also forbidden to have in your deck the Fire, Electricity, Beasts, Death domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Boreas.png"
+    },
+    {
+      "name": "Priest of Terra",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Earth card. You still need to meet its requirements to use it. While you are a Priest of Terra you are also forbidden to have in your deck the Electricity, Beasts, Mind, Arcane domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Terra.png"
+    },
+    {
+      "name": "Priest of Odin",
+      "crystals": {
+        "requires": [],
+        "provides": [
+          "white",
+          "white",
+          "white"
+        ]
+      },
+      "type": "core training",
+      "description": "<p>When you acquire this card in your deck, you can also get for free the Domain of Air card. You still need to meet its requirements to use it. While you are a Priest of Odin you are also forbidden to have in your deck the Fire, Water, Electricity, Beasts domain cards.</p>",
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Priest of Odin.png"
+    },
     {
       "name": "Priest of Ares",
       "crystals": {
@@ -4734,7 +4733,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Electricity Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Jump: You can jump to a faraway location with the power of electricity.</li><li>Magnify Gravity: You can increase the gravity in a specific area, making it difficult for creatures to move.</li><li>Thunderwave: You can create a powerful shockwave that damages and pushes back nearby creatures.</li><li>Shatter: You can create a loud and powerful sound that shatters objects and structures.</li><li>Lightning Bolt: You can shoot a bolt of lightning that damages a target.</li><li>Hasten: You can move faster than the eye can see, allowing you to dodge attacks or move quickly to another location.</li><li>Lightning Divination: You can ask the lightning for guidance and receive insight or knowledge about a specific subject or situation.</li></ul><p>Weakness: Being in a location with metal walls or floors that conduct electricity.</p>",
+      "description": "<p>You can only have 2 Domains in your deck, beside the Universal Domain.</p><p>When you draw the Electricity Domain circle on the ground perform the ritual, roll+Wis and spend 1 mp. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>Jump: You can jump to a faraway location with the power of electricity.</li><li>Magnify Gravity: You can increase the gravity in a specific area, making it difficult for creatures to move.</li><li>Thunderwave: You can create a powerful shockwave that damages and pushes back nearby creatures.</li><li>Lightning Bolt: You can shoot a bolt of lightning that damages a target.</li><li>Hasten: You can move faster than the eye can see, allowing you to dodge attacks or move quickly to another location.</li></ul><p>Weakness: Being in a location with metal walls or floors that conduct electricity.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -6529,7 +6528,7 @@
       "header_image": "Bestiary Knowledge.png"
     },
     {
-      "name": "Beastmaster",
+      "name": "Hunter of the Moon",
       "crystals": {
         "requires": [],
         "provides": [
@@ -6566,7 +6565,7 @@
           "green"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You are a member of the Guardians of the Wilds, an organization of rangers who protect the forests and mountains of the Swiss Alps. You mastered the world’s twisted paths, dense forests, and treacherous mountainscapes long before you picked up a weapon. When you Undertake a Perilous Journey, you may choose 1 extra option from the list, even on a 1-8. When you Forage, you treat any result of a 1-8 as a 9-15.</p><p>Also, if you take the Animal Companion move you can instead be accompanied by a ‘Fellow Ranger’, which is a humanoid creature of any size. It has the same starting equipment of a ranger and uses the same rules as an Animal Companion.</p>",
       "stats": [
         {
@@ -7803,7 +7802,7 @@
       "header_image": "Pyromancy.png"
     },
     {
-      "name": "Arcane Specialization Abjuration",
+      "name": "Abjuration Specialist",
       "crystals": {
         "requires": [
           "cerulean"
@@ -7973,7 +7972,7 @@
       "header_image": "Shoot First.png"
     },
     {
-      "name": "Arcane Specialization Conjuration",
+      "name": "Conjuration Specialist",
       "crystals": {
         "requires": [
           "cerulean"
@@ -7999,7 +7998,7 @@
       "header_image": "Arcane Specialization Conjuration.png"
     },
     {
-      "name": "Arcane Specialization Divination",
+      "name": "Divination Specialist",
       "crystals": {
         "requires": [
           "cerulean"
@@ -8025,7 +8024,7 @@
       "header_image": "Arcane Specialization Divination.png"
     },
     {
-      "name": "Arcane Specialization Transmutation",
+      "name": "Transmutation Specialist",
       "crystals": {
         "requires": [
           "cerulean"
@@ -9121,7 +9120,7 @@
       "header_image": "Eviscerate.png"
     },
     {
-      "name": "Arcane Specialization Illusion",
+      "name": "Illusion Specialist",
       "crystals": {
         "requires": [
           "purple"
@@ -9147,7 +9146,7 @@
       "header_image": "Arcane Specialization Illusion.png"
     },
     {
-      "name": "Arcane Specialization Necromancy",
+      "name": "Necromancy Specialist",
       "crystals": {
         "requires": [
           "white"
@@ -9199,7 +9198,7 @@
       "header_image": "Commune.png"
     },
     {
-      "name": "Arcane Specialization Enchantment",
+      "name": "Enchantment Specialist",
       "crystals": {
         "requires": [
           "cerulean"
@@ -9252,7 +9251,7 @@
       "header_image": "Arcane Volley.png"
     },
     {
-      "name": "Arcane Specialization  Evocation",
+      "name": "Evocation Specialist",
       "crystals": {
         "requires": [
           "cerulean"
@@ -9260,7 +9259,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can fire small, magical projectiles (near); when you use them to Volley, you may choose to take 2 damage (ignoring armour) instead of expending ammo on a 9-15.</p>",
+      "description": "<p>You may fire small magical projectiles without spending mp as if you were using a slingshot</p>",
       "stats": [
         {
           "stat_name": "",
@@ -15611,7 +15610,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -16043,7 +16045,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -17457,7 +17462,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -17492,7 +17498,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -17580,7 +17587,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -17699,7 +17707,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -17942,7 +17951,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -17977,7 +17987,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -18007,15 +18018,13 @@
     {
       "name": "Heavy Blunderbuss",
       "crystals": {
-        "requires": [
-          "red",
-          "gold"
-        ],
+        "requires": [],
         "provides": []
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -18051,7 +18060,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -18065,7 +18075,7 @@
           "moves_requirements": [
             "orange"
           ],
-          "moves_name": ">Heavy Swing",
+          "moves_name": "Heavy Swing",
           "moves_description": "<p>When you use a club to hack and slash, you can choose to take -1 to the roll. If you do, you add +2 to the damage you deal on a hit.</p></p>"
         }
       ],
@@ -18147,7 +18157,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18186,7 +18199,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18225,7 +18241,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18264,7 +18283,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18303,7 +18325,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18426,7 +18451,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18466,7 +18494,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -18505,7 +18536,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -20746,7 +20780,8 @@
       },
       "type": [
         "item",
-        " uncommon"
+        " uncommon",
+        "common"
       ],
       "moves": [
         {
@@ -21183,7 +21218,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -21222,7 +21260,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -21305,7 +21346,8 @@
       },
       "type": [
         "item",
-        "weapon"
+        "weapon",
+        "common"
       ],
       "moves": [
         {
@@ -21347,7 +21389,8 @@
       },
       "type": [
         "item",
-        "armor"
+        "armor",
+        "common"
       ],
       "moves": [
         {
@@ -21396,7 +21439,8 @@
       },
       "type": [
         "item",
-        "armor"
+        "armor",
+        "common"
       ],
       "moves": [
         {
@@ -21443,7 +21487,8 @@
       },
       "type": [
         "item",
-        "armor"
+        "armor",
+        "common"
       ],
       "moves": [
         {
@@ -21489,7 +21534,8 @@
       },
       "type": [
         "item",
-        "armor"
+        "armor",
+        "common"
       ],
       "moves": [
         {
@@ -21534,7 +21580,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -21578,7 +21627,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -21622,7 +21674,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "moves": [
         {
           "moves_requirements": [
@@ -21663,7 +21718,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Have What You Need:</p> <p>When you rummage through your adventuring gear for some useful mundane item, mark off a use and you have it. The GM might ask you what it looks like or how you got it.</p></p>",
       "stats": [
@@ -21690,7 +21746,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Mantain your Tools: </p> <p>When you need to prepare for battle, mark off a use of your Blacksmith Tools and choose one option:</p><ul><li>Sharpens your weapon, deal +1 damage until your next rest.</li><li>Polishes your armor, gain +1 armor until your next rest.</li></ul></p>",
       "stats": [
@@ -21717,7 +21774,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Bookworm:</p> <p>When you spout lore about something and your bag of books contains just the right book for the subject, mark off a use and take +1 to your roll.</p></p>",
       "stats": [
@@ -21744,7 +21802,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Friendly Smoke:</p> <p>When you share halfling pipeleaf with someone, expend two uses and take +1 forward to parley with them. The GM might also tell you something interesting or useful that they reveal during the conversation.</p></p>",
       "stats": [
@@ -21771,7 +21830,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Patch Up:</p> <p>When you have a few minutes to bandage someone else’s wounds, mark off a use and heal them 4 damage.</p><p class=\"subtitle\">Tender Care:</p><p>When you carefully treat someone else’s wounds with bandages and rest, mark off a use and heal them 7 damage.</p></p>",
       "stats": [
@@ -21796,7 +21856,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Carry On:</p> <p>A large backpack or bag can hold up to 25 load of items. You can access any item in your backpack or bag with ease.</p></p>",
       "stats": [
         {
@@ -21820,7 +21883,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Store Away:</p> <p>A small crate, sack or chest can hold up to 20 load of items. You need to spend some time to find a specific item in your crate, sack or chest.</p></p>",
       "stats": [
         {
@@ -21844,7 +21910,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Store Away:</p> <p>A big crate, sack or chest can hold up to 40 load of items. You need to spend some time to find a specific item in your crate, sack or chest.</p></p>",
       "stats": [
         {
@@ -21868,7 +21937,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Poison Cure:</p> <p>When you drink antitoxin, cure one poison affecting you. The GM will tell you what effects the poison had and how you feel after taking the antitoxin.</p></p>",
       "stats": [
         {
@@ -21892,7 +21964,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Carry On:</p> <p>A small backpack or bag can hold up to 6 load of items. You can access any item in your backpack or bag with ease.</p></p>",
       "stats": [
         {
@@ -21916,7 +21991,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Carry On:</p> <p>A medium backpack or bag can hold up to 13 load of items. You can access any item in your backpack or bag with ease.</p></p>",
       "stats": [
         {
@@ -21940,7 +22018,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Dungeon rations are bland but nourishing.</p></p>",
       "stats": [
         {
@@ -21964,7 +22045,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Dwarven hardtack rations are tough and dry but filling.</p><p class=\"subtitle\">Stout Heart:</p><p>When you consume a ration, you can also choose to take +1 forward to your next defy danger roll with CON.</p></p>",
       "stats": [
         {
@@ -21990,7 +22074,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Climbing:</p> <p>When you use this rope to climb a vertical surface, roll+Dexterity. On a  16-19, you make it up safely. On a 9-15, you make it up but the GM will offer you a hard bargain or an ugly choice.</p></p>",
       "stats": [
@@ -22017,7 +22102,8 @@
       },
       "type": [
         "item",
-        "consumable"
+        "consumable",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Ignite:</p> <p>When you pour this oil on a surface and then light it on fire, deal 1d6 damage to all creatures in the area.</p></p>",
       "stats": [
@@ -22044,7 +22130,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Sacred Energy:</p> <p>When you present this holy symbol to undead creatures, roll+WIS. On a  16-19, they are destroyed or driven off. On a 9-15, they are repelled or weakened, but you suffer a setback or cost.</p></p>",
       "stats": [
@@ -22071,7 +22158,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Unlock:</p> <p>When you use these lockpicks to try and open a locked door or container, roll+DEX. On a  16-19, the lock opens. On a 9-15, the lock opens but you leave evidence of your tampering behind.</p></p>",
       "stats": [
@@ -22098,7 +22186,8 @@
       },
       "type": [
         "item",
-        "consumable"
+        "consumable",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Poison Immunity:</p> <p>When you drink this antitoxin, you become immune to all poisons for the next hour.</p></p>",
       "stats": [
@@ -22118,33 +22207,6 @@
       "header_image": "Antitoxin.png"
     },
     {
-      "name": "Throwing Knives",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "type": [
-        "item",
-        "gear"
-      ],
-      "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you throw one of these knives at an enemy, roll+DEX. On a  16-19, deal your damage. On a 9-15, deal your damage but they close in on you.</p></p>",
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "10 coins each"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Throwing Knives.png"
-    },
-    {
       "name": "Torch",
       "crystals": {
         "requires": [],
@@ -22152,7 +22214,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "",
       "moves": [
@@ -22188,33 +22251,6 @@
       "header_image": "Torch.png"
     },
     {
-      "name": "Grappling Hook",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "type": [
-        "item",
-        "gear"
-      ],
-      "description": "<p><p class=\"subtitle\">Hook On:</p> <p>When you throw this grappling hook to catch onto a high surface, roll+STR. On a  16-19, you catch it and can climb up. On a 9-15, you catch it but something bad happens.</p></p>",
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "15 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Grappling Hook.png"
-    },
-    {
       "name": "Healing Poultice",
       "crystals": {
         "requires": [],
@@ -22222,7 +22258,8 @@
       },
       "type": [
         "item",
-        "consumable"
+        "consumable",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Apply:</p> <p>When you apply this poultice to someone’s wounds, heal them 6 damage.</p></p>",
       "stats": [
@@ -22242,33 +22279,6 @@
       "header_image": "Healing Poultice.png"
     },
     {
-      "name": "Antitoxin",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "type": [
-        "item",
-        "consumable"
-      ],
-      "description": "<p><p class=\"subtitle\">Poison Immunity:</p> <p>When you drink this antitoxin, you become immune to all poisons for the next hour.</p></p>",
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "25 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Antitoxin.png"
-    },
-    {
       "name": "Throwing Knives",
       "crystals": {
         "requires": [],
@@ -22276,7 +22286,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Quick Strike:</p> <p>When you throw one of these knives at an enemy, roll+DEX. On a  16-19, deal your damage. On a 9-15, deal your damage but they close in on you.</p></p>",
       "stats": [
@@ -22303,7 +22314,8 @@
       },
       "type": [
         "item",
-        "gear"
+        "gear",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Hook On:</p> <p>When you throw this grappling hook to catch onto a high surface, roll+STR. On a  16-19, you catch it and can climb up. On a 9-15, you catch it but something bad happens.</p></p>",
       "stats": [
@@ -22322,40 +22334,17 @@
       },
       "header_image": "Grappling Hook.png"
     },
-    {
-      "name": "Healing Poultice",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "type": [
-        "item",
-        "consumable"
-      ],
-      "description": "<p><p class=\"subtitle\">Apply:</p> <p>When you apply this poultice to someone’s wounds, heal them 6 damage.</p></p>",
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "0.2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "20 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Healing Poultice.png"
-    },
+
     {
       "name": "Elven Bread Ration",
       "crystals": {
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Elven bread rations are light and sweet but satisfying.</p><p class=\"subtitle\">Graceful Step:</p><p>When you consume a ration, you can also choose to take +1 forward to your next defy danger roll with DEX.</p></p>",
       "stats": [
         {
@@ -22380,8 +22369,8 @@
         "provides": []
       },
       "type": [
-        "item",
-        "service"
+        "service",
+        "uncommon"
       ],
       "description": "<p><p class=\"subtitle\">Nourishment:</p> <p>When you enjoy a hearty meal for one, you heal 2 damage and remove one debility of your choice.</p><p class=\"subtitle\">Comfort:</p><p>When you enjoy a hearty meal for one, you can also choose to take +1 forward to your next parley or discern realities roll.</p></p>",
       "stats": [
@@ -22391,7 +22380,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "-"
+          "stat_value": "50 coins"
         }
       ],
       "geo_location": {
@@ -22407,8 +22396,8 @@
         "provides": []
       },
       "type": [
-        "item",
-        "service"
+        "service",
+        "common"
       ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you share a poor meal for a family, you and up to three others don’t need to eat for a day. A poor meal for a family is meager and bland but enough to survive.</p><p class=\"subtitle\">Hardship:</p><p>When you share a poor meal for a family, you can also choose to take +1 forward to your next defy danger roll with WIS.</p></p>",
       "stats": [
@@ -22418,7 +22407,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "-"
+          "stat_value": "10 coins"
         }
       ],
       "geo_location": {
@@ -22434,8 +22423,8 @@
         "provides": []
       },
       "type": [
-        "item",
-        "service"
+        "service",
+        "rare"
       ],
       "description": "<p><p class=\"subtitle\">Nourishment:</p> <p>When you partake in a feast, you heal 4 damage and remove two debilities of your choice.</p><p class=\"subtitle\">Celebration:</p><p>When you partake in a feast, you can also choose to take +1 forward to your next carouse or aid or interfere roll.</p></p>",
       "stats": [
@@ -22445,7 +22434,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "-"
+          "stat_value": "300 coins"
         }
       ],
       "geo_location": {
@@ -22460,7 +22449,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Bread and Butter:</p> <p>When you use 1 kg of wheat to make bread or other food, mark off the wheat and you have enough food for one person for a day.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of wheat with someone who needs it, mark off the wheat and take +1 forward to your next parley roll with them.</p></p>",
       "stats": [
         {
@@ -22484,7 +22476,10 @@
         "requires": [],
         "provides": []
       },
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "description": "<p><p class=\"subtitle\">Material:</p> <p>When you use 1 kg of steel to craft or repair a weapon or armor, mark off the steel and you have enough material for the job.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of steel with someone who needs it, mark off the steel and take +1 forward to your next parley roll with them.</p></p>",
       "stats": [
         {
@@ -22772,7 +22767,7 @@
     {
       "name": "Level Up",
       "type": "rule",
-      "description": "In any moment, even during a combat, you can spend  xp points for: <ul><li>1 xp: You receive 3 random feature cards of any color, choose one of them and acquire it. You can immediately use it.</li><li>2 xp : Choose one crystal color. You receive 3 random feature cards of that color, choose one of them and acquire it. You can immediately use it.</li><li>3 xp: Choose any feature card that requires one crystal and acquire it</li><li>5 xp Choose any feature card that requires two crystal and acquire it.</li>l color, you receive 3 random feature cards and you acquire only one of them.</li><li>7 xp: Choose any feature card that requires three crystal and acquire it.</li></ul>",
+      "description": "In any moment, even during a combat, you can spend  xp points for: <ul><li>3 xp: You receive 3 random feature cards of any color, choose one of them and acquire it. You can immediately use it.</li><li>5 xp : Choose one crystal color. You receive 3 random feature cards of that color, choose one of them and acquire it. You can immediately use it.</li><li>7 xp: Choose any feature card that requires one crystal and acquire it</li><li>10 xp Choose any feature card that requires two crystal and acquire it.</li><li>13 xp: Choose any feature card that requires three crystal and acquire it.</li></ul>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -25680,75 +25675,6 @@
       "header_image": "Rage.png"
     },
     {
-      "name": "Student",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "cerulean",
-          "purple"
-        ]
-      },
-      "stats": [
-        {
-          "stat_name": "hp",
-          "stat_value": 6
-        },
-        {
-          "stat_name": "mp",
-          "stat_value": 6
-        },
-        {
-          "stat_name": "sp",
-          "stat_value": 6
-        },
-        {
-          "stat_name": "hd",
-          "stat_value": "1d4"
-        },
-        {
-          "stat_name": "md",
-          "stat_value": "1d8"
-        },
-        {
-          "stat_name": "sd",
-          "stat_value": "1d4"
-        }
-      ],
-      "type": "character",
-      "description": "<p>As a student, you are always learning and seeking knowledge. You gain the following abilities:</p><ul><li>You have a +1 bonus to Spout Lore when trying to recall information from your studies</li><li>You can cast any spell from the Wizard's spell list, but you forget the spell after you cast it and must re-learn it</li><li>You have access to a library or other resource where you can find information on almost any topic</li></ul>",
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Student.png",
-      "abilities": [
-        {
-          "ability_name": "STR",
-          "ability_value": -1
-        },
-        {
-          "ability_name": "DEX",
-          "ability_value": 0
-        },
-        {
-          "ability_name": "COS",
-          "ability_value": -1
-        },
-        {
-          "ability_name": "INT",
-          "ability_value": 1
-        },
-        {
-          "ability_name": "WIS",
-          "ability_value": 1
-        },
-        {
-          "ability_name": "CAR",
-          "ability_value": 0
-        }
-      ]
-    },
-    {
       "name": "Thief",
       "crystals": {
         "requires": [],
@@ -28277,12 +28203,12 @@
     {
       "name": "The White Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28295,12 +28221,12 @@
     {
       "name": "The Bande Nere",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28313,12 +28239,12 @@
     {
       "name": "The Company of Saint George",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28331,12 +28257,12 @@
     {
       "name": "The Great Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28349,12 +28275,12 @@
     {
       "name": "The Catalan Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28367,12 +28293,12 @@
     {
       "name": "The Picard Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28385,12 +28311,12 @@
     {
       "name": "The Aragonese Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28403,12 +28329,12 @@
     {
       "name": "The Navarrese Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28421,12 +28347,12 @@
     {
       "name": "The Company of Saint Florian",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28439,12 +28365,12 @@
     {
       "name": "The Breton Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28457,12 +28383,12 @@
     {
       "name": "The Italian Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28475,12 +28401,12 @@
     {
       "name": "The English Company",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28493,12 +28419,12 @@
     {
       "name": "The Company of the Hat",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28511,12 +28437,12 @@
     {
       "name": "The Company of the Banner",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28529,12 +28455,12 @@
     {
       "name": "The Company of the Star",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28547,12 +28473,12 @@
     {
       "name": "The Company of the Lion",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28565,12 +28491,12 @@
     {
       "name": "The Company of the Rose",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28583,12 +28509,12 @@
     {
       "name": "The Company of the Dove",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28601,12 +28527,12 @@
     {
       "name": "The Company of the Heron",
       "crystals": {
-        "requires": [
+        "requires": [],
+        "provides": [
           "red",
           "red",
           "red"
-        ],
-        "provides": []
+        ]
       },
       "type": "core training",
       "description": "<p>You are a member of a this powerful mercenary band, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the band, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the band can provide you with valuable information or resources. The GM will tell you what the band can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the band or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n<p>Regardless of your result, the GM will also tell you something interesting or important about the band or its activities that you didn't know before.</p>",
@@ -28655,7 +28581,10 @@
     {
       "name": "Pitchfork",
       "description": "A sturdy pitchfork with three tines, useful for moving hay or defending oneself.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28680,7 +28609,10 @@
     {
       "name": "Shears",
       "description": "A pair of sharp shears for clipping wool from sheep.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28705,7 +28637,10 @@
     {
       "name": "Mortar and pestle",
       "description": "A stone mortar and pestle for grinding herbs and spices.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28730,7 +28665,10 @@
     {
       "name": "Hoe",
       "description": "A long-handled hoe for tilling the soil.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28755,7 +28693,10 @@
     {
       "name": "Scythe",
       "description": "A curved blade attached to a long wooden handle, used for cutting down crops.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28780,7 +28721,10 @@
     {
       "name": "Flint and steel",
       "description": "A small piece of flint and a piece of steel used to create sparks for starting fires.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28805,7 +28749,10 @@
     {
       "name": "Sickle",
       "description": "A small curved blade attached to a wooden handle, used for cutting grain.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28830,7 +28777,10 @@
     {
       "name": "Lantern",
       "description": "A metal lantern with a glass pane and a hook for hanging.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28855,7 +28805,10 @@
     {
       "name": "Oil",
       "description": "A small bottle of oil for lubricating tools or lighting lamps.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28880,7 +28833,10 @@
     {
       "name": "Bucket",
       "description": "A sturdy wooden bucket for carrying water or feed.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28905,7 +28861,10 @@
     {
       "name": "Candles",
       "description": "A set of 5 beeswax candles for lighting.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28930,7 +28889,10 @@
     {
       "name": "Bellows",
       "description": "A pair of bellows used to stoke the flames of a fire.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28955,7 +28917,10 @@
     {
       "name": "Fishing net",
       "description": "A large fishing net for catching fish in nearby rivers or lakes.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -28980,7 +28945,10 @@
     {
       "name": "Saddle",
       "description": "A simple leather saddle for riding a horse or donkey.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29005,7 +28973,10 @@
     {
       "name": "Tongs",
       "description": "A pair of metal tongs for handling hot objects.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29030,7 +29001,10 @@
     {
       "name": "Deer Antler",
       "description": "A large antler shed by a deer. It could be used as a decoration or crafted into something useful.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29055,7 +29029,10 @@
     {
       "name": "Fishing Net",
       "description": "A large net used for catching fish. It could also be used for other purposes, like trapping small animals.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29080,7 +29057,10 @@
     {
       "name": "Mushroom Spores",
       "description": "A vial of spores from a rare and delicious mushroom. If planted in the right conditions, they could grow into a valuable crop.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29105,7 +29085,10 @@
     {
       "name": "Rabbit Foot",
       "description": "A lucky charm made from the foot of a rabbit. It is said to bring good fortune to its owner.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29130,7 +29113,10 @@
     {
       "name": "Hunting Trap",
       "description": "A metal trap used for catching small animals. It could be dangerous if mishandled.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29155,7 +29141,10 @@
     {
       "name": "Bear Grease",
       "description": "A jar of grease made from bear fat. It could be used as a lubricant or as a salve for treating minor injuries.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29180,7 +29169,10 @@
     {
       "name": "Honeycomb",
       "description": "A delicious and sweet honeycomb harvested from a beehive. It could be used as a sweetener or as a trade item.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29205,7 +29197,10 @@
     {
       "name": "Falconry Gloves",
       "description": "A pair of gloves used for handling and training falcons. They are made from sturdy leather and have reinforced fingertips.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29230,7 +29225,10 @@
     {
       "name": "Wolf Pelt",
       "description": "A thick and warm pelt from a wolf. It could be used as a rug or as a piece of clothing.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29255,7 +29253,10 @@
     {
       "name": "Horned Beetle",
       "description": "A large and dangerous beetle with sharp horns. It could be used as a test of courage or as a rare ingredient for alchemical concoctions.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29280,7 +29281,10 @@
     {
       "name": "Tracking Powder",
       "description": "A fine powder made from crushed herbs and minerals. It could be used to track animals or as a component for certain spells.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29305,7 +29309,10 @@
     {
       "name": "Climbing Rope",
       "description": "A sturdy 50-foot length of rope, perfect for climbing or rappelling.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29330,7 +29337,10 @@
     {
       "name": "Flint and Steel",
       "description": "A small kit containing flint and steel for starting fires in the wilderness.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29355,7 +29365,10 @@
     {
       "name": "Healing Herbs",
       "description": "A bundle of healing herbs that can be used to make a poultice or tea that heals 1d8 HP.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29380,7 +29393,10 @@
     {
       "name": "Lockpicks",
       "description": "A small set of tools used for picking locks. Useful for getting past locked doors and chests.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29405,7 +29421,10 @@
     {
       "name": "Cooking Pot",
       "description": "A small pot with a lid, useful for cooking meals over a campfire.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29430,7 +29449,10 @@
     {
       "name": "Antitoxin",
       "description": "A vial of antitoxin that can be used to cure poison.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29455,7 +29477,10 @@
     {
       "name": "Signal Whistle",
       "description": "A small whistle that can be used to signal for help or to communicate with allies at a distance.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29480,7 +29505,10 @@
     {
       "name": "Chromatic Dust",
       "description": "A small bag of shimmering dust that, when thrown into the air, creates a colorful, distracting display.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29505,7 +29533,10 @@
     {
       "name": "Mushroom Stew",
       "description": "A thick, chunky stew made from mushrooms and other forest ingredients. It's surprisingly tasty, but the smell might be off-putting to some.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29530,7 +29561,10 @@
     {
       "name": "Fishing Net",
       "description": "A large, tangled fishing net. It might be useful for catching fish or trapping small animals.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29555,7 +29589,10 @@
     {
       "name": "Lockpicks",
       "description": "A set of slim metal tools used for picking locks. They look well-used and slightly rusted.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29580,7 +29617,10 @@
     {
       "name": "Spool of Twine",
       "description": "A small spool of rough twine. It might come in handy for tying things up or making traps.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29605,7 +29645,10 @@
     {
       "name": "Bag of Mushrooms",
       "description": "A small bag filled with various mushrooms. They might have medicinal properties, or they might just be tasty.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29630,7 +29673,10 @@
     {
       "name": "Rat Tail",
       "description": "A severed rat tail. It might be used in some kind of potion or spell.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29655,7 +29701,10 @@
     {
       "name": "Horned Beetle Shell",
       "description": "A sturdy shell from a horned beetle. It could be used to fashion armor or other protective gear.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29680,7 +29729,10 @@
     {
       "name": "Sack of Grain",
       "description": "A large sack filled with grain. It might be useful for feeding animals or for making bread.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29705,7 +29757,10 @@
     {
       "name": "Bottle of Oil",
       "description": "A small bottle filled with oil. It might be used for lighting torches or for making things slippery.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29730,7 +29785,10 @@
     {
       "name": "Furry Pelt",
       "description": "A shaggy pelt from some kind of small animal. It might be used for warmth or for making clothing.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29755,7 +29813,10 @@
     {
       "name": "Venetian Glass Goblet",
       "description": "Crafted by the skilled glassblowers of Venice, this goblet features intricate patterns and vivid colors that are unique to the city's glass-making tradition.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29780,7 +29841,10 @@
     {
       "name": "Bavarian Beer Stein",
       "description": "This sturdy mug is a staple in every Bavarian household, and is decorated with intricate designs that showcase the region's rich brewing culture.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29805,7 +29869,10 @@
     {
       "name": "English Tea Set",
       "description": "This delicate tea set is made from the finest English bone china, and is adorned with classic floral patterns that are synonymous with the country's tea-drinking traditions.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29830,7 +29897,10 @@
     {
       "name": "Celtic Knot Rug",
       "description": "Hand-woven by skilled artisans in the Celtic lands, this rug features intricate knotwork patterns that are steeped in ancient symbolism.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29855,7 +29925,10 @@
     {
       "name": "Norman Tapestry",
       "description": "This exquisitely crafted tapestry tells the story of the Norman conquest of England, and is a prized possession in any Norman household.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29880,7 +29953,10 @@
     {
       "name": "Florentine Perfume Bottle",
       "description": "This ornate bottle is filled with a heady perfume that is unique to the Florentine region, and is coveted by nobles and merchants alike.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29905,7 +29981,10 @@
     {
       "name": "Parisian Chandelier",
       "description": "This grand chandelier is a masterpiece of Parisian craftsmanship, and features sparkling crystals that illuminate any room with a warm and inviting glow.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29930,7 +30009,10 @@
     {
       "name": "Viennese Clock",
       "description": "This elegant clock is a symbol of Viennese precision and craftsmanship, and features intricate mechanisms that keep time with unparalleled accuracy.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29955,7 +30037,10 @@
     {
       "name": "Swiss Cheese Board",
       "description": "This rustic cheese board is hand-carved from the finest Swiss wood, and is a staple in every Swiss household for serving up delicious cheeses and charcuterie.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -29980,7 +30065,10 @@
     {
       "name": "Tuscan Olive Oil Flask",
       "description": "This rustic flask is filled with the finest olive oil from the rolling hills of Tuscany, and is a prized possession in any Tuscan kitchen.",
-      "type": "item",
+      "type": [
+        "type",
+        "common"
+      ],
       "crystals": {
         "requires": [],
         "provides": []
@@ -33760,7 +33848,7 @@
         ]
       },
       "type": "background",
-      "description": "<p> People from the city of Marseille, a city known for its diverse population and its bustling port. They are known for their trade in exotic spices and their skilled merchants, who travel far and wide to bring back rare and valuable goods. They are also known for their naval strength and their special army unit, the Marseille Mermaids (Sir\u00c3\u00a8nes de la Guerre) - This aquatic unit is composed of merfolk and water-based mages, known for their expertise in naval combat and amphibious warfare. They are named for their shimmering blue and green armor, which is adorned with seashells and pearls.Marseillais are known for their toughness and resourcefulness, which makes them respected by both humans and elves.</p>",
+      "description": "<p> People from the city of Marseille, a city known for its diverse population and its bustling port. They are known for their trade in exotic spices and their skilled merchants, who travel far and wide to bring back rare and valuable goods. They are also known for their naval strength and their special army unit, the Marseille Mermaids (SirÃ¨nes de la Guerre) - This aquatic unit is composed of merfolk and water-based mages, known for their expertise in naval combat and amphibious warfare. They are named for their shimmering blue and green armor, which is adorned with seashells and pearls.Marseillais are known for their toughness and resourcefulness, which makes them respected by both humans and elves.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -33986,7 +34074,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "Orl\u00c3\u00a9anais",
+      "name": "OrlÃ©anais",
       "crystals": {
         "requires": [],
         "provides": [
@@ -33994,7 +34082,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>People from the city of Orl\u00c3\u00a9ans, a center of religion and piety. They are known for their devoutness and their special unit, The Holy Warriors, are a group of fanatically devoted soldiers who wield holy relics and artifacts. They are rumored to have divine protection and can heal their wounds with prayer. Orl\u00c3\u00a9anais are also skilled in the creation of holy water and other sacred items.</p>",
+      "description": "<p>People from the city of OrlÃ©ans, a center of religion and piety. They are known for their devoutness and their special unit, The Holy Warriors, are a group of fanatically devoted soldiers who wield holy relics and artifacts. They are rumored to have divine protection and can heal their wounds with prayer. OrlÃ©anais are also skilled in the creation of holy water and other sacred items.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -35000,7 +35088,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "Sz\u00c3\u00a9kelys",
+      "name": "SzÃ©kelys",
       "crystals": {
         "requires": [],
         "provides": [
@@ -35008,7 +35096,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>The Sz\u00c3\u00a9kelys are a Hungarian-speaking ethnic group who are skilled in archery and guerrilla warfare. They are also known for their expertise in alchemy and potion-making. Their special unit is the Alchemist Archers, who are armed with enchanted arrows that can create various magical effects. These effects include exploding on impact, poisoning enemies, and summoning creatures to fight alongside them.</p>",
+      "description": "<p>The SzÃ©kelys are a Hungarian-speaking ethnic group who are skilled in archery and guerrilla warfare. They are also known for their expertise in alchemy and potion-making. Their special unit is the Alchemist Archers, who are armed with enchanted arrows that can create various magical effects. These effects include exploding on impact, poisoning enemies, and summoning creatures to fight alongside them.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -36144,7 +36232,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "L\u00c4\u0192utari",
+      "name": "LÄƒutari",
       "crystals": {
         "requires": [],
         "provides": [
@@ -36170,7 +36258,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "D\u00c5\u00beambazi",
+      "name": "DÅ¾ambazi",
       "crystals": {
         "requires": [],
         "provides": [
@@ -36222,7 +36310,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "Sz\u00c3\u00a9kelys",
+      "name": "SzÃ©kelys",
       "crystals": {
         "requires": [],
         "provides": [
@@ -36230,7 +36318,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>A group of Hungarian-speaking people who reside in the Sz\u00c3\u00a9kely Land region of Transylvania, Romania. They have a rich culture that combines Hungarian and Romanian influences. Their special unit, the Forest Wardens, are skilled archers who have a unique bond with the forest spirits. They are known to use enchanted arrows that can track their targets, and are skilled in guerrilla warfare tactics.</p>",
+      "description": "<p>A group of Hungarian-speaking people who reside in the SzÃ©kely Land region of Transylvania, Romania. They have a rich culture that combines Hungarian and Romanian influences. Their special unit, the Forest Wardens, are skilled archers who have a unique bond with the forest spirits. They are known to use enchanted arrows that can track their targets, and are skilled in guerrilla warfare tactics.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -36248,7 +36336,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "J\u00c3\u00a1sz",
+      "name": "JÃ¡sz",
       "crystals": {
         "requires": [],
         "provides": [
@@ -36256,7 +36344,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>A Turkic ethnic group who inhabit the J\u00c3\u00a1szs\u00c3\u00a1g region in present-day Hungary. They have a proud warrior culture, and their special unit, the Storm Riders, are skilled cavalry who ride into battle on enchanted horses that can summon lightning bolts. They are known to charge into enemy lines, causing chaos and destruction with their powerful magic and deadly blades.</p>",
+      "description": "<p>A Turkic ethnic group who inhabit the JÃ¡szsÃ¡g region in present-day Hungary. They have a proud warrior culture, and their special unit, the Storm Riders, are skilled cavalry who ride into battle on enchanted horses that can summon lightning bolts. They are known to charge into enemy lines, causing chaos and destruction with their powerful magic and deadly blades.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -36282,7 +36370,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>A Turkic ethnic group who inhabited the Hungarian plain, known as the Great Hungarian Plain or the Alf\u00c3\u00b6ld. They have a nomadic culture and are skilled horsemen. Their special unit, the Sand Riders, are a group of elite cavalry who ride on sandstorms. They are known for their speed and agility, and are able to move quickly across the battlefield, attacking their enemies with lightning-fast strikes.</p>",
+      "description": "<p>A Turkic ethnic group who inhabited the Hungarian plain, known as the Great Hungarian Plain or the AlfÃ¶ld. They have a nomadic culture and are skilled horsemen. Their special unit, the Sand Riders, are a group of elite cavalry who ride on sandstorms. They are known for their speed and agility, and are able to move quickly across the battlefield, attacking their enemies with lightning-fast strikes.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -38336,7 +38424,7 @@
         ]
       },
       "type": "background",
-      "description": "<p>Located in the Bia\u00c5\u201aowie\u00c5\u00bca Forest, this gnome clan is known for their stealthy and agile nature, making them skilled scouts and rangers. Their special army unit, the Leafblade Battalion, is a group of skilled warriors who wield magical, enchanted knives that allow them to teleport through trees.They are also highly respected for their ability to defend their forest homes from invaders.</p>",
+      "description": "<p>Located in the BiaÅ‚owieÅ¼a Forest, this gnome clan is known for their stealthy and agile nature, making them skilled scouts and rangers. Their special army unit, the Leafblade Battalion, is a group of skilled warriors who wield magical, enchanted knives that allow them to teleport through trees.They are also highly respected for their ability to defend their forest homes from invaders.</p>",
       "stats": [
         {
           "stat_name": "",

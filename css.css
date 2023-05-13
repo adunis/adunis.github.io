@@ -225,7 +225,7 @@
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom:10px;
-    font-size:10px;
+    font-size:12px;
 }
 
 
@@ -242,6 +242,10 @@
     background: #ffdf7f url(parchment.jpg) repeat 0 0;
 }
 
+.move-crystal { 
+    margin-right: 5px;
+}
+
 .big-button {
     width:400px;
     font-size: 30px;
@@ -255,7 +259,7 @@
     font-family: 'Lora', serif;
     width: 300px;
     margin: 10px;
-    font-size: 7px;
+    font-size: 10px;
     border: 12px solid #1c1c1c;
     border-radius: 10px;
     background: #ffdf7f url(parchment.jpg) repeat 0 0;
@@ -301,21 +305,21 @@
 }
 
 .hoh-card-header {
-    height:50px;
     padding-top:10px;
     padding-bottom:10px;
 }
 
 .header-image {
-     height:180px;
-     padding-top:130px;
+     height:50px;
      padding-bottom:30px;
  }
 
 
 .hoh-card-header .title {
+    margin-top: 2px;
+    margin-left:5px;
+    margin-right:5px;
     margin: auto;
-    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,7 +333,6 @@
 
 .title{
     margin: auto;
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,9 +360,7 @@
     width:100px;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10px;
-    padding-left:10px;
-    margin-bottom:240px;
+    margin-left:10px;
 
 }
 .left-crystals .crystal {
@@ -371,9 +372,7 @@
     display: inline-block;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10px;
-    padding-right: 10px;
-    margin-bottom:240px;
+    margin-right: 10px;
 }
 
 
@@ -409,13 +408,11 @@
 }
 
 .hoh-card-header {
-    height:180px;
     border-bottom: 1px solid #8a8743;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-size: cover;
-    background-image: url(images/spells.jpg);
 }
 
 table {
@@ -427,18 +424,15 @@ table {
 /* Character card style */
 .character-header {
     background-size: cover;
-    background-image: url("images/adventurers.jpg");
 }
 
 /* Feature card style */
 .feature-header {
     background-size: cover;
-    background-image: url(images/spells.jpg);
 }
 
 /* Item card style */
 .item-header {
-    background-image: url(images/treasure.jpg);
 }
 
 .cerulean-color.emerald-color{
@@ -656,22 +650,38 @@ table {
 }
 
 
-.crystal.black {
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+.crystal.black::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f717";
+    font-weight: 900;
+    display: inline;
     color: #000000;
-    display:inline;
     text-shadow:
-            1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
-            0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff,
-            0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
-            0 0 30px #fff,
-            0 0 30px #fff,
-            0 0 30px #fff,
-            0 0 30px #fff,
-            0 0 30px #fff,
-            0 0 30px #fff,
-            0 0 30px #000000,
-            0 0 30px #000000,
-            0 0 30px #000000;
+    0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff,
+    0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #fff,
+    0 0 30px #fff,
+    0 0 30px #fff,
+    0 0 30px #fff,
+    0 0 30px #fff,
+    0 0 30px #fff,
+    0 0 30px #fff;
+  }
+
+.crystal.black {
+    display: inline;
+}
+
+.crystal.cerulean::before {
+font-family: "Font Awesome 6 Free";
+content: "\f0e7";
+font-weight: 900;
+display: inline;
 }
 
 .crystal.cerulean {
@@ -692,6 +702,15 @@ table {
             0 0 30px #08d6ff;
 }
 
+
+
+.crystal.purple::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\e554";
+    font-weight: 900;
+    display: inline;
+    }
+
 .crystal.purple {
     color: #a600ff;
     display:inline;
@@ -701,6 +720,15 @@ table {
             0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff,0 0 30px #a600ff;
 }
 
+.crystal.emerald::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f4d8";
+    font-weight: 900;
+    display: inline;
+    }
+
+
+
 .crystal.emerald {
     color: #0dff00;
     display:inline;
@@ -709,6 +737,15 @@ table {
             0 0 10px #fff,  0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00,
             0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00, 0 0 10px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00,0 0 30px #0dff00;
 }
+
+
+.crystal.white::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f683";
+    font-weight: 900;
+    display: inline;
+    }
+
 
 .crystal.white {
     color: #ffffff;
@@ -728,6 +765,14 @@ table {
             0 0 30px #fff;
 }
 
+
+.crystal.blue::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f132";
+    font-weight: 900;
+    display: inline;
+    }
+
 .crystal.blue {
     color: #000dff;
     display:inherit;
@@ -745,6 +790,14 @@ table {
             0 0 30px #000dff,
             0 0 30px #000dff;
 }
+
+
+.crystal.orange::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f5c8";
+    font-weight: 900;
+    display: inline;
+    }
 
 .crystal.orange {
     color: #ff5900;
@@ -764,23 +817,39 @@ table {
             0 0 30px #ff5900;
 }
 
+
+.crystal.red::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\e534";
+    font-weight: 900;
+    display: inline;
+    }
+
 .crystal.red {
-    color: #ff0084;
+    color: #ff0000;
     display:inherit;
     text-shadow:
             1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
             0 0 10px #fff, 0 0 10px #fff, 0 0 10px #eb001f, 0 0 10px #eb001f, 0 0 10px #eb001f, 0 0 10px #eb001f,
-            0 0 30px #ff0084, 0 0 30px #ff0084, 0 0 30px #ff0084, 0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084,
-            0 0 30px #ff0084;
+            0 0 30px #ff0000, 0 0 30px #ff0000, 0 0 30px #ff0000, 0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000,
+            0 0 30px #ff0000;
 }
+
+.crystal.gold::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f568";
+    font-weight: 900;
+    display: inline;
+    }
+
 
 .crystal.gold {
     color: #ffee00;
@@ -792,6 +861,14 @@ table {
             0 0 30px #ffee00;
 
 }
+
+.crystal.silver::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f552";
+    font-weight: 900;
+    display: inline;
+    }
+
 
 .crystal.silver {
     color: #545453;
@@ -807,6 +884,13 @@ table {
 .space-to-right {
     margin-right:10px;
 }
+
+.crystal.green::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f6ec";
+    font-weight: 900;
+    display: inline;
+    }
 
 .crystal.green {
     color: #004d13;
@@ -1019,11 +1103,12 @@ table {
 }
 
 .moves {
-    display:block ruby;
+    display:inline-flex;
     padding-top: 0px;
     padding: 5px;
     font-size: 8px;
     margin-top:3px;
+    margin-right:3px;
 }
 
 .move-title {
@@ -1031,7 +1116,9 @@ table {
 }
 
 .subtitle {
-    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 15px;
     font-style: italic;
 }
 
@@ -1207,7 +1294,7 @@ textarea {
 }
 
 .mini-card.card {
-    height: 300px;
+    height: 170px;
 }
 
 #mini-card-view {
@@ -1246,6 +1333,73 @@ textarea {
 }
 
 #mini-card-view:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.super-mini-card .card-body {
+    display:none
+}
+
+.super-mini-card .card-footer {
+    display:none
+}
+
+.super-mini-card.card {
+    height: 50;
+    border:3px;
+}
+
+.super-mini-card .header-image {
+padding-top: 0px;
+}
+
+.super-mini-card .header-image .icon-image-container .title {
+    width:300px;
+    }
+
+.super-mini-card .header-image .left-crystals {
+display:none;    }    
+    
+.super-mini-card .header-image .right-crystals {
+display:none;    }    
+    
+
+#super-mini-card-view {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#super-mini-card-view + label {
+    position:fixed;
+    bottom: 60px;
+    left: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+#super-mini-card-view + label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#super-mini-card-view:checked + label:before {
+    background-color: #333333;
+    transform: scale(0.8);
+}
+
+#super-mini-card-view:focus + label:before {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -1335,9 +1489,13 @@ button {
 
 #deck-picture {
     width: auto;
-    height: 200px;
+    height: auto;
     background-size: cover;
     margin:20px;
+}
+
+#deck-picture img {
+    max-width: 300px;
 }
 
 #deck-description {
@@ -1415,4 +1573,8 @@ button[type="submit"] {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+.move-crystal { 
+    margin-right: 18px;
 }

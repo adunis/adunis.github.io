@@ -87,6 +87,7 @@ async function renderCards(jsonData, isBooster) {
     const jsonEditor = document.querySelector("#json-editor");
     const autoCalculateToggle = document.querySelector("#auto-calculate-toggle");
     const miniCardView = document.querySelector("#mini-card-view");
+    const superMiniCardView = document.querySelector("#super-mini-card-view");
     const submitButton = document.querySelector("#submit-button");
     const cancelButton = document.querySelector("#cancel-button");
 
@@ -98,6 +99,18 @@ async function renderCards(jsonData, isBooster) {
                 card.classList.remove('mini-card');
             } else {
                 card.classList.add('mini-card');
+            }
+        });
+    });
+
+    superMiniCardView.addEventListener("change", () => {
+        console.log("switched")
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(function (card) {
+            if (card.classList.contains('super-mini-card')) {
+                card.classList.remove('super-mini-card');
+            } else {
+                card.classList.add('super-mini-card');
             }
         });
     });
@@ -149,6 +162,7 @@ async function renderCards(jsonData, isBooster) {
             cardElement.setAttribute("data-status", "deactivated");
         });
 
+        if (window.location.pathname.endsWith("gm-panel.html")) {
         if (card.type.includes("character")) {
             const mainCharButton = document.createElement("button");
             mainCharButton.classList.add("main-char-button");
@@ -173,6 +187,8 @@ async function renderCards(jsonData, isBooster) {
             // append button to card element
             cardElement.appendChild(mainCharButton);
             buttonsContainer.appendChild(mainCharButton);
+        }
+
         }
 
 
