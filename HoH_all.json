@@ -2540,10 +2540,12 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "training"
+          "orange",  "orange",
+          "orange"
+
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>You are cursed by an ancient, powerful entity. The curse is both a blessing and a curse, granting you incredible power while slowly consuming you from within.</p><p>When you take this move, roll+CHA. On a 16-19, the GM will describe the nature of the curse and its benefits. You may also choose one of the following:</p><ul><li>Gain +1 ongoing to all rolls related to the curse.</li><li>Gain a new move related to the curse.</li></ul><p>On a 9-15, the GM will describe the curse and its drawbacks. You must choose one of the following:</p><ul><li>Take -1 ongoing to all rolls not related to the curse.</li><li>Lose access to a move unrelated to the curse.</li></ul><p>Regardless of the result, the curse will slowly consume you. Every time you use a move related to the curse, mark corruption. When you reach 5 corruption, the curse will fully consume you and you will become an NPC controlled by the GM.</p>",
       "stats": [
         {
