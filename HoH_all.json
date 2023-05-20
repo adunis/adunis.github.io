@@ -47,7 +47,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>When you spend time working in your forge, choose one item to create and roll+Int. On a 16-19, you successfully create the item to the best of your ability. Choose two options from the list below. On a 9-15, you successfully create the item, but choose one:</p><ul><li>The item is flawed in some way (the GM will tell you how)</li><li>The creation takes longer than expected</li><li>The creation requires rare or expensive materials</li></ul><p>Options:</p><ul><li>The item is of exceptional quality and gains a +1 bonus to damage or usefulness</li><li>The item has an interesting design or unique feature that sets it apart from other similar items</li><li>The item is created quickly and efficiently, taking half the expected time</li></ul></p>",
+      "description": "<p>When you spend time working on something for a long time, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -116,7 +116,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a squire, you are trained in the ways of chivalry and battle. You have the ability to assist a knight in combat or formal events. You gain the following abilities:</p><ul><li>+1 forward to your Protect move when assisting a knight</li><li>You may use your knowledge of heraldry to identify the banners of noble houses and important persons</li><li>If you have higher Charm than the knight you are assisting, you may take charge of a situation in their absence</li></ul>",
+      "description": "<p>When you defend someone you care for, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -185,7 +185,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As an apprentice, you are learning the arcane arts from your master. You gain the following abilities:</p><ul><li>You are able to cast spells from your master's grimoire, if you have the MP to do so</li><li>You have knowledge of alchemy and can identify magical ingredients and substances</li><li>If you spend time studying, you can roll+Int to gain insight on a particular magical subject. On a 16-19, you gain useful information. On a 9-15, you gain some information but also attract unwanted attention in the process</li></ul>",
+      "description": "<p>When you spend time studying something you love, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -254,7 +254,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a street criminal, you know how to make your way in the world by any means necessary. You gain the following abilities:</p><ul><li>You gain +1 forward when using the Move Silently or Pick Locks moves</li><li>You have knowledge of the criminal underworld and can gather information or contacts within it</li><li>If you spend time casing a location, you can roll+Wis to learn about its security measures. On a 16-19, you gain useful information. On a 9-15, you gain some information but it comes with a complication</li></ul>",
+      "description": "<p>When you try to intimidate someone, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -323,7 +323,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a village hunter, you are skilled in tracking and hunting game in the nearby forests and fields. You gain the following abilities:</p><ul><li>You gain +1 forward when using the Track or Hunt moves</li><li>You have knowledge of the local flora and fauna, and can identify useful plants or animals</li><li>If you spend time studying a particular area, you can roll+Wis to learn about its wildlife and terrain. On a 16-19, you gain useful information. On a 9-15, you gain some information but also attract unwanted attention in the process</li></ul>",
+      "description": "<p>When you hunt for food, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -392,7 +392,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a deacon, you are a representative of your faith and its teachings. You gain the following abilities:</p><ul><li>You gain +1 forward to your Wisdom-based moves when dealing with matters of faith or morality</li><li>You have knowledge of religious texts and symbols, and can identify their meanings or applications</li><li>If you spend time studying your faith or performing religious rituals, you can roll+Wis to gain divine insight or guidance. On a 16-19, you gain useful information or a blessing. On a 9-15, you gain some information or a minor boon, but also expose yourself to temptation or danger</li></ul>",
+      "description": "<p>When you try to inspire others through your speechs, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -461,7 +461,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a farmer, skilled in working the land to grow crops and raise livestock. You have the following abilities:</p><ul><li>You have knowledge of agriculture and can identify useful plants or animals</li><li>You are able to repair simple tools and equipment, such as plows or fences</li><li>If you spend time tending to your fields or livestock, you can roll+Wis to gain insight or productivity. On a 16-19, you gain useful information or a bountiful harvest. On a 9-15, you gain some information or a minor boon, but also face a setback or complication</li></ul>",
+      "description": "<p>When you spend time farming the land, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -530,7 +530,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a fisherman, skilled in catching and preparing fish for consumption. You have the following abilities:</p><ul><li>You have knowledge of local fishing spots and techniques, and can identify useful bait or tackle</li><li>You are able to repair or maintain small boats or fishing gear</li><li>If you spend time fishing or studying the sea, you can roll+Wis to gain insight or a catch. On a 16-19, you gain useful information or a bountiful catch. On a 9-15, you gain some information or a minor boon, but also face a hazard or setback</li></ul>",
+      "description": "<p>When you spend time catching fish, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -599,7 +599,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a minstrel, skilled in performing music and storytelling for entertainment. You have the following abilities:</p><ul><li>You have knowledge of various musical instruments and styles, and can identify their cultural or historical significance</li><li>You are able to compose or improvise songs or poems on a variety of topics</li><li>If you spend time performing or studying the arts, you can roll+Cha to gain inspiration or insight. On a 16-19, you gain useful information or a favorable audience. On a 9-15, you gain some information or attention, but also offend or alienate someone in the process</li></ul>",
+      "description": "<p>When you try to impress other with your music, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -668,7 +668,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a master of words and persuasion. You gain the following abilities:</p><ul><li>You can use your words to rally allies to your cause. When you speak to a group, you can roll+Cha. On a 16-19, they believe in your cause and act accordingly. On a 9-15, they believe but only partially, and may need further convincing</li><li>You have a wide knowledge of underhanded tactics, and can spout lore about a criminal enterprise, cult, or group of ne'er do wells</li><li>You have a talent for identifying useful information, and can discern realities about a person or situation by analyzing their body language and tone of voice</li></ul>",
+      "description": "<p>When you want to anger a crowd through your speechs, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -737,7 +737,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a student of alchemy, with an innate understanding of the properties and potential of matter. You gain the following abilities:</p><ul><li>You can transmute basic materials into more useful forms. When presented with raw materials, you can roll+Int to see if you can successfully transmute them. On a 16-19, you can transmute the material into a useful form. On a 9-15, you can transmute the material, but with some unforeseen side effect</li><li>You are able to craft and brew potions and elixirs. You can prepare up to two vials of potion or elixir per day. When consumed, these brews have a magical effect as determined by the GM</li><li>You are attuned to the magical properties of metals and gems, and can identify the properties and potential uses of precious materials with ease</li></ul>",
+      "description": "<p>When you spend time studying alchemical components, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -806,7 +806,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You possess a natural skill for craftsmanship and artistry, and are honing your skills under the tutelage of a master artisan. You gain the following abilities:</p><ul><li>You can create minor items and objects quickly and efficiently, using your knowledge of form and function. When presented with raw materials, you can craft a functional item with a successful roll+Wis. On a 16-19, you craft a useful item. On a 9-15, the item has some flaw or weakness</li><li>You have an eye for detail and beauty, and can spout lore about art, architecture, and design</li><li>You have a natural ability to improvise and adapt, and gain a +1 to Defy Danger rolls when using your surroundings to your advantage</li></ul>",
+      "description": "<p>When you spend time studying a masterfully crafted object, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -875,7 +875,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a master of seduction and manipulation, weaving lies and half-truths to get what you want. You gain the following abilities:</p><ul><li>You can read people easily, and can spout lore about their motivations, desires, and weaknesses</li><li>You have a silver tongue, and can roll+Cha to convince someone to do something they might not otherwise do. On a 16-19, they do it without hesitation. On a 9-15, they need some convincing or a promise or bargain of some kind</li><li>You know how to work a crowd, and can roll+Cha to sway a group of people to your side. On a 16-19, they all believe in your cause. On a 9-15, they believe but some may need further convincing or be convinced by an opposing voice</li></ul>",
+      "description": "<p>When you spend time seducing somebody, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -944,7 +944,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As an engineer, you have a knack for tinkering with machines and contraptions. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when dealing with complex machinery</li><li>You can create temporary mechanical devices to aid you in your endeavors. These devices last for a single use and can range from a grappling hook to a makeshift bomb</li><li>You have knowledge of the inner workings of machines and can diagnose and repair them quickly</li></ul>",
+      "description": "<p>When you spend time studying an engineed,  machine, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1013,7 +1013,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As an entertainer, you thrive on the spotlight and the attention of a crowd. You gain the following abilities:</p><ul><li>You have a +1 bonus to Parley when negotiating with someone who is enjoying your performance</li><li>You can distract enemies with a dazzling performance, allowing your allies to take advantage of the situation. When you successfully Defy Danger to distract enemies, allies gain a +1 forward against them</li><li>You have a repertoire of songs, dances, and other performances that you can use to charm and entertain your audience</li></ul>",
+      "description": "<p>When you send time entertaining others, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1082,7 +1082,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a survivor, living by your wits and your ability to make do with whatever scraps come your way. You gain the following abilities:</p><ul><li>You know how to survive on the streets, and can spout lore about the criminal underworld, local gangs, and other denizens of the urban jungle</li><li>You know how to be unseen and unheard, and gain a +1 to Defy Danger when staying hidden or avoiding notice</li><li>You know how to scavenge for what you need, and can roll+Wis to search an area for useful supplies or scraps. On a 16-19, you find something useful. On a 9-15, you find something, but it's not entirely clear how it might be useful</li></ul>",
+      "description": "<p>When you plea for pity, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1151,7 +1151,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As an exciseman, you are responsible for collecting taxes and enforcing the laws of the land. You gain the following abilities:</p><ul><li>You have a +1 bonus to Parley when negotiating with wealthy merchants and government officials</li><li>You have a list of tax evaders and lawbreakers that you are pursuing. When you capture one of these targets, you gain a reward and can mark them off your list</li><li>You have a +1 bonus to Discern Realities when investigating tax evasion and illegal activities</li></ul>",
+      "description": "<p>When you ask others for what is rightfully yours, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1220,7 +1220,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a gambler, you know how to play the odds and take risks. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when trying to read someone's intentions</li><li>You can roll +Cha instead of +Str to Hack and Slash with a bladed weapon, as long as you are making an extravagant and flashy attack</li><li>You always have a deck of cards on you, and can use them to make bets, play games, or distract your enemies</li></ul>",
+      "description": "<p>When you convince others in trusting you, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1289,7 +1289,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a gamekeeper, you are skilled at tracking and hunting animals. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash and Volley when attacking animals</li><li>You can track animals with incredible accuracy, and can always follow their trail even in the most difficult terrain</li><li>You have a trained animal companion, such as a hunting dog or falcon, that can help you in your pursuits</li></ul>",
+      "description": "<p>When you take care of a beast, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1358,7 +1358,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a footpad, you are a street-smart thief who knows how to stay one step ahead of the law. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when avoiding notice or sneaking around</li><li>You have a +1 bonus to Discern Realities when investigating a potential target</li><li>You have a special move called 'Take Advantage of a Vulnerability.' When you have an opportunity to exploit a target's weakness, roll+Dex. On a  16-19, choose three. On a 9-15, choose two. On a miss, you still get to choose one, but you also expose yourself to danger:<ul><li>You take something of value from the target</li><li>You learn a useful secret about the target</li><li>You create an opportunity for an ally to take advantage of the target</li><li>You avoid detection while exploiting the target's vulnerability</li></ul></li></ul>",
+      "description": "<p>When you need to follow a plan, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1427,7 +1427,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>You are a master of the water, navigating the rivers and seas with ease. You gain the following abilities:</p><ul><li>You are an expert in navigating waterways, and can spout lore about the tides, currents, and geography of any body of water you encounter</li><li>You have a keen eye for spotting danger, and gain a +1 to Discern Realities when searching for hidden enemies or hazards in aquatic environments</li><li>You are a skilled oarsman, and can roll+Str to power a boat or rowboat with great speed</li></ul>",
+      "description": "<p>When you follow the flow, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1496,7 +1496,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a bodyguard, your job is to protect your employer at all costs. You gain the following abilities:</p><ul><li>You have a +2 bonus to Defy Danger when protecting someone you are paid to protect</li><li>You have an extra +1 armor when standing in defense of someone else</li><li>You can spend a hold to take the hit for someone you are protecting, even if they are not in immediate danger</li></ul>",
+      "description": "<p>When you put you in between somebody and a danger, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1565,7 +1565,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a bounty hunter, you make your living by capturing fugitives and bringing them to justice. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when fighting against someone with a price on their head</li><li>You have a +1 bonus to Discern Realities when investigating a fugitive's whereabouts</li><li>You have a list of targets you are currently pursuing, each with a price on their head. When you take one of these targets captive, you gain the reward money and can mark them off your list</li></ul>",
+      "description": "<p>When you try to immobilize someone, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1634,7 +1634,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a toll-keeper, you are responsible for collecting fees from those who wish to pass through your checkpoint. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defend when guarding your checkpoint</li><li>You have a list of people and goods that are forbidden from passing through your checkpoint. When someone attempts to pass through with something on your list, you gain leverage over them</li><li>You have a network of other toll-keepers who owe you favors. When you need assistance, you can call on them to help you out</li></ul>",
+      "description": "<p>When you convince others in giving you something, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1703,7 +1703,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a tomb robber, you make your living by stealing treasure from ancient tombs and ruins. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when investigating tombs and ruins</li><li>You have a map of a particularly lucrative tomb or ruin. When you successfully rob it, you gain a large amount of treasure</li><li>You have a rival tomb robber who is always trying to steal your loot. When you encounter them, you gain leverage over them</li></ul>",
+      "description": "<p>When you take something that you aren't supposed to take, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1772,7 +1772,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a trader, you have a keen eye for a bargain and are always on the lookout for profitable deals. You gain the following abilities:</p><ul><li>You have a +1 bonus to Discern Realities when investigating markets or trading opportunities</li><li>You have a list of goods you are currently seeking, and a list of goods you have to trade. When you visit a market, you can attempt to buy or sell goods on your lists at a favorable price</li><li>You have a network of contacts in various markets who can provide you with information and assistance. When you visit a new market, you can roll+CHA. On a  16-19, you have a useful contact there. On a 9-15, you have a contact, but they will require a favor in return for their assistance</li></ul>",
+      "description": "<p>When you convince others in asking for a favor, ,you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1841,7 +1841,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a trapper, you are skilled in setting traps and catching prey. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when setting traps or avoiding them</li><li>You have a list of animals you are currently hunting, each with a reward for their capture. When you successfully trap or kill one of these animals, you gain the reward money and can mark them off your list</li><li>You have a supply of traps and bait, which you can use to set up ambushes or lure animals into traps</li></ul>",
+      "description": "<p>When you setup a trap, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -1910,7 +1910,7 @@
         }
       ],
       "type": "character",
-      "description": "<p>As a coachman, you specialize in transporting people and goods across long distances. You gain the following abilities:</p><ul><li>You have a +1 bonus to Defy Danger when navigating unfamiliar terrain</li><li>You have a pack animal that can carry up to 4 weight of gear</li><li>You have a list of important NPCs you have transported before, each with their own story. When you encounter one of these NPCs again, you can mark their name off your list and have an easier time convincing them to help you</li></ul>",
+      "description": "<p>When you need to get somewhere fast, you get +3 to your rolls.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -15614,22 +15614,20 @@
       },
       "type": [
         "type",
-        "common"
+        "common", "weapon"
       ],
       "moves": [
         {
           "moves_requirements": [
-            "red"
           ],
           "moves_name": "Armor Breaker",
-          "moves_description": "<p>When you attack an enemy wearing chain armor with your battleaxe, roll +Str. On a 16-19, you deal your damage and ignore the armor's defense. On a 9-15, you deal your damage but the armor holds up, causing it to take -1 ongoing to all rolls. On a miss, you leave yourself open to counterattack.</p>"
+          "moves_description": "<p>When you deal damage to an enemy wearing chain armor with your battleaxe, you deal your damage and ignore the armor's defense."
         },
         {
           "moves_requirements": [
-            "orange"
           ],
           "moves_name": "Item Destroyer",
-          "moves_description": "<p>When you destroy an enemy's item with your battleaxe, roll +Str. On a 16-19, you shatter the item and deal your damage. On a 9-15, you damage the item but it holds up, causing it to take -1 ongoing to all rolls. On a miss, you leave yourself open to counterattack.</p>"
+          "moves_description": "When you deal damage to an item with a battleaxe, you shatter the item and deal your damage to whoever is holding it"
         }
       ],
       "stats": [
@@ -16057,14 +16055,14 @@
             "red"
           ],
           "moves_name": "Swordsman",
-          "moves_description": "<p>When you attack with a longsword, roll +Dex. On a 9-15, you deal your damage. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack inflicts a grievous wound, causing your target to take -1 ongoing to all rolls until they receive healing or medical attention</li><li>Your attack creates an opening, giving you or an ally +1 forward to their next attack against the target</li><li>Your attack stuns or knocks down your target, giving you or an ally an opportunity to quicklyact before they can react</li></ul>"
+          "moves_description": "<p>When you deal damage with a longsword, your attack inflicts a grievous wound, causing your target to take -3 ongoing to all rolls until they receive healing or medical attention</li>"
         },
         {
           "moves_requirements": [
             "black"
           ],
           "moves_name": "Defensive Parry",
-          "moves_description": "<p>When you use a longsword to defend yourself, roll+Dex instead of +Con. On a 16-19, you deflect the attack and take no damage. On a 9-15, you deflect the attack but suffer a -1 penalty to your next attack roll.</p>"
+          "moves_description": "<p>When you use a longsword to defend yourself, you get +3 to your rolls.</p>"
         }
       ],
       "stats": [
@@ -17470,10 +17468,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
           ],
           "moves_name": "Crossbow Expert",
-          "moves_description": "<p>When you attack with a crossbow, roll +Dex. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 1 point of armor</li><li>Your attack hits an additional target within range</li><li>Your attack pins your target to a wall or the ground, preventing them from moving until they free themselves</li></ul></p>"
+          "moves_description": "<p>When you deal damage with a crossbow, choose one: Your attack pierces armor, ignoring 1 point of armor, your attack hits an additional target within, your attack pins your target to a wall or the ground, preventing them from moving until they free themselves."
         }
       ],
       "stats": [
@@ -17506,11 +17503,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "red",
-            "red"
           ],
           "moves_name": "Heavy Crossbow Expert",
-          "moves_description": "<p>When you attack with a heavy crossbow, roll +Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack knocks your target back or off balance</li><li>Your attack deals +1d4 damage</li></ul></p>"
+          "moves_description": "<p>When you deal damage with a heavy crossbow, choose one: your attack pierces armor, ignoring 2 points of armor, your attack knocks your target back or off balance, your attack deals +1d4 damage</li></ul></p>"
         }
       ],
       "stats": [
@@ -17598,7 +17593,7 @@
             "green"
           ],
           "moves_name": "Bow Expert",
-          "moves_description": "<p>When you attack with a simple bow, roll +Dex. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack is silent and unnoticed</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d4 damage if you have the high ground or surprise</li></ul></p>"
+          "moves_description": "<p>When you deal damage with a simple bow, choose one: your attack is silent and unnoticed, your shoot an additional arrow hitting an additional target within range and dealing the same damage, your attack deals +1d4 damage if you have the high ground or surprise"
         }
       ],
       "stats": [
@@ -17715,10 +17710,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "green"
           ],
           "moves_name": "Composite Bow Expert",
-          "moves_description": " <p>When you attack with a composite bow, roll +Dex. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack pierces armor, ignoring 1 point of armor</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d6 damage if you have the high ground or surprise</li></ul></p>"
+          "moves_description": " When you deal damage with a composite bow, your attack pierces armor, ignoring 1 point of armor, your shoot an additional arrow hitting an additional target within range and your attack deals +1d6 damage if you have the high ground or surprise."
         }
       ],
       "stats": [
@@ -17959,10 +17953,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
           ],
           "moves_name": "Longbow Expert",
-          "moves_description": "When you attack with a longbow, roll +Dex. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage. On a miss, you lose one ammo.</p> <ul><li>Your attack has extreme range, reaching targets far beyond normal sight</li><li>Your attack hits an additional target within range</li><li>Your attack deals +1d8 damage if you have the high ground or surprise</li></ul>"
+          "moves_description": "When you deal damage with a longbow, choose one: your attack has extreme range, reaching targets far beyond normal sight, your attack deals +1d8 damage and pushes the target 10 ft away"
         }
       ],
       "stats": [
@@ -17998,7 +17991,7 @@
             "gold"
           ],
           "moves_name": "Arquebus Expert",
-          "moves_description": "<p>When you attack with an arquebus, roll +Dex. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 2 points of armor</li><li>Your attack creates a loud bang and a flash of fire, startling or scaring anyone nearby who is not prepared for it</li><li>Your attack deals +1d6 damage and sets your target or something nearby on fire</li></ul></p>"
+          "moves_description": "<p>When you deal damage with an arquebus, choose one: your attack pierces armor, ignoring 2 points of armor, your attack creates a loud bang and a flash of fire, startling or scaring anyone nearby who is not prepared for it, your attack deals +1d6 damage"
         }
       ],
       "stats": [
@@ -18035,7 +18028,7 @@
             "red"
           ],
           "moves_name": "Heavy Blunderbuss Expert",
-          "moves_description": "<p>When you attack with a heavy blunderbuss, roll +Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage and reload. On a miss, you have to spend a few moments to reload before you can fire again.</p> <ul><li>Your attack pierces armor, ignoring 3 points of armor</li><li>Your attack creates a loud bang and a flash of fire, stunning or scaring anyone nearby who is not prepared for it</li><li>Your attack deals +1d8 damage and sets your target and anything nearby on fire</li></ul></p>"
+          "moves_description": "<p>When you deal damage with a heavy blunderbuss, choose one: your attack pierces armor, ignoring 3 points of armor, your attack creates a loud bang and a flash of fire, stunning or scaring anyone nearby who is not prepared for it, your attack deals +1d8 damage and sets your target and anything nearby on fire</li></ul></p>"
         }
       ],
       "stats": [
@@ -18068,10 +18061,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "orange"
           ],
           "moves_name": "Brutal Smash",
-          "moves_description": " <p>When you attack with a club, roll +Str. On a 9-15, you deal your damage. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack breaks or damages something your target is holding or wearing</li><li>Your attack sends your target flying or sprawling, giving you or an ally an opportunity to quickly act before they can recover</li><li>Your attack dazes or disorients your target, giving them -1 forward to their next roll</li></ul>"
+          "moves_description": " <p>When you deal damage with a club, choose one: your attack breaks or damages something your target is holding or wearing, your attack sends your target flying or sprawling, giving you or an ally an opportunity to quickly act before they can recover, your attack dazes or disorients your target, giving them -1 forward to their next roll."
         },
         {
           "moves_requirements": [
@@ -18460,18 +18452,16 @@
       "moves": [
         {
           "moves_requirements": [
-            "red",
-            "orange"
           ],
           "moves_name": "Mighty Swing",
-          "moves_description": "<p>When you swing a greataxe in a wide arc, roll +Str. On a 9-15, you deal your damage to all enemies in your reach. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack cleaves through armor and shields, ignoring their armor rating and leaving them defenseless</li><li>Your attack creates an opening, giving you or an ally +1 forward to their next attack against the target</li><li>Your attack knocks your enemies off balance, giving you and your allies an opportunity to make a move or reposition</li></ul>"
+          "moves_description": "<p>When you swing a greataxe in a wide arc, you deal your damage to all enemies in your reach."
         },
         {
           "moves_requirements": [
-            "green"
+            "orange"
           ],
           "moves_name": "Feral Fury",
-          "moves_description": "<p>When you rage and attack with a greataxe, roll +Con. On a 9-15, you deal your damage and take -1 ongoing to all rolls until you calm down or the fight ends. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack inflicts a debilitating wound, causing your target to take -1 ongoing to all rolls until they receive healing or medical attention</li><li>Your attack intimidates your enemies, causing them to hesitate or flee from your presence</li><li>Your attack unleashes a savage frenzy, giving you an extra attack against the same or another target</li></ul>"
+          "moves_description": "<p>When you rage and attack with a greataxe, you deal your +1d6 damage and take -1 ongoing to all rolls until you calm down or the fight ends."
         }
       ],
       "stats": [
@@ -18503,17 +18493,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
-          ],
-          "moves_name": "Crushing Blow",
-          "moves_description": "<p>When you attack with a Greathammer, roll +Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage but leave yourself open to the enemy's attack.</p><ul><li>Your attack crushes the enemy's armor, reducing their armor by 1 until it is repaired or replaced.</li><li>Your attack pushes the enemy back, giving you or an ally an opportunity to take advantage of their disorientation.</li></ul>"
-        },
-        {
-          "moves_requirements": [
-            "orange"
           ],
           "moves_name": "Bonecrusher",
-          "moves_description": "<p>When you strike a foe with a Greathammer, roll +Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage but the enemy may still retaliate.</p><ul><li>Your attack breaks bones and meat, causing the target to take -1 ongoing to all rolls until they receive healing or medical attention.</li><li>Your attack creates a shockwave that knocks down all enemies within reach, allowing you or an ally to quickly act before they can recover.</li><li>Your attack shatters magical barriers or defenses, reducing the target's resistance to magic by 1 until they dispel the effect or receive a counter-magic spell.</li></ul>"
+          "moves_description": "<p>When you strike a foe with a Greathammer, choose one: your attack breaks bones and meat, causing the target to take -1 ongoing to all rolls until they receive healing or medical attention, your attack creates a shockwave th t knocks down all enemies within reach, allowing you or an ally to quickly act before they can recover, your attack shatters magical barriers or defenses, reducing the target's resistance to magic by 1 until they dispel the effect or receive a counter-magic spell."
         }
       ],
       "stats": [
@@ -18540,22 +18522,20 @@
       },
       "type": [
         "type",
-        "common"
+        "common", "weapon"
       ],
-      "moves": [
-        {
-          "moves_requirements": [
-            "red"
-          ],
-          "moves_name": "Swift Draw",
-          "moves_description": "<p>When you attack with a shortsword while drawing it from its sheath, roll +Dex. On a 16-19, deal your damage and choose one additional effect from the list below:</p><ul><li>You avoid any counterattack or damage from the target</li><li>You deal an extra 1d4 damage to the target</li><li>You impress or intimidate the target and gain a +1 forward against them</li></ul><p>On a 9-15, you deal your damage but the GM will choose one of the following consequences:</p><ul><li>You leave yourself open to the enemy's attack</li><li>You only deal your damage, without any additional effect</li><li>You draw the unwanted attention of a third party</li></ul>"
-        },
+      "moves": [        {
+        "moves_requirements": [
+        ],
+        "moves_name": "Precise Strike",
+        "moves_description": "<p>When you attack with the Elven Shortsword while performing an acrobatic maneuver, roll +Dex instead of +Str."
+      },
         {
           "moves_requirements": [
             "black"
           ],
           "moves_name": "Bleeding Wound",
-          "moves_description": "<p>When you strike an enemy with a shortsword and inflict a wound, roll +Str. On a 16-19, in addition to your damage, your enemy will lose an extra 1d6 damage at the start of each of their turns until they receive healing or medical attention. On a 9-15, you inflict the wound and your damage, but the enemy will take half the bleeding damage (rounded down) and the GM will choose one of the following consequences:</p><ul><li>The enemy retaliates with a ferocious attack, dealing you damage as well</li><li>You leave an opening and another enemy takes advantage of it</li><li>You get too focused on the enemy and lose track of your surroundings</li></ul>"
+          "moves_description": "<p>When you strike an enemy with a shortsword and inflict a wound, your enemy will lose an extra 1d6 damage at the start of each of their turns until they receive healing or medical attention."
         }
       ],
       "stats": [
@@ -18590,14 +18570,13 @@
       "moves": [
         {
           "moves_requirements": [
-            "cerulean"
           ],
           "moves_name": "Infernal Flames",
-          "moves_description": "When you strike with the Infernal Longsword, roll+Str. On a 16-19, deal your damage plus 1d6 fire damage. On a 9-15, deal your damage, but your blade is now coated in infernal flames and you take -1 ongoing until you either sheathe or stow the sword.<"
+          "moves_description": "When you strike with the Infernal Longsword, deal your damage plus 1d6 fire damage but your blade is now coated in infernal flames and you take -1 ongoing until you either sheathe or stow the sword."
         },
         {
           "moves_requirements": [
-            "black"
+            "cerulean"
           ],
           "moves_name": "Devilish Bargain",
           "moves_description": "Once per day, when you score a  16-19 with the Infernal Longsword, you may choose to deal an additional 1d6 fire damage and take -1 ongoing for the rest of the session. If you do, the demon bound within the sword whispers terrible secrets to you about your companions or your quest, and the GM will offer you a devilish bargain to fulfill its dark desires. If you refuse, the demon will be bound and you will take -1 forward to all rolls until the end of the session."
@@ -18634,10 +18613,9 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
           ],
           "moves_name": "Orcish Fury",
-          "moves_description": "<p>When you hack and slash with the Orcish Longsword, roll+Str. On a 16-19, deal your damage and take +1 forward. On a 9-15, deal your damage, but the orcish fury within you demands a tribute. Choose one:</p><ul><li>The orcish rage takes over and you attack the nearest ally instead of your intended target.</li><li>The orcish bloodlust demands you keep fighting. You cannot disengage until either you or your opponent are taken out of the fight.</li><li>The orcish spirits demand a sacrifice. Take -1 forward to all rolls until you make an offering to the spirits.</li></ul>"
+          "moves_description": "<p>When you hack and slash with the Orcish Longsword, you may deal +1d10 damage but you must choose one:</p><ul><li>The orcish rage takes over and the next turn you attack the nearest ally instead of your intended target.</li><li>The orcish bloodlust demands you keep fighting. You cannot disengage until either you or your opponent are taken out of the fight.</li><li>The orcish spirits demand a sacrifice. Take -1 forward to all rolls until you make an offering to the spirits.</li></ul>"
         },
         {
           "moves_requirements": [
@@ -18671,15 +18649,14 @@
       },
       "type": [
         "item",
-        "uncommon"
+        "uncommon", "weapon "
       ],
       "moves": [
         {
           "moves_requirements": [
-            "black"
           ],
-          "moves_name": "Acrobatic Strike",
-          "moves_description": "<p>When you attack with the Elven Shortsword while performing an acrobatic maneuver, roll +Dex instead of +Str. On a 16-19, deal your damage and choose one: you take +1 forward to your next move, or you avoid their attack.</p>"
+          "moves_name": "Precise Strike",
+          "moves_description": "<p>When you attack with the Elven Shortsword while performing an acrobatic maneuver, roll +Dex instead of +Str."
         },
         {
           "moves_requirements": [
@@ -18713,16 +18690,14 @@
       },
       "type": [
         "item",
-        "uncommon"
+        "uncommon", "weapon"
       ],
       "moves": [
         {
           "moves_requirements": [
-            "white",
-            "white"
           ],
-          "moves_name": "Huge Creature Parry",
-          "moves_description": "<p>When you use a Dwarven Shortsword to parry an attack from a creature larger than yourself, roll+Str instead of +Dex. On a 16-19, you deflect the attack and take no damage. On a 9-15, you deflect the attack but suffer a -1 penalty to your next attack roll.</p>"
+          "moves_name": "Defensive Stance",
+          "moves_description": "<p>When you use a Dwarven Shortsword to parry an attack from a creature larger than yourself, you get +5 to the roll."
         },
         {
           "moves_requirements": [
@@ -18763,15 +18738,13 @@
       "moves": [
         {
           "moves_requirements": [
-            "emerald",
-            "green"
+            "emerald"
           ],
           "moves_name": "Sylvan Protection",
           "moves_description": "<p> When you wear the Sylvan Gauntlet, roll +Con. On a 9-15, you gain +1 armor. On a 16-19, you gain +2 armor and you can choose to create a shield of foliage that provides additional protection. On a 20+, you can choose two effects.</p><ul><li>Your shield of foliage provides +2 armor</li><li>Your shield of foliage causes enemies that attack you to suffer damage</li><li>You can heal 1d6 damage when you create your shield of foliage</li></ul>"
         },
         {
           "moves_requirements": [
-            "emerald"
           ],
           "moves_name": "Sylvan Nature",
           "moves_description": "The Sylvan Gauntlet is made of a natural material that seems to be a combination of wood and leaves. When you wear this gauntlet, you gain the ability to communicate with plants and animals."
@@ -18806,15 +18779,7 @@
       "moves": [
         {
           "moves_requirements": [
-            "emerald",
-            "gold"
-          ],
-          "moves_name": "Sylvan Strike",
-          "moves_description": "<p>When you attack with the Sylvan Scimitar, roll +Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage but expose yourself to the enemy's attack.</p> <ul><li>You deal +1d4 damage</li><li>You can choose to deal your damage as either piercing or slashing damage</li><li>You ignore your target's armor</li></ul>"
-        },
-        {
-          "moves_requirements": [
-            "cerulean"
+            "emerald"
           ],
           "moves_name": "Animal Senses",
           "moves_description": "<p>By spending 1 magic point, you can gain animal-like senses that allow you to track creatures, detect hidden objects, and sense danger more acutely. These senses last for an hour.</p>"
@@ -20866,50 +20831,6 @@
       "header_image": "Gnomish Enchanted Crossbow.png"
     },
     {
-      "name": "Elven Bow",
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "type": [
-        "item",
-        "weapon",
-        "rare",
-        "magic"
-      ],
-      "moves": [
-        {
-          "moves_requirements": [
-            "green"
-          ],
-          "moves_name": "Elven Accuracy",
-          "moves_description": "<p>When you fire an arrow from an Elven Bow, roll +Dex. On a 9-15, you deal your damage. On a 16-19, you deal your damage and can choose to pin the enemy to a surface, immobilizing them. On a 20+, you can choose two effects.</p><ul><li>Your attack deals additional damage to enemies with a weakness to the magical properties of the bow</li><li>Your attack hits an additional target</li><li>Your attack deals +1d6 damage</li></ul>"
-        },
-        {
-          "moves_requirements": [
-            "emerald"
-          ],
-          "moves_name": "Mysterious Material",
-          "moves_description": "<p>The Elven Bow is made of a mysterious material that seems to be a combination of wood and metal. When you wield this weapon, you can see through the eyes of birds and beasts that fly.</p>"
-        }
-      ],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "1.5 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "150 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Elven Bow.png"
-    },
-    {
       "name": "Treasure Map",
       "crystals": {
         "requires": [],
@@ -21357,7 +21278,7 @@
             "red"
           ],
           "moves_name": "Crusher Blow",
-          "moves_description": "<p>When you attack with a mace, roll +Str. On a 9-15, you deal your damage. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 20+, you can choose two effects.</p> <ul><li>Your attack shatters or crushes something your target is holding or wearing</li><li>Your attack sends a shockwave, knocking down or stunning nearby enemies</li><li>Your attack deals +1d4 damage</li></ul>"
+          "moves_description": "<p>When you deal damage with a mace, chosse one: your attack shatters or crushes something your target is holding or wearing, your attack sends a shockwave, knocking down or stunning nearby enemies, your attack deals +1d4 damage."
         },
         {
           "moves_requirements": [
@@ -21397,7 +21318,6 @@
       "moves": [
         {
           "moves_requirements": [
-            "red"
           ],
           "moves_name": "Cushion",
           "moves_description": "<p>When you take damage from a blunt weapon or an arrow while wearing gambeson armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by an additional 1d4.</p>"
