@@ -21263,7 +21263,7 @@
     {
       "name": "Time Off",
       "type": "rule",
-      "description": "When the party spends 1 month in a certain area, choose one <ul> <li>training (random training card)</li>, <li>working (gold and random item card) </li>, </li> study (1 lore card, lore cards can be used to get a +5 bonus Discern Realities) </li>, <li> meditate (1 destiny card) </li> , <li> recover:  restore your HP to maximum and clear all your debilities <li> </ul>",
+      "description": "When the party spends 1 month in a certain area, choose one <ul> <li>You receive one training</li>, <li>You receive an amount of gold equal to (CAR + Another ability of your choice) x 1d10 x 10</li>, <li>Restore your HP to maximum and clear all your debilities <li> </ul>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -21273,7 +21273,7 @@
     {
       "name": "Time Skip",
       "type": "rule",
-      "description": "When the party spends 1 year don't adventuring, choose one: <ul> <li>training (random core training card and 3 training cards)</li>, <li>working (random core training card and gold) </li>, <li>socialize (random core training card and npc cards)</li>, </li> resupply (2 random item cards) </li>, </li> study (1 lore card, lore cards can be used to get a +5 bonus Discern Realities) </li>, <li> monster hunting (1 monster card, monster cards can be used to deal an attack in a weak point or something liek that) </li> <li> meditate (1 destiny card) </li> , <li> recover:  restore your HP to maximum and clear all your debilities <li> </ul>",
+      "description": "When the party spends 1 year don't adventuring, choose one: <ul> <li>Receive one  core training card</li> <li>Receive 5 training cards</li>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
