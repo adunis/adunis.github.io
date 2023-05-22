@@ -12092,14 +12092,14 @@
       "header_image": "Frogfolk.png"
     },
     {
-      "name": "Natural Magic",
+      "name": "Sorcerer",
       "crystals": {
         "requires": [],
         "provides": [
-          "cerulean"
+          "cerulean", "cerulean", "cerulean"
         ]
       },
-      "type": "training",
+      "type": "core training",
       "description": "<p>Magic is as natural as breath to you. Whenever you channel a spell, you can treat your open hand as if it was a wand or both of your open hands as if they were an arcane staff. Also, silver is anathema to you: it burns your skin. You also gain these bonds:</p><ul><li>I will teach my magical secrets to someone worthy of them</li><li>I seek to learn the true nature of magic, no matter the cost</li></ul>",
       "stats": [
         {
@@ -13317,7 +13317,7 @@
       "header_image": "Pact with the Otherworld.png"
     },
     {
-      "name": "Wizardry Training",
+      "name": "Hedge Wizard",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26015,7 +26015,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "Mage",
+      "name": "Wizard",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26025,7 +26025,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of the Mage's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Mage's Academy, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26105,7 +26105,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "Enchanter",
+      "name": "Artificier",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26115,7 +26115,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of the Enchanter's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Artificier's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
