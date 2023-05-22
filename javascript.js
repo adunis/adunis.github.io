@@ -589,8 +589,24 @@ async function filterData(filter, currentPage = 1, jsonData, isBooster) {
         const deckName = document.getElementById("deck-name-text");
         const deckPicture = document.getElementById("deck-picture");
         const deckDescription = document.getElementById("deck-description");
+        const deckToggle = document.querySelector('#toggle-deck-stats-btn');
+        const deckStats = document.querySelector("#deck-container");
+
 
 // add event listeners for editing deck name, image, and description
+
+        deckToggle.addEventListener('change', () => {
+            isChecked = deckToggle.checked;
+            if (isChecked) {
+                console.log("deck stats changed")
+                deckStats.classList.add("deckStatsHidden");
+            } else { 
+                console.log("deck stats changed")
+                deckStats.classList.remove("deckStatsHidden");
+            }
+        });
+
+
         deckName.addEventListener("click", () => {
             const newDeckName = prompt("Enter new deck name:");
             if (newDeckName) {

@@ -19,10 +19,13 @@
     <a class="active" href="index.html">Card Browser</a>
     <a href="deck-manager.html">Deck Manager</a>
     <a href="gm-panel.html">GM Panel</a>
+    <a href="rules.html">Rules</a>
+
 </div>
 
-<div id="deck-stats">
-</div>
+    <div id="deck-stats">
+    </div>
+
 
 <div id="drop-area">
     <div id="drop-area-label">Drag and drop to add new cards</div>
@@ -49,11 +52,17 @@
     <div id="card-grid"></div>
 
     <div id="deck-stats-template" style="display:none">
+        <div id="toggle-container">
+            <input type="checkbox" id="toggle-deck-stats-btn">
+            <label for="toggle-deck-stats-btn">Hide/Show</label>
+        </div>
+        <div id="deck-container">
         <div id="deck-name-text">{{deck_name}}</div>
         <div id="deck-picture"><img src="{{deck_image}}" alt="Cloudy Sky"></div>
         <div id="deck-description">{{deck_description}}</div>
         <div>XP: <span id="xp-counter">{{xp}}{{^xp}}0{{/xp}}</span> <button  id="increase-xp-btn">+</button> <button  id="decrease-xp-btn">-</button></div>
         <div>Coins: <span id="coin-counter">{{coins}}{{^coins}}0{{/coins}}</span> <button id="increase-coins-btn">+</button> <button id="decrease-coins-btn">-</button></div>
+    </div>
     </div>
 
 

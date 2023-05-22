@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Handful of Heroes</title>
+  <link rel="stylesheet" type="text/css" href="rules.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+</head>
+<body>
+  <!-- Your HTML content here -->
+
+
+<div id="navbar">
+  <a class="active" href="index.html">Card Browser</a>
+  <a href="deck-manager.html">Deck Manager</a>
+  <a href="gm-panel.html">GM Panel</a>
+  <a href="rules.html">Rules</a>
+
+</div>
+<body>
+  <div class="page">
+    <h1>Handful of Heroes Rules</h1>
+    <div class="rule">
+  </div>
+
+
+  
+<script id="rule-template" type="text/html">
+
+  <div class="rule">
+    {{#.}}
+    <h2>{{{name}}}</h2>
+    <p>{{{description}}}</p>
+    {{/.}}
+
+  </div>
+</script>
+<script type="module" >
+  import mustache from "https://cdn.skypack.dev/mustache@4.2.0";
+
+
+  // Get the rule template
+  var template = document.getElementById("rule-template").innerHTML;
+
+
+  const json = await fetch("HoH_all.json");
+  var loadedData = await json.json();
+  // Render the JSON data using the template
+  var rules = loadedData["deck_list"].filter(x => x["type"] === "rule");
+  var rendered = mustache.render(template, rules);
+
+  // Insert the rendered HTML into the page
+  var ruleContainer = document.querySelector('.rule');
+  ruleContainer.innerHTML = rendered;
+</script>
+
+</body>
+</html>
+
+
+
+</html>
