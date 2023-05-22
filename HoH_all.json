@@ -20439,7 +20439,7 @@
         "gear",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Climbing:</p> <p>When you use this rope to climb a vertical surface, roll+Dexterity. On a  16-19, you make it up safely. On a 9-15, you make it up but the GM will offer you a hard bargain or an ugly choice.</p></p>",
+      "description": "<p><p class=\"subtitle\">Climbing:</p> <p>When you use this rope to climb a vertical surface, you get +5 to the roll.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -27359,34 +27359,6 @@
         {
           "stat_name": "price",
           "stat_value": "20 coins"
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      }
-    },
-    {
-      "name": "Climbing Rope",
-      "description": "A sturdy 50-foot length of rope, perfect for climbing or rappelling.",
-      "type": [
-        "type",
-        "common"
-      ],
-      "crystals": {
-        "requires": [],
-        "provides": []
-      },
-      "header_image": "Climbing Rope.png",
-      "moves": [],
-      "stats": [
-        {
-          "stat_name": "weight",
-          "stat_value": "2 kg"
-        },
-        {
-          "stat_name": "price",
-          "stat_value": "30 coins"
         }
       ],
       "geo_location": {
