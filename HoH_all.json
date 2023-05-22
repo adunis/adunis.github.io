@@ -2445,7 +2445,7 @@
         "provides": [
           "orange",
           "orange",
-          "green"
+          "orange"
         ]
       },
       "type": "core training",
@@ -2491,7 +2491,7 @@
         "provides": [
           "orange",
           "orange",
-          "black"
+          "orange"
         ]
       },
       "type": "core training",
@@ -26574,7 +26574,7 @@
       "header_image": "Mercenary Band Contacts.png"
     },
     {
-      "name": "Adventurer's Guild",
+      "name": "Adventurer",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26592,7 +26592,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "Monster Hunter's Guild",
+      "name": "Monster Hunter",
       "crystals": {
         "requires": [],
         "provides": [
