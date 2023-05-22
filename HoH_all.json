@@ -15863,7 +15863,7 @@
       ,  
     {
       "moves_requirements": [
-       "orange"
+       "green"
      ],
      "moves_name": "Fast Reload",
      "moves_description": "You can reload the crossbow with ease, taking only a few instant using sheer strenght. If you don't have this ability, the crossbow takes 1 action to reload."
@@ -15913,7 +15913,7 @@
     },
     {
       "moves_requirements": [
-       "orange"
+       "green"
      ],
      "moves_name": "Fast Reload",
      "moves_description": "You can reload the crossbow with ease, taking only 1 action using sheer strenght. If you don't have this ability, the crossbow takes 3 actions to reload."
@@ -16424,11 +16424,24 @@
       "moves": [
         {
           "moves_requirements": [
-            "gold"
+            "red"
           ],
-          "moves_name": "Arquebus Expert",
-          "moves_description": "<p>When you deal damage with an arquebus, choose one: your attack pierces armor, ignoring 2 points of armor, your attack creates a loud bang and a flash of fire, startling or scaring anyone nearby who is not prepared for it, your attack deals +1d6 damage"
-        }
+          "moves_name": "Concussive Shot",
+          "moves_description": "<p>When you Volley, you can choose this additiona option: Deal your damage two more times and the target loses its reaction.</li></ul></p>"
+        },
+        {
+          "moves_requirements": [
+           "orange"
+         ],
+         "moves_name": "Strong Grip",
+         "moves_description": "You can use it with only one hand. If you don't have this ability, it requires 2 hands to be handled."
+       },  {
+        "moves_requirements": [
+         "green"
+       ],
+       "moves_name": "Fast Reload",
+       "moves_description": "You can reload the blunderbuss with ease, taking only 15 seconds using sheer speed. If you don't have this ability, it takes 1 minutes to reload."
+     }
       ],
       "stats": [
         {
@@ -16460,12 +16473,31 @@
       "moves": [
         {
           "moves_requirements": [
-            "gold",
+            "gold"
+          ],
+          "moves_name": "Loud and Clear",
+          "moves_description": "<p>When you Volley, you can choose this additiona loption: your attack pierces armor, your attack creates a loud bang and a flash of fire, stunning or scaring anyone nearby who is not prepared for it and sets your target and anything nearby on fire</li></ul></p>"
+        },
+        {
+          "moves_requirements": [
             "red"
           ],
-          "moves_name": "Heavy Blunderbuss Expert",
-          "moves_description": "<p>When you deal damage with a heavy blunderbuss, choose one: your attack pierces armor, ignoring 3 points of armor, your attack creates a loud bang and a flash of fire, stunning or scaring anyone nearby who is not prepared for it, your attack deals +1d8 damage and sets your target and anything nearby on fire</li></ul></p>"
-        }
+          "moves_name": "Sniper Shot",
+          "moves_description": "<p>When you Volley, you can choose this additiona option: Deal your damage two more times, ignore 3 points of armor and the target loses its reaction.</li></ul></p>"
+        },
+        {
+          "moves_requirements": [
+           "orange", "orange"
+         ],
+         "moves_name": "Strong Grip",
+         "moves_description": "You can use it with only one hand. If you don't have this ability, it requires 2 hands to be handled."
+       },  {
+        "moves_requirements": [
+         "green"
+       ],
+       "moves_name": "Fast Reload",
+       "moves_description": "You can reload the blunderbuss with ease, taking only 1 minute using sheer speed. If you don't have this ability, it  takes 3 minutes to reload."
+     }
       ],
       "stats": [
         {
@@ -16474,7 +16506,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "150 coins"
+          "stat_value": "1500 coins"
         }
       ],
       "geo_location": {
@@ -17049,7 +17081,6 @@
         "rare",
         "magic"
       ],
-      "description": "Good...",
       "moves": [
         {
           "moves_requirements": [
@@ -19269,7 +19300,6 @@
       "name": "Gnomish Crossbow",
       "crystals": {
         "requires": [
-          "gold"
         ],
         "provides": []
       },
@@ -20939,36 +20969,7 @@
       },
       "header_image": "Reaction.png"
     },
-    {      "moves": [
-        {
-          "moves_requirements": [
-            "green"
-          ],
-          "moves_name": "Precise Aim",
-          "moves_description": "When you roll for Volley, you can pick an additional option: your attack pierces armor, ignoring 1 point of armor."
-        }
-      ,  {
-       "moves_requirements": [
-        "red"
-      ],
-      "moves_name": "Hit the Weak Spot",
-      "moves_description": "When you roll for Volley, you can pick an additional option: Your attack hits an additional target behind the original one."
-    },
   {
-       "moves_requirements": [
-        "black"
-      ],
-      "moves_name": "Pinning Strike",
-      "moves_description": "When you roll for Volley, you can pick an additional option: Your attack pins your target to a wall or the ground, preventing them from moving until they free themselves."
-    }, 
-    {
-      "moves_requirements": [
-       "green"
-     ],
-     "moves_name": "Fast Reload",
-     "moves_description": "You can reload the crossbow with ease, taking only a few instant using sheer strenght. If you don't have this ability, the crossbow takes 1 action to reload."
-   }
-  ],
       "name": "Damage",
       "type": "rule",
       "description": "When you deal damage, the damage its equal to your class damage die + the stat used for attacking + other modifiers. The enemy reduces the damage by its armor value. When you receive damage, the damage it’s equal to enemy damage - your armor value.",
