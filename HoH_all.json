@@ -1996,7 +1996,7 @@
       "header_image": "The Upper Hand.png"
     },
     {
-      "name": "Seeker of Fame and Glory",
+      "name": "The Champion",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2024,7 +2024,7 @@
       "header_image": "Seeker of Fame and Glory.png"
     },
     {
-      "name": "Seeker of Riches and Property",
+      "name": "The Plunderer",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2052,7 +2052,7 @@
       "header_image": "Seeker of Riches and Property.png"
     },
     {
-      "name": "Seeker of Destruction",
+      "name": "The Ravager",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2080,7 +2080,7 @@
       "header_image": "Seeker of Destruction.png"
     },
     {
-      "name": "Seeker of Power Over Others",
+      "name": "The Dominator",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2108,7 +2108,7 @@
       "header_image": "Seeker of Power Over Others.png"
     },
     {
-      "name": "Seeker of Mortal Pleasures",
+      "name": "The Hedonist",
       "crystals": {
         "requires": [],
         "provides": [
@@ -2136,7 +2136,7 @@
       "header_image": "Seeker of Mortal Pleasures.png"
     },
     {
-      "name": "Seeker of  Conquest",
+      "name": "The Marauder",
       "crystals": {
         "requires": [],
         "provides": [
@@ -6441,7 +6441,7 @@
       "header_image": "Bestiary Knowledge.png"
     },
     {
-      "name": "Hunter of the Moon",
+      "name": "Hunter",
       "crystals": {
         "requires": [],
         "provides": [
@@ -6469,7 +6469,7 @@
       "header_image": "Beastmaster.png"
     },
     {
-      "name": "Guardian of the Wild",
+      "name": "Ranger",
       "crystals": {
         "requires": [],
         "provides": [
@@ -9780,34 +9780,6 @@
         "longitude": -122.4194
       },
       "header_image": "Thieves Guild.png"
-    },
-    {
-      "name": "Bardic College",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "purple",
-          "purple",
-          "purple"
-        ]
-      },
-      "type": "core training",
-      "description": "<p>You have attended the bardic college and learned the secrets of music. You can use the bard moves and play any instrument. When you spout lore or discern realities about something related to art, culture, or history, take +1 to your roll.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Bardic College.png"
     },
     {
       "name": "Arcane Algebra",
@@ -15960,7 +15932,7 @@
       "header_image": "Simple Bow.png"
     },
     {
-      "name": "Druid of the Horned God",
+      "name": "Druid",
       "crystals": {
         "requires": [],
         "provides": [
@@ -15970,7 +15942,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>Your training in the Druidic Circle of the Horned God has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  16-19, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-15, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
+      "description": "<p>Your training in your Druidic Circle has given you the ability to communicate with animals and plants. When you <em>parley</em> with an animal or plant, roll+WIS instead of +CHA. On a  16-19, the creature will do what you ask if you offer some appropriate gift, service, or information in return. On a 9-15, the creature requires something else first, but doing it will get you what you want. On a miss, the creature is offended, and you have made an enemy.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -15988,7 +15960,7 @@
       "header_image": "Domain of the Horned God.png"
     },
     {
-      "name": "Shaman of the Northern Forest",
+      "name": "Shaman",
       "crystals": {
         "requires": [],
         "provides": [
@@ -15998,7 +15970,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>The Spiritwalkers of the Northern Forest have taught you to channel the power of the spirits of the air, water, fire, and earth. When you <em>consult the spirits</em>, roll+WIS. On a  16-19, you can ask the GM any three questions, and they will answer you truthfully. On a 9-15, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
+      "description": "<p>You have been taught to channel the power of the spirits of the air, water, fire, and earth. When you <em>consult the spirits</em>, roll+WIS. On a  16-19, you can ask the GM any three questions, and they will answer you truthfully. On a 9-15, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -16016,7 +15988,7 @@
       "header_image": "Spiritwalkers of the Northern Forest.png"
     },
     {
-      "name": "Mystic of the Silver Cord",
+      "name": "Mystic",
       "crystals": {
         "requires": [],
         "provides": [
@@ -16026,7 +15998,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You have been trained by the Mystical Order of the Silver Cord, which has taught you to speak with the spirits of the dead. When you <em>commune with the spirits</em>, roll+WIS. On a  16-19, you can ask the GM any three questions about a deceased spirit, and they will answer you truthfully. On a 9-15, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
+      "description": "<p>You have been trained in a mystical, which has taught you to speak with the spirits of the dead. When you <em>commune with the spirits</em>, roll+WIS. On a  16-19, you can ask the GM any three questions about a deceased spirit, and they will answer you truthfully. On a 9-15, you can ask any one question, and the GM will answer it truthfully. On a miss, the spirits are offended, and you have made an enemy.</p>",
       "stats": [
         {
           "stat_name": "",
