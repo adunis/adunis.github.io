@@ -26182,8 +26182,8 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "gold",
-          "gold",
+          "cerulean",
+          "cerulean",
           "cerulean"
         ]
       },
@@ -26200,7 +26200,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "purple",
+          "green",
           "green",
           "green"
         ]
@@ -26220,7 +26220,7 @@
         "provides": [
           "purple",
           "purple",
-          "gold"
+          "purple"
         ]
       },
       "type": "core training",
@@ -26578,8 +26578,8 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red",
-          "red",
+          "purple",
+          "purple",
           "purple"
         ]
       },
@@ -26598,7 +26598,7 @@
         "provides": [
           "green",
           "green",
-          "orange"
+          "green"
         ]
       },
       "type": "core training",
