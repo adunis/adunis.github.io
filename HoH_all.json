@@ -7170,15 +7170,15 @@
       "header_image": "Oath of Penitence.png"
     },
     {
-      "name": "Monk training",
+      "name": "Monk",
       "crystals": {
         "requires": [],
         "provides": [
-          "blue"
+          "blue", "blue", "blue"
         ]
       },
-      "type": "training",
-      "description": "<p>You are a master of martial arts and have mastered the art of combat through discipline and meditation. Your training allows you to harness your inner energy to deliver powerful strikes, even when unarmed. When a Knight move asks you to roll +CHA or when you Parley on honest terms, you may roll +WIS instead. You also must follow this oath to gain these benefits:</p><ul><li>Poverty: Don’t carry items that are more worth than a bottle of cheap wine.</li><li>While not carrying any armor, you gain Armor 2.</li><li>Peace: Don’t use weapons beside monk weapons (your body and wooden weapons).</li><li>When you Hack and Slash with Monk weapons, you gain this additional option: You deal damage and the enemy loses their reaction</li></ul>",
+      "type": "core training",
+      "description": "<p>You are a master of martial arts and have mastered the art of combat through discipline and meditation. Your training allows you to harness your inner energy to deliver powerful strikes, even when unarmed. When a move asks you to roll +CHA or when you Parley on honest terms, you may roll +WIS instead. You also must follow this oath to gain these benefits:</p><ul><li>Poverty: Don’t carry items that are more worth than a bottle of cheap wine.</li><li>While not carrying any armor, you gain Armor 2.</li><li>Peace: Don’t use weapons beside monk weapons (your body and wooden weapons).</li><li>When you Hack and Slash with Monk weapons, you gain this additional option: You deal damage and the enemy loses their reaction</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -7196,7 +7196,7 @@
       "header_image": "Monk training.png"
     },
     {
-      "name": "Paladin training",
+      "name": "Art of the Duel",
       "crystals": {
         "requires": [],
         "provides": [
@@ -7204,7 +7204,7 @@
         ]
       },
       "type": "training",
-      "description": "<p>You are a holy warrior, dedicated to upholding justice and righteousness. You are also trained in the art of the duel, and are skilled at facing off against a single opponent in combat. When you are engaged in a 1 vs 1 duel, you may ask the GM for information about your opponent's weaknesses or vulnerabilities, and take +3 forward when acting on the information.</p>",
+      "description": "You are trained in the art of the duel, and are skilled at facing off against a single opponent in combat. When you are engaged in a 1 vs 1 duel, you may ask the GM for information about your opponent's weaknesses or vulnerabilities, and take +3 forward when acting on the information.",
       "stats": [
         {
           "stat_name": "",
