@@ -1368,6 +1368,7 @@ const generateCharacter = async (color = '') => {
     const species = data.filter(card => card.type && card.type.includes("species"));
     const destinies = data.filter(card => card.type && card.type.includes("destiny"));
     const items = data.filter(card => card.type && card.type.includes("item") && !card.type.includes("uncommon") && !card.type.includes("rare") && !card.type.includes("mythic"));
+    const weapons = data.filter(card => card.type && card.type.includes("weapon") && !card.type.includes("uncommon") && !card.type.includes("rare") && !card.type.includes("mythic"));
 
     const getRandomCards = (cards, count) => {
         const randomCards = [];
@@ -1398,7 +1399,9 @@ if (color === ''){
         ...getRandomCards(backgrounds, 1),
         ...getRandomCards(species, 1),
         ...getRandomCards(destinies, 1),
-        ...getRandomCards(items, 5)
+        ...getRandomCards(items, 4),
+        ...getRandomCards(weapons, 1)
+
     ];
 } else {
     return [
