@@ -13942,7 +13942,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common", "weapon"
       ],
       "moves": [
@@ -13960,7 +13960,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "50 coins"
+          "stat_value": "80 coins"
         }
       ],
       "geo_location": {
@@ -14369,7 +14369,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common", "weapon"
       ],
       "moves": [
@@ -14388,7 +14388,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "30 coins"
+          "stat_value": "200 coins"
         }
       ],
       "geo_location": {
@@ -15805,7 +15805,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "50 coins"
+          "stat_value": "80 coins"
         }
       ],
       "geo_location": {
@@ -15862,7 +15862,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "75 coins"
+          "stat_value": "300 coins"
         }
       ],
       "geo_location": {
@@ -15950,7 +15950,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "25 coins"
+          "stat_value": "70 coins"
         }
       ],
       "geo_location": {
@@ -16076,7 +16076,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "50 coins"
+          "stat_value": "160 coins"
         }
       ],
       "geo_location": {
@@ -16379,7 +16379,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "100 coins"
+          "stat_value": "300 coins"
         }
       ],
       "geo_location": {
@@ -16471,7 +16471,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "5 coins"
+          "stat_value": "30 coins"
         }
       ],
       "geo_location": {
@@ -16543,7 +16543,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [        {
@@ -16591,7 +16591,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [  {
@@ -16638,7 +16638,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -16686,7 +16686,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -16734,7 +16734,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common", "weapon"
       ],
       "moves": [ 
@@ -16767,7 +16767,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "50 coins"
+          "stat_value": "500 coins"
         }
       ],
       "geo_location": {
@@ -16867,7 +16867,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],   
          "moves": [
@@ -16916,7 +16916,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -16965,7 +16965,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common", "weapon"
       ], "moves":[{
         "moves_requirements": [
@@ -16989,7 +16989,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "20 coins"
+          "stat_value": "140 coins"
         }
       ],
       "geo_location": {
@@ -17032,7 +17032,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "50 coins"
+          "stat_value": "2000 coins"
         }
       ],
       "geo_location": {
@@ -17075,7 +17075,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "40 coins"
+          "stat_value": "2000 coins"
         }
       ],
       "geo_location": {
@@ -17157,7 +17157,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "40 coins"
+          "stat_value": "2000 coins"
         }
       ],
       "geo_location": {
@@ -19216,7 +19216,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "50 coins"
+          "stat_value": "2000 coins"
         }
       ],
       "geo_location": {
@@ -19258,7 +19258,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "200 coins"
+          "stat_value": "1500 coins"
         }
       ],
       "geo_location": {
@@ -19579,7 +19579,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -19621,7 +19621,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -19725,7 +19725,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "35 coins"
+          "stat_value": "70 coins"
         }
       ],
       "geo_location": {
@@ -19772,7 +19772,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "35 coins"
+          "stat_value": "40 coins"
         }
       ],
       "geo_location": {
@@ -19782,7 +19782,7 @@
       "header_image": "Mace.png"
     },
     {
-      "name": "Gambeson armor",
+      "name": "Gambeson",
       "crystals": {
         "requires": [],
         "provides": []
@@ -19805,7 +19805,7 @@
             ""
           ],
           "moves_name": "Protective ",
-          "moves_description": "<p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive).\n"
+          "moves_description": "<p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive) on the torso and arms.\n"
         }
       ],
       "stats": [
@@ -19815,7 +19815,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "40 coins"
+          "stat_value": "100 coins"
         }
       ],
       "geo_location": {
@@ -19825,7 +19825,7 @@
       "header_image": "Gambeson armor.png"
     },
     {
-      "name": "Plate armor",
+      "name": "Breastplate",
       "crystals": {
         "requires": [],
         "provides": []
@@ -19841,7 +19841,7 @@
             "red"
           ],
           "moves_name": "Deflect",
-          "moves_description": "<p>When you take damage from a slashing or piercing weapon while wearing plate armor, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by half.</p>"
+          "moves_description": "<p>When you take damage from a slashing or piercing weapon while wearing the breastplate, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by half.</p>"
         },
         {
           "moves_requirements": ["black", "black"],
@@ -19851,7 +19851,7 @@
         {
           "moves_requirements": [],
           "moves_name": "Protective",
-          "moves_description": "<p>When you wear plate armor, you get +3 armor (armor reduces the damage you receive).</p>"
+          "moves_description": "<p>When you wear the breastplate, you get +3 armor (armor reduces the damage you receive) when you are hit on the torso.</p>"
         }
       ],
       "stats": [
@@ -19871,7 +19871,7 @@
       "header_image": "Plate armor.png"
     },
     {
-      "name": "Chainmail armor",
+      "name": "Mail shirt",
       "crystals": {
         "requires": [],
         "provides": []
@@ -19897,7 +19897,7 @@
         {
           "moves_requirements": [],
           "moves_name": "Protective",
-          "moves_description": "You get +2 armor (armor reduces the damage you receive)."
+          "moves_description": "You get +2 armor (armor reduces the damage you receive) when receiving damage on the torso or arms."
         }
       ],
       "stats": [
@@ -19971,7 +19971,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -20018,7 +20018,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -20065,7 +20065,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "moves": [
@@ -20219,7 +20219,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Carry On:</p> <p>A large backpack or bag can hold up to 25 load of items. You can access any item in your backpack or bag with ease.</p></p>",
@@ -20246,7 +20246,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Store Away:</p> <p>A small crate, sack or chest can hold up to 20 load of items. You need to spend some time to find a specific item in your crate, sack or chest.</p></p>",
@@ -20273,7 +20273,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Store Away:</p> <p>A big crate, sack or chest can hold up to 40 load of items. You need to spend some time to find a specific item in your crate, sack or chest.</p></p>",
@@ -20300,7 +20300,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Poison Cure:</p> <p>When you drink antitoxin, cure one poison affecting you. The GM will tell you what effects the poison had and how you feel after taking the antitoxin.</p></p>",
@@ -20327,7 +20327,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Carry On:</p> <p>A small backpack or bag can hold up to 6 load of items. You can access any item in your backpack or bag with ease.</p></p>",
@@ -20354,7 +20354,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Carry On:</p> <p>A medium backpack or bag can hold up to 13 load of items. You can access any item in your backpack or bag with ease.</p></p>",
@@ -20381,7 +20381,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Dungeon rations are bland but nourishing.</p></p>",
@@ -20408,7 +20408,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Dwarven hardtack rations are tough and dry but filling.</p><p class=\"subtitle\">Stout Heart:</p><p>When you consume a ration, you can also choose to take +3 forward to your next defy danger roll with CON.</p></p>",
@@ -20676,7 +20676,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Elven bread rations are light and sweet but satisfying.</p><p class=\"subtitle\">Graceful Step:</p><p>When you consume a ration, you can also choose to take +3 forward to your next defy danger roll with DEX.</p></p>",
@@ -20784,7 +20784,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Bread and Butter:</p> <p>When you use 1 kg of wheat to make bread or other food, mark off the wheat and you have enough food for one person for a day.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of wheat with someone who needs it, mark off the wheat and take +1 forward to your next parley roll with them.</p></p>",
@@ -20811,7 +20811,7 @@
         "provides": []
       },
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "description": "<p><p class=\"subtitle\">Material:</p> <p>When you use 1 kg of steel to craft or repair a weapon or armor, mark off the steel and you have enough material for the job.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of steel with someone who needs it, mark off the steel and take +1 forward to your next parley roll with them.</p></p>",
@@ -26642,7 +26642,7 @@
       "name": "Pitchfork",
       "description": "A sturdy pitchfork with three tines, useful for moving hay or defending oneself.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26670,7 +26670,7 @@
       "name": "Shears",
       "description": "A pair of sharp shears for clipping wool from sheep.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26698,7 +26698,7 @@
       "name": "Mortar and pestle",
       "description": "A stone mortar and pestle for grinding herbs and spices.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26726,7 +26726,7 @@
       "name": "Hoe",
       "description": "A long-handled hoe for tilling the soil.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26754,7 +26754,7 @@
       "name": "Scythe",
       "description": "A curved blade attached to a long wooden handle, used for cutting down crops.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26782,7 +26782,7 @@
       "name": "Flint and steel",
       "description": "A small piece of flint and a piece of steel used to create sparks for starting fires.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26810,7 +26810,7 @@
       "name": "Sickle",
       "description": "A small curved blade attached to a wooden handle, used for cutting grain.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26838,7 +26838,7 @@
       "name": "Lantern",
       "description": "A metal lantern with a glass pane and a hook for hanging.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26866,7 +26866,7 @@
       "name": "Oil",
       "description": "A small bottle of oil for lubricating tools or lighting lamps.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26894,7 +26894,7 @@
       "name": "Bucket",
       "description": "A sturdy wooden bucket for carrying water or feed.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26922,7 +26922,7 @@
       "name": "Candles",
       "description": "A set of 5 beeswax candles for lighting.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26950,7 +26950,7 @@
       "name": "Bellows",
       "description": "A pair of bellows used to stoke the flames of a fire.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -26978,7 +26978,7 @@
       "name": "Fishing net",
       "description": "A large fishing net for catching fish in nearby rivers or lakes.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27006,7 +27006,7 @@
       "name": "Saddle",
       "description": "A simple leather saddle for riding a horse or donkey.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27034,7 +27034,7 @@
       "name": "Tongs",
       "description": "A pair of metal tongs for handling hot objects.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27062,7 +27062,7 @@
       "name": "Deer Antler",
       "description": "A large antler shed by a deer. It could be used as a decoration or crafted into something useful.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27090,7 +27090,7 @@
       "name": "Fishing Net",
       "description": "A large net used for catching fish. It could also be used for other purposes, like trapping small animals.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27118,7 +27118,7 @@
       "name": "Mushroom Spores",
       "description": "A vial of spores from a rare and delicious mushroom. If planted in the right conditions, they could grow into a valuable crop.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27146,7 +27146,7 @@
       "name": "Rabbit Foot",
       "description": "A lucky charm made from the foot of a rabbit. It is said to bring good fortune to its owner.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27174,7 +27174,7 @@
       "name": "Hunting Trap",
       "description": "A metal trap used for catching small animals. It could be dangerous if mishandled.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27199,10 +27199,66 @@
       }
     },
     {
+      "name": "Candlestick",
+      "description": "A metal or wooden holder used to hold candles for illumination.",
+      "type": [
+        "item",
+        "common"
+      ],
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "header_image": "Hunting Trap.png",
+      "moves": [],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "1 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "10 coins"
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      }
+    },
+    {
+      "name": "Chamber pot",
+      "description": "A portable container used as a toilet during the night, typically made of ceramic or metal.",
+      "type": [
+        "item",
+        "common"
+      ],
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "header_image": "Hunting Trap.png",
+      "moves": [],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "3 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "5 coins"
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      }
+    },
+    {
       "name": "Bear Grease",
       "description": "A jar of grease made from bear fat. It could be used as a lubricant or as a salve for treating minor injuries.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27230,7 +27286,7 @@
       "name": "Honeycomb",
       "description": "A delicious and sweet honeycomb harvested from a beehive. It could be used as a sweetener or as a trade item.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27258,7 +27314,7 @@
       "name": "Falconry Gloves",
       "description": "A pair of gloves used for handling and training falcons. They are made from sturdy leather and have reinforced fingertips.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27286,7 +27342,7 @@
       "name": "Wolf Pelt",
       "description": "A thick and warm pelt from a wolf. It could be used as a rug or as a piece of clothing.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27314,7 +27370,7 @@
       "name": "Horned Beetle",
       "description": "A large and dangerous beetle with sharp horns. It could be used as a test of courage or as a rare ingredient for alchemical concoctions.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27342,7 +27398,7 @@
       "name": "Tracking Powder",
       "description": "A fine powder made from crushed herbs and minerals. It could be used to track animals or as a component for certain spells.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27370,7 +27426,7 @@
       "name": "Flint and Steel",
       "description": "A small kit containing flint and steel for starting fires in the wilderness.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27398,7 +27454,7 @@
       "name": "Healing Herbs",
       "description": "A bundle of healing herbs that can be used to make a poultice or tea that heals 1d8 HP.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27426,7 +27482,7 @@
       "name": "Lockpicks",
       "description": "A small set of tools used for picking locks. Useful for getting past locked doors and chests.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27454,7 +27510,7 @@
       "name": "Cooking Pot",
       "description": "A small pot with a lid, useful for cooking meals over a campfire.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27482,7 +27538,7 @@
       "name": "Antitoxin",
       "description": "A vial of antitoxin that can be used to cure poison.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27510,7 +27566,7 @@
       "name": "Signal Whistle",
       "description": "A small whistle that can be used to signal for help or to communicate with allies at a distance.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27538,7 +27594,7 @@
       "name": "Chromatic Dust",
       "description": "A small bag of shimmering dust that, when thrown into the air, creates a colorful, distracting display.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27566,7 +27622,7 @@
       "name": "Mushroom Stew",
       "description": "A thick, chunky stew made from mushrooms and other forest ingredients. It's surprisingly tasty, but the smell might be off-putting to some.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27594,7 +27650,7 @@
       "name": "Fishing Net",
       "description": "A large, tangled fishing net. It might be useful for catching fish or trapping small animals.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27622,7 +27678,7 @@
       "name": "Lockpicks",
       "description": "A set of slim metal tools used for picking locks. They look well-used and slightly rusted.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27650,7 +27706,7 @@
       "name": "Spool of Twine",
       "description": "A small spool of rough twine. It might come in handy for tying things up or making traps.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27678,7 +27734,7 @@
       "name": "Bag of Mushrooms",
       "description": "A small bag filled with various mushrooms. They might have medicinal properties, or they might just be tasty.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27706,7 +27762,7 @@
       "name": "Rat Tail",
       "description": "A severed rat tail. It might be used in some kind of potion or spell.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27734,7 +27790,7 @@
       "name": "Horned Beetle Shell",
       "description": "A sturdy shell from a horned beetle. It could be used to fashion armor or other protective gear.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27762,7 +27818,7 @@
       "name": "Sack of Grain",
       "description": "A large sack filled with grain. It might be useful for feeding animals or for making bread.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27790,7 +27846,7 @@
       "name": "Bottle of Oil",
       "description": "A small bottle filled with oil. It might be used for lighting torches or for making things slippery.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27818,7 +27874,7 @@
       "name": "Furry Pelt",
       "description": "A shaggy pelt from some kind of small animal. It might be used for warmth or for making clothing.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27846,7 +27902,7 @@
       "name": "Venetian Glass Goblet",
       "description": "Crafted by the skilled glassblowers of Venice, this goblet features intricate patterns and vivid colors that are unique to the city's glass-making tradition.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27874,7 +27930,7 @@
       "name": "Bavarian Beer Stein",
       "description": "This sturdy mug is a staple in every Bavarian household, and is decorated with intricate designs that showcase the region's rich brewing culture.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27902,7 +27958,7 @@
       "name": "English Tea Set",
       "description": "This delicate tea set is made from the finest English bone china, and is adorned with classic floral patterns that are synonymous with the country's tea-drinking traditions.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27930,7 +27986,7 @@
       "name": "Celtic Knot Rug",
       "description": "Hand-woven by skilled artisans in the Celtic lands, this rug features intricate knotwork patterns that are steeped in ancient symbolism.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27958,7 +28014,7 @@
       "name": "Norman Tapestry",
       "description": "This exquisitely crafted tapestry tells the story of the Norman conquest of England, and is a prized possession in any Norman household.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -27986,7 +28042,7 @@
       "name": "Florentine Perfume Bottle",
       "description": "This ornate bottle is filled with a heady perfume that is unique to the Florentine region, and is coveted by nobles and merchants alike.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -28014,7 +28070,7 @@
       "name": "Parisian Chandelier",
       "description": "This grand chandelier is a masterpiece of Parisian craftsmanship, and features sparkling crystals that illuminate any room with a warm and inviting glow.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -28042,7 +28098,7 @@
       "name": "Viennese Clock",
       "description": "This elegant clock is a symbol of Viennese precision and craftsmanship, and features intricate mechanisms that keep time with unparalleled accuracy.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -28070,7 +28126,7 @@
       "name": "Swiss Cheese Board",
       "description": "This rustic cheese board is hand-carved from the finest Swiss wood, and is a staple in every Swiss household for serving up delicious cheeses and charcuterie.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
@@ -28098,7 +28154,7 @@
       "name": "Tuscan Olive Oil Flask",
       "description": "This rustic flask is filled with the finest olive oil from the rolling hills of Tuscany, and is a prized possession in any Tuscan kitchen.",
       "type": [
-        "type",
+        "item",
         "common"
       ],
       "crystals": {
