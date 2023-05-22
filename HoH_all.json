@@ -10167,7 +10167,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Honor.</p><p>You value your honor and reputation above all else. When you parley with someone while defending your honor or reputation, you may roll +STR instead of the usual stat.</p>",
+      "description": "You value your honor and reputation above all else. When you parley with someone while defending your honor or reputation, you may roll +STR instead of the usual stat.",
       "stats": [
         {
           "stat_name": "",
@@ -10401,7 +10401,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Savvy Business Sense.</p><p>When you spout lore about the economy or business, roll +WIS instead of +INT.</p></p>",
+      "description": "When you spout lore about the economy or business, roll +WIS instead of +INT.",
       "stats": [
         {
           "stat_name": "",
@@ -10739,7 +10739,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Culinary Tradition.</p><p>You have a deep knowledge of the culinary traditions and can prepare delicious and nourishing meals from even the most meager of ingredients. When you make a campfire meal, take +1 to the roll.</p>",
+      "description": "You have a deep knowledge of the culinary traditions and can prepare delicious and nourishing meals from even the most meager of ingredients. When you make a campfire meal, take +3 to the roll.",
       "stats": [
         {
           "stat_name": "",
@@ -10921,7 +10921,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Exotic Spices.</p><p>You have a knack for finding and identifying exotic spices from all corners of the world. When you use spices in cooking or alchemy, take +1 to your roll.</p>",
+      "description": "You have a knack for finding and identifying exotic spices from all corners of the world. When you use spices in cooking or alchemy, take +3 to your roll.",
       "stats": [
         {
           "stat_name": "",
@@ -11102,7 +11102,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Stealth and Camouflage.</p><p>You are skilled at remaining unnoticed and blending into your surroundings. When you defy danger or parley while using stealth or camouflage, take +1 to your roll.</p>",
+      "description": "You are skilled at remaining unnoticed and blending into your surroundings. When you defy danger or parley while using stealth or camouflage, take +1 to your roll.",
       "stats": [
         {
           "stat_name": "",
@@ -11154,7 +11154,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Black Market Connections.</p><p>You have connections to the black market trade in illegal magical substances and underground fight clubs. When you Spout Lore about the black market or fight clubs, take +5 to your roll.</p></p>",
+      "description": "You have connections to the black market trade in illegal magical substances and underground fight clubs. When you Spout Lore about the black market or fight clubs, take +5 to your roll.",
       "stats": [
         {
           "stat_name": "",
@@ -11180,7 +11180,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Smuggler.</p><p>You have connections with the underworld and are skilled at smuggling goods across borders. When you Spout Lore about the location of a hidden stash or a secret smuggling route, take +5 to your roll.</p>",
+      "description": "You have connections with the underworld and are skilled at smuggling goods across borders. When you Spout Lore about the location of a hidden stash or a secret smuggling route, take +5 to your roll.",
       "stats": [
         {
           "stat_name": "",
@@ -11206,7 +11206,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Canoe-Building Expertise.</p><p>You are skilled in the art of building canoes.  When you travel by water in your canoe, take +5 to any Defy Danger roll.</p>",
+      "description": "You are skilled in the art of building canoes.  When you travel by water in your canoe, take +5 to any Defy Danger roll.",
       "stats": [
         {
           "stat_name": "",
@@ -11388,7 +11388,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Magical Tattoos</p><p>You have intricate tattoos on your body that glow when you use magic or you become strongly emotional</p>",
+      "description": "You have intricate tattoos on your body that glow when you use magic or you become strongly emotional",
       "stats": [
         {
           "stat_name": "",
@@ -11998,7 +11998,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Whistling Cavalry</p><p>The Whistling Cavalry is a special army unit made up of skilled riders and archers who use their musical abilities to command and control their mounts in battle. When you fight from horseback, you can use your musical abilities to give orders to your mount. Your mount will obey your commands to the best of its ability, and you can use it to make attacks or move around the battlefield.</p></p>",
+      "description": "The Whistling Cavalry is a special army unit made up of skilled riders and archers who use their musical abilities to command and control their mounts in battle. When you fight from horseback, you can use your musical abilities to give orders to your mount. Your mount will obey your commands to the best of its ability, and you can use it to make attacks or move around the battlefield.",
       "stats": [
         {
           "stat_name": "",
@@ -12078,7 +12078,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Foraging Expertise</p><p>You are an expert in identifying and collecting rare herbs and plants that can be used for medicinal or magical purposes. You have a +2 bonus to Discern Realities rolls when looking for herbs or plants, and you can always find food and water for yourself and your companions, even in the most barren and desolate of places.</p></p><p>",
+      "description": "You are an expert in identifying and collecting rare herbs and plants that can be used for medicinal or magical purposes. You have a +2 bonus to Discern Realities rolls when looking for herbs or plants, and you can always find food and water for yourself and your companions, even in the most barren and desolate of places.",
       "stats": [
         {
           "stat_name": "",
