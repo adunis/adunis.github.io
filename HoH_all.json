@@ -10163,7 +10163,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "black"
+          "orange"
         ]
       },
       "type": "training",
@@ -11154,7 +11154,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Black Market Connections.</p><p>You have connections to the black market trade in illegal magical substances and underground fight clubs. When you Spout Lore about the black market or fight clubs, take +1 to your roll.</p></p>",
+      "description": "<p class=\"subtitle\">Black Market Connections.</p><p>You have connections to the black market trade in illegal magical substances and underground fight clubs. When you Spout Lore about the black market or fight clubs, take +5 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -11180,7 +11180,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Smuggler.</p><p>You have connections with the underworld and are skilled at smuggling goods across borders. When you Spout Lore about the location of a hidden stash or a secret smuggling route, take +1 to your roll.</p>",
+      "description": "<p><p class=\"subtitle\">Smuggler.</p><p>You have connections with the underworld and are skilled at smuggling goods across borders. When you Spout Lore about the location of a hidden stash or a secret smuggling route, take +5 to your roll.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -11206,7 +11206,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Canoe-Building Expertise.</p><p>You are skilled in the art of building canoes.  When you travel by water in your canoe, take +1 forward to any Defy Danger roll.</p>",
+      "description": "<p><p class=\"subtitle\">Canoe-Building Expertise.</p><p>You are skilled in the art of building canoes.  When you travel by water in your canoe, take +5 to any Defy Danger roll.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -11232,7 +11232,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Pearl Diver.</p><p>You are skilled in the art of diving for pearls and other valuable treasures. When you Defy Danger to navigate treacherous underwater environments, take +1 to your roll.</p>",
+      "description": "<p class=\"subtitle\">Pearl Diver.</p><p>You are skilled in the art of diving for pearls and other valuable treasures. When you Defy Danger to navigate treacherous underwater environments, take +5 to your roll.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -11284,7 +11284,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Mysterious.</p><p>When you attempt to hide your true intentions or motives, you may roll +CHA to do so.</p>",
+      "description": "When you attempt to hide your true intentions or motives, you may roll +COS to do so." ,
       "stats": [
         {
           "stat_name": "",
@@ -12104,7 +12104,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Rare Work Ethic</p><p>You are known for your rare work ethic and your attention to detail. When you spend time working on a project, you may choose to take +1 ongoing to any rolls you make related to that project. However, you must also choose one of the following: <ul><li>You work yourself to exhaustion, take -1 ongoing to all rolls until you rest</li><li>You neglect other duties or responsibilities, and may incur the wrath of someone who was counting on you</li></ul></p>",
+      "description": "<p class=\"subtitle\">Rare Work Ethic</p><p>You are known for your rare work ethic and your attention to detail. When you spend time working on a project, you may choose to take +3 ongoing to any rolls you make related to that project. However, you must also choose one of the following: <ul><li>You work yourself to exhaustion, take -1 ongoing to all rolls until you rest</li><li>You neglect other duties or responsibilities, and may incur the wrath of someone who was counting on you</li></ul></p>",
       "stats": [
         {
           "stat_name": "",
@@ -13435,7 +13435,7 @@
         ]
       },
       "type": "species",
-      "description": "<p><p class=\"subtitle\">Camouflage</p> When you stay still in a natural environment, you blend in with your surroundings and become nearly invisible.</p><p><p class=\"subtitle\">Quick Reflexes:</p>You have lightning-fast reflexes. When you act under fire, take +1 ongoing.</p><p><p class=\"subtitle\">Predator's Instinct:</p> You have an innate sense of your prey\\'s movements. When you track a creature through the wilderness, take +1 ongoing to discern realities about it.</p>",
+      "description": "<p><p class=\"subtitle\">Camouflage</p> When you stay still in a natural environment, you blend in with your surroundings and become nearly invisible.</p><p><p class=\"subtitle\">Quick Reflexes:</p>You have lightning-fast reflexes. When you act under fire, take +1 ongoing.</p><p><p class=\"subtitle\">Predator's Instinct:</p> You have an innate sense of your prey\\'s movements. When you track a creature through the wilderness, take +3 ongoing to discern realities about it.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -13532,7 +13532,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you see the effects of an arcane spell, you can ask the GM the name of the spell and its effects. You take +1 Forward to act on the answers.</p>",
+      "description": "<p>When you see the effects of an arcane spell, you can ask the GM the name of the spell and its effects. You take +3 Forward to act on the answers.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -20139,7 +20139,7 @@
         "gear",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Bookworm:</p> <p>When you spout lore about something and your bag of books contains just the right book for the subject, mark off a use and take +1 to your roll.</p></p>",
+      "description": "<p><p class=\"subtitle\">Bookworm:</p> <p>When you spout lore about something and your bag of books contains just the right book for the subject, mark off a use and take +3 to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20167,7 +20167,7 @@
         "gear",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Friendly Smoke:</p> <p>When you share halfling pipeleaf with someone, expend two uses and take +1 forward to parley with them. The GM might also tell you something interesting or useful that they reveal during the conversation.</p></p>",
+      "description": "<p><p class=\"subtitle\">Friendly Smoke:</p> <p>When you share halfling pipeleaf with someone, expend two uses and take +3 forward to parley with them. The GM might also tell you something interesting or useful that they reveal during the conversation.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20411,7 +20411,7 @@
         "type",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Dwarven hardtack rations are tough and dry but filling.</p><p class=\"subtitle\">Stout Heart:</p><p>When you consume a ration, you can also choose to take +1 forward to your next defy danger roll with CON.</p></p>",
+      "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Dwarven hardtack rations are tough and dry but filling.</p><p class=\"subtitle\">Stout Heart:</p><p>When you consume a ration, you can also choose to take +3 forward to your next defy danger roll with CON.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20679,7 +20679,7 @@
         "type",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Elven bread rations are light and sweet but satisfying.</p><p class=\"subtitle\">Graceful Step:</p><p>When you consume a ration, you can also choose to take +1 forward to your next defy danger roll with DEX.</p></p>",
+      "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you consume a ration, mark off a use and you don’t need to eat for a day. Elven bread rations are light and sweet but satisfying.</p><p class=\"subtitle\">Graceful Step:</p><p>When you consume a ration, you can also choose to take +3 forward to your next defy danger roll with DEX.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20706,7 +20706,7 @@
         "service",
         "uncommon"
       ],
-      "description": "<p><p class=\"subtitle\">Nourishment:</p> <p>When you enjoy a hearty meal for one, you heal 2 damage and remove one debility of your choice.</p><p class=\"subtitle\">Comfort:</p><p>When you enjoy a hearty meal for one, you can also choose to take +1 forward to your next parley or discern realities roll.</p></p>",
+      "description": "<p><p class=\"subtitle\">Nourishment:</p> <p>When you enjoy a hearty meal for one, you heal 2 damage and remove one debility of your choice.</p><p class=\"subtitle\">Comfort:</p><p>When you enjoy a hearty meal for one, you can also choose to take +3 forward to your next parley or discern realities roll.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20733,7 +20733,7 @@
         "service",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you share a poor meal for a family, you and up to three others don’t need to eat for a day. A poor meal for a family is meager and bland but enough to survive.</p><p class=\"subtitle\">Hardship:</p><p>When you share a poor meal for a family, you can also choose to take +1 forward to your next defy danger roll with WIS.</p></p>",
+      "description": "<p><p class=\"subtitle\">Sustenance:</p> <p>When you share a poor meal for a family, you and up to three others don’t need to eat for a day. A poor meal for a family is meager and bland but enough to survive.</p><p class=\"subtitle\">Hardship:</p><p>When you share a poor meal for a family, you can also choose to take +5 forward to your next defy danger roll with WIS.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20760,7 +20760,7 @@
         "service",
         "rare"
       ],
-      "description": "<p><p class=\"subtitle\">Nourishment:</p> <p>When you partake in a feast, you heal 4 damage and remove two debilities of your choice.</p><p class=\"subtitle\">Celebration:</p><p>When you partake in a feast, you can also choose to take +1 forward to your next carouse or aid or interfere roll.</p></p>",
+      "description": "<p><p class=\"subtitle\">Nourishment:</p> <p>When you partake in a feast, you heal 4 damage and remove two debilities of your choice.</p><p class=\"subtitle\">Celebration:</p><p>When you partake in a feast, you can also choose to take +5 forward to your next carouse or aid or interfere roll.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20778,7 +20778,7 @@
       "header_image": "A Feast.png"
     },
     {
-      "name": "1 kg of Wheat",
+      "name": "Sack of Wheat",
       "crystals": {
         "requires": [],
         "provides": []
@@ -20805,7 +20805,7 @@
       "header_image": "1 kg of Wheat.png"
     },
     {
-      "name": "1 kg of Steel",
+      "name": "Steel bars",
       "crystals": {
         "requires": [],
         "provides": []
@@ -20832,7 +20832,7 @@
       "header_image": "1 kg of Steel.png"
     },
     {
-      "name": "1 kg of Gold",
+      "name": "Gold bars",
       "crystals": {
         "requires": [],
         "provides": []
