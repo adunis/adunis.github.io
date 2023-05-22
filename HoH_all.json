@@ -2539,7 +2539,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "When you see the effects of divine magic, and you can ask the GM which deity granted the spell and its effects. You take +1 Forward to act on the answers.",
+      "description": "When you see the effects of divine magic, and you can ask the GM which deity granted the spell and its effects. You take +3 forward to act on the answers.",
       "stats": [
         {
           "stat_name": "",
@@ -4379,7 +4379,7 @@
         ]
       },
       "type": "training",
-      "description": "<p>You were trained in a temple of a certain deity to become their religious enforcers. When you condemn someone for their words or deeds according to the precepts of your religion, they feel true shame. They may deny it or try to hide it, but your conviction always cuts deep; you take +1 Forward with them.</p>",
+      "description": "<p>You were trained in a temple of a certain deity to become their religious enforcers. When you condemn someone for their words or deeds according to the precepts of your religion, they feel true shame. They may deny it or try to hide it, but your conviction always cuts deep; you take +3 forward with them.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -4405,7 +4405,7 @@
         ]
       },
       "type": "training",
-      "description": "<p>You were trained in a temple of a certain deity to become their religious recruiters. When you instruct someone in their conduct or beliefs according to the precepts of your religion, they will genuinely consider your counsel. If they end up following your advice, they take +1 Forward.</p>",
+      "description": "<p>You were trained in a temple of a certain deity to become their religious recruiters. When you instruct someone in their conduct or beliefs according to the precepts of your religion, they will genuinely consider your counsel. If they end up following your advice, they take +3 forward.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -4942,7 +4942,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you use your impeccable good-looks and considerable charms to your advantage, take +1 forward to Parley with anyone who respects your appearance.</p>",
+      "description": "<p>When you use your impeccable good-looks and considerable charms to your advantage, take +3 forward to Parley with anyone who respects your appearance.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -5047,7 +5047,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you Make Camp, those who listen to your soothing songs and stories either heal an additional 1d6 damage or take +1 Forward the next day.</p>",
+      "description": "<p>When you Make Camp, those who listen to your soothing songs and stories either heal an additional 1d6 damage or take +3 forward the next day.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -5151,7 +5151,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You can Aid or Interfere with just a few impactful words. You also take +1 forward and your allies take +1 forward. You still risk the consequences of their action.</p>",
+      "description": "<p>You can Aid or Interfere with just a few impactful words. You also take +3 forward and your allies take +3 forward. You still risk the consequences of their action.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -5578,7 +5578,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p><p>The College of Lute and Strings: Melody of Madness is located in the bustling city of Venice, renowned for its rich artistic heritage. The college is housed in a grand Venetian palace, where students of music come to hone their craft.</p><p>When you play a frenetic and chaotic tune on your lute, roll+Cha. On a 16-19, choose two from the list below. On a 9-15, choose one:</p><ul><li>A single foe becomes confused and attacks anyone nearby</li><li>Other foes are momentarily stunned by the power of your music</li><li>All allies within earshot are inspired and gain +1 forward</li></ul><p>On a miss, the melody of madness backfires, causing harm to yourself or your allies.</p></p>",
+      "description": "<p><p>The College of Lute and Strings: Melody of Madness is located in the bustling city of Venice, renowned for its rich artistic heritage. The college is housed in a grand Venetian palace, where students of music come to hone their craft.</p><p>When you play a frenetic and chaotic tune on your lute, roll+Cha. On a 16-19, choose two from the list below. On a 9-15, choose one:</p><ul><li>A single foe becomes confused and attacks anyone nearby</li><li>Other foes are momentarily stunned by the power of your music</li><li>All allies within earshot are inspired and gain +3 forward</li></ul><p>On a miss, the melody of madness backfires, causing harm to yourself or your allies.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -5690,7 +5690,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p><p>The College of Blacksmithing: Repairer is located in Nuremberg, Germany, a city famous for its skilled blacksmiths in the year 1444. As a student of this college, you have honed your skills in repairing and maintaining weapons and armor. When you use this feature, roll+Str. On a 16-19, you repair and maintain all of your companions' weapons and armor, granting them +1 forward for using a weapon and +1 forward for using a shield or an armor. On a 9-15, you still repair and maintain, but attract unwanted attention or complications. On a miss, your repairs may be subpar, causing harm or failure during battle.</p></p>",
+      "description": "<p><p>The College of Blacksmithing: Repairer is located in Nuremberg, Germany, a city famous for its skilled blacksmiths in the year 1444. As a student of this college, you have honed your skills in repairing and maintaining weapons and armor. When you use this feature, roll+Str. On a 16-19, you repair and maintain all of your companions' weapons and armor, granting them +3 forward for using a weapon and +3 forward for using a shield or an armor. On a 9-15, you still repair and maintain, but attract unwanted attention or complications. On a miss, your repairs may be subpar, causing harm or failure during battle.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -5746,7 +5746,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>The College of Tea and Coffee Brewing: Elixir of Energy is located in the region of Bavaria, Germany. This college specializes in creating invigorating potions that grant temporary bursts of energy. When you brew an Elixir of Energy and give it to an ally, they gain +1 forward to any dice roll for the next 24 hours and increased energy. The elixir can be used only once per 24 hours.</p>",
+      "description": "<p>The College of Tea and Coffee Brewing: Elixir of Energy is located in the region of Bavaria, Germany. This college specializes in creating invigorating potions that grant temporary bursts of energy. When you brew an Elixir of Energy and give it to an ally, they gain +3 forward to any dice roll for the next 24 hours and increased energy. The elixir can be used only once per 24 hours.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -6396,7 +6396,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>While engaged in a conflict, you may spend a Readiness against an enemy, 1-for-1, to:</p><ul><li>Predict their movements: Take the 16-19 result on Defy Danger.</li><li>Know their thoughts: Ask the GM “what’s my opponent’s next move?” and take +1 Forward to act on the answers.</li><li>Strike with precision: You deal half your damage (rounded up and ignoring armour) and physically maim them - sever a limb, shatter a bone, slash an artery.</li></ul>",
+      "description": "<p>While engaged in a conflict, you may spend a Readiness against an enemy, 1-for-1, to:</p><ul><li>Predict their movements: Take the 16-19 result on Defy Danger.</li><li>Know their thoughts: Ask the GM “what’s my opponent’s next move?” and take +3 forward to act on the answers.</li><li>Strike with precision: You deal half your damage (rounded up and ignoring armour) and physically maim them - sever a limb, shatter a bone, slash an artery.</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -6530,7 +6530,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you suffer a debility (even through Bloody Aegis), you take +1 Forward against whatever caused it.</p>",
+      "description": "<p>When you suffer a debility (even through Bloody Aegis), you take +3 forward against whatever caused it.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -6634,7 +6634,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you suffer a debility (even through Bloody Aegis), you take +1 Forward against whatever caused it.</p>",
+      "description": "<p>When you suffer a debility (even through Bloody Aegis), you take +3 forward against whatever caused it.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -6660,7 +6660,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>Whenever something comes to your attention that opposes your virtues, you take +1 Forward to put an end to it.</p>",
+      "description": "<p>Whenever something comes to your attention that opposes your virtues, you take +3 forward to put an end to it.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -6686,7 +6686,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you order an ally to overcome their dire straits, roll+CHA. On a 16-19, they shake it off, break free, struggle through, or whatnot. On a 9-15, a PC will take +1 Forward to overcome it, while an NPC will take some time to overcome it.</p>",
+      "description": "<p>When you order an ally to overcome their dire straits, roll+CHA. On a 16-19, they shake it off, break free, struggle through, or whatnot. On a 9-15, a PC will take +3 forward to overcome it, while an NPC will take some time to overcome it.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -6868,7 +6868,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "When you lead the charge into combat, those you lead take +1 Forward.",
+      "description": "When you lead the charge into combat, those you lead take +3 forward.",
       "stats": [
         {
           "stat_name": "",
@@ -6946,7 +6946,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you give an NPC an order based on your righteous authority, roll+CHA. On a 7+, the GM chooses one:</p><ul><li>They’ll do what you say.</li><li>They’ll back away cautiously, then flee.</li><li>They’ll attack you.</li></ul><p>On a 16-19, you also take +1 Forward against them. On a 1-8, in addition to whatever the GM says, you take -1 Forward against them.</p>",
+      "description": "<p>When you give an NPC an order based on your righteous authority, roll+CHA. On a 7+, the GM chooses one:</p><ul><li>They’ll do what you say.</li><li>They’ll back away cautiously, then flee.</li><li>They’ll attack you.</li></ul><p>On a 16-19, you also take +3 forward against them. On a 1-8, in addition to whatever the GM says, you take -1 Forward against them.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -7204,7 +7204,7 @@
         ]
       },
       "type": "training",
-      "description": "<p>You are a holy warrior, dedicated to upholding justice and righteousness. You are also trained in the art of the duel, and are skilled at facing off against a single opponent in combat. When you are engaged in a 1 vs 1 duel, you may ask the GM for information about your opponent's weaknesses or vulnerabilities, and take +1 forward when acting on the information.</p>",
+      "description": "<p>You are a holy warrior, dedicated to upholding justice and righteousness. You are also trained in the art of the duel, and are skilled at facing off against a single opponent in combat. When you are engaged in a 1 vs 1 duel, you may ask the GM for information about your opponent's weaknesses or vulnerabilities, and take +3 forward when acting on the information.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -7534,7 +7534,7 @@
       "header_image": "Deathless.png"
     },
     {
-      "name": "KeenEyed",
+      "name": "Keen Eyed",
       "crystals": {
         "requires": [
           "red"
@@ -7568,7 +7568,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>Your grace and wit take people by surprise. When you catch someone off-guard with your quick reflexes or thinking, you take +1 Forward against them.</p>",
+      "description": "<p>Your grace and wit take people by surprise. When you catch someone off-guard with your quick reflexes or thinking, you take +3 forward against them.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -7634,34 +7634,6 @@
       "header_image": "Riddle of Steel.png"
     },
     {
-      "name": "Arcane Spellcaster",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "cerulean",
-          "cerulean",
-          "cerulean"
-        ]
-      },
-      "type": "core training",
-      "description": "You have extensive training in the arcane arts, and can draw upon your knowledge to gain insight into magical phenomena. When you encounter a magical effect or creature, you may roll+Int. On a 16-19, you understand the nature and origin of the magic, and gain +1 forward to discern realities or spout lore related to it. On a 9-15, you have some knowledge of the magic, but it is incomplete or outdated, and you only gain +1 forward if you act on the information immediately. On a miss, the magic overwhelms you, and you suffer -1 ongoing to all rolls related to magic until you receive a moment of rest or a counteracting spell.",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Arcane Training.png"
-    },
-    {
       "name": "Pyromancy",
       "crystals": {
         "requires": [
@@ -7670,7 +7642,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p><p>When you call upon the power of fire to achieve your goals, roll+Cha. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>You create an explosion, dealing damage to all creatures in the area</li><li>You shape flames to your will, directing them to move or change shape as you desire</li><li>You ignite a nearby object or surface, causing it to burst into flames</li><li>You intimidate or frighten others with displays of fiery power</li><li>You protect yourself from fire and heat</li></ul><p>On a miss, the fire you call upon burns out of control, causing harm to yourself or your allies.</p></p> ",
+      "description": "<p><p>When you call upon the power of fire to achieve your goals, spend 1 mp and roll+Cha. On a 16-19, choose three from the list below. On a 9-15, choose two:</p><ul><li>You create an explosion, dealing damage to all creatures in the area</li><li>You shape flames to your will, directing them to move or change shape as you desire</li><li>You ignite a nearby object or surface, causing it to burst into flames</li><li>You intimidate or frighten others with displays of fiery power</li><li>You protect yourself from fire and heat</li></ul><p>On a miss, the fire you call upon burns out of control, causing harm to yourself or your allies.</p></p> ",
       "stats": [
         {
           "stat_name": "",
@@ -7996,7 +7968,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you and an ally flank an enemy and you make an attack against them, choose one:</p><ul><li>You create an advantage or an opening; your ally takes +1 Forward to act on it.</li><li>You reduce their armour by 1 until they repair it.</li><li>You take something they’re carrying; now it’s yours.</li></ul>",
+      "description": "<p>When you and an ally flank an enemy and you make an attack against them, choose one:</p><ul><li>You create an advantage or an opening; your ally takes +3 forward to act on it.</li><li>You reduce their armour by 1 until they repair it.</li><li>You take something they’re carrying; now it’s yours.</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -8660,7 +8632,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you take time to make a plan to steal something, name the thing you want to steal and ask the GM these questions. You and your allies take +1 Forward when acting on the answers.</p><ul><li>Who will notice it’s missing?</li><li>What’s its most powerful defense?</li><li>Who will come after it?</li><li>Who else wants it?</li></ul>",
+      "description": "<p>When you take time to make a plan to steal something, name the thing you want to steal and ask the GM these questions. You and your allies take +3 forward when acting on the answers.</p><ul><li>Who will notice it’s missing?</li><li>What’s its most powerful defense?</li><li>Who will come after it?</li><li>Who else wants it?</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -9156,7 +9128,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you attempt to counter an arcane spell targeting you as it is being cast, roll+INT. On a 16-19, choose 2. On a 9-15, choose 1.</p><ul><li>The spell deals no damage.</li><li>The spell’s effects are superficial and temporary.</li><li>You take +1 Forward against the caster.</li></ul>",
+      "description": "<p>When you attempt to counter an arcane spell targeting you as it is being cast, roll+INT. On a 16-19, choose 2. On a 9-15, choose 1.</p><ul><li>The spell deals no damage.</li><li>The spell’s effects are superficial and temporary.</li><li>You take +3 forward against the caster.</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -9234,7 +9206,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When a character comes to you for guidance and you tell them what you honestly think is best, they take +1 Forward to follow your advice and do as you say.</p>",
+      "description": "<p>When a character comes to you for guidance and you tell them what you honestly think is best, they take +3 forward to follow your advice and do as you say.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -9753,7 +9725,7 @@
       "header_image": "Illumination Magic.png"
     },
     {
-      "name": "Thieves Guild",
+      "name": "Thief",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10007,7 +9979,7 @@
         ]
       },
       "type": "species",
-      "description": "<p><p><p class=\"subtitle\">Mountain-Born.</p><p>You are acclimated to high altitudes and cold climates. You take no penalties for elevation and are able to keep warm in cold environments without extra gear.</p><p class=\"subtitle\">Unyielding.</p><p>When you take damage and would be knocked prone, you may instead remain standing and take +1 forward to your next attack.</p><p class=\"subtitle\">Stonework.</p><p>When you discern realities or spout lore about stonework, take +1 to your roll. When you defy danger in a stonework environment, you may take +1 forward to your roll.</p></p>",
+      "description": "<p><p><p class=\"subtitle\">Mountain-Born.</p><p>You are acclimated to high altitudes and cold climates. You take no penalties for elevation and are able to keep warm in cold environments without extra gear.</p><p class=\"subtitle\">Unyielding.</p><p>When you take damage and would be knocked prone, you may instead remain standing and take +3 forward to your next attack.</p><p class=\"subtitle\">Stonework.</p><p>When you discern realities or spout lore about stonework, take +1 to your roll. When you defy danger in a stonework environment, you may take +3 forward to your roll.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10068,7 +10040,7 @@
         {
           "moves_requirements": [],
           "moves_name": "Curse of the Diseases",
-          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, you may take +1 Forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding."
+          "moves_description": "The gods have cursed humanity with a plethora of diseases that affect both body and mind. When you first contract a disease, you may take +3 forward when attempting to Parley with someone who is also currently suffering from a disease. Your shared experience with illness creates a bond of empathy and understanding."
         }
       ],
       "geo_location": {
@@ -10216,7 +10188,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you hack and slash with a rapier, dagger, or other precise blade, you can choose to deal your damage or roll+Dex. On a 16-19 choose two. On a 7–9 choose one.</p><ul><li>You avoid their attack, you don't have to roll for damage</li><li>You deal your damage+1d4</li><li>You create an advantage, +1 forward to you or an ally acting on it</li><li>You impress, dismay, or frighten your enemy</li></ul>",
+      "description": "<p>When you hack and slash with a rapier, dagger, or other precise blade, you can choose to deal your damage or roll+Dex. On a 16-19 choose two. On a 7–9 choose one.</p><ul><li>You avoid their attack, you don't have to roll for damage</li><li>You deal your damage+1d4</li><li>You create an advantage, +3 forward to you or an ally acting on it</li><li>You impress, dismay, or frighten your enemy</li></ul>",
       "stats": [
         {
           "stat_name": "",
@@ -10294,7 +10266,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Bushido Code.</p><p>You live by the strict code of the samurai, which emphasizes honor, loyalty, and bravery. You gain +1 to damage when attacking an opponent in single combat, and +1 to AC when defending against multiple foes.</p><p class=\"subtitle\">Katana Mastery.</p><p>You are trained in the use of the katana, a deadly and elegant sword. You gain +1 to hack and slash rolls when wielding a katana.</p><p class=\"subtitle\">Seppuku.</p><p>If you fail a roll and suffer a catastrophic failure, you may choose to perform seppuku (ritual suicide) instead. Your character dies, but the rest of the party gains a +1 forward.</p></p>",
+      "description": "<p><p class=\"subtitle\">Bushido Code.</p><p>You live by the strict code of the samurai, which emphasizes honor, loyalty, and bravery. You gain +1 to damage when attacking an opponent in single combat, and +1 to AC when defending against multiple foes.</p><p class=\"subtitle\">Katana Mastery.</p><p>You are trained in the use of the katana, a deadly and elegant sword. You gain +1 to hack and slash rolls when wielding a katana.</p><p class=\"subtitle\">Seppuku.</p><p>If you fail a roll and suffer a catastrophic failure, you may choose to perform seppuku (ritual suicide) instead. Your character dies, but the rest of the party gains a +3 forward.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10320,7 +10292,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Berserker Rage.</p><p>When you enter a frenzied rage, you gain +1 to damage and +1 to hack and slash rolls. You also take +1 damage from all sources.</p>",
+      "description": "When you enter a frenzied rage, you gain +3 to damage and +3 to hack and slash rolls. You also take +3 damage from all sources.",
       "stats": [
         {
           "stat_name": "",
@@ -10398,7 +10370,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Flamenco Dance.</p><p>When you perform the flamenco dance, you and your allies gain +1 forward to parley or to any roll that involves persuasion or intimidation.</p><p class=\"subtitle\">Hot-blooded.</p><p>When you attack an enemy, you may choose to deal extra damage but also expose yourself to their attack.</p></p>",
+      "description": "When you perform the flamenco dance, you and your allies gain +3 forward to parley or to any roll that involves persuasion or intimidation.",
       "stats": [
         {
           "stat_name": "",
@@ -10476,7 +10448,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Fearless.</p><p>You have +1 ongoing to defy danger or hack and slash when you are facing a powerful or intimidating foe.</p><p class=\"subtitle\">Iron Will.</p><p>When you face mental or emotional stress, you may choose to endure it and gain +1 forward to your next action, but also mark experience if you fail.</p></p>",
+      "description": "<p><p class=\"subtitle\">Fearless.</p><p>You have +1 ongoing to defy danger or hack and slash when you are facing a powerful or intimidating foe.</p><p class=\"subtitle\">Iron Will.</p><p>When you face mental or emotional stress, you may choose to endure it and gain +3 forward to your next action, but also mark experience if you fail.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10658,7 +10630,7 @@
         ]
       },
       "type": "training",
-      "description": "You gain +1 forward when you attempt to mediate a conflict or negotiate a treaty between different factions or people.",
+      "description": "You gain +3 forward when you attempt to mediate a conflict or negotiate a treaty between different factions or people.",
       "stats": [
         {
           "stat_name": "",
@@ -10684,7 +10656,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Skilled Farmers.</p><p>You have expertise in raising animals and growing crops. You can identify the best quality livestock and crops, and you can care for them to ensure they remain healthy and productive. You gain +1 forward when you act on information you have learned about animals or crops.</p><p class=\"subtitle\">Livestock Trade.</p><p>You have connections in the livestock industry, and you can trade in high-quality meats. When you try to sell livestock, you gain +1 forward to your roll. You also have advantage on saving throws against attempts to steal your livestock.</p></p>",
+      "description": "<p><p class=\"subtitle\">Skilled Farmers.</p><p>You have expertise in raising animals and growing crops. You can identify the best quality livestock and crops, and you can care for them to ensure they remain healthy and productive. You gain +3 forward when you act on information you have learned about animals or crops.</p><p class=\"subtitle\">Livestock Trade.</p><p>You have connections in the livestock industry, and you can trade in high-quality meats. When you try to sell livestock, you gain +3 forward to your roll. You also have advantage on saving throws against attempts to steal your livestock.</p></p>",
       "stats": [
         {
           "stat_name": "",
@@ -10736,7 +10708,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Textile Industry.</p><p>You have extensive knowledge of the textile industry of Lucca and can identify the quality and properties of any fabric or clothing. When you spout lore or discern realities about textiles or clothing, take +1 to your roll.</p>",
+      "description": "You have extensive knowledge of the textile industry of Lucca and can identify the quality and properties of any fabric or clothing. When you spout lore or discern realities about textiles or clothing, take +3 to your roll.",
       "stats": [
         {
           "stat_name": "",
@@ -10762,7 +10734,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Mystical Artistry.</p><p>You are a master of the mystical arts, and your artistry reflects this. When you spout lore or discern realities about mystical or magical subjects, take +1 to your roll.</p>",
+      "description": "You are a master of the mystical arts, and your artistry reflects this. When you spout lore or discern realities about mystical or magical subjects, take +3 to your roll.",
       "stats": [
         {
           "stat_name": "",
@@ -10788,7 +10760,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Fruitful Harvest.</p><p>You are a skilled farmer and have learned to cultivate delicious and nutritious fruits and vegetables. When you gather food in the wild, you always find enough for yourself and one other person, and it is always delicious and nutritious.</p></p>",
+      "description": "You are a skilled farmer and have learned to cultivate delicious and nutritious fruits and vegetables. When you gather food in the wild, you always find enough for yourself and one other person, and it is always delicious and nutritious.",
       "stats": [
         {
           "stat_name": "",
@@ -10814,7 +10786,7 @@
         ]
       },
       "type": "training",
-      "description": "You have been trained in the art of dragon hunting by the Milanesi Dragonslayers. When you face a dragon in combat, take +1 forward to your attack rolls and +1 to your damage rolls.",
+      "description": "You have been trained in the art of dragon hunting by the Milanesi Dragonslayers. When you face a dragon in combat, take +3 forward to your attack rolls and +1 to your damage rolls.",
       "stats": [
         {
           "stat_name": "",
@@ -10840,7 +10812,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Fashionable Gear.</p><p>You have access to the finest fabrics and the most skilled tailors in Milan. Your armor and weapons are always stylish and fashionable, giving you +1 forward to any move that involves impressing someone with your appearance.</p></p>",
+      "description": "You have access to the finest fabrics and the most skilled tailors in Milan. Your armor and weapons are always stylish and fashionable, giving you +3 forward to any move that involves impressing someone with your appearance.",
       "stats": [
         {
           "stat_name": "",
@@ -10995,7 +10967,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Wine Connoisseur.</p><p>You are an expert in the art of wine-making and have an extensive knowledge of the vintages produced all over the world. When you share a bottle of wine with someone, take +1 to your Parley roll.</p>",
+      "description": "You are an expert in the art of wine-making and have an extensive knowledge of the vintages produced all over the world. When you share a bottle of wine with someone, take +1 to your Parley roll.",
       "stats": [
         {
           "stat_name": "",
@@ -11307,7 +11279,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Ferocious Charge</p><p>When you charge into battle, you can choose to deal extra damage equal to your level, but suffer a -1 ongoing penalty to your damage rolls until you take a moment to catch your breath.</p></p>",
+      "description": "When you charge into battle, you can choose to deal extra damage equal to your Strenght, but suffer a -1 ongoing penalty to your damage rolls until you take a moment to catch your breath.",
       "stats": [
         {
           "stat_name": "",
@@ -13777,7 +13749,7 @@
         "uncommon",
         "book"
       ],
-      "description": "<p><div class=\"subtitle\">Navigatio:</div><p>When you cast this spell, you can navigate any terrain as if you were familiar with it. You can accurately determine your location, direction, and distance traveled. You also gain a +1 forward when Defying Danger to navigate or find your way through unfamiliar territory.</p><div class=\"subtitle\">Charta:</div><p>When you cast this spell, you can create a map of the surrounding area. The map is detailed and accurate, including landmarks, roads, and other features. You can also use this spell to add notes and annotations to the map.</p><div class=\"subtitle\">Temporis:</div><p>When you cast this spell, you can predict the weather for the next 24 hours. You know the temperature, wind direction and speed, and any precipitation that will occur. You also gain a +1 forward when Defying Danger to travel or operate in adverse weather conditions.</p><div class=\"subtitle\">Explorare:</div><p>When you cast this spell, you gain the ability to sense nearby landmarks, resources, or points of interest. You can also ask the GM one question about the area, and they will answer truthfully.</p></p>",
+      "description": "<p><div class=\"subtitle\">Navigatio:</div><p>When you cast this spell, you can navigate any terrain as if you were familiar with it. You can accurately determine your location, direction, and distance traveled. You also gain a +3 forward when Defying Danger to navigate or find your way through unfamiliar territory.</p><div class=\"subtitle\">Charta:</div><p>When you cast this spell, you can create a map of the surrounding area. The map is detailed and accurate, including landmarks, roads, and other features. You can also use this spell to add notes and annotations to the map.</p><div class=\"subtitle\">Temporis:</div><p>When you cast this spell, you can predict the weather for the next 24 hours. You know the temperature, wind direction and speed, and any precipitation that will occur. You also gain a +3 forward when Defying Danger to travel or operate in adverse weather conditions.</p><div class=\"subtitle\">Explorare:</div><p>When you cast this spell, you gain the ability to sense nearby landmarks, resources, or points of interest. You can also ask the GM one question about the area, and they will answer truthfully.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -15271,7 +15243,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Balancing Act",
-          "moves_description": "When you use this enchantment, spend 1 mp and balance with the precision of the scales. Roll +WIS. On a 16-19, gain +1 forward to your next move. On a 9-15, maintain your balance, but suffer -1 ongoing until you rest."
+          "moves_description": "When you use this enchantment, spend 1 mp and balance with the precision of the scales. Roll +WIS. On a 16-19, gain +3 forward to your next move. On a 9-15, maintain your balance, but suffer -1 ongoing until you rest."
         }
       ],
       "stats": [
@@ -15373,7 +15345,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Fish Leap",
-          "moves_description": "When you use this enchantment, spend 1 mp and leap with the agility of the fishes. Roll +DEX. On a 16-19, jump to any location within your sight and gain +1 forward to your next move. On a 9-15, jump to any location within your sight, but take 1 damage from the impact."
+          "moves_description": "When you use this enchantment, spend 1 mp and leap with the agility of the fishes. Roll +DEX. On a 16-19, jump to any location within your sight and gain +3 forward to your next move. On a 9-15, jump to any location within your sight, but take 1 damage from the impact."
         }
       ],
       "stats": [
@@ -16770,7 +16742,7 @@
             "orange"
           ],
           "moves_name": "Falling Strike",
-          "moves_description": "<p>When you use the Elven Greatsword with both hands and fall down onto an enemy, roll+Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage but your enemy makes an attack against you. On a miss, you fall prone and your enemy makes an attack against you.</p><ul><li>Your attack deals extra damage</li><li>Your attack causes the enemy to be stunned or knocked prone</li><li>Your attack creates an opening, giving you or an ally +1 forward to their next attack against the target</li></ul>"
+          "moves_description": "<p>When you use the Elven Greatsword with both hands and fall down onto an enemy, roll+Str. On a 16-19, you deal your damage and choose one additional effect from the list below. On a 9-15, you deal your damage but your enemy makes an attack against you. On a miss, you fall prone and your enemy makes an attack against you.</p><ul><li>Your attack deals extra damage</li><li>Your attack causes the enemy to be stunned or knocked prone</li><li>Your attack creates an opening, giving you or an ally +3 forward to their next attack against the target</li></ul>"
         }
       ],
       "stats": [
@@ -17036,7 +17008,7 @@
             "emerald"
           ],
           "moves_name": "Blood for Blood",
-          "moves_description": "<p>When you kill with the Orcish Longsword, you may choose to spill blood onto the blade as an offering to the orcish spirits. If you do, you gain +1 forward to your next attack and the spirits will guide your hand in combat.</p>"
+          "moves_description": "<p>When you kill with the Orcish Longsword, you may choose to spill blood onto the blade as an offering to the orcish spirits. If you do, you gain +3 forward to your next attack and the spirits will guide your hand in combat.</p>"
         }
       ],
       "stats": [
@@ -17570,7 +17542,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Blessing of Ra",
-          "moves_description": "When you use this enchantment, spend 1 MP and gain the power of Ra. You gain +1 forward to all rolls for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 MP and gain the power of Ra. You gain +3 forward to all rolls for the next hour."
         }
       ],
       "stats": [
@@ -17706,7 +17678,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Strength of Horus",
-          "moves_description": "When you use this enchantment, spend 1 MP and invoke the strength of Horus. You gain +1 forward to all rolls that involve physical strength for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 MP and invoke the strength of Horus. You gain +3 forward to all rolls that involve physical strength for the next hour."
         }
       ],
       "stats": [
@@ -17774,7 +17746,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Beauty of Hathor",
-          "moves_description": "When you use this enchantment, spend 1 MP and invoke Hathor's beauty. You gain +1 forward to all social rolls for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 MP and invoke Hathor's beauty. You gain +3 forward to all social rolls for the next hour."
         }
       ],
       "stats": [
@@ -17808,7 +17780,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Ferocity of Sobek",
-          "moves_description": "When you use this enchantment, spend 1 MP and tap into Sobek's ferocity. You gain +1 forward to all attack rolls for the next hour"
+          "moves_description": "When you use this enchantment, spend 1 MP and tap into Sobek's ferocity. You gain +3 forward to all attack rolls for the next hour"
         }
       ],
       "stats": [
@@ -17842,7 +17814,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Grace of Bastet",
-          "moves_description": "When you use this enchantment, spend 1 MP and invoke the grace of Bastet. You gain +1 forward to all rolls that involve agility or balance for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 MP and invoke the grace of Bastet. You gain +3 forward to all rolls that involve agility or balance for the next hour."
         }
       ],
       "stats": [
@@ -18352,7 +18324,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "St. Joseph's Blessing",
-          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Joseph's blessing. You gain +1 forward to any roll related to building or repairing structures for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Joseph's blessing. You gain +3 forward to any roll related to building or repairing structures for the next hour."
         }
       ],
       "stats": [
@@ -18386,7 +18358,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "St. Therese's Rose",
-          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Therese's rose. A single rose blooms before you, filling you with calm and serenity. You gain +1 forward to any roll related to social interactions for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Therese's rose. A single rose blooms before you, filling you with calm and serenity. You gain +3 forward to any roll related to social interactions for the next hour."
         }
       ],
       "stats": [
@@ -18420,7 +18392,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "St. Francis' Blessing",
-          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Francis' blessing. Animals become friendly and docile in your presence. You gain +1 forward to any roll related to animal handling for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Francis' blessing. Animals become friendly and docile in your presence. You gain +3 forward to any roll related to animal handling for the next hour."
         }
       ],
       "stats": [
@@ -18454,7 +18426,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "St. Jude's Hope",
-          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Jude's hope. You or a nearby ally gain +1 forward to any roll related to overcoming a seemingly impossible or hopeless situation for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Jude's hope. You or a nearby ally gain +3 forward to any roll related to overcoming a seemingly impossible or hopeless situation for the next hour."
         }
       ],
       "stats": [
@@ -18488,7 +18460,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "St. Martha's Hospitality",
-          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Martha's hospitality. You or a nearby ally gain +1 forward to any roll related to providing hospitality, such as cooking or hosting guests, for the next hour."
+          "moves_description": "When you use this enchantment, spend 1 mp and call on St. Martha's hospitality. You or a nearby ally gain +3 forward to any roll related to providing hospitality, such as cooking or hosting guests, for the next hour."
         }
       ],
       "stats": [
@@ -18726,7 +18698,7 @@
         {
           "moves_requirements": "cerulean",
           "moves_name": "Radiate",
-          "moves_description": "When you use this enchantment, spend 1 mp and roll +WIS. On a 16-19, you and your allies gain +1 forward. On a 9-15, you and your allies gain +1 forward but choose one from the following: <ul><li>You attract unwanted attention</li><li>You reveal something you shouldn't</li><li>You expose yourself to danger</li></ul>"
+          "moves_description": "When you use this enchantment, spend 1 mp and roll +WIS. On a 16-19, you and your allies gain +3 forward. On a 9-15, you and your allies gain +3 forward but choose one from the following: <ul><li>You attract unwanted attention</li><li>You reveal something you shouldn't</li><li>You expose yourself to danger</li></ul>"
         }
       ],
       "stats": [
@@ -19304,7 +19276,7 @@
             "emerald"
           ],
           "moves_name": "Prismatic Refraction",
-          "moves_description": "<p>When you hold your flawless diamond up to the light and focus your energy, roll +Wis. On a 16-19, you create a dazzling array of colored light that illuminates the area around you, distracting and dazzling your enemies. Choose 1 option from the list below:</p><ul><li>Choose a target within range. They are momentarily stunned, and their next attack suffers a -1 penalty.</li><li>All allies within range gain +1 forward to their next attack.</li><li>Heal yourself or an ally within range for 1d8 HP.</li></ul><p>On a 9-15, you still create the light show, but choose 1 option from the list above and 1 from the list below:</p><ul><li>You attract unwanted attention. The GM will tell you what kind of danger presents itself.</li><li>The diamond loses its luster and is now worth half its original value.</li><li>You become disoriented and suffer a -1 penalty to your next move.</li></ul>"
+          "moves_description": "<p>When you hold your flawless diamond up to the light and focus your energy, roll +Wis. On a 16-19, you create a dazzling array of colored light that illuminates the area around you, distracting and dazzling your enemies. Choose 1 option from the list below:</p><ul><li>Choose a target within range. They are momentarily stunned, and their next attack suffers a -1 penalty.</li><li>All allies within range gain +3 forward to their next attack.</li><li>Heal yourself or an ally within range for 1d8 HP.</li></ul><p>On a 9-15, you still create the light show, but choose 1 option from the list above and 1 from the list below:</p><ul><li>You attract unwanted attention. The GM will tell you what kind of danger presents itself.</li><li>The diamond loses its luster and is now worth half its original value.</li><li>You become disoriented and suffer a -1 penalty to your next move.</li></ul>"
         }
       ],
       "stats": [
@@ -19566,7 +19538,7 @@
             "purple"
           ],
           "moves_name": "Cuddle Bonus",
-          "moves_description": "<p>When you share your sleeping bag with someone, you can roll +Cha. On a 16-19, you both get some extra rest and choose one from the list below. On a 9-15, you both rest, but choose only one. On a miss, you both have trouble sleeping.</p><ul><li>You both heal an additional amount of damage or recover an additional spell</li><li>You both gain a +1 forward to your next roll</li><li>You both share a moment of intimacy or bonding</li></ul>"
+          "moves_description": "<p>When you share your sleeping bag with someone, you can roll +Cha. On a 16-19, you both get some extra rest and choose one from the list below. On a 9-15, you both rest, but choose only one. On a miss, you both have trouble sleeping.</p><ul><li>You both heal an additional amount of damage or recover an additional spell</li><li>You both gain a +3 forward to your next roll</li><li>You both share a moment of intimacy or bonding</li></ul>"
         }
       ],
       "stats": [
@@ -20758,7 +20730,7 @@
         "item",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Bread and Butter:</p> <p>When you use 1 kg of wheat to make bread or other food, mark off the wheat and you have enough food for one person for a day.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of wheat with someone who needs it, mark off the wheat and take +1 forward to your next parley roll with them.</p></p>",
+      "description": "<p><p class=\"subtitle\">Bread and Butter:</p> <p>When you use 1 kg of wheat to make bread or other food, mark off the wheat and you have enough food for one person for a day.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of wheat with someone who needs it, mark off the wheat and take +3 forward to your next parley roll with them.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20785,7 +20757,7 @@
         "item",
         "common"
       ],
-      "description": "<p><p class=\"subtitle\">Material:</p> <p>When you use 1 kg of steel to craft or repair a weapon or armor, mark off the steel and you have enough material for the job.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of steel with someone who needs it, mark off the steel and take +1 forward to your next parley roll with them.</p></p>",
+      "description": "<p><p class=\"subtitle\">Material:</p> <p>When you use 1 kg of steel to craft or repair a weapon or armor, mark off the steel and you have enough material for the job.</p><p class=\"subtitle\">Barter Goods:</p><p>When you trade 1 kg of steel with someone who needs it, mark off the steel and take +3 forward to your next parley roll with them.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -20982,7 +20954,7 @@
     {
       "name": "Defend",
       "type": "rule",
-      "description": "When you stand in defense of a person, item, or location under attack, roll+CON. ✴On a  16-19, hold 3. ✴On a 7–9, hold 1. So long as you stand in defense, when you or the thing you defend is attacked you may spend hold, 1 for 1, to choose an option:\n\nRedirect an attack from the thing you defend, to yourself\nHalve the attack’s effect or damage\nOpen up the attacker to an ally giving that ally +1 forward against the attacker\nDeal damage to the attacker equal to your Strenght",
+      "description": "When you stand in defense of a person, item, or location under attack, roll+CON. ✴On a  16-19, hold 3. ✴On a 7–9, hold 1. So long as you stand in defense, when you or the thing you defend is attacked you may spend hold, 1 for 1, to choose an option:\n\nRedirect an attack from the thing you defend, to yourself\nHalve the attack’s effect or damage\nOpen up the attacker to an ally giving that ally +3 forward against the attacker\nDeal damage to the attacker equal to your Strenght",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -21002,7 +20974,7 @@
     {
       "name": "Spout Lore",
       "type": "rule",
-      "description": "When you hold on to a piece of knowledge or insight about a certain topic, roll+INT. On a  16-19 hold 3; on a 9-15 hold 1. Spend your hold on any of the following choices:\n\n- You anticipate a danger related to the topic at hand, and gain +1 forward when acting on it.\n- You remember a useful fact or detail that can help you in your current situation.\n- You recognize a symbol or clue related to the topic, and gain +1 forward when investigating it.\n\nOn a failure, the GM will give you misleading information or you will forget something important that you thought you knew.",
+      "description": "When you hold on to a piece of knowledge or insight about a certain topic, roll+INT. On a  16-19 hold 3; on a 9-15 hold 1. Spend your hold on any of the following choices:\n\n- You anticipate a danger related to the topic at hand, and gain +3 forward when acting on it.\n- You remember a useful fact or detail that can help you in your current situation.\n- You recognize a symbol or clue related to the topic, and gain +3 forward when investigating it.\n\nOn a failure, the GM will give you misleading information or you will forget something important that you thought you knew.",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -21062,7 +21034,7 @@
     {
       "name": "Take a Rest",
       "type": "rule",
-      "description": "When you settle in to rest, answer the GMs questions about where and how are you resting. Then, each player (including the GM) asks one of the following questions of a character; that character’s player must answer honestly:\n- What do you do during this rest that is so annoying/endearing?\n- What do I do that you find so annoying/endearing?\n- Who or what seems to be on your mind?\n- What do we find ourselves talking about?\n- What do you do to pass the time?\n- What do you reveal about yourself that I/we hadn’t realized before?\n\nThe GM will decide what, if anything, happens during the rest (possibly asking you to roll the Die of Fate). When you’ve eaten something, drunk your fill, and gotten at least a few hours of rest, if you have enough XP you may level up. Then pick 1. If your rest was particularly comfortable, peaceful, or enjoyable, pick 1 more:\n- Regain half Hit Points (HP)\n- Regain half Magic Points (MP)\n- Regain half Sanity Point (SP)\n- Expend 1 use of an appropriate resource (rations, whisky, remedies, etc.) to clear a debility; everyone must agree that the resource makes sense\n- Take +1 forward",
+      "description": "When you settle in to rest, answer the GMs questions about where and how are you resting. Then, each player (including the GM) asks one of the following questions of a character; that character’s player must answer honestly:\n- What do you do during this rest that is so annoying/endearing?\n- What do I do that you find so annoying/endearing?\n- Who or what seems to be on your mind?\n- What do we find ourselves talking about?\n- What do you do to pass the time?\n- What do you reveal about yourself that I/we hadn’t realized before?\n\nThe GM will decide what, if anything, happens during the rest (possibly asking you to roll the Die of Fate). When you’ve eaten something, drunk your fill, and gotten at least a few hours of rest, if you have enough XP you may level up. Then pick 1. If your rest was particularly comfortable, peaceful, or enjoyable, pick 1 more:\n- Regain half Hit Points (HP)\n- Regain half Magic Points (MP)\n- Regain half Sanity Point (SP)\n- Expend 1 use of an appropriate resource (rations, whisky, remedies, etc.) to clear a debility; everyone must agree that the resource makes sense\n- Take +3 forward",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -22168,7 +22140,7 @@
     },
     {
       "name": "Shadow Dance",
-      "description": "When you move with such grace and agility that you seem to disappear from sight, spend 1 or more combo points for these options (you can take the same multiple times):<ul><li> You can move across any surface, including liquids, for 5 seconds.</li><li> you become invisible to all but magical senses, for 1 second. </li><li> you deal an extra 1d6 damage on your next attack </li><li> you gain +1 forward to Defy Danger or Hack and Slash.</li></ul>",
+      "description": "When you move with such grace and agility that you seem to disappear from sight, spend 1 or more combo points for these options (you can take the same multiple times):<ul><li> You can move across any surface, including liquids, for 5 seconds.</li><li> you become invisible to all but magical senses, for 1 second. </li><li> you deal an extra 1d6 damage on your next attack </li><li> you gain +3 forward to Defy Danger or Hack and Slash.</li></ul>",
       "crystals": {
         "requires": [
           "black",
@@ -25550,7 +25522,7 @@
         "uncommon",
         "book"
       ],
-      "description": "<p><div class=\"subtitle\">Educatio:</div><p>When you cast this spell, you gain a +1 forward to any roll related to learning or education for the next hour.</p><div class=\"subtitle\">Memoria:</div><p>When you cast this spell, you can recall any piece of information you have learned in the past with perfect clarity.</p><div class=\"subtitle\">Intellegentia:</div><p>When you cast this spell, you gain a +1 forward to any roll related to problem-solving or critical thinking for the next hour.</p><div class=\"subtitle\">Legere:</div><p>When you cast this spell, you can read any written language, even if you have never seen it before.</p></p>",
+      "description": "<p><div class=\"subtitle\">Educatio:</div><p>When you cast this spell, you gain a +3 forward to any roll related to learning or education for the next hour.</p><div class=\"subtitle\">Memoria:</div><p>When you cast this spell, you can recall any piece of information you have learned in the past with perfect clarity.</p><div class=\"subtitle\">Intellegentia:</div><p>When you cast this spell, you gain a +3 forward to any roll related to problem-solving or critical thinking for the next hour.</p><div class=\"subtitle\">Legere:</div><p>When you cast this spell, you can read any written language, even if you have never seen it before.</p></p>",
       "stats": [
         {
           "stat_name": "weight",
@@ -25694,7 +25666,7 @@
         }
       ],
       "type": "advanced character",
-      "description": "<p>The Turinese Clock-Knight is a warrior of precision, wielding a clockwork sword and shield with skill and grace. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when wielding a clockwork weapon</li><li>You can spend an action to wind up your sword, granting you +1 forward to your next Hack and Slash or Parry roll</li><li>You have a +1 bonus to Discern Realities when investigating clockwork or mechanical devices</li></ul>",
+      "description": "<p>The Turinese Clock-Knight is a warrior of precision, wielding a clockwork sword and shield with skill and grace. You gain the following abilities:</p><ul><li>You have a +1 bonus to Hack and Slash when wielding a clockwork weapon</li><li>You can spend an action to wind up your sword, granting you +3 forward to your next Hack and Slash or Parry roll</li><li>You have a +1 bonus to Discern Realities when investigating clockwork or mechanical devices</li></ul>",
       "geo_location": {
         "latitude": 45.0703,
         "longitude": 7.6869
@@ -26070,7 +26042,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "The Mage's Guild",
+      "name": "Mage",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26080,7 +26052,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Mage's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26088,7 +26060,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "The Assassin's Guild",
+      "name": "Smuggler",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26098,7 +26070,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Smuggler's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26106,7 +26078,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "The Smuggler's Guild",
+      "name": "Fencer",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26116,7 +26088,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Fencer's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26124,7 +26096,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "The Fence's Guild",
+      "name": "Assassin",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26134,25 +26106,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Guild Contacts.png"
-    },
-    {
-      "name": "The Assassin's Guild",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "black",
-          "black",
-          "black"
-        ]
-      },
-      "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Assassin's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26178,7 +26132,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "Enchanter's Guild",
+      "name": "Enchanter",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26188,7 +26142,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Enchanter's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26196,7 +26150,7 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "Explorer's Guild",
+      "name": "Explorer",
       "crystals": {
         "requires": [],
         "provides": [
@@ -26206,7 +26160,7 @@
         ]
       },
       "type": "core training",
-      "description": "<p>You are a member of this guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
+      "description": "<p>You are a member of the Explorer's Guild, and as such, you have connections and resources that can aid you in your adventures. When you need assistance from the guild, roll +Charisma.</p>\n<ul>\n <li>On a 10+, your contacts within the guild can provide you with valuable information or resources. The GM will tell you what the guild can do for you and it will be helpful.</li>\n <li>On a 7-9, your contacts can help you, but there will be a cost or a complication. The GM will offer you a choice between a price to pay or a complication to deal with.</li>\n <li>On a 6-, your contacts cannot help you, and you may have attracted unwanted attention from the guild or its enemies. The GM will tell you what kind of trouble you've caused.</li>\n</ul>\n",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -26214,13 +26168,13 @@
       "header_image": "Guild Contacts.png"
     },
     {
-      "name": "Cartographer's Guild",
+      "name": "Cartographer",
       "crystals": {
         "requires": [],
         "provides": [
-          "purple",
-          "purple",
-          "purple"
+          "green",
+          "green",
+          "green"
         ]
       },
       "type": "core training",
