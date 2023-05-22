@@ -20,7 +20,7 @@
 
 <body>
   <div class="page">
-    <h1>Handful of Heroes Rules</h1>
+    <h1>Handful of Heroes Lore</h1>
     <div class="rule">
   </div>
 
@@ -31,8 +31,10 @@
   <div class="rule">
     {{#.}}
     <h2>{{{name}}}</h2>
-    <p>{{{description}}}</p>
-    {{/.}}
+    {{#moves}}
+    <p>{{{moves_description}}}</p>
+    {{/moves}}    {{/.}}
+
 
   </div>
 </script>
@@ -47,7 +49,7 @@
   const json = await fetch("HoH_all.json");
   var loadedData = await json.json();
   // Render the JSON data using the template
-  var rules = loadedData["deck_list"].filter(x => x["type"] === "rule");
+  var rules = loadedData["deck_list"].filter(x => x["type"] === "lore");
   var rendered = mustache.render(template, rules);
 
   // Insert the rendered HTML into the page
