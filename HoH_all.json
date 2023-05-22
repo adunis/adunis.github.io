@@ -9014,33 +9014,6 @@
       "header_image": "Arcane Specialization Enchantment.png"
     },
     {
-      "name": "Arcane Volley",
-      "crystals": {
-        "requires": [
-          "green",
-          "cerulean"
-        ],
-        "provides": []
-      },
-      "type": "feature",
-      "description": "<p>You can fire small, magical projectiles (near); when you use them to Volley, you may choose to take 2 damage (ignoring armour) instead of expending ammo on a 9-15.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Arcane Volley.png"
-    },
-    {
       "name": "Evocation Specialist",
       "crystals": {
         "requires": [
