@@ -12038,32 +12038,6 @@
       "header_image": "Stoneworkers Clan.png"
     },
     {
-      "name": "Inventor",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "gold"
-        ]
-      },
-      "type": "training",
-      "description": "<li><b>Inventor:</b> When you have time and materials to work with, you can invent a new device or gadget. Describe the device you want to create, and then roll+Int. On a 16-19 choose 2, on a 9-15 choose 1:<ul><li>The device works as intended</li><li>The device is reliable and won\\'t break down easily</li><li>The device has additional features beyond its intended purpose</li><li>The device is safe to use</li></ul>On a miss, the device has significant flaws or dangers that the GM will describe to you.</li><li>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Centaur.png"
-    },
-    {
       "name": "Frogman",
       "crystals": {
         "requires": [],
