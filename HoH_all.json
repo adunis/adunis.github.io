@@ -10231,15 +10231,14 @@
       "header_image": "Tiefling.png"
     },
     {
-      "name": "Samurai Warrior",
+      "name": "Berserker",
       "crystals": {
-        "requires": [],
+        "requires": ["orange"],
         "provides": [
-          "blue"
         ]
       },
-      "type": "training",
-      "description": "<p><p class=\"subtitle\">Bushido Code.</p><p>You live by the strict code of the samurai, which emphasizes honor, loyalty, and bravery. You gain +1 to damage when attacking an opponent in single combat, and +1 to AC when defending against multiple foes.</p><p class=\"subtitle\">Katana Mastery.</p><p>You are trained in the use of the katana, a deadly and elegant sword. You gain +1 to hack and slash rolls when wielding a katana.</p><p class=\"subtitle\">Seppuku.</p><p>If you fail a roll and suffer a catastrophic failure, you may choose to perform seppuku (ritual suicide) instead. Your character dies, but the rest of the party gains a +3 forward.</p></p>",
+      "type": "feature",
+      "description": "When you enter a frenzied rage, you gain +3 to damage and +3 to hack and slash rolls. You also take +3 damage from all sources.",
       "stats": [
         {
           "stat_name": "",
@@ -10254,18 +10253,18 @@
         "latitude": 37.7749,
         "longitude": -122.4194
       },
-      "header_image": "Samurai.png"
+      "header_image": "Viking.png"
     },
     {
-      "name": "Viking Warrior",
+      "name": "Dual Wielding",
       "crystals": {
         "requires": [],
         "provides": [
-          "orange"
+          "red"
         ]
       },
       "type": "training",
-      "description": "When you enter a frenzied rage, you gain +3 to damage and +3 to hack and slash rolls. You also take +3 damage from all sources.",
+      "description": "When you Hack and Slash attacking with one weapon in each of your hands, you get this additional option to pick: Pick any another option you can choose from again.",
       "stats": [
         {
           "stat_name": "",
@@ -12038,34 +12037,6 @@
       "header_image": "Stoneworkers Clan.png"
     },
     {
-      "name": "Frogman",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "emerald"
-        ]
-      },
-      "type": [
-        "species"
-      ],
-      "description": "<p><p class=\"subtitle\">Swimming Expert:</p> You are a natural swimmer. When you Defy Danger while swimming, take +1.</p><p><p class=\"subtitle\">Sticky Tongue:</p> Your tongue is incredibly sticky. You can use it to pull yourself towards an object, or to snatch an object from a distance.</p><p><p class=\"subtitle\">Amphibious:</p>You can breathe both air and water, and you are immune to drowning.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Frogfolk.png"
-    },
-    {
       "name": "Sorcerer",
       "crystals": {
         "requires": [],
@@ -13315,32 +13286,6 @@
         "longitude": -122.4194
       },
       "header_image": "Wizardry Training.png"
-    },
-    {
-      "name": "Lizardfolk",
-      "crystals": {
-        "requires": [],
-        "provides": [
-          "orange"
-        ]
-      },
-      "type": "species",
-      "description": "<p><p class=\"subtitle\">Camouflage</p> When you stay still in a natural environment, you blend in with your surroundings and become nearly invisible.</p><p><p class=\"subtitle\">Quick Reflexes:</p>You have lightning-fast reflexes. When you act under fire, take +1 ongoing.</p><p><p class=\"subtitle\">Predator's Instinct:</p> You have an innate sense of your prey\\'s movements. When you track a creature through the wilderness, take +3 ongoing to discern realities about it.</p>",
-      "stats": [
-        {
-          "stat_name": "",
-          "stat_value": ""
-        },
-        {
-          "stat_name": "",
-          "stat_value": ""
-        }
-      ],
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Lizardfolk.png"
     },
     {
       "name": "Mercurial Blood",
@@ -20782,7 +20727,7 @@
     {
       "name": "Reaction",
       "type": "rule",
-      "description": "When during a timed scene round during somebody else's turn you want to react and do something, the GM will ask you ‘What do you do?’, you spend a reaction and you do something (even attacking an opponent).  You have one single reaction per round and you regain it at the start of a new round. If something happens and you don’t have more reactions, it is assumed that your character is remaining still or is caught unaware. ",
+      "description": "When during a timed scene round during somebody else's turn you want to react and do something, the GM will ask you ‘What do you do?’, you spend a reaction and you do something (even attacking an opponent).  You have one single reaction per round and you regain it at the start of a new round. If something happens and you don't have more reactions, it is assumed that your character is remaining still or is caught unaware. ",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -20818,16 +20763,6 @@
         "longitude": -122.4194
       },
       "header_image": "Volley.png"
-    },
-    {
-      "name": "Fire PointBlank",
-      "type": "rule",
-      "description": "When you use a ranged weapon against someone close enough to hurt you, roll+DEX. On a 16-19, you deal your damage. On a 9-15, also choose one: reduce ammo by one, they counterattack or deal damage, they take something away from you.",
-      "geo_location": {
-        "latitude": 37.7749,
-        "longitude": -122.4194
-      },
-      "header_image": "Fire PointBlank.png"
     },
     {
       "name": "Defy Danger (CHA)",
