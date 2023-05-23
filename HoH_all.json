@@ -13838,6 +13838,7 @@
       "moves": [
         {
           "moves_requirements": [
+            "red"
           ],
           "moves_name": "Armor Breaker",
           "moves_description": "When you Hack and Slash, you get an additional option: If the enemy wearing chain armor with your battleaxe, your attack has 2 piercing."
