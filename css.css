@@ -143,6 +143,15 @@
     background-size: cover;
 }
 
+.side-bar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 100px;
+    background-size: cover;
+}
+
 
 #my-input {
     align-items:center;

@@ -22087,7 +22087,7 @@
     },
     {
       "name": "Shadow Dance",
-      "description": "When you move with such grace and agility that you seem to disappear from sight, spend 1 or more combo points for these options (you can take the same multiple times):<ul><li> You can move across any surface, including liquids, for 5 seconds.</li><li> you become invisible to all but magical senses, for 1 second. </li><li> you deal an extra 1d6 damage on your next attack </li><li> you gain +3 forward to Defy Danger or Hack and Slash.</li></ul>",
+      "description": "When you move with such grace and agility that you seem to disappear from sight, spend 1 magic point  once or multiple times for these options (you can take the same multiple times for each magic point spent):<ul><li> You can move across any surface, including liquids, for 5 seconds.</li><li> you become invisible to all but magical senses, for 1 second. </li><li> you deal an extra 1d6 damage on your next attack </li><li> you gain +3 forward to Defy Danger or Hack and Slash.</li></ul>",
       "crystals": {
         "requires": [
           "black",
