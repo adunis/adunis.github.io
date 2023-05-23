@@ -152,6 +152,26 @@
     background-size: cover;
 }
 
+#my-input-side-bar::placeholder {
+    color: #666;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#my-input-side-bar {
+    align-items:center;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: #333;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+}
 
 #my-input {
     align-items:center;
