@@ -1978,7 +1978,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>You take +1 to Last Breath rolls.</p><p>When you roll a 9-15 on a Last Breath roll, you make an offer to Death for your life, instead of the other way around. If Death accepts, you will be returned to life. If not, you die.</p>",
+      "description": "<p>you take +3to Last Breath rolls.</p><p>When you roll a 9-15 on a Last Breath roll, you make an offer to Death for your life, instead of the other way around. If Death accepts, you will be returned to life. If not, you die.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -4301,7 +4301,7 @@
         ]
       },
       "type": "feature",
-      "description": "<p>Your faith was tempered upon the battlefield and wrought by trial and tribulation. You take +1 to Defend or Defy Danger against the Enemies of your deity, and when you Discern Realities you can always ask 'are there any signs of my Enemy's influence here?' in addition to your other questions.</p>",
+      "description": "<p>Your faith was tempered upon the battlefield and wrought by trial and tribulation. you take +3to Defend or Defy Danger against the Enemies of your deity, and when you Discern Realities you can always ask 'are there any signs of my Enemy's influence here?' in addition to your other questions.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -8658,7 +8658,7 @@
         "provides": []
       },
       "type": "feature",
-      "description": "<p>When you’re outnumbered, you take +1 to Defy Danger or to even the odds.</p>",
+      "description": "<p>When you’re outnumbered, you take +3to Defy Danger or to even the odds.</p>",
       "stats": [
         {
           "stat_name": "",
@@ -11044,7 +11044,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Natural Perfumer.</p><p>You have a deep knowledge of plants and their fragrances, allowing you to create potent perfumes and natural remedies. When you use a  perfume, you take +1 to your Defy Danger roll against being detected by smell.</p>",
+      "description": "You have a deep knowledge of plants and their fragrances, allowing you to create potent perfumes and natural remedies. When you use a  perfume, you take +3 to your Defy Danger roll against being detected by smell",
       "stats": [
         {
           "stat_name": "",
@@ -11218,7 +11218,7 @@
       "header_image": "Romanian.png"
     },
     {
-      "name": "Climber",
+      "name": "Alpinist",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11226,7 +11226,7 @@
         ]
       },
       "type": "training",
-      "description": "<p class=\"subtitle\">Alpinist.</p><p>You have advantage on rolls to climb or traverse mountainous terrain.</p></p>",
+      "description": "You have advantage on rolls to climb or traverse mountainous terrain.",
       "stats": [
         {
           "stat_name": "",
