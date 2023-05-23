@@ -1412,7 +1412,9 @@ if (color === ''){
         ...getRandomCards(backgrounds, 1),
         ...getRandomCards(species, 1),
         ...getRandomCards(destinies, 1),
-        ...getRandomCards(items, 5)
+        ...getRandomCards(items, 4),
+        ...getRandomCards(weapons, 1)
+
     ];
 }
 };
