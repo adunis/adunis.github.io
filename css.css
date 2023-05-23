@@ -624,7 +624,7 @@ table {
 
 .crystal{
     display:none;
-    font-size:15px;
+    font-size:10px;
 }
 
 .invisible{
@@ -1158,6 +1158,7 @@ textarea {
 
 .card-body {
     text-align: left;
+    padding-top:0px;
 }
 
 /* Styles for the modal */
@@ -1581,4 +1582,29 @@ button[type="submit"] {
 
 .move-crystal { 
     margin-right: 18px;
+}
+
+#sidebar {
+    width: 200px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 80;
+    left: 10;
+    overflow-y: auto;
+}
+
+#card-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-item:hover {
+    background-color: #ddd;
 }

@@ -7434,7 +7434,7 @@
       "crystals": {
         "requires": [],
         "provides": [
-          "red"
+          "red", "red", "red"
         ]
       },
       "stats": [
@@ -7447,7 +7447,7 @@
           "stat_value": ""
         }
       ],
-      "type": "training",
+      "type": "core training",
       "description": "<p>When you're looking for work, roll +CHA. On an 16-19, choose 3. On a 9-15, choose 2. On a 1-8, choose 1. You can choose the same option multiple times:</p><ul><li>The pay is good: You get paid double the normal rate.</li><li>The job is simple: The task is straightforward and doesn't require much effort.</li><li>The employer is reputable: The employer has a good reputation and won't put you in unnecessary danger.</li><li>The job is legal: The task is within the bounds of the law.</li><li>The job is challenging: The task is difficult, but the pay is commensurate.</li><li>The job is exciting: The task is risky, but the potential reward is worth it.</li></ul>",
       "geo_location": {
         "latitude": 37.7749,
@@ -10855,7 +10855,7 @@
       "header_image": "Marseillese.png"
     },
     {
-      "name": "Sky Knight",
+      "name": "Sky Rider",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10881,7 +10881,7 @@
       "header_image": "Lyon.png"
     },
     {
-      "name": "Earth Knight",
+      "name": "Rider",
       "crystals": {
         "requires": [],
         "provides": [
@@ -10906,7 +10906,7 @@
       },
       "header_image": "Norman.png"
     }, {
-      "name": "Sea Knight",
+      "name": "Sea Rider",
       "crystals": {
         "requires": [],
         "provides": [
