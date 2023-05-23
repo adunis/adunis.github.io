@@ -1599,7 +1599,7 @@
       ]
     },
     {
-      "name": "TollKeeper",
+      "name": "Toll Keeper",
       "crystals": {
         "requires": [],
         "provides": [
@@ -15700,7 +15700,7 @@
       "moves": [
         {
           "moves_requirements": [
-            "green"
+            "red"
           ],
           "moves_name": "Precise Aim",
           "moves_description": "When you roll for Volley, you can pick an additional option: your attack hits a specific body part and pierces armor, ignoring 2 point of armor."
@@ -16610,14 +16610,14 @@
           "moves_requirements": [
             "red"
           ],
-          "moves_name": "Acrobatic Strike",
-          "moves_description": "When you roll for Hack and Slash, you can pick an additional option: >You create an opportunity for an ally to strike the target with an advantage during their next attack."
+          "moves_name": "Pierce Through",
+          "moves_description": "When you roll for Hack and Slash, you can pick an additional option: You deal damage again and you create an opportunity for an ally to strike the target with an advantage during their next attack."
         },
         {
           "moves_requirements": [
-            "red"
+            "blue"
           ],
-          "moves_name": "Very Long Weapon",
+          "moves_name": "Stand Back!",
           "moves_description": "When you roll for Hack and Slash, you can pick an additional option: If your enemy is the size of an ogre or less, you force the enemy to back off: you and ally of your choice gain back their reaction."
         },     {
           "moves_requirements": [
@@ -16792,14 +16792,14 @@
             "green"
           ],
           "moves_name": "Mighty Swing",
-          "moves_description": "When you roll for Hack and Slash, you can pick an additional option: your attack hits all the enemies in front of you in range, dealing equal damage to all fo them."
+          "moves_description": "When you roll for Hack and Slash, you can pick an additional option: your attack hits all the enemies in front of you in range, dealing equal damage to all of them."
         }
       ,  {
        "moves_requirements": [
         "red"
       ],
       "moves_name": "Deadly Hit",
-      "moves_description": "When you roll for Hack and Slash, you can pick an additional option: You deal damage (again)."
+      "moves_description": "When you roll for Hack and Slash, you can pick an additional option: You deal damage again and reduces the target armor value by 1 until they receive treatment."
     },
     {
       "moves_requirements": [
@@ -16840,12 +16840,12 @@
        "moves_requirements": [
         "red"
       ],
-      "moves_name": "Deadly Hit",
-      "moves_description": "When you roll for Hack and Slash, you can pick an additional option: You deal damage (again)."
+      "moves_name": "Stunning strike",
+      "moves_description": "When you roll for Hack and Slash, you can pick an additional option: You deal damage again and the target loses their reaction."
     },
   {
        "moves_requirements": [
-        "green"
+        "orange"
       ],
       "moves_name": "Magic Crusher",
       "moves_description": "When you roll for Hack and Slash, you can pick an additional option: Destroy a magical barrier or defense for a few seconds."
@@ -16888,7 +16888,7 @@
           "black"
         ],
         "moves_name": "Deadly Accuracy",
-        "moves_description": "<p>When you use a shortsword, you can use Dex instead of Str for the rolls.</p>"
+        "moves_description": "When you use a shortsword, you can use Dex instead of Str for the rolls."
       },
         {
           "moves_requirements": [
