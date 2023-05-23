@@ -183,6 +183,21 @@
         <div class="spinner"></div>
     </div>
 
+    <div id="sidebar-container">
+    </div>
+
+    <script id="sidebar-template" type="text/template">
+        <div id="sidebar">
+          <ul id="card-list">
+            {{#.}}
+            <li class="card-item">
+              <span>{{name}}</span>
+            </li>
+            {{/.}}
+          </ul>
+        </div>
+      </script>
+      
 
     <div id="json-upload-modal" class="modal">
         <div class="modal-content">

@@ -2041,3 +2041,13 @@ autoCalculateToggle.addEventListener('change', () => {
     }
 });
 
+  // Render the sidebar using Mustache.js
+  const template = document.getElementById("sidebar-template").innerHTML;
+  const json = await fetch("HoH_all.json");
+  var allCards = await json.json();
+  console.log(allCards)
+  const renderedHTML = mustache.render(template, allCards["deck_list"]);
+
+  // Add the rendered HTML to the page
+  const sidebarContainer = document.getElementById("sidebar-container");
+  sidebarContainer.innerHTML = renderedHTML;
