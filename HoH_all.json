@@ -11269,7 +11269,7 @@
       "header_image": "Ice Wolves Clan.png"
     },
     {
-      "name": "Fishing",
+      "name": "Spearfishing",
       "crystals": {
         "requires": [],
         "provides": [
@@ -11277,7 +11277,7 @@
         ]
       },
       "type": "training",
-      "description": "<p><p class=\"subtitle\">Skilled Fishers and Divers</p><p>You are skilled in the arts of fishing and diving, and can hold your own in any underwater environment. You have +1 ongoing to any move that involves fishing or diving.</p></p>",
+      "description": "You are skilled in the arts of fishing and diving, and can hold your own in any underwater environment. You have +1 ongoing to any move that involves fishing or diving.",
       "stats": [
         {
           "stat_name": "",
