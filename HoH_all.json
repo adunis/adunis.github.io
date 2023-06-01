@@ -14202,12 +14202,13 @@
       "name": "Longsword",
       "crystals": {
         "requires": [],
-        "provides": []
+        "provides": [] 
       },
       "type": [
         "item",
         "common", "weapon"
       ],
+      "description":  " <img  width=\"250\" src=\"https://static.wixstatic.com/media/953784_107a5366da3c4fd0a9c4d307d8553a70~mv2.jpg/v1/fill/w_3000,h_2000,al_c,q_85/953784_107a5366da3c4fd0a9c4d307d8553a70~mv2.jpg\"> ",
       "moves": [
         {
           "moves_requirements": [
@@ -19618,7 +19619,7 @@
       "header_image": "Mace.png"
     },
     {
-      "name": "Gambeson",
+      "name": "Arming doublet",
       "crystals": {
         "requires": [],
         "provides": []
@@ -19633,15 +19634,61 @@
           "moves_requirements": [
             "red"
           ],
+          "moves_name": "Protective ",
+          "moves_description": "<p>When you wear an arming doublet armor, you get +1 armor (armor reduces the damage you receive) on the torso and arms.\n"
+        }
+      ],
+      "stats": [
+        {
+          "stat_name": "weight",
+          "stat_value": "1 kg"
+        },
+        {
+          "stat_name": "price",
+          "stat_value": "30 coins"
+        }
+      ],
+      "geo_location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "header_image": "Gambeson armor.png"
+    },
+    {
+      "name": "Gambeson",
+      "crystals": {
+        "requires": [],
+        "provides": []
+      },
+      "type": [
+        "item",
+        "armor",
+        "common"
+      ],
+      "moves": [        {
+        "moves_requirements": [
+        ],
+        "moves_name": "Protective ",
+        "moves_description": "<p>When you wear gambeson armor, you get +2 armor (armor reduces the damage you receive) on the torso and arms.\n"
+      },
+        {
+          "moves_requirements": [
+            "red"
+          ],
           "moves_name": "Cushion",
-          "moves_description": "<p>When you take damage from a blunt weapon or an arrow while wearing gambeson armor, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by half.</p>"
+          "moves_description": "<p>When you take damage from a fire/acid source or from a blunt weapon while wearing gambeson armor used by a human-sized creature , you can roll a 1d10. On a 5-10, you ignore the damage completely. On a 1 you are stunned and you lose your reaction. If the creature is ogre-sized, you ignore it on a 7-10, if it's dragon-sized on a 9-10.</p>"
         },
         {
           "moves_requirements": [
-            ""
+            "red"
           ],
-          "moves_name": "Protective ",
-          "moves_description": "<p>When you wear gambeson armor, you get +1 armor (armor reduces the damage you receive) on the torso and arms.\n"
+          "moves_name": "Sturdy",
+          "moves_description": "<p>When you take damage from a piercing weapon used by a human-sized creature on your torso or arms, you can roll a 1d10. On a 5-10, you ignore the damage completely. On a 1 your armor is damaged and you can't use this ability until you repair it.</p>"
+        },
+        {
+          "moves_requirements": ["green"],
+          "moves_name": "Clumsy",
+          "moves_description": "If you don't have this ability, when you use the gambeson to defy danger by being stealthy, agile, or swimming, you get -5 to the roll.</p></p>"
         }
       ],
       "stats": [
@@ -19651,7 +19698,7 @@
         },
         {
           "stat_name": "price",
-          "stat_value": "100 coins"
+          "stat_value": "40 coins"
         }
       ],
       "geo_location": {
@@ -19672,22 +19719,22 @@
         "uncommon"
       ],
       "moves": [
+      {
+        "moves_requirements": [],
+        "moves_name": "Protective",
+        "moves_description": "<p>When you wear the breastplate, you get +3 armor (armor reduces the damage you receive) when you are hit on the torso.</p>"
+      },
         {
           "moves_requirements": [
             "red"
           ],
           "moves_name": "Deflect",
-          "moves_description": "<p>When you take damage from a slashing or piercing weapon while wearing the breastplate, you can roll a d6. On a 6, you ignore the damage completely. On a 1-5, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by half.</p>"
+          "moves_description": "<p>When you take damage from a slashing or piercing weapon used by a human-sized creature while wearing the breastplate, you can roll a 1d10. On a 2-10, you ignore the damage completely. On a 1 your armor is damaged and you can't use this ability until you repair it. If the creature is ogre-sized, you ignore it on a 5-10, if it's dragon-sized on a 9-10.</p>"
         },
         {
-          "moves_requirements": ["black", "black"],
-          "moves_name": "Clumsy",
-          "moves_description": "If you don't have this ability, when you use plate armor to defy danger by being stealthy, agile, or swimming, you get -5 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take +1d8 damage and must defy danger to avoid being stunned.</p></p>"
-        },
-        {
-          "moves_requirements": [],
-          "moves_name": "Protective",
-          "moves_description": "<p>When you wear the breastplate, you get +3 armor (armor reduces the damage you receive) when you are hit on the torso.</p>"
+          "moves_requirements": ["green"],
+          "moves_name": "Clumsy and Metallic",
+          "moves_description": "If you don't have this ability, when you use plate armor to defy danger by being stealthy, agile, or swimming, you get -5 to the roll. When you take damage from electricity or magnetism while wearing plate armor, you take double damage and must defy danger to avoid being stunned.</p></p>"
         }
       ],
       "stats": [
@@ -19717,24 +19764,26 @@
         "armor",
         "common"
       ],
-      "moves": [
+      "moves": [ {
+        "moves_requirements": [],
+        "moves_name": "Protective",
+        "moves_description": "You get +1 armor (armor reduces the damage you receive) when receiving damage on the torso or arms."
+      },
         {
           "moves_requirements": [
             "red"
           ],
-          "moves_name": "Dissipative",
-          "moves_description": "When you take damage from a slashing weapon, fire or acid, you can choose to damage your armor (reduce its armor value by 1) to reduce the damage by half."
+          "moves_name": "Deflecting",
+          "moves_description": "<p>When you take damage from a slashing weapon used by a human-sized creature  on your torso or arms, you can roll a 1d10. On a 3-10, you ignore the damage completely. On a 1 your armor is damaged and you can't use this ability until you repair it.</p>"
         },
         {
-          "moves_requirements": ["black"],
-          "moves_name": "Clumsy",
-          "moves_description": "If you don't have this ability, when you use chainmail armor to defy danger by being stealthy or agile, you get -1 to the roll. This armor is noisy and heavy, making you more noticeable and slower."
-        },
-        {
-          "moves_requirements": [],
-          "moves_name": "Protective",
-          "moves_description": "You get +2 armor (armor reduces the damage you receive) when receiving damage on the torso or arms."
+          "moves_requirements": [
+            "red"
+          ],
+          "moves_name": "Sturdy",
+          "moves_description": "<p>When you take damage from a piercing weapon used by a human-sized creature  on your torso or arms, you can roll a 1d10. On a 5-10, you ignore the damage completely. On a 1 your armor is damaged and you can't use this ability until you repair it.</p>"
         }
+  
       ],
       "stats": [
         {
@@ -20747,7 +20796,7 @@
     {
       "name": "Hack and Slash",
       "type": "rule",
-      "description": "When you attack with a melee weapon a single enemy, roll +STR: on a 20+ pick 3, on a 16-19, and pick 2, on a 9-15 pick 1:<ul><li>You deal your damage</li><li>Your target loses their action for this round</li><li>You regain your reaction if you already used it</li></ul>",
+      "description": "When you attack with a melee weapon a single enemy, roll +STR: on a 20+ pick 3, on a 16-19, and pick 2, on a 9-15 pick 1:<ul><li>You deal your damage</li><li>Your target loses their action for this round</li><li>You regain your reaction if you already used it</li><li>Hit an enemy on specific body part.   Roll 1d20, then you can add or substract to that roll up to a value of +5 or -5. (3 Chin, 4 Neck, 5 Head, 6 Hand, 7 Forearm, 8 Biceps, 9 SHoulder, 10-11 Chest, 12 Abdomen, 13 Vitals, 14 Thighs, 15-16 Legs, 17-18 Feet) (</li></ul>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
@@ -20757,7 +20806,7 @@
     {
       "name": "Volley",
       "type": "rule",
-      "description": "When you launch a ranged attack, roll +DEX. On a 20+, pick 2. On a 16-19, pick 1: <ul><li>You deal your damage</li><li>Your target loses their action for this round.</li></ul>. On a 9-15, pick 1 but choose 1 from the list below <ul><li>You have to move to get the shot, placing you in danger of the GM's choice</li><li>You have to take time to aim and reduce ammo by one</li><li>You hit an unintended target, such as an ally, for half damage</li></ul>",
+      "description": "When you launch a ranged attack, roll +DEX. On a 20+, pick 2. On a 16-19, pick 1: <ul><li>You deal your damage</li><li>Your target loses their reaction for this round.</li></ul>. On a 9-15, pick 1 but choose 1 from the list below <ul><li>You have to move to get the shot, placing you in danger of the GM's choice</li><li>You have to take time to aim and reduce ammo by one</li><li>You hit an unintended target, such as an ally, for half damage</li></ul>",
       "geo_location": {
         "latitude": 37.7749,
         "longitude": -122.4194
