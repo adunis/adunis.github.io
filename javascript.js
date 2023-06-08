@@ -577,15 +577,16 @@ overlay.addEventListener('click', toggleOverlay);
 
 async function filterData(filter, currentPage = 1, jsonData, isBooster) {
 
-    const htmlname = window.location.pathname.split("/").pop();
+    jsonData = roundDownNumericalFields(jsonData)
 
+    const htmlname = window.location.pathname.split("/").pop();
 
     if (htmlname === "deck-manager.html") {
         document.querySelector("#deck-stats").innerHTML = "";
         const deckStatsTemplate = document.querySelector("#deck-stats-template").innerHTML;
         const deckStatsElement = document.createElement("div");
 
-        deckStatsElement.innerHTML = mustache.render(deckStatsTemplate, loadedData);
+        deckStatsElement.innerHTML = mustache.render(deckStatsTemplate, jsonData);
         document.querySelector("#deck-stats").appendChild(deckStatsElement);
 
         const deckName = document.getElementById("deck-name-text");
@@ -825,7 +826,7 @@ async function loadStartUp() {
             const json = await fetch("HoH_all.json");
             loadedData = await json.json();
             // Call relevant code based on the filename and loaded data
-            await handleLoadedData(loadedData["deck_list"], filename);
+            await handleLoadedData(loadedData, filename);
             modal.classList.remove("open");
         });
     }
@@ -1288,15 +1289,37 @@ async function loadStartUp() {
 
 }
 
+function roundDownNumericalFields(items) {
+    // Iterate over each item in the list
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+  
+      // Iterate over each property of the item
+      for (const prop in item) {
+        if (typeof item[prop] === 'number') {
+          // Round down numerical fields to the nearest integer
+          item[prop] = Math.floor(item[prop]);
+        } else if (typeof item[prop] === 'object') {
+          // Recursively handle nested objects
+          roundDownNumericalFields([item[prop]]);
+        }
+      }
+    }
+  
+    return items;
+  }
 
 async function handleLoadedData(loadedData, filename) {
+
+
+
     if (filename === "deck-manager.html") {
         selectedCardsList.innerHTML = "";
         removeAllButton.style.display = "none";
         const selectedCards = selectedCardsList.querySelectorAll("li").length;
         const selectedCount = document.querySelector("#selected-count");
         selectedCount.textContent = selectedCards;
-        await filterData("", 1, loadedData);
+        await filterData("", 1, loadedData["deck_list"]);
     } else if (filename === "gm-panel.html") {
         // Handle GM panel
         selectedCardsList.innerHTML = "";
@@ -1304,7 +1327,7 @@ async function handleLoadedData(loadedData, filename) {
         const selectedCards = selectedCardsList.querySelectorAll("li").length;
         const selectedCount = document.querySelector("#selected-count");
         selectedCount.textContent = selectedCards;
-        await filterData("", 1, loadedData);
+        await filterData("", 1, loadedData["deck_list"]);
     } else if (filename === "index.html") {
         const json = await fetch("HoH_all.json");
         const loadedData = await json.json();
