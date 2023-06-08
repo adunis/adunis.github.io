@@ -124,6 +124,14 @@
                     </div>
                     {{/abilities}}
                 </div>
+                <div class="card-stats">
+                    {{#secondary_stats}}
+                    <div class="card-stat">
+                        <div class="card-stat-label">{{stat_name}}</div>
+                        <div class="card-stat-value">{{stat_value}}</div>
+                    </div>
+                    {{/secondary_stats}}
+                </div>
             </div>
             <div class="card-body">
                 {{#moves}}
@@ -208,7 +216,11 @@
         <div class="modal-content">
             <div class="file-upload-buttons">
                 <div id="color-buttons">
-                <button id="custom-file-upload-button" class="big-button">Load your deck</button>
+                <button id="custom-file-upload-button" class="big-button">Load JSON file</button>
+                <p></p>
+                    <textarea id="json-textarea" rows="5" cols="50" placeholder="Paste your JSON here"></textarea>
+                    <button id="load-json-button" class="big-button">Load JSON</button>
+                    <p></p>
                    <button class="color-button red-color" data-color="red"> <div class="crystal red space-to-right"></div>The Bellator (Warrior)</button>
                     <button class="color-button blue-color" data-color="blue"> <div class=" crystal blue space-to-right"></div>The Custos (Guardian)</button>
                     <button class="color-button cerulean-color" data-color="cerulean"> <div class=" crystal cerulean space-to-right"></div>The Occultus (Occultist)</button>

@@ -80,6 +80,8 @@ if (filename === "gm-panel.html") {
 // Overall, this function provides a flexible and dynamic way to render and interact with cards on a web page, and can be customized to fit a wide range of use cases.
 
 async function renderCards(jsonData, isBooster) {
+   
+
     let cardId = 0;
     const editorModal = document.querySelector(".editor-modal");
     const modal = document.querySelector(".editor-modal");
@@ -797,6 +799,7 @@ async function loadStartUp() {
         modal.classList.remove("open");
     });
 
+
     if (filename !== "deck-manager.html") {
         defaultFileUploadButton.addEventListener("click", async () => {
             const json = await fetch("HoH_all.json");
@@ -806,6 +809,29 @@ async function loadStartUp() {
             modal.classList.remove("open");
         });
     }
+
+    const loadJsonButton = document.querySelector("#load-json-button");
+
+    loadJsonButton.addEventListener("click", async () => {
+        const jsonTextarea = document.querySelector("#json-textarea");
+        const jsonText = jsonTextarea.value;
+        if (jsonText.length > 0) { 
+
+    try {
+        const jsonData = JSON.parse(jsonText);
+        // Call relevant code based on the loaded data
+
+        loadedData = jsonData;
+        await handleLoadedData(jsonData["deck_list"], filename);
+    } catch (error) {
+        console.error("Invalid JSON:", error);
+        // Handle the error appropriately (e.g., display an error message)
+    }
+    modal.classList.remove("open");
+        } 
+});
+
+    
 
 // Array of possible background sentences
     const backgrounds = [
@@ -1877,7 +1903,11 @@ const default_values = {
     "CON": 0,
     "INT": 0,
     "WIS": 0,
-    "CAR": 0
+    "CAR": 0,
+    "speed": 10,
+    "action": 1,
+    "reaction": 1,
+    "load": 10
 };
 
 const modifiers = {
@@ -1889,13 +1919,21 @@ const modifiers = {
         "STR": 1,
         "COS": 1,
         "WIS": -1,
+        "speed": 0,
+        "action": 0.5,
+        "reaction": 0.25,
+        "load": 0
     },
     "orange": {
         "hp": 6,
         "hd_steps": 2,
         "STR": 1,
         "COS": 1,
-        "INT": -1
+        "INT": -1,
+        "speed": 3,
+        "action": 0.25,
+        "reaction": 0.25,
+        "load": 0
     },
     "green": {
         "hp": 4,
@@ -1905,6 +1943,10 @@ const modifiers = {
         "DEX": 1,
         "STR": 1,
         "INT": -1,
+        "speed": 0,
+        "action": 0.25,
+        "reaction": 0.5,
+        "load": 0
     },
     "emerald": {
         "hp": 1,
@@ -1915,6 +1957,10 @@ const modifiers = {
         "WIS": 1,
         "COS": 1,
         "CAR": -1,
+        "speed": 0,
+        "action": 0.25,
+        "reaction": 0.5,
+        "load": 0
     },
     "cerulean": {
         "mp": 6,
@@ -1922,7 +1968,11 @@ const modifiers = {
         "INT": 1,
         "WIS": 1,
         "STR": -1,
-        "COS": -1
+        "COS": -1,
+        "speed": 0,
+        "action": 0.5,
+        "reaction": 0.25,
+        "load": 0
     },
     "purple": {
         "hp": 2,
@@ -1932,6 +1982,10 @@ const modifiers = {
         "CAR": 1,
         "DEX": 1,
         "COS": -1,
+        "speed": 1,
+        "action": 0.5,
+        "reaction": 0.25,
+        "load": 0
     },
     "gold": {
         "hp": 2,
@@ -1942,6 +1996,10 @@ const modifiers = {
         "WIS": 1,
         "INT": 1,
         "STR": -1,
+        "speed": 1,
+        "action": 0.25,
+        "reaction": 0.25,
+        "load": 5
     },
     "black": {
         "hp": 2,
@@ -1952,6 +2010,10 @@ const modifiers = {
         "DEX": 1,
         "INT": 1,
         "WIS": -1,
+        "speed": 5,
+        "action": 0.25,
+        "reaction": 0.25,
+        "load": 0
     },
     "blue": {
         "hp": 3,
@@ -1962,6 +2024,10 @@ const modifiers = {
         "STR": 1,
         "CAR": 1,
         "WIS": -1,
+        "speed": 0,
+        "action": 0.25,
+        "reaction": 0.25,
+        "load": 5
     },
     "white": {
         "hp": 1,
@@ -1972,7 +2038,11 @@ const modifiers = {
         "WIS": 1,
         "CAR": 1,
         "COS": -1,
-    },
+        "speed": 0,
+        "action": 0.25,
+        "reaction": 0.5,
+        "load": 0
+    }
 };
 
 function autoCalculateStats(card) {
@@ -1994,6 +2064,12 @@ function autoCalculateStats(card) {
             {"ability_name": "WIS", "ability_value": default_values["WIS"]},
             {"ability_name": "CAR", "ability_value": default_values["CAR"]}
         ];
+        card['secondary_stats'] = [
+            {"stat_name": "speed", "stat_value": default_values["speed"]},
+            {"stat_name": "load", "stat_value": default_values["load"]},
+            {"stat_name": "action", "stat_value": default_values["action"]},
+            {"stat_name": "reaction", "stat_value": default_values["reaction"]}
+        ];
     }
 
     const stepArray = ["1", "1d2", "1d4", "1d6", "1d8", "1d10", "2d6", "2d8", "3d6", "3d8", "4d6", "4d8", "6d6", "6d8", "8d6", "8d8", "12d6", "12d8", "16d6"]
@@ -2001,6 +2077,7 @@ function autoCalculateStats(card) {
     if (card.type.includes('creature') || card.type.includes('character')) {
         let abilities = card.abilities;
         let stats = card.stats;
+        let secondary_stats = card.secondary_stats
         let crystals = card.crystals.provides;
 
         crystals.forEach((crystal) => {
@@ -2022,6 +2099,9 @@ function autoCalculateStats(card) {
                     } else if (stats.some((stat) => stat.stat_name === key)) {
                         let statIndex = stats.findIndex((stat) => stat.stat_name === key);
                         stats[statIndex].stat_value += value;
+                    } else if (secondary_stats.some((secondary_stats) => secondary_stats.stat_name === key)) {
+                        let statIndex = secondary_stats.findIndex((secondary_stats) => secondary_stats.stat_name === key);
+                        secondary_stats[statIndex].stat_value += value;
                     }
                 }
             }

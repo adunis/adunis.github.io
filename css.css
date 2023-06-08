@@ -280,7 +280,7 @@
     text-align: center;
     color: #fff;
     text-shadow:1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000,0 0 40px #000;
-    background: #ffdf7f url(parchment.jpg) repeat 0 0;
+    background-color:  #333333;
 }
 
 .card {
@@ -293,6 +293,10 @@
     background: #f9f8f4;
     overflow: hidden;
     position: relative;
+}
+
+.color-button{
+    background-color: #333333;
 }
 
 .hoh-card-header {
