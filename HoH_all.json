@@ -8261,13 +8261,7 @@
                 "provides": []
                 },
                 "type": "feature",
-                "description": "You are a weaver, skilled in the art of making and modifying clothes. You can modify any clothes you wear or craft with one of these modifications:
-                
-                    Disguising: You can alter any clothes to look like someone else's by spending 1 hour and 10 coins. (Limit: one person per clothes)
-                    Camouflage: You can change any clothes to blend in with the environment by spending 1 hour and 5 coins. (Limit: one color per clothes)
-                
-                You can learn how to apply other modifications by finding new materials or patterns.",
-                "stats": [
+                "description": "You are a weaver, skilled in the art of making and modifying clothes. You can modify any clothes you wear or craft with one of these modifications:Disguising: You can alter any clothes to look like someone else's by spending 1 hour and 10 coins. (Limit: one person per clothes), Camouflage: You can change any clothes to blend in with the environment by spending 1 hour and 5 coins. (Limit: one color per clothes)","stats": [
                 {
                 "stat_name": "",
                 "stat_value": ""
