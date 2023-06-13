@@ -61,7 +61,26 @@
 </div>
 <div id="card-grid">
  </div>
+<!-- Modal for editing cards -->
+<div class="editor-modal">
+    <div class="editor-modal-content">
+        <div class="editor-container">  <div class="card-preview"></div>
+       <section class="json-editor-section">
+            <div id="toggle-container">
+                <input type="checkbox" id="auto-calculate-toggle">
+                <label for="auto-calculate-toggle">Auto calculate stats</label>
+            </div>
 
+            <textarea id="json-editor">{</textarea>
+        </section></div>
+        <div class="button-container">
+            <button id="submit-button">Save changes</button>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+
+</div>
+<input type="file" id="booster-pack-file-input" accept=".hoh,.json" style="display: none;">
 
 
 <div id="card-template" style="display:none">

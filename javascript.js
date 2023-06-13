@@ -79,7 +79,12 @@ if (filename === "gm-panel.html") {
 // If the web page is the "deck-manager.html" page, additional buttons are added to each card to allow the user to move the card between the main deck and the side deck, or discard the card altogether. Depending on the initial status of the card, either the "Put in Main Deck" and "Discard" buttons, or the "Put in Side Deck" button, are added to the card.
 // Overall, this function provides a flexible and dynamic way to render and interact with cards on a web page, and can be customized to fit a wide range of use cases.
 
-async function renderCards(jsonData, isBooster) {
+Array.prototype.move = function(from, to) {
+    this.splice(to, 0, this.splice(from, 1)[0]);
+};
+
+
+function renderCards(jsonData, isBooster) {
 
 
     let cardId = 0;
@@ -200,7 +205,10 @@ async function renderCards(jsonData, isBooster) {
             event.stopPropagation();
             const confirmed = confirm("Are you sure you want to discard this card? Discarding means removing permanently a card from your character's deck. You get 1 XP for each crystal symbol present in the card if its not an item.");
             if (confirmed) {
-                cardElement.remove();
+                jsonData.move(jsonData.indexOf(card), jsonData.indexOf(card)+1);
+                console.log(jsonData)
+                renderCards(jsonData, false);
+  
             }
         });
 
@@ -210,6 +218,28 @@ async function renderCards(jsonData, isBooster) {
         if (window.location.pathname.endsWith("gm-panel.html")) {
             const editButton = document.createElement("button");
             editButton.innerText = "Edit";
+            editButton.classList.add("edit-button");
+
+            editButton.addEventListener("click", (event) => {
+                event.stopPropagation();
+
+                const previewCard = document.createElement("div");
+                previewCard.innerHTML = mustache.render(cardTemplate, card); 
+                const cardPreview = document.querySelector(".card-preview");
+                cardPreview.setAttribute("data-json-id", JSON.stringify(card.id));
+                cardPreview.innerHTML = "";
+                cardPreview.appendChild(previewCard);
+
+                editorModal.classList.add("open");
+                jsonEditor.value = JSON.stringify(card, null, 2);
+            });
+
+            buttonsContainer.appendChild(editButton);
+        }
+
+        if (window.location.pathname.endsWith("index.html")) {
+            const editButton = document.createElement("button");
+            editButton.innerText = "Info";
             editButton.classList.add("edit-button");
 
             editButton.addEventListener("click", (event) => {
@@ -277,7 +307,7 @@ async function renderCards(jsonData, isBooster) {
         }
     }
 
-    if (window.location.pathname.endsWith("gm-panel.html")) {
+    if (window.location.pathname.endsWith("gm-panel.html") || window.location.pathname.endsWith("index.html")) {
 
         submitButton.addEventListener("click", async () => {
             const newJsonData = jsonEditor.value;
@@ -577,6 +607,7 @@ overlay.addEventListener('click', toggleOverlay);
 
 async function filterData(filter, currentPage = 1, jsonData, isBooster) {
 
+    console.log(jsonData)
     jsonData = roundDownNumericalFields(jsonData)
 
     const htmlname = window.location.pathname.split("/").pop();
@@ -813,7 +844,7 @@ async function loadStartUp() {
                 jsonData["deck_list"] = loadedDeck;
                 loadedData = jsonData;
 
-                await handleLoadedData(loadedDeck, filename);
+                await handleLoadedData(loadedData, filename);
             };
             reader.readAsText(selectedFile);
         }
@@ -866,7 +897,7 @@ async function loadStartUp() {
                 jsonData["deck_list"] = loadedDeck;
                 loadedData = jsonData;
 
-                await handleLoadedData(loadedDeck, filename);
+                await handleLoadedData(loadedData, filename);
             } catch (error) {
                 console.error("Invalid JSON:", error);
                 // Handle the error appropriately (e.g., display an error message)
@@ -875,6 +906,58 @@ async function loadStartUp() {
         }
     });
 
+
+    const loadJsonButtonBooster = document.querySelector("#load-json-button-booster");
+
+    loadJsonButtonBooster.addEventListener("click", async () => {
+        const jsonTextarea = document.querySelector("#json-textarea-booster");
+        const jsonText = jsonTextarea.value;
+        if (jsonText.length > 0) {
+
+            try {
+                // Call relevant code based on the loaded data
+
+                const json = await fetch("HoH_all.json");
+                const loadedCards = await json.json();
+    
+                const masterDeck = loadedCards["deck_list"];
+
+                var jsonData = [];
+
+                if (JSON.parse(jsonText)["deck_list"]) {
+                    jsonData = JSON.parse(jsonText);
+                } else if (Array.isArray(JSON.parse(jsonText))) {
+                    jsonData["deck_list"] = JSON.parse(jsonText);
+                } else {
+                    jsonData["deck_list"] = [JSON.parse(jsonText)]
+                }
+
+                var loadedDeck = jsonData["deck_list"]
+
+                // Iterate over each card in the loadedDeck
+                for (let i = 0; i < loadedDeck.length; i++) {
+                    const loadedCard = loadedDeck[i];
+
+                    // Find the matching card in masterDeck
+                    const matchingCard = masterDeck.find((card) => card.name === loadedCard.name);
+
+                    // If a matching card is found and the card lists are different, replace the loadedCard
+                    if (matchingCard) {
+                        loadedDeck[i] = matchingCard;
+                    }
+                }
+                console.log("adding cards...")
+                console.log(loadedDeck)
+
+                await filterData("", 1, loadedDeck, true);
+
+            } catch (error) {
+                console.error("Invalid JSON:", error);
+                // Handle the error appropriately (e.g., display an error message)
+            }
+            modal.classList.remove("open");
+        }
+    });
 }
 
 
@@ -1319,6 +1402,7 @@ async function handleLoadedData(loadedData, filename) {
         const selectedCards = selectedCardsList.querySelectorAll("li").length;
         const selectedCount = document.querySelector("#selected-count");
         selectedCount.textContent = selectedCards;
+        console.log(loadedData)
         await filterData("", 1, loadedData["deck_list"]);
     } else if (filename === "gm-panel.html") {
         // Handle GM panel
@@ -1352,7 +1436,7 @@ myInput.addEventListener('keyup', async function () {
 window.addEventListener('load', async function () {
     const filter = myInput.value.toLowerCase();
     if (filter) {
-        await filterData(filter, 1, loadedData);
+        await filterData(filter, 1, loadedData["deck-list"]);
     }
 });
 
