@@ -205,10 +205,7 @@ function renderCards(jsonData, isBooster) {
             event.stopPropagation();
             const confirmed = confirm("Are you sure you want to discard this card? Discarding means removing permanently a card from your character's deck. You get 1 XP for each crystal symbol present in the card if its not an item.");
             if (confirmed) {
-                jsonData.move(jsonData.indexOf(card), jsonData.indexOf(card)+1);
-                console.log(jsonData)
-                renderCards(jsonData, false);
-  
+                cardElement.remove()
             }
         });
 
