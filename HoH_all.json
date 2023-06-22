@@ -5569,7 +5569,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into words or a performance, you may choose to use two cards at the same or have your magic effect a second valid target.</p>",
+            "description": "<p>When you weave magic into words or a performance, you may choose to use two abilities at the same time (spending for both mp) or have your magic effect a second valid target.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5751,7 +5751,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>Requires: With a Little Help..</p><p>When you Aid an ally, you act together in perfect harmony. Instead of aiding, you can roll 2d6 + CHA and your ally can use that result in place of one of their rolls until the rest of the session. You still risk the consequences of their action.</p>",
+            "description": "<p>Requires: With a Little Help.</p><p>When you Aid an ally, you act together in perfect harmony. Instead of aiding, you can roll 2d6 + CHA and your ally can use that result in place of one of their rolls until the rest of the session. An ally can benefit from this effect once every 24 hours. You still risk the consequences of their action.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5829,7 +5829,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, You drown out the magical incantations of a spellcaster you can hear, causing their spell to fail. Roll +CHA,  on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, you drown out the magical incantations of a spellcaster you can hear, causing their spell to fail. Spend 1 mp and roll +CHA,  on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5855,7 +5855,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, you can have a foe becomes temporarily confused, causing them to lash out and attack anyone nearby. Roll +CHA,  on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armor Forward and +2 damage Forward.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, you can have a foe becomes temporarily confused, causing them to lash out and attack anyone nearby. Spend 1 mp and roll +CHA and roll +CHA,  on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armor Forward and +2 damage Forward.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5881,7 +5881,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, you can have an ally freed of all physical restraints and roll+CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, you can have an ally freed of all physical restraints. Spend 1 mp and roll +CHA, on a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5907,7 +5907,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, an ally heals 1d6+1 damage and roll+CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, an ally heals 1d6+1 damage. Spend 1 mp and roll +CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5933,7 +5933,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, you can have a foe takes 1d6+1 damage and is deafened for a few minutes and roll+CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, you can have a foe takes 1d6+1 damage and is deafened for a few minutes. Spend 1 mp and roll +CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5959,7 +5959,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, you can have an ally takes +1 armour Forward and +2 damage Forward and roll+CHA. On a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, you can have an ally takes +1 armour Forward and +2 damage Forward. Spend 1 mp and roll +CHA. On a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armour Forward and +2 damage Forward.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -5985,7 +5985,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, A foe takes -1 armour Forward and -2 damage Forward. and roll+CHA and roll+CHA. On a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p>",
+            "description": "<p>When you weave magic into your words or into a performance, A foe takes -1 armour Forward and -2 damage Forward. Spend 1 mp and roll +CHAOn a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -6011,7 +6011,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you weave magic into your words or into a performance, you can have An ally\u2019s mind is cleared of fear and enchantment and roll+CHA and roll+CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
+            "description": "<p>When you weave magic into your words or into a performance, you can have An ally\u2019s mind is cleared of fear and enchantment. Spend 1 mp and roll+CHA. On a 16-19, you achieve it. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -6039,7 +6039,7 @@
                 ]
             },
             "type": "core training",
-            "description": "<p><p>The College of Percussions, Drumming Rally is a renowned institution located in the city of Seville, Spain. Here, the bards learn to play the powerful and inspiring rhythms that can clear an ally's mind of fear and grant them +1 armor Forward. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armour Forward and +2 damage Forward.</p></p>",
+            "description": "<p><p>The College of Percussions, Drumming Rally is a renowned institution located in the city of Seville, Spain. Here, the bards learn to play the powerful and inspiring rhythms that can clear an ally's mind of fear and grant them +1 armor Forward. Spend 1 mp and roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. An ally takes +1 armour Forward and +2 damage Forward.</p></p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -6067,7 +6067,7 @@
                 ]
             },
             "type": "core training",
-            "description": "<p><p>The College of Woodwinds is situated in the city of Edinburgh, Scotland. The bards here are trained to play a tune on their woodwind instruments that creates a gust of wind, blocking a single incoming attack and dealing 1d6 damage to the attacker. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p></p>",
+            "description": "<p><p>The College of Woodwinds is situated in the city of Edinburgh, Scotland. The bards here are trained to play a tune on their woodwind instruments that creates a gust of wind, blocking a single incoming attack and dealing 1d6 damage to the attacker. Spend 1 mp and roll +CHA and, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p></p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -6095,7 +6095,7 @@
                 ]
             },
             "type": " core training",
-            "description": "<p><p>The College of Brass and Accordions, Fanfare of Fury is a prestigious institution located in the city of Paris, France. The bards here are taught to play a bold and commanding tune on their brass instruments, inspiring their allies to greatness and granting them +1 damage Forward and +1 armor Forward. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p></p>",
+            "description": "<p><p>The College of Brass and Accordions, Fanfare of Fury is a prestigious institution located in the city of Paris, France. The bards here are taught to play a bold and commanding tune on their brass instruments, inspiring their allies to greatness and granting them +1 damage Forward and +1 armor Forward. Spend 1 mp and roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p></p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -6123,7 +6123,7 @@
                 ]
             },
             "type": "core training",
-            "description": "<p><p>The College of Voice, Siren's Song is located in the city of Athens, Greece. The bards here are skilled in singing a mesmerizing and seductive tune that lures a single foe in, causing them to become entranced and more vulnerable to further attacks. Roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p></p>",
+            "description": "<p><p>The College of Voice, Siren's Song is located in the city of Athens, Greece. The bards here are skilled in singing a mesmerizing and seductive tune that lures a single foe in, causing them to become entranced and more vulnerable to further attacks. Spend 1 mp and roll +CHA, on a 16-19, you achieve it On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice. </p></p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -6291,7 +6291,7 @@
                 ]
             },
             "type": "core training",
-            "description": "<p>The College of Dancing: Dance of Love is located in the city of Venice, Italy. The college is known for teaching students how to perform seductive dances that can influence their foes. When you perform the Dance of Love, choose a single foe and roll +CHA, on a 16-19, you achieve it. They become infatuated with you and are distracted, making them vulnerable to further attacks. This effect lasts for a few moments before wearing off. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.   </p>",
+            "description": "<p>The College of Dancing: Dance of Love is located in the city of Venice, Italy. The college is known for teaching students how to perform seductive dances that can influence their foes. When you perform the Dance of Love, choose a single foe and spend 1 mp and roll +CHA, on a 16-19, you achieve it. They become infatuated with you and are distracted, making them vulnerable to further attacks. This effect lasts for a few moments before wearing off. On a 9-15, your spell still works, but you also draw unwanted attention or your magic reverberates to other targets affecting them as well, GM\u2019s choice.   </p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -8667,7 +8667,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>You can conjure a simple invisible construct that can do nothing but carry 3 Load of items.</p>",
+            "description": "<p>You can conjure a simple invisible construct that can do nothing but carry 3 Load of items. You spend 1 MP for each hour the construct is active.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -8693,7 +8693,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>You can telepathically communicate with one person you can see within near range.</p>",
+            "description": "<p>You can telepathically communicate with one person you can see within near range without spending any MP.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -8719,7 +8719,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p><p>With a touch, you can temporarily change one fundamental feature of a willing person for about an hour. Lungs can become gills, arms can become wings, and so on.</p></p>",
+            "description": "<p><p>With a touch, you can temporarily change one fundamental feature of a willing person for about an hour by spending 1 MP. Lungs can become gills, arms can become wings, and so on. You can revert the effect at any time.</p></p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -9988,7 +9988,7 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>You may fire small magical projectiles without spending mp as if you were using a slingshot</p>",
+            "description": "<p>You may fire small magical projectiles without spending mp, but you make a Volley check with Intelligence (Replace of losing 1 ammo with losing 1 mp). When shooting a projectile, choose the type of it: Fire, Frost or Acid. You deal half of your MD damage.</p>",
             "stats": [
                 {
                     "stat_name": "",
@@ -10701,7 +10701,7 @@
                     ""
                 ]
             },
-            "type": "training",
+            "type": "feature",
             "description": "<p>Requires also <i>Arcane Spellcasting</i></p><p>When you spend time studying your spellbooks you may decide to write down in a spellbook an Astral Word by combining other two words (the word doesn\u2019t need to be a real one, for example combining Animus and Impulso could create the word \u2018 Anipulso\u2019 which means \u2018Pushing the mind\u2019.) The cost of the spellbook page and for the ink its equal to 100 coins.</p>",
             "stats": [
                 {
@@ -21962,7 +21962,7 @@
         {
             "name": "Take a Rest",
             "type": "rule",
-            "description": "When you settle in to rest, answer the GMs questions about where and how are you resting. Then, each player (including the GM) asks one of the following questions of a character; that character\u2019s player must answer honestly:\n- What do you do during this rest that is so annoying/endearing?\n- What do I do that you find so annoying/endearing?\n- Who or what seems to be on your mind?\n- What do we find ourselves talking about?\n- What do you do to pass the time?\n- What do you reveal about yourself that I/we hadn\u2019t realized before?\n\nThe GM will decide what, if anything, happens during the rest (possibly asking you to roll the Die of Fate). When you\u2019ve eaten something, drunk your fill, and gotten at least a few hours of rest, if you have enough XP you may level up. Then pick 1. If your rest was particularly comfortable, peaceful, or enjoyable, pick 1 more:\n- Regain half Hit Points (HP)\n- Regain half Magic Points (MP)\n- Regain half Social Point (SP)\n- Expend 1 use of an appropriate resource (rations, whisky, remedies, etc.) to clear a debility; everyone must agree that the resource makes sense\n- Take +3 forward",
+            "description": "When you settle in to rest for at least 8 hours, answer the GMs questions about where and how are you resting. Then, each player (including the GM) asks one of the following questions of a character; that character's player must answer honestly:</p><ul><li>What do you do during this rest that is so annoying/endearing?</li><li>What do I do that you find so annoying/endearing?</li><li>Who or what seems to be on your mind?</li><li>What do we find ourselves talking about?</li><li>What do you do to pass the time?</li><li>What do you reveal about yourself that I/we hadn't realized before?</li></ul><p>The GM will decide what, if anything, happens during the rest (possibly asking you to roll the Die of Fate). When you've eaten something, drunk your fill, and gotten at least a few hours of rest, if you have enough XP you may level up. Then pick 1. If your rest was particularly comfortable, peaceful, or enjoyable, pick 1 more:</p><ul><li>Regain half Hit Points (HP)</li><li>Regain half Magic Points (MP)</li><li>Regain half Social Point (SP)</li><li>Expend 1 use of an appropriate resource (rations, whisky, remedies, etc.) to clear a debility; everyone must agree that the resource makes sense</li><li>Take +3 forward</li></ul>",
             "geo_location": {
                 "latitude": 37.7749,
                 "longitude": -122.4194
@@ -22119,7 +22119,111 @@
                 "provides": []
             },
             "type": "feature",
-            "description": "<p>When you call the Lupi Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other wolves and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to pack mentality and loyalty. Roll+WIS. On a  16-19, the spirit quickly possesses you and without issue. On a 9-15, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+            "description": "<p>When you call the Lupi Spirit to temporarily possess you, your body changes to adapt to it. You gain the ability to run and sense prey over long distances, including communicating with other wolves and regenerating from injuries. Your weakness is that silver is deadly. Your instinct is prone to pack mentality and loyalty. Spend 1 MP and roll+WIS. On a  16-19, the spirit quickly possesses you and without issue. On a 9-15, you it still possesses you, but you are put in a spot or draw unwanted attention. While the spirit is possessing you, you gain any innate abilities and weaknesses of the spirit. You also gain the Instinct of your spirit; if you try and ignore this primal urge or keep it in check, you must Defy Danger. You may stop the summoning at any time.</p>",
+            "stats": [
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                },
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                }
+            ],
+            "geo_location": {
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "header_image": "Lupi Spirit.png"
+        },
+        {
+            "name": "Arcane Resurgence",
+            "crystals": {
+                "requires": [
+                    "cerulean"
+                ],
+                "provides": []
+            },
+            "type": "feature",
+            "description": "When you enter a state of profound focus and channel your magical essence to replenish your spent magic points in a dangerous area for at least 1 hour, roll +Intelligence. On a 17+, choose two options from the list below. On a 9-16, choose one option. On a miss, the GM will make a move.</p><ul><li>You replenish 1d6 magic points. This amount increases if close to powerful arcane sources of energy.</li><li>You do not attract any unwanted attention or alert nearby enemies to your presence.</li><li>You avoid any immediate negative consequences or complications.</li><li>You gain insight into the magical energies surrounding you, granting you a useful piece of information or an advantage related to your current situation.</li></ul><p>Additionally, choose one drawback from the list below. The GM may also introduce other risks or complications based on the situation.</p><ul><li>The process leaves you mentally fatigued, imposing a temporary -1 ongoing to Intelligence-based rolls until you rest.</li><li>The volatile magic causes a minor magical mishap, creating a temporary visual or auditory disturbance that may attract attention.</li><li>The surge of magical energy disrupts the environment, triggering a small tremor or causing objects to shake and potentially fall.</li><li>The ritual takes longer than expected, leaving you vulnerable for a brief period of time.</li></ul>",
+            "stats": [
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                },
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                }
+            ],
+            "geo_location": {
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "header_image": "Lupi Spirit.png"
+        },
+        {
+            "name": "Nature's Renewal",
+            "crystals": {
+                "requires": [
+                    "emerald"
+                ],
+                "provides": []
+            },
+            "type": "feature",
+            "description": "When you enter a state of profound focus and channel your magical essence to replenish your spent magic points in a dangerous area, roll +Intelligence. On a 17+, choose two options from the list below. On a 9-16,, choose one option. On a miss, the GM will make a move.</p><ul><li>You replenish 1d6 magic points. This amount increases if close to powerful elmemental or spiritual source of energy.</li><li>You do not attract any unwanted attention or alert nearby enemies to your presence.</li><li>You avoid any immediate negative consequences or complications.</li><li>You gain insight into the magical energies surrounding you, granting you a useful piece of information or an advantage related to your current situation.</li></ul><p>Additionally, choose one drawback from the list below. The GM may also introduce other risks or complications based on the situation.</p><ul><li>The process leaves you mentally fatigued, imposing a temporary -1 ongoing to Intelligence-based rolls until you rest.</li><li>The volatile magic causes a minor magical mishap, creating a temporary visual or auditory disturbance that may attract attention.</li><li>The surge of magical energy disrupts the environment, triggering a small tremor or causing objects to shake and potentially fall.</li><li>The ritual takes longer than expected, leaving you vulnerable for a brief period of time.</li></ul>",
+            "stats": [
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                },
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                }
+            ],
+            "geo_location": {
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "header_image": "Lupi Spirit.png"
+        },
+        {
+            "name": "Harmonic Resonance",
+            "crystals": {
+                "requires": [
+                    "purple"
+                ],
+                "provides": []
+            },
+            "type": "feature",
+            "description": "When you enter a state of profound focus and channel your magical essence to replenish your spent magic points in a dangerous area, roll +Charisma. On a 17+, choose two options from the list below. On a 9-16,, choose one option. On a miss, the GM will make a move.</p><ul><li>You replenish 1d6 magic points. This amount increases if close to a crowd of people with strong emotions.</li><li>You do not attract any unwanted attention or alert nearby enemies to your presence.</li><li>You avoid any immediate negative consequences or complications.</li><li>You gain insight into the magical energies surrounding you, granting you a useful piece of information or an advantage related to your current situation.</li></ul><p>Additionally, choose one drawback from the list below. The GM may also introduce other risks or complications based on the situation.</p><ul><li>The process leaves you mentally fatigued, imposing a temporary -1 ongoing to Charisma-based rolls until you rest.</li><li>The volatile magic causes a minor magical mishap, creating a temporary visual or auditory disturbance that may attract attention.</li><li>The surge of magical energy disrupts the environment, triggering a small tremor or causing objects to shake and potentially fall.</li><li>The ritual takes longer than expected, leaving you vulnerable for a brief period of time.</li></ul>",
+            "stats": [
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                },
+                {
+                    "stat_name": "",
+                    "stat_value": ""
+                }
+            ],
+            "geo_location": {
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "header_image": "Lupi Spirit.png"
+        },
+        {
+            "name": "Divine Communion",
+            "crystals": {
+                "requires": [
+                    "white"
+                ],
+                "provides": []
+            },
+            "type": "feature",
+            "description": "When you enter a state of profound focus and channel your magical essence to regain your spent magic points in a dangerous area, roll +Wisdom. On a 17+, choose two options from the list below. On a 9-16, choose one option. On a miss, the GM will make a move.</p><ul><li>You replenish 1d6 magic points. This amount increases if close to powerful divine place or relic.</li><li>You do not attract any unwanted attention or alert nearby enemies to your presence.</li><li>You avoid any immediate negative consequences or complications.</li><li>You gain insight into the divine energies surrounding you, granting you a useful piece of information or an advantage related to your current situation.</li></ul><p>Additionally, choose one drawback from the list below. The GM may also introduce other risks or complications based on the situation.</p><ul><li>The process leaves you spiritually drained, imposing a temporary -1 ongoing to Wisdom-based rolls until you rest.</li><li>The intense divine energy causes a minor disturbance in the surroundings, such as flickering lights, whispers, or a faint glow, potentially attracting attention.</li><li>The surge of divine power disrupts the environment, triggering a subtle manifestation of your deity's influence, such as a gentle breeze, celestial voices, or a faint scent.</li><li>The communion takes longer than expected, leaving you vulnerable and exposed for a brief period of time.</li></ul>",
             "stats": [
                 {
                     "stat_name": "",
