@@ -1,0 +1,443 @@
+/* =========================================
+   CYBERPUNK THEME - GREEN & PURPLE PALETTE
+   ========================================= */
+:root {
+    /* Backgrounds (Subtle dark purple tint) */
+    --bg-base: #09060f;
+    --card-bg: rgba(15, 12, 22, 0.85);
+    
+    /* Neon Green Hues */
+    --neon-green-main: #00ff66;       /* Bright tech green */
+    --neon-green-glow: rgba(0, 255, 102, 0.4);
+    --neon-green-dim: #00b347;        /* Darker green for borders */
+    
+    /* Neon Purple Hues */
+    --neon-purple-main: #b200ff;      /* Deep electric purple */
+    --neon-purple-glow: rgba(178, 0, 255, 0.5);
+    --neon-purple-light: #df80ff;     /* Lighter purple for readable text */
+    
+    /* Text Colors */
+    --text-main: #d4d4db;
+    --text-muted: #8b8896;
+    --text-headers: #ffffff;
+    
+    /* Grid/Borders */
+    --grid-color: rgba(178, 0, 255, 0.07);
+    --border-dim: #261f33;
+}
+
+/* =========================================
+   GLOBAL & BACKGROUND
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    
+    /* Cyber-grid background pattern (Purple tint) */
+    background-image: 
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+}
+
+h1, h2, h3, h4, .terminal-title, .tags span {
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+header {
+    background: linear-gradient(180deg, rgba(9,6,15,1) 0%, rgba(15,12,22,0.9) 100%);
+    padding: 3.5rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--neon-purple-main);
+    box-shadow: 0 0 20px var(--neon-purple-glow);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glitch/Scanline effect pseudo-element */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(178, 0, 255, 0.03) 2px,
+        rgba(178, 0, 255, 0.03) 4px
+    );
+    pointer-events: none;
+}
+
+.header-content h1 {
+    font-size: 2.8rem;
+    color: var(--text-headers);
+    /* 3D text shadow effect using both purple and green */
+    text-shadow: 0 0 10px var(--neon-purple-glow), 2px 2px 0px var(--neon-green-dim);
+    margin-bottom: 0.5rem;
+}
+
+.header-content h2 {
+    font-size: 1.1rem;
+    color: var(--neon-green-main);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.3);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.contact-info a, .contact-info span {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info a:hover {
+    color: var(--neon-purple-light);
+    text-shadow: 0 0 8px var(--neon-purple-glow);
+}
+
+.contact-info i {
+    color: var(--neon-green-main);
+}
+
+/* =========================================
+   LAYOUT & CARDS (DATA SLATES)
+   ========================================= */
+.container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-dim);
+    border-left: 4px solid var(--neon-purple-main);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-left: 4px solid var(--neon-green-main);
+    box-shadow: 0 0 15px var(--neon-green-glow);
+}
+
+/* AI Focus Card Highlight */
+.highlight-card {
+    border-left: 4px solid var(--neon-green-main);
+}
+
+.card h3 {
+    color: var(--neon-purple-light);
+    border-bottom: 1px dashed var(--border-dim);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-shadow: 0 0 5px var(--neon-purple-glow);
+}
+
+.highlight-card h3 {
+    color: var(--neon-green-main);
+    text-shadow: 0 0 5px var(--neon-green-glow);
+}
+
+.card p, .card ul {
+    margin-bottom: 1rem;
+}
+
+.card b, .card strong {
+    color: var(--text-headers);
+    font-weight: 600;
+}
+
+/* =========================================
+   EXPERIENCE & EDUCATION
+   ========================================= */
+.job {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job h4 {
+    font-size: 1.1rem;
+    color: var(--text-headers);
+    margin-bottom: 0.2rem;
+}
+
+.company {
+    color: var(--neon-purple-light);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem !important;
+}
+
+.date {
+    color: var(--neon-green-main);
+    font-size: 0.85rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    list-style-type: square;
+    color: var(--text-main);
+}
+
+li::marker {
+    color: var(--neon-green-main);
+}
+
+/* =========================================
+   SKILLS & TAGS
+   ========================================= */
+.skill-category {
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Standard Tags (Purple) */
+.tags span {
+    background: rgba(178, 0, 255, 0.05);
+    color: var(--neon-purple-light);
+    border: 1px solid var(--neon-purple-main);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    box-shadow: inset 0 0 5px var(--neon-purple-glow);
+    transition: 0.2s;
+}
+
+.tags span:hover {
+    background: var(--neon-purple-main);
+    color: #fff;
+    box-shadow: 0 0 10px var(--neon-purple-main);
+    cursor: default;
+}
+
+/* AI Tags (Green) */
+.ai-tags span {
+    background: rgba(0, 255, 102, 0.05);
+    color: var(--neon-green-main);
+    border: 1px solid var(--neon-green-main);
+    box-shadow: inset 0 0 5px var(--neon-green-glow);
+}
+
+.ai-tags span:hover {
+    background: var(--neon-green-main);
+    color: var(--bg-base);
+    box-shadow: 0 0 10px var(--neon-green-main);
+}
+
+/* =========================================
+   LANGUAGES
+   ========================================= */
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed var(--border-dim);
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-list li:last-child {
+    border-bottom: none;
+}
+
+.language-list strong {
+    color: var(--neon-purple-light);
+}
+
+/* =========================================
+   AI SIMULATOR TERMINAL (CYBERDECK UI)
+   ========================================= */
+.ai-simulator {
+    background: #0d0a12;
+    border: 1px solid var(--border-dim);
+    border-top: 2px solid var(--neon-green-main);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(0, 255, 102, 0.1);
+    margin-bottom: 3rem;
+    border-radius: 0;
+}
+
+.terminal-header {
+    background: #15111c;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-dim);
+}
+
+.dot {
+    height: 10px; width: 10px;
+    margin-right: 8px;
+    border-radius: 0;
+}
+
+/* Terminal button dots mapped to new palette */
+.red { background: var(--neon-purple-main); box-shadow: 0 0 5px var(--neon-purple-main); }
+.yellow { background: var(--neon-purple-light); box-shadow: 0 0 5px var(--neon-purple-light); }
+.green { background: var(--neon-green-main); box-shadow: 0 0 5px var(--neon-green-main); }
+
+.terminal-title {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    height: 320px;
+    overflow-y: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.01) 2px,
+        rgba(255, 255, 255, 0.01) 4px
+    );
+}
+
+/* Scrollbar styling for terminal */
+.terminal-body::-webkit-scrollbar { width: 8px; }
+.terminal-body::-webkit-scrollbar-track { background: #0d0a12; }
+.terminal-body::-webkit-scrollbar-thumb { background: var(--border-dim); }
+.terminal-body::-webkit-scrollbar-thumb:hover { background: var(--neon-green-main); }
+
+.message p { margin-bottom: 0.5rem; line-height: 1.4; }
+
+/* Terminal text colors */
+.system-msg { color: var(--text-muted); }
+.system-msg i { color: #615a72; font-size: 0.85rem; }
+.user-msg { color: var(--neon-purple-light); text-shadow: 0 0 3px rgba(223, 128, 255, 0.5); }
+.ai-msg { color: var(--neon-green-main); text-shadow: 0 0 3px rgba(0, 255, 102, 0.5); }
+.ai-msg b { color: var(--neon-purple-light); }
+.pipeline-step { color: var(--neon-purple-main); font-size: 0.8rem; font-style: italic; }
+
+.terminal-input-area {
+    display: flex;
+    padding: 1rem 1.5rem;
+    background: #110e16;
+    border-top: 1px solid var(--border-dim);
+    align-items: center;
+}
+
+.prompt-symbol {
+    color: var(--neon-green-main);
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: 'Fira Code', monospace;
+}
+
+#user-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-headers);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+    outline: none;
+    caret-color: var(--neon-purple-main);
+}
+
+#user-input::placeholder { color: #4b445c; }
+
+.terminal-input-area button {
+    background: transparent;
+    border: none;
+    color: var(--neon-purple-light);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.terminal-input-area button:hover {
+    color: var(--neon-green-main);
+    text-shadow: 0 0 8px var(--neon-green-glow);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-dim);
+    margin-top: 2rem;
+    background: var(--bg-base);
+}
+
+/* =========================================
+   RESPONSIVE MOBILE DESIGN
+   ========================================= */
+@media (max-width: 768px) {
+    .cv-layout {
+        flex-direction: column;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}

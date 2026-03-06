@@ -1,5 +1,0 @@
-{
-  "entrypoint": "index.html",
-  "shell": "app.js",
-  "npm": true
-}
