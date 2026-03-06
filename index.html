@@ -1,197 +1,173 @@
-<html lang="">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Handful of Heroes</title>
-    <script type="module" src="javascript.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="css.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandar Petrovic | Java & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
-
-
-
 <body>
 
-    <div id="navbar">
-        <a class="active" href="index.html">Card Browser</a>
-        <a href="deck-manager.html">Deck Manager</a>
-        <a href="gm-panel.html">GM Panel</a>
-        <a href="rules.html">Rules</a>
-        <a href="lore.html">Lore</a>
-    </div>
-
-<div id="drop-area">
-
-<div class="search-container">
-<div class="action-bar-container">
-    <input type="checkbox" id="super-mini-card-view" />
-    <label for="super-mini-card-view">Super mini card template</label>
-    
-    <input type="checkbox" id="mini-card-view" />
-    <label for="mini-card-view">Mini card template</label>
-    <div id="burger-menu">
-    <span></span>
-</div> <input type="text" id="my-input" placeholder="You can filter by key:value, for example type:item or crystals:red. Write 'help' for more. "></div>
-    <div id="pagination" class="pagination"></div>
-    <div id="popup" style="display:none">
-        <p>Help content goes here.</p>
-    </div>
-
-</div>
-
-<input type="file" id="json-file-input"  accept=".json" style="display: none;">
-
-<br> <div id="booster-pack-container">
-    <div id="booster-pack-cards"></div>
-
-</div>
-
-
-
-<div id="previewImg">
-</div>
-<div id="selection-info" class="selection-info">
-    <ul id="selected-cards-list"></ul>
-    <span id="selected-count" style="display: none;">0</span>
-    <span id="deck-status"></span>
-    <button id="save-deck-button">Save cards</button>
-    <button id="save-deck-button-encrypted" style="display: none;">...</button>
-    <button id="save-deck-button-loot-encrypted" style="display: none;">...</button>
-</div>
-<div id="card-grid">
- </div>
-<!-- Modal for editing cards -->
-<div class="editor-modal">
-    <div class="editor-modal-content">
-        <div class="editor-container">  <div class="card-preview"></div>
-       <section class="json-editor-section">
-            <div id="toggle-container">
-                <input type="checkbox" id="auto-calculate-toggle">
-                <label for="auto-calculate-toggle">Auto calculate stats</label>
+    <header>
+        <div class="header-content">
+            <h1>Aleks Petrovic</h1>
+            <h2>Java Backend Software Engineer and AI Engineer (Agentic AI, RAG, Vertex DBs)</h2>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-location-dot"></i> Emilia-Romagna, Italy (Full Remote)</span>
+                <a href="mailto:aleksandarpetrovic101@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/a-petrovic" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/adunis" target="_blank"><i class="fa-brands fa-github"></i> github.com/adunis</a>
             </div>
+        </div>
+    </header>
 
-            <textarea id="json-editor">{</textarea>
-        </section></div>
-        <div class="button-container">
-            <button id="submit-button">Save changes</button>
-            <button id="cancel-button">Cancel</button>
+    <div class="container">
+        
+        <!-- AI RAG SIMULATOR SECTION -->
+        <section class="ai-simulator">
+            <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">~/vertex-ai-rag-simulator</span>
+            </div>
+            <div class="terminal-body" id="chat-window">
+                <div class="message system-msg">
+                    <p>> System initialized. CV loaded into simulated Vector DB.</p>
+                    <p>> <i>Note: This is a purely client-side JavaScript simulation of a RAG pipeline. No real LLM APIs or backend servers are being used, demonstrating the architectural concept securely in the browser.</i></p>
+                    <br>
+                    <p>> Try asking: "What is his experience with Spring Boot?" or "Does he know Agentic AI?"</p>
+                </div>
+            </div>
+            <div class="terminal-input-area">
+                <span class="prompt-symbol">❯</span>
+                <input type="text" id="user-input" placeholder="Query CV Vector Space..." autocomplete="off" onkeypress="handleKeyPress(event)">
+                <button onclick="processQuery()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT COLUMNS (Traditional CV) -->
+        <div class="cv-layout" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            
+            <!-- Main Content Column -->
+            <main class="main-content" style="flex: 2; min-width: 300px;">
+                <section class="card">
+                    <h3><i class="fa-solid fa-user"></i> About Me</h3>
+                    <p>Experienced Java Backend Developer specializing in the Spring Framework and microservices architecture. Proven track record of building scalable backend systems, optimizing internal tools, and collaborating effectively within agile teams.</p>
+                    <p>Currently expanding my expertise to transition into an <strong>AI Engineer</strong> role. I am actively upskilling in <strong>Agentic AI</strong> workflows, <strong>Retrieval-Augmented Generation (RAG)</strong>, and the integration of Large Language Models (LLMs) with enterprise backends. Passionate about bridging traditional microservices with modern AI capabilities using <strong>Vector Databases (e.g., Vertex AI)</strong> to build intelligent, autonomous applications.</p>
+                </section>
+
+                <section class="card highlight-card">
+                    <h3><i class="fa-solid fa-brain"></i> Professional Development & AI Projects</h3>
+                    <div class="job">
+                        <p class="date">Present</p>
+                        <ul>
+                            <li>Actively studying and designing architectures for <strong>Agentic AI</strong>, focusing on how autonomous agents can interact securely with traditional Java REST APIs.</li>
+                            <li>Developing proof-of-concept applications utilizing <strong>Retrieval-Augmented Generation (RAG)</strong> to connect private datasets with LLMs, minimizing hallucinations.</li>
+                            <li>Gaining hands-on experience with vector embeddings and <strong>Google Vertex AI Vector Search</strong> for semantic search implementations.</li>
+                            <li>Exploring the integration of AI models into enterprise Java environments utilizing frameworks like <strong>Spring AI</strong> and LangChain4j.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                    
+                    <div class="job">
+                        <h4>Software Engineer</h4>
+                        <p class="company">Musement | <span class="date">January 2022 - Present</span></p>
+                        <ul>
+                            <li>Maintain and enhance internal content management tools, ensuring high performance, reliability, and code quality.</li>
+                            <li>Develop and support scalable microservices driving product availability, content management, and booking systems.</li>
+                            <li>Collaborate with cross-functional agile teams to implement robust new features, optimize legacy systems, and explore innovative backend solutions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h4>Software Engineer</h4>
+                        <p class="company">Gruppo SCAI | <span class="date">July 2020 - January 2022</span></p>
+                        <ul>
+                            <li>Developed, tested, and maintained high-performance microservices utilizing the Spring Framework.</li>
+                            <li>Contributed directly to the architectural design and implementation of highly scalable backend solutions for enterprise clients.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h4>AngularJS & .NET Fullstack Developer</h4>
+                        <p class="company">BluePillow.com | <span class="date">November 2019 - July 2020</span></p>
+                        <ul>
+                            <li>Developed full-stack features for BluePillow.com and its core API using AngularJS and .NET MVC, deployed on Microsoft Azure.</li>
+                            <li>Designed and implemented reliable web scrapers in .NET MVC to aggregate external data for the platform.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar Column -->
+            <aside class="sidebar" style="flex: 1; min-width: 250px;">
+                <section class="card">
+                    <h3><i class="fa-solid fa-code"></i> Top Skills</h3>
+                    
+                    <h4 class="skill-category">Backend & Architecture</h4>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Spring MVC</span>
+                        <span>Microservices</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                    <h4 class="skill-category">AI Engineering</h4>
+                    <div class="tags ai-tags">
+                        <span>Agentic AI</span>
+                        <span>RAG</span>
+                        <span>Vertex AI / Vector DBs</span>
+                        <span>LLM Integration</span>
+                        <span>Prompt Engineering</span>
+                        <span>Spring AI</span>
+                    </div>
+
+                    <h4 class="skill-category">Cloud, Tools & DBs</h4>
+                    <div class="tags">
+                        <span>Git / GitHub</span>
+                        <span>Azure</span>
+                        <span>MySQL</span>
+                        <span>CMS</span>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h3><i class="fa-solid fa-earth-americas"></i> Languages</h3>
+                    <ul class="language-list">
+                        <li><strong>Serbian:</strong> Native / Bilingual</li>
+                        <li><strong>Italiano:</strong> Native / Bilingual</li>
+                        <li><strong>Croatian:</strong> Native / Bilingual</li>
+                        <li><strong>English:</strong> Professional Working</li>
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <div class="job">
+                        <h4>Java, Javascript & MySQL Training</h4>
+                        <p class="company">Bologna, Italy | <span class="date">Sept - Oct 2019</span></p>
+                        <ul>
+                            <li>Intensive, hands-on technical training in backend and frontend fundamentals.</li>
+                            <li>Developed foundational projects and algorithms.</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+            
         </div>
     </div>
 
-</div>
-<input type="file" id="booster-pack-file-input" accept=".hoh,.json" style="display: none;">
+    <footer>
+        <p>© 2024 Aleksandar Petrovic. Built with Vanilla JS & deployed via GitHub Pages.</p>
+    </footer>
 
-
-<div id="card-template" style="display:none">
-    <div class="card {{#crystals.requires}} {{.}}-color {{/crystals.requires}} {{#crystals.provides}} {{.}}-color {{/crystals.provides}}">
-        <div class="hoh-card-header {{#type}} {{.}}-header {{/type}} header-image" >
-            <div class="left-crystals">
-                <div class="crystals-label-left">{{left_label}}Requires</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible"></div>
-                    {{#left}}
-                    <div class="card-stat-label">{{.}}</div>
-                    {{/left}}
-                    {{#crystals.requires}}
-                    <div class="crystal {{.}}"></div>
-                    {{/crystals.requires}}
-                </div>
-            </div>
-            <div class="icon-image-container">-
-                <div class="title">{{name}}</div>
-            </div>
-            <div class="right-crystals">
-                <div class="crystals-label-right">{{right_label}}Provides</div>
-                <div class="crystals-container">
-                    <div class="crystal soldier invisible"></div>
-                    {{#right}}
-                    <div class="card-stat-label">{{.}}</div>
-                    {{/right}}
-                    {{#crystals.provides}}
-                    <div class="crystal {{.}}"></div>
-                    {{/crystals.provides}}
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="card-stats">
-                {{#stats}}
-                <div class="card-stat">
-                    <div class="card-stat-label">{{stat_name}}</div>
-                    <div class="card-stat-value">{{stat_value}}</div>
-                </div>
-                {{/stats}}
-                <div class="card-stat">
-                    <div class="card-stat-label">{{type_label}}{{^type_label}}Type{{/type_label}}</div>
-                    <div class="card-stat-value">{{type}}</div>
-                </div>
-            </div>
-            <div class="card-stats">
-                {{#abilities}}
-                <div class="card-stat">
-                    <div class="card-stat-label">{{ability_name}}</div>
-                    <div class="card-stat-value">{{ability_value}}</div>
-                </div>
-                {{/abilities}}
-            </div>
-            <div class="card-stats">
-                {{#secondary_stats}}
-                <div class="card-stat">
-                    <div class="card-stat-label">{{stat_name}}</div>
-                    <div class="card-stat-value">{{stat_value}}</div>
-                </div>
-                {{/secondary_stats}}
-            </div>
-        </div>
-        <div class="card-body">
-            {{#moves}}
-            <div class="moves">
-                {{#moves_name}}
-                {{#moves_requirements}}
-                <span class="crystal move-crystal {{.}}"></span>
-                {{/moves_requirements}}
-                <div class="subtitle">{{{moves_name}}}</div>
-                {{/moves_name}}
-            </div>
-            {{#moves_description}}
-            <div>{{{moves_description}}}</div>
-            {{/moves_description}}
-            {{/moves}}
-
-            <div class="description">
-                {{#description}}
-                {{{description}}}
-                {{/description}}
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="menu">
-    <ul>
-        <a id="open-booster-pack" href="#"></a>
-        <a id="btn-Convert-Html2Image" href="#"></a>
-        <a id="load-json" href="#">Load cards</a>
-        <a id="load-hoh" href="#">Reset data</a>
-    </ul>
-</div>
-
-<!-- Add a loading element -->
-<div id="loadingIndicator">
-    <div class="spinner"></div>
-</div>
-
-
-    <div id="json-upload-modal" class="modal">
-        <div class="modal-content">
-            <h2>Choose the dataset</h2>
-            <div class="file-upload-buttons">
-                <button id="custom-file-upload-button">Custom Dataset</button>
-                <button id="default-file-upload-button">Handful of Heroes</button>
-            </div>
-            <input type="file" id="json-file-input-2" accept=".json" style="display:none">
-        </div>
-    </div>
-    </div>
-</div></body>
+    <script src="script.js"></script>
+</body>
+</html>

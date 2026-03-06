@@ -1,0 +1,427 @@
+/* =========================================
+   PROJECT E - EVA-01 ARMOR THEME
+   ========================================= */
+:root {
+    /* EVA-01 Armor Palette */
+    --eva-purple-dark: #140727;      /* Deep armor purple (Background) */
+    --eva-purple-panel: rgba(35, 14, 61, 0.9); /* Lighter armor plating */
+    --eva-purple-bright: #7e38f3;    /* Glowing purple accents */
+    
+    --eva-green-main: #55ff00;       /* Iconic toxic/neon green */
+    --eva-green-glow: rgba(85, 255, 0, 0.4);
+    
+    --eva-orange-alert: #ff7b00;     /* NERV/EVA UI Orange for accents */
+    
+    /* Text Colors */
+    --text-main: #e2dceb;
+    --text-muted: #9f96b3;
+    --text-headers: #ffffff;
+    
+    /* Structural */
+    --border-dim: #3a1c61;
+}
+
+/* =========================================
+   GLOBAL & BACKGROUND (THE AT-FIELD/ARMOR)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--eva-purple-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    
+    /* Hexagonal Mecha-Suit / AT-Field Pattern */
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(126, 56, 243, 0.15) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='40' height='69.282' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 17.32l-20 11.547L0 17.32V-5.774l20-11.547L40-5.774V17.32zm0 46.188l-20 11.548-20-11.548V40.414L20 28.867l20 11.547v23.094z' fill='%2355ff00' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, .terminal-title, .tags span {
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   HEADER (COMMAND CONSOLE)
+   ========================================= */
+header {
+    background: linear-gradient(180deg, #0d041a 0%, var(--eva-purple-dark) 100%);
+    padding: 3.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--eva-green-main);
+    box-shadow: 0 5px 20px var(--eva-green-glow);
+    position: relative;
+}
+
+/* Orange NERV-style warning stripe */
+header::after {
+    content: "TEST TYPE-01 // SYNC RATIO: 100%";
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    background: var(--eva-orange-alert);
+    color: #000;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-top-left-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 2.8rem;
+    color: var(--text-headers);
+    text-shadow: 0 0 10px var(--eva-purple-bright), 3px 3px 0px rgba(85, 255, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.header-content h2 {
+    font-size: 1.1rem;
+    color: var(--eva-green-main);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.contact-info a, .contact-info span {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info a:hover {
+    color: var(--eva-orange-alert);
+    text-shadow: 0 0 8px rgba(255, 123, 0, 0.6);
+}
+
+.contact-info i {
+    color: var(--eva-green-main);
+}
+
+/* =========================================
+   LAYOUT & CARDS (ARMOR PLATING)
+   ========================================= */
+.container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--eva-purple-panel);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    /* This clip-path cuts the bottom-right corner to look like mecha armor panels! */
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+    border-left: 5px solid var(--eva-purple-bright);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Pseudo-element to simulate the border on a clipped shape */
+.card::before {
+    content: "";
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 26px; height: 26px;
+    background: var(--eva-purple-bright);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    opacity: 0.5;
+}
+
+.card:hover {
+    border-left: 5px solid var(--eva-green-main);
+    background: rgba(45, 18, 78, 0.95);
+}
+
+.card:hover::before {
+    background: var(--eva-green-main);
+    opacity: 1;
+}
+
+/* Highlighted AI Focus Card */
+.highlight-card {
+    border-left: 5px solid var(--eva-green-main);
+}
+.highlight-card::before {
+    background: var(--eva-green-main);
+    opacity: 0.8;
+}
+
+.card h3 {
+    color: var(--eva-green-main);
+    border-bottom: 1px solid var(--border-dim);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.card p, .card ul {
+    margin-bottom: 1rem;
+}
+
+.card b, .card strong {
+    color: var(--text-headers);
+    font-weight: 600;
+}
+
+/* =========================================
+   EXPERIENCE & EDUCATION
+   ========================================= */
+.job {
+    margin-bottom: 2rem;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job h4 {
+    font-size: 1.1rem;
+    color: var(--text-headers);
+    margin-bottom: 0.2rem;
+    text-shadow: 1px 1px 0px rgba(126, 56, 243, 0.5);
+}
+
+.company {
+    color: var(--eva-purple-bright);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem !important;
+}
+
+.date {
+    color: var(--eva-orange-alert);
+    font-size: 0.85rem;
+    background: rgba(255, 123, 0, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+ul { padding-left: 1.5rem; }
+
+li {
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+    list-style-type: square;
+}
+li::marker { color: var(--eva-green-main); }
+
+/* =========================================
+   SKILLS & TAGS
+   ========================================= */
+.skill-category {
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Standard Backend Tags */
+.tags span {
+    background: rgba(126, 56, 243, 0.1);
+    color: #dfc9ff;
+    border: 1px solid var(--eva-purple-bright);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    transition: 0.2s;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.tags span:hover {
+    background: var(--eva-purple-bright);
+    color: #fff;
+}
+
+/* AI Engineering Tags (EVA Green) */
+.ai-tags span {
+    background: rgba(85, 255, 0, 0.08);
+    color: var(--eva-green-main);
+    border: 1px solid var(--eva-green-main);
+}
+
+.ai-tags span:hover {
+    background: var(--eva-green-main);
+    color: var(--eva-purple-dark);
+}
+
+/* =========================================
+   LANGUAGES
+   ========================================= */
+.language-list { list-style: none; padding: 0; }
+.language-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed var(--border-dim);
+    display: flex;
+    justify-content: space-between;
+}
+.language-list li:last-child { border-bottom: none; }
+.language-list strong { color: var(--eva-purple-bright); }
+
+/* =========================================
+   AI SIMULATOR TERMINAL (NERV MAGI SYSTEM)
+   ========================================= */
+.ai-simulator {
+    background: #0a0414;
+    border: 2px solid var(--border-dim);
+    border-top: 3px solid var(--eva-orange-alert);
+    margin-bottom: 3rem;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+}
+
+.terminal-header {
+    background: #120721;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-dim);
+}
+
+.dot {
+    height: 10px; width: 25px; /* Pill shapes instead of dots for NERV UI */
+    margin-right: 5px;
+    transform: skew(-20deg);
+}
+
+/* NERV Interface colors */
+.red { background: var(--eva-orange-alert); }
+.yellow { background: var(--eva-purple-bright); }
+.green { background: var(--eva-green-main); }
+
+.terminal-title {
+    color: var(--eva-orange-alert);
+    font-size: 0.8rem;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.terminal-body {
+    padding: 1.5rem;
+    height: 320px;
+    overflow-y: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    /* MAGI UI Scanlines */
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 123, 0, 0.03) 2px,
+        rgba(255, 123, 0, 0.03) 4px
+    );
+}
+
+/* Terminal Scrollbar */
+.terminal-body::-webkit-scrollbar { width: 6px; }
+.terminal-body::-webkit-scrollbar-track { background: #0a0414; }
+.terminal-body::-webkit-scrollbar-thumb { background: var(--eva-purple-bright); }
+
+.message p { margin-bottom: 0.5rem; line-height: 1.4; }
+
+/* Terminal text colors */
+.system-msg { color: var(--text-muted); }
+.system-msg i { color: #82759e; font-size: 0.85rem; }
+.user-msg { color: var(--text-headers); text-shadow: 0 0 3px rgba(255,255,255,0.5); }
+.ai-msg { color: var(--eva-green-main); }
+.ai-msg b { color: var(--eva-orange-alert); }
+.pipeline-step { color: var(--eva-purple-bright); font-size: 0.8rem; font-style: italic; }
+
+.terminal-input-area {
+    display: flex;
+    padding: 1rem 1.5rem;
+    background: #0d061a;
+    border-top: 1px solid var(--border-dim);
+    align-items: center;
+}
+
+.prompt-symbol {
+    color: var(--eva-orange-alert);
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: 'Fira Code', monospace;
+}
+
+#user-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--eva-green-main);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+    outline: none;
+    caret-color: var(--eva-orange-alert);
+}
+
+#user-input::placeholder { color: #4b3869; }
+
+.terminal-input-area button {
+    background: transparent;
+    border: none;
+    color: var(--eva-orange-alert);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.terminal-input-area button:hover {
+    color: var(--eva-green-main);
+    text-shadow: 0 0 8px var(--eva-green-glow);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-dim);
+    margin-top: 2rem;
+    background: var(--eva-purple-dark);
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .cv-layout { flex-direction: column; }
+    .header-content h1 { font-size: 2rem; }
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
